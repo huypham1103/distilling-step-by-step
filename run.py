@@ -19,7 +19,8 @@ from datasets import DatasetDict, concatenate_datasets
 from transformers import AutoTokenizer
 
 from data_utils import CQADatasetLoader, SVAMPDatasetLoader, ESNLIDatasetLoader, ANLI1DatasetLoader, ASDivDatasetLoader
-from metrics import compute_text_acc, compute_equation_acc, compute_metrics_text, compute_metrics_equation, compute_metrics_text_aux, compute_metrics_equation_aux
+from metrics import compute_text_acc, compute_equation_acc, compute_metrics_text, \
+                    compute_metrics_equation, compute_metrics_text_aux, compute_metrics_equation_aux
 from train_utils import train_and_evaluate
 
 
@@ -62,8 +63,8 @@ def run(args):
             # test set = SVAMP test
             test_llm_rationales, test_llm_labels = dataset_loader_svamp.load_llm_preds(split='test')
         else:
-            train_llm_rationales, train_llm_labels = dataset_loader.load_llm_preds(split='train')
-            test_llm_rationales, test_llm_labels = dataset_loader.load_llm_preds(split='test')
+            train_llm_rationales, train_llm_labels = dataset_loader.load_dummy_llm_preds(split='train')
+            test_llm_rationales, test_llm_labels = dataset_loader.load_dummy_llm_preds(split='test')
     elif args.llm == 'gpt':
         train_llm_rationales, train_llm_labels = dataset_loader.load_gpt_preds(split='train')
         test_llm_rationales, test_llm_labels = dataset_loader.load_gpt_preds(split='test')
@@ -182,6 +183,9 @@ def run(args):
             remove_columns=['input', 'rationale', 'label', 'llm_label'],
             batched=True
         )
+        train_df = tokenized_datasets['train'].to_pandas()
+        test_df = tokenized_datasets['test'].to_pandas()
+
 
 
     if args.model_type == 'standard':
@@ -197,7 +201,7 @@ def run(args):
             compute_metrics = compute_metrics_equation(tokenizer)
 
 
-    train_and_evaluate(args, args.run, tokenizer, tokenized_datasets, compute_metrics)
+    train_and_evaluate(args, args.run, tokenizer, train_df , test_df, compute_metrics)
 
 
 if __name__ == '__main__':

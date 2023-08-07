@@ -94,7 +94,18 @@ class DatasetLoader(object):
 
         return rationales, labels
 
+    def load_dummy_llm_preds(self, split):
+        # load from csv instead of json
+        import pandas as pd
+        df = pd.read_csv(f'{self.data_root}/{self.dataset_name}/llm/rationales_data.csv', index_col=0)
+        rationales = df['final_reasons'].tolist()
+        labels = df['answer'].tolist()
 
+        if split == 'train':
+            return rationales[:9741], labels[:9741]
+        if split == 'test':
+            return rationales[:1221], labels[:1221]
+    
     def load_gpt_preds(self, split):
         labels = list()
         rationales = list()

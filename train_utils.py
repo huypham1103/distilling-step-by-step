@@ -23,13 +23,13 @@ from transformers import DataCollatorForSeq2Seq
 from transformers.trainer_utils import set_seed
 
 from model_utils import TaskPrefixDataCollator, TaskPrefixTrainer
-
+import pandas as pd
 
 def get_config_dir(args):
     return f'{args.dataset}/{args.from_pretrained.split("/")[1]}/{args.model_type}/{args.llm}/{args.subsample}/{args.label_type}/{args.alpha}/{args.max_input_length}/{args.grad_steps*args.batch_size}/{args.optimizer_name}/{args.lr}'
 
 
-def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics):
+def train_and_evaluate(args, run, tokenizer, train_df, test_df, compute_metrics):
     set_seed(run)
 
     model = T5ForConditionalGeneration.from_pretrained(args.from_pretrained)
@@ -88,8 +88,8 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         'output_rationale': args.output_rationale,
         'model': model,
         'args': training_args,
-        'train_dataset': tokenized_datasets["train"],
-        'eval_dataset': {'test': tokenized_datasets["test"],},
+        'train_dataset': train_df.to_dict('records'),
+        'eval_dataset': {'test': test_df.to_dict('records'),},
         'data_collator': data_collator,
         'tokenizer': tokenizer,
         'compute_metrics': compute_metrics,
