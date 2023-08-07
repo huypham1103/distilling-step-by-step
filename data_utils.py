@@ -49,6 +49,9 @@ class DatasetLoader(object):
             datasets = load_dataset(self.source_dataset_name)
         else:
             datasets = load_dataset(self.source_dataset_name, self.dataset_version)
+
+        # adding handle input data 
+        datasets = self._post_process(datasets) 
         return datasets
 
 
@@ -102,9 +105,9 @@ class DatasetLoader(object):
         labels = df['answer'].tolist()
 
         if split == 'train':
-            return rationales[:9741], labels[:9741]
+            return rationales[:8520], labels[:8520]
         if split == 'test':
-            return rationales[:1221], labels[:1221]
+            return rationales[8520:], labels[8520:]
     
     def load_gpt_preds(self, split):
         labels = list()

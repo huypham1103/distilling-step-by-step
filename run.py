@@ -49,7 +49,17 @@ def run(args):
             'test': datasets_svamp['test']
         })
     else:
-        datasets = dataset_loader.load_from_json()
+        # handle fit to local my dataset
+        datasets = dataset_loader.load_from_source()
+        num_train_samples = len(datasets["train"])
+        test_dataset = datasets["train"].select(range(num_train_samples - 1221, num_train_samples))
+        train_dataset = datasets["train"].select(range(num_train_samples - 1221))
+
+        datasets = DatasetDict({
+            "train": train_dataset,
+            "test": test_dataset
+        })
+        # datasets = dataset_loader.load_from_json()
 
     if args.llm is None:
         pass
