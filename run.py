@@ -50,16 +50,16 @@ def run(args):
         })
     else:
         # handle fit to local my dataset
-        datasets = dataset_loader.load_from_source()
-        num_train_samples = len(datasets["train"])
-        test_dataset = datasets["train"].select(range(num_train_samples - 1221, num_train_samples))
-        train_dataset = datasets["train"].select(range(num_train_samples - 1221))
+        # datasets = dataset_loader.load_from_source()
+        # num_train_samples = len(datasets["train"])
+        # test_dataset = datasets["train"].select(range(num_train_samples - 1221, num_train_samples))
+        # train_dataset = datasets["train"].select(range(num_train_samples - 1221))
 
-        datasets = DatasetDict({
-            "train": train_dataset,
-            "test": test_dataset
-        })
-        # datasets = dataset_loader.load_from_json()
+        # datasets = DatasetDict({
+        #     "train": train_dataset,
+        #     "test": test_dataset
+        # })
+        datasets = dataset_loader.load_from_json()
 
     if args.llm is None:
         pass
@@ -73,8 +73,10 @@ def run(args):
             # test set = SVAMP test
             test_llm_rationales, test_llm_labels = dataset_loader_svamp.load_llm_preds(split='test')
         else:
-            train_llm_rationales, train_llm_labels = dataset_loader.load_dummy_llm_preds(split='train')
-            test_llm_rationales, test_llm_labels = dataset_loader.load_dummy_llm_preds(split='test')
+            # train_llm_rationales, train_llm_labels = dataset_loader.load_dummy_llm_preds(split='train')
+            # test_llm_rationales, test_llm_labels = dataset_loader.load_dummy_llm_preds(split='test')
+            train_llm_rationales, train_llm_labels = dataset_loader.load_llm_preds(split='train')
+            test_llm_rationales, test_llm_labels = dataset_loader.load_llm_preds(split='test')
     elif args.llm == 'gpt':
         train_llm_rationales, train_llm_labels = dataset_loader.load_gpt_preds(split='train')
         test_llm_rationales, test_llm_labels = dataset_loader.load_gpt_preds(split='test')
@@ -194,6 +196,7 @@ def run(args):
             batched=True
         )
         train_df = tokenized_datasets['train'].to_pandas()
+        val_df = tokenized_datasets['valid'].to_pandas()
         test_df = tokenized_datasets['test'].to_pandas()
 
 
@@ -211,59 +214,59 @@ def run(args):
             compute_metrics = compute_metrics_equation(tokenizer)
 
 
-    train_and_evaluate(args, args.run, tokenizer, train_df , test_df, compute_metrics)
+    train_and_evaluate(args, args.run, tokenizer, train_df , val_df, compute_metrics)
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, required=True)
-    parser.add_argument('--subsample', type=float, default=1.0)
-    parser.add_argument('--alpha', type=float, default=0.5)
-    parser.add_argument('--max_steps', type=int, default=10000)
-    parser.add_argument('--eval_steps', type=int, default=250)
-    parser.add_argument('--batch_size', type=int, default=64)
-    parser.add_argument('--optimizer_name', type=str, default='AdamW')
-    parser.add_argument('--lr', type=float, default=5e-5)
-    parser.add_argument('--run', type=int, default=0)
-    parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
-    parser.add_argument('--label_type', type=str, default='gt')
-    parser.add_argument('--llm', type=str, default='palm')
-    parser.add_argument('--max_input_length', type=int, default=1024)
-    parser.add_argument('--grad_steps', type=int, default=1)
-    parser.add_argument('--local_rank', type=int, default=-1)
-    parser.add_argument('--gen_max_len', type=int, default=64)
-    parser.add_argument('--parallelize', action='store_true')
-    parser.add_argument('--model_type', type=str, default='task_prefix')
-    parser.add_argument('--bf16', action='store_true')
-    parser.add_argument('--no_log', action='store_true')
-    parser.add_argument('--output_rationale', action='store_true')
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--dataset', type=str, required=True)
+    # parser.add_argument('--subsample', type=float, default=1.0)
+    # parser.add_argument('--alpha', type=float, default=0.5)
+    # parser.add_argument('--max_steps', type=int, default=10000)
+    # parser.add_argument('--eval_steps', type=int, default=250)
+    # parser.add_argument('--batch_size', type=int, default=64)
+    # parser.add_argument('--optimizer_name', type=str, default='AdamW')
+    # parser.add_argument('--lr', type=float, default=5e-5)
+    # parser.add_argument('--run', type=int, default=0)
+    # parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
+    # parser.add_argument('--label_type', type=str, default='gt')
+    # parser.add_argument('--llm', type=str, default='palm')
+    # parser.add_argument('--max_input_length', type=int, default=1024)
+    # parser.add_argument('--grad_steps', type=int, default=1)
+    # parser.add_argument('--local_rank', type=int, default=-1)
+    # parser.add_argument('--gen_max_len', type=int, default=64)
+    # parser.add_argument('--parallelize', action='store_true')
+    # parser.add_argument('--model_type', type=str, default='task_prefix')
+    # parser.add_argument('--bf16', action='store_true')
+    # parser.add_argument('--no_log', action='store_true')
+    # parser.add_argument('--output_rationale', action='store_true')
 
-    args = parser.parse_args()
+    # args = parser.parse_args()
 
-    # dic = {
-    #     'dataset': 'cqa',
-    #     'subsample': 1.0,
-    #     'alpha': 0.5,
-    #     'max_steps': 10000,
-    #     'eval_steps': 250,
-    #     'batch_size': 64,
-    #     'optimizer_name': 'AdamW',
-    #     'lr': 5e-05,
-    #     'run': 0,
-    #     'from_pretrained': 'google/t5-v1_1-base',
-    #     'label_type': 'llm',
-    #     'llm': 'palm',
-    #     'max_input_length': 1024,
-    #     'grad_steps': 1,
-    #     'local_rank': -1,
-    #     'gen_max_len': 64,
-    #     'parallelize': False,
-    #     'model_type': 'task_prefix',
-    #     'bf16': False,
-    #     'no_log': False,
-    #     'output_rationale': False,
-    # }
-    # from types import SimpleNamespace
-    # args = SimpleNamespace(**dic)
+    dic = {
+        'dataset': 'cqa',
+        'subsample': 1.0,
+        'alpha': 0.5,
+        'max_steps': 10000,
+        'eval_steps': 250,
+        'batch_size': 8,
+        'optimizer_name': 'AdamW',
+        'lr': 5e-05,
+        'run': 0,
+        'from_pretrained': 'google/t5-v1_1-base',
+        'label_type': 'llm',
+        'llm': 'palm',
+        'max_input_length': 1024,
+        'grad_steps': 1,
+        'local_rank': -1,
+        'gen_max_len': 64,
+        'parallelize': False,
+        'model_type': 'task_prefix',
+        'bf16': False,
+        'no_log': False,
+        'output_rationale': False,
+    }
+    from types import SimpleNamespace
+    args = SimpleNamespace(**dic)
 
     run(args)
