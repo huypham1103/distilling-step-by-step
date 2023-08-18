@@ -228,7 +228,7 @@ if __name__ == '__main__':
     parser.add_argument('--optimizer_name', type=str, default='AdamW')
     parser.add_argument('--lr', type=float, default=5e-5)
     parser.add_argument('--run', type=int, default=0)
-    parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
+    parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-xxl')
     parser.add_argument('--label_type', type=str, default='gt')
     parser.add_argument('--llm', type=str, default='palm')
     parser.add_argument('--max_input_length', type=int, default=1024)
