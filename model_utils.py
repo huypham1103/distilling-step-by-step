@@ -48,11 +48,13 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
 
     def compute_loss(self, model, inputs, return_outputs=False):
         pred_outputs = model(**inputs['pred'])
-        expl_outputs = model(**inputs['expl'])
+        # expl_outputs = model(**inputs['expl'])
 
-        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * expl_outputs.loss
+        # loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * expl_outputs.loss
+        loss = pred_outputs.loss
 
-        return (loss, {'pred': pred_outputs, 'expl': expl_outputs}) if return_outputs else loss
+        # return (loss, {'pred': pred_outputs, 'expl': expl_outputs}) if return_outputs else loss
+        return (loss, {'pred': pred_outputs}) if return_outputs else loss
 
 
     def prediction_step(
@@ -64,15 +66,21 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
     ) -> Tuple[Optional[float], Optional[torch.Tensor], Optional[torch.Tensor]]:
         
         pred_outputs = super().prediction_step(model, inputs['pred'], prediction_loss_only=False, ignore_keys=ignore_keys)
-        if self.output_rationale:
-            expl_outputs = super().prediction_step(model, inputs['expl'], prediction_loss_only=False, ignore_keys=ignore_keys)
-        else:
-            expl_outputs = pred_outputs # placeholder only
+        # if self.output_rationale:
+        #     expl_outputs = super().prediction_step(model, inputs['expl'], prediction_loss_only=False, ignore_keys=ignore_keys)
+        # else:
+        #     expl_outputs = pred_outputs # placeholder only
 
-        loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
+        # loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
+        loss = pred_outputs[0]
 
+        # return (
+        #     loss,
+        #     [pred_outputs[1], expl_outputs[1]],
+        #     [pred_outputs[2], expl_outputs[2]],
+        # )
         return (
             loss,
-            [pred_outputs[1], expl_outputs[1]],
-            [pred_outputs[2], expl_outputs[2]],
+            [pred_outputs[1]],
+            [pred_outputs[2]],
         )
