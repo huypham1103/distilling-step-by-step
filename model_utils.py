@@ -27,15 +27,15 @@ class TaskPrefixDataCollator(DataCollatorForSeq2Seq):
     def __call__(self, features, return_tensors=None):
         features_df = pd.DataFrame(features)
         pred_features = features_df.loc[:, ~features_df.columns.isin(['aux_labels', 'expl_input_ids', 'expl_attention_mask'])].to_dict('records')
-        expl_features = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask'])].rename(
-            columns={'aux_labels': 'labels', 'expl_input_ids': 'input_ids', 'expl_attention_mask': 'attention_mask'}).to_dict('records')
+        # expl_features = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask'])].rename(
+        #     columns={'aux_labels': 'labels', 'expl_input_ids': 'input_ids', 'expl_attention_mask': 'attention_mask'}).to_dict('records')
 
         pred_features = super().__call__(pred_features, return_tensors)
-        expl_features = super().__call__(expl_features, return_tensors)
+        # expl_features = super().__call__(expl_features, return_tensors)
 
         return {
             'pred': pred_features,
-            'expl': expl_features,
+            # 'expl': expl_features,
         }
 
 
