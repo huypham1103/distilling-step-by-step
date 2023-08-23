@@ -107,3 +107,5 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
     
 
     trainer.train()
+    output_path = '../model_path/'
+    trainer.save_model(output_path)
