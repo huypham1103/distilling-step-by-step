@@ -214,7 +214,7 @@ def run(args):
             compute_metrics = compute_metrics_equation(tokenizer)
 
 
-    train_and_evaluate(args, args.run, tokenizer, train_df , val_df, compute_metrics)
+    train_and_evaluate(args, args.run, tokenizer, train_df , test_df, compute_metrics)
 
 
 if __name__ == '__main__':
