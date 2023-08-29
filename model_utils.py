@@ -44,13 +44,33 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         super().__init__(**kwargs)
         self.alpha = alpha
         self.output_rationale = output_rationale
+        
+        # define efficient loss function
+        self.criterion = nn.MSELoss()
+
 
 
     def compute_loss(self, model, inputs, return_outputs=False):
         pred_outputs = model(**inputs['pred'])
         expl_outputs = model(**inputs['expl'])
 
-        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * expl_outputs.loss
+        pred_logits = pred_outputs.logits
+        pred_labels = inputs['pred']['labels'].float()  # Make sure to match the data type
+
+        expl_logits = expl_outputs.logits
+        expl_labels = inputs['expl']['labels'].float()  # Make sure to match the data type
+
+        # Using max logit from each set
+        max_pred_logits = pred_logits.max(dim=2)[0]
+        max_expl_logits = expl_logits.max(dim=2)[0]
+
+
+        # compute loss
+        pred_loss = self.criterion(max_pred_logits, pred_labels)
+        expl_loss = self.criterion(max_expl_logits, expl_labels)
+
+
+        loss = self.alpha * pred_loss + (1. - self.alpha) * expl_loss
 
         return (loss, {'pred': pred_outputs, 'expl': expl_outputs}) if return_outputs else loss
 
@@ -69,7 +89,8 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         else:
             expl_outputs = pred_outputs # placeholder only
 
-        loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
+        # loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
+        loss = self.compute_loss(model, inputs, return_outputs=False)
 
         return (
             loss,
