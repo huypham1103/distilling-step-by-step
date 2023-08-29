@@ -89,8 +89,7 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         else:
             expl_outputs = pred_outputs # placeholder only
 
-        # loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
-        loss = self.compute_loss(model, inputs, return_outputs=False)
+        loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
 
         return (
             loss,

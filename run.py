@@ -231,7 +231,7 @@ if __name__ == '__main__':
         'subsample': 1.0,
         'alpha': 0.5,
         'max_steps': 10000,
-        'eval_steps': 250,
+        'eval_steps': 1,
         'batch_size': 2,
         'optimizer_name': 'AdamW',
         'lr': 5e-05,
