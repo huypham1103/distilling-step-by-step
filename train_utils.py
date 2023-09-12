@@ -89,7 +89,7 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         'model': model,
         'args': training_args,
         'train_dataset': tokenized_datasets["train"],
-        'eval_dataset': {'test': tokenized_datasets["test"],},
+        'eval_dataset': {'test': tokenized_datasets["valid"],},
         'data_collator': data_collator,
         'tokenizer': tokenizer,
         'compute_metrics': compute_metrics,

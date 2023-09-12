@@ -15,7 +15,7 @@
 
 import argparse
 
-from datasets import DatasetDict, concatenate_datasets
+from datasets import DatasetDict, concatenate_datasets, Dataset
 from transformers import AutoTokenizer
 
 from data_utils import CQADatasetLoader, SVAMPDatasetLoader, ESNLIDatasetLoader, ANLI1DatasetLoader, ASDivDatasetLoader
@@ -177,6 +177,27 @@ def run(args):
             batched=True
         )
     else:
+        # load myself rationales
+        import pandas as pd
+        train = pd.DataFrame(datasets['train'])
+        train['question'] = train['input'].apply(lambda x: x.split('\n')[0])
+        train = train.set_index('question')
+        val = pd.DataFrame(datasets['valid'])
+        val['question'] = val['input'].apply(lambda x: x.split('\n')[0])
+        val = val.set_index('question')
+        test = pd.DataFrame(datasets['test'])
+        test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
+        test = test.set_index('question')
+
+        rationales = pd.read_csv('datasets/cqa/if-else/rationales_data.csv', index_col=0).set_index('question')
+        train['rationale'] = rationales.loc[train.index]['final_reasons'].values
+        val['rationale'] = rationales.loc[val.index]['final_reasons'].values
+        test['rationale'] = rationales.loc[test.index]['final_reasons'].values
+        
+        datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
+        datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
+        datasets['test'] = Dataset.from_pandas(test.reset_index().drop(columns=['question']))
+
         tokenized_datasets = datasets.map(
             tokenize_function,
             remove_columns=['input', 'rationale', 'label', 'llm_label'],
