@@ -113,8 +113,8 @@ def run(args):
         print(f'LLM Train Acc: {train_label_acc:.4f}')
         print(f'LLM Test Acc: {test_label_acc:.4f}')
 
-        datasets['train'] = datasets['train'].remove_columns('label')
-        datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
+        # datasets['train'] = datasets['train'].remove_columns('label')
+        # datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
 
     else:
         raise ValueError
