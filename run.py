@@ -199,6 +199,11 @@ def run(args):
         datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
         datasets['test'] = Dataset.from_pandas(test.reset_index().drop(columns=['question']))
 
+        tokenized_datasets = datasets.map(
+            tokenize_function,
+            remove_columns=['input', 'rationale', 'label', 'llm_label'],
+            batched=True
+        )
     if args.model_type == 'standard':
         if args.dataset not in ['svamp', 'asdiv']:
             compute_metrics = compute_metrics_text_aux(tokenizer)
