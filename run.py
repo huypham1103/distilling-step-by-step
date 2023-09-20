@@ -177,12 +177,27 @@ def run(args):
             batched=True
         )
     else:
-        tokenized_datasets = datasets.map(
-            tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label'],
-            batched=True
-        )
+        # load myself rationales
+        import pandas as pd
+        from datasets import Dataset 
+        train = pd.DataFrame(datasets['train'])
+        train['question'] = train['input'].apply(lambda x: x.split('\n')[0])
+        train = train.set_index('question')
+        val = pd.DataFrame(datasets['valid'])
+        val['question'] = val['input'].apply(lambda x: x.split('\n')[0])
+        val = val.set_index('question')
+        test = pd.DataFrame(datasets['test'])
+        test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
+        test = test.set_index('question')
 
+        rationales = pd.read_csv('answered_questions_with_rationales.csv').set_index('question')
+        train['rationale'] = rationales.loc[train.index][args.type_rationale].values
+        val['rationale'] = rationales.loc[val.index][args.type_rationale].values
+        test['rationale'] = rationales.loc[test.index][args.type_rationale].values
+        
+        datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
+        datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
+        datasets['test'] = Dataset.from_pandas(test.reset_index().drop(columns=['question']))
 
     if args.model_type == 'standard':
         if args.dataset not in ['svamp', 'asdiv']:
@@ -223,6 +238,7 @@ if __name__ == '__main__':
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
+    parser.add_argument('--type_rationale', type=str, default='if_else')
 
     args = parser.parse_args()
 
@@ -248,6 +264,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
+    #     'type_rationale': 'if_else'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
