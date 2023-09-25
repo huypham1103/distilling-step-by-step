@@ -190,7 +190,7 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_csv('answered_questions_with_rationales.csv').set_index('question')
+        rationales = pd.read_csv('answered_questions_with_best_answers.csv').set_index('question')
         train['rationale'] = rationales.loc[train.index][args.type_rationale].values
         val['rationale'] = rationales.loc[val.index][args.type_rationale].values
         test['rationale'] = rationales.loc[test.index][args.type_rationale].values
@@ -269,7 +269,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'if_else'
+    #     'type_rationale': 'structured_rationales_1'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
