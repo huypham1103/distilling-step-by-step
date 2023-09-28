@@ -190,7 +190,7 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_csv('train_with_UCS_WUCS_CWUCS.csv').set_index('question')
+        rationales = pd.read_csv('answered_questions_rationales_UCS_WUCS_CWUCS.csv').set_index('question')
         train['rationale'] = rationales.loc[train.index][args.type_rationale].values
         val['rationale'] = rationales.loc[val.index][args.type_rationale].values
         test['rationale'] = rationales.loc[test.index][args.type_rationale].values
