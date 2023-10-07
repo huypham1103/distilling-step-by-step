@@ -190,7 +190,10 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_csv('answered_questions_rationales_UCS_WUCS_CWUCS.csv').set_index('question')
+        rationales = pd.read_excel('Contrastive - full.xlsx', index_col=0).set_index('question')
+        # modify the encode char
+        temp = pd.read_csv('train.csv', index_col=0)
+        rationales.index = temp.index
         train['rationale'] = rationales.loc[train.index][args.type_rationale].values
         val['rationale'] = rationales.loc[val.index][args.type_rationale].values
         test['rationale'] = rationales.loc[test.index][args.type_rationale].values
@@ -269,7 +272,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'rationale_1'
+    #     'type_rationale': 'rationales'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
