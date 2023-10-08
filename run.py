@@ -190,13 +190,13 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_excel('Contrastive - full.xlsx', index_col=0).set_index('question')
+        rationales = pd.read_excel(f'{args.type_rationale} - full.xlsx', index_col=0).set_index('question')
         # modify the encode char
         temp = pd.read_csv('train.csv', index_col=0)
         rationales.index = temp.index
-        train['rationale'] = rationales.loc[train.index][args.type_rationale].values
-        val['rationale'] = rationales.loc[val.index][args.type_rationale].values
-        test['rationale'] = rationales.loc[test.index][args.type_rationale].values
+        train['rationale'] = rationales.loc[train.index]['rationales'].values
+        val['rationale'] = rationales.loc[val.index]['rationales'].values
+        test['rationale'] = rationales.loc[test.index]['rationales'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
         datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
@@ -272,7 +272,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'rationales'
+    #     'type_rationale': 'Contrastive'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
