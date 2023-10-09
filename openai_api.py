@@ -35,15 +35,15 @@ response = r.post(url, headers=header, json=body)
 
 print(response.json())
 
-from datasets import load_dataset
-import pandas as pd
+# from datasets import load_dataset
+# import pandas as pd
 
-dataset = load_dataset("cos_e", 'v1.11')
+# dataset = load_dataset("cos_e", 'v1.11')
 
-train_df = pd.DataFrame(dataset['train']) 
-validation = pd.DataFrame(dataset['validation'])
+# train_df = pd.DataFrame(dataset['train']) 
+# validation = pd.DataFrame(dataset['validation'])
 
-train_df = pd.concat([train_df, validation], ignore_index=True)
+# train_df = pd.concat([train_df, validation], ignore_index=True)
 
-train_df = train_df[['question', 'choices']]
-train_df.to_csv('train.csv', index=False)
+# train_df = train_df[['question', 'choices']]
+# train_df.to_csv('train.csv', index=False)
