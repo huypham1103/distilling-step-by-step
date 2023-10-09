@@ -190,13 +190,15 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_excel(f'{args.type_rationale} - full.xlsx', index_col=0).set_index('question')
+        rationales = pd.read_csv(f'[API] RATIONALES/{args.type_rationale} - full.csv', index_col=0).set_index('question')
         # modify the encode char
-        temp = pd.read_csv('train.csv', index_col=0)
-        rationales.index = temp.index
         train['rationale'] = rationales.loc[train.index]['rationales'].values
         val['rationale'] = rationales.loc[val.index]['rationales'].values
         test['rationale'] = rationales.loc[test.index]['rationales'].values
+
+        train['label'] = rationales.loc[train.index]['LLM_answer'].values
+        val['label'] = rationales.loc[val.index]['LLM_answer'].values
+        test['label'] = rationales.loc[test.index]['LLM_answer'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
         datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
@@ -224,57 +226,57 @@ def run(args):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, required=True)
-    parser.add_argument('--subsample', type=float, default=1.0)
-    parser.add_argument('--alpha', type=float, default=0.5)
-    parser.add_argument('--max_steps', type=int, default=10000)
-    parser.add_argument('--eval_steps', type=int, default=250)
-    parser.add_argument('--batch_size', type=int, default=64)
-    parser.add_argument('--optimizer_name', type=str, default='AdamW')
-    parser.add_argument('--lr', type=float, default=5e-5)
-    parser.add_argument('--run', type=int, default=0)
-    parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
-    parser.add_argument('--label_type', type=str, default='gt')
-    parser.add_argument('--llm', type=str, default='palm')
-    parser.add_argument('--max_input_length', type=int, default=1024)
-    parser.add_argument('--grad_steps', type=int, default=1)
-    parser.add_argument('--local_rank', type=int, default=-1)
-    parser.add_argument('--gen_max_len', type=int, default=64)
-    parser.add_argument('--parallelize', action='store_true')
-    parser.add_argument('--model_type', type=str, default='task_prefix')
-    parser.add_argument('--bf16', action='store_true')
-    parser.add_argument('--no_log', action='store_true')
-    parser.add_argument('--output_rationale', action='store_true')
-    parser.add_argument('--type_rationale', type=str, default='if_else')
+    # parser = argparse.ArgumentParser()
+    # parser.add_argument('--dataset', type=str, required=True)
+    # parser.add_argument('--subsample', type=float, default=1.0)
+    # parser.add_argument('--alpha', type=float, default=0.5)
+    # parser.add_argument('--max_steps', type=int, default=10000)
+    # parser.add_argument('--eval_steps', type=int, default=250)
+    # parser.add_argument('--batch_size', type=int, default=64)
+    # parser.add_argument('--optimizer_name', type=str, default='AdamW')
+    # parser.add_argument('--lr', type=float, default=5e-5)
+    # parser.add_argument('--run', type=int, default=0)
+    # parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
+    # parser.add_argument('--label_type', type=str, default='gt')
+    # parser.add_argument('--llm', type=str, default='palm')
+    # parser.add_argument('--max_input_length', type=int, default=1024)
+    # parser.add_argument('--grad_steps', type=int, default=1)
+    # parser.add_argument('--local_rank', type=int, default=-1)
+    # parser.add_argument('--gen_max_len', type=int, default=64)
+    # parser.add_argument('--parallelize', action='store_true')
+    # parser.add_argument('--model_type', type=str, default='task_prefix')
+    # parser.add_argument('--bf16', action='store_true')
+    # parser.add_argument('--no_log', action='store_true')
+    # parser.add_argument('--output_rationale', action='store_true')
+    # parser.add_argument('--type_rationale', type=str, default='if_else')
 
-    args = parser.parse_args()
+    # args = parser.parse_args()
 
-    # dic = {
-    #     'dataset': 'cqa',
-    #     'subsample': 1.0,
-    #     'alpha': 0.5,
-    #     'max_steps': 10000,
-    #     'eval_steps': 1,
-    #     'batch_size': 2,
-    #     'optimizer_name': 'AdamW',
-    #     'lr': 5e-05,
-    #     'run': 0,
-    #     'from_pretrained': 'google/t5-v1_1-base',
-    #     'label_type': 'gt',
-    #     'llm': 'palm',
-    #     'max_input_length': 1024,
-    #     'grad_steps': 1,
-    #     'local_rank': -1,
-    #     'gen_max_len': 64,
-    #     'parallelize': False,
-    #     'model_type': 'task_prefix',
-    #     'bf16': False,
-    #     'no_log': False,
-    #     'output_rationale': False,
-    #     'type_rationale': 'Contrastive'
-    # }
-    # from types import SimpleNamespace
-    # args = SimpleNamespace(**dic)
+    dic = {
+        'dataset': 'cqa',
+        'subsample': 1.0,
+        'alpha': 0.5,
+        'max_steps': 10000,
+        'eval_steps': 1,
+        'batch_size': 2,
+        'optimizer_name': 'AdamW',
+        'lr': 5e-05,
+        'run': 0,
+        'from_pretrained': 'google/t5-v1_1-base',
+        'label_type': 'gt',
+        'llm': 'palm',
+        'max_input_length': 1024,
+        'grad_steps': 1,
+        'local_rank': -1,
+        'gen_max_len': 64,
+        'parallelize': False,
+        'model_type': 'task_prefix',
+        'bf16': False,
+        'no_log': False,
+        'output_rationale': False,
+        'type_rationale': 'Contrastive'
+    }
+    from types import SimpleNamespace
+    args = SimpleNamespace(**dic)
 
     run(args)
