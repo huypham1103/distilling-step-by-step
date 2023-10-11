@@ -190,15 +190,15 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        rationales = pd.read_csv(f'[API] RATIONALES/{args.type_rationale} - full.csv', index_col=0).set_index('question')
+        rationales = pd.read_csv(f'answered_questions_rationales_UCS_WUCS_CWUCS.csv').set_index('question')
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index]['rationales'].values
-        val['rationale'] = rationales.loc[val.index]['rationales'].values
-        test['rationale'] = rationales.loc[test.index]['rationales'].values
+        train['rationale'] = rationales.loc[train.index][f'{args.type_rationale}'].values
+        val['rationale'] = rationales.loc[val.index][f'{args.type_rationale}'].values
+        test['rationale'] = rationales.loc[test.index][f'{args.type_rationale}'].values
 
-        train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
-        test['label'] = rationales.loc[test.index]['LLM_answer'].values
+        train['label'] = rationales.loc[train.index]['final_answer'].values
+        val['label'] = rationales.loc[val.index]['final_answer'].values
+        test['label'] = rationales.loc[test.index]['final_answer'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
         datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
@@ -274,7 +274,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'Contrastive'
+    #     'type_rationale': 'contrastive'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
