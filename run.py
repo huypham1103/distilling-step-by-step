@@ -211,7 +211,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label'],
+            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
             batched=True
         )
     if args.model_type == 'standard':
