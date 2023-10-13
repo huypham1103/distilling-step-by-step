@@ -1,0 +1,753 @@
+,premise,hypothesis,rationales
+0,Two topless men and a woman wearing a dress are splashing around waist deep in ice cold water; the trees in the background have no leaves and the ground is covered with snow.,People are in water.,"1. Premise: Two topless men and a woman wearing a dress are splashing around waist deep in ice-cold water; the trees in the background have no leaves and the ground is covered with snow.
+Hypothesis: People are in water.
+
+The premise clearly states that there are two topless men and a woman wearing a dress splashing around in water. This supports the hypothesis that people are in water. Therefore, the correct answer is ""entailment"".
+
+"
+1,Three women walk down a city street; one looks inside her handbag as she walks.,Three women chat at home.,"2. Premise: Three women walk down a city street; one looks inside her handbag as she walks. Hypothesis: Three women chat at home.  The premise describes three women walking down a city street, with one of them looking inside her handbag. There is no information provided about the women chatting at home. Therefore, there is no clear relationship between the premise and the hypothesis. The correct answer is ""neutral"".  "
+2,Two male dancers dressed in blue shirts and black pants perform a routine in front of six women sitting beside them.,Nobody has a shirt.,"3. Premise: Two male dancers dressed in blue shirts and black pants perform a routine in front of six women sitting beside them.
+Hypothesis: Nobody has a shirt.
+
+The premise states that two male dancers are dressed in blue shirts and black pants. The hypothesis states that nobody has a shirt. This contradicts the information provided in the premise, which clearly mentions that the male dancers are wearing blue shirts. Therefore, the correct answer is ""contradiction"".
+
+"
+3,"Two men and a woman in shorts and t-shirts, carrying backpacks, pose next to a trail sign in the snow.",They are all women.,"4. Premise: Two men and a woman in shorts and t-shirts, carrying backpacks, pose next to a trail sign in the snow.
+Hypothesis: They are all women.
+
+The premise describes two men and a woman posing next to a trail sign. The hypothesis states that they are all women. The information provided in the premise supports the hypothesis, as it mentions the presence of a woman among the individuals mentioned. Therefore, the correct answer is ""entailment"".
+
+"
+4,Two women in sunglasses are crossing a street in a city.,Nobody has sunglasses.,"5. Premise: Two women in sunglasses are crossing a street in a city.
+Hypothesis: Nobody has sunglasses.
+
+The premise states that two women are crossing a street in sunglasses. The hypothesis states that nobody has sunglasses. This contradicts the information provided in the premise, which clearly mentions that the women are wearing sunglasses. Therefore, the correct answer is ""contradiction"".
+
+"
+5,A man in white shirt and jeans leans over with locked legs to paint the top of a building overlooking a gated yard.,The man is walking down the street,"6. Premise: A man in white shirt and jeans leans over with locked legs to paint the top of a building overlooking a gated yard.
+Hypothesis: The man is walking down the street.
+
+The premise describes a man leaning over to paint the top of a building. There is no information provided about the man walking down the street. Therefore, there is no clear relationship between the premise and the hypothesis. The correct answer is ""neutral"".
+
+"
+6,A couple takes a picture of themselves kissing in front of tulips.,The couple kiss in front of Mickey Mouse.,"7. Premise: A couple takes a picture of themselves kissing in front of tulips.
+Hypothesis: The couple kiss in front of Mickey Mouse.
+
+The premise describes a couple taking a picture of themselves kissing in front of tulips. The hypothesis states that the couple kiss in front of Mickey Mouse. There is no information provided about the couple being in front of Mickey Mouse. Therefore, there is no clear relationship between the premise and the hypothesis. The correct answer is ""neutral"".
+
+"
+7,Black people dancing in a Boston square.,Children are doing a may day dance.,"8. Premise: Black people dancing in a Boston square.
+Hypothesis: Children are doing a May Day dance.
+
+The premise describes black people dancing in a Boston square. The hypothesis states that children are doing a May Day dance. There is no information provided about the race of the people or the age of the dancers. Therefore, there is no clear relationship between the premise and the hypothesis. The correct answer is ""neutral"".
+
+"
+8,"A young female softball outfielder has just thrown a ball, while players run to their bases.",Nobody is throwing,"9. Premise: A young female softball outfielder has just thrown a ball, while players run to their bases.
+Hypothesis: Nobody is throwing.
+
+The premise states that a young female softball outfielder has just thrown a ball. The hypothesis states that nobody is throwing. This contradicts the information provided in the premise, which clearly mentions the outfielder throwing a ball. Therefore, the correct answer is ""contradiction"".
+
+"
+9,The sun is setting behind a group of people.,The run is rising in front of the people.,"10. Premise: The sun is setting behind a group of people.
+Hypothesis: The run is rising in front of the people.
+
+The premise describes the sun setting behind a group of people. The hypothesis states that the run is rising in front of the people. This contradicts the information provided in the premise, which clearly mentions the sun setting behind the people. Therefore, the correct answer is ""contradiction""."
+10,A group of people walking together.,A single man sitting in the park.,"1. Premise: A group of people walking together.
+   Hypothesis: A single man sitting in the park.
+   The premise of a group of people walking together does not necessarily contradict the hypothesis of a single man sitting in the park. The two statements can coexist without any contradiction. Therefore, the correct answer is ""neutral""."
+11,A smiling boy slides down a rope while hanging on.,The smiling boy sits on the floor while other people play.,"2. Premise: A smiling boy slides down a rope while hanging on.
+   Hypothesis: The smiling boy sits on the floor while other people play.
+   The premise of a smiling boy sliding down a rope does not entail or contradict the hypothesis of the smiling boy sitting on the floor while other people play. The two statements are unrelated and do not demonstrate a logical connection. Therefore, the correct answer is ""neutral""."
+12,A woman in a blue shirt in a crowd.,A woman wearing a blue shirt and blue jeans is in a crowd.,"3. Premise: A woman in a blue shirt in a crowd.
+   Hypothesis: A woman wearing a blue shirt and blue jeans is in a crowd.
+   The premise of a woman in a blue shirt does entail the hypothesis of a woman wearing a blue shirt and blue jeans. The hypothesis provides additional information that aligns with the premise. Therefore, the correct answer is ""entailment""."
+13,"Man in a long-sleeved black shirt, appears to be engaged in dance, in front of a blue sign that entails information about specific locations.",A man is playing video games inside.,"4. Premise: Man in a long-sleeved black shirt, appears to be engaged in dance, in front of a blue sign that entails information about specific locations.
+   Hypothesis: A man is playing video games inside.
+   The premise of a man engaged in dance does not entail or contradict the hypothesis of a man playing video games inside. The two statements do not have a clear and direct logical connection. Therefore, the correct answer is ""neutral""."
+14,"Two women sitting under a tent, one with shirt red-hair, dark clothes drinking and the other laying down playing the guitar in a green top and jean peddle pushers both barefoot.",The women are standing.,"5. Premise: Two women sitting under a tent, one with red hair, dark clothes drinking and the other laying down playing the guitar in a green top and jean pedal pushers, both barefoot.
+   Hypothesis: The women are standing.
+   The premise of two women sitting under a tent does not entail or contradict the hypothesis of the women standing. The two statements are unrelated and do not demonstrate a logical connection. Therefore, the correct answer is ""neutral""."
+15,A man is kicking a soccer ball.,A man is practicing kicks for a soccer tornament.,"6. Premise: A man is kicking a soccer ball.
+   Hypothesis: A man is practicing kicks for a soccer tournament.
+   The premise of a man kicking a soccer ball does entail the hypothesis of a man practicing kicks for a soccer tournament. Practicing kicks is a common activity for preparing for a soccer tournament, so the two statements are logically connected. Therefore, the correct answer is ""entailment""."
+16,"Men wearing black wetsuits, swim caps and goggles, waiting behind a start line.",Men are about to compete in a race,"7. Premise: Men wearing black wetsuits, swim caps, and goggles, waiting behind a start line.
+   Hypothesis: Men are about to compete in a race.
+   The premise of men wearing wetsuits, swim caps, and goggles and waiting behind a start line does entail the hypothesis of men about to compete in a race. The context and equipment suggest a race is about to take place. Therefore, the correct answer is ""entailment""."
+17,Three people are hiking on a snowy trail.,A group of people hike during the hot summer weather.,"8. Premise: Three people are hiking on a snowy trail.
+   Hypothesis: A group of people hike during the hot summer weather.
+   The premise of three people hiking on a snowy trail does contradict the hypothesis of a group of people hiking during the hot summer weather. Hiking on a snowy trail suggests cold weather, while the hypothesis mentions hot summer weather. Therefore, the correct answer is ""contradiction""."
+18,"Two girls swing on with a boy, all three are wearing blue shirts of the same shade and blue jeans.",Three kids are wearing red shirts,"9. Premise: Two girls swing on with a boy, all three wearing blue shirts of the same shade and blue jeans.
+   Hypothesis: Three kids are wearing red shirts.
+   The premise of the two girls and a boy wearing blue shirts and blue jeans does contradict the hypothesis of three kids wearing red shirts. The clothing colors mentioned in the premise directly oppose the colors mentioned in the hypothesis. Therefore, the correct answer is ""contradiction""."
+19,Three men in orange vests are pulling a jeep out of a ravine while another man sits inside.,Four men are pulling a jeep out of a ravine.,"10. Premise: Three men in orange vests are pulling a jeep out of a ravine while another man sits inside.
+    Hypothesis: Four men are pulling a jeep out of a ravine.
+    The premise of three men pulling a jeep out of a ravine does not entail or contradict the hypothesis of four men pulling a jeep out of a ravine. The two statements suggest a similar scenario, but the exact number of men mentioned differs. Therefore, the correct answer is ""neutral""."
+20,Butchered meat hangs from an a-frame rack in front of a doorway.,meat hangs in doorway,"1. Premise: Butchered meat hangs from an a-frame rack in front of a doorway.
+Hypothesis: Meat hangs in doorway.
+
+This is a contradiction. The premise clearly states that the meat hangs from an a-frame rack, not from the doorway. Therefore, the hypothesis that the meat hangs in the doorway contradicts the given information.
+
+"
+21,"A child, roughly ten years old, playing a video game on an old style computer.",The child is watching a movie.,"2. Premise: A child, roughly ten years old, playing a video game on an old style computer.
+Hypothesis: The child is watching a movie.
+
+This is a neutral statement. The premise provides information about the child playing a video game, but it does not give any indication about whether or not the child is also watching a movie. There is no direct contradiction or support for the hypothesis.
+
+"
+22,A blue rally car pulls away from the spectators watching from the side of the track.,A blue rally car driving towards the side of the track.,"3. Premise: A blue rally car pulls away from the spectators watching from the side of the track.
+Hypothesis: A blue rally car driving towards the side of the track.
+
+This is a neutral statement. The premise states that the blue rally car pulls away from the spectators, but it does not give any indication about whether or not the car is also driving towards the side of the track. There is no direct contradiction or support for the hypothesis.
+
+"
+23,A city street has many signs in Chinese.,A street in Chinatown have many Chinese stores.,"4. Premise: A city street has many signs in Chinese.
+Hypothesis: A street in Chinatown have many Chinese stores.
+
+This is an entailment. The premise states that the city street has many signs in Chinese, which implies that there is a strong presence of Chinese culture in that area. It is likely that a street in Chinatown, which is known for its Chinese influence, would have many Chinese stores. Therefore, the hypothesis is supported by the given information.
+
+"
+24,"A woman squatting in the grass is smiling at a little boy, as he smiles and raises his hands in the air.",The woman is angrily screaming at the little boy.,"5. Premise: A woman squatting in the grass is smiling at a little boy, as he smiles and raises his hands in the air.
+Hypothesis: The woman is angrily screaming at the little boy.
+
+This is a contradiction. The premise describes a woman squatting in the grass and smiling at a little boy. This behavior does not align with the hypothesis that the woman is angrily screaming at the little boy. Therefore, the hypothesis contradicts the given information.
+
+"
+25,Girl and boy serving food on plate,Two girls are serving food.,"6. Premise: Girl and boy serving food on plate.
+Hypothesis: Two girls are serving food.
+
+This is an entailment. The premise states that a girl and a boy are serving food on a plate. It is possible for two girls to be serving food, as one of the girls in the premise could be assumed to be a second girl. Therefore, the hypothesis is supported by the given information.
+
+"
+26,A basketball player slam dunks the ball as his body goes sideways; as several people look on.,The ball player is competing in a slam dunk competition.,"7. Premise: A basketball player slam dunks the ball as his body goes sideways; as several people look on. Hypothesis: The basketball player is competing in a slam dunk competition.  This is a neutral statement. The premise describes a basketball player slam dunking the ball, but it does not provide any information about whether or not the basketball player is competing in a slam dunk competition. There is no direct contradiction or support for the hypothesis.  "
+27,A crowd of people is walking through a parking lot at night.,There are people swimming in a pool.,"8. Premise: A crowd of people is walking through a parking lot at night.
+Hypothesis: There are people swimming in a pool.
+
+This is a neutral statement. The premise describes a crowd of people walking through a parking lot, but it does not give any indication about whether or not there are people swimming in a pool. There is no direct contradiction or support for the hypothesis.
+
+"
+28,A woman in a blue shirt playing a wind instrument.,The woman is old,"9. Premise: A woman in a blue shirt playing a wind instrument.
+Hypothesis: The woman is old.
+
+This is a neutral statement. The premise describes a woman in a blue shirt playing a wind instrument, but it does not provide any information about the age of the woman. There is no direct contradiction or support for the hypothesis.
+
+"
+29,"A person is sitting behind a old, black Singer sewing machine with a note taped to their dress.",The sewing machine is not made by Singer.,"10. Premise: A person is sitting behind an old, black Singer sewing machine with a note taped to their dress.
+Hypothesis: The sewing machine is not made by Singer.
+
+This is a contradiction. The premise describes a person sitting behind an old, black Singer sewing machine, which implies that the sewing machine is indeed made by Singer. Therefore, the hypothesis that the sewing machine is not made by Singer contradicts the given information."
+30,a football player catching the football.,The football player is watching from the sidelines.,"1. Premise: a football player catching the football.
+   Hypothesis: The football player is watching from the sidelines.
+
+   The statement ""a football player catching the football"" does not necessarily imply that the football player is watching from the sidelines. The football player could be on the field catching the ball. Therefore, the correct answer is ""neutral"".
+
+"
+31,"A blond, blue-eyed toddler girl is dressed in pink and wearing a plaid pink bucket hat, and is eating an ice cream cone in the park on a cloudy day.","A blond, blue-eyed toddler girl is dressed in green and wearing a plaid pink bucket hat, and is eating an ice cream cone in the park on a cloudy day.","2. Premise: A blond, blue-eyed toddler girl is dressed in pink and wearing a plaid pink bucket hat, and is eating an ice cream cone in the park on a cloudy day.
+   Hypothesis: A blond, blue-eyed toddler girl is dressed in green and wearing a plaid pink bucket hat, and is eating an ice cream cone in the park on a cloudy day.
+
+   The premise states that the toddler girl is dressed in pink and wearing a plaid pink bucket hat. The hypothesis states that the girl is dressed in green and wearing a plaid pink bucket hat. These statements are contradictory, as the premise and hypothesis have conflicting information about the color of the girl's clothes. Therefore, the correct answer is ""contradiction"".
+
+"
+32,A red shirted boy and a black dog with a Frisbee run in the green grass.,The boy is wearing a green shirt and has a white dog.,"3. Premise: A red shirted boy and a black dog with a Frisbee run in the green grass.
+   Hypothesis: The boy is wearing a green shirt and has a white dog.
+
+   The premise states that the boy is wearing a red shirt and the hypothesis states that the boy is wearing a green shirt. These statements are contradictory, as they provide conflicting information about the color of the boy's shirt. Therefore, the correct answer is ""contradiction"".
+
+"
+33,A young woman sitting on a large tool chest paints her face silver.,The woman is removing her makeup.,"4. Premise: A young woman sitting on a large tool chest paints her face silver.
+   Hypothesis: The woman is removing her makeup.
+
+   The premise states that the woman is painting her face silver, while the hypothesis states that she is removing her makeup. These statements are contradictory, as they provide conflicting information about the woman's actions. Therefore, the correct answer is ""contradiction"".
+
+"
+34,A young boy raking leaves.,The boy is watching TV.,"5. Premise: A young boy raking leaves.
+   Hypothesis: The boy is watching TV.
+
+   The premise states that the boy is raking leaves, while the hypothesis states that he is watching TV. These statements are contradictory, as they provide conflicting information about the boy's activity. Therefore, the correct answer is ""contradiction"".
+
+"
+35,A person is performing a rollerblading trick as other people skate and run nearby.,The person is asleep.,"6. Premise: A person is performing a rollerblading trick as other people skate and run nearby.
+   Hypothesis: The person is asleep.
+
+   The premise states that the person is performing a rollerblading trick, while the hypothesis states that he is asleep. These statements are contradictory, as they provide conflicting information about the person's state. Therefore, the correct answer is ""contradiction"".
+
+"
+36,A pageant girl posing in a black dress and black heels in front of a run downtown.,A male is posing for a senior photo.,"7. Premise: A pageant girl posing in a black dress and black heels in front of a run downtown.
+   Hypothesis: A male is posing for a senior photo.
+
+   The premise states that a pageant girl is posing in a black dress and black heels, while the hypothesis states that a male is posing for a senior photo. These statements are not directly contradictory, as they could be referring to different individuals. Therefore, the correct answer is ""neutral"".
+
+"
+37,A man in a patriotic t-shirt and baseball cap holding up a protest sign.,The man is not holding anything.,"8. Premise: A man in a patriotic t-shirt and baseball cap holding up a protest sign.
+   Hypothesis: The man is not holding anything.
+
+   The premise states that the man is holding up a protest sign, while the hypothesis states that he is not holding anything. These statements are contradictory, as they provide conflicting information about whether or not the man is holding something. Therefore, the correct answer is ""contradiction"".
+
+"
+38,The kid is in front of a car with a put and a ball.,The kid is standing behind the car.,"9. Premise: The kid is in front of a car with a put and a ball.
+   Hypothesis: The kid is standing behind the car.
+
+   The premise states that the kid is in front of a car, while the hypothesis states that he is standing behind the car. These statements are not directly contradictory, as they could be referring to different positions of the kid relative to the car. Therefore, the correct answer is ""neutral"".
+
+"
+39,A man on a boat feeding many water birds and two parents in chairs with their little girl on the side.,Nobdoy is feeding.,"10. Premise: A man on a boat feeding many water birds and two parents in chairs with their little girl on the side.
+    Hypothesis: Nobody is feeding.
+
+    The premise states that a man is feeding water birds, while the hypothesis states that nobody is feeding. These statements are contradictory, as they provide conflicting information about whether or not someone is feeding. Therefore, the correct answer is ""contradiction""."
+40,A man in a bright green flux shirt walks along a crowded sidewalk under metal scaffolding at night.,A man has no shirt on.,"1. Premise: A man in a bright green flux shirt walks along a crowded sidewalk under metal scaffolding at night.
+Hypothesis: A man has no shirt on.
+
+Conditional statement: If a man is wearing a bright green flux shirt and walking along a crowded sidewalk under metal scaffolding at night, then he does not have a shirt on.
+
+Reasoning: The premise clearly states that the man is wearing a bright green flux shirt. It does not mention anything about him not having a shirt on. Therefore, the hypothesis contradicts the premise, as it states that the man does not have a shirt on while the premise states that he is wearing a shirt. This is a contradiction.
+
+Answer: Contradiction
+
+"
+41,Two construction workers are digging up pavement on a road.,Two construction workers are sitting.,"2. Premise: Two construction workers are digging up pavement on a road.
+Hypothesis: Two construction workers are sitting.
+
+Conditional statement: If two construction workers are digging up pavement on a road, then they are not sitting.
+
+Reasoning: The premise clearly states that the construction workers are digging up pavement on a road. It does not mention anything about them sitting. Therefore, the hypothesis contradicts the premise, as it states that the workers are sitting while the premise states that they are digging. This is a contradiction.
+
+Answer: Contradiction
+
+"
+42,"A boy, wearing a gray shirt and black pants, is bowling with a black bowling ball with only two pins left to knock down.",The boy is sleeping.,"3. Premise: A boy, wearing a gray shirt and black pants, is bowling with a black bowling ball with only two pins left to knock down.
+Hypothesis: The boy is sleeping.
+
+Conditional statement: If a boy is bowling with a black bowling ball and only has two pins left to knock down, then he is not sleeping.
+
+Reasoning: The premise clearly states that the boy is bowling with a black bowling ball and has two pins left to knock down. It does not mention anything about him sleeping. Therefore, the hypothesis contradicts the premise, as it states that the boy is sleeping while the premise states that he is bowling. This is a contradiction.
+
+Answer: Contradiction
+
+"
+43,A SCUBA diver swimming deep underwater with a turtle.,There is no turtle near the scuba diver.,"4. Premise: A SCUBA diver swimming deep underwater with a turtle.
+Hypothesis: There is no turtle near the SCUBA diver.
+
+Conditional statement: If a SCUBA diver is swimming deep underwater with a turtle, then there is a turtle near the SCUBA diver.
+
+Reasoning: The premise clearly states that the SCUBA diver is swimming deep underwater with a turtle. It confirms the presence of a turtle near the SCUBA diver. Therefore, the hypothesis is false, as it states that there is no turtle near the SCUBA diver. This is a contradiction.
+
+Answer: Contradiction
+
+"
+44,Three men in suits are posing for a photo with their hands together.,The men are inside a pool.,"5. Premise: Three men in suits are posing for a photo with their hands together.
+Hypothesis: The men are inside a pool.
+
+Conditional statement: If three men in suits are posing for a photo with their hands together, then they are not inside a pool.
+
+Reasoning: The premise clearly states that the men are posing for a photo with their hands together. It does not mention anything about them being inside a pool. Therefore, the hypothesis contradicts the premise, as it states that the men are inside a pool while the premise states that they are posing for a photo. This is a contradiction.
+
+Answer: Contradiction
+
+"
+45,A man is fishing at dusk off of a rocky pier.,A man is swimming.,"6. Premise: A man is fishing at dusk off of a rocky pier.
+Hypothesis: A man is swimming.
+
+Conditional statement: If a man is fishing at dusk off of a rocky pier, then he is not swimming.
+
+Reasoning: The premise clearly states that the man is fishing at dusk off of a rocky pier. It does not mention anything about him swimming. Therefore, the hypothesis contradicts the premise, as it states that the man is swimming while the premise states that he is fishing. This is a contradiction.
+
+Answer: Contradiction
+
+"
+46,A young boy jumps in a swimming pool towards a bald man in the water.,A boy jumps into an empty swimming pool,"7. Premise: A young boy jumps in a swimming pool towards a bald man in the water.
+Hypothesis: A boy jumps into an empty swimming pool.
+
+Conditional statement: If a young boy jumps in a swimming pool towards a bald man in the water, then the swimming pool is not empty.
+
+Reasoning: The premise clearly states that the young boy jumps in a swimming pool towards a bald man in the water. It confirms the presence of a bald man in the water. Therefore, the hypothesis is false, as it states that the swimming pool is empty. This is a contradiction.
+
+Answer: Contradiction
+
+"
+47,A tired man is sleeping on his motorcycle on the side of the road.,The man is awake.,"8. Premise: A tired man is sleeping on his motorcycle on the side of the road.
+Hypothesis: The man is awake.
+
+Conditional statement: If a tired man is sleeping on his motorcycle on the side of the road, then he is not awake.
+
+Reasoning: The premise clearly states that the tired man is sleeping on his motorcycle on the side of the road. It confirms that he is not awake. Therefore, the hypothesis is false, as it states that the man is awake while the premise states that he is sleeping. This is a contradiction.
+
+Answer: Contradiction
+
+"
+48,A man is standing in front of an open laundry machine and it looks like someone is explaining to him how the laundry machine works.,Nobody is standing,"9. Premise: A man is standing in front of an open laundry machine and it looks like someone is explaining to him how the laundry machine works.
+Hypothesis: Nobody is standing.
+
+Conditional statement: If a man is standing in front of an open laundry machine and it looks like someone is explaining to him how the laundry machine works, then somebody is standing.
+
+Reasoning: The premise clearly states that a man is standing in front of an open laundry machine and someone is explaining to him how it works. It confirms the presence of somebody standing. Therefore, the hypothesis is false, as it states that nobody is standing while the premise states that somebody is standing. This is a contradiction.
+
+Answer: Contradiction
+
+"
+49,A boxer in red with an intricate tattoo gives his opponent a right hook to the head.,Two men are hugging.,"10. Premise: A boxer in red with an intricate tattoo gives his opponent a right hook to the head.
+Hypothesis: Two men are hugging.
+
+Conditional statement: If a boxer in red with an intricate tattoo gives his opponent a right hook to the head, then two men are not hugging.
+
+Reasoning: The premise clearly states that the boxer gives his opponent a right hook to the head. It does not mention anything about two men hugging. Therefore, the hypothesis contradicts the premise, as it states that two men are hugging while the premise states that the boxer is throwing a punch. This is a contradiction.
+
+Answer: Contradiction"
+50,Two women stand under a striped umbrella while a man in a striped shirt and jeans and a woman in blue walk in the rain.,The people are walking on a sunny day.,"1. Premise: Two women stand under a striped umbrella while a man in a striped shirt and jeans and a woman in blue walk in the rain.
+Hypothesis: The people are walking on a sunny day.
+
+Based on the given premise, it indicates that it is raining since the people are walking in the rain and using an umbrella. This contradicts the hypothesis that the people are walking on a sunny day. Therefore, the correct answer is ""contradiction"".
+
+"
+51,Two brown dogs play with one another in the field.,Two black dogs are playing with one another.,"2. Premise: Two brown dogs play with one another in the field.
+Hypothesis: Two black dogs are playing with one another.
+
+The premise states that two brown dogs are playing with each other. It does not provide any information about the color of the dogs. Therefore, the hypothesis about two black dogs playing with each other is unrelated to the premise. Hence, the correct answer is ""neutral"".
+
+"
+52,A group of little girls wearing headscarfs pose for a group picture.,The group is all boys.,"3. Premise: A group of little girls wearing headscarfs pose for a group picture.
+Hypothesis: The group is all boys.
+
+The premise explicitly states that the group consists of little girls wearing headscarfs, which implies that the group is all girls. This contradicts the hypothesis that the group is all boys. Thus, the correct answer is ""contradiction"".
+
+"
+53,"One man sits inside and plays the banjo, there are trees behind him outside.",A man runs outside.,"4. Premise: One man sits inside and plays the banjo, there are trees behind him outside.
+Hypothesis: A man runs outside.
+
+The premise mentions that one man is sitting inside and playing the banjo, while trees are present outside. It does not provide any information about the man running outside. Hence, the hypothesis and premise are unrelated. Therefore, the correct answer is ""neutral"".
+
+"
+54,A woman is balancing several items on her head that are in bags.,The woman carries her bags on her arm.,"5. Premise: A woman is balancing several items on her head that are in bags.
+Hypothesis: The woman carries her bags on her arm.
+
+The premise states that the woman is balancing several items on her head using bags. It does not provide any information about how she carries her bags on her arm. Therefore, the hypothesis is unrelated to the premise. Thus, the correct answer is ""neutral"".
+
+"
+55,An older white man in a black cowboy hat sings into a microphone.,The man is sitting in silence.,"6. Premise: An older white man in a black cowboy hat sings into a microphone.
+Hypothesis: The man is sitting in silence.
+
+The premise explicitly states that the man sings into a microphone, indicating that he is not silent. Therefore, the hypothesis that the man is sitting in silence contradicts the premise. Hence, the correct answer is ""contradiction"".
+
+"
+56,"Five people wearing winter clothing, helmets, and ski goggles stand outside in the snow.",The people are naked in a pond in winter.,"7. Premise: Five people wearing winter clothing, helmets, and ski goggles stand outside in the snow.
+Hypothesis: The people are naked in a pond in winter.
+
+The premise specifies that the people are wearing winter clothing, helmets, and ski goggles while standing outside in the snow. It contradicts the hypothesis that the people are naked in a pond in winter. This is because the premise provides evidence of them wearing clothing. Therefore, the correct answer is ""contradiction"".
+
+"
+57,Two young women pose and smile in a darkly lit area.,two women are frowning,"8. Premise: Two young women pose and smile in a darkly lit area.
+Hypothesis: Two women are frowning.
+
+The premise states that the two young women are posing and smiling. It does not give any indication about them frowning. Thus, the hypothesis about the women frowning is unrelated to the premise. Therefore, the correct answer is ""neutral"".
+
+"
+58,Four females are doing some crafts activity.,Four women are working out at the gym.,"9. Premise: Four females are doing some crafts activity.
+Hypothesis: Four women are working out at the gym.
+
+The premise states that four females are engaged in a crafts activity. It does not give any information about them working out at the gym. Therefore, the hypothesis about them working out at the gym is unrelated to the premise. Hence, the correct answer is ""neutral"".
+
+"
+59,There are two policemen walking down a semi-crowded street with batons along side a man wearing a blue and white plaid shirt.,The shirt is black.,"10. Premise: There are two policemen walking down a semi-crowded street with batons alongside a man wearing a blue and white plaid shirt.
+Hypothesis: The shirt is black.
+
+Based on the premise, it states that the man is wearing a blue and white plaid shirt, but it does not mention anything about the color black. Therefore, the hypothesis about the shirt being black is unrelated to the premise. Thus, the correct answer is ""neutral""."
+60,a man selling handmade fans that are spread out on the sidewalk,The man is inside his house.,"1. Premise: a man selling handmade fans that are spread out on the sidewalk.
+   Hypothesis: The man is inside his house.
+
+The premise indicates that the man is actively selling handmade fans on the sidewalk. It does not provide any information about the man being inside his house. Therefore, there is no contradiction or entailment between the premise and the hypothesis. The answer is ""neutral"".
+
+"
+61,Two kids wearing white robes are practicing martial arts; boy on the left has blond-hair and is blocking a punch thrown by the dark-haired boy on the right.,The boys are practicing martial arts.,"2. Premise: Two kids wearing white robes are practicing martial arts; boy on the left has blond-hair and is blocking a punch thrown by the dark-haired boy on the right.    Hypothesis: The boys are practicing martial arts.  The premise describes two kids wearing white robes who are actively engaged in martial arts practice, with one boy blocking a punch. This aligns with the hypothesis that the boys are practicing martial arts. The premise supports and entails the hypothesis. The answer is ""entailment"".  "
+62,A man sitting in a black chair next to a keyboard.,A man standing next to a keyboard,"3. Premise: A man sitting in a black chair next to a keyboard.
+   Hypothesis: A man standing next to a keyboard.
+
+The premise states that the man is sitting in a chair next to a keyboard. This does not contradict the hypothesis that the man is standing next to a keyboard. The premise does not provide enough information to confirm or contradict the hypothesis. The answer is ""neutral"".
+
+"
+63,A blond women is laying down on a purple over stuffed cushion.,A woman is laying down on a purple over stuffed cushion.,"4. Premise: A blond woman is laying down on a purple over stuffed cushion.
+   Hypothesis: A woman is laying down on a purple over stuffed cushion.
+
+The premise explicitly states that a blond woman is laying down on a purple overstuffed cushion, exactly matching the hypothesis. The premise supports and entails the hypothesis. The answer is ""entailment"".
+
+"
+64,Three naked little boys are playing in a river and are covered in mud; one is standing up.,Three boys are playing in mud while one looks on.,"5. Premise: Three naked little boys are playing in a river and are covered in mud; one is standing up.    Hypothesis: Three boys are playing in mud while one looks on.  The premise describes three naked little boys who are playing in a river and covered in mud, with one of them standing up. This aligns with the hypothesis that three boys are playing in the mud while one looks on. The premise supports and entails the hypothesis. The answer is ""entailment"".  "
+65,There are a crowd of people sitting underneath shady trees.,Everyone is standing up.,"6. Premise: There is a crowd of people sitting underneath shady trees.
+   Hypothesis: Everyone is standing up.
+
+The premise states that there is a crowd of people sitting underneath shady trees. This contradicts the hypothesis that everyone is standing up. The actions described in the premise do not align with the hypothesis. The premise and hypothesis are in contradiction. The answer is ""contradiction"".
+
+"
+66,A man is aiming a gun at a firing range.,The man is holding a sword.,"7. Premise: A man is aiming a gun at a firing range.
+   Hypothesis: The man is holding a sword.
+
+The premise indicates that a man is aiming a gun at a firing range. It does not provide any information about the man holding a sword. Therefore, there is no contradiction or entailment between the premise and the hypothesis. The answer is ""neutral"".
+
+"
+67,A woman wearing black pants and a yellow shirt is holding a sign with 2e3 written in bold yellow.,A woman not wearing black pants and a yellow shirt,"8. Premise: A woman wearing black pants and a yellow shirt is holding a sign with 2e3 written in bold yellow.
+   Hypothesis: A woman not wearing black pants and a yellow shirt.
+
+The premise describes a woman wearing specific clothing while holding a sign. This contradicts the hypothesis that the woman is not wearing black pants and a yellow shirt. The premise and hypothesis are in contradiction. The answer is ""contradiction"".
+
+"
+68,A young girl is jumping on a gravel road near a pond.,The girl is sleeping.,"9. Premise: A young girl is jumping on a gravel road near a pond.
+   Hypothesis: The girl is sleeping.
+
+The premise states that a young girl is actively jumping on a gravel road near a pond. It contradicts the hypothesis that the girl is sleeping. The actions described in the premise do not align with the hypothesis. The premise and hypothesis are in contradiction. The answer is ""contradiction"".
+
+"
+69,A woman with glasses wearing a green knitted hat pushes a red baby stroller down an unpaved pathway.,Nobody is pushing,"10. Premise: A woman with glasses wearing a green knitted hat pushes a red baby stroller down an unpaved pathway.
+    Hypothesis: Nobody is pushing.
+
+The premise explicitly describes a woman actively pushing a red baby stroller. It contradicts the hypothesis that nobody is pushing. The premise and hypothesis are in contradiction. The answer is ""contradiction""."
+70,A boy jumping into the water.,"The boy is resting on the shore, soaking up the sun.","1. Premise: A boy jumping into the water.
+   Hypothesis: The boy is resting on the shore, soaking up the sun.
+   The premise ""A boy jumping into the water"" does not necessarily mean that the boy is resting on the shore. It is possible that after jumping into the water, the boy could be swimming or doing any other activity in the water. Therefore, the correct answer is ""neutral"" as there is no clear entailment or contradiction between the premise and hypothesis."
+71,Two scantily-clad women on a city sidewalk.,The two women are outside,"2. Premise: Two scantily-clad women on a city sidewalk.
+   Hypothesis: The two women are outside.
+   Given the premise ""Two scantily-clad women on a city sidewalk"" and the hypothesis ""The two women are outside,"" it can be inferred that the women are indeed outside. Being on a city sidewalk implies being outside, as sidewalks are typically located outdoors. Therefore, the correct answer is ""entailment"" as the premise logically leads to the hypothesis."
+72,A boy is flying down a snow covered slope on his sled.,A boy is skiing.,"3. Premise: A boy is flying down a snow-covered slope on his sled.
+   Hypothesis: A boy is skiing.
+   The premise ""A boy is flying down a snow-covered slope on his sled"" does not provide any information about the boy skiing. It is possible that the boy is sledding, but there is no direct indication of skiing in the premise. Therefore, the correct answer is ""neutral"" as there is no clear entailment or contradiction between the premise and hypothesis."
+73,Two boys in red swim trunks hold each other in the water.,Two boys in red bathing suits sitting on the side of a pool.,"4. Premise: Two boys in red swim trunks hold each other in the water.
+   Hypothesis: Two boys in red bathing suits sitting on the side of a pool.
+   The premise ""Two boys in red swim trunks hold each other in the water"" does not align with the hypothesis of two boys sitting on the side of a pool. Holding each other in the water implies an action taking place in the water, while sitting on the side of a pool suggests being out of the water. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+74,A man in a hat plays an unusual instrument for cash next to the metro exit.,The man is working in an office.,"5. Premise: A man in a hat plays an unusual instrument for cash next to the metro exit.
+   Hypothesis: The man is working in an office.
+   The premise ""A man in a hat plays an unusual instrument for cash next to the metro exit"" suggests that the man is engaged in street performance for money. Meanwhile, the hypothesis of the man working in an office implies a completely different setting and activity. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+75,A man is raised in a bucket crane to another man waiting to repair a sign.,A man in a bucket crane fell out to the ground.,"6. Premise: A man is raised in a bucket crane to another man waiting to repair a sign.
+   Hypothesis: A man in a bucket crane fell out to the ground.
+   The premise ""A man is raised in a bucket crane to another man waiting to repair a sign"" does not provide any information about the man falling out of the bucket crane. While it is possible for accidents to happen, the premise only describes the process of raising the man in the crane. Therefore, the correct answer is ""neutral"" as there is no clear entailment or contradiction between the premise and hypothesis."
+76,The traffic light could be dangerous the way it is hung.,The traffic light is secure.,"7. Premise: The traffic light could be dangerous the way it is hung.
+   Hypothesis: The traffic light is secure.
+   The premise ""The traffic light could be dangerous the way it is hung"" suggests that there might be a potential safety issue with the traffic light. On the other hand, the hypothesis states that the traffic light is secure, implying that there is no safety concern. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+77,A man in a center of travel is carrying many things.,A man is holding nothing,"8. Premise: A man in a center of travel is carrying many things.
+   Hypothesis: A man is holding nothing.
+   The premise ""A man in a center of travel is carrying many things"" implies that the man is holding multiple items. The hypothesis, which states that the man is holding nothing, contradicts this premise. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+78,A young male is doing a bike trick on a bridge in the evening.,A young male doing a bike trick in the afternoon.,"9. Premise: A young male is doing a bike trick on a bridge in the evening.
+   Hypothesis: A young male doing a bike trick in the afternoon.
+   The premise ""A young male is doing a bike trick on a bridge in the evening"" suggests that the bike trick is happening in the evening. The hypothesis, which states that the bike trick is happening in the afternoon, contradicts this premise. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+79,The people are on the beach viewing the beauty of the ocean using a telescope.,There is no one on the beach.,"10. Premise: The people are on the beach viewing the beauty of the ocean using a telescope.
+    Hypothesis: There is no one on the beach.
+    The premise ""The people are on the beach viewing the beauty of the ocean using a telescope"" directly contradicts the hypothesis that there is no one on the beach. If people are on the beach and using a telescope, it implies that there are indeed people present. Therefore, the correct answer is ""contradiction"" as the premise contradicts the hypothesis."
+80,A person stands in the middle of traffic.,A person is sitting in the the middle of nowhere.,"1. Premise: A person stands in the middle of traffic.
+   Hypothesis: A person is sitting in the middle of nowhere.
+   
+   The hypothesis does not necessarily follow from the premise. Standing in the middle of traffic is not the same as sitting in the middle of nowhere. Therefore, the correct answer is ""neutral""."
+81,Two people tend their vegetable stand on the sidewalk in front of an open doorway.,No one is working the vegetable stand.,"2. Premise: Two people tend their vegetable stand on the sidewalk in front of an open doorway.
+   Hypothesis: No one is working the vegetable stand.
+   
+   The hypothesis contradicts the premise. If the premise states that two people are tending the vegetable stand, then the hypothesis that no one is working the vegetable stand contradicts the premise. Therefore, the correct answer is ""contradiction""."
+82,A man in a black dress is sitting and sleeping in a train.,The man is running through the field.,"3. Premise: A man in a black dress is sitting and sleeping in a train.
+   Hypothesis: The man is running through the field.
+   
+   The hypothesis contradicts the premise. If the premise states that the man is sitting and sleeping in a train, then the hypothesis that the man is running through the field contradicts the premise. Therefore, the correct answer is ""contradiction""."
+83,This man is doing a back jump off diving board.,The man is watching tv indoors.,"4. Premise: This man is doing a back jump off diving board.
+   Hypothesis: The man is watching TV indoors.
+   
+   The hypothesis does not necessarily follow from the premise. Doing a back jump off a diving board does not imply that the man is watching TV indoors. Therefore, the correct answer is ""neutral""."
+84,A group of children play in the water under a bridge.,The children are running in the field.,"5. Premise: A group of children play in the water under a bridge.
+   Hypothesis: The children are running in the field.
+   
+   The hypothesis contradicts the premise. If the premise states that the children are playing in the water under a bridge, then the hypothesis that the children are running in the field contradicts the premise. Therefore, the correct answer is ""contradiction""."
+85,There are 2 shirtless boys jumping up from some water looking at a soccer ball.,Two boys are playing soccer on a field,"6. Premise: There are 2 shirtless boys jumping up from some water looking at a soccer ball.
+   Hypothesis: Two boys are playing soccer on a field.
+   
+   The hypothesis follows logically from the premise. If the premise states that there are two shirtless boys looking at a soccer ball, then the hypothesis that the two boys are playing soccer on a field is a reasonable conclusion. Therefore, the correct answer is ""entailment""."
+86,Three boys playing in the ocean.,They are in a pond.,"7. Premise: Three boys playing in the ocean.
+   Hypothesis: They are in a pond.
+   
+   The hypothesis contradicts the premise. If the premise states that the boys are playing in the ocean, then the hypothesis that they are in a pond contradicts the premise. Therefore, the correct answer is ""contradiction""."
+87,A photographer takes a picture of a group of one girl in a pink dress and 10 boys in suits and hats.,A photographer is taking a picture with only boys in it.,"8. Premise: A photographer takes a picture of a group of one girl in a pink dress and 10 boys in suits and hats.
+   Hypothesis: A photographer is taking a picture with only boys in it.
+   
+   The hypothesis does not necessarily follow from the premise. The premise states that there is one girl and 10 boys in the picture, but it does not imply that the photographer is taking a picture with only boys in it. Therefore, the correct answer is ""neutral""."
+88,Three people stand at a red cart.,Three people are standing in a cart.,"9. Premise: Three people stand at a red cart.
+   Hypothesis: Three people are standing in a cart.
+   
+   The hypothesis contradicts the premise. If the premise states that three people are standing at a red cart, then the hypothesis that three people are standing in a cart contradicts the premise. Therefore, the correct answer is ""contradiction""."
+89,A man and women dressed up as angels handing out flyers.,The people wore dragon costumes and handed out candy.,"10. Premise: A man and women dressed up as angels handing out flyers.
+    Hypothesis: The people wore dragon costumes and handed out candy.
+    
+    The hypothesis does not necessarily follow from the premise. The premise states that a man and a woman are dressed up as angels handing out flyers, but it does not imply that they wore dragon costumes and handed out candy. Therefore, the correct answer is ""neutral""."
+90,A classic propeller-driven airplane flies in the distance as two men play with a remote-controlled toy airplane in a field in the foreground.,Two men are playing with remote control airplanes that they collect.,"1. Premise: A classic propeller-driven airplane flies in the distance as two men play with a remote-controlled toy airplane in a field in the foreground.
+Hypothesis: Two men are playing with remote control airplanes that they collect.
+
+Explanation: The premise states that two men are playing with a remote-controlled toy airplane, which matches the hypothesis that they are playing with remote control airplanes. Therefore, the premise entails (supports) the hypothesis. 
+
+Answer: Entailment
+
+"
+91,A basket player is scoring.,The player has never scored a point.,"2. Premise: A basket player is scoring.
+Hypothesis: The player has never scored a point.
+
+Explanation: The premise states that a basket player is scoring, which contradicts the hypothesis that the player has never scored a point. A player who is currently scoring has scored at least one point in their career. Therefore, the premise contradicts the hypothesis.
+
+Answer: Contradiction
+
+"
+92,"A man wearing a yellow shirt is riding a large riding lawn mower, which is spraying cut grass behind him; pine trees are visible in the background.",A man wearing a purple shirt pushing a lawn mower.,"3. Premise: A man wearing a yellow shirt is riding a large riding lawn mower, which is spraying cut grass behind him; pine trees are visible in the background.
+Hypothesis: A man wearing a purple shirt pushing a lawn mower.
+
+Explanation: The premise describes a man wearing a yellow shirt riding a riding lawn mower, while the hypothesis claims that a man wearing a purple shirt is pushing a lawn mower. These two statements do not match, so the premise contradicts the hypothesis.
+
+Answer: Contradiction
+
+"
+93,Race cars are racing each other on a dirt racetrack and the green one is in the lead.,A car race on a dirt track.,"4. Premise: Race cars are racing each other on a dirt racetrack and the green one is in the lead.
+Hypothesis: A car race on a dirt track.
+
+Explanation: The premise describes race cars racing on a dirt racetrack and states that the green car is in the lead. This matches the hypothesis that there is a car race on a dirt track. Therefore, the premise entails the hypothesis.
+
+Answer: Entailment
+
+"
+94,A child with a water gun being sprayed with water.,A child playing outside with his brother in the sprinkler.,"5. Premise: A child with a water gun being sprayed with water.
+Hypothesis: A child playing outside with his brother in the sprinkler.
+
+Explanation: The premise states that a child with a water gun is being sprayed with water. This matches the hypothesis that a child is playing outside with his brother in the sprinkler. Therefore, the premise entails the hypothesis.
+
+Answer: Entailment
+
+"
+95,Luggage carts all lined up and ready to be moved.,Luggage carts awaiting a move.,"6. Premise: Luggage carts all lined up and ready to be moved.
+Hypothesis: Luggage carts awaiting a move.
+
+Explanation: The premise states that luggage carts are lined up and ready to be moved, which matches the hypothesis that luggage carts are awaiting a move. Therefore, the premise entails the hypothesis.
+
+Answer: Entailment
+
+"
+96,2 worker men with white helmets and orange shirts.,Two men work without shirts.,"7. Premise: 2 worker men with white helmets and orange shirts.
+Hypothesis: Two men work without shirts.
+
+Explanation: The premise describes two worker men with white helmets and orange shirts, while the hypothesis claims that two men work without shirts. These two statements do not match, so the premise contradicts the hypothesis.
+
+Answer: Contradiction
+
+"
+97,A bare chested man riding a surfboard on a wave in an ocean.,A man is surfing.,"8. Premise: A bare chested man riding a surfboard on a wave in an ocean.
+Hypothesis: A man is surfing.
+
+Explanation: The premise describes a bare-chested man riding a surfboard on a wave in an ocean, which matches the hypothesis that a man is surfing. Therefore, the premise entails the hypothesis.
+
+Answer: Entailment
+
+"
+98,Two children playing a game of checkers with toys in the background.,Two boys are playing chess.,"9. Premise: Two children playing a game of checkers with toys in the background.
+Hypothesis: Two boys are playing chess.
+
+Explanation: The premise states that two children are playing a game of checkers, while the hypothesis claims that two boys are playing chess. These two statements do not match, so the premise contradicts the hypothesis.
+
+Answer: Contradiction
+
+"
+99,A very happy looking man jumps up for a photo while people walk around him.,The man looked sour.,"10. Premise: A very happy looking man jumps up for a photo while people walk around him.
+Hypothesis: The man looked sour.
+
+Explanation: The premise describes a very happy looking man, while the hypothesis claims that the man looked sour. These two statements do not match, so the premise contradicts the hypothesis.
+
+Answer: Contradiction"
+100,A crowd of people watching a football game with a player wearing red and cheerleaders also wearing red.,The football game is being watched by no one.,"1. Premise: A crowd of people watching a football game with a player wearing red and cheerleaders also wearing red.
+   Hypothesis: The football game is being watched by no one.
+
+   The premise states that there is a crowd of people watching the football game. The presence of a crowd implies that there are people watching the game. Therefore, the premise contradicts the hypothesis that no one is watching the game. The correct answer is ""contradiction"".
+
+"
+101,People are enjoying a sunny day on a sandy beach by the ocean.,The rain is heavy.,"2. Premise: People are enjoying a sunny day on a sandy beach by the ocean.
+   Hypothesis: The rain is heavy.
+
+   The premise states that it is a sunny day on the beach. This implies that there is no rain or heavy rain. The hypothesis states that the rain is heavy. These statements are contradictory to each other. The correct answer is ""contradiction"".
+
+"
+102,The boy with the blue helmet is playing with other boy.,Both boys are wearing pink helmets.,"3. Premise: The boy with the blue helmet is playing with another boy.
+   Hypothesis: Both boys are wearing pink helmets.
+
+   The premise only mentions that one boy is wearing a blue helmet. It does not provide any information about the other boy's helmet. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+103,A man in a red shirt holding a backpack.,A man is sleeping.,"4. Premise: A man in a red shirt holding a backpack.
+   Hypothesis: A man is sleeping.
+
+   The premise only describes the man's appearance and activity of holding a backpack. It does not provide any information about whether the man is sleeping or not. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+104,An elderly man poses in a blue shirt and shorts.,An old man wearing jeans.,"5. Premise: An elderly man poses in a blue shirt and shorts.
+   Hypothesis: An old man wearing jeans.
+
+   The premise describes the elderly man's appearance in a blue shirt and shorts. It does not provide any information about whether he is wearing jeans or not. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+105,A man is scaling a large boulder at dusk.,A man is climbing with his wife.,"6. Premise: A man is scaling a large boulder at dusk.
+   Hypothesis: A man is climbing with his wife.
+
+   The premise states that a man is scaling a large boulder. It does not mention anything about whether he is climbing alone or with someone else. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+106,Two young women wearing white tank tops and skirts with British flag designs walking around outside.,two coworkers hang out and smoke,"7. Premise: Two young women wearing white tank tops and skirts with British flag designs walking around outside.
+   Hypothesis: Two coworkers hang out and smoke.
+
+   The premise describes two young women walking around outside, but it does not provide any information about whether they are coworkers or if they are smoking. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+107,A young man demonstrating his prowess in the martial arts for his girlfriend as she sits on a concrete wall that is part of a general seating area.,A young girl watches her boyfriend compete in a marital arts tournament.,"8. Premise: A young man demonstrating his prowess in the martial arts for his girlfriend as she sits on a concrete wall that is part of a general seating area.
+   Hypothesis: A young girl watches her boyfriend compete in a martial arts tournament.
+
+   The premise describes a young man demonstrating martial arts for his girlfriend. It implies that the young girl is watching her boyfriend, which aligns with the hypothesis. Therefore, the premise supports the hypothesis and there is an ""entailment"".
+
+"
+108,A small child stands in front of short white table.,A child is sitting on the couch.,"9. Premise: A small child stands in front of a short white table.
+   Hypothesis: A child is sitting on the couch.
+
+   The premise mentions that a small child is standing in front of a table, but it does not provide any information about whether the child is sitting on the couch or not. Therefore, the hypothesis cannot be confirmed or refuted based on the given premise. The correct answer is ""neutral"".
+
+"
+109,"man in orange shorts builds a sand castle, combining multiple pictures into one resulting in four copies of him.",A woman sunbathes on the beach.,"10. Premise: A man in orange shorts builds a sand castle, combining multiple pictures into one resulting in four copies of him.
+    Hypothesis: A woman sunbathes on the beach.
+
+    The premise describes a man building a sand castle and does not provide any information about a woman sunbathing on the beach. Therefore, there is no relationship between the premise and the hypothesis. The correct answer is ""neutral""."
+110,A black limo is parked next to a crowded staircase.,A limo is driving itself up a staircase.,"1. Premise: A black limo is parked next to a crowded staircase.
+Hypothesis: A limo is driving itself up a staircase.
+
+Explanation:
+The premise states that a black limo is parked next to a crowded staircase. There is no information given about the limo driving itself up a staircase. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+111,Two young men wearing sunglasses and white polo shirts are standing outdoors looking at newspapers.,The men are sitting on a couch.,"2. Premise: Two young men wearing sunglasses and white polo shirts are standing outdoors looking at newspapers.
+Hypothesis: The men are sitting on a couch.
+
+Explanation:
+The premise describes two young men standing outdoors looking at newspapers. There is no information given about the men sitting on a couch. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+112,A street performer entertains a crowd.,A performer is standing in a grassy field alone.,"3. Premise: A street performer entertains a crowd.
+Hypothesis: A performer is standing in a grassy field alone.
+
+Explanation:
+The premise states that a street performer entertains a crowd. There is no information given about the performer standing in a grassy field alone. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+113,One person is standing beside a tree with the sun shining through the leaves.,It is dark and cloudy outside.,"4. Premise: One person is standing beside a tree with the sun shining through the leaves.
+Hypothesis: It is dark and cloudy outside.
+
+Explanation:
+The premise describes one person standing beside a tree with the sun shining through the leaves. It implies that there is light and sunshine outside. Therefore, the hypothesis that it is dark and cloudy outside contradicts the information given in the premise.
+
+Answer: Contradiction
+
+"
+114,"Four people snowboarding, dressed warmly.",people are swimming,"5. Premise: Four people snowboarding, dressed warmly.
+Hypothesis: People are swimming.
+
+Explanation:
+The premise states that four people are snowboarding, dressed warmly. There is no information given about people swimming. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+115,"Overhead view of a living room with a man on one couch, sleeping, and a dog on another while a coffee table sits in the middle of the room.",The man and dog are outside are swimming.,"6. Premise: Overhead view of a living room with a man on one couch, sleeping, and a dog on another while a coffee table sits in the middle of the room.
+Hypothesis: The man and dog are outside swimming.
+
+Explanation:
+The premise describes an overhead view of a living room with a man sleeping on one couch and a dog on another. There is no information given about the man and dog being outside swimming. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+116,Two men wearing hats with a flame at the top.,The hats are plain in color.,"7. Premise: Two men wearing hats with a flame at the top.
+Hypothesis: The hats are plain in color.
+
+Explanation:
+The premise states that two men are wearing hats with a flame at the top. There is no information given about the hats being plain in color. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+117,A large woman with long pink hair dressed in black is laying on a tree trunk talking to a man who is crouched down next to her.,A woman sit alone under a tree.,"8. Premise: A large woman with long pink hair dressed in black is laying on a tree trunk talking to a man who is crouched down next to her.
+Hypothesis: A woman sits alone under a tree.
+
+Explanation:
+The premise describes a large woman with long pink hair dressed in black lying on a tree trunk and talking to a man. There is no information given about a woman sitting alone under a tree. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+118,Three Asian children sitting on a couch with tapestries hanging in the background.,The kids are black,"9. Premise: Three Asian children sitting on a couch with tapestries hanging in the background.
+Hypothesis: The kids are black.
+
+Explanation:
+The premise states that three Asian children are sitting on a couch with tapestries hanging in the background. There is no information given about the kids being black. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction
+
+"
+119,"Three kids practice martial arts, one has a yellow belt, on a red belt and the other a white belt.",Three back belts are practicing martial arts.,"10. Premise: Three kids practice martial arts, one has a yellow belt, one has a red belt, and the other has a white belt.
+Hypothesis: Three black belts are practicing martial arts.
+
+Explanation:
+The premise describes three kids practicing martial arts, each with a different belt color: yellow, red, and white. There is no information given about the kids having black belts. Therefore, the hypothesis is not supported by the given premise. This implies a contradiction between the premise and the hypothesis.
+
+Answer: Contradiction"
+120,Two boys are standing in their blue swimming trunks.,Two children are girls.,"1. Premise: Two boys are standing in their blue swimming trunks.
+   Hypothesis: Two children are girls.
+
+ In this case, the premise does not guarantee or imply anything about the gender of the children. It only provides information about the boys standing in their blue swimming trunks. Therefore, the correct answer is ""neutral"".
+
+"
+121,a man with no shirt holds a light pole as he stands on part of the stage.,The man has on a very tight shirt.,"2. Premise: A man with no shirt holds a light pole as he stands on part of the stage.
+   Hypothesis: The man has on a very tight shirt.
+
+ The premise states that the man has no shirt on, which contradicts the hypothesis that he has on a very tight shirt. It is not possible for the man to simultaneously have no shirt and wear a very tight shirt. Therefore, the correct answer is ""contradiction"".
+
+"
+122,A man washing windows in a harness and a dark blue shirt.,There are no windows.,"3. Premise: A man washing windows in a harness and a dark blue shirt.
+   Hypothesis: There are no windows.
+
+ The premise states that a man is washing windows in a harness and a dark blue shirt, which implies the existence of windows to be washed. Therefore, the hypothesis that there are no windows contradicts the premise. The correct answer is ""contradiction"".
+
+"
+123,A kid with a broken arm asleep in his bed,A kid plays on the porch of his home.,"4. Premise: A kid with a broken arm asleep in his bed.
+   Hypothesis: A kid plays on the porch of his home.
+
+ The premise describes a kid with a broken arm asleep in his bed, which means the kid is not playing on the porch. Therefore, the hypothesis that a kid plays on the porch of his home contradicts the premise. The correct answer is ""contradiction"".
+
+"
+124,Three men are sitting on chairs.,The men are dancing together on the dance floor.,"5. Premise: Three men are sitting on chairs.
+   Hypothesis: The men are dancing together on the dance floor.
+
+ The premise states that three men are sitting on chairs, which does not imply anything about them dancing together on the dance floor. The premise and the hypothesis do not contradict each other, but they also do not necessarily have any relationship. Therefore, the correct answer is ""neutral"".
+
+"
+125,A man in a hat is displaying pictures next to a skier in a blue hat.,The skier is not wearing a hat.,"6. Premise: A man in a hat is displaying pictures next to a skier in a blue hat.
+   Hypothesis: The skier is not wearing a hat.
+
+ The premise states that a skier in a blue hat is present, which implies that the skier is indeed wearing a hat. The hypothesis that the skier is not wearing a hat contradicts the premise. The correct answer is ""contradiction"".
+
+"
+126,Two children wearing winter hats and boots are standing on a beach talking to each other.,An empty beach.,"7. Premise: Two children wearing winter hats and boots are standing on a beach talking to each other.
+   Hypothesis: An empty beach.
+
+ The premise describes two children wearing winter hats and boots standing on a beach, which implies that the beach is not empty. Therefore, the hypothesis of an empty beach contradicts the premise. The correct answer is ""contradiction"".
+
+"
+127,An older Asian man is baking bread sticks in an oven.,A man is baking a cake.,"8. Premise: An older Asian man is baking bread sticks in an oven.
+   Hypothesis: A man is baking a cake.
+
+ The premise states that an older Asian man is baking bread sticks in an oven. It does not mention anything about another man baking a cake. Therefore, the premise and the hypothesis do not have any relationship, and there is no contradiction or implication. The correct answer is ""neutral"".
+
+"
+128,"On a rainy day, a woman holds an umbrella above a runner and gives her water.",A woman is walking down the beach in the sunshine.,"9. Premise: On a rainy day, a woman holds an umbrella above a runner and gives her water.
+   Hypothesis: A woman is walking down the beach in the sunshine.
+
+ The premise describes a woman holding an umbrella above a runner on a rainy day, which implies the absence of sunshine. Therefore, the hypothesis of a woman walking down the beach in the sunshine contradicts the premise. The correct answer is ""contradiction"".
+
+"
+129,A soccer goalie catching the ball as it tries to go into the goal.,A punter kicks the football down the field.,"10. Premise: A soccer goalie catching the ball as it tries to go into the goal.
+    Hypothesis: A punter kicks the football down the field.
+
+ The premise describes a soccer goalie catching the ball, which does not provide any information about a punter kicking the football down the field. The premise and the hypothesis do not contradict or imply anything about each other. The correct answer is ""neutral""."
+130,A man with a blue hat and a cane is sitting on a curb.,A hatless mam sitting on a curb.,"The correct answer is ""Contradiction.""  Reasoning: The premise explicitly states that there is a man with a blue hat sitting on a curb. The hypothesis claims that there is a ""hatless man"" sitting on a curb. These statements directly contradict each other because the premise describes a man with a blue hat, while the hypothesis asserts that the man is hatless. Therefore, there is a clear contradiction between the premise and the hypothesis."
+131,A female belly dancer dressed in blue and orange performs a folding fan dance with two men providing the music behind her; they are using a guitar and drums.,A female has clothes on with two males holding musical instruments.,"The correct answer is ""Entailment.""  Reasoning: The premise provides a detailed description of a female belly dancer performing with two men providing music. The hypothesis specifies that the two men are using a guitar and drums, which is consistent with the scenario described in the premise. Therefore, the hypothesis logically follows from the premise, making it an entailment."
