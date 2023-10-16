@@ -256,7 +256,7 @@ if __name__ == '__main__':
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
     parser.add_argument('--type_rationale', type=str, default='if_else')
-    parser.add_argument('--data_size', type=str, default=1)
+    parser.add_argument('--data_size', type=int, default=1)
 
     args = parser.parse_args()
 
