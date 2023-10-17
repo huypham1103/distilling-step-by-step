@@ -204,7 +204,7 @@ def run(args):
         # test['rationale'] = rationales.loc[test.index][f'rationales'].values
 
         train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
+        # val['label'] = rationales.loc[val.index]['LLM_answer'].values
         # test['label'] = rationales.loc[test.index]['LLM_answer'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
