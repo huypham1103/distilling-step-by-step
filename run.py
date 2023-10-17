@@ -193,8 +193,8 @@ def run(args):
         if args.data_size:
             train = train.sample(frac=args.data_size/100, random_state=0)
             val = val.sample(frac=args.data_size/100, random_state=0)
-            val = pd.concat([val, train[5000:]])
-            train = train[:5000]
+            # val = pd.concat([val, train[5000:]])
+            # train = train[:5000]
             # test = test.sample(frac=args.data_size/100, random_state=0)
 
         rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
