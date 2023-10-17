@@ -113,8 +113,8 @@ def run(args):
         print(f'LLM Train Acc: {train_label_acc:.4f}')
         print(f'LLM Test Acc: {test_label_acc:.4f}')
 
-        # datasets['train'] = datasets['train'].remove_columns('label')
-        # datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
+        datasets['train'] = datasets['train'].remove_columns('label')
+        datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
 
     else:
         raise ValueError
@@ -193,18 +193,18 @@ def run(args):
         if args.data_size:
             train = train.sample(frac=args.data_size/100, random_state=0)
             val = val.sample(frac=args.data_size/100, random_state=0)
-            # val = pd.concat([val, train[5000:]])
-            # train = train[:5000]
+            val = pd.concat([val, train[5000:]])
+            train = train[:5000]
             # test = test.sample(frac=args.data_size/100, random_state=0)
 
-        rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
+        # rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index][f'rationales'].values
-        val['rationale'] = rationales.loc[val.index][f'rationales'].values
+        # train['rationale'] = rationales.loc[train.index][f'rationales'].values
+        # val['rationale'] = rationales.loc[val.index][f'rationales'].values
         # test['rationale'] = rationales.loc[test.index][f'rationales'].values
 
-        train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
+        # train['label'] = rationales.loc[train.index]['LLM_answer'].values
+        # val['label'] = rationales.loc[val.index]['LLM_answer'].values
         # test['label'] = rationales.loc[test.index]['LLM_answer'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
