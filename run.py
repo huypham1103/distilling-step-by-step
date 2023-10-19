@@ -282,7 +282,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'neutral',
+    #     'type_rationale': 'causal',
     #     'data_size': 1
     # }
     # from types import SimpleNamespace
