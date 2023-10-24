@@ -199,8 +199,8 @@ def run(args):
 
         rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index][f'rationales'].values
-        val['rationale'] = rationales.loc[val.index][f'rationales'].values
+        train['rationale'] = rationales.loc[train.index][f'{args.type_rationale}'].values
+        val['rationale'] = rationales.loc[val.index][f'{args.type_rationale}'].values
         # test['rationale'] = rationales.loc[test.index][f'rationales'].values
 
         train['label'] = rationales.loc[train.index]['LLM_answer'].values
@@ -282,7 +282,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'historical',
+    #     'type_rationale': 'consensus_wucs_score',
     #     'data_size': 1
     # }
     # from types import SimpleNamespace
