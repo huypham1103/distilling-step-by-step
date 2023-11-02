@@ -74,12 +74,10 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         else:
             expl_outputs = pred_outputs # placeholder only
 
-        loss = self.alpha * pred_outputs[0]  + (1. - self.alpha) * (expl_outputs_1[0] + expl_outputs_2[0]) / 2.
+        loss = self.alpha * pred_outputs[0]  + (1 - self.alpha) * expl_outputs[0]
 
         return (
             loss,
-            [pred_outputs[1], expl_outputs_1[1]],
-            [pred_outputs[2], expl_outputs_1[2]],
-            [pred_outputs[1], expl_outputs_2[1]],
-            [pred_outputs[2], expl_outputs_2[2]],
+            [pred_outputs[1], expl_outputs[1]],
+            [pred_outputs[2], expl_outputs[2]],
         )
