@@ -268,7 +268,7 @@ if __name__ == '__main__':
     parser.add_argument('--output_rationale', action='store_true')
     # parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
-    parser.add_argument('--extra_rationale', type=str, default='if_else')
+    parser.add_argument('--extra_rationale_1', type=str, default='if_else')
     parser.add_argument('--extra_rationale_2', type=str, default='neutral')
 
 
