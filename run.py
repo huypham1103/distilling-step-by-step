@@ -201,11 +201,11 @@ def run(args):
 
         rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index]['rationales'].values
-        val['rationale'] = rationales.loc[val.index]['rationales'].values
+        train['rationale'] = rationales.loc[train.index][f'{args.extra_rationale}'].values
+        val['rationale'] = rationales.loc[val.index][f'{args.extra_rationale}'].values
         
-        train['rationale_2'] = rationales.loc[train.index][f'{args.extra_rationale}'].values
-        val['rationale_2'] = rationales.loc[val.index][f'{args.extra_rationale}'].values
+        train['rationale_2'] = rationales.loc[train.index][f'{args.extra_rationale_2}'].values
+        val['rationale_2'] = rationales.loc[val.index][f'{args.extra_rationale_2}'].values
 
         train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True) 
@@ -267,6 +267,7 @@ if __name__ == '__main__':
     parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
     parser.add_argument('--extra_rationale', type=str, default='if_else')
+    parser.add_argument('--extra_rationale_2', type=str, default='neutral')
 
 
     args = parser.parse_args()
