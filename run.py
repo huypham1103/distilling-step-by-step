@@ -199,21 +199,23 @@ def run(args):
             train = train[:5000]
             # test = test.sample(frac=args.data_size/100, random_state=0)
 
-        rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
+        rationales_1 = pd.read_csv(f'[API] dataset/{args.extra_rationale_1} - full.csv').set_index('question')
+        rationales_2 = pd.read_csv(f'[API] dataset/{args.extra_rationale_2} - full.csv').set_index('question')
+
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index][f'{args.extra_rationale}'].values
-        val['rationale'] = rationales.loc[val.index][f'{args.extra_rationale}'].values
+        train['rationale'] = rationales_1.loc[train.index][f'rationales'].values
+        val['rationale'] = rationales_1.loc[val.index][f'rationales'].values
         
-        train['rationale_2'] = rationales.loc[train.index][f'{args.extra_rationale_2}'].values
-        val['rationale_2'] = rationales.loc[val.index][f'{args.extra_rationale_2}'].values
+        train['rationale_2'] = rationales_2.loc[train.index][f'rationales'].values
+        val['rationale_2'] = rationales_2.loc[val.index][f'rationales'].values
 
         train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True) 
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test['rationale_2'] = test['rationale_1']
 
-        train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
+        train['label'] = rationales_1.loc[train.index]['LLM_answer'].values
+        val['label'] = rationales_1.loc[val.index]['LLM_answer'].values
         # test['label'] = rationales.loc[test.index]['LLM_answer'].values
         
         datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
@@ -264,7 +266,7 @@ if __name__ == '__main__':
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
-    parser.add_argument('--type_rationale', type=str, default='if_else')
+    # parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
     parser.add_argument('--extra_rationale', type=str, default='if_else')
     parser.add_argument('--extra_rationale_2', type=str, default='neutral')
@@ -294,9 +296,10 @@ if __name__ == '__main__':
     #     'bf16': True,
     #     'no_log': True,
     #     'output_rationale': True,
-    #     'type_rationale': 'after_consensus_wucs_score',
+    #     # 'type_rationale': 'after_consensus_wucs_score',
     #     'data_size': 1,
-    #     'extra_rationale': 'if_else'
+    #     'extra_rationale_1': 'if_else',
+    #     'extra_rationale_2': 'neutral'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
