@@ -199,8 +199,8 @@ def run(args):
             train = train[:5000]
             # test = test.sample(frac=args.data_size/100, random_state=0)
 
-        rationales_1 = pd.read_csv(f'[API] dataset/{args.extra_rationale_1} - full.csv').set_index('question')
-        rationales_2 = pd.read_csv(f'[API] dataset/{args.extra_rationale_2} - full.csv').set_index('question')
+        rationales_1 = pd.read_csv(f'[API] dataset/after_{args.extra_rationale_1} - full.csv').set_index('question')
+        rationales_2 = pd.read_csv(f'[API] dataset/after_{args.extra_rationale_2} - full.csv').set_index('question')
 
         # modify the encode char
         train['rationale'] = rationales_1.loc[train.index][f'rationales'].values
