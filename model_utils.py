@@ -61,7 +61,7 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         expl_outputs_2 = model(**inputs['expl_2'])
         expl_outputs_3 = model(**inputs['expl_3'])
 
-        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * (expl_outputs_1.loss + expl_outputs_2.loss + expl_outputs_3) / 2.
+        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * (expl_outputs_1.loss + expl_outputs_2.loss + expl_outputs_3.loss) / 2.
         return (loss, {'pred': pred_outputs, 'expl_1': expl_outputs_1, 'expl_2': expl_outputs_2, 'expl_3': expl_outputs_3}) if return_outputs else loss
 
 
