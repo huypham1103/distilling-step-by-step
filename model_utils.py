@@ -26,20 +26,25 @@ from transformers import Seq2SeqTrainer
 class TaskPrefixDataCollator(DataCollatorForSeq2Seq):
     def __call__(self, features, return_tensors=None):
         features_df = pd.DataFrame(features)
-        pred_features = features_df.loc[:, ~features_df.columns.isin(['aux_labels_1', 'aux_labels_2', 'expl_input_ids', 'expl_attention_mask'])].to_dict('records')
-        expl_features_1 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_2'])].rename(
+        pred_features = features_df.loc[:, ~features_df.columns.isin(['aux_labels_1', 'aux_labels_2', 'aux_labels_3', 'expl_input_ids', 'expl_attention_mask'])].to_dict('records')
+        expl_features_1 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_2', 'aux_labels_3'])].rename(
             columns={'aux_labels_1': 'labels', 'expl_input_ids': 'input_ids', 'expl_attention_mask': 'attention_mask'}).to_dict('records')
 
-        expl_features_2 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1'])].rename(
+        expl_features_2 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'aux_labels_3'])].rename(
             columns={'aux_labels_2': 'labels', 'expl_input_ids': 'input_ids', 'expl_attention_mask': 'attention_mask'}).to_dict('records')
+        
+        expl_features_3 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'aux_labels_2'])].rename(
+            columns={'aux_labels_3': 'labels', 'expl_input_ids': 'input_ids', 'expl_attention_mask': 'attention_mask'}).to_dict('records')
         pred_features = super().__call__(pred_features, return_tensors)
         expl_features_1 = super().__call__(expl_features_1, return_tensors)
         expl_features_2 = super().__call__(expl_features_2, return_tensors)
+        expl_features_3 = super().__call__(expl_features_3, return_tensors)
 
         return {
             'pred': pred_features,
             'expl_1': expl_features_1,
             'expl_2': expl_features_2,
+            'expl_3': expl_features_3,
         }
 
 

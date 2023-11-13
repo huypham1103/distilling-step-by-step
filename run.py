@@ -146,10 +146,12 @@ def run(args):
                 label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
                 rationale_output_encodings_1 = tokenizer(examples['rationale_1'], max_length=256, truncation=True)
                 rationale_output_encodings_2 = tokenizer(examples['rationale_2'], max_length=256, truncation=True)
+                rationale_output_encodings_3 = tokenizer(examples['rationale_3'], max_length=256, truncation=True)
 
             model_inputs['labels'] = label_output_encodings['input_ids']
             model_inputs['aux_labels_1'] = rationale_output_encodings_1['input_ids']
             model_inputs['aux_labels_2'] = rationale_output_encodings_2['input_ids']
+            model_inputs['aux_labels_3'] = rationale_output_encodings_3['input_ids']
 
             return model_inputs
 
@@ -201,6 +203,7 @@ def run(args):
 
         rationales_1 = pd.read_csv(f'[API] dataset/{args.extra_rationale_1} - full.csv').set_index('question')
         rationales_2 = pd.read_csv(f'[API] dataset/{args.extra_rationale_2} - full.csv').set_index('question')
+        rationales_3 = pd.read_csv(f'[API] dataset/{args.extra_rationale_3} - full.csv').set_index('question')
 
         # modify the encode char
         train['rationale'] = rationales_1.loc[train.index][f'rationales'].values
@@ -209,10 +212,14 @@ def run(args):
         train['rationale_2'] = rationales_2.loc[train.index][f'rationales'].values
         val['rationale_2'] = rationales_2.loc[val.index][f'rationales'].values
 
+        train['rationale_3'] = rationales_3.loc[train.index][f'rationales'].values
+        val['rationale_3'] = rationales_3.loc[val.index][f'rationales'].values
+
         train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True) 
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test['rationale_2'] = test['rationale_1']
+        test['rationale_3'] = test['rationale_1']
 
         train['label'] = rationales_1.loc[train.index]['LLM_answer'].values
         val['label'] = rationales_1.loc[val.index]['LLM_answer'].values
@@ -224,7 +231,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale_1', 'rationale_2', 'label', 'llm_label', 'premise', 'hypothesis'],
+            remove_columns=['input', 'rationale_1', 'rationale_2', 'rationale_3', 'label', 'llm_label', 'premise', 'hypothesis'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -270,7 +277,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_size', type=int, default=1)
     parser.add_argument('--extra_rationale_1', type=str, default='if_else')
     parser.add_argument('--extra_rationale_2', type=str, default='neutral')
-
+    parser.add_argument('--extra_rationale_3', type=str, default='neutral')
 
     args = parser.parse_args()
 
@@ -298,8 +305,9 @@ if __name__ == '__main__':
     #     'output_rationale': True,
     #     # 'type_rationale': 'after_consensus_wucs_score',
     #     'data_size': 1,
-    #     'extra_rationale_1': 'if_else',
-    #     'extra_rationale_2': 'neutral'
+    #     'extra_rationale_1': 'after_if_else',
+    #     'extra_rationale_2': 'after_neutral',
+    #     'extra_rationale_3': 'after_neutral'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
