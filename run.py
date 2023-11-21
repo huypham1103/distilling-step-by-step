@@ -199,15 +199,14 @@ def run(args):
             train = train[:5000]
             # test = test.sample(frac=args.data_size/100, random_state=0)
 
-        rationales_1 = pd.read_csv(f'[API] dataset/{args.extra_rationale_1} - full.csv').set_index('question')
-        rationales_2 = pd.read_csv(f'[API] dataset/{args.extra_rationale_2} - full.csv').set_index('question')
+        rationales_1 = pd.read_csv(f'[API] dataset/extra_rationales/{args.extra_rationale_1}.csv').set_index('question')
 
         # modify the encode char
         train['rationale'] = rationales_1.loc[train.index][f'rationales'].values
         val['rationale'] = rationales_1.loc[val.index][f'rationales'].values
         
-        train['rationale_2'] = rationales_2.loc[train.index][f'rationales'].values
-        val['rationale_2'] = rationales_2.loc[val.index][f'rationales'].values
+        train['rationale_2'] = rationales_1.loc[train.index][f'rationales_2'].values
+        val['rationale_2'] = rationales_1.loc[val.index][f'rationales_2'].values
 
         train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True) 
@@ -298,7 +297,7 @@ if __name__ == '__main__':
     #     'output_rationale': True,
     #     # 'type_rationale': 'after_consensus_wucs_score',
     #     'data_size': 1,
-    #     'extra_rationale_1': 'if_else',
+    #     'extra_rationale_1': 'if_else_contrastive',
     #     'extra_rationale_2': 'neutral'
     # }
     # from types import SimpleNamespace
