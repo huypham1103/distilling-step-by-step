@@ -138,9 +138,13 @@ def run(args):
     if args.model_type == 'task_prefix' and args.llm is not None:
         def tokenize_function(examples):
             model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs = tokenizer(['explain: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            model_inputs['expl_input_ids'] = expl_model_inputs['input_ids']
-            model_inputs['expl_attention_mask'] = expl_model_inputs['attention_mask']
+            expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
+            model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
+            
+            model_inputs['expl_input_ids_2'] = expl_model_inputs_2['input_ids']
+            model_inputs['expl_attention_mask_2'] = expl_model_inputs_2['attention_mask']
 
             with tokenizer.as_target_tokenizer():
                 label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
