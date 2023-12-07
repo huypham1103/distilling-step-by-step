@@ -137,9 +137,11 @@ def run(args):
 
     if args.model_type == 'task_prefix' and args.llm is not None:
         def tokenize_function(examples):
+            type_rationale_1 = args.extra_rationale_1.split('-')[0]
+            type_rationale_2 = args.extra_rationale_1.split('-')[1]
             model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_1 = tokenizer([f'explain {type_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_2 = tokenizer([f'explain {type_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
             model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
             model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
             
@@ -301,7 +303,7 @@ if __name__ == '__main__':
     #     'output_rationale': True,
     #     # 'type_rationale': 'after_consensus_wucs_score',
     #     'data_size': 1,
-    #     'extra_rationale_1': 'if_else_contrastive',
+    #     'extra_rationale_1': 'if_else-contrastive',
     #     'extra_rationale_2': 'neutral'
     # }
     # from types import SimpleNamespace
