@@ -169,6 +169,26 @@ def run(args):
     else:
         raise ValueError
 
+    if args.dataset == 'anli1':
+        # Combine all subsets into one dataset
+        combined_dataset = concatenate_datasets([datasets['train'], datasets['test'], datasets['valid']])
+
+        # Split the combined dataset into train and test-valid sets
+        train_test_valid_split = combined_dataset.train_test_split(test_size=0.3)
+
+        # Split the test-valid set into separate test and validation sets
+        test_valid_split = train_test_valid_split['test'].train_test_split(test_size=0.5)
+
+        # Now you have your new train, test, and valid sets
+        new_train_set = train_test_valid_split['train']
+        new_test_set = test_valid_split['test']
+        new_valid_set = test_valid_split['train']
+
+        datasets = DatasetDict({
+            'train': new_train_set,
+            'test': new_test_set,
+            'valid': new_valid_set,
+        })
 
     if args.llm is None:
         tokenized_datasets = datasets.map(
@@ -227,7 +247,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # dic = {
-    #     'dataset': 'esnli',
+    #     'dataset': 'anli1',
     #     'subsample': 1.0,
     #     'alpha': 0.5,
     #     'max_steps': 10000,
