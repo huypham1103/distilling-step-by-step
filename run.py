@@ -178,6 +178,7 @@ def run(args):
         )
     else:
         # load myself rationales
+
         import pandas as pd
         from datasets import Dataset 
         train = pd.DataFrame(datasets['train'])
@@ -190,14 +191,16 @@ def run(args):
         test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('question')
 
-        if args.data_size:
+        if args.dataset == 'esnli' and args.data_size:
             train = train.sample(frac=args.data_size/100, random_state=0)
             val = val.sample(frac=args.data_size/100, random_state=0)
             val = pd.concat([val, train[5000:]])
             train = train[:5000]
-            # test = test.sample(frac=args.data_size/100, random_state=0)
 
-        rationales = pd.read_csv(f'[API] dataset/{args.type_rationale} - full.csv').set_index('question')
+        rationales = pd.read_csv(f'[API] ANLI/{args.type_rationale} - full.csv', delimiter=',')
+        rationales.set_index(['premise', 'hypothesis'], inplace=True)
+        train.set_index(['premise', 'hypothesis'], inplace=True)
+        val.set_index(['premise', 'hypothesis'], inplace=True)
         # modify the encode char
         train['rationale'] = rationales.loc[train.index]['rationales'].values
         val['rationale'] = rationales.loc[val.index]['rationales'].values
@@ -207,9 +210,9 @@ def run(args):
         val['label'] = rationales.loc[val.index]['LLM_answer'].values
         # test['label'] = rationales.loc[test.index]['LLM_answer'].values
         
-        datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
-        datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
-        datasets['test'] = Dataset.from_pandas(test.reset_index().drop(columns=['question']))
+        datasets['train'] = Dataset.from_pandas(train.reset_index())
+        datasets['valid'] = Dataset.from_pandas(val.reset_index())
+        datasets['test'] = Dataset.from_pandas(test.reset_index())
 
         tokenized_datasets = datasets.map(
             tokenize_function,
@@ -261,7 +264,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # dic = {
-    #     'dataset': 'esnli',
+    #     'dataset': 'anli1',
     #     'subsample': 1.0,
     #     'alpha': 0.5,
     #     'max_steps': 10000,
@@ -282,7 +285,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'after_neutral',
+    #     'type_rationale': 'causal',
     #     'data_size': 1
     # }
     # from types import SimpleNamespace
