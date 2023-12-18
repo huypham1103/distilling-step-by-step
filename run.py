@@ -190,6 +190,29 @@ def run(args):
             'valid': new_valid_set,
         })
 
+    if args.dataset == 'esnli':
+        import pandas as pd
+        from datasets import Dataset
+        
+        train = pd.DataFrame(datasets['train'])
+        train['question'] = train['input'].apply(lambda x: x.split('\n')[0])
+        train = train.set_index('question')
+        val = pd.DataFrame(datasets['valid'])
+        val['question'] = val['input'].apply(lambda x: x.split('\n')[0])
+        val = val.set_index('question')
+        test = pd.DataFrame(datasets['test'])
+        test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
+        test = test.set_index('question')
+        
+        train = train.sample(frac=1/100, random_state=0)
+        val = val.sample(frac=1/100, random_state=0)
+        val = pd.concat([val, train[5000:]])
+        train = train[:5000]
+        
+        datasets['train'] = Dataset.from_pandas(train.reset_index().drop(columns=['question']))
+        datasets['valid'] = Dataset.from_pandas(val.reset_index().drop(columns=['question']))
+        datasets['test'] = Dataset.from_pandas(test.reset_index().drop(columns=['question']))
+        
     if args.llm is None:
         tokenized_datasets = datasets.map(
             tokenize_function,
@@ -247,7 +270,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # dic = {
-    #     'dataset': 'anli1',
+    #     'dataset': 'esnli',
     #     'subsample': 1.0,
     #     'alpha': 0.5,
     #     'max_steps': 10000,
