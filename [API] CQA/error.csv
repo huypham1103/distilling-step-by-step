@@ -1,0 +1,7 @@
+|premise|hypothesis|rationales|split|correct_index|LLM_answer|prompt
+8844|Where should an excavation never take place?|['construction site', 'cemetary', 'building', 'city', 'archeological site']|Answer: (B) cemetary  Justification: Excavating at a cemetery is generally considered highly disrespectful and is often legally prohibited. Cemeteries are places of rest and memorial, and disturbing them is seen as a violation of the sanctity of the deceased. This makes excavation at a cemetery the least appropriate choice compared to the other options, which are typical locations where excavations might occur for construction or archaeological purposes.|5. an excavation should never take place in a cemetery. cemeteries are sacred burial grounds where deceased individuals are laid to rest. excavating in a cemetery would disrupt the final resting place of the deceased and violate the sanctity of the space. it is widely understood and accepted that excavation should never occur in cemeteries.|{}||"
+Questions: Where should an excavation never take place? 
+
+Choices: (A) construction site, (B) cemetary, (C) building, (D) city, (E) archeological site What is the commonly agreed-upon answer to the question 'Where should an excavation never take place?' with options construction site, cemetary, building, city archeological site? Justify your answer based on general knowledge. 
+
+"

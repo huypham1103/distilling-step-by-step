@@ -197,10 +197,8 @@ def run(args):
             val = pd.concat([val, train[5000:]])
             train = train[:5000]
 
-        rationales = pd.read_csv(f'[API] ANLI/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
-        rationales.set_index(['premise', 'hypothesis'], inplace=True)
-        train.set_index(['premise', 'hypothesis'], inplace=True)
-        val.set_index(['premise', 'hypothesis'], inplace=True)
+        rationales = pd.read_csv(f'[API] CQA/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
+        rationales.set_index(['premise'], inplace=True)
         # modify the encode char
         train['rationale'] = rationales.loc[train.index]['rationales'].values
         val['rationale'] = rationales.loc[val.index]['rationales'].values
@@ -216,7 +214,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
+            remove_columns=['input', 'rationale', 'label', 'llm_label', 'question'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -264,7 +262,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # dic = {
-    #     'dataset': 'anli1',
+    #     'dataset': 'cqa',
     #     'subsample': 1.0,
     #     'alpha': 0.5,
     #     'max_steps': 10000,
@@ -285,7 +283,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'causal',
+    #     'type_rationale': 'consensus',
     #     'data_size': 1
     # }
     # from types import SimpleNamespace
