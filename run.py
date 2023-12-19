@@ -197,7 +197,7 @@ def run(args):
             val = pd.concat([val, train[5000:]])
             train = train[:5000]
 
-        rationales = pd.read_csv(f'[API] ANLI/{args.type_rationale} - full.csv', delimiter=',')
+        rationales = pd.read_csv(f'[API] ANLI/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
         rationales.set_index(['premise', 'hypothesis'], inplace=True)
         train.set_index(['premise', 'hypothesis'], inplace=True)
         val.set_index(['premise', 'hypothesis'], inplace=True)
