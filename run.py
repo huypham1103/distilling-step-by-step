@@ -200,8 +200,8 @@ def run(args):
         rationales = pd.read_csv(f'[API] CQA/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
         rationales.set_index(['premise'], inplace=True)
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index]['rationales'].values
-        val['rationale'] = rationales.loc[val.index]['rationales'].values
+        train['rationale'] = rationales.loc[train.index]['rationale'].values
+        val['rationale'] = rationales.loc[val.index]['rationale'].values
         # test['rationale'] = rationales.loc[test.index][f'rationales'].values
 
         train['label'] = rationales.loc[train.index]['LLM_answer'].values
@@ -283,7 +283,7 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'consensus',
+    #     'type_rationale': 'neutral',
     #     'data_size': 1
     # }
     # from types import SimpleNamespace
