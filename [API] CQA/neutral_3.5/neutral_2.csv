@@ -1,0 +1,493 @@
+premise,hypothesis,prompt,rationale
+"All the day traders did well on the floor that day, they celebrated at a steak house where?","['united states', 'town', 'new york', 'mexico', 'beach']","Questions: All the day traders did well on the floor that day, they celebrated at a steak house where?, Choices: (A) united states, (B) town, (C) new york, (D) mexico, (E) beach. What is the correct answer to the question 'All the day traders did well on the floor that day, they celebrated at a steak house where?' with the options united states, town, new york, mexico beach? Provide a straightforward explanation. 
+","1. The correct answer to the question ""All the day traders did well on the floor that day, they celebrated at a steak house where?"" is (C) New York. They celebrated at a steak house in New York.
+
+"
+"All the kooky kids enjoyed each other's company, to them their behavior was perfectly what?","['ordinary', 'straight', 'normal', 'cool', 'mainstream']","Questions: All the kooky kids enjoyed each other's company, to them their behavior was perfectly what?, Choices: (A) ordinary, (B) straight, (C) normal, (D) cool, (E) mainstream. What is the correct answer to the question 'All the kooky kids enjoyed each other's company, to them their behavior was perfectly what?' with the options ordinary, straight, normal, cool mainstream? Provide a straightforward explanation. 
+",
+"All the movies always portray gasoline as the commodity, but he was convinced a garden would be the most valuable in a what?","['driveway', 'parking lot', 'desert', 'hop garden', 'wasteland']","Questions: All the movies always portray gasoline as the commodity, but he was convinced a garden would be the most valuable in a what?, Choices: (A) driveway, (B) parking lot, (C) desert, (D) hop garden, (E) wasteland. What is the correct answer to the question 'All the movies always portray gasoline as the commodity, but he was convinced a garden would be the most valuable in a what?' with the options driveway, parking lot, desert, hop garden wasteland? Provide a straightforward explanation. 
+","3.5: 
+
+1. The correct answer to the question ""All the day traders did well on the floor that day, they celebrated at a steak house where?"" is (C) New York. They celebrated at a steak house in New York.
+
+2. The correct answer to the question ""All the kooky kids enjoyed each other's company, to them their behavior was perfectly what?"" is (C) normal. To them, their behavior was perfectly normal.
+
+3. The correct answer to the question ""All the movies always portray gasoline as the commodity, but he was convinced a garden would be the most valuable in a what?"" is (D) hop garden. He was convinced a garden would be the most valuable in a hop garden.
+
+"
+"All the other locations had new high prices, so the old single screen what suddenly saw an uptick in customers?","['art show', 'airport', 'cinema', 'hotel', 'theatre']","Questions: All the other locations had new high prices, so the old single screen what suddenly saw an uptick in customers?, Choices: (A) art show, (B) airport, (C) cinema, (D) hotel, (E) theatre. What is the correct answer to the question 'All the other locations had new high prices, so the old single screen what suddenly saw an uptick in customers?' with the options art show, airport, cinema, hotel theatre? Provide a straightforward explanation. 
+",
+"All the parents gathered in the cafeteria to watch the performance, Mark's were there to watch him play trombone in the what?","['orchestra', 'brass quartet', 'marching band', 'school band', 'school play']","Questions: All the parents gathered in the cafeteria to watch the performance, Mark's were there to watch him play trombone in the what?, Choices: (A) orchestra, (B) brass quartet, (C) marching band, (D) school band, (E) school play. What is the correct answer to the question 'All the parents gathered in the cafeteria to watch the performance, Mark's were there to watch him play trombone in the what?' with the options orchestra, brass quartet, marching band, school band school play? Provide a straightforward explanation. 
+","5: 
+
+1. The correct answer to the question ""All the day traders did well on the floor that day, they celebrated at a steak house where?"" is (C) New York. They celebrated at a steak house in New York.
+
+2. The correct answer to the question ""All the kooky kids enjoyed each other's company, to them their behavior was perfectly what?"" is (C) normal. To them, their behavior was perfectly normal.
+
+3. The correct answer to the question ""All the movies always portray gasoline as the commodity, but he was convinced a garden would be the most valuable in a what?"" is (D) hop garden. He was convinced a garden would be the most valuable in a hop garden.
+
+4. The correct answer to the question ""All the other locations had new high prices, so the old single screen what suddenly saw an uptick in customers?"" is (C) cinema. The old single screen cinema suddenly saw an uptick in customers.
+
+5. The correct answer to the question ""All the parents gathered in the cafeteria to watch the performance, Mark's were there to watch him play trombone in the what?"" is (D) school band. Mark's parents were there to watch him play trombone in the school band.
+
+"
+"All the siblings just kept reproducing with their husbands and wives, this led to a what?","['larger family', 'problems', 'offspring', 'fun', 'birth']","Questions: All the siblings just kept reproducing with their husbands and wives, this led to a what?, Choices: (A) larger family, (B) problems, (C) offspring, (D) fun, (E) birth. What is the correct answer to the question 'All the siblings just kept reproducing with their husbands and wives, this led to a what?' with the options larger family, problems, offspring, fun birth? Provide a straightforward explanation. 
+","6. The correct answer to the question ""All the siblings just kept reproducing with their husbands and wives, this led to a what?"" is (A) larger family. This led to a larger family.
+
+"
+"All the students had to gather for the announcement, as it wrapped up the students began to what?","['spread', 'park', 'disseminate', 'disperse', 'dispense']","Questions: All the students had to gather for the announcement, as it wrapped up the students began to what?, Choices: (A) spread, (B) park, (C) disseminate, (D) disperse, (E) dispense. What is the correct answer to the question 'All the students had to gather for the announcement, as it wrapped up the students began to what?' with the options spread, park, disseminate, disperse dispense? Provide a straightforward explanation. 
+","7. The correct answer to the question ""All the students had to gather for the announcement, as it wrapped up the students began to what?"" is (D) disperse. As it wrapped up, the students began to disperse.
+
+"
+"All the wild flowers were in bloom, it looked like somebody had painted the entire what?","['table', 'vase', 'surface of earth', 'countryside', 'nursery']","Questions: All the wild flowers were in bloom, it looked like somebody had painted the entire what?, Choices: (A) table, (B) vase, (C) surface of earth, (D) countryside, (E) nursery. What is the correct answer to the question 'All the wild flowers were in bloom, it looked like somebody had painted the entire what?' with the options table, vase, surface of earth, countryside nursery? Provide a straightforward explanation. 
+","8. The correct answer to the question ""All the wild flowers were in bloom, it looked like somebody had painted the entire what?"" is (C) surface of earth. It looked like somebody had painted the entire surface of the earth.
+
+"
+"Although he didn't reply to the email, what did he do with it since he found it funny?","['ignore', 'delete', 'forward', 'question', 'ask']","Questions: Although he didn't reply to the email, what did he do with it since he found it funny?, Choices: (A) ignore, (B) delete, (C) forward, (D) question, (E) ask. What is the correct answer to the question 'Although he didn't reply to the email, what did he do with it since he found it funny?' with the options ignore, delete, forward, question ask? Provide a straightforward explanation. 
+","9. The correct answer to the question ""Although he didn't reply to the email, what did he do with it since he found it funny?"" is (C) forward. Although he didn't reply to the email, he forwarded it since he found it funny.
+
+"
+"Although the living room was set up for the party, where did people tend to congregate while the mother worked?","['wireroom', 'kitchen', 'ocean', 'hallway', 'outside']","Questions: Although the living room was set up for the party, where did people tend to congregate while the mother worked?, Choices: (A) wireroom, (B) kitchen, (C) ocean, (D) hallway, (E) outside. What is the correct answer to the question 'Although the living room was set up for the party, where did people tend to congregate while the mother worked?' with the options wireroom, kitchen, ocean, hallway outside? Provide a straightforward explanation. 
+","10. The correct answer to the question ""Although the living room was set up for the party, where did people tend to congregate while the mother worked?"" is (B) kitchen. People tended to congregate in the kitchen while the mother worked.
+
+I hope these answers provide you with the information you were looking for. Let me know if there's anything else I can assist you with."
+"Always wash your hands before eating, you don't want to get germs onto food and inside your what?","['water', 'doctor', 'spread disease', 'mouth', 'ear']","Questions: Always wash your hands before eating, you don't want to get germs onto food and inside your what?, Choices: (A) water, (B) doctor, (C) spread disease, (D) mouth, (E) ear. What is the correct answer to the question 'Always wash your hands before eating, you don't want to get germs onto food and inside your what?' with the options water, doctor, spread disease, mouth ear? Provide a straightforward explanation. 
+","1. **Always wash your hands before eating, you don't want to get germs onto food and inside your what?**
+   - The correct answer is **(D) mouth**. Washing hands before eating helps prevent the spread of germs onto food and inside the mouth.
+
+"
+"Amelia tried to aim for the small isle, but the water of the what was coming on fast?","['ocean', 'sea', 'pool', 'auditorium', 'body of water']","Questions: Amelia tried to aim for the small isle, but the water of the what was coming on fast?, Choices: (A) ocean, (B) sea, (C) pool, (D) auditorium, (E) body of water. What is the correct answer to the question 'Amelia tried to aim for the small isle, but the water of the what was coming on fast?' with the options ocean, sea, pool, auditorium body of water? Provide a straightforward explanation. 
+","2. **Amelia tried to aim for the small isle, but the water of the what was coming on fast?**
+   - The correct answer is **(A) ocean**. The water of the ocean was coming on fast as Amelia tried to aim for the small isle.
+
+"
+"American humans just graduated high school, where are many of them bound?","['university', 'park', 'unemployment', 'cafe', 'movies']","Questions: American humans just graduated high school, where are many of them bound?, Choices: (A) university, (B) park, (C) unemployment, (D) cafe, (E) movies. What is the correct answer to the question 'American humans just graduated high school, where are many of them bound?' with the options university, park, unemployment, cafe movies? Provide a straightforward explanation. 
+","3. **American humans just graduated high school, where are many of them bound?**
+   - The correct answer is **(A) university**. Many American high school graduates are bound for university after graduation [[3]](https://www.cdc.gov/handwashing/faqs.html).
+
+"
+"An astronout in space needed to know what side of the planet the English Channel was on, where did he aim his spacecraft?","['northern hemisphere', 'atlantic ocean', 'go boating', 'england', 'canada']","Questions: An astronout in space needed to know what side of the planet the English Channel was on, where did he aim his spacecraft?, Choices: (A) northern hemisphere, (B) atlantic ocean, (C) go boating, (D) england, (E) canada. What is the correct answer to the question 'An astronout in space needed to know what side of the planet the English Channel was on, where did he aim his spacecraft?' with the options northern hemisphere, atlantic ocean, go boating, england canada? Provide a straightforward explanation. 
+","4. **An astronaut in space needed to know what side of the planet the English Channel was on, where did he aim his spacecraft?**
+   - The correct answer is **(D) England**. The astronaut aimed his spacecraft towards England to know the side of the planet where the English Channel was located.
+
+"
+"An atheist was asked what happens after dying, what was his response?","['unable to work', 'born again', 'no longer exist', 'would cease to exist', 'body decays']","Questions: An atheist was asked what happens after dying, what was his response?, Choices: (A) unable to work, (B) born again, (C) no longer exist, (D) would cease to exist, (E) body decays. What is the correct answer to the question 'An atheist was asked what happens after dying, what was his response?' with the options unable to work, born again, no longer exist, would cease to exist body decays? Provide a straightforward explanation. 
+","5. **An atheist was asked what happens after dying, what was his response?**
+   - The correct answer is **(C) no longer exist**. An atheist's response to what happens after dying is that they no longer exist.
+
+"
+"An electronics store had things damaged from the rain, where should these things be stored?","['large city', 'strip mall', 'building', 'shopping mall', 'aquarium']","Questions: An electronics store had things damaged from the rain, where should these things be stored?, Choices: (A) large city, (B) strip mall, (C) building, (D) shopping mall, (E) aquarium. What is the correct answer to the question 'An electronics store had things damaged from the rain, where should these things be stored?' with the options large city, strip mall, building, shopping mall aquarium? Provide a straightforward explanation. 
+","6. **An electronics store had things damaged from the rain, where should these things be stored?**
+   - The correct answer is **(C) building**. The damaged electronics from the rain should be stored in a building to protect them from further damage.
+
+"
+"An expressway can suffer from traffic, this traffic gets worse the closer you get to any what?","['michigan', 'map', 'american city', 'rest stops', 'country']","Questions: An expressway can suffer from traffic, this traffic gets worse the closer you get to any what?, Choices: (A) michigan, (B) map, (C) american city, (D) rest stops, (E) country. What is the correct answer to the question 'An expressway can suffer from traffic, this traffic gets worse the closer you get to any what?' with the options michigan, map, american city, rest stops country? Provide a straightforward explanation. 
+","7. **An expressway can suffer from traffic, this traffic gets worse the closer you get to any what?**
+   - The correct answer is **(C) American city**. The traffic on an expressway gets worse the closer you get to any American city.
+
+"
+"Animals can be very primal, sometimes to prove themselves they what?","['fight each other', 'need to eat', 'are territorial', 'feel pain', 'live lives']","Questions: Animals can be very primal, sometimes to prove themselves they what?, Choices: (A) fight each other, (B) need to eat, (C) are territorial, (D) feel pain, (E) live lives. What is the correct answer to the question 'Animals can be very primal, sometimes to prove themselves they what?' with the options fight each other, need to eat, are territorial, feel pain live lives? Provide a straightforward explanation. 
+","8. **Animals can be very primal, sometimes to prove themselves they what?**
+   - The correct answer is **(A) fight each other**. Animals can be very primal, and sometimes they fight each other to prove themselves.
+
+"
+"Animals suffer from some of the same things man does, it isn't uncommon for a pet to what?","['bathe', 'copulate', 'lick on face', 'die of cancer', 'bite']","Questions: Animals suffer from some of the same things man does, it isn't uncommon for a pet to what?, Choices: (A) bathe, (B) copulate, (C) lick on face, (D) die of cancer, (E) bite. What is the correct answer to the question 'Animals suffer from some of the same things man does, it isn't uncommon for a pet to what?' with the options bathe, copulate, lick on face, die of cancer bite? Provide a straightforward explanation. 
+","9. **Animals suffer from some of the same things man does, it isn't uncommon for a pet to what?**
+   - The correct answer is **(D) die of cancer**. It isn't uncommon for a pet to die of cancer, as animals suffer from some of the same things humans do.
+
+"
+"Answering questions followed by saying, ""sir"" or ""ma'am"" is an indication that you are what?","['irritation', 'correct', 'responding', 'polite', 'sadness']","Questions: Answering questions followed by saying, ""sir"" or ""ma'am"" is an indication that you are what?, Choices: (A) irritation, (B) correct, (C) responding, (D) polite, (E) sadness. What is the correct answer to the question 'Answering questions followed by saying, ""sir"" or ""ma'am"" is an indication that you are what?' with the options irritation, correct, responding, polite sadness? Provide a straightforward explanation. 
+","10. **Answering questions followed by saying, ""sir"" or ""ma'am"" is an indication that you are what?**
+    - The correct answer is **(D) polite**. Answering questions followed by saying ""sir"" or ""ma'am"" is an indication that you are polite"
+"Any place sounded good besides McDonalds, he was hungry enough to go where?","['city', 'location', 'map', 'place', 'almost anywhere']","Questions: Any place sounded good besides McDonalds, he was hungry enough to go where?, Choices: (A) city, (B) location, (C) map, (D) place, (E) almost anywhere. What is the correct answer to the question 'Any place sounded good besides McDonalds, he was hungry enough to go where?' with the options city, location, map, place almost anywhere? Provide a straightforward explanation. 
+","1. Any place sounded good besides McDonalds, he was hungry enough to go where?
+
+The correct answer is **(E) almost anywhere**. The statement suggests that the person is willing to go to any place other than McDonald's because they are hungry. This implies that they are open to eating at various locations, making the option ""almost anywhere"" the most suitable choice. 
+"
+"Applying for job after job is part of the grind, but when no calls come back it can lead to what?","['hope', 'stress', 'happiness', 'frustration', 'working hard']","Questions: Applying for job after job is part of the grind, but when no calls come back it can lead to what?, Choices: (A) hope, (B) stress, (C) happiness, (D) frustration, (E) working hard. What is the correct answer to the question 'Applying for job after job is part of the grind, but when no calls come back it can lead to what?' with the options hope, stress, happiness, frustration working hard? Provide a straightforward explanation. 
+",
+"Arkansas university plays in the southeastern confernce, the sooners of where play in the big twelve?","['united states', 'seattle', 'arkansas', 'oklahoma', 'colorado']","Questions: Arkansas university plays in the southeastern confernce, the sooners of where play in the big twelve?, Choices: (A) united states, (B) seattle, (C) arkansas, (D) oklahoma, (E) colorado. What is the correct answer to the question 'Arkansas university plays in the southeastern confernce, the sooners of where play in the big twelve?' with the options united states, seattle, arkansas, oklahoma colorado? Provide a straightforward explanation. 
+",
+"Art, playing music, and other hobbies are great ways of expressing yourself that can be great what?","['fight', 'communication', 'fun', 'understood', 'suffering']","Questions: Art, playing music, and other hobbies are great ways of expressing yourself that can be great what?, Choices: (A) fight, (B) communication, (C) fun, (D) understood, (E) suffering. What is the correct answer to the question 'Art, playing music, and other hobbies are great ways of expressing yourself that can be great what?' with the options fight, communication, fun, understood suffering? Provide a straightforward explanation. 
+",
+"As a human in a large northeastern city, where can you see animals?","['zoo', 'workplace', 'sky', 'new york city', 'many places']","Questions: As a human in a large northeastern city, where can you see animals?, Choices: (A) zoo, (B) workplace, (C) sky, (D) new york city, (E) many places. What is the correct answer to the question 'As a human in a large northeastern city, where can you see animals?' with the options zoo, workplace, sky, new york city many places? Provide a straightforward explanation. 
+",
+"As a person is dying, what might be a sign that it is happening?","['would cease to exist', 'no longer exist', 'change color', 'born again', 'change of color']","Questions: As a person is dying, what might be a sign that it is happening?, Choices: (A) would cease to exist, (B) no longer exist, (C) change color, (D) born again, (E) change of color. What is the correct answer to the question 'As a person is dying, what might be a sign that it is happening?' with the options would cease to exist, no longer exist, change color, born again change of color? Provide a straightforward explanation. 
+",
+"As he left he questioned her love, he said if her was true she would what him?","['paint', 'entertain', 'draw', 'wait for', 'please parents']","Questions: As he left he questioned her love, he said if her was true she would what him?, Choices: (A) paint, (B) entertain, (C) draw, (D) wait for, (E) please parents. What is the correct answer to the question 'As he left he questioned her love, he said if her was true she would what him?' with the options paint, entertain, draw, wait for please parents? Provide a straightforward explanation. 
+",
+"As he was looking sharp, how did his wife speak to him when she saw him in his new clothes?","['inaccurate', 'inelegant', 'loudly', 'complimentary', 'dull']","Questions: As he was looking sharp, how did his wife speak to him when she saw him in his new clothes?, Choices: (A) inaccurate, (B) inelegant, (C) loudly, (D) complimentary, (E) dull. What is the correct answer to the question 'As he was looking sharp, how did his wife speak to him when she saw him in his new clothes?' with the options inaccurate, inelegant, loudly, complimentary dull? Provide a straightforward explanation. 
+",
+"As in part of string theory, what particle makes up hadrons?","['quark', 'guitar', ""bird's nest"", 'kite', 'beads']","Questions: As in part of string theory, what particle makes up hadrons?, Choices: (A) quark, (B) guitar, (C) bird's nest, (D) kite, (E) beads. What is the correct answer to the question 'As in part of string theory, what particle makes up hadrons?' with the options quark, guitar, bird's nest, kite beads? Provide a straightforward explanation. 
+",
+"As one side made advances on the other it seemed it would soon be over, the losers were doomed because not everyone gets to celebrate what?","['understood', 'pleasure', 'happy', 'happiness', 'victory in war']","Questions: As one side made advances on the other it seemed it would soon be over, the losers were doomed because not everyone gets to celebrate what?, Choices: (A) understood, (B) pleasure, (C) happy, (D) happiness, (E) victory in war. What is the correct answer to the question 'As one side made advances on the other it seemed it would soon be over, the losers were doomed because not everyone gets to celebrate what?' with the options understood, pleasure, happy, happiness victory in war? Provide a straightforward explanation. 
+","
+"
+"As the child keep growing it's curiosity grew, it wasn't long before it figured out the purpose of the remote control is for to do what?","['play music', 'design software', 'examine thing', 'see exhibits', 'use television']","Questions: As the child keep growing it's curiosity grew, it wasn't long before it figured out the purpose of the remote control is for to do what?, Choices: (A) play music, (B) design software, (C) examine thing, (D) see exhibits, (E) use television. What is the correct answer to the question 'As the child keep growing it's curiosity grew, it wasn't long before it figured out the purpose of the remote control is for to do what?' with the options play music, design software, examine thing, see exhibits use television? Provide a straightforward explanation. 
+","1. The correct answer to the question 'As the child keeps growing, it wasn't long before it figured out the purpose of the remote control is for what?' is (E) use television. The remote control is used to operate and control the functions of a television.
+
+"
+"As the company was concerned about profit, what were they looking to cut?","['losses', 'expense', 'losing money', 'lose money', 'eat cake']","Questions: As the company was concerned about profit, what were they looking to cut?, Choices: (A) losses, (B) expense, (C) losing money, (D) lose money, (E) eat cake. What is the correct answer to the question 'As the company was concerned about profit, what were they looking to cut?' with the options losses, expense, losing money, lose money eat cake? Provide a straightforward explanation. 
+","2. The correct answer to the question 'As the company was concerned about profit, what were they looking to cut?' is (B) expense. When a company is focused on increasing profit, they often look to reduce expenses in order to improve their financial performance.
+
+"
+"As the day ended he eyed the door from his desk, work was soon over and he could leave the what?","['conference room', 'theater', 'apartment', 'office', ""neighbor's house""]","Questions: As the day ended he eyed the door from his desk, work was soon over and he could leave the what?, Choices: (A) conference room, (B) theater, (C) apartment, (D) office, (E) neighbor's house. What is the correct answer to the question 'As the day ended he eyed the door from his desk, work was soon over and he could leave the what?' with the options conference room, theater, apartment, office neighbor's house? Provide a straightforward explanation. 
+","3. The correct answer to the question 'As the day ended, he eyed the door from his desk, work was soon over and he could leave the what?' is (D) office. The person in question was at their workplace, and as the day ended, they were anticipating leaving the office.
+
+"
+"As the fire raged she frantically looked for a door, what did she want to do?","['theater', 'window', 'opening', 'exit', 'apartment']","Questions: As the fire raged she frantically looked for a door, what did she want to do?, Choices: (A) theater, (B) window, (C) opening, (D) exit, (E) apartment. What is the correct answer to the question 'As the fire raged she frantically looked for a door, what did she want to do?' with the options theater, window, opening, exit apartment? Provide a straightforward explanation. 
+","4. The correct answer to the question 'As the fire raged, she frantically looked for a door, what did she want to do?' is (D) exit. In a dangerous situation like a fire, finding an exit door is crucial for safety and escaping the danger.
+
+"
+"As the girl didn't care for the bunny, what did it suffer from?","['apathetic', 'neglect', 'indifferent', 'see work', 'disregard']","Questions: As the girl didn't care for the bunny, what did it suffer from?, Choices: (A) apathetic, (B) neglect, (C) indifferent, (D) see work, (E) disregard. What is the correct answer to the question 'As the girl didn't care for the bunny, what did it suffer from?' with the options apathetic, neglect, indifferent, see work disregard? Provide a straightforward explanation. 
+","5. The correct answer to the question 'As the girl didn't care for the bunny, what did it suffer from?' is (B) neglect. If someone doesn't care for a bunny or provide it with proper attention and care, the bunny may suffer from neglect.
+
+"
+"As the human rode in his spacecraft in orbit around his home planet, what did he have a view of?","['workplace', 'international space station', 'anywhere on earth', 'places he knows well', 'strip club']","Questions: As the human rode in his spacecraft in orbit around his home planet, what did he have a view of?, Choices: (A) workplace, (B) international space station, (C) anywhere on earth, (D) places he knows well, (E) strip club. What is the correct answer to the question 'As the human rode in his spacecraft in orbit around his home planet, what did he have a view of?' with the options workplace, international space station, anywhere on earth, places he knows well strip club? Provide a straightforward explanation. 
+","6. The correct answer to the question 'As the human rode in his spacecraft in orbit around his home planet, what did he have a view of?' is (C) anywhere on earth. Being in orbit around the home planet provides a view of various locations on Earth.
+
+"
+"As the man descended the mountains into the marsh, where was he?","['louisiana', 'florida', 'everglades', 'field', 'low lands']","Questions: As the man descended the mountains into the marsh, where was he?, Choices: (A) louisiana, (B) florida, (C) everglades, (D) field, (E) low lands. What is the correct answer to the question 'As the man descended the mountains into the marsh, where was he?' with the options louisiana, florida, everglades, field low lands? Provide a straightforward explanation. 
+","7. The correct answer to the question 'As the man descended the mountains into the marsh, where was he?' is (C) everglades. The everglades is a marshy area located in Florida.
+
+"
+"As they skipped stones, where were they looking for new ones?","['driveway', 'gallbladder', 'river bed', 'quarry', 'creek bed']","Questions: As they skipped stones, where were they looking for new ones?, Choices: (A) driveway, (B) gallbladder, (C) river bed, (D) quarry, (E) creek bed. What is the correct answer to the question 'As they skipped stones, where were they looking for new ones?' with the options driveway, gallbladder, river bed, quarry creek bed? Provide a straightforward explanation. 
+","8. The correct answer to the question 'As they skipped stones, where were they looking for new ones?' is (C) river bed. When skipping stones, people often search for new stones along the river bed.
+
+"
+"As things get colder, temperature does what?","['increase', 'drop to zero', 'heat up', 'dropping quickly', 'arctic']","Questions: As things get colder, temperature does what?, Choices: (A) increase, (B) drop to zero, (C) heat up, (D) dropping quickly, (E) arctic. What is the correct answer to the question 'As things get colder, temperature does what?' with the options increase, drop to zero, heat up, dropping quickly arctic? Provide a straightforward explanation. 
+","9. The correct answer to the question 'As things get colder, temperature does what?' is (B) drop to zero. As the temperature decreases, it eventually reaches the point of freezing, which is zero degrees Celsius or 32 degrees Fahrenheit.
+
+"
+"As you live life you get wiser, it is a part of what?","['growing older', 'death', 'experience things', 'toothsome', 'breathe']","Questions: As you live life you get wiser, it is a part of what?, Choices: (A) growing older, (B) death, (C) experience things, (D) toothsome, (E) breathe. What is the correct answer to the question 'As you live life you get wiser, it is a part of what?' with the options growing older, death, experience things, toothsome breathe? Provide a straightforward explanation. 
+","10. The correct answer to the question 'As you live life, you get wiser, it is a part of what?' is (A) growing older. With age and experience, people tend to gain wisdom and knowledge, making them wiser as they live their lives.
+
+Please let me know if there's anything else I can assist you with."
+"At a university, what sort of building is likely to be called a hall?","['conference', 'small classroom', 'large building', 'dormitory', 'inside']","Questions: At a university, what sort of building is likely to be called a hall?, Choices: (A) conference, (B) small classroom, (C) large building, (D) dormitory, (E) inside. What is the correct answer to the question 'At a university, what sort of building is likely to be called a hall?' with the options conference, small classroom, large building, dormitory inside? Provide a straightforward explanation. 
+","1. The correct answer to the question ""At a university, what sort of building is likely to be called a hall?"" is (C) large building. At a university, a hall typically refers to a large building that serves various purposes such as hosting lectures, events, or housing administrative offices.
+
+"
+"At reception desk John asked  to see a person who was helping him make a sale.  Lilly came out immediately and took him back to her space, and talked to him about his needs.  He said that he was willing to lower the price to 80,000 if it would sale faster.  Where might John be?","['large office', 'at hotel', 'building', 'real estate office', 'store room']","Questions: At reception desk John asked  to see a person who was helping him make a sale.  Lilly came out immediately and took him back to her space, and talked to him about his needs.  He said that he was willing to lower the price to 80,000 if it would sale faster.  Where might John be?, Choices: (A) large office, (B) at hotel, (C) building, (D) real estate office, (E) store room. What is the correct answer to the question 'At reception desk John asked  to see a person who was helping him make a sale.  Lilly came out immediately and took him back to her space, and talked to him about his needs.  He said that he was willing to lower the price to 80,000 if it would sale faster.  Where might John be?' with the options large office, at hotel, building, real estate office store room? Provide a straightforward explanation. 
+",
+"At the casino I end up playing cards, what is a reason I would do this?","['having fun', 'win money', 'break even', 'wasting time', 'losing money']","Questions: At the casino I end up playing cards, what is a reason I would do this?, Choices: (A) having fun, (B) win money, (C) break even, (D) wasting time, (E) losing money. What is the correct answer to the question 'At the casino I end up playing cards, what is a reason I would do this?' with the options having fun, win money, break even, wasting time losing money? Provide a straightforward explanation. 
+","3.5: 
+
+1. The correct answer to the question ""At a university, what sort of building is likely to be called a hall?"" is (C) large building. At a university, a hall typically refers to a large building that serves various purposes such as hosting lectures, events, or housing administrative offices.
+
+2. Based on the given scenario, the correct answer to the question ""Where might John be?"" is (D) real estate office. John asked to see a person who was helping him make a sale, and Lilly, who works at the reception desk, immediately took him back to her space to discuss his needs. This suggests that John is likely in a real estate office.
+
+3. The correct answer to the question ""At the casino I end up playing cards, what is a reason I would do this?"" is (A) having fun and (B) win money. People often play cards at a casino for entertainment and the possibility of winning money.
+
+"
+"At the school dance most kids were enjoying themselves, but a shy one found himself a what?","['standing still', 'stand still', 'partner', 'wallflower', 'dancing']","Questions: At the school dance most kids were enjoying themselves, but a shy one found himself a what?, Choices: (A) standing still, (B) stand still, (C) partner, (D) wallflower, (E) dancing. What is the correct answer to the question 'At the school dance most kids were enjoying themselves, but a shy one found himself a what?' with the options standing still, stand still, partner, wallflower dancing? Provide a straightforward explanation. 
+",
+"At what institution can you learn about a shark, a whale, or a dolphin?","['bad movie', 'pool hall', 'bathtub', 'outside', 'marine museum']","Questions: At what institution can you learn about a shark, a whale, or a dolphin?, Choices: (A) bad movie, (B) pool hall, (C) bathtub, (D) outside, (E) marine museum. What is the correct answer to the question 'At what institution can you learn about a shark, a whale, or a dolphin?' with the options bad movie, pool hall, bathtub, outside marine museum? Provide a straightforward explanation. 
+","5: 
+
+1. The correct answer to the question ""At a university, what sort of building is likely to be called a hall?"" is (C) large building. At a university, a hall typically refers to a large building that serves various purposes such as hosting lectures, events, or housing administrative offices.
+
+2. Based on the given scenario, the correct answer to the question ""Where might John be?"" is (D) real estate office. John asked to see a person who was helping him make a sale, and Lilly, who works at the reception desk, immediately took him back to her space to discuss his needs. This suggests that John is likely in a real estate office.
+
+3. The correct answer to the question ""At the casino I end up playing cards, what is a reason I would do this?"" is (A) having fun and (B) win money. People often play cards at a casino for entertainment and the possibility of winning money.
+
+4. In the context of the given scenario, the correct answer to the question ""At the school dance most kids were enjoying themselves, but a shy one found himself a what?"" is (D) wallflower. A wallflower refers to a shy person who remains on the sidelines and does not actively participate in the dancing.
+
+5. The correct answer to the question ""At what institution can you learn about a shark, a whale, or a dolphin?"" is (E) marine museum. A marine museum is an institution where you can learn about various marine creatures, including sharks, whales, and dolphins.
+
+"
+"At work I do lots of math, so I keep a calculator open and handy on my what?","['wristwatch', 'office', 'purse', 'accounting department', 'desktop']","Questions: At work I do lots of math, so I keep a calculator open and handy on my what?, Choices: (A) wristwatch, (B) office, (C) purse, (D) accounting department, (E) desktop. What is the correct answer to the question 'At work I do lots of math, so I keep a calculator open and handy on my what?' with the options wristwatch, office, purse, accounting department desktop? Provide a straightforward explanation. 
+","6. Based on the given information, the correct answer to the question ""At work I do lots of math, so I keep a calculator open and handy on my what?"" is (E) desktop. Keeping a calculator open and handy on a desktop is a common practice for individuals who need to perform calculations frequently at work.
+
+"
+"Attending meeting was his priority, he had to get a good what?","['understanding', 'start', 'getting information', 'result', 'fall asleep']","Questions: Attending meeting was his priority, he had to get a good what?, Choices: (A) understanding, (B) start, (C) getting information, (D) result, (E) fall asleep. What is the correct answer to the question 'Attending meeting was his priority, he had to get a good what?' with the options understanding, start, getting information, result fall asleep? Provide a straightforward explanation. 
+","7. The correct answer to the question ""Attending meeting was his priority, he had to get a good what?"" is (A) understanding. When attending a meeting, it is important to have a good understanding of the topics being discussed.
+
+"
+"Automation does a lot in a factory these days, but the heart and soul is still in the what?","['industrial park', 'russia', 'workers', 'free trade zones', 'bots']","Questions: Automation does a lot in a factory these days, but the heart and soul is still in the what?, Choices: (A) industrial park, (B) russia, (C) workers, (D) free trade zones, (E) bots. What is the correct answer to the question 'Automation does a lot in a factory these days, but the heart and soul is still in the what?' with the options industrial park, russia, workers, free trade zones bots? Provide a straightforward explanation. 
+","8. In the context of the statement ""Automation does a lot in a factory these days, but the heart and soul is still in the what?"" the correct answer is (C) workers. While automation plays a significant role in factories, the workers remain the heart and soul of the operation, contributing their skills and expertise.
+
+"
+"Babies don't make the same noise adults make when applauding, but they still do what when excited?","['sleep soundly', 'trust parents', 'clap hands', 'jump around', 'like spinach']","Questions: Babies don't make the same noise adults make when applauding, but they still do what when excited?, Choices: (A) sleep soundly, (B) trust parents, (C) clap hands, (D) jump around, (E) like spinach. What is the correct answer to the question 'Babies don't make the same noise adults make when applauding, but they still do what when excited?' with the options sleep soundly, trust parents, clap hands, jump around like spinach? Provide a straightforward explanation. 
+","9. The correct answer to the question ""Babies don't make the same noise adults make when applauding, but they still do what when excited?"" is (C) clap hands. Babies often express excitement by clapping their hands, even though they may not produce the same sound as adults when applauding.
+
+"
+"Bailey saw something scary in the entrance hall,  but closer examination showed that it was just a what?","['bathroom', 'palace', 'house', 'person', 'school']","Questions: Bailey saw something scary in the entrance hall,  but closer examination showed that it was just a what?, Choices: (A) bathroom, (B) palace, (C) house, (D) person, (E) school. What is the correct answer to the question 'Bailey saw something scary in the entrance hall,  but closer examination showed that it was just a what?' with the options bathroom, palace, house, person school? Provide a straightforward explanation. 
+","10. Based on the given scenario, the correct answer to the question ""Bailey saw something scary in the entrance hall, but closer examination showed that it was just a what?"" is (D) person. Bailey initially perceived something scary in the entrance hall, but upon closer examination, realized that it was just another person.
+
+I hope these explanations provide the clarity you were seeking. If you have any more questions, feel free to ask!"
+"Because he was a poor patient, what did he resist doing when nurses prompted him?","['appear better', 'visit doctor', 'will to survive', 'take pills', 'pay bill']","Questions: Because he was a poor patient, what did he resist doing when nurses prompted him?, Choices: (A) appear better, (B) visit doctor, (C) will to survive, (D) take pills, (E) pay bill. What is the correct answer to the question 'Because he was a poor patient, what did he resist doing when nurses prompted him?' with the options appear better, visit doctor, will to survive, take pills pay bill? Provide a straightforward explanation. 
+","1. The correct answer to the question ""Because he was a poor patient, what did he resist doing when nurses prompted him?"" is (D) take pills. He resisted taking the pills due to his financial situation as a poor patient.
+
+"
+"Because it was only two bedroom, one of the three roommates slept on the couch in the where?","['rest area', 'party', 'bathroom', 'waiting room', 'apartment']","Questions: Because it was only two bedroom, one of the three roommates slept on the couch in the where?, Choices: (A) rest area, (B) party, (C) bathroom, (D) waiting room, (E) apartment. What is the correct answer to the question 'Because it was only two bedroom, one of the three roommates slept on the couch in the where?' with the options rest area, party, bathroom, waiting room apartment? Provide a straightforward explanation. 
+",
+"Because of foot rails coming loose, he always kept a screwdriver behind the what?","['toolbox', 'bookcase', 'bar', 'repair shop', 'toolkit']","Questions: Because of foot rails coming loose, he always kept a screwdriver behind the what?, Choices: (A) toolbox, (B) bookcase, (C) bar, (D) repair shop, (E) toolkit. What is the correct answer to the question 'Because of foot rails coming loose, he always kept a screwdriver behind the what?' with the options toolbox, bookcase, bar, repair shop toolkit? Provide a straightforward explanation. 
+","3.5: 
+
+1. The correct answer to the question ""Because he was a poor patient, what did he resist doing when nurses prompted him?"" is (D) take pills. He resisted taking the pills due to his financial situation as a poor patient.
+
+2. The correct answer to the question ""Because it was only two bedroom, one of the three roommates slept on the couch in the where?"" is (E) apartment. One of the roommates slept on the couch in the apartment because there were only two bedrooms available.
+
+3. The correct answer to the question ""Because of foot rails coming loose, he always kept a screwdriver behind the what?"" is (A) toolbox. He kept a screwdriver behind the toolbox to fix the foot rails when they came loose.
+
+"
+"Because of safety concerns a law was passed, now all cars must have what?","['windows', 'trunks', 'four wheels', 'seat belts', 'diesel engines']","Questions: Because of safety concerns a law was passed, now all cars must have what?, Choices: (A) windows, (B) trunks, (C) four wheels, (D) seat belts, (E) diesel engines. What is the correct answer to the question 'Because of safety concerns a law was passed, now all cars must have what?' with the options windows, trunks, four wheels, seat belts diesel engines? Provide a straightforward explanation. 
+",
+"Before buying a house, what should I look for concerning my job?","['make home', 'security', 'measureing distances', 'examining poorch', 'make money']","Questions: Before buying a house, what should I look for concerning my job?, Choices: (A) make home, (B) security, (C) measureing distances, (D) examining poorch, (E) make money. What is the correct answer to the question 'Before buying a house, what should I look for concerning my job?' with the options make home, security, measureing distances, examining poorch make money? Provide a straightforward explanation. 
+","5: 
+
+1. The correct answer to the question ""Because he was a poor patient, what did he resist doing when nurses prompted him?"" is (D) take pills. He resisted taking the pills due to his financial situation as a poor patient.
+
+2. The correct answer to the question ""Because it was only two bedroom, one of the three roommates slept on the couch in the where?"" is (E) apartment. One of the roommates slept on the couch in the apartment because there were only two bedrooms available.
+
+3. The correct answer to the question ""Because of foot rails coming loose, he always kept a screwdriver behind the what?"" is (A) toolbox. He kept a screwdriver behind the toolbox to fix the foot rails when they came loose.
+
+4. The correct answer to the question ""Because of safety concerns a law was passed, now all cars must have what?"" is (D) seat belts. All cars must have seat belts due to safety concerns, as mandated by the law.
+
+5. The correct answer to the question ""Before buying a house, what should I look for concerning my job?"" is (B) security. When considering buying a house, it is important to look for job security to ensure a stable income for mortgage payments and other expenses.
+
+"
+"Before getting a divorce, what did the wife feel who was doing all the work?","['harder', 'anguish', 'bitterness', 'tears', 'sadness']","Questions: Before getting a divorce, what did the wife feel who was doing all the work?, Choices: (A) harder, (B) anguish, (C) bitterness, (D) tears, (E) sadness. What is the correct answer to the question 'Before getting a divorce, what did the wife feel who was doing all the work?' with the options harder, anguish, bitterness, tears sadness? Provide a straightforward explanation. 
+","6. The correct answer to the question ""Before getting a divorce, what did the wife feel who was doing all the work?"" is (C) bitterness. The wife who was doing all the work before getting a divorce may have felt bitterness due to the unequal distribution of responsibilities.
+
+"
+"Before the game some players knelt to pray, they did this because they what?","['being watched', ""you're scared"", 'were religious', 'god hears', 'talk to god']","Questions: Before the game some players knelt to pray, they did this because they what?, Choices: (A) being watched, (B) you're scared, (C) were religious, (D) god hears, (E) talk to god. What is the correct answer to the question 'Before the game some players knelt to pray, they did this because they what?' with the options being watched, you're scared, were religious, god hears talk to god? Provide a straightforward explanation. 
+","7. The correct answer to the question ""Before the game some players knelt to pray, they did this because they what?"" is (C) were religious. The players knelt to pray before the game because of their religious beliefs.
+
+"
+"Before the party, what did the staff need to attend?","['ocean', 'studying', 'celebrating birthday', 'meeting', 'stay home']","Questions: Before the party, what did the staff need to attend?, Choices: (A) ocean, (B) studying, (C) celebrating birthday, (D) meeting, (E) stay home. What is the correct answer to the question 'Before the party, what did the staff need to attend?' with the options ocean, studying, celebrating birthday, meeting stay home? Provide a straightforward explanation. 
+","8. The correct answer to the question ""Before the party, what did the staff need to attend?"" is (D) meeting. The staff needed to attend a meeting before the party to discuss preparations and coordinate their tasks.
+
+"
+"Being fat is unhealthy, one who is should probably exercise to what?","['stay fit', 'get in shape', 'look better', 'run faster', 'eat healthily']","Questions: Being fat is unhealthy, one who is should probably exercise to what?, Choices: (A) stay fit, (B) get in shape, (C) look better, (D) run faster, (E) eat healthily. What is the correct answer to the question 'Being fat is unhealthy, one who is should probably exercise to what?' with the options stay fit, get in shape, look better, run faster eat healthily? Provide a straightforward explanation. 
+","9. The correct answer to the question ""Being fat is unhealthy, one who is should probably exercise to what?"" is (A) stay fit. One who is overweight should probably exercise to stay fit and improve their overall health.
+
+"
+"Being in love, John and Betty did what when they were alone together?","['kiss', 'propose to woman', 'sing', 'live life', 'dance']","Questions: Being in love, John and Betty did what when they were alone together?, Choices: (A) kiss, (B) propose to woman, (C) sing, (D) live life, (E) dance. What is the correct answer to the question 'Being in love, John and Betty did what when they were alone together?' with the options kiss, propose to woman, sing, live life dance? Provide a straightforward explanation. 
+","10. The correct answer to the question ""Being in love, John and Betty did what when they were alone together?"" is (A) kiss. When John and Betty were alone together, being in love, they would likely kiss as a display of affection.
+
+I hope these explanations provide the information you were looking for. Let me know if you have any more questions."
+"Being jobless for 6 months, he had an interview after applying for a job, what did he feel?","['nausea', 'rejection', 'working hard', 'frustration', 'stress']","Questions: Being jobless for 6 months, he had an interview after applying for a job, what did he feel?, Choices: (A) nausea, (B) rejection, (C) working hard, (D) frustration, (E) stress. What is the correct answer to the question 'Being jobless for 6 months, he had an interview after applying for a job, what did he feel?' with the options nausea, rejection, working hard, frustration stress? Provide a straightforward explanation. 
+","1. The correct answer to the question 'Being jobless for 6 months, he had an interview after applying for a job, what did he feel?' is (D) frustration. When someone has been jobless for a significant period of time and finally gets an interview opportunity, it is common to feel frustrated due to the challenges faced during the job search.
+
+"
+"Being tired makes humans realize they need what even in a car, or chair?","['snore', 'go to bed', 'read a book', 'have rest', 'go to sleep']","Questions: Being tired makes humans realize they need what even in a car, or chair?, Choices: (A) snore, (B) go to bed, (C) read a book, (D) have rest, (E) go to sleep. What is the correct answer to the question 'Being tired makes humans realize they need what even in a car, or chair?' with the options snore, go to bed, read a book, have rest go to sleep? Provide a straightforward explanation. 
+",
+"Being used to the lack of diversity in the suburbs, what shocked the new world traveler about the kinds of food there were?","['possessing', 'plethora', 'present', 'enough', 'lackbrain']","Questions: Being used to the lack of diversity in the suburbs, what shocked the new world traveler about the kinds of food there were?, Choices: (A) possessing, (B) plethora, (C) present, (D) enough, (E) lackbrain. What is the correct answer to the question 'Being used to the lack of diversity in the suburbs, what shocked the new world traveler about the kinds of food there were?' with the options possessing, plethora, present, enough lackbrain? Provide a straightforward explanation. 
+","3.5: 
+
+1. The correct answer to the question 'Being jobless for 6 months, he had an interview after applying for a job, what did he feel?' is (D) frustration. When someone has been jobless for a significant period of time and finally gets an interview opportunity, it is common to feel frustrated due to the challenges faced during the job search.
+
+2. The correct answer to the question 'Being tired makes humans realize they need what even in a car, or chair?' is (E) go to sleep. When humans feel tired, it is a natural signal from the body that they need to rest and sleep, even if they are in a car or sitting on a chair.
+
+3. The correct answer to the question 'Being used to the lack of diversity in the suburbs, what shocked the new world traveler about the kinds of food there were?' is (B) plethora. The new world traveler was surprised by the abundance and variety of food options available, which differed from their previous experience of limited diversity in the suburbs.
+
+"
+"Ben was an alcoholic and was in an accident.  Because of his mistake, he spent 8 years somewhere. Where was he?","['prison', 'bridge', 'locked up', 'homeless shelter', ""neighbor's house""]","Questions: Ben was an alcoholic and was in an accident.  Because of his mistake, he spent 8 years somewhere. Where was he?, Choices: (A) prison, (B) bridge, (C) locked up, (D) homeless shelter, (E) neighbor's house. What is the correct answer to the question 'Ben was an alcoholic and was in an accident.  Because of his mistake, he spent 8 years somewhere. Where was he?' with the options prison, bridge, locked up, homeless shelter neighbor's house? Provide a straightforward explanation. 
+",
+"Ben was usually an eloquent speaker, but this time he had difficulty reading the words on the teleprompter, so he did much what?","['stammering', 'maundering', 'speechless', 'talking', 'tongueless']","Questions: Ben was usually an eloquent speaker, but this time he had difficulty reading the words on the teleprompter, so he did much what?, Choices: (A) stammering, (B) maundering, (C) speechless, (D) talking, (E) tongueless. What is the correct answer to the question 'Ben was usually an eloquent speaker, but this time he had difficulty reading the words on the teleprompter, so he did much what?' with the options stammering, maundering, speechless, talking tongueless? Provide a straightforward explanation. 
+","5: 
+
+1. The correct answer to the question 'Being jobless for "
+"Bess told Sam to move, but he refused. He said that he was doing what?","['stationary', 'staying put', 'sitting down', 'lay still', 'be still']","Questions: Bess told Sam to move, but he refused. He said that he was doing what?, Choices: (A) stationary, (B) staying put, (C) sitting down, (D) lay still, (E) be still. What is the correct answer to the question 'Bess told Sam to move, but he refused. He said that he was doing what?' with the options stationary, staying put, sitting down, lay still be still? Provide a straightforward explanation. 
+","6 months, he had an interview after applying for a job, what did he feel?' is (D) frustration. When someone has been jobless for a significant period of time and finally gets an interview opportunity, it is common to feel frustrated due to the challenges faced during the job search.
+
+2. The correct answer to the question 'Being tired makes humans realize they need what even in a car, or chair?' is (E) go to sleep. When humans feel tired, it is a natural signal from the body that they need to rest and sleep, even if they are in a car or sitting on a chair.
+
+3. The correct answer to the question 'Being used to the lack of diversity in the suburbs, what shocked the new world traveler about the kinds of food there were?' is (B) plethora. The new world traveler was surprised by the abundance and variety of food options available, which differed from their previous experience of limited diversity in the suburbs.
+
+4. The correct answer to the question 'Ben was an alcoholic and was in an accident. Because of his mistake, he spent 8 years somewhere. Where was he?' is (A) prison. Due to his mistake and involvement in an accident, Ben faced legal consequences and served a prison sentence for 8 years.
+
+5. The correct answer to the question 'Ben was usually an eloquent speaker, but this time he had difficulty reading the words on the teleprompter, so he did much what?' is (A) stammering. Ben experienced difficulty in reading the words on the teleprompter, resulting in a speech impediment characterized by involuntary pauses and repetitions known as stammering.
+
+6. The correct answer to the question 'Bess told Sam to move, but he refused. He said that he was doing what?' is (B) staying put. Sam refused to move and stated that he was staying put, indicating his intention to remain in his current position despite Bess's request.
+
+"
+"Betty felt that being in love was vital and important, necessary to do what?","['propose to woman', 'kiss', 'propose to woman', 'live life', 'sing']","Questions: Betty felt that being in love was vital and important, necessary to do what?, Choices: (A) propose to woman, (B) kiss, (C) propose to woman, (D) live life, (E) sing. What is the correct answer to the question 'Betty felt that being in love was vital and important, necessary to do what?' with the options propose to woman, kiss, propose to woman, live life sing? Provide a straightforward explanation. 
+",
+"Bill did not abandon the fight, but did what to the enemy?","['arrogate', 'retain', 'embrace', 'smile', 'engage']","Questions: Bill did not abandon the fight, but did what to the enemy?, Choices: (A) arrogate, (B) retain, (C) embrace, (D) smile, (E) engage. What is the correct answer to the question 'Bill did not abandon the fight, but did what to the enemy?' with the options arrogate, retain, embrace, smile engage? Provide a straightforward explanation. 
+","8 years somewhere. Where was he?' is (A) prison. Due to his mistake and involvement in an accident, Ben faced legal consequences and served a prison sentence for 8 years.
+
+5. The correct answer to the question 'Ben was usually an eloquent speaker, but this time he had difficulty reading the words on the teleprompter, so he did much what?' is (A) stammering. Ben experienced difficulty in reading the words on the teleprompter, resulting in a speech impediment characterized by involuntary pauses and repetitions known as stammering.
+
+6. The correct answer to the question 'Bess told Sam to move, but he refused. He said that he was doing what?' is (B) staying put. Sam refused to move and stated that he was staying put, indicating his intention to remain in his current position despite Bess's request.
+
+7. The correct answer to the question 'Betty felt that being in love was vital and important, necessary to do what?' is (D) live life. Betty believed that being in love was essential for living life to the fullest and experiencing the joys and fulfillment that come with romantic relationships.
+
+8. The correct answer to the question 'Bill did not abandon the fight, but did what to the enemy?' is (E) engage. Instead of giving up or retreating, Bill actively participated in the fight by engaging with the enemy, demonstrating his determination and commitment to the battle.
+
+"
+"Bill has a desire to learn, but doesn't personally know any teacher, where should he go?","['memorize', 'understand better', 'attend school', 'read book', 'church']","Questions: Bill has a desire to learn, but doesn't personally know any teacher, where should he go?, Choices: (A) memorize, (B) understand better, (C) attend school, (D) read book, (E) church. What is the correct answer to the question 'Bill has a desire to learn, but doesn't personally know any teacher, where should he go?' with the options memorize, understand better, attend school, read book church? Provide a straightforward explanation. 
+","9. The correct answer to the question 'Bill has a desire to learn, but doesn't personally know any teacher, where should he go?' is (C) attend school. To fulfill his desire to learn and acquire knowledge, Bill should consider attending school, where he can benefit from the guidance and expertise of qualified teachers.
+
+"
+"Bill is in a large marsh in Florida, where is he?","['forest', 'low lands', 'louisiana', 'everglades', 'marsh']","Questions: Bill is in a large marsh in Florida, where is he?, Choices: (A) forest, (B) low lands, (C) louisiana, (D) everglades, (E) marsh. What is the correct answer to the question 'Bill is in a large marsh in Florida, where is he?' with the options forest, low lands, louisiana, everglades marsh? Provide a straightforward explanation. 
+","10. The correct answer to the question 'Bill is in a large marsh in Florida, where is he?' is (D) Everglades. If Bill finds himself in a large marsh in Florida, he is most likely in the Everglades, a unique and expansive wetland ecosystem known for its rich biodiversity.
+
+Please let me know if there's anything else I can assist you with."
+"Bill is stuck in marsh when a man comes up to him peaking Cajun, where is he?","['low lands', 'new york', 'forest', 'louisiana', 'everglades']","Questions: Bill is stuck in marsh when a man comes up to him peaking Cajun, where is he?, Choices: (A) low lands, (B) new york, (C) forest, (D) louisiana, (E) everglades. What is the correct answer to the question 'Bill is stuck in marsh when a man comes up to him peaking Cajun, where is he?' with the options low lands, new york, forest, louisiana everglades? Provide a straightforward explanation. 
+","1: Bill is stuck in marsh when a man comes up to him speaking Cajun, where is he?
+
+The correct answer is **(D) Louisiana**. When Bill encounters a man speaking Cajun, he is most likely in Louisiana. Cajun is a dialect of French spoken by the Cajun people, who are descendants of Acadian settlers from Canada. Louisiana is known for its marshes and wetlands, making it a likely location for Bill to be stuck in a marsh [[1]](https://tvtropes.org/pmwiki/pmwiki.php/Main/RaginCajun).
+
+#### Question "
+"Bill likes driving, but it's expensive.  He wished that cars didn't do what?","['deaths', 'traffic jams', 'break down', 'using gas', 'may die']","Questions: Bill likes driving, but it's expensive.  He wished that cars didn't do what?, Choices: (A) deaths, (B) traffic jams, (C) break down, (D) using gas, (E) may die. What is the correct answer to the question 'Bill likes driving, but it's expensive.  He wished that cars didn't do what?' with the options deaths, traffic jams, break down, using gas may die? Provide a straightforward explanation. 
+","2: Bill likes driving, but it's expensive. He wished that cars didn't do what?
+
+The correct answer is **(D) using gas**. Bill wishes that cars didn't use gas because it is expensive. Gasoline is a major expense associated with driving, and reducing or eliminating the need for gas would make driving more affordable for Bill.
+
+#### Question "
+"Bill noticed that his hands could do many things.  He was thirsty, so he used his hands to do what?","['catch balls', 'articulate', 'cup water', 'soft', 'pick up cup']","Questions: Bill noticed that his hands could do many things.  He was thirsty, so he used his hands to do what?, Choices: (A) catch balls, (B) articulate, (C) cup water, (D) soft, (E) pick up cup. What is the correct answer to the question 'Bill noticed that his hands could do many things.  He was thirsty, so he used his hands to do what?' with the options catch balls, articulate, cup water, soft pick up cup? Provide a straightforward explanation. 
+","3: Bill noticed that his hands could do many things. He was thirsty, so he used his hands to do what?
+
+The correct answer is **(C) cup water**. Bill used his hands to cup water and drink when he felt thirsty. Cupping water with hands is a common method of drinking water when no other container is available.
+
+#### Question "
+"Bill picks from an apple tree in southern Michigan, where is he most likely to be?","['detroit', 'maryland', 'oregon', 'washington state', 'indiana']","Questions: Bill picks from an apple tree in southern Michigan, where is he most likely to be?, Choices: (A) detroit, (B) maryland, (C) oregon, (D) washington state, (E) indiana. What is the correct answer to the question 'Bill picks from an apple tree in southern Michigan, where is he most likely to be?' with the options detroit, maryland, oregon, washington state indiana? Provide a straightforward explanation. 
+","4: Bill picks from an apple tree in southern Michigan, where is he most likely to be?
+
+The correct answer is **(E) Indiana**. If Bill is picking apples from an apple tree in southern Michigan, he is most likely to be in Indiana. Indiana is located south of Michigan and is known for its apple orchards.
+
+#### Question "
+"Bill saw that Lilly was praying. He wasn't religious, so he didn't pray himself.  He felt that it was just what?","['good feeling', 'relief', 'feel safer', 'sense of peace', 'wasted time']","Questions: Bill saw that Lilly was praying. He wasn't religious, so he didn't pray himself.  He felt that it was just what?, Choices: (A) good feeling, (B) relief, (C) feel safer, (D) sense of peace, (E) wasted time. What is the correct answer to the question 'Bill saw that Lilly was praying. He wasn't religious, so he didn't pray himself.  He felt that it was just what?' with the options good feeling, relief, feel safer, sense of peace wasted time? Provide a straightforward explanation. 
+","5: Bill saw that Lilly was praying. He wasn't religious, so he didn't pray himself. He felt that it was just what?
+
+The correct answer is **(E) wasted time**. Bill, who is not religious, felt that praying was a wasted time. Since he does not believe in the religious significance of prayer, he perceives it as a futile activity [[1]](https://tvtropes.org/pmwiki/pmwiki.php/Main/RaginCajun).
+
+#### Question "
+"Bill sits down on a whoopee cushion, what sound does he make when he sits?","['fall asleep', 'flatulence', 'sigh of relief', 'medium', 'comfort']","Questions: Bill sits down on a whoopee cushion, what sound does he make when he sits?, Choices: (A) fall asleep, (B) flatulence, (C) sigh of relief, (D) medium, (E) comfort. What is the correct answer to the question 'Bill sits down on a whoopee cushion, what sound does he make when he sits?' with the options fall asleep, flatulence, sigh of relief, medium comfort? Provide a straightforward explanation. 
+","6: Bill sits down on a whoopee cushion, what sound does he make when he sits?
+
+The correct answer is **(B) flatulence**. When Bill sits down on a whoopee cushion, it produces a sound that resembles flatulence. Whoopee cushions are novelty items designed to make a farting sound when someone sits on them.
+
+#### Question "
+"Bill wants to make a fortune while sailing in the Caribbean, what should he look for?","['bank', 'stock market', 'treasure chest', 'bag of cash', 'real estate']","Questions: Bill wants to make a fortune while sailing in the Caribbean, what should he look for?, Choices: (A) bank, (B) stock market, (C) treasure chest, (D) bag of cash, (E) real estate. What is the correct answer to the question 'Bill wants to make a fortune while sailing in the Caribbean, what should he look for?' with the options bank, stock market, treasure chest, bag of cash real estate? Provide a straightforward explanation. 
+","7: Bill wants to make a fortune while sailing in the Caribbean, what should he look for?
+
+The correct answer is **(C) treasure chest**. If Bill wants to make a fortune while sailing in the Caribbean, he should look for a treasure chest. The Caribbean is known for its history of pirate activity and hidden treasures, making it a popular destination for treasure hunters and adventurers [[1]](https://tvtropes.org/pmwiki/pmwiki.php/Main/RaginCajun).
+
+#### Question "
+"Bill was a weasel, but he's a weasel you wanted on your side.  He held what?","['public office', 'out of doors', 'candles', 'chicken coop', 'barn']","Questions: Bill was a weasel, but he's a weasel you wanted on your side.  He held what?, Choices: (A) public office, (B) out of doors, (C) candles, (D) chicken coop, (E) barn. What is the correct answer to the question 'Bill was a weasel, but he's a weasel you wanted on your side.  He held what?' with the options public office, out of doors, candles, chicken coop barn? Provide a straightforward explanation. 
+","8: Bill was a weasel, but he's a weasel you wanted on your side. He held what?
+
+The correct answer is **(A) public office**. Bill, despite being described as a weasel, is a weasel you want on your side because he holds public office. This implies that Bill is a skilled and influential politician who can be advantageous to have as an ally.
+
+#### Question "
+"Bill was awaking, what was happening to him physiologically?","['tiredness', 'grogginess', 'discomfort', 'getting out of bed', 'eyes opening']","Questions: Bill was awaking, what was happening to him physiologically?, Choices: (A) tiredness, (B) grogginess, (C) discomfort, (D) getting out of bed, (E) eyes opening. What is the correct answer to the question 'Bill was awaking, what was happening to him physiologically?' with the options tiredness, grogginess, discomfort, getting out of bed eyes opening? Provide a straightforward explanation. 
+","9: Bill was awakening, what was happening to him physiologically?
+
+The correct answer is **(E) eyes opening**. When Bill was awakening, his eyes were opening. Awakening refers to the process of transitioning from a state of sleep to a state of wakefulness, which typically involves the opening of one's eyes.
+
+#### Question "
+"Bill was on a diet, but that didn't matter.  He cared most about his audio quality.  He had to turn up the gain because the high-impedance equipment he used cause what to volume?","['lost', 'lose weight', 'loss', 'waste', 'reduce']","Questions: Bill was on a diet, but that didn't matter.  He cared most about his audio quality.  He had to turn up the gain because the high-impedance equipment he used cause what to volume?, Choices: (A) lost, (B) lose weight, (C) loss, (D) waste, (E) reduce. What is the correct answer to the question 'Bill was on a diet, but that didn't matter.  He cared most about his audio quality.  He had to turn up the gain because the high-impedance equipment he used cause what to volume?' with the options lost, lose weight, loss, waste reduce? Provide a straightforward explanation. 
+","10: Bill was on a diet, but that didn't matter. He cared most about his audio quality. He had to turn up the gain because the high-impedance equipment he used caused what to volume?
+
+The correct answer is **(C) loss**. Bill had to turn up the gain because the high-impedance equipment he used caused a loss in volume. High-impedance equipment can result in a weaker signal, leading to a loss in volume. Increasing the gain compensates for this loss and amplifies the audio signal to achieve the desired volume [[1]](https://tvtropes.org/pmwiki/pmwiki.php/Main/RaginCajun)."
+"Billy and June were in the process of procreating.  It was very fun, but they knew that it would lead to what uncomfortable end?","['lack of sleep', 'twins', 'venereal disease', 'overpopulation', 'children born']","Questions: Billy and June were in the process of procreating.  It was very fun, but they knew that it would lead to what uncomfortable end?, Choices: (A) lack of sleep, (B) twins, (C) venereal disease, (D) overpopulation, (E) children born. What is the correct answer to the question 'Billy and June were in the process of procreating.  It was very fun, but they knew that it would lead to what uncomfortable end?' with the options lack of sleep, twins, venereal disease, overpopulation children born? Provide a straightforward explanation. 
+","1. Billy and June were in the process of procreating. It was very fun, but they knew that it would lead to what uncomfortable end?
+
+The correct answer to the question 'Billy and June were in the process of procreating. It was very fun, but they knew that it would lead to what uncomfortable end?' is **(A) lack of sleep**. When couples have children, especially newborns, they often experience a lack of sleep due to the demands of caring for a baby.
+
+#### "
+"Billy and Marge were a couple.  They weren't serious and they didn't get frisky, but they always enjoyed going and doing what?","['dance', 'marry each other', 'french kissing', 'make sex', 'plan to marry']","Questions: Billy and Marge were a couple.  They weren't serious and they didn't get frisky, but they always enjoyed going and doing what?, Choices: (A) dance, (B) marry each other, (C) french kissing, (D) make sex, (E) plan to marry. What is the correct answer to the question 'Billy and Marge were a couple.  They weren't serious and they didn't get frisky, but they always enjoyed going and doing what?' with the options dance, marry each other, french kissing, make sex plan to marry? Provide a straightforward explanation. 
+","2. Billy and Marge were a couple. They weren't serious and they didn't get frisky, but they always enjoyed going and doing what?
+
+The correct answer to the question 'Billy and Marge were a couple. They weren't serious and they didn't get frisky, but they always enjoyed going and doing what?' is **(A) dance**. Going dancing is a fun activity that couples can enjoy together, even if they are not in a serious relationship or engaging in intimate activities.
+
+#### "
+"Billy called out to John, and listened for what?","['silence', 'response', 'communication', 'hanging up', 'whisper']","Questions: Billy called out to John, and listened for what?, Choices: (A) silence, (B) response, (C) communication, (D) hanging up, (E) whisper. What is the correct answer to the question 'Billy called out to John, and listened for what?' with the options silence, response, communication, hanging up whisper? Provide a straightforward explanation. 
+","3. Billy called out to John, and listened for what?
+
+The correct answer to the question 'Billy called out to John, and listened for what?' is **(B) response**. When Billy called out to John, he was expecting a response from him.
+
+#### "
+"Billy cared about his opponent, in spite of their disagreements.  Because of that, when he lost the primary, Billy began to do what for him?","['proponent', 'supporter', 'falling down', 'advocate', 'dig up skeletons']","Questions: Billy cared about his opponent, in spite of their disagreements.  Because of that, when he lost the primary, Billy began to do what for him?, Choices: (A) proponent, (B) supporter, (C) falling down, (D) advocate, (E) dig up skeletons. What is the correct answer to the question 'Billy cared about his opponent, in spite of their disagreements.  Because of that, when he lost the primary, Billy began to do what for him?' with the options proponent, supporter, falling down, advocate dig up skeletons? Provide a straightforward explanation. 
+","4. Billy cared about his opponent, in spite of their disagreements. Because of that, when he lost the primary, Billy began to do what for him?
+
+The correct answer to the question 'Billy cared about his opponent, in spite of their disagreements. Because of that, when he lost the primary, Billy began to do what for him?' is **(D) advocate**. Even though Billy and his opponent had disagreements, Billy still cared about him and began advocating for him after losing the primary.
+
+#### "
+"Billy couldn't pick a side against a friend, so he stood where?","['angle', 'in between', 'front back', 'toeside', 'center']","Questions: Billy couldn't pick a side against a friend, so he stood where?, Choices: (A) angle, (B) in between, (C) front back, (D) toeside, (E) center. What is the correct answer to the question 'Billy couldn't pick a side against a friend, so he stood where?' with the options angle, in between, front back, toeside center? Provide a straightforward explanation. 
+","5. Billy couldn't pick a side against a friend, so he stood where?
+
+The correct answer to the question 'Billy couldn't pick a side against a friend, so he stood where?' is **(B) in between**. When Billy couldn't choose a side between two friends, he stood in between them to remain neutral.
+
+#### "
+"Billy didn't know what to do.  He had just bought a huge ficus, but he has no where to put it.  It was just too gid for his house.  Right now, the ficus waited outside in something. What is the ficus in?","['park', 'large pot', 'maze', 'green house', 'tropical forest']","Questions: Billy didn't know what to do.  He had just bought a huge ficus, but he has no where to put it.  It was just too gid for his house.  Right now, the ficus waited outside in something. What is the ficus in?, Choices: (A) park, (B) large pot, (C) maze, (D) green house, (E) tropical forest. What is the correct answer to the question 'Billy didn't know what to do.  He had just bought a huge ficus, but he has no where to put it.  It was just too gid for his house.  Right now, the ficus waited outside in something. What is the ficus in?' with the options park, large pot, maze, green house tropical forest? Provide a straightforward explanation. 
+","6. Billy didn't know what to do. He had just bought a huge ficus, but he has no where to put it. It was just too big for his house. Right now, the ficus waited outside in something. What is the ficus in?
+
+The correct answer to the question 'Billy didn't know what to do. He had just bought a huge ficus, but he has no where to put it. It was just too big for his house. Right now, the ficus waited outside in something. What is the ficus in?' is **(B) large pot**. The ficus is waiting outside in a large pot.
+
+#### "
+"Billy didn't make change for John, in spite of the resolution,  because John used his phone instead of what?","['unpleasant', 'tradition', 'laptop', 'stagnation', 'paper money']","Questions: Billy didn't make change for John, in spite of the resolution,  because John used his phone instead of what?, Choices: (A) unpleasant, (B) tradition, (C) laptop, (D) stagnation, (E) paper money. What is the correct answer to the question 'Billy didn't make change for John, in spite of the resolution,  because John used his phone instead of what?' with the options unpleasant, tradition, laptop, stagnation paper money? Provide a straightforward explanation. 
+","7. Billy didn't make change for John, in spite of the resolution, because John used his phone instead of what?
+
+The correct answer to the question 'Billy didn't make change for John, in spite of the resolution, because John used his phone instead of what?' is **(E) paper money**. Billy didn't make change for John because John used his phone instead of paper money.
+
+#### "
+"Billy emptied his trash can into the big dumpster.  Housekeeping was supposed to do it, but it was easy for him, and this place was cheap.  Where is Billy?","['dump', 'office', 'motel', 'park', 'corner']","Questions: Billy emptied his trash can into the big dumpster.  Housekeeping was supposed to do it, but it was easy for him, and this place was cheap.  Where is Billy?, Choices: (A) dump, (B) office, (C) motel, (D) park, (E) corner. What is the correct answer to the question 'Billy emptied his trash can into the big dumpster.  Housekeeping was supposed to do it, but it was easy for him, and this place was cheap.  Where is Billy?' with the options dump, office, motel, park corner? Provide a straightforward explanation. 
+","8. Billy emptied his trash can into the big dumpster. Housekeeping was supposed to do it, but it was easy for him, and this place was cheap. Where is Billy?
+
+The correct answer to the question 'Billy emptied his trash can into the big dumpster. Housekeeping was supposed to do it, but it was easy for him, and this place was cheap. Where is Billy?' is **(C) motel**. Billy is at a motel where he took care of emptying his trash can into the big dumpster himself.
+
+#### "
+"Billy found it easy to divide 9, because 9 was a what of 3?","['multiply', 'multiple', 'unite', 'multiplication', 'multiple']","Questions: Billy found it easy to divide 9, because 9 was a what of 3?, Choices: (A) multiply, (B) multiple, (C) unite, (D) multiplication, (E) multiple. What is the correct answer to the question 'Billy found it easy to divide 9, because 9 was a what of 3?' with the options multiply, multiple, unite, multiplication multiple? Provide a straightforward explanation. 
+","9. Billy found it easy to divide 9, because 9 was a what of 3?
+
+The correct answer to the question 'Billy found it easy to divide 9, because 9 was a what of 3?' is **(B) multiple**. 9 is a multiple of 3, which means it can be divided evenly by 3.
+
+#### "
+"Billy held the key information that Lorna needed.  Without that, Lorna couldn't find what?","['bus stand', 'turn lock', 'front door', 'open doors', 'solution to problem']","Questions: Billy held the key information that Lorna needed.  Without that, Lorna couldn't find what?, Choices: (A) bus stand, (B) turn lock, (C) front door, (D) open doors, (E) solution to problem. What is the correct answer to the question 'Billy held the key information that Lorna needed.  Without that, Lorna couldn't find what?' with the options bus stand, turn lock, front door, open doors solution to problem? Provide a straightforward explanation. 
+","10. Billy held the key information that Lorna needed. Without that, Lorna couldn't find what?
+
+The correct answer to the question 'Billy held the key information that Lorna needed. Without that, Lorna couldn't find what?' is **(E) solution to problem**. Lorna needed the key information from Billy in order to find the solution to her problem.
+
+"
+"Billy is an animal, but he is alergic to trees. He hates them very much.  Still, he wants to have a picnic and can't stand the idea of buying food from a restaurant.  Where would he have his picnic?","['addidas', 'north america', 'cafe', 'outside', 'woodland']","Questions: Billy is an animal, but he is alergic to trees. He hates them very much.  Still, he wants to have a picnic and can't stand the idea of buying food from a restaurant.  Where would he have his picnic?, Choices: (A) addidas, (B) north america, (C) cafe, (D) outside, (E) woodland. What is the correct answer to the question 'Billy is an animal, but he is alergic to trees. He hates them very much.  Still, he wants to have a picnic and can't stand the idea of buying food from a restaurant.  Where would he have his picnic?' with the options addidas, north america, cafe, outside woodland? Provide a straightforward explanation. 
+","1. **Where would Billy have his picnic?**
+   - The correct answer is **(D) outside**. Despite being allergic to trees, Billy can still have a picnic outside without being near trees.
+
+"
+"Billy liked seeing new teachers at school.   He enjoyed meeting new people, but didn't care about the quality of his what?","['excitement', 'university of chicago', 'fear', 'envy', 'education']","Questions: Billy liked seeing new teachers at school.   He enjoyed meeting new people, but didn't care about the quality of his what?, Choices: (A) excitement, (B) university of chicago, (C) fear, (D) envy, (E) education. What is the correct answer to the question 'Billy liked seeing new teachers at school.   He enjoyed meeting new people, but didn't care about the quality of his what?' with the options excitement, university of chicago, fear, envy education? Provide a straightforward explanation. 
+","2. **What didn't Billy care about the quality of?**
+   - The correct answer is **(E) education**. Billy enjoyed meeting new teachers and people but didn't care about the quality of his education.
+
+"
+"Billy likes eating breakfast in bed, but he doesn't do it often.  He likes his clean sheets too much. Why doesn't he eat breakfast in bed that often?","['pleasure', 'indigestion', 'convenience', 'spills', 'feel guilty']","Questions: Billy likes eating breakfast in bed, but he doesn't do it often.  He likes his clean sheets too much. Why doesn't he eat breakfast in bed that often?, Choices: (A) pleasure, (B) indigestion, (C) convenience, (D) spills, (E) feel guilty. What is the correct answer to the question 'Billy likes eating breakfast in bed, but he doesn't do it often.  He likes his clean sheets too much. Why doesn't he eat breakfast in bed that often?' with the options pleasure, indigestion, convenience, spills feel guilty? Provide a straightforward explanation. 
+","3. **Why doesn't Billy eat breakfast in bed that often?**
+   - The correct answer is **(D) spills**. Billy doesn't eat breakfast in bed often because he likes his clean sheets too much and doesn't want to spill.
+
+"
+"Billy loved choose, but he didn't put it on his meal because he was watching his weight. He even used a low fat what?","['lot of fat', 'salad dressing', 'strong odor', 'age to get better', 'age well']","Questions: Billy loved choose, but he didn't put it on his meal because he was watching his weight. He even used a low fat what?, Choices: (A) lot of fat, (B) salad dressing, (C) strong odor, (D) age to get better, (E) age well. What is the correct answer to the question 'Billy loved choose, but he didn't put it on his meal because he was watching his weight. He even used a low fat what?' with the options lot of fat, salad dressing, strong odor, age to get better age well? Provide a straightforward explanation. 
+","4. **What did Billy use a low-fat version of because he was watching his weight?**
+   - The correct answer is **(B) salad dressing**. Billy loved cheese but used a low-fat salad dressing because he was watching his weight.
+
+"
+"Billy loved climbing, and he eventually suffered a brain injury due to what?","['getting higher', 'loss of oxygen', 'falling', 'blisters', 'ascending']","Questions: Billy loved climbing, and he eventually suffered a brain injury due to what?, Choices: (A) getting higher, (B) loss of oxygen, (C) falling, (D) blisters, (E) ascending. What is the correct answer to the question 'Billy loved climbing, and he eventually suffered a brain injury due to what?' with the options getting higher, loss of oxygen, falling, blisters ascending? Provide a straightforward explanation. 
+","5. **What did Billy eventually suffer a brain injury due to?**
+   - The correct answer is **(C) falling**. Billy loved climbing and eventually suffered a brain injury due to falling.
+
+"
+"Billy loved grapes and other similar foods, so for his birthday his friends bought him one of these.  What did they buy him?","['fruit basket', 'field', 'winery', 'bowl of fruit', 'kitchen']","Questions: Billy loved grapes and other similar foods, so for his birthday his friends bought him one of these.  What did they buy him?, Choices: (A) fruit basket, (B) field, (C) winery, (D) bowl of fruit, (E) kitchen. What is the correct answer to the question 'Billy loved grapes and other similar foods, so for his birthday his friends bought him one of these.  What did they buy him?' with the options fruit basket, field, winery, bowl of fruit kitchen? Provide a straightforward explanation. 
+","6. **What did Billy's friends buy him for his birthday?**
+   - The correct answer is **(A) fruit basket**. Since Billy loved grapes and similar foods, his friends bought him a fruit basket for his birthday.
+
+"
+"Billy loved having food, but he didn't like the consequences of overeating.   What is the long-term consequence of having too much food?","['digesting', 'constipation', 'weight gain', 'not hungry', 'gas']","Questions: Billy loved having food, but he didn't like the consequences of overeating.   What is the long-term consequence of having too much food?, Choices: (A) digesting, (B) constipation, (C) weight gain, (D) not hungry, (E) gas. What is the correct answer to the question 'Billy loved having food, but he didn't like the consequences of overeating.   What is the long-term consequence of having too much food?' with the options digesting, constipation, weight gain, not hungry gas? Provide a straightforward explanation. 
+","7. **What is the long-term consequence of having too much food?**
+   - The correct answer is **(C) weight gain**. Billy loved having food but didn't like the consequences of overeating, which includes long-term weight gain.
+
+"
+"Billy loved singing, because it let him do what?","['sore throats', 'ichiness', 'being heard', 'change in mood', 'hoarse voice']","Questions: Billy loved singing, because it let him do what?, Choices: (A) sore throats, (B) ichiness, (C) being heard, (D) change in mood, (E) hoarse voice. What is the correct answer to the question 'Billy loved singing, because it let him do what?' with the options sore throats, ichiness, being heard, change in mood hoarse voice? Provide a straightforward explanation. 
+","8. **Why did Billy love singing?**
+   - The correct answer is **(C) being heard**. Billy loved singing because it let him be heard.
+
+"
+"Billy loves science, history, and art but isn't very creative.  When he was visiting the museum, he felt a great deal of what emotion?","['inspiration', 'fulfillment', 'wonder', 'boredom', 'enjoyment']","Questions: Billy loves science, history, and art but isn't very creative.  When he was visiting the museum, he felt a great deal of what emotion?, Choices: (A) inspiration, (B) fulfillment, (C) wonder, (D) boredom, (E) enjoyment. What is the correct answer to the question 'Billy loves science, history, and art but isn't very creative.  When he was visiting the museum, he felt a great deal of what emotion?' with the options inspiration, fulfillment, wonder, boredom enjoyment? Provide a straightforward explanation. 
+","9. **What emotion did Billy feel when visiting the museum?**
+   - The correct answer is **(C) wonder**. Despite not being very creative, when Billy visited the museum, he felt a great deal of wonder [[9]](https://standtogethertrust.org/stories/lessons-from-viktor-frankls-mans-search-for-freedom/).
+
+"
+"Billy needed his hammer, so he looked where?","['hardware store', 'toolbelt', 'repair shop', 'backpack', 'tool box']","Questions: Billy needed his hammer, so he looked where?, Choices: (A) hardware store, (B) toolbelt, (C) repair shop, (D) backpack, (E) tool box. What is the correct answer to the question 'Billy needed his hammer, so he looked where?' with the options hardware store, toolbelt, repair shop, backpack tool box? Provide a straightforward explanation. 
+","10. **Where did Billy look for his hammer?**
+    - The correct answer is **(E) tool box**. When Billy needed his hammer, he looked in his tool box"

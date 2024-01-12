@@ -1,0 +1,541 @@
+premise,hypothesis,prompt,rationale
+Sally went to a store and spent money.  Most of her purchases were fresh but some were frozen.  What did she do?,"['made a mistake', 'control people', 'get things', 'buy food', 'pay bills']","Questions: Sally went to a store and spent money.  Most of her purchases were fresh but some were frozen.  What did she do?, Choices: (A) made a mistake, (B) control people, (C) get things, (D) buy food, (E) pay bills. Given the question 'Sally went to a store and spent money.  Most of her purchases were fresh but some were frozen.  What did she do?', which among the choices made a mistake, control people, get things, buy food pay bills is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) buy food. My reasoning is as follows:
+
+- If Sally went to a store and spent money, then she did something with her money.
+- If most of her purchases were fresh but some were frozen, then she bought items that can be eaten.
+- If she bought items that can be eaten, then she bought food.
+- Therefore, if Sally went to a store and spent money, and most of her purchases were fresh but some were frozen, then she bought food.
+
+"
+Sally worked at a dentist office. She had to work late.  What might have caused her to work late?,"['office building', 'town', 'patient', 'michigan', 'office desk']","Questions: Sally worked at a dentist office. She had to work late.  What might have caused her to work late?, Choices: (A) office building, (B) town, (C) patient, (D) michigan, (E) office desk. Given the question 'Sally worked at a dentist office. She had to work late.  What might have caused her to work late?', which among the choices office building, town, patient, michigan office desk is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) patient. My reasoning is as follows:
+
+- If Sally worked at a dentist office, then she had a job related to dental care.
+- If she had to work late, then she had some unfinished work to do.
+- If she had some unfinished work to do, then she had a reason to stay longer than usual.
+- If she had a reason to stay longer than usual, then it was likely related to her job.
+- If it was likely related to her job, then it was probably a patient who needed dental care.
+- Therefore, if Sally worked at a dentist office and had to work late, then it might have been caused by a patient who needed dental care.
+
+"
+Sally's boss told her to stop playing.  She was being very loud.  What was she playing?,"['telegram', 'organ', 'telegraph', 'motor', 'chess']","Questions: Sally's boss told her to stop playing.  She was being very loud.  What was she playing?, Choices: (A) telegram, (B) organ, (C) telegraph, (D) motor, (E) chess. Given the question 'Sally's boss told her to stop playing.  She was being very loud.  What was she playing?', which among the choices telegram, organ, telegraph, motor chess is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) organ. My reasoning is as follows:
+
+- If Sally's boss told her to stop playing, then she was doing something that was not work-related.
+- If she was doing something that was not work-related, then she was having fun or enjoying herself.
+- If she was having fun or enjoying herself, then she was playing something.
+- If she was playing something, then it was an activity or an object that can be played.
+- If she was being very loud, then it was an activity or an object that can make noise.
+- If it was an activity or an object that can make noise, then it was likely a musical instrument.
+- If it was likely a musical instrument, then it was probably an organ, which is a large and loud musical instrument.
+- Therefore, if Sally's boss told her to stop playing and she was being very loud, then she was playing an organ.
+
+"
+Sam  spent time chatting with friends about important things because he wanted to get what?,"['love', 'happiness', 'answers', 'communication', 'money']","Questions: Sam  spent time chatting with friends about important things because he wanted to get what?, Choices: (A) love, (B) happiness, (C) answers, (D) communication, (E) money. Given the question 'Sam  spent time chatting with friends about important things because he wanted to get what?', which among the choices love, happiness, answers, communication money is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) answers. My reasoning is as follows:
+
+- If Sam spent time chatting with friends, then he was having a conversation with them.
+- If he was having a conversation with them, then he was talking and listening to them.
+- If he was talking and listening to them, then he was exchanging information with them.
+- If he was exchanging information with them, then he was asking and answering questions with them.
+- If he was asking and answering questions with them, then he was seeking or providing answers with them.
+- If he was seeking or providing answers with them, then he wanted to get answers from them or give answers to them.
+- Therefore, if Sam spent time chatting with friends, then he wanted to get answers from them or give answers to them.
+
+"
+Sam and June bought loose corn because it was less expensive than what other variety?,"['footloose', 'bound', 'packaged', 'cobbed', 'compact']","Questions: Sam and June bought loose corn because it was less expensive than what other variety?, Choices: (A) footloose, (B) bound, (C) packaged, (D) cobbed, (E) compact. Given the question 'Sam and June bought loose corn because it was less expensive than what other variety?', which among the choices footloose, bound, packaged, cobbed compact is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) packaged. My reasoning is as follows:
+
+- If Sam and June bought loose corn, then they bought corn that was not in a container or a wrapper.
+- If they bought corn that was not in a container or a wrapper, then they bought corn that was not packaged.
+- If they bought corn that was not packaged, then they bought corn that was different from corn that was packaged.
+- If they bought corn that was different from corn that was packaged, then they bought corn that had a different price from corn that was packaged.
+- If they bought corn that had a different price from corn that was packaged, then they bought corn that was cheaper or more expensive than corn that was packaged.
+- If they bought corn because it was less expensive, then they bought corn that was cheaper than corn that was packaged.
+- Therefore, if Sam and June bought loose corn because it was less expensive, then they bought loose corn because it was less expensive than packaged corn.
+
+"
+Sam didn't care about what company he kept on Christmas.  He just didn't want to be what?,"['you', 'alone', 'solitude', 'he want to marry', 'loneliness']","Questions: Sam didn't care about what company he kept on Christmas.  He just didn't want to be what?, Choices: (A) you, (B) alone, (C) solitude, (D) he want to marry, (E) loneliness. Given the question 'Sam didn't care about what company he kept on Christmas.  He just didn't want to be what?', which among the choices you, alone, solitude, he want to marry loneliness is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) alone. My reasoning is as follows:
+
+- If Sam didn't care about what company he kept on Christmas, then he didn't mind who he spent time with on Christmas.
+- If he didn't mind who he spent time with on Christmas, then he didn't have a preference or a requirement for his companions on Christmas.
+- If he didn't have a preference or a requirement for his companions on Christmas, then he was willing to accept any person or group of people as his companions on Christmas.
+- If he was willing to accept any person or group of people as his companions on Christmas, then he wanted to have some companions on Christmas.
+- If he wanted to have some companions on Christmas, then he didn't want to be without any companions on Christmas.
+- If he didn't want to be without any companions on Christmas, then he didn't want to be alone on Christmas.
+- Therefore, if Sam didn't care about what company he kept on Christmas, then he just didn't want to be alone on Christmas.
+
+"
+Sam didn't expect to see something like that underground.  He used his hand to shade his eyes from what?,"['direct sunlight', 'brightness', 'moon', 'full sunlight', 'bright light']","Questions: Sam didn't expect to see something like that underground.  He used his hand to shade his eyes from what?, Choices: (A) direct sunlight, (B) brightness, (C) moon, (D) full sunlight, (E) bright light. Given the question 'Sam didn't expect to see something like that underground.  He used his hand to shade his eyes from what?', which among the choices direct sunlight, brightness, moon, full sunlight bright light is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) bright light. My reasoning is as follows:
+
+- If Sam didn't expect to see something like that underground, then he saw something that was unusual or surprising underground.
+- If he saw something that was unusual or surprising underground, then he saw something that was different from what he usually saw underground.
+- If he saw something that was different from what he usually saw underground, then he saw something that had a different quality or characteristic from what he usually saw underground.
+- If he saw something that had a different quality or characteristic from what he usually saw underground, then he saw something that had a different color, shape, size, texture, or brightness from what he usually saw underground.
+- If he used his hand to shade his eyes, then he saw something that had a different brightness from what he usually saw underground.
+- If he saw something that had a different brightness from what he usually saw underground, then he saw something that was brighter or darker than what he usually saw underground.
+- If he used his hand to shade his eyes, then he saw something that was brighter than what he usually saw underground.
+- Therefore, if Sam didn't expect to see something like that underground and he used his hand to shade his eyes, then he saw something that was bright light underground.
+
+"
+Sam didn't have to walk far to get lunch.  There was a deli on the ground floor of his what?,"['town', 'shopping center', 'strip mall', 'office building', 'new york city']","Questions: Sam didn't have to walk far to get lunch.  There was a deli on the ground floor of his what?, Choices: (A) town, (B) shopping center, (C) strip mall, (D) office building, (E) new york city. Given the question 'Sam didn't have to walk far to get lunch.  There was a deli on the ground floor of his what?', which among the choices town, shopping center, strip mall, office building new york city is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) office building. My reasoning is as follows:
+
+- If Sam didn't have to walk far to get lunch, then he had a short distance to travel to get lunch.
+- If he had a short distance to travel to get lunch, then he had a nearby place to get lunch.
+- If he had a nearby place to get lunch, then he had a place to get lunch that was close to his location.
+- If he had a place to get lunch that was close to his location, then he had a place to get lunch that was on the same street, block, or building as his location.
+- If there was a deli on the ground floor, then he had a place to get lunch that was on the same building as his location.
+- If he had a place to get lunch that was on the same building as his location, then he had a place to get lunch that was in the same building as his location.
+- If he had a place to get lunch that was in the same building as his location, then he had a location that was in a building.
+- Therefore, if Sam didn't have to walk far to get lunch and there was a deli on the ground floor, then he had a location that was in an office building.
+
+"
+Sam didn't like the people he met while traveling.  What might he do to get away from them?,"['come home', 'airplane', 'learn from each other', 'go out', 'make art']","Questions: Sam didn't like the people he met while traveling.  What might he do to get away from them?, Choices: (A) come home, (B) airplane, (C) learn from each other, (D) go out, (E) make art. Given the question 'Sam didn't like the people he met while traveling.  What might he do to get away from them?', which among the choices come home, airplane, learn from each other, go out make art is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) come home. My reasoning is as follows:
+
+- If Sam didn't like the people he met while traveling, then he had a negative feeling or opinion about the people he met while traveling.
+- If he had a negative feeling or opinion about the people he met while traveling, then he had a reason to avoid or escape from the people he met while traveling.
+- If he had a reason to avoid or escape from the people he met while traveling, then he had a possible action or solution to avoid or escape from the people he met while traveling.
+- If he had a possible action or solution to avoid or escape from the people he met while traveling, then he had a choice or an option to avoid or escape from the people he met while traveling.
+- If he had a choice or an option to avoid or escape from the people he met while traveling, then he had a way or a method to avoid or escape from the people he met while traveling.
+- If he had a way or a method to avoid or escape from the people he met while traveling, then he had a destination or a direction to avoid or escape from the people he met while traveling.
+- If he had a destination or a direction to avoid or escape from the people he met while traveling, then he had a place or a location to avoid or escape from the people he met while traveling.
+- If he had a place or a location to avoid or escape from the people he met while traveling, then he had a home or a residence to avoid or escape from the people he met while traveling.
+- Therefore, if Sam didn't like the people he met while traveling, then he might come home to avoid or escape from the people he met while traveling.
+
+"
+Sam eat a big dinner.  He eventually stopped having food because he experienced a pleasant sensation.  What did he experience?,"['feeling of fullness', 'weight gain', 'nausea', 'not hungry', 'upset stomach']","Questions: Sam eat a big dinner.  He eventually stopped having food because he experienced a pleasant sensation.  What did he experience?, Choices: (A) feeling of fullness, (B) weight gain, (C) nausea, (D) not hungry, (E) upset stomach. Given the question 'Sam eat a big dinner.  He eventually stopped having food because he experienced a pleasant sensation.  What did he experience?', which among the choices feeling of fullness, weight gain, nausea, not hungry upset stomach is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) feeling of fullness. My reasoning is as follows:
+
+- If Sam ate a big dinner, then he consumed a large amount of food.
+- If he consumed a large amount of food, then he filled his stomach with food.
+- If he filled his stomach with food, then he experienced a sensation in his stomach.
+- If he experienced a sensation in his stomach, then he felt something in his stomach.
+- If he felt something in his stomach, then he felt a pressure or a tightness in his stomach.
+- If he felt a pressure or a tight"
+Sam experienced a great deal of confusion because of what he suffered. What might he have suffered?,"['class', 'quandry', 'opera', 'mind', 'war']","Questions: Sam experienced a great deal of confusion because of what he suffered. What might he have suffered?, Choices: (A) class, (B) quandry, (C) opera, (D) mind, (E) war. Given the question 'Sam experienced a great deal of confusion because of what he suffered. What might he have suffered?', which among the choices class, quandry, opera, mind war is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) war**. Sam experienced a great deal of confusion because of what he suffered. What might he have suffered? War. A possible explanation using conditional statements is:
+
+```
+If Sam suffered war, then he experienced a great deal of confusion.
+Sam experienced a great deal of confusion.
+Therefore, Sam suffered war.
+```
+
+"
+Sam felt that he only had the power to destroy.  He was scared when he learned that Jane was pregnant.  He was surprised that he could do what?,"['create', 'rebuild', 'repair', 'draw', 'construct']","Questions: Sam felt that he only had the power to destroy.  He was scared when he learned that Jane was pregnant.  He was surprised that he could do what?, Choices: (A) create, (B) rebuild, (C) repair, (D) draw, (E) construct. Given the question 'Sam felt that he only had the power to destroy.  He was scared when he learned that Jane was pregnant.  He was surprised that he could do what?', which among the choices create, rebuild, repair, draw construct is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) create**. Sam felt that he only had the power to destroy. He was scared when he learned that Jane was pregnant. He was surprised that he could do what? Create. A possible explanation using conditional statements is:
+
+```
+If Sam only had the power to destroy, then he was scared when he learned that Jane was pregnant.
+Sam was scared when he learned that Jane was pregnant.
+Therefore, Sam only had the power to destroy.
+
+If Sam only had the power to destroy, then he was surprised that he could create.
+Sam was surprised that he could create.
+Therefore, Sam only had the power to destroy.
+```
+
+"
+Sam felt that you needed to improve yourself.  She said that you should take the time to collect your thoughts and clear your mind.  Why does she want you to improve yourself?,"['learn new', 'do yoga', 'meditate', 'feel better about yourself', 'celebrate']","Questions: Sam felt that you needed to improve yourself.  She said that you should take the time to collect your thoughts and clear your mind.  Why does she want you to improve yourself?, Choices: (A) learn new, (B) do yoga, (C) meditate, (D) feel better about yourself, (E) celebrate. Given the question 'Sam felt that you needed to improve yourself.  She said that you should take the time to collect your thoughts and clear your mind.  Why does she want you to improve yourself?', which among the choices learn new, do yoga, meditate, feel better about yourself celebrate is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) feel better about yourself**. Sam felt that you needed to improve yourself. She said that you should take the time to collect your thoughts and clear your mind. Why does she want you to improve yourself? Feel better about yourself. A possible explanation using conditional statements is:
+
+```
+If Sam felt that you needed to improve yourself, then she said that you should take the time to collect your thoughts and clear your mind.
+Sam said that you should take the time to collect your thoughts and clear your mind.
+Therefore, Sam felt that you needed to improve yourself.
+
+If Sam felt that you needed to improve yourself, then she wanted you to feel better about yourself.
+Sam wanted you to feel better about yourself.
+Therefore, Sam felt that you needed to improve yourself.
+```
+
+"
+Sam found a giant hole in the plain.  What might this hole be called?,"['hill', 'gorge', 'sandplain', 'cliff', 'mountain']","Questions: Sam found a giant hole in the plain.  What might this hole be called?, Choices: (A) hill, (B) gorge, (C) sandplain, (D) cliff, (E) mountain. Given the question 'Sam found a giant hole in the plain.  What might this hole be called?', which among the choices hill, gorge, sandplain, cliff mountain is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) gorge**. Sam found a giant hole in the plain. What might this hole be called? Gorge. A possible explanation using conditional statements is:
+
+```
+If Sam found a giant hole in the plain, then it might be called a gorge.
+Sam found a giant hole in the plain.
+Therefore, it might be called a gorge.
+```
+
+"
+Sam intentionally lost his tickets.  He didn't want to listen to people singing all night. Where was Sam going?,"['opera', 'movies', 'train station', 'race track', 'work']","Questions: Sam intentionally lost his tickets.  He didn't want to listen to people singing all night. Where was Sam going?, Choices: (A) opera, (B) movies, (C) train station, (D) race track, (E) work. Given the question 'Sam intentionally lost his tickets.  He didn't want to listen to people singing all night. Where was Sam going?', which among the choices opera, movies, train station, race track work is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) opera**. Sam intentionally lost his tickets. He didn't want to listen to people singing all night. Where was Sam going? Opera. A possible explanation using conditional statements is:
+
+```
+If Sam didn't want to listen to people singing all night, then he might have been going to an opera.
+Sam didn't want to listen to people singing all night.
+Therefore, he might have been going to an opera.
+
+If Sam intentionally lost his tickets, then he might have been going to an opera.
+Sam intentionally lost his tickets.
+Therefore, he might have been going to an opera.
+```
+
+"
+Sam is getting something that he doesn't want.  What is he getting?,"['headaches', 'satisfaction', 'then have', 'being happy', 'money']","Questions: Sam is getting something that he doesn't want.  What is he getting?, Choices: (A) headaches, (B) satisfaction, (C) then have, (D) being happy, (E) money. Given the question 'Sam is getting something that he doesn't want.  What is he getting?', which among the choices headaches, satisfaction, then have, being happy money is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(A) headaches**. Sam is getting something that he doesn't want. What is he getting? Headaches. A possible explanation using conditional statements is:
+
+```
+If Sam is getting something that he doesn't want, then it might be headaches.
+Sam is getting something that he doesn't want.
+Therefore, it might be headaches.
+```
+
+"
+Sam left his muddy shoes in the entryway.  Where might he be?,"['department store', 'school', 'garden', 'office building', 'house']","Questions: Sam left his muddy shoes in the entryway.  Where might he be?, Choices: (A) department store, (B) school, (C) garden, (D) office building, (E) house. Given the question 'Sam left his muddy shoes in the entryway.  Where might he be?', which among the choices department store, school, garden, office building house is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(E) house**. Sam left his muddy shoes in the entryway. Where might he be? House. A possible explanation using conditional statements is:
+
+```
+If Sam left his muddy shoes in the entryway, then he might be in a house.
+Sam left his muddy shoes in the entryway.
+Therefore, he might be in a house.
+```
+
+"
+Sam liked getting drunk.  He did it for what?,"['nausea', 'sleep', 'fights', 'vomiting', 'relaxation']","Questions: Sam liked getting drunk.  He did it for what?, Choices: (A) nausea, (B) sleep, (C) fights, (D) vomiting, (E) relaxation. Given the question 'Sam liked getting drunk.  He did it for what?', which among the choices nausea, sleep, fights, vomiting relaxation is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) relaxation**. Sam liked getting drunk. He did it for what? Relaxation. A possible explanation using conditional statements is:
+
+```
+If Sam liked getting drunk, then he did it for relaxation.
+Sam liked getting drunk.
+Therefore, he did it for relaxation.
+```
+
+"
+Sam listened for instructions from the ground on the radio.  Where might have Sam been?,"['school', 'shop', 'space shuttle', 'train', 'bedroom']","Questions: Sam listened for instructions from the ground on the radio.  Where might have Sam been?, Choices: (A) school, (B) shop, (C) space shuttle, (D) train, (E) bedroom. Given the question 'Sam listened for instructions from the ground on the radio.  Where might have Sam been?', which among the choices school, shop, space shuttle, train bedroom is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) space shuttle**. Sam listened for instructions from the ground on the radio. Where might have Sam been? Space shuttle. A possible explanation using conditional statements is:
+
+```
+If Sam listened for instructions from the ground on the radio, then he might have been in a space shuttle.
+Sam listened for instructions from the ground on the radio.
+Therefore, he might have been in a space shuttle.
+```
+
+"
+Sam loved buying Christmas presents. Giving to others made him feel what?,"['lack of money', 'pleasure', 'happiness', 'love', 'relief']","Questions: Sam loved buying Christmas presents. Giving to others made him feel what?, Choices: (A) lack of money, (B) pleasure, (C) happiness, (D) love, (E) relief. Given the question 'Sam loved buying Christmas presents. Giving to others made him feel what?', which among the choices lack of money, pleasure, happiness, love relief is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) happiness**. Sam loved buying Christmas presents. Giving to others made him feel what? Happiness. A possible explanation using conditional statements is:
+
+```
+If Sam loved buying Christmas presents, then giving to others made him feel happiness.
+Sam loved buying Christmas presents.
+Therefore, giving to others made him feel happiness.
+```
+
+I hope this helps you. Have a nice day! 😊"
+Sam loves to create art.   Looking at other peoples work does what to him?,"['depresses', 'express yourself', 'inspires', 'enlightenment', 'creative']","Questions: Sam loves to create art.   Looking at other peoples work does what to him?, Choices: (A) depresses, (B) express yourself, (C) inspires, (D) enlightenment, (E) creative. Given the question 'Sam loves to create art.   Looking at other peoples work does what to him?', which among the choices depresses, express yourself, inspires, enlightenment creative is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) inspires. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If Sam loves to create art, then looking at other peoples work inspires him.""
+"
+Sam put his return ticket in a special box.  It was where he kept all of his what?,"['airline envelope', 'airport', 'plane', 'tickets', 'keepsakes']","Questions: Sam put his return ticket in a special box.  It was where he kept all of his what?, Choices: (A) airline envelope, (B) airport, (C) plane, (D) tickets, (E) keepsakes. Given the question 'Sam put his return ticket in a special box.  It was where he kept all of his what?', which among the choices airline envelope, airport, plane, tickets keepsakes is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) keepsakes. A conditional statement for this question is: ""If Sam put his return ticket in a special box, then it was where he kept all of his keepsakes.""
+"
+Sam ran out of clipboards. Where might he got for more?,"['windows 95', 'school', 'ammunition shop', 'office supply store', 'desk']","Questions: Sam ran out of clipboards. Where might he got for more?, Choices: (A) windows 95, (B) school, (C) ammunition shop, (D) office supply store, (E) desk. Given the question 'Sam ran out of clipboards. Where might he got for more?', which among the choices windows 95, school, ammunition shop, office supply store desk is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) office supply store. A conditional statement for this question is: ""If Sam ran out of clipboards, then he might go to an office supply store for more.""
+"
+Sam searched for important information about obscure subjects. Where might he look for it?,"['online', 'manual', 'google', 'newspaper', 'outside']","Questions: Sam searched for important information about obscure subjects. Where might he look for it?, Choices: (A) online, (B) manual, (C) google, (D) newspaper, (E) outside. Given the question 'Sam searched for important information about obscure subjects. Where might he look for it?', which among the choices online, manual, google, newspaper outside is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) online. A conditional statement for this question is: ""If Sam searched for important information about obscure subjects, then he might look for it online.""
+"
+Sam spent most of his time standing up.  His job was hectic and he never got any rest. But he was the best cashier at his workplace.    Where might he work?,"['bookstore', 'count till', 'supermarket', 'shop', 'preschool']","Questions: Sam spent most of his time standing up.  His job was hectic and he never got any rest. But he was the best cashier at his workplace.    Where might he work?, Choices: (A) bookstore, (B) count till, (C) supermarket, (D) shop, (E) preschool. Given the question 'Sam spent most of his time standing up.  His job was hectic and he never got any rest. But he was the best cashier at his workplace.    Where might he work?', which among the choices bookstore, count till, supermarket, shop preschool is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) supermarket. A conditional statement for this question is: ""If Sam spent most of his time standing up and his job was hectic and he never got any rest, then he might work at a supermarket.""
+"
+Sam turned on the projector and showed his powerpoint presentation to his partners.  Where might he be?,"['theatre', 'conference', 'show films', 'movies', 'meeting']","Questions: Sam turned on the projector and showed his powerpoint presentation to his partners.  Where might he be?, Choices: (A) theatre, (B) conference, (C) show films, (D) movies, (E) meeting. Given the question 'Sam turned on the projector and showed his powerpoint presentation to his partners.  Where might he be?', which among the choices theatre, conference, show films, movies meeting is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) meeting. A conditional statement for this question is: ""If Sam turned on the projector and showed his powerpoint presentation to his partners, then he might be at a meeting.""
+"
+Sam was a short distance runner. He couldn't do long distances.  What might happen if he tried long distances?,"['gain ground', 'trip over', 'get tired', 'enter marathon', 'go to sleeping']","Questions: Sam was a short distance runner. He couldn't do long distances.  What might happen if he tried long distances?, Choices: (A) gain ground, (B) trip over, (C) get tired, (D) enter marathon, (E) go to sleeping. Given the question 'Sam was a short distance runner. He couldn't do long distances.  What might happen if he tried long distances?', which among the choices gain ground, trip over, get tired, enter marathon go to sleeping is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) get tired. A conditional statement for this question is: ""If Sam was a short distance runner and he couldn't do long distances, then he might get tired if he tried long distances.""
+"
+Sam was a student at Elmhurst elementary .  She was late when the bell rang so she ran in the hall trying to do what?,"['go to high school', 'answer question', 'charming', 'go to class', 'try to get']","Questions: Sam was a student at Elmhurst elementary .  She was late when the bell rang so she ran in the hall trying to do what?, Choices: (A) go to high school, (B) answer question, (C) charming, (D) go to class, (E) try to get. Given the question 'Sam was a student at Elmhurst elementary .  She was late when the bell rang so she ran in the hall trying to do what?', which among the choices go to high school, answer question, charming, go to class try to get is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) go to class. A conditional statement for this question is: ""If Sam was a student at Elmhurst elementary and she was late when the bell rang, then she ran in the hall trying to go to class.""
+"
+Sam was alone in spite of the fact that he was at a family reunion and mingling with what?,"['with someone', 'many people', 'together', 'party', 'in crowd']","Questions: Sam was alone in spite of the fact that he was at a family reunion and mingling with what?, Choices: (A) with someone, (B) many people, (C) together, (D) party, (E) in crowd. Given the question 'Sam was alone in spite of the fact that he was at a family reunion and mingling with what?', which among the choices with someone, many people, together, party in crowd is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) many people. A conditional statement for this question is: ""If Sam was alone in spite of the fact that he was at a family reunion, then he was mingling with many people.""
+"
+Sam was an alcoholic.  He was in a car crash two years ago and was injured.  Where might he have crashed?,"['bridge', 'park', 'bar', 'prison', ""neighbor's house""]","Questions: Sam was an alcoholic.  He was in a car crash two years ago and was injured.  Where might he have crashed?, Choices: (A) bridge, (B) park, (C) bar, (D) prison, (E) neighbor's house. Given the question 'Sam was an alcoholic.  He was in a car crash two years ago and was injured.  Where might he have crashed?', which among the choices bridge, park, bar, prison neighbor's house is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) bridge. A conditional statement for this question is: ""If Sam was an alcoholic and he was in a car crash two years ago and was injured, then he might have crashed on a bridge."""
+Sam was having a meeting with a friend.  When they saw each other they exchanged greetings and did what?,"['shake hands', 'say hi', 'greet', 'say goodbye', 'have coffee']","Questions: Sam was having a meeting with a friend.  When they saw each other they exchanged greetings and did what?, Choices: (A) shake hands, (B) say hi, (C) greet, (D) say goodbye, (E) have coffee. Given the question 'Sam was having a meeting with a friend.  When they saw each other they exchanged greetings and did what?', which among the choices shake hands, say hi, greet, say goodbye have coffee is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) have coffee**. A possible explanation is:
+
+If Sam was having a meeting with a friend, then they would exchange greetings and do something that is appropriate for a meeting.
+If they did something that is appropriate for a meeting, then they would not shake hands, say hi, greet, or say goodbye, because those are actions that are done before or after a meeting, not during a meeting.
+If they did not shake hands, say hi, greet, or say goodbye, then the only remaining choice is have coffee, which is something that people often do during a meeting.
+Therefore, if Sam was having a meeting with a friend, then they would exchange greetings and have coffee.
+
+"
+Sam was moving out to college.  His parents packed up all of his old toys are placed them in long term storage.  Where might they put the boxes of toys?,"['these twos are incorrect answers', 'bed', 'basement', 'floor', 'store']","Questions: Sam was moving out to college.  His parents packed up all of his old toys are placed them in long term storage.  Where might they put the boxes of toys?, Choices: (A) these twos are incorrect answers, (B) bed, (C) basement, (D) floor, (E) store. Given the question 'Sam was moving out to college.  His parents packed up all of his old toys are placed them in long term storage.  Where might they put the boxes of toys?', which among the choices these twos are incorrect answers, bed, basement, floor store is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) basement**. A possible explanation is:
+
+If Sam's parents packed up all of his old toys and placed them in long term storage, then they would put the boxes of toys somewhere that is spacious, secure, and out of the way.
+If they put the boxes of toys somewhere that is spacious, secure, and out of the way, then they would not put them on the bed, on the floor, or in the store, because those places are either too small, too exposed, or too expensive for long term storage.
+If they did not put them on the bed, on the floor, or in the store, then the only remaining choices are basement and these twos are incorrect answers, which is not a valid choice.
+Therefore, if Sam's parents packed up all of his old toys and placed them in long term storage, then they would put the boxes of toys in the basement.
+
+"
+Sam was performing live.  John couldn't be there but he still listened.  What did he listen to?,"['recorded', 'eavesdropping', 'neutral', 'broadcast', 'death']","Questions: Sam was performing live.  John couldn't be there but he still listened.  What did he listen to?, Choices: (A) recorded, (B) eavesdropping, (C) neutral, (D) broadcast, (E) death. Given the question 'Sam was performing live.  John couldn't be there but he still listened.  What did he listen to?', which among the choices recorded, eavesdropping, neutral, broadcast death is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) broadcast**. A possible explanation is:
+
+If Sam was performing live and John couldn't be there but he still listened, then he would listen to something that is live and audible.
+If he listened to something that is live and audible, then he would not listen to recorded, eavesdropping, neutral, or death, because those are either not live, not audible, or not related to Sam's performance.
+If he did not listen to recorded, eavesdropping, neutral, or death, then the only remaining choice is broadcast, which is something that is live and audible.
+Therefore, if Sam was performing live and John couldn't be there but he still listened, then he would listen to broadcast.
+
+"
+Sam was picked up a group of travelers. They told him that they wanted to see the countryside.  Where might the travelers be going?,"['airport', 'dock', 'train station', 'rest area', 'bus depot']","Questions: Sam was picked up a group of travelers. They told him that they wanted to see the countryside.  Where might the travelers be going?, Choices: (A) airport, (B) dock, (C) train station, (D) rest area, (E) bus depot. Given the question 'Sam was picked up a group of travelers. They told him that they wanted to see the countryside.  Where might the travelers be going?', which among the choices airport, dock, train station, rest area bus depot is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) dock**. A possible explanation is:
+
+If Sam picked up a group of travelers and they told him that they wanted to see the countryside, then they would be going to somewhere that is rural and scenic.
+If they were going to somewhere that is rural and scenic, then they would not be going to airport, train station, rest area, or bus depot, because those are places that are urban and busy.
+If they were not going to airport, train station, rest area, or bus depot, then the only remaining choice is dock, which is a place that is rural and scenic, especially if it is near a lake or a river.
+Therefore, if Sam picked up a group of travelers and they told him that they wanted to see the countryside, then they would be going to dock.
+
+"
+Sam wasn't in a rush to shop.  That allowed him to be more mindful and do what?,"['slow down', 'leisure', 'take time', 'delay', 'go slowly']","Questions: Sam wasn't in a rush to shop.  That allowed him to be more mindful and do what?, Choices: (A) slow down, (B) leisure, (C) take time, (D) delay, (E) go slowly. Given the question 'Sam wasn't in a rush to shop.  That allowed him to be more mindful and do what?', which among the choices slow down, leisure, take time, delay go slowly is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) take time**. A possible explanation is:
+
+If Sam wasn't in a rush to shop, then he would be able to be more mindful and do something that is relaxing and enjoyable.
+If he was able to be more mindful and do something that is relaxing and enjoyable, then he would not slow down, leisure, delay, or go slowly, because those are actions that are passive and vague, not active and specific.
+If he did not slow down, leisure, delay, or go slowly, then the only remaining choice is take time, which is an action that is active and specific, and implies that he would pay attention to the details and quality of the products he was buying.
+Therefore, if Sam wasn't in a rush to shop, then he would be able to be more mindful and take time"
+Sam went climbing but wasn't good at it. He was nimble and had what?,"['fingers', 'dexterity', 'skill', 'muscles', 'strength']","Questions: Sam went climbing but wasn't good at it. He was nimble and had what?, Choices: (A) fingers, (B) dexterity, (C) skill, (D) muscles, (E) strength. Given the question 'Sam went climbing but wasn't good at it. He was nimble and had what?', which among the choices fingers, dexterity, skill, muscles strength is the correct answer? Explain your reasoning using conditional statements.
+",
+Sam went to Paris where he ordered a blowfish at a sushi place.  Where was Sam?,"['books', 'france', 'fish market', 'atlantic ocean', 'cuba']","Questions: Sam went to Paris where he ordered a blowfish at a sushi place.  Where was Sam?, Choices: (A) books, (B) france, (C) fish market, (D) atlantic ocean, (E) cuba. Given the question 'Sam went to Paris where he ordered a blowfish at a sushi place.  Where was Sam?', which among the choices books, france, fish market, atlantic ocean cuba is the correct answer? Explain your reasoning using conditional statements.
+",
+Sam would cry when he watched Old Yeller.  The movie was what?,"['were sad', 'distraught', 'unhappy', 'release tension and anxiety', 'miserable']","Questions: Sam would cry when he watched Old Yeller.  The movie was what?, Choices: (A) were sad, (B) distraught, (C) unhappy, (D) release tension and anxiety, (E) miserable. Given the question 'Sam would cry when he watched Old Yeller.  The movie was what?', which among the choices were sad, distraught, unhappy, release tension and anxiety miserable is the correct answer? Explain your reasoning using conditional statements.
+",
+Sam's children are rambunctious.  What might they do?,"['break things', 'play sports', 'play with toys', 'play ball', 'throw things']","Questions: Sam's children are rambunctious.  What might they do?, Choices: (A) break things, (B) play sports, (C) play with toys, (D) play ball, (E) throw things. Given the question 'Sam's children are rambunctious.  What might they do?', which among the choices break things, play sports, play with toys, play ball throw things is the correct answer? Explain your reasoning using conditional statements.
+",
+Sammy wanted to go to where the people were.  Where might he go?,"['race track', 'populated areas', 'the desert', 'apartment', 'roadblock']","Questions: Sammy wanted to go to where the people were.  Where might he go?, Choices: (A) race track, (B) populated areas, (C) the desert, (D) apartment, (E) roadblock. Given the question 'Sammy wanted to go to where the people were.  Where might he go?', which among the choices race track, populated areas, the desert, apartment roadblock is the correct answer? Explain your reasoning using conditional statements.
+",.
+Sammy was a union member.   He had to be.  It was the only way to advance in his profession.  What was his profession?,"['workplace', 'science', 'algebra', 'province', 'construction business']","Questions: Sammy was a union member.   He had to be.  It was the only way to advance in his profession.  What was his profession?, Choices: (A) workplace, (B) science, (C) algebra, (D) province, (E) construction business. Given the question 'Sammy was a union member.   He had to be.  It was the only way to advance in his profession.  What was his profession?', which among the choices workplace, science, algebra, province construction business is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) construction business. A possible explanation is: If Sammy was a union member, then he had to be in a profession that required union membership. If he had to be in a profession that required union membership, then he could not be in a profession that did not require union membership. Therefore, if Sammy was a union member, then he could not be in a profession that did not require union membership. Workplace, science, algebra, and province are not professions that require union membership, but construction business is. Therefore, if Sammy was a union member, then he was in the construction business.
+
+"
+Sarah couldn't make the afternoon meeting and had to reschedule. She promised to .skip dinner and go to sleep earlier that night so that she could make it.  When might the meeting have been rescheduled to?,"['before noon', 'after', 'morning', 'evening', 'before lunch']","Questions: Sarah couldn't make the afternoon meeting and had to reschedule. She promised to .skip dinner and go to sleep earlier that night so that she could make it.  When might the meeting have been rescheduled to?, Choices: (A) before noon, (B) after, (C) morning, (D) evening, (E) before lunch. Given the question 'Sarah couldn't make the afternoon meeting and had to reschedule. She promised to .skip dinner and go to sleep earlier that night so that she could make it.  When might the meeting have been rescheduled to?', which among the choices before noon, after, morning, evening before lunch is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) morning. A possible explanation is: If Sarah couldn't make the afternoon meeting and had to reschedule, then she had to choose a different time for the meeting. If she promised to skip dinner and go to sleep earlier that night so that she could make it, then she had to choose a time that was earlier than the afternoon. Therefore, if Sarah couldn't make the afternoon meeting and had to reschedule, and she promised to skip dinner and go to sleep earlier that night so that she could make it, then she had to choose a time that was earlier than the afternoon. Before noon, after, evening, and before lunch are not times that are earlier than the afternoon, but morning is. Therefore, if Sarah couldn't make the afternoon meeting and had to reschedule, and she promised to skip dinner and go to sleep earlier that night so that she could make it, then she chose the morning.
+
+"
+Sarah couldn't stand living without an air conditioner.  It was summer and she was in what?,"['the sun', 'texas', 'hard', 'car', 'office building']","Questions: Sarah couldn't stand living without an air conditioner.  It was summer and she was in what?, Choices: (A) the sun, (B) texas, (C) hard, (D) car, (E) office building. Given the question 'Sarah couldn't stand living without an air conditioner.  It was summer and she was in what?', which among the choices the sun, texas, hard, car office building is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) texas. A possible explanation is: If Sarah couldn't stand living without an air conditioner, then she had to live in a place that was very hot. If it was summer and she was in a place that was very hot, then she had to be in a place that had high temperatures in summer. Therefore, if Sarah couldn't stand living without an air conditioner, and it was summer and she was in a place that was very hot, then she had to be in a place that had high temperatures in summer. The sun, hard, car, and office building are not places that have high temperatures in summer, but texas is. Therefore, if Sarah couldn't stand living without an air conditioner, and it was summer and she was in a place that was very hot, then she was in texas.
+
+"
+Sarah did all of it.  She was the best saleswoman in the city.  But she was never acknowledge for her what?,"['work hard', 'sell products', 'field question', 'slow down', 'productivity']","Questions: Sarah did all of it.  She was the best saleswoman in the city.  But she was never acknowledge for her what?, Choices: (A) work hard, (B) sell products, (C) field question, (D) slow down, (E) productivity. Given the question 'Sarah did all of it.  She was the best saleswoman in the city.  But she was never acknowledge for her what?', which among the choices work hard, sell products, field question, slow down productivity is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) productivity. A possible explanation is: If Sarah did all of it, then she had to perform a lot of tasks. If she was the best saleswoman in the city, then she had to sell a lot of products. If she performed a lot of tasks and sold a lot of products, then she had to have a high level of output. Therefore, if Sarah did all of it and was the best saleswoman in the city, then she had to have a high level of output. Work hard, sell products, field question, and slow down are not measures of output, but productivity is. Therefore, if Sarah did all of it and was the best saleswoman in the city, then she had a high level of productivity.
+
+"
+Sarah didn't even know that she was fertile. He doctor told her that procreating was impossible for her.  So she was extremely surprised when she learned that she was having what?,"['animals', 'children born', 'twins', 'population increase', 'venereal disease']","Questions: Sarah didn't even know that she was fertile. He doctor told her that procreating was impossible for her.  So she was extremely surprised when she learned that she was having what?, Choices: (A) animals, (B) children born, (C) twins, (D) population increase, (E) venereal disease. Given the question 'Sarah didn't even know that she was fertile. He doctor told her that procreating was impossible for her.  So she was extremely surprised when she learned that she was having what?', which among the choices animals, children born, twins, population increase venereal disease is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) twins. A possible explanation is: If Sarah didn't even know that she was fertile, then she had to be unaware of her ability to conceive. If her doctor told her that procreating was impossible for her, then she had to be diagnosed with infertility. If she was unaware of her ability to conceive and diagnosed with infertility, then she had to be very unlikely to have children. Therefore, if Sarah didn't even know that she was fertile and her doctor told her that procreating was impossible for her, then she had to be very unlikely to have children. Animals, population increase, and venereal disease are not things that she could have instead of children, but children born and twins are. However, twins are more surprising than children born, because they are less common and more unexpected. Therefore, if Sarah didn't even know that she was fertile and her doctor told her that procreating was impossible for her, then she was extremely surprised when she learned that she was having twins.
+
+"
+Sarah didn't like driving cars.   The traffic gave her a lot of what?,"['car crash', 'stress', 'death', 'happiness', 'transportation']","Questions: Sarah didn't like driving cars.   The traffic gave her a lot of what?, Choices: (A) car crash, (B) stress, (C) death, (D) happiness, (E) transportation. Given the question 'Sarah didn't like driving cars.   The traffic gave her a lot of what?', which among the choices car crash, stress, death, happiness transportation is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) stress. A possible explanation is: If Sarah didn't like driving cars, then she had to have a negative feeling about driving cars. If the traffic gave her a lot of something, then she had to experience a high amount of that thing while driving cars. If she had a negative feeling about driving cars and experienced a high amount of something while driving cars, then she had to have a negative feeling about that thing. Therefore, if Sarah didn't like driving cars and the traffic gave her a lot of something, then she had to have a negative feeling about that thing. Car crash, death, happiness, and transportation are not things that she would have a negative feeling about, but stress is. Therefore, if Sarah didn't like driving cars and the traffic gave her a lot of something, then she had a lot of stress.
+
+"
+Sarah didn't own a computer or a monitor.  Instead she just used something connected to her TV.  How would she describe the thing connected to her TV?,"['box', 'internet cafe', 'view bluescreen', 'desktop', 'display images']","Questions: Sarah didn't own a computer or a monitor.  Instead she just used something connected to her TV.  How would she describe the thing connected to her TV?, Choices: (A) box, (B) internet cafe, (C) view bluescreen, (D) desktop, (E) display images. Given the question 'Sarah didn't own a computer or a monitor.  Instead she just used something connected to her TV.  How would she describe the thing connected to her TV?', which among the choices box, internet cafe, view bluescreen, desktop display images is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) desktop. A possible explanation is: If Sarah didn't own a computer or a monitor, then she had to use something else to access the internet or run programs. If she just used something connected to her TV, then she had to use something that could be plugged into her TV and display images on her TV screen. If she used something else to access the internet or run programs and used something that could be plugged into her TV and display images on her TV screen, then she had to use something that was similar to a computer but without a monitor. Therefore, if Sarah didn't own a computer or a monitor and just used something connected to her TV, then she had to use something that was similar to a computer but without a monitor. Box, internet cafe, view bluescreen, and display images are not things that are similar to a computer but without a monitor, but desktop is. Therefore, if Sarah didn't own a computer or a monitor and just used something connected to her TV, then she used a desktop.
+
+"
+Sarah didn't think that they deserved division.  She spend a lot of effort doing what to them?,"['multiplication', 'putting together', 'times', 'subtraction', 'multiply']","Questions: Sarah didn't think that they deserved division.  She spend a lot of effort doing what to them?, Choices: (A) multiplication, (B) putting together, (C) times, (D) subtraction, (E) multiply. Given the question 'Sarah didn't think that they deserved division.  She spend a lot of effort doing what to them?', which among the choices multiplication, putting together, times, subtraction multiply is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) putting together. A possible explanation is: If Sarah didn't think that they deserved division, then she had to think that they deserved something else. If she spent a lot of effort doing something to them, then she had to do something that was opposite to division. If she thought that they deserved something else and did something that was opposite to division, then she had to do something that was similar to multiplication. Therefore, if Sarah didn't think that they deserved division and spent a lot of effort doing something to them, then she had to do something that was similar to multiplication. Times, subtraction, and multiply are not things that are similar to multiplication, but putting together is. Therefore, if Sarah didn't think that they deserved division and spent a lot of effort doing something to them, then she did putting together.
+
+"
+Sarah felt bad about their odds. Billy disagreed with her.  What did he think about their odds?,"['first rate', 'adequate', 'good', 'propitious', 'sufficient']","Questions: Sarah felt bad about their odds. Billy disagreed with her.  What did he think about their odds?, Choices: (A) first rate, (B) adequate, (C) good, (D) propitious, (E) sufficient. Given the question 'Sarah felt bad about their odds. Billy disagreed with her.  What did he think about their odds?', which among the choices first rate, adequate, good, propitious sufficient is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) propitious. A possible explanation is: If Sarah felt bad about their odds, then she had to think that their odds were low or unfavorable. If Billy disagreed with her, then he had to think that their odds were high or favorable. If he thought that their odds were high or favorable, then he had to use a word that meant high or favorable. Therefore, if Sarah felt bad about their odds and Billy disagreed with her, then he had to use a word that meant high or favorable. First rate, adequate, good, and sufficient are not words that mean high or favorable, but propitious is. Therefore, if Sarah felt bad about their odds and Billy disagreed with her, then he thought that their odds were propitious.
+
+"
+Sarah filled the thing with peanuts.  What did she fill with peanuts?,"['ballpark', 'box', 'container', 'carnival', 'jar']","Questions: Sarah filled the thing with peanuts.  What did she fill with peanuts?, Choices: (A) ballpark, (B) box, (C) container, (D) carnival, (E) jar. Given the question 'Sarah filled the thing with peanuts.  What did she fill with peanuts?', which among the choices ballpark, box, container, carnival jar is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) jar. A possible explanation is: If Sarah filled the thing with peanuts, then she had to use something that could hold peanuts. If she used something that could hold peanuts, then she had to use something that had a space inside and an opening on top. If she used something that had a space inside and an opening on top, then she had to use something that was similar to a container. Therefore, if Sarah filled the thing with peanuts, then she had to use something that was similar to a container. Ballpark, box, carnival, and container are not things that are similar to a container, but jar is. Therefore, if Sarah filled the thing with peanuts, then she filled a jar."
+Sarah had trouble beginning work.  She was not doing what?,"['computer', 'momentum', 'panic', 'accomplishing', 'excitement']","Questions: Sarah had trouble beginning work.  She was not doing what?, Choices: (A) computer, (B) momentum, (C) panic, (D) accomplishing, (E) excitement. Given the question 'Sarah had trouble beginning work.  She was not doing what?', which among the choices computer, momentum, panic, accomplishing excitement is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) momentum. A possible explanation is: If Sarah had trouble beginning work, then she was not doing what was necessary to start working. One thing that is necessary to start working is having momentum, which means having the motivation and energy to do something. Therefore, if Sarah had trouble beginning work, then she was not doing momentum.
+
+"
+Sarah knew that bob was a gentleman because he took her to a show and was stylish in his what?,"['tuxedo', 'big house', 'church', 'town', 'movie']","Questions: Sarah knew that bob was a gentleman because he took her to a show and was stylish in his what?, Choices: (A) tuxedo, (B) big house, (C) church, (D) town, (E) movie. Given the question 'Sarah knew that bob was a gentleman because he took her to a show and was stylish in his what?', which among the choices tuxedo, big house, church, town movie is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) tuxedo. A possible explanation is: If Sarah knew that Bob was a gentleman because he took her to a show and was stylish in his what, then she must have observed something about his appearance that indicated his style and manners. One thing that can indicate style and manners is wearing a tuxedo, which is a formal suit for men. Therefore, if Sarah knew that Bob was a gentleman because he took her to a show and was stylish in his what, then he was stylish in his tuxedo.
+
+"
+Sarah loved riding horse but she was having pain in his legs because of it. She was experiencing what sesation?,"['bouncing', 'shaky', 'fear', 'movement', 'stiffness']","Questions: Sarah loved riding horse but she was having pain in his legs because of it. She was experiencing what sesation?, Choices: (A) bouncing, (B) shaky, (C) fear, (D) movement, (E) stiffness. Given the question 'Sarah loved riding horse but she was having pain in his legs because of it. She was experiencing what sesation?', which among the choices bouncing, shaky, fear, movement stiffness is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) stiffness. A possible explanation is: If Sarah loved riding horse but she was having pain in his legs because of it, then she must have experienced some physical discomfort from the activity. One type of physical discomfort that can result from riding horse is stiffness, which means being unable to move easily or comfortably. Therefore, if Sarah loved riding horse but she was having pain in his legs because of it, then she was experiencing stiffness.
+
+"
+Sarah loves giving assistance.  She doesn't ask for anything in returned.  What does Sarah probably care about most?,"['her hair', 'better circumstances', 'people helped', 'learning new skills', 'happiness']","Questions: Sarah loves giving assistance.  She doesn't ask for anything in returned.  What does Sarah probably care about most?, Choices: (A) her hair, (B) better circumstances, (C) people helped, (D) learning new skills, (E) happiness. Given the question 'Sarah loves giving assistance.  She doesn't ask for anything in returned.  What does Sarah probably care about most?', which among the choices her hair, better circumstances, people helped, learning new skills happiness is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) people helped. A possible explanation is: If Sarah loves giving assistance and she doesn't ask for anything in return, then she must have some altruistic motive for helping others. One altruistic motive for helping others is caring about their well-being and happiness. Therefore, if Sarah loves giving assistance and she doesn't ask for anything in return, then she probably cares about people helped.
+
+"
+Sarah opened her newspaper to the second page and sat where?,"['rug', 'front door', 'jail', 'porch', 'chair']","Questions: Sarah opened her newspaper to the second page and sat where?, Choices: (A) rug, (B) front door, (C) jail, (D) porch, (E) chair. Given the question 'Sarah opened her newspaper to the second page and sat where?', which among the choices rug, front door, jail, porch chair is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) chair. A possible explanation is: If Sarah opened her newspaper to the second page and sat where, then she must have been in a place where she could read comfortably and conveniently. One place where she could read comfortably and conveniently is a chair, which is a piece of furniture for sitting on. Therefore, if Sarah opened her newspaper to the second page and sat where, then she sat on a chair.
+
+"
+Sarah opened his chest and found a second heart.  Her patient might not be what?,"['istanbul', 'animal', 'antique shop', 'human being', 'bedroom']","Questions: Sarah opened his chest and found a second heart.  Her patient might not be what?, Choices: (A) istanbul, (B) animal, (C) antique shop, (D) human being, (E) bedroom. Given the question 'Sarah opened his chest and found a second heart.  Her patient might not be what?', which among the choices istanbul, animal, antique shop, human being bedroom is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) human being. A possible explanation is: If Sarah opened his chest and found a second heart, then she must have been surprised by the discovery. One reason why she would be surprised by the discovery is that it is not normal for a human being to have two hearts. Therefore, if Sarah opened his chest and found a second heart, then her patient might not be a human being.
+
+"
+Sarah pressed the button on the handle and took a sip.  What is she using?,"['adult toy', 'fridge', 'bathroom', 'hardware store', 'water fountain']","Questions: Sarah pressed the button on the handle and took a sip.  What is she using?, Choices: (A) adult toy, (B) fridge, (C) bathroom, (D) hardware store, (E) water fountain. Given the question 'Sarah pressed the button on the handle and took a sip.  What is she using?', which among the choices adult toy, fridge, bathroom, hardware store water fountain is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) water fountain. A possible explanation is: If Sarah pressed the button on the handle and took a sip, then she must have been thirsty and wanted to drink some water. One thing that she could use to drink some water is a water fountain, which is a device that shoots water into the air for people to drink. Therefore, if Sarah pressed the button on the handle and took a sip, then she was using a water fountain.
+
+"
+Sarah put her food in a trash can beside her desk.  Where might she have been?,"['bus stop', 'corner', 'office', 'park', 'motel']","Questions: Sarah put her food in a trash can beside her desk.  Where might she have been?, Choices: (A) bus stop, (B) corner, (C) office, (D) park, (E) motel. Given the question 'Sarah put her food in a trash can beside her desk.  Where might she have been?', which among the choices bus stop, corner, office, park motel is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) office. A possible explanation is: If Sarah put her food in a trash can beside her desk, then she must have been done eating and wanted to dispose of the leftovers. One place where she could have a desk and a trash can is an office, which is a room or building where people work. Therefore, if Sarah put her food in a trash can beside her desk, then she might have been in an office.
+
+"
+Sarah thought that buying beer with a fake idea was a good idea.  She just wanted to enjoy herself. But it turned to be anything but. What did it turn out to be?,"['a smart decision', 'spend money', 'get arrested', 'stupidity', 'have fun']","Questions: Sarah thought that buying beer with a fake idea was a good idea.  She just wanted to enjoy herself. But it turned to be anything but. What did it turn out to be?, Choices: (A) a smart decision, (B) spend money, (C) get arrested, (D) stupidity, (E) have fun. Given the question 'Sarah thought that buying beer with a fake idea was a good idea.  She just wanted to enjoy herself. But it turned to be anything but. What did it turn out to be?', which among the choices a smart decision, spend money, get arrested, stupidity have fun is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) get arrested. A possible explanation is: If Sarah thought that buying beer with a fake idea was a good idea, but it turned to be anything but, then she must have faced some negative consequences from her action. One negative consequence that she could face from buying beer with a fake idea is getting arrested, which means being taken into custody by the police for breaking the law. Therefore, if Sarah thought that buying beer with a fake idea was a good idea, but it turned to be anything but, then it turned out to be getting arrested.
+
+"
+Sarah thought that she had been home all evening.  That meant that the only time to leave was when?,"['early morning', 'day time', 'night', 'afternoon', 'daytime']","Questions: Sarah thought that she had been home all evening.  That meant that the only time to leave was when?, Choices: (A) early morning, (B) day time, (C) night, (D) afternoon, (E) daytime. Given the question 'Sarah thought that she had been home all evening.  That meant that the only time to leave was when?', which among the choices early morning, day time, night, afternoon daytime is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) early morning. A possible explanation is: If Sarah thought that she had been home all evening, then she must have arrived at her home sometime before the evening and stayed there until the end of the evening. That means that the only time to leave her home was after the evening, which is the early morning. Therefore, if Sarah thought that she had been home all evening, then the only time to leave was early morning."
+Sarah thought that the movie was entertaining but vapid.   How might Sarah feel about the book?,"['tired', 'appreciate more', 'like', 'making friends', 'getting paid for']","Questions: Sarah thought that the movie was entertaining but vapid.   How might Sarah feel about the book?, Choices: (A) tired, (B) appreciate more, (C) like, (D) making friends, (E) getting paid for. Given the question 'Sarah thought that the movie was entertaining but vapid.   How might Sarah feel about the book?', which among the choices tired, appreciate more, like, making friends getting paid for is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) appreciate more. My reasoning is: If Sarah thought that the movie was entertaining but vapid, then she might appreciate the book more because it could have more depth and substance than the movie.
+
+"
+Sarah told him to make sure that the bundle was tight. Some fell out because it was what?,"['broad', 'loose', 'slack', 'windtight', 'crap']","Questions: Sarah told him to make sure that the bundle was tight. Some fell out because it was what?, Choices: (A) broad, (B) loose, (C) slack, (D) windtight, (E) crap. Given the question 'Sarah told him to make sure that the bundle was tight. Some fell out because it was what?', which among the choices broad, loose, slack, windtight crap is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) loose. My reasoning is: If Sarah told him to make sure that the bundle was tight, then some fell out because it was loose. Loose is the opposite of tight, and it means that the bundle was not secured properly.
+
+"
+Sarah took poison by accident She found it in the cabinet and. thought that it was what?,"['drinkable', 'junk food', 'medicine', 'antidote', 'nutrient']","Questions: Sarah took poison by accident She found it in the cabinet and. thought that it was what?, Choices: (A) drinkable, (B) junk food, (C) medicine, (D) antidote, (E) nutrient. Given the question 'Sarah took poison by accident She found it in the cabinet and. thought that it was what?', which among the choices drinkable, junk food, medicine, antidote nutrient is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) medicine. My reasoning is: If Sarah took poison by accident, then she found it in the cabinet and thought that it was medicine. Medicine is something that people usually store in cabinets and take for their health, but poison is harmful and dangerous.
+
+"
+Sarah wanted to surprise her husband. He failed because he had already down what what regarding the trip?,"['predictable', 'known about', 'bland', 'bought tickets', 'sneaky']","Questions: Sarah wanted to surprise her husband. He failed because he had already down what what regarding the trip?, Choices: (A) predictable, (B) known about, (C) bland, (D) bought tickets, (E) sneaky. Given the question 'Sarah wanted to surprise her husband. He failed because he had already down what what regarding the trip?', which among the choices predictable, known about, bland, bought tickets sneaky is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) bought tickets. My reasoning is: If Sarah wanted to surprise her husband, then he failed because he had already bought tickets for the trip. Buying tickets is a sign of planning and preparation for a trip, and it would ruin the surprise if he already knew about it.
+
+"
+Sarah wants to eat lunch.  To do this she'll have to go to her kitchen and do what?,"['smell', 'have food', 'get food', 'hungry', 'buy food']","Questions: Sarah wants to eat lunch.  To do this she'll have to go to her kitchen and do what?, Choices: (A) smell, (B) have food, (C) get food, (D) hungry, (E) buy food. Given the question 'Sarah wants to eat lunch.  To do this she'll have to go to her kitchen and do what?', which among the choices smell, have food, get food, hungry buy food is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) get food. My reasoning is: If Sarah wants to eat lunch, then to do this she'll have to go to her kitchen and get food. Getting food is a necessary step for eating lunch, and it involves taking food out of the fridge, pantry, or other storage places.
+
+"
+Sarah was cooking thick gravy in her saucepan because she wanted some authentic soul food.  Where might Sarah live?,"['kitchen cupboard', 'italian restaurant', 'georgia', 'south', 'boil vegetables']","Questions: Sarah was cooking thick gravy in her saucepan because she wanted some authentic soul food.  Where might Sarah live?, Choices: (A) kitchen cupboard, (B) italian restaurant, (C) georgia, (D) south, (E) boil vegetables. Given the question 'Sarah was cooking thick gravy in her saucepan because she wanted some authentic soul food.  Where might Sarah live?', which among the choices kitchen cupboard, italian restaurant, georgia, south boil vegetables is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) south. My reasoning is: If Sarah was cooking thick gravy in her saucepan because she wanted some authentic soul food, then she might live in the south. Soul food is a type of cuisine that originated in the southern United States, and it often includes dishes with thick gravy.
+
+"
+Sarah was cooling off too quickly after exercising hard.   She started doing what?,"['relaxation', 'sweating', 'shivering', 'palpitate', 'chills']","Questions: Sarah was cooling off too quickly after exercising hard.   She started doing what?, Choices: (A) relaxation, (B) sweating, (C) shivering, (D) palpitate, (E) chills. Given the question 'Sarah was cooling off too quickly after exercising hard.   She started doing what?', which among the choices relaxation, sweating, shivering, palpitate chills is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) shivering. My reasoning is: If Sarah was cooling off too quickly after exercising hard, then she started shivering. Shivering is a reflex that the body uses to generate heat when it is cold, and it can happen when someone cools off too quickly.
+
+"
+Sarah was eating a hamburger.  She seemed to be okay.  She looked like she was doing what?,"['enjoy', 'choking', 'nausea', 'death', 'satisfaction']","Questions: Sarah was eating a hamburger.  She seemed to be okay.  She looked like she was doing what?, Choices: (A) enjoy, (B) choking, (C) nausea, (D) death, (E) satisfaction. Given the question 'Sarah was eating a hamburger.  She seemed to be okay.  She looked like she was doing what?', which among the choices enjoy, choking, nausea, death satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) enjoy. My reasoning is: If Sarah was eating a hamburger and she seemed to be okay, then she looked like she was enjoying it. Enjoying is a positive emotion that people show when they like something, and it can be seen by their facial expressions, gestures, and sounds.
+
+"
+Sarah was not a little girl anymore.  She learned the hard way when buying new clothes.  What size might she have worn?,"['large', 'big', 'see work', 'lot of', 'bog']","Questions: Sarah was not a little girl anymore.  She learned the hard way when buying new clothes.  What size might she have worn?, Choices: (A) large, (B) big, (C) see work, (D) lot of, (E) bog. Given the question 'Sarah was not a little girl anymore.  She learned the hard way when buying new clothes.  What size might she have worn?', which among the choices large, big, see work, lot of bog is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) large. My reasoning is: If Sarah was not a little girl anymore, then she learned the hard way when buying new clothes that she might have worn a large size. Large is a common size for adult clothing, and it can be different from the sizes that children wear.
+
+"
+Sarah was on the 30th floor when the fire started.  That made it difficult for her to escape what?,"['carpet', 'hallway', 'obesity', 'building', 'exchange']","Questions: Sarah was on the 30th floor when the fire started.  That made it difficult for her to escape what?, Choices: (A) carpet, (B) hallway, (C) obesity, (D) building, (E) exchange. Given the question 'Sarah was on the 30th floor when the fire started.  That made it difficult for her to escape what?', which among the choices carpet, hallway, obesity, building exchange is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) building. My reasoning is: If Sarah was on the 30th floor when the fire started, then it made it difficult for her to escape the building. The building is the structure that contains the floors, and it can be hard to get out of it when there is a fire, especially if it is high."
+Sarah was very good with a brass drum.  Her friend Jane was performing at a concert and asked Sarah to join her.  What did Jane ask Sarah to join?,"['manual', 'marching band', 'drum set', 'rock band', 'orchestra']","Questions: Sarah was very good with a brass drum.  Her friend Jane was performing at a concert and asked Sarah to join her.  What did Jane ask Sarah to join?, Choices: (A) manual, (B) marching band, (C) drum set, (D) rock band, (E) orchestra. Given the question 'Sarah was very good with a brass drum.  Her friend Jane was performing at a concert and asked Sarah to join her.  What did Jane ask Sarah to join?', which among the choices manual, marching band, drum set, rock band orchestra is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) marching band. A brass drum is a type of percussion instrument that is often used in marching bands. A conditional statement for this answer is: **If** Sarah was very good with a brass drum, **then** Jane asked her to join a marching band.
+
+"
+Sarah went to a genuine Western streak house.  Where might she have been?,"['mexico', 'japan', 'outback', 'new york', 'texas']","Questions: Sarah went to a genuine Western streak house.  Where might she have been?, Choices: (A) mexico, (B) japan, (C) outback, (D) new york, (E) texas. Given the question 'Sarah went to a genuine Western streak house.  Where might she have been?', which among the choices mexico, japan, outback, new york texas is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) texas. A genuine Western steak house is a restaurant that serves steaks and other dishes that are typical of the American West, especially Texas. A conditional statement for this answer is: **If** Sarah went to a genuine Western steak house, **then** she might have been in Texas.
+
+"
+Sarah's birds died because she didn't poke holes in the jar and they needed to do what?,"['pick berries', 'sky', 'reproduce', 'roof', 'breathe']","Questions: Sarah's birds died because she didn't poke holes in the jar and they needed to do what?, Choices: (A) pick berries, (B) sky, (C) reproduce, (D) roof, (E) breathe. Given the question 'Sarah's birds died because she didn't poke holes in the jar and they needed to do what?', which among the choices pick berries, sky, reproduce, roof breathe is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) breathe. Birds need to breathe air to survive, and if Sarah didn't poke holes in the jar, the birds would suffocate. A conditional statement for this answer is: **If** Sarah's birds died because she didn't poke holes in the jar, **then** they needed to breathe.
+
+"
+Sarah's dress was very loose. She preferred that.  She didn't like showing off her curves. What type of clothes would she not wear?,"['close fitting', 'form fitting', 'compact', 'faithful', 'discreet']","Questions: Sarah's dress was very loose. She preferred that.  She didn't like showing off her curves. What type of clothes would she not wear?, Choices: (A) close fitting, (B) form fitting, (C) compact, (D) faithful, (E) discreet. Given the question 'Sarah's dress was very loose. She preferred that.  She didn't like showing off her curves. What type of clothes would she not wear?', which among the choices close fitting, form fitting, compact, faithful discreet is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) form fitting. Form fitting clothes are clothes that fit closely to the body and show off the curves. Sarah preferred loose clothes that did not show off her curves. A conditional statement for this answer is: **If** Sarah's dress was very loose and she didn't like showing off her curves, **then** she would not wear form fitting clothes.
+
+"
+Sarah's forgot her purse. She couldn't be the clothes she wanted.    She would have to drive all the way back where?,"['house', 'home', 'handbag', 'restaurant', 'department store']","Questions: Sarah's forgot her purse. She couldn't be the clothes she wanted.    She would have to drive all the way back where?, Choices: (A) house, (B) home, (C) handbag, (D) restaurant, (E) department store. Given the question 'Sarah's forgot her purse. She couldn't be the clothes she wanted.    She would have to drive all the way back where?', which among the choices house, home, handbag, restaurant department store is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) house or (B) home. A purse is a small bag that usually contains money and other personal items. Sarah forgot her purse and couldn't buy the clothes she wanted. She would have to drive all the way back to where she left her purse, which is most likely her house or home. A conditional statement for this answer is: **If** Sarah forgot her purse and couldn't buy the clothes she wanted, **then** she would have to drive all the way back to her house or home.
+
+"
+Saul is writting a program and has been told that another team has been working on added functionality.  He's not sure hot the other team's work will impact his. What does his bosses want him to do with the new code?,"['detail', 'loop', 'need to integrate', 'unexpected results', 'satisfaction']","Questions: Saul is writting a program and has been told that another team has been working on added functionality.  He's not sure hot the other team's work will impact his. What does his bosses want him to do with the new code?, Choices: (A) detail, (B) loop, (C) need to integrate, (D) unexpected results, (E) satisfaction. Given the question 'Saul is writting a program and has been told that another team has been working on added functionality.  He's not sure hot the other team's work will impact his. What does his bosses want him to do with the new code?', which among the choices detail, loop, need to integrate, unexpected results satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) need to integrate. Integrating code means combining different pieces of code into a single program that works as intended. Saul's bosses want him to integrate the new code from the other team with his own code, so that the added functionality can be implemented. A conditional statement for this answer is: **If** Saul is writing a program and has been told that another team has been working on added functionality, **then** his bosses want him to integrate the new code with his own code.
+
+"
+Science is a difficult subject.  What's a purer subject?,"['faith', 'astronomy', 'discovery', 'arts', 'math']","Questions: Science is a difficult subject.  What's a purer subject?, Choices: (A) faith, (B) astronomy, (C) discovery, (D) arts, (E) math. Given the question 'Science is a difficult subject.  What's a purer subject?', which among the choices faith, astronomy, discovery, arts math is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) math. Math is a subject that deals with numbers, symbols, and logic. It is often considered a pure subject because it does not depend on empirical observations or experiments, but on abstract reasoning and proofs. A conditional statement for this answer is: **If** science is a difficult subject, **then** math is a purer subject.
+
+"
+Sean liked analyzing information.  He felt that he helped him learn what?,"['new knowledge', 'enlightened', 'facts', 'discovering truth', 'learn more about']","Questions: Sean liked analyzing information.  He felt that he helped him learn what?, Choices: (A) new knowledge, (B) enlightened, (C) facts, (D) discovering truth, (E) learn more about. Given the question 'Sean liked analyzing information.  He felt that he helped him learn what?', which among the choices new knowledge, enlightened, facts, discovering truth learn more about is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) discovering truth. Analyzing information means examining and interpreting data, facts, and evidence. Sean liked analyzing information because he felt that it helped him learn the truth about various topics and phenomena. A conditional statement for this answer is: **If** Sean liked analyzing information, **then** he felt that it helped him learn the truth.
+
+"
+Sean put his groceries away and then went to his room to use his computer.  Where would he have put the teabags?,"['mug', 'refrigerator', 'teapot', 'internet cafe', 'cupboard']","Questions: Sean put his groceries away and then went to his room to use his computer.  Where would he have put the teabags?, Choices: (A) mug, (B) refrigerator, (C) teapot, (D) internet cafe, (E) cupboard. Given the question 'Sean put his groceries away and then went to his room to use his computer.  Where would he have put the teabags?', which among the choices mug, refrigerator, teapot, internet cafe cupboard is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) cupboard. A cupboard is a cabinet or closet that is used to store food, dishes, or other items. Sean put his groceries away, which means he stored them in a suitable place, such as a cupboard. He would have put the teabags in the cupboard, along with other groceries. A conditional statement for this answer is: **If** Sean put his groceries away and then went to his room to use his computer, **then** he would have put the teabags in the cupboard.
+
+"
+Sean stared at his door all night.  He was scared that he might see it doing what?,"['wall', 'window', 'opening', 'closet', 'exit']","Questions: Sean stared at his door all night.  He was scared that he might see it doing what?, Choices: (A) wall, (B) window, (C) opening, (D) closet, (E) exit. Given the question 'Sean stared at his door all night.  He was scared that he might see it doing what?', which among the choices wall, window, opening, closet exit is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) opening. Opening means moving or being moved so that a gap or hole is created. Sean stared at his door all night because he was scared that he might see it opening by itself or by someone or something else. A conditional statement for this answer is: **If** Sean stared at his door all night, **then** he was scared that he might see it opening."
+Seeing a shark near Tahiti means you're where?,"['baltic sea', 'gulf of mexico', 'pool hall', 'mediterranean sea', 'south pacific']","Questions: Seeing a shark near Tahiti means you're where?, Choices: (A) baltic sea, (B) gulf of mexico, (C) pool hall, (D) mediterranean sea, (E) south pacific. Given the question 'Seeing a shark near Tahiti means you're where?', which among the choices baltic sea, gulf of mexico, pool hall, mediterranean sea south pacific is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) south pacific**. Tahiti is an island in French Polynesia, which is located in the South Pacific Ocean. A conditional statement that explains this is: **If** you see a shark near Tahiti, **then** you are in the south pacific.
+
+"
+Seeing how old things created so long ago is likely to cause?,"['painful memories', 'reverence', 'curiosity', 'depression', 'nostalgia']","Questions: Seeing how old things created so long ago is likely to cause?, Choices: (A) painful memories, (B) reverence, (C) curiosity, (D) depression, (E) nostalgia. Given the question 'Seeing how old things created so long ago is likely to cause?', which among the choices painful memories, reverence, curiosity, depression nostalgia is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) curiosity**. Seeing how old things created so long ago is likely to cause curiosity because you might wonder how they were made, who made them, and what they were used for. A conditional statement that explains this is: **If** you see how old things created so long ago, **then** you are likely to feel curious.
+
+"
+Seeing someone open a gift after buying christmas presents causes what for the gift giver?,"['stress', 'understand themselves', 'pleasure', 'sense of joy', 'debt']","Questions: Seeing someone open a gift after buying christmas presents causes what for the gift giver?, Choices: (A) stress, (B) understand themselves, (C) pleasure, (D) sense of joy, (E) debt. Given the question 'Seeing someone open a gift after buying christmas presents causes what for the gift giver?', which among the choices stress, understand themselves, pleasure, sense of joy debt is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) sense of joy**. Seeing someone open a gift after buying christmas presents causes a sense of joy for the gift giver because they can see the happiness and gratitude of the recipient. A conditional statement that explains this is: **If** you see someone open a gift after buying christmas presents, **then** you feel a sense of joy.
+
+"
+Seeing the desired results of doing housework left her what?,"['smiley', 'house clean', 'getting good grades', 'feeling satisfied', 'boredom']","Questions: Seeing the desired results of doing housework left her what?, Choices: (A) smiley, (B) house clean, (C) getting good grades, (D) feeling satisfied, (E) boredom. Given the question 'Seeing the desired results of doing housework left her what?', which among the choices smiley, house clean, getting good grades, feeling satisfied boredom is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) feeling satisfied**. Seeing the desired results of doing housework left her feeling satisfied because she accomplished her goal and made her environment more pleasant. A conditional statement that explains this is: **If** you see the desired results of doing housework, **then** you feel satisfied.
+
+"
+Settling in to see your favorite show is a great way to do what after a hard days work?,"['smile', 'buy tickets', 'laugh', 'relax', 'succeed']","Questions: Settling in to see your favorite show is a great way to do what after a hard days work?, Choices: (A) smile, (B) buy tickets, (C) laugh, (D) relax, (E) succeed. Given the question 'Settling in to see your favorite show is a great way to do what after a hard days work?', which among the choices smile, buy tickets, laugh, relax succeed is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) relax**. Settling in to see your favorite show is a great way to relax after a hard days work because you can enjoy the entertainment and forget about your stress. A conditional statement that explains this is: **If** you settle in to see your favorite show, **then** you are able to relax.
+
+"
+Several train terminals linked together is an example of what?,"['station', 'electrical device', 'battery', 'initial', 'transportation system']","Questions: Several train terminals linked together is an example of what?, Choices: (A) station, (B) electrical device, (C) battery, (D) initial, (E) transportation system. Given the question 'Several train terminals linked together is an example of what?', which among the choices station, electrical device, battery, initial transportation system is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) transportation system**. Several train terminals linked together is an example of a transportation system because it allows people and goods to move from one place to another. A conditional statement that explains this is: **If** you have several train terminals linked together, **then** you have a transportation system.
+
+"
+Sex is often referred to being part of what for everyone?,"['human experience', 'reproductive cycle', 'procreation', 'gaining strength', 'effect of insemination']","Questions: Sex is often referred to being part of what for everyone?, Choices: (A) human experience, (B) reproductive cycle, (C) procreation, (D) gaining strength, (E) effect of insemination. Given the question 'Sex is often referred to being part of what for everyone?', which among the choices human experience, reproductive cycle, procreation, gaining strength effect of insemination is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) human experience**. Sex is often referred to being part of the human experience because it is a natural and universal aspect of human life that involves physical, emotional, and social dimensions. A conditional statement that explains this is: **If** you are a human, **then** sex is part of your experience.
+
+"
+Shareholders gather in what to have meetings?,"['large company', 'building', 'den', 'financial trouble', 'factory']","Questions: Shareholders gather in what to have meetings?, Choices: (A) large company, (B) building, (C) den, (D) financial trouble, (E) factory. Given the question 'Shareholders gather in what to have meetings?', which among the choices large company, building, den, financial trouble factory is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) building**. Shareholders gather in a building to have meetings because they need a physical space to discuss and vote on important matters related to the company they own shares in. A conditional statement that explains this is: **If** you are a shareholder, **then** you gather in a building to have meetings.
+
+"
+Shark tank is a popular reality what?,"['pool hall', 'san francisco bay', 'television show', 'museum', 'new england']","Questions: Shark tank is a popular reality what?, Choices: (A) pool hall, (B) san francisco bay, (C) television show, (D) museum, (E) new england. Given the question 'Shark tank is a popular reality what?', which among the choices pool hall, san francisco bay, television show, museum new england is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) television show**. Shark tank is a popular reality television show that features entrepreneurs pitching their business ideas to a panel of investors. A conditional statement that explains this is: **If** you watch Shark tank, **then** you are watching a reality television show.
+
+"
+She always wanted to live in a brick row house in what foggy country?,"['city center', 'england', 'cheap living', 'ghetto', 'jars']","Questions: She always wanted to live in a brick row house in what foggy country?, Choices: (A) city center, (B) england, (C) cheap living, (D) ghetto, (E) jars. Given the question 'She always wanted to live in a brick row house in what foggy country?', which among the choices city center, england, cheap living, ghetto jars is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) england**. She always wanted to live in a brick row house in England because England is a foggy country that has many brick row houses, which are terraced houses that share walls with adjacent houses. A conditional statement that explains this is: **If** you want to live in a brick row house in a foggy country, **then** you want to live in England."
+She could watch people coming and going to all the different shops while at the beauty salon because it was located where?,"['picking clothes', 'clerk', 'strip mall', 'beautifying hair', 'neighborhood']","Questions: She could watch people coming and going to all the different shops while at the beauty salon because it was located where?, Choices: (A) picking clothes, (B) clerk, (C) strip mall, (D) beautifying hair, (E) neighborhood. Given the question 'She could watch people coming and going to all the different shops while at the beauty salon because it was located where?', which among the choices picking clothes, clerk, strip mall, beautifying hair neighborhood is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) strip mall. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If the beauty salon is located in a strip mall, then she could watch people coming and going to all the different shops.**
+
+"
+She had not been back to work since a bad incident what is she likely to feel upon return?,"['stress', 'lonely', 'anxiety', 'depression', 'conversation']","Questions: She had not been back to work since a bad incident what is she likely to feel upon return?, Choices: (A) stress, (B) lonely, (C) anxiety, (D) depression, (E) conversation. Given the question 'She had not been back to work since a bad incident what is she likely to feel upon return?', which among the choices stress, lonely, anxiety, depression conversation is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) anxiety. A possible conditional statement for this question is: **If she had not been back to work since a bad incident, then she is likely to feel anxiety upon return.**
+
+"
+She had taken her ring from her finger and placed it on the windowsill so she wouldn't get it wet while she was in what?,"['bath tub', 'finger', 'windowsill', 'wedding ceremony', 'a coma']","Questions: She had taken her ring from her finger and placed it on the windowsill so she wouldn't get it wet while she was in what?, Choices: (A) bath tub, (B) finger, (C) windowsill, (D) wedding ceremony, (E) a coma. Given the question 'She had taken her ring from her finger and placed it on the windowsill so she wouldn't get it wet while she was in what?', which among the choices bath tub, finger, windowsill, wedding ceremony a coma is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) bath tub. A possible conditional statement for this question is: **If she was in a bath tub, then she wouldn't want to get her ring wet.**
+
+"
+She just wanted to feel safe after being in a what kind of relationship?,"['unsafe', 'insecure', 'park', 'cabinet', 'harmful']","Questions: She just wanted to feel safe after being in a what kind of relationship?, Choices: (A) unsafe, (B) insecure, (C) park, (D) cabinet, (E) harmful. Given the question 'She just wanted to feel safe after being in a what kind of relationship?', which among the choices unsafe, insecure, park, cabinet harmful is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) harmful. A possible conditional statement for this question is: **If she was in a harmful relationship, then she just wanted to feel safe.**
+
+"
+She needed help from a friend to over tighten the strap on her fancy what?,"['brassiere', 'strapline', 'chemise', 'brace', 'golf bag']","Questions: She needed help from a friend to over tighten the strap on her fancy what?, Choices: (A) brassiere, (B) strapline, (C) chemise, (D) brace, (E) golf bag. Given the question 'She needed help from a friend to over tighten the strap on her fancy what?', which among the choices brassiere, strapline, chemise, brace golf bag is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) chemise. A possible conditional statement for this question is: **If she had a fancy chemise, then she needed help from a friend to over tighten the strap.**
+
+"
+She was hitting bottle to the point that doing what would seem like sobering up even though it wasn't?,"['buying beer', 'table', 'alcoholism', 'aim', 'michigan']","Questions: She was hitting bottle to the point that doing what would seem like sobering up even though it wasn't?, Choices: (A) buying beer, (B) table, (C) alcoholism, (D) aim, (E) michigan. Given the question 'She was hitting bottle to the point that doing what would seem like sobering up even though it wasn't?', which among the choices buying beer, table, alcoholism, aim michigan is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) buying beer. A possible conditional statement for this question is: **If she was hitting the bottle, then buying beer would seem like sobering up even though it wasn't.**
+
+"
+She would only buy things on sale as to what?,"['selling', 'get money', 'save money', 'steal', 'spend money']","Questions: She would only buy things on sale as to what?, Choices: (A) selling, (B) get money, (C) save money, (D) steal, (E) spend money. Given the question 'She would only buy things on sale as to what?', which among the choices selling, get money, save money, steal spend money is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) save money. A possible conditional statement for this question is: **If she only bought things on sale, then she would save money.**
+
+"
+She'd sooner just spray herself with water than the what she didn't like the smell of?,"['perfume', 'air', 'fountain', 'swamp', 'puddle']","Questions: She'd sooner just spray herself with water than the what she didn't like the smell of?, Choices: (A) perfume, (B) air, (C) fountain, (D) swamp, (E) puddle. Given the question 'She'd sooner just spray herself with water than the what she didn't like the smell of?', which among the choices perfume, air, fountain, swamp puddle is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) perfume. A possible conditional statement for this question is: **If she didn't like the smell of perfume, then she'd sooner just spray herself with water.**
+
+"
+Shopping all day is likely to lead to?,"['obesity', 'bankruptcy', 'debt', 'tiredness', 'calluses']","Questions: Shopping all day is likely to lead to?, Choices: (A) obesity, (B) bankruptcy, (C) debt, (D) tiredness, (E) calluses. Given the question 'Shopping all day is likely to lead to?', which among the choices obesity, bankruptcy, debt, tiredness calluses is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) tiredness. A possible conditional statement for this question is: **If she shopped all day, then she is likely to feel tiredness.**
+
+"
+Silk is used to make high quality what?,"['nightgown', 'mulberry tree', 'garments', 'chinatown', 'bushes']","Questions: Silk is used to make high quality what?, Choices: (A) nightgown, (B) mulberry tree, (C) garments, (D) chinatown, (E) bushes. Given the question 'Silk is used to make high quality what?', which among the choices nightgown, mulberry tree, garments, chinatown bushes is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) garments. A possible conditional statement for this question is: **If silk is used to make something, then it is a high quality garment.**"

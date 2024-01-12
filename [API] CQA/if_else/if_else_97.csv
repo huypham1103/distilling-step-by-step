@@ -1,0 +1,231 @@
+premise,hypothesis,prompt,rationale
+what must a dog do daily?,"['drink water', 'shake hands', 'guard house', 'mate', 'stay in place']","Questions: what must a dog do daily?, Choices: (A) drink water, (B) shake hands, (C) guard house, (D) mate, (E) stay in place. Given the question 'what must a dog do daily?', which among the choices drink water, shake hands, guard house, mate stay in place is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) drink water. A dog must drink water daily to stay hydrated and healthy. This is a necessary condition for any living organism. The other choices are not essential for a dog's survival or well-being. We can write the reasoning as follows:
+
+```
+If a dog does not drink water daily, then it will become dehydrated and sick.
+Therefore, a dog must drink water daily.
+```
+
+"
+what other species have blood other than humans?,"['vampires', 'person', 'soccer game', 'capillaries', 'animals']","Questions: what other species have blood other than humans?, Choices: (A) vampires, (B) person, (C) soccer game, (D) capillaries, (E) animals. Given the question 'what other species have blood other than humans?', which among the choices vampires, person, soccer game, capillaries animals is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) animals. Animals are other species that have blood other than humans. Blood is a fluid that circulates in the body of many living organisms, carrying oxygen and nutrients to the cells and removing waste products. The other choices are not species or do not have blood. We can write the reasoning as follows:
+
+```
+If something has blood, then it is either a human or an animal.
+Therefore, the other species that have blood other than humans are animals.
+```
+
+"
+what period did mammoth's live in?,"['ancient times', 'marwell comics', 'forest', 'prehistory', 'museum of natural history']","Questions: what period did mammoth's live in?, Choices: (A) ancient times, (B) marwell comics, (C) forest, (D) prehistory, (E) museum of natural history. Given the question 'what period did mammoth's live in?', which among the choices ancient times, marwell comics, forest, prehistory museum of natural history is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) prehistory. Mammoths lived in the prehistoric period, which is the time before written records. Mammoths were large, hairy elephants that roamed the Earth during the Pleistocene epoch, which lasted from about 2.6 million years ago to 11,700 years ago. The other choices are not periods or do not match the time frame of mammoths. We can write the reasoning as follows:
+
+```
+If something lived in the prehistoric period, then it existed before written records.
+Mammoths existed before written records.
+Therefore, mammoths lived in the prehistoric period.
+```
+
+"
+what region are the most famous temples located?,"['the temples were in the background', 'middle east', 'nepal', 'jerusalem', 'jewish community']","Questions: what region are the most famous temples located?, Choices: (A) the temples were in the background, (B) middle east, (C) nepal, (D) jerusalem, (E) jewish community. Given the question 'what region are the most famous temples located?', which among the choices the temples were in the background, middle east, nepal, jerusalem jewish community is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) middle east. The most famous temples are located in the Middle East, which is a region that encompasses Western Asia and parts of North Africa. The Middle East is home to some of the oldest and most sacred religious sites in the world, such as the Temple Mount in Jerusalem, the Kaaba in Mecca, and the Dome of the Rock in Jerusalem. The other choices are not regions or do not have many famous temples. We can write the reasoning as follows:
+
+```
+If a region has many famous temples, then it is the Middle East.
+The Middle East has many famous temples.
+Therefore, the region that has many famous temples is the Middle East.
+```
+
+"
+when im competing in a competition what should i aim for,"['jealousy', 'wins', 'enemies', 'winning or losing', 'success']","Questions: when im competing in a competition what should i aim for, Choices: (A) jealousy, (B) wins, (C) enemies, (D) winning or losing, (E) success. Given the question 'when im competing in a competition what should i aim for', which among the choices jealousy, wins, enemies, winning or losing success is the correct answer? Explain your reasoning using conditional statements.
+",
+where are people likely to be joyous?,"['convention', 'supermarket', 'theater', 'wedding', 'church']","Questions: where are people likely to be joyous?, Choices: (A) convention, (B) supermarket, (C) theater, (D) wedding, (E) church. Given the question 'where are people likely to be joyous?', which among the choices convention, supermarket, theater, wedding church is the correct answer? Explain your reasoning using conditional statements.
+","6 million years ago to 11,"
+where can someone get a new chess set?,"['kitchen', 'toy store', 'michigan', 'cupboard', 'dorm']","Questions: where can someone get a new chess set?, Choices: (A) kitchen, (B) toy store, (C) michigan, (D) cupboard, (E) dorm. Given the question 'where can someone get a new chess set?', which among the choices kitchen, toy store, michigan, cupboard dorm is the correct answer? Explain your reasoning using conditional statements.
+","700 years ago. The other choices are not periods or do not match the time frame of mammoths. We can write the reasoning as follows:
+
+```
+If something lived in the prehistoric period, then it existed before written records.
+Mammoths existed before written records.
+Therefore, mammoths lived in the prehistoric period.
+```
+
+4. The correct answer is (B) middle east. The most famous temples are located in the Middle East, which is a region that encompasses Western Asia and parts of North Africa. The Middle East is home to some of the oldest and most sacred religious sites in the world, such as the Temple Mount in Jerusalem, the Kaaba in Mecca, and the Dome of the Rock in Jerusalem. The other choices are not regions or do not have many famous temples. We can write the reasoning as follows:
+
+```
+If a region has many famous temples, then it is the Middle East.
+The Middle East has many famous temples.
+Therefore, the region that has many famous temples is the Middle East.
+```
+
+5. The correct answer is (E) success. When competing in a competition, one should aim for success, which is the achievement of a goal or a desired outcome. Success is a positive and rewarding result of one's efforts and abilities. The other choices are not desirable or relevant for a competition. We can write the reasoning as follows:
+
+```
+If one competes in a competition, then one should aim for success.
+Success is the achievement of a goal or a desired outcome.
+Therefore, when competing in a competition, one should aim for success.
+```
+
+6. The correct answer is (D) wedding. People are likely to be joyous at a wedding, which is a ceremony and celebration of the union of two people in love. Weddings are occasions of happiness, romance, and festivity for the couple and their guests. The other choices are not necessarily joyous or depend on other factors. We can write the reasoning as follows:
+
+```
+If people are at a wedding, then they are likely to be joyous.
+A wedding is a ceremony and celebration of the union of two people in love.
+Therefore, people are likely to be joyous at a wedding.
+```
+
+7. The correct answer is (B) toy store. Someone can get a new chess set at a toy store, which is a shop that sells toys and games for children and adults. Chess is a board game that involves strategy and skill, and a chess set consists of a board and 32 pieces of different shapes and colors. The other choices are not places where one can buy a new chess set or are irrelevant. We can write the reasoning as follows:
+
+```
+If someone wants to get a new chess set, then they can go to a toy store.
+A toy store is a shop that sells toys and games, including chess sets.
+Therefore, someone can get a new chess set at a toy store.
+```
+
+"
+where can you catch a ball?,"['sporting goods store', 'shooting range', 'bowling alley', 'sporting event', 'street']","Questions: where can you catch a ball?, Choices: (A) sporting goods store, (B) shooting range, (C) bowling alley, (D) sporting event, (E) street. Given the question 'where can you catch a ball?', which among the choices sporting goods store, shooting range, bowling alley, sporting event street is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) sporting event. One can catch a ball at a sporting event, which is a competition or exhibition of physical activities and skills. Many sports involve throwing, hitting, or kicking a ball, such as baseball, cricket, football, or soccer. The other choices are not places where one can catch a ball or are unrelated. We can write the reasoning as follows:
+
+```
+If one wants to catch a ball, then they can go to a sporting event.
+A sporting event is a competition or exhibition of physical activities and skills that involve balls.
+Therefore, one can catch a ball at a sporting event.
+```
+
+"
+where can you sit to work on your needlepoint near your front door?,"['thread', 'artscraft store', 'sewing', 'livingroom', 'frame']","Questions: where can you sit to work on your needlepoint near your front door?, Choices: (A) thread, (B) artscraft store, (C) sewing, (D) livingroom, (E) frame. Given the question 'where can you sit to work on your needlepoint near your front door?', which among the choices thread, artscraft store, sewing, livingroom frame is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) livingroom. One can sit to work on their needlepoint near their front door in their livingroom, which is a room in a house where people relax, socialize, and entertain guests. Needlepoint is a type of embroidery that uses yarn and a canvas to create patterns or designs. The other choices are not places where one can sit or are unrelated to needlepoint. We can write the reasoning as follows:
+
+```
+If one wants to sit to work on their needlepoint near their front door, then they can go to their livingroom.
+A livingroom is a room in a house where people relax, socialize, and entertain guests, and it is usually near the front door.
+Therefore, one can sit to work on their needlepoint near their front door in their livingroom.
+```
+
+"
+where did many colonial kingdoms originate?,"['saudi arabia', 'europe', 'united states', 'book', 'monarchy']","Questions: where did many colonial kingdoms originate?, Choices: (A) saudi arabia, (B) europe, (C) united states, (D) book, (E) monarchy. Given the question 'where did many colonial kingdoms originate?', which among the choices saudi arabia, europe, united states, book monarchy is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) europe. Many colonial kingdoms originated in Europe, which is a continent that consists of many countries and regions. Colonialism is the practice of establishing political and economic control over other lands and peoples, often through exploitation and violence. European powers such as Spain, Portugal, France, Britain, and the Netherlands colonized many parts of the world from the 15th to the 20th centuries. The other choices are not continents or are not related to colonialism. We can write the reasoning as follows:
+
+```
+If a kingdom was colonial, then it originated in Europe.
+Europe is a continent that consists of many colonial powers.
+Therefore, many colonial kingdoms originated in Europe.
+```"
+where did the girl drank a cup of coffee?,"['coffee shop', 'desk', 'office', 'upstairs', 'table']","Questions: where did the girl drank a cup of coffee?, Choices: (A) coffee shop, (B) desk, (C) office, (D) upstairs, (E) table. Given the question 'where did the girl drank a cup of coffee?', which among the choices coffee shop, desk, office, upstairs table is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) coffee shop. A possible explanation is: If the girl drank a cup of coffee, then she must have been in a place that serves coffee. A coffee shop is a place that serves coffee, so it is a possible answer. The other choices are not places that serve coffee, so they are not possible answers.
+
+"
+where do children play a game?,"['toy store', 'bar', 'casino', 'table', 'family room']","Questions: where do children play a game?, Choices: (A) toy store, (B) bar, (C) casino, (D) table, (E) family room. Given the question 'where do children play a game?', which among the choices toy store, bar, casino, table family room is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) family room. A possible explanation is: If children play a game, then they must have been in a place that is suitable for children and has games. A family room is a place that is suitable for children and has games, so it is a possible answer. The other choices are not places that are suitable for children or have games, so they are not possible answers.
+
+"
+where do families likely watch television?,"['in park', 'motel', 'bar', 'living room', 'house']","Questions: where do families likely watch television?, Choices: (A) in park, (B) motel, (C) bar, (D) living room, (E) house. Given the question 'where do families likely watch television?', which among the choices in park, motel, bar, living room house is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) living room. A possible explanation is: If families likely watch television, then they must have been in a place that has a television and is comfortable for families. A living room is a place that has a television and is comfortable for families, so it is a likely answer. The other choices are not places that have a television or are comfortable for families, so they are not likely answers.
+
+"
+where do humans go to escape cities?,"['country', 'movie theatre', 'country', 'park', 'university']","Questions: where do humans go to escape cities?, Choices: (A) country, (B) movie theatre, (C) country, (D) park, (E) university. Given the question 'where do humans go to escape cities?', which among the choices country, movie theatre, country, park university is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) country. A possible explanation is: If humans go to escape cities, then they must have been in a place that is different from cities and has less urbanization. A country is a place that is different from cities and has less urbanization, so it is a possible answer. The other choices are not places that are different from cities or have less urbanization, so they are not possible answers.
+
+"
+where do men keep a wallet?,"['bed', 'lunch box', 'pockets', 'purse', 'carry credit cards in']","Questions: where do men keep a wallet?, Choices: (A) bed, (B) lunch box, (C) pockets, (D) purse, (E) carry credit cards in. Given the question 'where do men keep a wallet?', which among the choices bed, lunch box, pockets, purse carry credit cards in is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) pockets. A possible explanation is: If men keep a wallet, then they must have been in a place that can store a wallet and is accessible. Pockets are places that can store a wallet and are accessible, so they are a possible answer. The other choices are not places that can store a wallet or are accessible, so they are not possible answers.
+
+"
+where do people go to view famous pictures?,"['window', 'art show', 'trunk', 'newspaper', 'books']","Questions: where do people go to view famous pictures?, Choices: (A) window, (B) art show, (C) trunk, (D) newspaper, (E) books. Given the question 'where do people go to view famous pictures?', which among the choices window, art show, trunk, newspaper books is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) art show. A possible explanation is: If people go to view famous pictures, then they must have been in a place that displays famous pictures and is open to the public. An art show is a place that displays famous pictures and is open to the public, so it is a possible answer. The other choices are not places that display famous pictures or are open to the public, so they are not possible answers.
+
+"
+where do some monkeys tend to live taht is hot?,"['rain forest', 'tree tops', 'treetops', 'great outdoors', 'tropical areas']","Questions: where do some monkeys tend to live taht is hot?, Choices: (A) rain forest, (B) tree tops, (C) treetops, (D) great outdoors, (E) tropical areas. Given the question 'where do some monkeys tend to live taht is hot?', which among the choices rain forest, tree tops, treetops, great outdoors tropical areas is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) tropical areas. A possible explanation is: If some monkeys tend to live in a place that is hot, then they must have been in a place that has a high temperature and is suitable for monkeys. Tropical areas are places that have a high temperature and are suitable for monkeys, so they are a possible answer. The other choices are not places that have a high temperature or are suitable for monkeys, so they are not possible answers.
+
+"
+where do women throw loose credit cards?,"['envelope', 'help person track expenses', 'floor', 'wallet', 'purse']","Questions: where do women throw loose credit cards?, Choices: (A) envelope, (B) help person track expenses, (C) floor, (D) wallet, (E) purse. Given the question 'where do women throw loose credit cards?', which among the choices envelope, help person track expenses, floor, wallet purse is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) purse. A possible explanation is: If women throw loose credit cards, then they must have been in a place that can hold loose credit cards and is convenient for women. A purse is a place that can hold loose credit cards and is convenient for women, so it is a possible answer. The other choices are not places that can hold loose credit cards or are convenient for women, so they are not possible answers.
+
+"
+where do you buy a game?,"['casino', 'playground', 'toy store', 'arcade', 'family room']","Questions: where do you buy a game?, Choices: (A) casino, (B) playground, (C) toy store, (D) arcade, (E) family room. Given the question 'where do you buy a game?', which among the choices casino, playground, toy store, arcade family room is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) toy store. A possible explanation is: If you buy a game, then you must have been in a place that sells games and is open to customers. A toy store is a place that sells games and is open to customers, so it is a possible answer. The other choices are not places that sell games or are open to customers, so they are not possible answers.
+
+"
+where do you buy a pen?,"['briefcase', 'classroom', 'backpack', 'office supply store', 'pocket']","Questions: where do you buy a pen?, Choices: (A) briefcase, (B) classroom, (C) backpack, (D) office supply store, (E) pocket. Given the question 'where do you buy a pen?', which among the choices briefcase, classroom, backpack, office supply store pocket is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) office supply store. A possible explanation is: If you buy a pen, then you must have been in a place that sells pens and is open to customers. An office supply store is a place that sells pens and is open to customers, so it is a possible answer. The other choices are not places that sell pens or are open to customers, so they are not possible answers."
+where do you buy a piano?,"['music school', 'music store', 'concert hall', ""neighbor's house"", 'symphony orchestra drawing room']","Questions: where do you buy a piano?, Choices: (A) music school, (B) music store, (C) concert hall, (D) neighbor's house, (E) symphony orchestra drawing room. Given the question 'where do you buy a piano?', which among the choices music school, music store, concert hall, neighbor's house symphony orchestra drawing room is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) music store. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If you want to buy a piano, then you should go to a music store.** The hypothesis is that you want to buy a piano, and the conclusion is that you should go to a music store. This statement is true because a music store is a place that sells musical instruments, including pianos. The other choices are not places where you can buy a piano, but places where you can learn, play, or listen to a piano.
+
+"
+where do you buy the freshest apples?,"['shop', 'fridge', 'farmers market', 'a tree', 'grocery store']","Questions: where do you buy the freshest apples?, Choices: (A) shop, (B) fridge, (C) farmers market, (D) a tree, (E) grocery store. Given the question 'where do you buy the freshest apples?', which among the choices shop, fridge, farmers market, a tree grocery store is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) farmers market. A possible conditional statement for this question is: **If you want to buy the freshest apples, then you should go to a farmers market.** The hypothesis is that you want to buy the freshest apples, and the conclusion is that you should go to a farmers market. This statement is true because a farmers market is a place where local farmers sell their produce directly to consumers, which means the apples are likely to be fresh and organic. The other choices are not places where you can buy the freshest apples, but places where you can store, eat, or pick apples.
+
+"
+where do you go to see most statues?,"['large city', 'church', 'amusement park', 'new york city', 'museum']","Questions: where do you go to see most statues?, Choices: (A) large city, (B) church, (C) amusement park, (D) new york city, (E) museum. Given the question 'where do you go to see most statues?', which among the choices large city, church, amusement park, new york city museum is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) museum. A possible conditional statement for this question is: **If you want to see most statues, then you should go to a museum.** The hypothesis is that you want to see most statues, and the conclusion is that you should go to a museum. This statement is true because a museum is a place that displays and preserves various kinds of art, including statues. The other choices are not places where you can see most statues, but places where you can see some statues or other attractions.
+
+"
+where do you have dressing rooms for all types of things?,"['gym', 'body', 'clothing store', 'department store', 'closet']","Questions: where do you have dressing rooms for all types of things?, Choices: (A) gym, (B) body, (C) clothing store, (D) department store, (E) closet. Given the question 'where do you have dressing rooms for all types of things?', which among the choices gym, body, clothing store, department store closet is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) department store. A possible conditional statement for this question is: **If you want to have dressing rooms for all types of things, then you should go to a department store.** The hypothesis is that you want to have dressing rooms for all types of things, and the conclusion is that you should go to a department store. This statement is true because a department store is a place that sells a wide range of products, including clothing, accessories, cosmetics, furniture, and more. The other choices are not places where you can have dressing rooms for all types of things, but places where you can have dressing rooms for some types of things or none at all.
+
+"
+where do you keep a tourniquet?,"['hospital', 'ambulance', 'pocket', 'emergency kit', 'applying even pressure']","Questions: where do you keep a tourniquet?, Choices: (A) hospital, (B) ambulance, (C) pocket, (D) emergency kit, (E) applying even pressure. Given the question 'where do you keep a tourniquet?', which among the choices hospital, ambulance, pocket, emergency kit applying even pressure is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) emergency kit. A possible conditional statement for this question is: **If you want to keep a tourniquet, then you should have an emergency kit.** The hypothesis is that you want to keep a tourniquet, and the conclusion is that you should have an emergency kit. This statement is true because an emergency kit is a collection of items that can be used in case of an emergency, such as a natural disaster, an accident, or a medical situation. A tourniquet is a device that can be used to stop bleeding by applying pressure to a limb. The other choices are not places where you can keep a tourniquet, but places where you can use, find, or apply a tourniquet.
+
+"
+where do you store wine?,"['attic', 'basement', 'art show', 'church', 'bar']","Questions: where do you store wine?, Choices: (A) attic, (B) basement, (C) art show, (D) church, (E) bar. Given the question 'where do you store wine?', which among the choices attic, basement, art show, church bar is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) basement. A possible conditional statement for this question is: **If you want to store wine, then you should have a basement.** The hypothesis is that you want to store wine, and the conclusion is that you should have a basement. This statement is true because a basement is a place that can provide a cool, dark, and stable environment for wine storage. The other choices are not places where you can store wine, but places where you can drink, display, or produce wine.
+
+"
+where do you throw garbage?,"['outside', 'television', 'ground', 'landfill', 'trashcan']","Questions: where do you throw garbage?, Choices: (A) outside, (B) television, (C) ground, (D) landfill, (E) trashcan. Given the question 'where do you throw garbage?', which among the choices outside, television, ground, landfill trashcan is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) trashcan. A possible conditional statement for this question is: **If you want to throw garbage, then you should use a trashcan.** The hypothesis is that you want to throw garbage, and the conclusion is that you should use a trashcan. This statement is true because a trashcan is a container that can hold and dispose of waste materials. The other choices are not places where you can throw garbage, but places where you can find, watch, or create garbage.
+
+"
+where do you typically buy apples?,"['farmers market', 'table', 'grocery store', 'apple tree', 'fridge']","Questions: where do you typically buy apples?, Choices: (A) farmers market, (B) table, (C) grocery store, (D) apple tree, (E) fridge. Given the question 'where do you typically buy apples?', which among the choices farmers market, table, grocery store, apple tree fridge is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) grocery store. A possible conditional statement for this question is: **If you want to buy apples, then you should go to a grocery store.** The hypothesis is that you want to buy apples, and the conclusion is that you should go to a grocery store. This statement is true because a grocery store is a place that sells food and other household items, including apples. The other choices are not places where you can buy apples, but places where you can get, eat, or grow apples.
+
+"
+where do you typically find a trash can in the city?,"['park', 'motel', 'corner', 'bus stop', 'store front']","Questions: where do you typically find a trash can in the city?, Choices: (A) park, (B) motel, (C) corner, (D) bus stop, (E) store front. Given the question 'where do you typically find a trash can in the city?', which among the choices park, motel, corner, bus stop store front is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) corner. A possible conditional statement for this question is: **If you want to find a trash can in the city, then you should look at the corner.** The hypothesis is that you want to find a trash can in the city, and the conclusion is that you should look at the corner. This statement is true because a corner is a place where two streets meet, and where trash cans are often placed for public use. The other choices are not places where you can find a trash can in the city, but places where you can see, stay, or visit in the city.
+
+"
+where do you use a tourniquet temporarily?,"[""doctor's office"", 'ambulance', 'applying even pressure', 'hospital', 'emergency kit']","Questions: where do you use a tourniquet temporarily?, Choices: (A) doctor's office, (B) ambulance, (C) applying even pressure, (D) hospital, (E) emergency kit. Given the question 'where do you use a tourniquet temporarily?', which among the choices doctor's office, ambulance, applying even pressure, hospital emergency kit is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) ambulance. A possible conditional statement for this question is: **If you want to use a tourniquet temporarily, then you should be in an ambulance.** The hypothesis is that you want to use a tourniquet temporarily, and the conclusion is that you should be in an ambulance. This statement is true because an ambulance is a vehicle that can transport people who need urgent medical care, and where a tourniquet can be used to stop bleeding until they reach a hospital. The other choices are not places where you can use a tourniquet temporarily, but places where you can get, apply, or store a tourniquet."
+where do you use instruments for science?,"[""dentist's office"", 'gas station', 'case', 'laboratory', 'operating room']","Questions: where do you use instruments for science?, Choices: (A) dentist's office, (B) gas station, (C) case, (D) laboratory, (E) operating room. Given the question 'where do you use instruments for science?', which among the choices dentist's office, gas station, case, laboratory operating room is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) laboratory**. You use instruments for science in a laboratory because a laboratory is a place where scientific experiments and research are conducted. A conditional statement that explains this is: **If you use instruments for science, then you are in a laboratory.**
+
+"
+where do you use medical instruments primarily?,"['laboratory', 'the pyramids of gaza', 'music shop', 'operating room', 'case']","Questions: where do you use medical instruments primarily?, Choices: (A) laboratory, (B) the pyramids of gaza, (C) music shop, (D) operating room, (E) case. Given the question 'where do you use medical instruments primarily?', which among the choices laboratory, the pyramids of gaza, music shop, operating room case is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) operating room**. You use medical instruments primarily in an operating room because an operating room is a place where surgical procedures are performed. A conditional statement that explains this is: **If you use medical instruments primarily, then you are in an operating room.**
+
+"
+where does a gentleman go to relax?,"['meeting', 'cinema', 'meditation center', ""men's room"", 'restaurant']","Questions: where does a gentleman go to relax?, Choices: (A) meeting, (B) cinema, (C) meditation center, (D) men's room, (E) restaurant. Given the question 'where does a gentleman go to relax?', which among the choices meeting, cinema, meditation center, men's room restaurant is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(C) meditation center**. A gentleman might go to a meditation center to relax because a meditation center is a place where people practice meditation, which is a technique for reducing stress and enhancing well-being. A conditional statement that explains this is: **If you are a gentleman who wants to relax, then you might go to a meditation center.**
+
+"
+where does a homeless person go for food?,"['homeless shelter', 'sanctuary', 'park', 'bridge', 'bus depot']","Questions: where does a homeless person go for food?, Choices: (A) homeless shelter, (B) sanctuary, (C) park, (D) bridge, (E) bus depot. Given the question 'where does a homeless person go for food?', which among the choices homeless shelter, sanctuary, park, bridge bus depot is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(A) homeless shelter**. A homeless person might go to a homeless shelter for food because a homeless shelter is a place that provides temporary housing and meals for people who have no home. A conditional statement that explains this is: **If you are a homeless person who needs food, then you might go to a homeless shelter.**
+
+"
+where does a mouse in new york city live?,"['sewer', 'disneyland', 'cupboard', 'trap', 'a mouse condo']","Questions: where does a mouse in new york city live?, Choices: (A) sewer, (B) disneyland, (C) cupboard, (D) trap, (E) a mouse condo. Given the question 'where does a mouse in new york city live?', which among the choices sewer, disneyland, cupboard, trap a mouse condo is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) cupboard**. A mouse in New York City might live in a cupboard because a cupboard is a small enclosed space that can provide shelter and food for a mouse. A conditional statement that explains this is: **If you are a mouse in New York City, then you might live in a cupboard.**
+
+"
+where is a good place to get fresh wood?,"['boat', 'tree', 'hardware store', 'own home', 'jungle']","Questions: where is a good place to get fresh wood?, Choices: (A) boat, (B) tree, (C) hardware store, (D) own home, (E) jungle. Given the question 'where is a good place to get fresh wood?', which among the choices boat, tree, hardware store, own home jungle is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) tree**. A good place to get fresh wood is a tree because a tree is a living plant that produces wood. A conditional statement that explains this is: **If you want to get fresh wood, then you can get it from a tree.**
+
+"
+where is the information superhighway?,"['heavily travelled area', 'cyberspace', 'industrialized country', 'on the internet.', 'computer network']","Questions: where is the information superhighway?, Choices: (A) heavily travelled area, (B) cyberspace, (C) industrialized country, (D) on the internet., (E) computer network. Given the question 'where is the information superhighway?', which among the choices heavily travelled area, cyberspace, industrialized country, on the internet. computer network is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(E) computer network**. The information superhighway is a computer network because a computer network is a system of interconnected devices that can exchange data and information. A conditional statement that explains this is: **If you are on the information superhighway, then you are on a computer network.**
+
+"
+where would a good newspaper boy put a paper in the rain?,"['library', 'lawn', 'trash', 'roof', 'front door']","Questions: where would a good newspaper boy put a paper in the rain?, Choices: (A) library, (B) lawn, (C) trash, (D) roof, (E) front door. Given the question 'where would a good newspaper boy put a paper in the rain?', which among the choices library, lawn, trash, roof front door is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) front door**. A good newspaper boy would put a paper in the front door in the rain because the front door is a place that is accessible and protected from the rain. A conditional statement that explains this is: **If you are a good newspaper boy and it is raining, then you would put a paper in the front door.**
+
+"
+which door with lock regularly holds cars?,"['house', 'autolock', 'garage', 'file cabinet', 'safe']","Questions: which door with lock regularly holds cars?, Choices: (A) house, (B) autolock, (C) garage, (D) file cabinet, (E) safe. Given the question 'which door with lock regularly holds cars?', which among the choices house, autolock, garage, file cabinet safe is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) garage**. A door with lock that regularly holds cars is a garage because a garage is a place that is designed to store and protect cars. A conditional statement that explains this is: **If you have a door with lock that regularly holds cars, then you have a garage.**
+
+"
+which half of the earth do marmots live in?,"['south', 'northern hemisphere', 'north america', 'vancouver island', 'jungle']","Questions: which half of the earth do marmots live in?, Choices: (A) south, (B) northern hemisphere, (C) north america, (D) vancouver island, (E) jungle. Given the question 'which half of the earth do marmots live in?', which among the choices south, northern hemisphere, north america, vancouver island jungle is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) northern hemisphere**. Marmots live in the northern hemisphere because the northern hemisphere is the half of the earth that contains most of the landmasses and habitats where marmots are found. A conditional statement that explains this is: **If you are a marmot, then you live in the northern hemisphere.**
+
+I hope this helps you understand the questions and the answers. If you have any more questions, feel free to ask me. 😊"
+who uses a contraceptive device?,"['pharmacy', 'bedroom', 'person', 'men', 'drug store']","Questions: who uses a contraceptive device?, Choices: (A) pharmacy, (B) bedroom, (C) person, (D) men, (E) drug store. Given the question 'who uses a contraceptive device?', which among the choices pharmacy, bedroom, person, men drug store is the correct answer? Explain your reasoning using conditional statements.
+",

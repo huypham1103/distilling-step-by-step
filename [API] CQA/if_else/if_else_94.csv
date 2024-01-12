@@ -1,0 +1,407 @@
+premise,hypothesis,prompt,rationale
+Who has blood and parents?,"['person', 'bloodbank', 'vein', 'capillaries', 'hospital']","Questions: Who has blood and parents?, Choices: (A) person, (B) bloodbank, (C) vein, (D) capillaries, (E) hospital. Given the question 'Who has blood and parents?', which among the choices person, bloodbank, vein, capillaries hospital is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(A) person**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p and q are propositions. A person has blood and parents if and only if they are a living human being. Therefore, we can write the conditional statement as follows: **If x is a person, then x has blood and parents**. None of the other choices have both blood and parents, so they are not correct.
+
+"
+Who is it important to pay attention to when attending school?,"['falling down', 'time', 'stupidity', 'teachers', 'patience']","Questions: Who is it important to pay attention to when attending school?, Choices: (A) falling down, (B) time, (C) stupidity, (D) teachers, (E) patience. Given the question 'Who is it important to pay attention to when attending school?', which among the choices falling down, time, stupidity, teachers patience is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) teachers**. A teacher is someone who instructs or guides students in a school. It is important to pay attention to teachers when attending school if and only if you want to learn and succeed in your education. Therefore, we can write the conditional statement as follows: **If x is attending school, then x should pay attention to teachers**. None of the other choices are relevant to the question, so they are not correct.
+
+"
+Who is likely going in to a market?,"['stress', 'food', 'that you', 'spending money', 'walking']","Questions: Who is likely going in to a market?, Choices: (A) stress, (B) food, (C) that you, (D) spending money, (E) walking. Given the question 'Who is likely going in to a market?', which among the choices stress, food, that you, spending money walking is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) food**. Food is something that people eat or buy to eat. Someone is likely going in to a market if and only if they need or want food. Therefore, we can write the conditional statement as follows: **If x is going in to a market, then x is likely looking for food**. None of the other choices are likely reasons to go in to a market, so they are not correct.
+
+"
+Who is likely to check you into a beauty salon?,"['bellhop', 'strip mall', 'beautifying hair', 'clerk', 'neighborhood']","Questions: Who is likely to check you into a beauty salon?, Choices: (A) bellhop, (B) strip mall, (C) beautifying hair, (D) clerk, (E) neighborhood. Given the question 'Who is likely to check you into a beauty salon?', which among the choices bellhop, strip mall, beautifying hair, clerk neighborhood is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) clerk**. A clerk is someone who works at a desk or counter, especially in a shop or hotel. Someone is likely to check you into a beauty salon if and only if they are a clerk working there. Therefore, we can write the conditional statement as follows: **If x is checking you into a beauty salon, then x is likely a clerk**. None of the other choices are likely to check you into a beauty salon, so they are not correct.
+
+"
+Who is likely to use a comb?,"['medicine cabinet', 'trashcan', 'suitcase', 'pocket', 'barber shop']","Questions: Who is likely to use a comb?, Choices: (A) medicine cabinet, (B) trashcan, (C) suitcase, (D) pocket, (E) barber shop. Given the question 'Who is likely to use a comb?', which among the choices medicine cabinet, trashcan, suitcase, pocket barber shop is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) barber shop**. A barber shop is a place where people go to get their hair cut or styled. Someone is likely to use a comb if and only if they are in a barber shop or have hair that needs combing. Therefore, we can write the conditional statement as follows: **If x is using a comb, then x is likely in a barber shop or has hair that needs combing**. None of the other choices are likely to use a comb, so they are not correct.
+
+"
+Who is likely to use too much salt?,"['shaker', 'fast food restaurant', 'kitchen cupboard', 'people', 'table']","Questions: Who is likely to use too much salt?, Choices: (A) shaker, (B) fast food restaurant, (C) kitchen cupboard, (D) people, (E) table. Given the question 'Who is likely to use too much salt?', which among the choices shaker, fast food restaurant, kitchen cupboard, people table is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) people**. People are human beings who have taste buds and preferences. Someone is likely to use too much salt if and only if they like salty food or have a health condition that affects their salt intake. Therefore, we can write the conditional statement as follows: **If x is using too much salt, then x is likely a person who likes salty food or has a health condition that affects their salt intake**. None of the other choices are likely to use too much salt, so they are not correct.
+
+"
+Who is likely yo have a caring heart?,"['person', 'species', 'artichoke', 'all mammals', 'live animal']","Questions: Who is likely yo have a caring heart?, Choices: (A) person, (B) species, (C) artichoke, (D) all mammals, (E) live animal. Given the question 'Who is likely yo have a caring heart?', which among the choices person, species, artichoke, all mammals live animal is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) person**. A person is a human being who has emotions and feelings. Someone is likely to have a caring heart if and only if they are a person who loves or cares for others. Therefore, we can write the conditional statement as follows: **If x has a caring heart, then x is likely a person who loves or cares for others**. None of the other choices are likely to have a caring heart, so they are not correct.
+
+"
+Who is not likely to have sex?,"['children', 'orgasm', 'pregnancy', 'human', 'herpes']","Questions: Who is not likely to have sex?, Choices: (A) children, (B) orgasm, (C) pregnancy, (D) human, (E) herpes. Given the question 'Who is not likely to have sex?', which among the choices children, orgasm, pregnancy, human herpes is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(A) children**. Children are young human beings who are not mature enough to have sex. Someone is not likely to have sex if and only if they are a child who is not ready or allowed to have sex. Therefore, we can write the conditional statement as follows: **If x is not likely to have sex, then x is likely a child who is not ready or allowed to have sex**. None of the other choices are not likely to have sex, so they are not correct.
+
+"
+Who is someone competing against?,"['effort', 'time', 'opponent', 'skill', 'competition']","Questions: Who is someone competing against?, Choices: (A) effort, (B) time, (C) opponent, (D) skill, (E) competition. Given the question 'Who is someone competing against?', which among the choices effort, time, opponent, skill competition is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) opponent**. An opponent is someone who is competing against you in a game or contest. Someone is competing against someone else if and only if they are opponents who are trying to win or beat each other. Therefore, we can write the conditional statement as follows: **If x is competing against someone, then x is likely an opponent who is trying to win or beat them**. None of the other choices are someone you are competing against, so they are not correct.
+
+"
+Who is someone you might need when you are stopping being married to spouse?,"['trouble', 'lawyer', 'judge', 'civil authorities', 'friends']","Questions: Who is someone you might need when you are stopping being married to spouse?, Choices: (A) trouble, (B) lawyer, (C) judge, (D) civil authorities, (E) friends. Given the question 'Who is someone you might need when you are stopping being married to spouse?', which among the choices trouble, lawyer, judge, civil authorities friends is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) lawyer**. A lawyer is someone who practices law and represents clients in legal matters. Someone might need a lawyer when they are stopping being married to their spouse if and only if they are going through a divorce or separation that involves legal issues. Therefore, we can write the conditional statement as follows: **If x is stopping being married to their spouse, then x might need a lawyer who can help them with legal issues**. None of the other choices are someone you might need when you are stopping being married to your spouse, so they are not correct."
+Who keeps their car in a parking area?,"['apartment complex', 'school yard', 'people', 'amusement park', 'apartment building']","Questions: Who keeps their car in a parking area?, Choices: (A) apartment complex, (B) school yard, (C) people, (D) amusement park, (E) apartment building. Given the question 'Who keeps their car in a parking area?', which among the choices apartment complex, school yard, people, amusement park apartment building is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) people. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If someone keeps their car in a parking area, then they are a person.**
+
+"
+Who might end up with a wound from lying in bed?,"['patient', 'hospital', 'emergency room', 'senior citizen', 'injured person']","Questions: Who might end up with a wound from lying in bed?, Choices: (A) patient, (B) hospital, (C) emergency room, (D) senior citizen, (E) injured person. Given the question 'Who might end up with a wound from lying in bed?', which among the choices patient, hospital, emergency room, senior citizen injured person is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) injured person. A possible conditional statement for this question is: **If someone ends up with a wound from lying in bed, then they are an injured person.**
+
+"
+Who might use a double edged razor to cut things precisely?,"['first aid kit', 'chemist', 'butcher', 'shower', 'drug store']","Questions: Who might use a double edged razor to cut things precisely?, Choices: (A) first aid kit, (B) chemist, (C) butcher, (D) shower, (E) drug store. Given the question 'Who might use a double edged razor to cut things precisely?', which among the choices first aid kit, chemist, butcher, shower drug store is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) chemist. A possible conditional statement for this question is: **If someone uses a double edged razor to cut things precisely, then they are a chemist.**
+
+"
+Who said ignorance was not an excuse for the crime?,"['learn about subject', 'learn new', 'find truth', 'is bliss', 'judge']","Questions: Who said ignorance was not an excuse for the crime?, Choices: (A) learn about subject, (B) learn new, (C) find truth, (D) is bliss, (E) judge. Given the question 'Who said ignorance was not an excuse for the crime?', which among the choices learn about subject, learn new, find truth, is bliss judge is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) judge. A possible conditional statement for this question is: **If someone said ignorance was not an excuse for the crime, then they are a judge.**
+
+"
+Who sits at the center table at a receeption?,"['restorand', 'wedding party', 'church basement', 'corridor', 'restaurant']","Questions: Who sits at the center table at a receeption?, Choices: (A) restorand, (B) wedding party, (C) church basement, (D) corridor, (E) restaurant. Given the question 'Who sits at the center table at a receeption?', which among the choices restorand, wedding party, church basement, corridor restaurant is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) wedding party. A possible conditional statement for this question is: **If someone sits at the center table at a reception, then they are part of the wedding party.**
+
+"
+Who take stand in a trial to help a case?,"['witness', 'testify', 'give testimony', 'judge', 'tell truth']","Questions: Who take stand in a trial to help a case?, Choices: (A) witness, (B) testify, (C) give testimony, (D) judge, (E) tell truth. Given the question 'Who take stand in a trial to help a case?', which among the choices witness, testify, give testimony, judge tell truth is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) witness. A possible conditional statement for this question is: **If someone takes the stand in a trial to help a case, then they are a witness.**
+
+"
+Who takes forever to pass a bill?,"['congress', 'wallet', 'restaurant', 'mail box', 'presidents']","Questions: Who takes forever to pass a bill?, Choices: (A) congress, (B) wallet, (C) restaurant, (D) mail box, (E) presidents. Given the question 'Who takes forever to pass a bill?', which among the choices congress, wallet, restaurant, mail box presidents is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) congress. A possible conditional statement for this question is: **If someone takes forever to pass a bill, then they are part of the congress.**
+
+"
+Who was the head of the branch yelling at?,"['owner', 'foot', 'subordinate', 'base', 'point']","Questions: Who was the head of the branch yelling at?, Choices: (A) owner, (B) foot, (C) subordinate, (D) base, (E) point. Given the question 'Who was the head of the branch yelling at?', which among the choices owner, foot, subordinate, base point is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) subordinate. A possible conditional statement for this question is: **If someone was yelled at by the head of the branch, then they are a subordinate.**
+
+"
+Who will be voted as the most likely to be successful?,"['bitterest', 'representative', 'cleverest', 'bunny rabbit', 'corrupt']","Questions: Who will be voted as the most likely to be successful?, Choices: (A) bitterest, (B) representative, (C) cleverest, (D) bunny rabbit, (E) corrupt. Given the question 'Who will be voted as the most likely to be successful?', which among the choices bitterest, representative, cleverest, bunny rabbit corrupt is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) cleverest. A possible conditional statement for this question is: **If someone is voted as the most likely to be successful, then they are the cleverest.**
+
+"
+Who would you go to if you wanted a picture of a thermometer?,"['cabinet', ""doctor's office"", 'hospital', 'drawer', 'camera']","Questions: Who would you go to if you wanted a picture of a thermometer?, Choices: (A) cabinet, (B) doctor's office, (C) hospital, (D) drawer, (E) camera. Given the question 'Who would you go to if you wanted a picture of a thermometer?', which among the choices cabinet, doctor's office, hospital, drawer camera is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) camera. A possible conditional statement for this question is: **If someone wants a picture of a thermometer, then they would go to a camera.**"
+Wht causes something to not be holy/,"['halibut', 'damaged', 'profane', 'common', 'pope holy']","Questions: Wht causes something to not be holy/, Choices: (A) halibut, (B) damaged, (C) profane, (D) common, (E) pope holy. Given the question 'Wht causes something to not be holy/', which among the choices halibut, damaged, profane, common pope holy is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) profane. A conditional statement is: If something is profane, then it is not holy.
+"
+Why  would a person stop buying products?,"['comparison shopping', 'overstocking', 'spending money', 'running out of money', 'bankruptcy']","Questions: Why  would a person stop buying products?, Choices: (A) comparison shopping, (B) overstocking, (C) spending money, (D) running out of money, (E) bankruptcy. Given the question 'Why  would a person stop buying products?', which among the choices comparison shopping, overstocking, spending money, running out of money bankruptcy is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) running out of money. A conditional statement is: If a person runs out of money, then they stop buying products.
+"
+Why are cooks hired?,"['to be fired', 'prepare meals', 'season with salt', 'better food', 'perfect food']","Questions: Why are cooks hired?, Choices: (A) to be fired, (B) prepare meals, (C) season with salt, (D) better food, (E) perfect food. Given the question 'Why are cooks hired?', which among the choices to be fired, prepare meals, season with salt, better food perfect food is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) prepare meals. A conditional statement is: If a cook is hired, then they prepare meals.
+"
+Why are guns not allowed in some areas?,"['bad', 'gun free zone', 'very dangerous', 'deadly in wrong hands', 'semiautomatic']","Questions: Why are guns not allowed in some areas?, Choices: (A) bad, (B) gun free zone, (C) very dangerous, (D) deadly in wrong hands, (E) semiautomatic. Given the question 'Why are guns not allowed in some areas?', which among the choices bad, gun free zone, very dangerous, deadly in wrong hands semiautomatic is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) gun free zone. A conditional statement is: If an area is a gun free zone, then guns are not allowed there.
+"
+Why are there different kinds of dogs?,"['do many things', 'go outside', 'to give the ark more diversity', 'many colours', 'sleep soundly']","Questions: Why are there different kinds of dogs?, Choices: (A) do many things, (B) go outside, (C) to give the ark more diversity, (D) many colours, (E) sleep soundly. Given the question 'Why are there different kinds of dogs?', which among the choices do many things, go outside, to give the ark more diversity, many colours sleep soundly is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) do many things. A conditional statement is: If dogs can do many things, then there are different kinds of dogs.
+"
+Why are there so many different creatures in the oceans?,"['saline based', 'wet', 'wide', 'very deep', 'pressure']","Questions: Why are there so many different creatures in the oceans?, Choices: (A) saline based, (B) wet, (C) wide, (D) very deep, (E) pressure. Given the question 'Why are there so many different creatures in the oceans?', which among the choices saline based, wet, wide, very deep pressure is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) very deep. A conditional statement is: If the oceans are very deep, then there are many different creatures in them.
+"
+Why can drinking alcohol cause a car crash?,"['having sex', 'disorientation', 'sickness', 'throwing up', 'snapchatting']","Questions: Why can drinking alcohol cause a car crash?, Choices: (A) having sex, (B) disorientation, (C) sickness, (D) throwing up, (E) snapchatting. Given the question 'Why can drinking alcohol cause a car crash?', which among the choices having sex, disorientation, sickness, throwing up snapchatting is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) disorientation. A conditional statement is: If a person drinks alcohol, then they may experience disorientation. If a person experiences disorientation, then they may cause a car crash.
+"
+Why could someone fall down after eating lunch?,"['drowsiness', 'late for work', 'feel full', 'lethargy', 'feel sleepy']","Questions: Why could someone fall down after eating lunch?, Choices: (A) drowsiness, (B) late for work, (C) feel full, (D) lethargy, (E) feel sleepy. Given the question 'Why could someone fall down after eating lunch?', which among the choices drowsiness, late for work, feel full, lethargy feel sleepy is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) drowsiness. A conditional statement is: If a person eats lunch, then they may feel drowsy. If a person feels drowsy, then they may fall down.
+"
+Why did his eyes close and he begin to snore while listening to music that was quiet?,"['relaxation', 'fall asleep', 'deafness', 'resting', 'calm']","Questions: Why did his eyes close and he begin to snore while listening to music that was quiet?, Choices: (A) relaxation, (B) fall asleep, (C) deafness, (D) resting, (E) calm. Given the question 'Why did his eyes close and he begin to snore while listening to music that was quiet?', which among the choices relaxation, fall asleep, deafness, resting calm is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) fall asleep. A conditional statement is: If a person listens to music that is quiet, then they may fall asleep. If a person falls asleep, then their eyes may close and they may begin to snore.
+"
+Why did only the close friends laugh about the fox?,"['inside joke', 'bad joke', 'hen house', 'grassy field', 'tennessee']","Questions: Why did only the close friends laugh about the fox?, Choices: (A) inside joke, (B) bad joke, (C) hen house, (D) grassy field, (E) tennessee. Given the question 'Why did only the close friends laugh about the fox?', which among the choices inside joke, bad joke, hen house, grassy field tennessee is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) inside joke. A conditional statement is: If a joke is an inside joke, then only the close friends may laugh about it."
+Why did the police office pull the car over?,"['going too fast', 'last several years', 'go fast', 'careless driving', 'start running']","Questions: Why did the police office pull the car over?, Choices: (A) going too fast, (B) last several years, (C) go fast, (D) careless driving, (E) start running. Given the question 'Why did the police office pull the car over?', which among the choices going too fast, last several years, go fast, careless driving start running is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) going too fast. A possible conditional statement is: If the car is going too fast, then the police officer pulls the car over. The hypothesis is ""the car is going too fast"" and the conclusion is ""the police officer pulls the car over"". This conditional statement makes sense because the police officer has the authority to stop a car that is violating the speed limit.
+
+"
+Why did the student raise her hand?,"['complete test', 'died', 'answer question', 'study book', 'read book']","Questions: Why did the student raise her hand?, Choices: (A) complete test, (B) died, (C) answer question, (D) study book, (E) read book. Given the question 'Why did the student raise her hand?', which among the choices complete test, died, answer question, study book read book is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) answer question. A possible conditional statement is: If the student knows the answer to the question, then she raises her hand. The hypothesis is ""the student knows the answer to the question"" and the conclusion is ""she raises her hand"". This conditional statement makes sense because the student wants to show the teacher that she knows the answer and participate in the class discussion.
+
+"
+Why do I eat just enough when eating breakfast?,"['gas', 'full stomach', 'feeling satisfied', 'have energy', 'bloated']","Questions: Why do I eat just enough when eating breakfast?, Choices: (A) gas, (B) full stomach, (C) feeling satisfied, (D) have energy, (E) bloated. Given the question 'Why do I eat just enough when eating breakfast?', which among the choices gas, full stomach, feeling satisfied, have energy bloated is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) have energy. A possible conditional statement is: If I eat just enough when eating breakfast, then I have energy for the day. The hypothesis is ""I eat just enough when eating breakfast"" and the conclusion is ""I have energy for the day"". This conditional statement makes sense because eating a balanced breakfast can provide the necessary nutrients and calories to fuel the body and mind.
+
+"
+Why do almost all people that take dance classes do it?,"['express yourself', 'am happy', 'like dancing', 'have fun', 'deepen relationship']","Questions: Why do almost all people that take dance classes do it?, Choices: (A) express yourself, (B) am happy, (C) like dancing, (D) have fun, (E) deepen relationship. Given the question 'Why do almost all people that take dance classes do it?', which among the choices express yourself, am happy, like dancing, have fun deepen relationship is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) have fun. A possible conditional statement is: If people take dance classes, then they have fun. The hypothesis is ""people take dance classes"" and the conclusion is ""they have fun"". This conditional statement makes sense because dancing is an enjoyable activity that can improve mood, health, and social skills.
+
+"
+Why do children usually like jumping rope?,"['increased heart rate', 'smiling', 'sweating', 'having fun', 'jumping']","Questions: Why do children usually like jumping rope?, Choices: (A) increased heart rate, (B) smiling, (C) sweating, (D) having fun, (E) jumping. Given the question 'Why do children usually like jumping rope?', which among the choices increased heart rate, smiling, sweating, having fun jumping is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) having fun. A possible conditional statement is: If children jump rope, then they have fun. The hypothesis is ""children jump rope"" and the conclusion is ""they have fun"". This conditional statement makes sense because jumping rope is a fun and simple game that can be played with friends or alone.
+
+"
+Why do manufacturers have many machines?,"['turn jars', 'perform work', 'produce products', 'answering questions', 'serve humanity']","Questions: Why do manufacturers have many machines?, Choices: (A) turn jars, (B) perform work, (C) produce products, (D) answering questions, (E) serve humanity. Given the question 'Why do manufacturers have many machines?', which among the choices turn jars, perform work, produce products, answering questions serve humanity is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) produce products. A possible conditional statement is: If manufacturers have many machines, then they produce products faster and more efficiently. The hypothesis is ""manufacturers have many machines"" and the conclusion is ""they produce products faster and more efficiently"". This conditional statement makes sense because machines can perform tasks that are difficult, dangerous, or tedious for humans, and can increase the quantity and quality of the products.
+
+"
+Why do most people engage in chatting with friends?,"['fun', 'love', 'answers', 'inspiration', 'relaxation']","Questions: Why do most people engage in chatting with friends?, Choices: (A) fun, (B) love, (C) answers, (D) inspiration, (E) relaxation. Given the question 'Why do most people engage in chatting with friends?', which among the choices fun, love, answers, inspiration relaxation is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) relaxation. A possible conditional statement is: If people chat with friends, then they feel relaxed and happy. The hypothesis is ""people chat with friends"" and the conclusion is ""they feel relaxed and happy"". This conditional statement makes sense because chatting with friends can reduce stress, improve mood, and strengthen relationships.
+
+"
+Why do parents encourage their kids to play baseball?,"['round', 'cheap', 'break window', 'hard', 'fun to play']","Questions: Why do parents encourage their kids to play baseball?, Choices: (A) round, (B) cheap, (C) break window, (D) hard, (E) fun to play. Given the question 'Why do parents encourage their kids to play baseball?', which among the choices round, cheap, break window, hard fun to play is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) fun to play. A possible conditional statement is: If parents encourage their kids to play baseball, then they want them to have fun and learn new skills. The hypothesis is ""parents encourage their kids to play baseball"" and the conclusion is ""they want them to have fun and learn new skills"". This conditional statement makes sense because baseball is a fun and popular sport that can teach kids teamwork, coordination, and discipline.
+
+"
+Why do parents tell kids to play games?,"['mental aptitude', 'happiness', 'winning', 'competitiveness', 'entertainment']","Questions: Why do parents tell kids to play games?, Choices: (A) mental aptitude, (B) happiness, (C) winning, (D) competitiveness, (E) entertainment. Given the question 'Why do parents tell kids to play games?', which among the choices mental aptitude, happiness, winning, competitiveness entertainment is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) mental aptitude. A possible conditional statement is: If parents tell kids to play games, then they want them to improve their mental aptitude and creativity. The hypothesis is ""parents tell kids to play games"" and the conclusion is ""they want them to improve their mental aptitude and creativity"". This conditional statement makes sense because games can stimulate the brain, enhance memory, and foster imagination.
+
+"
+Why do people compete in sports?,"['accomplishment', 'injuries', 'enemies', 'rivalry', 'death']","Questions: Why do people compete in sports?, Choices: (A) accomplishment, (B) injuries, (C) enemies, (D) rivalry, (E) death. Given the question 'Why do people compete in sports?', which among the choices accomplishment, injuries, enemies, rivalry death is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) accomplishment. A possible conditional statement is: If people compete in sports, then they seek a sense of accomplishment and challenge. The hypothesis is ""people compete in sports"" and the conclusion is ""they seek a sense of accomplishment and challenge"". This conditional statement makes sense because sports can provide an opportunity to test one's abilities, overcome obstacles, and achieve goals."
+Why do people eat food even when they do not lke to?,"['cooking takes a while', 'necessary to live', 'edible', 'kitchen', 'unhealthy']","Questions: Why do people eat food even when they do not lke to?, Choices: (A) cooking takes a while, (B) necessary to live, (C) edible, (D) kitchen, (E) unhealthy. Given the question 'Why do people eat food even when they do not lke to?', which among the choices cooking takes a while, necessary to live, edible, kitchen unhealthy is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) necessary to live. A possible explanation is:
+
+```
+If people do not eat food, then they will die.
+Therefore, people eat food even when they do not like to.
+```
+
+"
+Why do people engage in chatting with friends in class?,"['necessity', 'answers', 'inspiration', 'love', 'fun']","Questions: Why do people engage in chatting with friends in class?, Choices: (A) necessity, (B) answers, (C) inspiration, (D) love, (E) fun. Given the question 'Why do people engage in chatting with friends in class?', which among the choices necessity, answers, inspiration, love fun is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) fun. A possible explanation is:
+
+```
+If people chat with friends in class, then they have fun.
+Therefore, people engage in chatting with friends in class.
+```
+
+"
+Why do people go about killing people ?,"['murder', 'get killed', 'sporting event', 'hate', 'feel remorse']","Questions: Why do people go about killing people ?, Choices: (A) murder, (B) get killed, (C) sporting event, (D) hate, (E) feel remorse. Given the question 'Why do people go about killing people ?', which among the choices murder, get killed, sporting event, hate feel remorse is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) hate. A possible explanation is:
+
+```
+If people hate someone, then they may want to kill them.
+Therefore, people go about killing people because of hate.
+```
+
+"
+Why do people go hiking?,"['drink water', 'get lost', 'get tired', 'enjoy nature', 'hunger']","Questions: Why do people go hiking?, Choices: (A) drink water, (B) get lost, (C) get tired, (D) enjoy nature, (E) hunger. Given the question 'Why do people go hiking?', which among the choices drink water, get lost, get tired, enjoy nature hunger is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) enjoy nature. A possible explanation is:
+
+```
+If people go hiking, then they can see beautiful scenery and wildlife.
+Therefore, people go hiking to enjoy nature.
+```
+
+"
+Why do people go to see others playing baseball?,"['pain', 'delight', 'entertainment', 'stupid', 'fun']","Questions: Why do people go to see others playing baseball?, Choices: (A) pain, (B) delight, (C) entertainment, (D) stupid, (E) fun. Given the question 'Why do people go to see others playing baseball?', which among the choices pain, delight, entertainment, stupid fun is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) entertainment. A possible explanation is:
+
+```
+If people watch others playing baseball, then they can see exciting plays and cheer for their favorite team.
+Therefore, people go to see others playing baseball for entertainment.
+```
+
+"
+Why do people like eating hamburgers?,"['clogged arteries', 'tasty', 'have fun', 'indigestion', 'gain weight']","Questions: Why do people like eating hamburgers?, Choices: (A) clogged arteries, (B) tasty, (C) have fun, (D) indigestion, (E) gain weight. Given the question 'Why do people like eating hamburgers?', which among the choices clogged arteries, tasty, have fun, indigestion gain weight is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) tasty. A possible explanation is:
+
+```
+If people eat hamburgers, then they can enjoy the flavor and texture of the meat, cheese, and bun.
+Therefore, people like eating hamburgers because they are tasty.
+```
+
+"
+Why do people like getting wet in the summer?,"['get cold', 'relax', 'catching cold', 'catch cold', 'cooling off']","Questions: Why do people like getting wet in the summer?, Choices: (A) get cold, (B) relax, (C) catching cold, (D) catch cold, (E) cooling off. Given the question 'Why do people like getting wet in the summer?', which among the choices get cold, relax, catching cold, catch cold cooling off is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) cooling off. A possible explanation is:
+
+```
+If people get wet in the summer, then they can lower their body temperature and feel refreshed.
+Therefore, people like getting wet in the summer to cool off.
+```
+
+"
+Why do people participate in exercising?,"['tiredness', 'exhaustion', 'get sick', 'become stronger', 'use energy']","Questions: Why do people participate in exercising?, Choices: (A) tiredness, (B) exhaustion, (C) get sick, (D) become stronger, (E) use energy. Given the question 'Why do people participate in exercising?', which among the choices tiredness, exhaustion, get sick, become stronger use energy is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) become stronger. A possible explanation is:
+
+```
+If people exercise, then they can improve their physical health and fitness.
+Therefore, people participate in exercising to become stronger.
+```
+
+"
+Why do people primarily partake in surfing?,"['getting in shape', 'to get wet', 'getting wet', 'enjoyment', 'shark attacks']","Questions: Why do people primarily partake in surfing?, Choices: (A) getting in shape, (B) to get wet, (C) getting wet, (D) enjoyment, (E) shark attacks. Given the question 'Why do people primarily partake in surfing?', which among the choices getting in shape, to get wet, getting wet, enjoyment shark attacks is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) enjoyment. A possible explanation is:
+
+```
+If people surf, then they can experience the thrill and challenge of riding the waves.
+Therefore, people primarily partake in surfing for enjoyment.
+```
+
+"
+Why do people ready gossip magazines?,"['for a course', 'get information', 'improove know how', 'learn', 'entertained']","Questions: Why do people ready gossip magazines?, Choices: (A) for a course, (B) get information, (C) improove know how, (D) learn, (E) entertained. Given the question 'Why do people ready gossip magazines?', which among the choices for a course, get information, improove know how, learn entertained is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) entertained. A possible explanation is:
+
+```
+If people read gossip magazines, then they can learn about the lives and scandals of celebrities and other famous people.
+Therefore, people read gossip magazines to be entertained.
+```
+"
+Why do people socialize when they first get a new job?,"['meet new people', 'make friends', 'small talk', 'get a raise', 'talk to people']","Questions: Why do people socialize when they first get a new job?, Choices: (A) meet new people, (B) make friends, (C) small talk, (D) get a raise, (E) talk to people. Given the question 'Why do people socialize when they first get a new job?', which among the choices meet new people, make friends, small talk, get a raise talk to people is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) make friends. A possible explanation is: If people socialize when they first get a new job, then they can make friends with their coworkers and feel more comfortable in their work environment.
+"
+Why do people spend money?,"['spend cash', 'go shopping', 'buy things', 'have job', 'make money']","Questions: Why do people spend money?, Choices: (A) spend cash, (B) go shopping, (C) buy things, (D) have job, (E) make money. Given the question 'Why do people spend money?', which among the choices spend cash, go shopping, buy things, have job make money is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) buy things. A possible explanation is: If people have money, then they can spend it to buy things that they need or want.
+"
+Why do people spend time chatting with friends?,"['moroseness', 'laughter', 'feel close to', 'feel relaxed', 'gathering of information']","Questions: Why do people spend time chatting with friends?, Choices: (A) moroseness, (B) laughter, (C) feel close to, (D) feel relaxed, (E) gathering of information. Given the question 'Why do people spend time chatting with friends?', which among the choices moroseness, laughter, feel close to, feel relaxed gathering of information is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) feel relaxed. A possible explanation is: If people spend time chatting with friends, then they can feel relaxed and happy by sharing their thoughts and feelings with others.
+"
+Why do people start to play sports at the gym?,"['practice', 'compete', 'to have fun', 'get in shape', 'stretch']","Questions: Why do people start to play sports at the gym?, Choices: (A) practice, (B) compete, (C) to have fun, (D) get in shape, (E) stretch. Given the question 'Why do people start to play sports at the gym?', which among the choices practice, compete, to have fun, get in shape stretch is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) get in shape. A possible explanation is: If people start to play sports at the gym, then they can get in shape and improve their physical health and fitness.
+"
+Why do people take up running?,"['shortness of breath', 'weight loss', 'faster travel', 'stitches', 'heart attack']","Questions: Why do people take up running?, Choices: (A) shortness of breath, (B) weight loss, (C) faster travel, (D) stitches, (E) heart attack. Given the question 'Why do people take up running?', which among the choices shortness of breath, weight loss, faster travel, stitches heart attack is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) weight loss. A possible explanation is: If people take up running, then they can burn calories and lose weight.
+"
+Why do people want to have fun?,"['have sex', 'enjoy yourself', 'waste time', 'laughter', 'spontaneous']","Questions: Why do people want to have fun?, Choices: (A) have sex, (B) enjoy yourself, (C) waste time, (D) laughter, (E) spontaneous. Given the question 'Why do people want to have fun?', which among the choices have sex, enjoy yourself, waste time, laughter spontaneous is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) enjoy yourself. A possible explanation is: If people want to have fun, then they can enjoy themselves and have a good time.
+"
+Why do people want to keep working?,"['frustration', 'make money', 'boredom', 'being paid', 'blisters']","Questions: Why do people want to keep working?, Choices: (A) frustration, (B) make money, (C) boredom, (D) being paid, (E) blisters. Given the question 'Why do people want to keep working?', which among the choices frustration, make money, boredom, being paid blisters is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) make money. A possible explanation is: If people want to keep working, then they can make money and earn a living.
+"
+Why do people want to play games?,"['fun', 'keep score', 'try to win', 'attempt to win', 'bored']","Questions: Why do people want to play games?, Choices: (A) fun, (B) keep score, (C) try to win, (D) attempt to win, (E) bored. Given the question 'Why do people want to play games?', which among the choices fun, keep score, try to win, attempt to win bored is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) fun. A possible explanation is: If people want to play games, then they can have fun and entertain themselves.
+"
+Why do people want to read fiction books?,"['having fun', 'falling asleep', 'learn new things', 'learn unknown concepts', 'memorize']","Questions: Why do people want to read fiction books?, Choices: (A) having fun, (B) falling asleep, (C) learn new things, (D) learn unknown concepts, (E) memorize. Given the question 'Why do people want to read fiction books?', which among the choices having fun, falling asleep, learn new things, learn unknown concepts memorize is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) learn new things. A possible explanation is: If people want to read fiction books, then they can learn new things and expand their imagination and creativity.
+"
+Why do people want to swim in the heat?,"['wear bathing suit', 'fun', 'excercise', 'cool down', 'exercise']","Questions: Why do people want to swim in the heat?, Choices: (A) wear bathing suit, (B) fun, (C) excercise, (D) cool down, (E) exercise. Given the question 'Why do people want to swim in the heat?', which among the choices wear bathing suit, fun, excercise, cool down exercise is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) cool down. A possible explanation is: If people want to swim in the heat, then they can cool down and refresh themselves."
+Why do some people choose to not own cars?,"['cost money', 'slow down', 'move people', 'get to town', 'cars are cheap']","Questions: Why do some people choose to not own cars?, Choices: (A) cost money, (B) slow down, (C) move people, (D) get to town, (E) cars are cheap. Given the question 'Why do some people choose to not own cars?', which among the choices cost money, slow down, move people, get to town cars are cheap is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) cost money. A possible explanation is: If people choose to not own cars, then they avoid paying for gas, maintenance, insurance, and other expenses that cost money.
+
+"
+Why do some people quit work and go back to school for?,"['face problems', 'better themselves', 'become disillusioned', 'knowledge', 'talk to each other']","Questions: Why do some people quit work and go back to school for?, Choices: (A) face problems, (B) better themselves, (C) become disillusioned, (D) knowledge, (E) talk to each other. Given the question 'Why do some people quit work and go back to school for?', which among the choices face problems, better themselves, become disillusioned, knowledge talk to each other is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) better themselves. A possible explanation is: If people quit work and go back to school, then they seek to improve their skills, knowledge, or career prospects that better themselves.
+
+"
+Why do you create art?,"['creative', 'express yourself', 'inspires', 'feeling of accomplishment', 'have fun']","Questions: Why do you create art?, Choices: (A) creative, (B) express yourself, (C) inspires, (D) feeling of accomplishment, (E) have fun. Given the question 'Why do you create art?', which among the choices creative, express yourself, inspires, feeling of accomplishment have fun is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) express yourself. A possible explanation is: If you create art, then you use your imagination, emotions, or ideas to produce something that express yourself.
+
+"
+Why do you need faith in religion?,"['unknowable', 'confusing', 'wars', 'both positive and negative', 'afterlife']","Questions: Why do you need faith in religion?, Choices: (A) unknowable, (B) confusing, (C) wars, (D) both positive and negative, (E) afterlife. Given the question 'Why do you need faith in religion?', which among the choices unknowable, confusing, wars, both positive and negative afterlife is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) unknowable. A possible explanation is: If you need faith in religion, then you believe in something that is beyond human understanding or verification that is unknowable.
+
+"
+Why do you not earn money while you have lunch?,"['too full', 'eat food', 'get food', 'find food', 'stop working']","Questions: Why do you not earn money while you have lunch?, Choices: (A) too full, (B) eat food, (C) get food, (D) find food, (E) stop working. Given the question 'Why do you not earn money while you have lunch?', which among the choices too full, eat food, get food, find food stop working is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) stop working. A possible explanation is: If you have lunch, then you take a break from your job or business that stop working.
+
+"
+Why do you write in a diary?,"['not to forget', 'have to say', 'express yourself', 'thoughts', 'move fingers']","Questions: Why do you write in a diary?, Choices: (A) not to forget, (B) have to say, (C) express yourself, (D) thoughts, (E) move fingers. Given the question 'Why do you write in a diary?', which among the choices not to forget, have to say, express yourself, thoughts move fingers is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) express yourself. A possible explanation is: If you write in a diary, then you record your personal feelings, thoughts, or experiences that express yourself.
+
+"
+Why does Tinder encourage meeting people?,"['smile', 'anxiety', 'being happy', 'making new friends', 'love']","Questions: Why does Tinder encourage meeting people?, Choices: (A) smile, (B) anxiety, (C) being happy, (D) making new friends, (E) love. Given the question 'Why does Tinder encourage meeting people?', which among the choices smile, anxiety, being happy, making new friends love is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) love. A possible explanation is: If Tinder encourages meeting people, then it aims to help users find potential romantic partners that love.
+
+"
+Why does a bodybuilder eat so much?,"['pleasant conversation', 'store food for winter', 'satisfy hunger', 'sounds of digestion', 'gain weight']","Questions: Why does a bodybuilder eat so much?, Choices: (A) pleasant conversation, (B) store food for winter, (C) satisfy hunger, (D) sounds of digestion, (E) gain weight. Given the question 'Why does a bodybuilder eat so much?', which among the choices pleasant conversation, store food for winter, satisfy hunger, sounds of digestion gain weight is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) gain weight. A possible explanation is: If a bodybuilder eats so much, then he or she consumes more calories than he or she burns that gain weight.
+
+"
+Why does a lizard lay on a rock in the sun?,"['west texas', 'arid regions', 'to get a sexy tan', 'warm place', 'new mexico']","Questions: Why does a lizard lay on a rock in the sun?, Choices: (A) west texas, (B) arid regions, (C) to get a sexy tan, (D) warm place, (E) new mexico. Given the question 'Why does a lizard lay on a rock in the sun?', which among the choices west texas, arid regions, to get a sexy tan, warm place new mexico is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) warm place. A possible explanation is: If a lizard lays on a rock in the sun, then it absorbs heat from the environment that warm place.
+
+"
+Why does a person find a routine odd when things go astray?,"['unexpected', 'habitual', 'even', 'expected', 'common']","Questions: Why does a person find a routine odd when things go astray?, Choices: (A) unexpected, (B) habitual, (C) even, (D) expected, (E) common. Given the question 'Why does a person find a routine odd when things go astray?', which among the choices unexpected, habitual, even, expected common is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) unexpected. A possible explanation is: If a person finds a routine odd when things go astray, then he or she encounters something that is different from what he or she usually expects that unexpected."
+Why does a person go to a soup kitchen?,"['own house', 'oral sex', 'statue', 'in mail', 'free food']","Questions: Why does a person go to a soup kitchen?, Choices: (A) own house, (B) oral sex, (C) statue, (D) in mail, (E) free food. Given the question 'Why does a person go to a soup kitchen?', which among the choices own house, oral sex, statue, in mail free food is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) free food. A person goes to a soup kitchen if and only if they need free food. A conditional statement for this is: `If a person goes to a soup kitchen, then they need free food.`
+
+"
+Why does a person move to the suburbs?,"['make others happy', 'good lover', 'acknowledgment', 'for fun', 'low crime']","Questions: Why does a person move to the suburbs?, Choices: (A) make others happy, (B) good lover, (C) acknowledgment, (D) for fun, (E) low crime. Given the question 'Why does a person move to the suburbs?', which among the choices make others happy, good lover, acknowledgment, for fun low crime is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) low crime. A person moves to the suburbs if and only if they want low crime. A conditional statement for this is: `If a person moves to the suburbs, then they want low crime.`
+
+"
+Why does a person stay in bed on the weekend?,"['slumber', 'bedsores', 'lay down', 'sleep in', 'falling asleep']","Questions: Why does a person stay in bed on the weekend?, Choices: (A) slumber, (B) bedsores, (C) lay down, (D) sleep in, (E) falling asleep. Given the question 'Why does a person stay in bed on the weekend?', which among the choices slumber, bedsores, lay down, sleep in falling asleep is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) sleep in. A person stays in bed on the weekend if and only if they want to sleep in. A conditional statement for this is: `If a person stays in bed on the weekend, then they want to sleep in.`
+
+"
+Why does grooming require careful consideration.?,"['mistakes', 'neatness', 'errors', 'cleanliness', 'beauty']","Questions: Why does grooming require careful consideration.?, Choices: (A) mistakes, (B) neatness, (C) errors, (D) cleanliness, (E) beauty. Given the question 'Why does grooming require careful consideration.?', which among the choices mistakes, neatness, errors, cleanliness beauty is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) neatness. Grooming requires careful consideration if and only if neatness is important. A conditional statement for this is: `If grooming requires careful consideration, then neatness is important.`
+
+"
+Why does she sing so much?,"['insane', 'annoy people around', 'enjoy', 'inhale', 'had good voice']","Questions: Why does she sing so much?, Choices: (A) insane, (B) annoy people around, (C) enjoy, (D) inhale, (E) had good voice. Given the question 'Why does she sing so much?', which among the choices insane, annoy people around, enjoy, inhale had good voice is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) enjoy. She sings so much if and only if she enjoys singing. A conditional statement for this is: `If she sings so much, then she enjoys singing.`
+
+"
+Why does someone clean their house from pollen?,"['injury', 'healthy living', 'tidy up', 'allergies', 'using water']","Questions: Why does someone clean their house from pollen?, Choices: (A) injury, (B) healthy living, (C) tidy up, (D) allergies, (E) using water. Given the question 'Why does someone clean their house from pollen?', which among the choices injury, healthy living, tidy up, allergies using water is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) allergies. Someone cleans their house from pollen if and only if they have allergies. A conditional statement for this is: `If someone cleans their house from pollen, then they have allergies.`
+
+"
+Why does someone engage in chatting with friends when they want to workout?,"['fun', 'agreement', 'cell phone', 'answers', 'inspiration']","Questions: Why does someone engage in chatting with friends when they want to workout?, Choices: (A) fun, (B) agreement, (C) cell phone, (D) answers, (E) inspiration. Given the question 'Why does someone engage in chatting with friends when they want to workout?', which among the choices fun, agreement, cell phone, answers inspiration is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) inspiration. Someone engages in chatting with friends when they want to workout if and only if they need inspiration. A conditional statement for this is: `If someone engages in chatting with friends when they want to workout, then they need inspiration.`
+
+"
+Why does someone make sure they are eating breakfast?,"['fullness', 'have energy', 'better day', 'full stomach', 'indulge']","Questions: Why does someone make sure they are eating breakfast?, Choices: (A) fullness, (B) have energy, (C) better day, (D) full stomach, (E) indulge. Given the question 'Why does someone make sure they are eating breakfast?', which among the choices fullness, have energy, better day, full stomach indulge is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) have energy. Someone makes sure they are eating breakfast if and only if they want to have energy. A conditional statement for this is: `If someone makes sure they are eating breakfast, then they want to have energy.`
+
+"
+Why does someone need to be doing housework themselves?,"['become tired', 'backache', 'low pay', 'fatigue', 'funny']","Questions: Why does someone need to be doing housework themselves?, Choices: (A) become tired, (B) backache, (C) low pay, (D) fatigue, (E) funny. Given the question 'Why does someone need to be doing housework themselves?', which among the choices become tired, backache, low pay, fatigue funny is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) low pay. Someone needs to be doing housework themselves if and only if they have low pay. A conditional statement for this is: `If someone needs to be doing housework themselves, then they have low pay.`
+
+"
+Why does someone want to get in shape?,"['feel good', 'sex', 'desireable', 'overweight', 'avoid disease']","Questions: Why does someone want to get in shape?, Choices: (A) feel good, (B) sex, (C) desireable, (D) overweight, (E) avoid disease. Given the question 'Why does someone want to get in shape?', which among the choices feel good, sex, desireable, overweight avoid disease is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) feel good. Someone wants to get in shape if and only if they want to feel good. A conditional statement for this is: `If someone wants to get in shape, then they want to feel good.`
+
+I hope this helps you understand the logic behind these questions. 😊"
+Why does someone want to get warm when they are cold?,"['to do somersaults', 'feel comfortable', ""you're cold"", 'were cold', 'more comfortable']","Questions: Why does someone want to get warm when they are cold?, Choices: (A) to do somersaults, (B) feel comfortable, (C) you're cold, (D) were cold, (E) more comfortable. Given the question 'Why does someone want to get warm when they are cold?', which among the choices to do somersaults, feel comfortable, you're cold, were cold more comfortable is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) feel comfortable. The reasoning is: If someone is cold, then they want to get warm. If someone wants to get warm, then they want to feel comfortable. Therefore, if someone is cold, then they want to feel comfortable.
+
+"
+Why does the government impose taxes?,"['get money', 'school children', 'fraud', 'stop freedom', 'take money']","Questions: Why does the government impose taxes?, Choices: (A) get money, (B) school children, (C) fraud, (D) stop freedom, (E) take money. Given the question 'Why does the government impose taxes?', which among the choices get money, school children, fraud, stop freedom take money is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) get money. The reasoning is: If the government provides public services, then it needs money. If the government needs money, then it imposes taxes. Therefore, if the government provides public services, then it imposes taxes.
+
+"
+Why does the guy try cashing in his check?,"['extra money', 'get paid', 'great joy', 'quitting', 'profit']","Questions: Why does the guy try cashing in his check?, Choices: (A) extra money, (B) get paid, (C) great joy, (D) quitting, (E) profit. Given the question 'Why does the guy try cashing in his check?', which among the choices extra money, get paid, great joy, quitting profit is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) get paid. The reasoning is: If a guy works for a company, then he earns a salary. If he earns a salary, then he receives a check. If he receives a check, then he tries cashing in his check. Therefore, if a guy works for a company, then he tries cashing in his check.
+
+"
+Why does this person eat so much?,"['gain weight', 'promise to do', 'catch cold', 'finish food', 'fear death']","Questions: Why does this person eat so much?, Choices: (A) gain weight, (B) promise to do, (C) catch cold, (D) finish food, (E) fear death. Given the question 'Why does this person eat so much?', which among the choices gain weight, promise to do, catch cold, finish food fear death is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) finish food. The reasoning is: If a person is hungry, then they want to eat. If they want to eat, then they need food. If they need food, then they eat so much. Therefore, if a person is hungry, then they eat so much.
+
+"
+Why does this person stop and look both ways at a railroad crossing?,"['gain weight', 'promise to do', 'fear death', 'cross street', 'laws']","Questions: Why does this person stop and look both ways at a railroad crossing?, Choices: (A) gain weight, (B) promise to do, (C) fear death, (D) cross street, (E) laws. Given the question 'Why does this person stop and look both ways at a railroad crossing?', which among the choices gain weight, promise to do, fear death, cross street laws is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) laws. The reasoning is: If a person drives a car, then they must follow the traffic rules. If they must follow the traffic rules, then they stop and look both ways at a railroad crossing. Therefore, if a person drives a car, then they stop and look both ways at a railroad crossing.
+
+"
+Why does wood float?,"['it is a good swimmer', 'solid', 'gilded', 'less dense than water', 'porous']","Questions: Why does wood float?, Choices: (A) it is a good swimmer, (B) solid, (C) gilded, (D) less dense than water, (E) porous. Given the question 'Why does wood float?', which among the choices it is a good swimmer, solid, gilded, less dense than water porous is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) less dense than water. The reasoning is: If an object is less dense than water, then it displaces less water than its own weight. If it displaces less water than its own weight, then it floats. Therefore, if an object is less dense than water, then it floats.
+
+"
+Why is a husband looking at apartments after communicating with his wife when they are tired?,"['confusion', 'misunderstandings', 'transfer of information', 'exchanging ideas', 'static']","Questions: Why is a husband looking at apartments after communicating with his wife when they are tired?, Choices: (A) confusion, (B) misunderstandings, (C) transfer of information, (D) exchanging ideas, (E) static. Given the question 'Why is a husband looking at apartments after communicating with his wife when they are tired?', which among the choices confusion, misunderstandings, transfer of information, exchanging ideas static is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) misunderstandings. The reasoning is: If a husband and wife are tired, then they may not communicate clearly. If they may not communicate clearly, then they may have misunderstandings. If they have misunderstandings, then the husband may look at apartments after communicating with his wife. Therefore, if a husband and wife are tired, then the husband may look at apartments after communicating with his wife.
+
+"
+Why is a member of the priesthood in a new church advised by friends to start getting in shape?,"['blue 32', 'losing weight', 'feel better', 'pain', 'exercise']","Questions: Why is a member of the priesthood in a new church advised by friends to start getting in shape?, Choices: (A) blue 32, (B) losing weight, (C) feel better, (D) pain, (E) exercise. Given the question 'Why is a member of the priesthood in a new church advised by friends to start getting in shape?', which among the choices blue 32, losing weight, feel better, pain exercise is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) exercise. The reasoning is: If a person wants to get in shape, then they need to exercise. If they need to exercise, then they may lose weight. If they may lose weight, then they may feel better. Therefore, if a person wants to get in shape, then they need to exercise.
+
+"
+Why is a period likely to be on a page?,"['history', 'end of line', 'tracking of music', 'school', 'finish sentence']","Questions: Why is a period likely to be on a page?, Choices: (A) history, (B) end of line, (C) tracking of music, (D) school, (E) finish sentence. Given the question 'Why is a period likely to be on a page?', which among the choices history, end of line, tracking of music, school finish sentence is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) finish sentence. The reasoning is: If a page has text, then it has sentences. If it has sentences, then it has punctuation marks. If it has punctuation marks, then it has periods. Therefore, if a page has text, then it has periods.
+
+"
+Why is a person eating hamburger that is not cooked likely to become ill?,"['being full', 'to fill the stomach', 'heartburn', 'food poisoning', 'gas']","Questions: Why is a person eating hamburger that is not cooked likely to become ill?, Choices: (A) being full, (B) to fill the stomach, (C) heartburn, (D) food poisoning, (E) gas. Given the question 'Why is a person eating hamburger that is not cooked likely to become ill?', which among the choices being full, to fill the stomach, heartburn, food poisoning gas is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) food poisoning. The reasoning is: If a person eats hamburger that is not cooked, then they may ingest harmful bacteria. If they may ingest harmful bacteria, then they may get food poisoning. If they may get food poisoning, then they may become ill. Therefore, if a person eats hamburger that is not cooked, then they may become ill."
+Why is a person likely to be satisfied when using an auto shop?,"['have enough food', 'knowledgable', 'compliments', 'goals', 'meet expectations']","Questions: Why is a person likely to be satisfied when using an auto shop?, Choices: (A) have enough food, (B) knowledgable, (C) compliments, (D) goals, (E) meet expectations. Given the question 'Why is a person likely to be satisfied when using an auto shop?', which among the choices have enough food, knowledgable, compliments, goals meet expectations is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) meet expectations. A person is likely to be satisfied when using an auto shop if the auto shop meets their expectations of quality, price, and service. A possible conditional statement is: If the auto shop meets the customer's expectations, then the customer is satisfied.
+"
+Why is a person likely to stop eating hamburger and save the rest for later?,"['sadness', 'being full', 'heartburn', 'food poisoning', 'death']","Questions: Why is a person likely to stop eating hamburger and save the rest for later?, Choices: (A) sadness, (B) being full, (C) heartburn, (D) food poisoning, (E) death. Given the question 'Why is a person likely to stop eating hamburger and save the rest for later?', which among the choices sadness, being full, heartburn, food poisoning death is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) being full. A person is likely to stop eating hamburger and save the rest for later if they feel full and do not want to overeat. A possible conditional statement is: If the person feels full, then they stop eating hamburger and save the rest for later.
+"
+Why is eating breakfast the best meal of the day?,"['feeling satisfied', 'have energy', 'start metabolism', 'full stomach', 'gain energy']","Questions: Why is eating breakfast the best meal of the day?, Choices: (A) feeling satisfied, (B) have energy, (C) start metabolism, (D) full stomach, (E) gain energy. Given the question 'Why is eating breakfast the best meal of the day?', which among the choices feeling satisfied, have energy, start metabolism, full stomach gain energy is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) start metabolism. Eating breakfast is the best meal of the day because it helps to start the metabolism and burn calories throughout the day. A possible conditional statement is: If the person eats breakfast, then their metabolism starts and they burn more calories.
+"
+Why is grooming often recommended to greasy teens?,"['neatness', 'selfishness', 'mistakes', 'cleanliness', 'satisfaction']","Questions: Why is grooming often recommended to greasy teens?, Choices: (A) neatness, (B) selfishness, (C) mistakes, (D) cleanliness, (E) satisfaction. Given the question 'Why is grooming often recommended to greasy teens?', which among the choices neatness, selfishness, mistakes, cleanliness satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) cleanliness. Grooming is often recommended to greasy teens because it helps to maintain cleanliness and hygiene, which can prevent acne and infections. A possible conditional statement is: If the teen grooms regularly, then they are more clean and healthy.
+"
+Why is it difficult to tell what the weather might do sometimes?,"['clear', 'unpredictable', 'important to farmers', 'hot or cold', 'mild']","Questions: Why is it difficult to tell what the weather might do sometimes?, Choices: (A) clear, (B) unpredictable, (C) important to farmers, (D) hot or cold, (E) mild. Given the question 'Why is it difficult to tell what the weather might do sometimes?', which among the choices clear, unpredictable, important to farmers, hot or cold mild is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) unpredictable. It is difficult to tell what the weather might do sometimes because the weather is unpredictable and can change quickly due to various factors. A possible conditional statement is: If the weather is unpredictable, then it is difficult to tell what it might do.
+"
+Why is it necessary for someone to be going to bed?,"['pregnancy', 'feeling refreshed', 'mowing lawn', 'might dream', 'good sleep']","Questions: Why is it necessary for someone to be going to bed?, Choices: (A) pregnancy, (B) feeling refreshed, (C) mowing lawn, (D) might dream, (E) good sleep. Given the question 'Why is it necessary for someone to be going to bed?', which among the choices pregnancy, feeling refreshed, mowing lawn, might dream good sleep is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) good sleep. It is necessary for someone to be going to bed because it helps to get a good sleep, which is essential for physical and mental health. A possible conditional statement is: If the person goes to bed, then they get a good sleep.
+"
+Why is someone getting drunk likely to sleep with someone they usually wouldn't approve of?,"['tired', 'violence', 'falling down', 'lower standards', 'vomiting']","Questions: Why is someone getting drunk likely to sleep with someone they usually wouldn't approve of?, Choices: (A) tired, (B) violence, (C) falling down, (D) lower standards, (E) vomiting. Given the question 'Why is someone getting drunk likely to sleep with someone they usually wouldn't approve of?', which among the choices tired, violence, falling down, lower standards vomiting is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) lower standards. Someone getting drunk is likely to sleep with someone they usually wouldn't approve of because alcohol can lower their standards and impair their judgment. A possible conditional statement is: If the person gets drunk, then they lower their standards and sleep with someone they usually wouldn't approve of.
+"
+Why is someone likely to use an iron when cleaning clothes?,"['wrinkles', 'sanitation', 'attractive appearance', 'looks good', 'ruined']","Questions: Why is someone likely to use an iron when cleaning clothes?, Choices: (A) wrinkles, (B) sanitation, (C) attractive appearance, (D) looks good, (E) ruined. Given the question 'Why is someone likely to use an iron when cleaning clothes?', which among the choices wrinkles, sanitation, attractive appearance, looks good ruined is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) wrinkles. Someone is likely to use an iron when cleaning clothes because it helps to remove wrinkles and make the clothes look neat and smooth. A possible conditional statement is: If the clothes have wrinkles, then the person uses an iron to remove them.
+"
+Why is this person getting married?,"['graduation', 'fear death', 'promise to do', 'gain weight', 'catch cold']","Questions: Why is this person getting married?, Choices: (A) graduation, (B) fear death, (C) promise to do, (D) gain weight, (E) catch cold. Given the question 'Why is this person getting married?', which among the choices graduation, fear death, promise to do, gain weight catch cold is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) promise to do. This person is getting married because they made a promise to do so to their partner, and they want to honor their commitment and love. A possible conditional statement is: If the person made a promise to get married, then they get married.
+"
+Why is this person not listening to music?,"['fall asleep', 'relaxation', 'deafness', 'bored', 'calm']","Questions: Why is this person not listening to music?, Choices: (A) fall asleep, (B) relaxation, (C) deafness, (D) bored, (E) calm. Given the question 'Why is this person not listening to music?', which among the choices fall asleep, relaxation, deafness, bored calm is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) deafness. This person is not listening to music because they are deaf and cannot hear any sound. A possible conditional statement is: If the person is deaf, then they do not listen to music."

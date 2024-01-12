@@ -1,0 +1,466 @@
+premise,hypothesis,prompt,rationale
+A tabby cat might be found laying where?,"['home', 'pet shop', 'lap', 'dog pound', 'alley']","Questions: A tabby cat might be found laying where?, Choices: (A) home, (B) pet shop, (C) lap, (D) dog pound, (E) alley. Given the question 'A tabby cat might be found laying where?', which among the choices home, pet shop, lap, dog pound alley is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **C) lap**. A tabby cat might be found laying where if and only if it is a domesticated cat that belongs to a human owner who likes to cuddle with it. Therefore, the most likely place for a tabby cat to lay is on its owner's lap. The other choices are possible, but not as probable as lap.
+
+"
+A teenager that is playing a trumpet might be part of what group?,"['orchestra', 'music shop', 'high school band', 'rock group', 'music store']","Questions: A teenager that is playing a trumpet might be part of what group?, Choices: (A) orchestra, (B) music shop, (C) high school band, (D) rock group, (E) music store. Given the question 'A teenager that is playing a trumpet might be part of what group?', which among the choices orchestra, music shop, high school band, rock group music store is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **C) high school band**. A teenager that is playing a trumpet might be part of what group if and only if they are enrolled in a school that offers music education and extracurricular activities. Therefore, the most likely group for a teenager who plays the trumpet to be part of is a high school band. The other choices are possible, but not as probable as high school band.
+
+"
+A theory requires that the hypothesis be what?,"['practice', 'practical', 'fact', 'operable', 'practise']","Questions: A theory requires that the hypothesis be what?, Choices: (A) practice, (B) practical, (C) fact, (D) operable, (E) practise. Given the question 'A theory requires that the hypothesis be what?', which among the choices practice, practical, fact, operable practise is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **B) practical**. A theory requires that the hypothesis be what if and only if it can be tested and verified by empirical evidence. Therefore, the most suitable attribute for a hypothesis to have is to be practical. The other choices are either irrelevant or incorrect.
+
+"
+A toddling child who is learning about the world is gaining what?,"['time', 'desire to travel', 'greater mobility', 'increased security', 'pleasure']","Questions: A toddling child who is learning about the world is gaining what?, Choices: (A) time, (B) desire to travel, (C) greater mobility, (D) increased security, (E) pleasure. Given the question 'A toddling child who is learning about the world is gaining what?', which among the choices time, desire to travel, greater mobility, increased security pleasure is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **C) greater mobility**. A toddling child who is learning about the world is gaining what if and only if they are able to move around more freely and explore their surroundings. Therefore, the most obvious benefit for a toddling child is to have greater mobility. The other choices are either vague or not directly related to toddling.
+
+"
+A tributary of a river is a?,"['creek', 'pond', 'lake', 'inlet', 'stream']","Questions: A tributary of a river is a?, Choices: (A) creek, (B) pond, (C) lake, (D) inlet, (E) stream. Given the question 'A tributary of a river is a?', which among the choices creek, pond, lake, inlet stream is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **E) stream**. A tributary of a river is a what if and only if it is a smaller body of water that flows into a larger one. Therefore, the most accurate term for a tributary of a river is a stream. The other choices are either too large or too small to be tributaries.
+
+"
+A valid contract has to be?,"['signed', 'revised', 'rejected', 'written in blood', 'written on paper']","Questions: A valid contract has to be?, Choices: (A) signed, (B) revised, (C) rejected, (D) written in blood, (E) written on paper. Given the question 'A valid contract has to be?', which among the choices signed, revised, rejected, written in blood written on paper is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **A) signed**. A valid contract has to be what if and only if it has the consent and agreement of all the parties involved. Therefore, the most essential requirement for a contract to be valid is to be signed by the parties. The other choices are either optional or absurd.
+
+"
+A villain in the middle ages is a type of what?,"['nobleman', 'landowner', 'good guy', 'aristocrat', 'saint']","Questions: A villain in the middle ages is a type of what?, Choices: (A) nobleman, (B) landowner, (C) good guy, (D) aristocrat, (E) saint. Given the question 'A villain in the middle ages is a type of what?', which among the choices nobleman, landowner, good guy, aristocrat saint is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **B) landowner**. A villain in the middle ages is a type of what if and only if they are a peasant who rents land from a lord or a king. Therefore, the most accurate term for a villain in the middle ages is a landowner. The other choices are either too high or too low in the social hierarchy to be villains.
+
+"
+A violin and three other instruments play in what?,"['orchestra', 'rock band', 'school', 'string quartet', 'music room']","Questions: A violin and three other instruments play in what?, Choices: (A) orchestra, (B) rock band, (C) school, (D) string quartet, (E) music room. Given the question 'A violin and three other instruments play in what?', which among the choices orchestra, rock band, school, string quartet music room is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **D) string quartet**. A violin and three other instruments play in what if and only if they are all string instruments that form a musical ensemble. Therefore, the most specific term for a group of four string instruments is a string quartet. The other choices are either too broad or too narrow to describe such a group.
+
+"
+A virus causes the flu and the common what?,"['cold', 'disease', 'infection', 'mutate', 'make person sick']","Questions: A virus causes the flu and the common what?, Choices: (A) cold, (B) disease, (C) infection, (D) mutate, (E) make person sick. Given the question 'A virus causes the flu and the common what?', which among the choices cold, disease, infection, mutate make person sick is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **A) cold**. A virus causes the flu and the common what if and only if it is a respiratory illness that is contagious and has similar symptoms. Therefore, the most common term for a viral infection that causes the flu and the common what is a cold. The other choices are either too general or too specific to be the answer.
+
+"
+A water spout was seen in the ocean off the coast of what?,"['florida', 'basement', 'sink', 'beach', 'fountain']","Questions: A water spout was seen in the ocean off the coast of what?, Choices: (A) florida, (B) basement, (C) sink, (D) beach, (E) fountain. Given the question 'A water spout was seen in the ocean off the coast of what?', which among the choices florida, basement, sink, beach fountain is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **D) beach**. A water spout was seen in the ocean off the coast of what if and only if it is a landform that is adjacent to the sea and has sand or pebbles. Therefore, the most appropriate term for a place where a water spout can be seen in the ocean is a beach. The other choices are either too far or too close to the ocean to be the answer."
+A wind from the east is often referred to as a what kind of wind?,"['north', 'westward', 'western', 'westerly', 'eastside']","Questions: A wind from the east is often referred to as a what kind of wind?, Choices: (A) north, (B) westward, (C) western, (D) westerly, (E) eastside. Given the question 'A wind from the east is often referred to as a what kind of wind?', which among the choices north, westward, western, westerly eastside is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) westerly. A wind from the east is often referred to as a westerly wind because it blows from the east to the west. A conditional statement for this is: **If** a wind blows from the east, **then** it is a westerly wind.
+
+"
+A wooden rod was used to wind up his freestanding what?,"['broom closet', 'old houses', 'carpentry shop', 'old clock', 'put a bar']","Questions: A wooden rod was used to wind up his freestanding what?, Choices: (A) broom closet, (B) old houses, (C) carpentry shop, (D) old clock, (E) put a bar. Given the question 'A wooden rod was used to wind up his freestanding what?', which among the choices broom closet, old houses, carpentry shop, old clock put a bar is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) old clock. A wooden rod was used to wind up his freestanding old clock, which is a type of mechanical clock that needs to be wound periodically to keep time. A conditional statement for this is: **If** he has a freestanding old clock, **then** he needs a wooden rod to wind it up.
+
+"
+A worker who never makes much money or status will what?,"['labor in vain', 'case things', 'desire to advance', 'keep busy', 'try harder']","Questions: A worker who never makes much money or status will what?, Choices: (A) labor in vain, (B) case things, (C) desire to advance, (D) keep busy, (E) try harder. Given the question 'A worker who never makes much money or status will what?', which among the choices labor in vain, case things, desire to advance, keep busy try harder is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) labor in vain. A worker who never makes much money or status will labor in vain, which means to work hard for no reward or recognition. A conditional statement for this is: **If** a worker never makes much money or status, **then** he or she labors in vain.
+
+"
+A yard is made up of what?,"['city', 'michigan', 'three feet', 'subdivision', 'three arm span']","Questions: A yard is made up of what?, Choices: (A) city, (B) michigan, (C) three feet, (D) subdivision, (E) three arm span. Given the question 'A yard is made up of what?', which among the choices city, michigan, three feet, subdivision three arm span is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) three feet. A yard is made up of three feet, which is a unit of length in the imperial system. A conditional statement for this is: **If** one yard is measured, **then** it equals three feet.
+
+"
+Aberdeen is a large city in what country?,"['washington', 'iceland', 'maryland', 'scotland', 'south dakota']","Questions: Aberdeen is a large city in what country?, Choices: (A) washington, (B) iceland, (C) maryland, (D) scotland, (E) south dakota. Given the question 'Aberdeen is a large city in what country?', which among the choices washington, iceland, maryland, scotland south dakota is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) scotland. Aberdeen is a large city in Scotland, which is a country in the United Kingdom. A conditional statement for this is: **If** a city is Aberdeen, **then** it is in Scotland.
+
+"
+Accidents involving cars affect who?,"['hurt people', 'happen anywhere', 'happen to people', 'happen anytime', 'happen to kids']","Questions: Accidents involving cars affect who?, Choices: (A) hurt people, (B) happen anywhere, (C) happen to people, (D) happen anytime, (E) happen to kids. Given the question 'Accidents involving cars affect who?', which among the choices hurt people, happen anywhere, happen to people, happen anytime happen to kids is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) happen to people. Accidents involving cars affect people, who can be injured or killed by the impact or the aftermath. A conditional statement for this is: **If** an accident involves a car, **then** it affects people.
+
+"
+After I urinate what should I do before I eat?,"['eat', 'wash legs', 'wash hands', 'zip pants', 'flush toilet']","Questions: After I urinate what should I do before I eat?, Choices: (A) eat, (B) wash legs, (C) wash hands, (D) zip pants, (E) flush toilet. Given the question 'After I urinate what should I do before I eat?', which among the choices eat, wash legs, wash hands, zip pants flush toilet is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) wash hands. After I urinate, I should wash my hands before I eat, which is a hygienic practice that prevents the spread of germs and diseases. A conditional statement for this is: **If** I urinate, **then** I should wash my hands before I eat.
+
+"
+After a long day of teaching and an afternoon of grading homework the teacher was hungry so she began to what?,"['evaluate progress', 'include examples', 'time test', 'prepare dinner', 'eat children']","Questions: After a long day of teaching and an afternoon of grading homework the teacher was hungry so she began to what?, Choices: (A) evaluate progress, (B) include examples, (C) time test, (D) prepare dinner, (E) eat children. Given the question 'After a long day of teaching and an afternoon of grading homework the teacher was hungry so she began to what?', which among the choices evaluate progress, include examples, time test, prepare dinner eat children is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) prepare dinner. After a long day of teaching and an afternoon of grading homework, the teacher was hungry so she began to prepare dinner, which is a meal that is usually eaten in the evening. A conditional statement for this is: **If** the teacher is hungry after a long day of work, **then** she begins to prepare dinner.
+
+"
+After attending school for twelve years what do you do?,"['inspiration', 'much work', 'boredom', 'graduate', 'degree']","Questions: After attending school for twelve years what do you do?, Choices: (A) inspiration, (B) much work, (C) boredom, (D) graduate, (E) degree. Given the question 'After attending school for twelve years what do you do?', which among the choices inspiration, much work, boredom, graduate degree is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) graduate. After attending school for twelve years, I do graduate, which means to complete a course of study and receive a diploma or degree. A conditional statement for this is: **If** I attend school for twelve years, **then** I graduate.
+
+"
+After being on his feet all day he told his boss he was taking a break and doing what on the bench?,"['not working', 'relaxation', 'renewal', 'sleep', 'sitting down']","Questions: After being on his feet all day he told his boss he was taking a break and doing what on the bench?, Choices: (A) not working, (B) relaxation, (C) renewal, (D) sleep, (E) sitting down. Given the question 'After being on his feet all day he told his boss he was taking a break and doing what on the bench?', which among the choices not working, relaxation, renewal, sleep sitting down is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) sitting down. After being on his feet all day, he told his boss he was taking a break and doing sitting down on the bench, which is a posture that reduces the pressure on the legs and feet. A conditional statement for this is: **If** he is on his feet all day, **then** he takes a break and does sitting down on the bench."
+After being stuck indoors all day breathing fresh air would lead to what?,"['feeling better', 'oxygen intake', 'think more clearly', 'happiness', 'feeling refreshed']","Questions: After being stuck indoors all day breathing fresh air would lead to what?, Choices: (A) feeling better, (B) oxygen intake, (C) think more clearly, (D) happiness, (E) feeling refreshed. Given the question 'After being stuck indoors all day breathing fresh air would lead to what?', which among the choices feeling better, oxygen intake, think more clearly, happiness feeling refreshed is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) feeling refreshed. A possible explanation is:
+
+```
+If you are stuck indoors all day, then you may feel stuffy or tired.
+If you breathe fresh air, then you may feel more alert and energized.
+Therefore, if you are stuck indoors all day and breathe fresh air, then you may feel refreshed.
+```
+
+"
+After bringing eggs home from the store in what are they held?,"['chicken coop', 'supermarket', 'box', 'egg carton', 'henhouse']","Questions: After bringing eggs home from the store in what are they held?, Choices: (A) chicken coop, (B) supermarket, (C) box, (D) egg carton, (E) henhouse. Given the question 'After bringing eggs home from the store in what are they held?', which among the choices chicken coop, supermarket, box, egg carton henhouse is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) egg carton. A possible explanation is:
+
+```
+If you bring eggs home from the store, then you need something to hold them.
+If you use a chicken coop, a supermarket, a box, or a henhouse, then you may damage or lose the eggs.
+If you use an egg carton, then you can protect and store the eggs.
+Therefore, if you bring eggs home from the store and want to hold them, then you should use an egg carton.
+```
+
+"
+After checking in at the ticket office the couple entered their prom in the school's what?,"['movie theaters', 'end of line', 'football field', 'auditorium', 'opera house']","Questions: After checking in at the ticket office the couple entered their prom in the school's what?, Choices: (A) movie theaters, (B) end of line, (C) football field, (D) auditorium, (E) opera house. Given the question 'After checking in at the ticket office the couple entered their prom in the school's what?', which among the choices movie theaters, end of line, football field, auditorium opera house is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) auditorium. A possible explanation is:
+
+```
+If you check in at the ticket office, then you are attending an event.
+If you enter your prom, then you are attending a formal dance.
+If you enter a movie theater, an end of line, a football field, or an opera house, then you are not attending a formal dance.
+If you enter an auditorium, then you are attending a formal dance.
+Therefore, if you check in at the ticket office and enter your prom, then you enter an auditorium.
+```
+
+"
+After doing what he held his breathe?,"['inhale', 'inhaling', 'wheeze', 'take breath', 'meditate']","Questions: After doing what he held his breathe?, Choices: (A) inhale, (B) inhaling, (C) wheeze, (D) take breath, (E) meditate. Given the question 'After doing what he held his breathe?', which among the choices inhale, inhaling, wheeze, take breath meditate is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) inhaling. A possible explanation is:
+
+```
+If you hold your breath, then you stop the flow of air into your lungs.
+If you do something before holding your breath, then you must have the flow of air into your lungs.
+If you inhale, then you have the flow of air into your lungs.
+If you wheeze, take breath, or meditate, then you do not stop the flow of air into your lungs.
+Therefore, if you do something before holding your breath, then you inhale.
+```
+
+"
+After getting a divorce what does your relationship status change to?,"['children suffer', 'being single', 'freedom', 'default setting', 'no spouse']","Questions: After getting a divorce what does your relationship status change to?, Choices: (A) children suffer, (B) being single, (C) freedom, (D) default setting, (E) no spouse. Given the question 'After getting a divorce what does your relationship status change to?', which among the choices children suffer, being single, freedom, default setting no spouse is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) being single. A possible explanation is:
+
+```
+If you get a divorce, then you end your marriage with your spouse.
+If you end your marriage with your spouse, then you do not have a spouse anymore.
+If you do not have a spouse anymore, then you are single.
+If you are single, then your relationship status is being single.
+Therefore, if you get a divorce, then your relationship status changes to being single.
+```
+
+"
+After getting wet cotton clothing may suffer from what?,"['shrinkage', 'shiver', 'not dry', 'mildew', 'getting cold']","Questions: After getting wet cotton clothing may suffer from what?, Choices: (A) shrinkage, (B) shiver, (C) not dry, (D) mildew, (E) getting cold. Given the question 'After getting wet cotton clothing may suffer from what?', which among the choices shrinkage, shiver, not dry, mildew getting cold is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) shrinkage. A possible explanation is:
+
+```
+If you get wet cotton clothing, then you expose the fabric to water.
+If you expose the fabric to water, then you may cause the fibers to contract.
+If you cause the fibers to contract, then you may reduce the size of the clothing.
+If you reduce the size of the clothing, then you cause shrinkage.
+Therefore, if you get wet cotton clothing, then you may suffer from shrinkage.
+```
+
+"
+After giving assistance to a person who's lost their wallet what is customarily given?,"['reward', 'guillotine', 'satisfaction', 'helpfulness', 'pleasure']","Questions: After giving assistance to a person who's lost their wallet what is customarily given?, Choices: (A) reward, (B) guillotine, (C) satisfaction, (D) helpfulness, (E) pleasure. Given the question 'After giving assistance to a person who's lost their wallet what is customarily given?', which among the choices reward, guillotine, satisfaction, helpfulness pleasure is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) reward. A possible explanation is:
+
+```
+If you give assistance to a person who's lost their wallet, then you help them find or replace it.
+If you help them find or replace it, then you may save them from trouble or loss.
+If you save them from trouble or loss, then you may deserve a compensation or gratitude.
+If you deserve a compensation or gratitude, then you may receive a reward.
+Therefore, if you give assistance to a person who's lost their wallet, then you may customarily receive a reward.
+```
+
+"
+After going for run you have a sense of what?,"['satisfaction', 'flying', 'sweating', 'falling down', 'trip']","Questions: After going for run you have a sense of what?, Choices: (A) satisfaction, (B) flying, (C) sweating, (D) falling down, (E) trip. Given the question 'After going for run you have a sense of what?', which among the choices satisfaction, flying, sweating, falling down trip is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) satisfaction. A possible explanation is:
+
+```
+If you go for a run, then you exercise your body.
+If you exercise your body, then you may improve your health or fitness.
+If you improve your health or fitness, then you may feel proud or happy.
+If you feel proud or happy, then you have a sense of satisfaction.
+Therefore, if you go for a run, then you may have a sense of satisfaction.
+```
+
+"
+After hitting the bootle all night what would come to me the next day,"['drunkenness', 'misery', 'alcoholism', 'nausea', 'hangover']","Questions: After hitting the bootle all night what would come to me the next day, Choices: (A) drunkenness, (B) misery, (C) alcoholism, (D) nausea, (E) hangover. Given the question 'After hitting the bootle all night what would come to me the next day', which among the choices drunkenness, misery, alcoholism, nausea hangover is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) hangover. A possible explanation is:
+
+```
+If you hit the bottle all night, then you drink a lot of alcohol.
+If you drink a lot of alcohol, then you may intoxicate your body.
+If you intoxicate your body, then you may experience unpleasant symptoms the next day.
+If you experience unpleasant symptoms the next day, then you have a hangover.
+Therefore, if you hit the bottle all night, then you may have a hangover the next day.
+```
+
+"
+After hours of trouble the woman finally gave what to a child?,"['loving couple', 'clean laundry', 'birth', 'act of sex', 'parents']","Questions: After hours of trouble the woman finally gave what to a child?, Choices: (A) loving couple, (B) clean laundry, (C) birth, (D) act of sex, (E) parents. Given the question 'After hours of trouble the woman finally gave what to a child?', which among the choices loving couple, clean laundry, birth, act of sex parents is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) birth. A possible explanation is:
+
+```
+If you have hours of trouble, then you may have a difficult or painful situation.
+If you are a woman and have a difficult or painful situation, then you may be in labor.
+If you are in labor, then you may deliver a baby.
+If you deliver a baby, then you give birth to a child.
+Therefore, if you are a woman and have hours of trouble, then you may give birth to a child.
+```
+
+I hope this helps you understand how to use conditional statements to answer questions. 😊"
+After killing people in a rage what is someone likely to feel?,"['stomach ache', 'retaliation', 'sadness', 'remorse', 'going to jail']","Questions: After killing people in a rage what is someone likely to feel?, Choices: (A) stomach ache, (B) retaliation, (C) sadness, (D) remorse, (E) going to jail. Given the question 'After killing people in a rage what is someone likely to feel?', which among the choices stomach ache, retaliation, sadness, remorse going to jail is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) remorse. A possible explanation is: If someone kills people in a rage, then they are likely to feel remorse afterwards. Remorse is a feeling of regret or guilt for doing something wrong. Stomach ache, retaliation, sadness, and going to jail are not feelings, but possible consequences or reactions of killing people in a rage.
+
+"
+After making contact the spy had to go somewhere to what?,"['have fun', 'meet', 'whittle', 'die', 'arriving']","Questions: After making contact the spy had to go somewhere to what?, Choices: (A) have fun, (B) meet, (C) whittle, (D) die, (E) arriving. Given the question 'After making contact the spy had to go somewhere to what?', which among the choices have fun, meet, whittle, die arriving is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) meet. A possible explanation is: If the spy makes contact with someone, then they have to go somewhere to meet them. Meet means to come together with someone for a purpose. Have fun, whittle, die, and arriving are not actions that the spy has to do after making contact.
+
+"
+After making successfully climbing a difficult ascent you gain a sense of what?,"['vertigo', 'exhaustion', 'getting higher', 'accomplishment', 'fear of heights']","Questions: After making successfully climbing a difficult ascent you gain a sense of what?, Choices: (A) vertigo, (B) exhaustion, (C) getting higher, (D) accomplishment, (E) fear of heights. Given the question 'After making successfully climbing a difficult ascent you gain a sense of what?', which among the choices vertigo, exhaustion, getting higher, accomplishment fear of heights is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) accomplishment. A possible explanation is: If someone successfully climbs a difficult ascent, then they gain a sense of accomplishment. Accomplishment is a feeling of satisfaction or achievement for doing something well. Vertigo, exhaustion, getting higher, and fear of heights are not feelings that someone gains after climbing a difficult ascent, but possible effects or challenges of climbing.
+
+"
+After new coke was discontinued what formula was used?,"['original', 'old', 'coke clear', 'former', 'familiar']","Questions: After new coke was discontinued what formula was used?, Choices: (A) original, (B) old, (C) coke clear, (D) former, (E) familiar. Given the question 'After new coke was discontinued what formula was used?', which among the choices original, old, coke clear, former familiar is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) original. A possible explanation is: If new coke was discontinued, then the formula that was used was the original one. Original means the first or earliest version of something. Old, coke clear, former, and familiar are not formulas, but adjectives that describe something.
+
+"
+After performing many physical tasks what will you likely experience?,"['injury', 'tiredness', 'do best', 'friend', 'accolades']","Questions: After performing many physical tasks what will you likely experience?, Choices: (A) injury, (B) tiredness, (C) do best, (D) friend, (E) accolades. Given the question 'After performing many physical tasks what will you likely experience?', which among the choices injury, tiredness, do best, friend accolades is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) tiredness. A possible explanation is: If someone performs many physical tasks, then they will likely experience tiredness. Tiredness is a state of fatigue or exhaustion caused by exertion. Injury, do best, friend, and accolades are not states that someone will likely experience after performing many physical tasks, but possible outcomes or factors of performing them.
+
+"
+After procreating what can't some people handle that makes them turn to the government?,"['triplets', 'having children', 'added responsibilities', 'quintuplets', 'large family']","Questions: After procreating what can't some people handle that makes them turn to the government?, Choices: (A) triplets, (B) having children, (C) added responsibilities, (D) quintuplets, (E) large family. Given the question 'After procreating what can't some people handle that makes them turn to the government?', which among the choices triplets, having children, added responsibilities, quintuplets large family is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) added responsibilities. A possible explanation is: If someone procreates, then they can't handle the added responsibilities that make them turn to the government. Added responsibilities are the extra duties or obligations that come with having children. Triplets, having children, quintuplets, and large family are not things that someone can't handle, but possible results or situations of procreating.
+
+"
+After someone lives a life what happens?,"['tobem', 'death', 'growing older', 'experience things', 'breathe']","Questions: After someone lives a life what happens?, Choices: (A) tobem, (B) death, (C) growing older, (D) experience things, (E) breathe. Given the question 'After someone lives a life what happens?', which among the choices tobem, death, growing older, experience things breathe is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) death. A possible explanation is: If someone lives a life, then what happens is death. Death is the end of life or the cessation of vital functions. Tobem, growing older, experience things, and breathe are not things that happen after someone lives a life, but possible aspects or stages of living a life.
+
+"
+After standing in line all day what is likely to happen?,"['learn a new way to bake bread', 'order', 'tiredness', 'get tired', 'fidgeting']","Questions: After standing in line all day what is likely to happen?, Choices: (A) learn a new way to bake bread, (B) order, (C) tiredness, (D) get tired, (E) fidgeting. Given the question 'After standing in line all day what is likely to happen?', which among the choices learn a new way to bake bread, order, tiredness, get tired fidgeting is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) get tired. A possible explanation is: If someone stands in line all day, then what is likely to happen is that they get tired. Get tired means to lose energy or strength due to physical or mental activity. Learn a new way to bake bread, order, tiredness, and fidgeting are not things that are likely to happen after someone stands in line all day, but possible actions or states that someone may do or have while standing in line.
+
+"
+After the killing of another young member of the community people began to really what?,"['get in trouble', 'commit crime', 'die', 'feel anger', 'getting hurt']","Questions: After the killing of another young member of the community people began to really what?, Choices: (A) get in trouble, (B) commit crime, (C) die, (D) feel anger, (E) getting hurt. Given the question 'After the killing of another young member of the community people began to really what?', which among the choices get in trouble, commit crime, die, feel anger getting hurt is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) feel anger. A possible explanation is: If another young member of the community is killed, then people began to really feel anger. Feel anger means to experience a strong emotion of displeasure or hostility towards someone or something. Get in trouble, commit crime, die, and getting hurt are not things that people began to really feel after another young member of the community is killed, but possible effects or actions of the killing.
+
+"
+After the sun has risen what happens at the end of the day?,"['deep dive', 'fall', 'lower', 'below', 'sun set']","Questions: After the sun has risen what happens at the end of the day?, Choices: (A) deep dive, (B) fall, (C) lower, (D) below, (E) sun set. Given the question 'After the sun has risen what happens at the end of the day?', which among the choices deep dive, fall, lower, below sun set is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) sun set. A possible explanation is: If the sun has risen, then what happens at the end of the day is sun set. Sun set means the time when the sun disappears below the horizon. Deep dive, fall, lower, and below are not things that happen at the end of the day after the sun has risen, but possible movements or positions of the sun."
+After the yoga class everybody was instructed to sit quietly and do what?,"['sit down', 'meditate', 'alone', 'shut up', 'go home']","Questions: After the yoga class everybody was instructed to sit quietly and do what?, Choices: (A) sit down, (B) meditate, (C) alone, (D) shut up, (E) go home. Given the question 'After the yoga class everybody was instructed to sit quietly and do what?', which among the choices sit down, meditate, alone, shut up go home is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) meditate. A conditional statement is a statement that expresses a logical relationship between two propositions. A conditional statement has the form ""if P, then Q"", where P is the antecedent and Q is the consequent. A possible conditional statement for this question is: **If** everybody was instructed to sit quietly after the yoga class, **then** they were supposed to meditate.
+
+"
+After walking a dog for a long time what do you have?,"['exercise and companionship', 'pride', 'poop', 'sore feet', 'tiredness']","Questions: After walking a dog for a long time what do you have?, Choices: (A) exercise and companionship, (B) pride, (C) poop, (D) sore feet, (E) tiredness. Given the question 'After walking a dog for a long time what do you have?', which among the choices exercise and companionship, pride, poop, sore feet tiredness is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) exercise and companionship. A possible conditional statement for this question is: **If** you walk a dog for a long time, **then** you have exercise and companionship.
+
+"
+After washing clothes in what condition are they?,"['cold cloth', 'wet clothes', 'shrinkage', 'wear out', 'get wet']","Questions: After washing clothes in what condition are they?, Choices: (A) cold cloth, (B) wet clothes, (C) shrinkage, (D) wear out, (E) get wet. Given the question 'After washing clothes in what condition are they?', which among the choices cold cloth, wet clothes, shrinkage, wear out get wet is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) wet clothes. A possible conditional statement for this question is: **If** you wash clothes, **then** they are wet.
+
+"
+After working out and releasing energy all day how are you likely to feel?,"['being fired', 'wonderful', 'exhaustion', 'damage', 'feeling cold']","Questions: After working out and releasing energy all day how are you likely to feel?, Choices: (A) being fired, (B) wonderful, (C) exhaustion, (D) damage, (E) feeling cold. Given the question 'After working out and releasing energy all day how are you likely to feel?', which among the choices being fired, wonderful, exhaustion, damage feeling cold is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) exhaustion. A possible conditional statement for this question is: **If** you work out and release energy all day, **then** you are likely to feel exhausted.
+
+"
+Agreeing with someone who you have fun with can lead to what?,"['compliance', 'contract', 'harmony', 'employee', 'friendship']","Questions: Agreeing with someone who you have fun with can lead to what?, Choices: (A) compliance, (B) contract, (C) harmony, (D) employee, (E) friendship. Given the question 'Agreeing with someone who you have fun with can lead to what?', which among the choices compliance, contract, harmony, employee friendship is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) friendship. A possible conditional statement for this question is: **If** you agree with someone who you have fun with, **then** you can lead to friendship.
+
+"
+Air conditioning makes summers more comfortable in what work spaces?,"['house', 'car', 'offices', 'movie theatre', 'cold rooms']","Questions: Air conditioning makes summers more comfortable in what work spaces?, Choices: (A) house, (B) car, (C) offices, (D) movie theatre, (E) cold rooms. Given the question 'Air conditioning makes summers more comfortable in what work spaces?', which among the choices house, car, offices, movie theatre cold rooms is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) offices. A possible conditional statement for this question is: **If** you work in a space that has air conditioning, **then** you are more comfortable in the summer.
+
+"
+Akron must have at least one dance club in what state?,"['michigan', 'ohio', 'united states', 'texas', 'downtown area']","Questions: Akron must have at least one dance club in what state?, Choices: (A) michigan, (B) ohio, (C) united states, (D) texas, (E) downtown area. Given the question 'Akron must have at least one dance club in what state?', which among the choices michigan, ohio, united states, texas downtown area is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) ohio. A possible conditional statement for this question is: **If** a city is in Ohio, **then** it must have at least one dance club.
+
+"
+Alabama has to consider a hurricane once in awhile as it is one of the whats?,"['gulf states', 'united states', 'seaport', 'alabama', 'deep south']","Questions: Alabama has to consider a hurricane once in awhile as it is one of the whats?, Choices: (A) gulf states, (B) united states, (C) seaport, (D) alabama, (E) deep south. Given the question 'Alabama has to consider a hurricane once in awhile as it is one of the whats?', which among the choices gulf states, united states, seaport, alabama deep south is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) gulf states. A possible conditional statement for this question is: **If** a state is one of the gulf states, **then** it has to consider a hurricane once in awhile.
+
+"
+Alaska has the most coast of any in the what?,"['denmark', 'houses', 'united states', 'california', 'florida']","Questions: Alaska has the most coast of any in the what?, Choices: (A) denmark, (B) houses, (C) united states, (D) california, (E) florida. Given the question 'Alaska has the most coast of any in the what?', which among the choices denmark, houses, united states, california florida is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) united states. A possible conditional statement for this question is: **If** a state is Alaska, **then** it has the most coast of any in the United States.
+
+"
+Alcoholic refreshments are sometimes banned in what public places?,"['homeless shelter', 'bar', 'park', 'bridge', 'school']","Questions: Alcoholic refreshments are sometimes banned in what public places?, Choices: (A) homeless shelter, (B) bar, (C) park, (D) bridge, (E) school. Given the question 'Alcoholic refreshments are sometimes banned in what public places?', which among the choices homeless shelter, bar, park, bridge school is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) school. A possible conditional statement for this question is: **If** a place is a school, **then** alcoholic refreshments are sometimes banned there."
+Alexa needed a safe place to put her acoustic guitar when she wasn't playing it.  Where might she put it?,"['drawer', 'music shop', 'house', 'studio', 'closet']","Questions: Alexa needed a safe place to put her acoustic guitar when she wasn't playing it.  Where might she put it?, Choices: (A) drawer, (B) music shop, (C) house, (D) studio, (E) closet. Given the question 'Alexa needed a safe place to put her acoustic guitar when she wasn't playing it.  Where might she put it?', which among the choices drawer, music shop, house, studio closet is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) closet. A possible explanation using conditional statements is:
+
+- If Alexa needs a safe place to put her acoustic guitar, then she should choose a place that is dry, spacious, and secure.
+- A drawer is not spacious enough for a guitar, so (A) is not correct.
+- A music shop is not secure for Alexa's guitar, since she does not own it, so (B) is not correct.
+- A house is too vague and does not specify where in the house Alexa can put her guitar, so (C) is not correct.
+- A studio might be a good place for a guitar, but it is not clear if Alexa has access to one, so (D) is not correct.
+- A closet is a place that is dry, spacious, and secure, so (E) is correct.
+
+"
+Alexa wants to eat lunch  but she left her lunchbox and wallet at home.  John gives her a twenty so that she can go out and do what?,"['borrow food', 'have food', 'prepare food', 'buy food', 'get food']","Questions: Alexa wants to eat lunch  but she left her lunchbox and wallet at home.  John gives her a twenty so that she can go out and do what?, Choices: (A) borrow food, (B) have food, (C) prepare food, (D) buy food, (E) get food. Given the question 'Alexa wants to eat lunch  but she left her lunchbox and wallet at home.  John gives her a twenty so that she can go out and do what?', which among the choices borrow food, have food, prepare food, buy food get food is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) buy food. A possible explanation using conditional statements is:
+
+- If Alexa wants to eat lunch, then she needs to have food.
+- If Alexa left her lunchbox and wallet at home, then she does not have food with her or money to get food.
+- If John gives her a twenty, then she has money to get food.
+- If Alexa has money to get food, then she can go out and buy food.
+- Borrowing food, having food, preparing food, and getting food are not actions that Alexa can do with the money that John gave her, so (A), (B), (C), and (E) are not correct.
+- Buying food is an action that Alexa can do with the money that John gave her, so (D) is correct.
+
+"
+All avenues should be explored to maintain peace and avoid what?,"['happened', 'elusive', 'peacework', 'violent', 'war']","Questions: All avenues should be explored to maintain peace and avoid what?, Choices: (A) happened, (B) elusive, (C) peacework, (D) violent, (E) war. Given the question 'All avenues should be explored to maintain peace and avoid what?', which among the choices happened, elusive, peacework, violent war is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) war. A possible explanation using conditional statements is:
+
+- If all avenues should be explored to maintain peace, then the goal is to avoid conflict and violence.
+- If the goal is to avoid conflict and violence, then the worst outcome is war.
+- Happened, elusive, peacework, and violent are not outcomes, but rather descriptions or actions, so (A), (B), (C), and (D) are not correct.
+- War is an outcome that is the opposite of peace, so (E) is correct"
+All energy on earth comes from the sun.  It arrives in what form?,"['light', 'lightning', 'life on earth', 'sun tan', 'heat']","Questions: All energy on earth comes from the sun.  It arrives in what form?, Choices: (A) light, (B) lightning, (C) life on earth, (D) sun tan, (E) heat. Given the question 'All energy on earth comes from the sun.  It arrives in what form?', which among the choices light, lightning, life on earth, sun tan heat is the correct answer? Explain your reasoning using conditional statements.
+",
+All humans have what which is used to distinguish them from one another?,"['ears', 'feelings', 'names', 'naval', 'bladders']","Questions: All humans have what which is used to distinguish them from one another?, Choices: (A) ears, (B) feelings, (C) names, (D) naval, (E) bladders. Given the question 'All humans have what which is used to distinguish them from one another?', which among the choices ears, feelings, names, naval bladders is the correct answer? Explain your reasoning using conditional statements.
+",
+All humans store urine in what organ?,"['feelings', 'names', 'naval', 'bladders', 'bladders']","Questions: All humans store urine in what organ?, Choices: (A) feelings, (B) names, (C) naval, (D) bladders, (E) bladders. Given the question 'All humans store urine in what organ?', which among the choices feelings, names, naval, bladders bladders is the correct answer? Explain your reasoning using conditional statements.
+",
+All the contestants had to wait turn for their chance to what on American Idol?,"['have patience', 'stand in line', 'sing', 'get ready', 'get in line']","Questions: All the contestants had to wait turn for their chance to what on American Idol?, Choices: (A) have patience, (B) stand in line, (C) sing, (D) get ready, (E) get in line. Given the question 'All the contestants had to wait turn for their chance to what on American Idol?', which among the choices have patience, stand in line, sing, get ready get in line is the correct answer? Explain your reasoning using conditional statements.
+",
+Almost everyone who has been driving a car has seen or been in a what?,"['getting tired', 'go somewhere', 'water pollute', 'backache', 'automobile accidents']","Questions: Almost everyone who has been driving a car has seen or been in a what?, Choices: (A) getting tired, (B) go somewhere, (C) water pollute, (D) backache, (E) automobile accidents. Given the question 'Almost everyone who has been driving a car has seen or been in a what?', which among the choices getting tired, go somewhere, water pollute, backache automobile accidents is the correct answer? Explain your reasoning using conditional statements.
+",
+Along what feature will you find a rosebush?,"['park', 'in the ground', 'hedgerow', 'temperate climate', 'botanical gardens']","Questions: Along what feature will you find a rosebush?, Choices: (A) park, (B) in the ground, (C) hedgerow, (D) temperate climate, (E) botanical gardens. Given the question 'Along what feature will you find a rosebush?', which among the choices park, in the ground, hedgerow, temperate climate botanical gardens is the correct answer? Explain your reasoning using conditional statements.
+",
+Amy sat down and turned on her monitor.  She only had an hour of time to do her work.  Where might she be?,"['box', 'on a train', 'internet cafe', 'desktop', 'view bluescreen']","Questions: Amy sat down and turned on her monitor.  She only had an hour of time to do her work.  Where might she be?, Choices: (A) box, (B) on a train, (C) internet cafe, (D) desktop, (E) view bluescreen. Given the question 'Amy sat down and turned on her monitor.  She only had an hour of time to do her work.  Where might she be?', which among the choices box, on a train, internet cafe, desktop view bluescreen is the correct answer? Explain your reasoning using conditional statements.
+",.
+An American might hike a mountain north to get to what?,"['canada', 'switzerland', 'orlando', 'austria', 'surface of earth']","Questions: An American might hike a mountain north to get to what?, Choices: (A) canada, (B) switzerland, (C) orlando, (D) austria, (E) surface of earth. Given the question 'An American might hike a mountain north to get to what?', which among the choices canada, switzerland, orlando, austria surface of earth is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) canada. My reasoning is: If an American is hiking a mountain north, then they are moving closer to the border with Canada. Canada is the only country that shares a northern border with the United States. Therefore, an American might hike a mountain north to get to Canada.
+
+"
+An adult called an engineer does what while on the job?,"['drive train', 'dress himself', 'drink beer', 'marry', 'field']","Questions: An adult called an engineer does what while on the job?, Choices: (A) drive train, (B) dress himself, (C) drink beer, (D) marry, (E) field. Given the question 'An adult called an engineer does what while on the job?', which among the choices drive train, dress himself, drink beer, marry field is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) field. My reasoning is: If an adult is called an engineer, then they have a specific area of expertise and skill. An engineer does various tasks related to their field of engineering, such as designing, building, testing, or maintaining systems, machines, or structures. Therefore, an adult called an engineer does something related to their field while on the job.
+
+"
+An amphitheartre provides a stage in what sort of environment?,"['inside', 'greece', 'experiencing performance art', 'outside', 'park']","Questions: An amphitheartre provides a stage in what sort of environment?, Choices: (A) inside, (B) greece, (C) experiencing performance art, (D) outside, (E) park. Given the question 'An amphitheartre provides a stage in what sort of environment?', which among the choices inside, greece, experiencing performance art, outside park is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) outside. My reasoning is: If a place is an amphitheater, then it has a circular or oval shape with rows of seats around a central stage. An amphitheater is usually built outdoors to allow natural light and sound to reach the audience. Therefore, an amphitheater provides a stage in an outside environment.
+
+"
+An arch is a very strong way to have a doorway in a what?,"['cathedral', 'bridge', 'building', 'ancient rome', 'hole']","Questions: An arch is a very strong way to have a doorway in a what?, Choices: (A) cathedral, (B) bridge, (C) building, (D) ancient rome, (E) hole. Given the question 'An arch is a very strong way to have a doorway in a what?', which among the choices cathedral, bridge, building, ancient rome hole is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) building. My reasoning is: If a structure has an arch, then it has a curved shape that spans an opening and supports weight above it. An arch is a very strong way to have a doorway in a building, because it distributes the load evenly and can withstand large forces. Therefore, an arch is a very strong way to have a doorway in a building.
+
+"
+An attempt to confirm an applicant's reference would fail if the reference does what?,"['question', 'dispute', 'deny', 'contradict', 'refuse']","Questions: An attempt to confirm an applicant's reference would fail if the reference does what?, Choices: (A) question, (B) dispute, (C) deny, (D) contradict, (E) refuse. Given the question 'An attempt to confirm an applicant's reference would fail if the reference does what?', which among the choices question, dispute, deny, contradict refuse is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) refuse. My reasoning is: If an employer is trying to confirm an applicant's reference, then they are contacting someone who can vouch for the applicant's qualifications, skills, or character. An attempt to confirm an applicant's reference would fail if the reference does not answer the phone, email, or letter, or does not give any information about the applicant. Therefore, an attempt to confirm an applicant's reference would fail if the reference refuses to respond or cooperate.
+
+"
+An employer would prefer your planning vacation take place during what?,"['organization', 'free time', 'imagination', 'meetings', 'money']","Questions: An employer would prefer your planning vacation take place during what?, Choices: (A) organization, (B) free time, (C) imagination, (D) meetings, (E) money. Given the question 'An employer would prefer your planning vacation take place during what?', which among the choices organization, free time, imagination, meetings money is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) free time. My reasoning is: If an employer is paying an employee for their work, then they expect the employee to focus on their tasks and responsibilities during the work hours. An employer would prefer that the employee does not waste time or resources on personal matters, such as planning a vacation, while on the job. Therefore, an employer would prefer that the employee plans their vacation during their free time, such as after work or on weekends.
+
+"
+An evening of remembering often leads to what?,"['knowledge', 'remembrance', 'nostalgia', 'problems', 'knowing']","Questions: An evening of remembering often leads to what?, Choices: (A) knowledge, (B) remembrance, (C) nostalgia, (D) problems, (E) knowing. Given the question 'An evening of remembering often leads to what?', which among the choices knowledge, remembrance, nostalgia, problems knowing is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) nostalgia. My reasoning is: If someone is remembering the past, then they are recalling events, people, places, or feelings that they have experienced before. An evening of remembering often leads to nostalgia, which is a sentimental or wistful affection for the past. Therefore, an evening of remembering often leads to nostalgia.
+
+"
+An expert performing on stage is hoping to do what?,"['explode', 'stage fright', 'injury', 'get attention', 'being appreciated']","Questions: An expert performing on stage is hoping to do what?, Choices: (A) explode, (B) stage fright, (C) injury, (D) get attention, (E) being appreciated. Given the question 'An expert performing on stage is hoping to do what?', which among the choices explode, stage fright, injury, get attention being appreciated is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) being appreciated. My reasoning is: If someone is an expert, then they have a high level of knowledge, skill, or experience in a certain field or activity. If someone is performing on stage, then they are showcasing their talent or ability to an audience. An expert performing on stage is hoping to do something that reflects their excellence and earns them recognition, praise, or admiration. Therefore, an expert performing on stage is hoping to be appreciated by the audience.
+
+"
+An island off the coast of of California is located where?,"['pacific ocean', 'mississippi river', 'body of water', 'earth', 'middle of ocean']","Questions: An island off the coast of of California is located where?, Choices: (A) pacific ocean, (B) mississippi river, (C) body of water, (D) earth, (E) middle of ocean. Given the question 'An island off the coast of of California is located where?', which among the choices pacific ocean, mississippi river, body of water, earth middle of ocean is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) pacific ocean. My reasoning is: If an island is off the coast of California, then it is surrounded by water and separated from the mainland by a distance. California is located on the west coast of the United States, which borders the Pacific Ocean. Therefore, an island off the coast of California is located in the Pacific Ocean.
+
+"
+An over-heated snake will hide where in a house?,"['bedroom', 'tropical forest', 'oklahoma', 'basement', 'river']","Questions: An over-heated snake will hide where in a house?, Choices: (A) bedroom, (B) tropical forest, (C) oklahoma, (D) basement, (E) river. Given the question 'An over-heated snake will hide where in a house?', which among the choices bedroom, tropical forest, oklahoma, basement river is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) basement. My reasoning is: If a snake is over-heated, then its body temperature is too high and it needs to cool down. A snake will hide where in a house that has a lower temperature and less exposure to sunlight than the rest of the house. A basement is usually cooler and darker than the upper floors of a house. Therefore, an over-heated snake will hide in the basement of a house."
+Animals are unselfconscious and just do what?,"['listen to each other', 'live lives', 'bite', 'fight each other', 'smile']","Questions: Animals are unselfconscious and just do what?, Choices: (A) listen to each other, (B) live lives, (C) bite, (D) fight each other, (E) smile. Given the question 'Animals are unselfconscious and just do what?', which among the choices listen to each other, live lives, bite, fight each other smile is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) live lives. Animals are unselfconscious and just do what they need to do to survive and thrive. They do not have the same sense of self-awareness or reflection as humans do. A possible conditional statement to explain this is: `If an animal is unselfconscious, then it just lives its life.`
+
+"
+Animals do what from birth to death?,"['fight each other', 'need to eat', 'drink water', 'live lives', 'feel pain']","Questions: Animals do what from birth to death?, Choices: (A) fight each other, (B) need to eat, (C) drink water, (D) live lives, (E) feel pain. Given the question 'Animals do what from birth to death?', which among the choices fight each other, need to eat, drink water, live lives feel pain is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) live lives. Animals do what they need to do from birth to death, which is living their lives. They have different stages of development, growth, reproduction, and aging, but they are all part of living. A possible conditional statement to explain this is: `If an animal is born, then it lives its life until it dies.`
+
+"
+Another result of changing society could be what?,"['confusion and chaos', 'depression', 'better standard of living', 'sometimes bad', 'anger and depression will not change the society .']","Questions: Another result of changing society could be what?, Choices: (A) confusion and chaos, (B) depression, (C) better standard of living, (D) sometimes bad, (E) anger and depression will not change the society .. Given the question 'Another result of changing society could be what?', which among the choices confusion and chaos, depression, better standard of living, sometimes bad anger and depression will not change the society . is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) better standard of living. Another result of changing society could be a better standard of living for some or all of its members. This could mean improved health, education, income, security, or happiness. A possible conditional statement to explain this is: `If society changes, then it could lead to a better standard of living for some or all of its members.`
+
+"
+Artie Shaw became famous playing a clarinet in what outfit?,"['orchestra', 'jazz band', 'rock band', 'music store', 'music studio']","Questions: Artie Shaw became famous playing a clarinet in what outfit?, Choices: (A) orchestra, (B) jazz band, (C) rock band, (D) music store, (E) music studio. Given the question 'Artie Shaw became famous playing a clarinet in what outfit?', which among the choices orchestra, jazz band, rock band, music store music studio is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) jazz band. Artie Shaw became famous playing a clarinet in a jazz band. He was one of the most popular and influential jazz musicians of the 1930s and 1940s. He played with many other famous jazz artists and composed several hit songs. A possible conditional statement to explain this is: `If Artie Shaw played a clarinet, then he played in a jazz band.`
+
+"
+Artificial intelligence is changing society.  Shifting needs and capabilities have led to what?,"['change in leadership', 'revolution', 'no water', 'acceptance', 'depression']","Questions: Artificial intelligence is changing society.  Shifting needs and capabilities have led to what?, Choices: (A) change in leadership, (B) revolution, (C) no water, (D) acceptance, (E) depression. Given the question 'Artificial intelligence is changing society.  Shifting needs and capabilities have led to what?', which among the choices change in leadership, revolution, no water, acceptance depression is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) revolution. Artificial intelligence is changing society. Shifting needs and capabilities have led to revolution in some areas of human activity, such as science, technology, industry, communication, or politics. Revolution means a radical or fundamental change in the way something is done or organized. A possible conditional statement to explain this is: `If artificial intelligence changes society, then it leads to revolution in some areas of human activity.`
+
+"
+As a human who valued privacy he asked that everybody do what so he could act without eyes upon him?,"['have to sleep', 'turn away', 'look at him', 'row boat', 'let down']","Questions: As a human who valued privacy he asked that everybody do what so he could act without eyes upon him?, Choices: (A) have to sleep, (B) turn away, (C) look at him, (D) row boat, (E) let down. Given the question 'As a human who valued privacy he asked that everybody do what so he could act without eyes upon him?', which among the choices have to sleep, turn away, look at him, row boat let down is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) turn away. As a human who valued privacy, he asked that everybody do what so he could act without eyes upon him. He wanted to have some personal space and freedom from observation or interference. He did not want anyone to watch him or judge him. A possible conditional statement to explain this is: `If he valued privacy, then he asked that everybody turn away.`
+
+"
+As everybody at the table began to twirl noodles she mentioned that wine was he secret ingredient in the what?,"['liquor store', 'church', 'museum', 'spaghetti sauce', 'art show']","Questions: As everybody at the table began to twirl noodles she mentioned that wine was he secret ingredient in the what?, Choices: (A) liquor store, (B) church, (C) museum, (D) spaghetti sauce, (E) art show. Given the question 'As everybody at the table began to twirl noodles she mentioned that wine was he secret ingredient in the what?', which among the choices liquor store, church, museum, spaghetti sauce art show is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) spaghetti sauce. As everybody at the table began to twirl noodles, she mentioned that wine was her secret ingredient in the spaghetti sauce. She used wine to add flavor and richness to the sauce, which was made with tomatoes, garlic, herbs, and other ingredients. She wanted to share her cooking tip and impress her guests. A possible conditional statement to explain this is: `If she used wine, then it was her secret ingredient in the spaghetti sauce.`
+
+"
+As he flipped through a yearbook he had fond memories of playing cornet in his what?,"['high school band', 'marching band', 'case', 'likes to day dream', 'museum']","Questions: As he flipped through a yearbook he had fond memories of playing cornet in his what?, Choices: (A) high school band, (B) marching band, (C) case, (D) likes to day dream, (E) museum. Given the question 'As he flipped through a yearbook he had fond memories of playing cornet in his what?', which among the choices high school band, marching band, case, likes to day dream museum is the correct answer? Explain your reasoning using conditional statements.
+",
+As the counterweight began to rise the elevator began to what into the mine?,"['park', 'reduce', 'descend', 'fall', 'set']","Questions: As the counterweight began to rise the elevator began to what into the mine?, Choices: (A) park, (B) reduce, (C) descend, (D) fall, (E) set. Given the question 'As the counterweight began to rise the elevator began to what into the mine?', which among the choices park, reduce, descend, fall set is the correct answer? Explain your reasoning using conditional statements.
+","930s and 1940s. He played with many other famous jazz artists and composed several hit songs. A possible conditional statement to explain this is: `If Artie Shaw played a clarinet, then he played in a jazz band.`
+
+5. The correct answer is (B) revolution. Artificial intelligence is changing society. Shifting needs and capabilities have led to revolution in some areas of human activity, such as science, technology, industry, communication, or politics. Revolution means a radical or fundamental change in the way something is done or organized. A possible conditional statement to explain this is: `If artificial intelligence changes society, then it leads to revolution in some areas of human activity.`
+
+6. The correct answer is (B) turn away. As a human who valued privacy, he asked that everybody do what so he could act without eyes upon him. He wanted to have some personal space and freedom from observation or interference. He did not want anyone to watch him or judge him. A possible conditional statement to explain this is: `If he valued privacy, then he asked that everybody turn away.`
+
+7. The correct answer is (D) spaghetti sauce. As everybody at the table began to twirl noodles, she mentioned that wine was her secret ingredient in the spaghetti sauce. She used wine to add flavor and richness to the sauce, which was made with tomatoes, garlic, herbs, and other ingredients. She wanted to share her cooking tip and impress her guests. A possible conditional statement to explain this is: `If she used wine, then it was her secret ingredient in the spaghetti sauce.`
+
+8. The correct answer is (A) high school band. As he flipped through a yearbook, he had fond memories of playing cornet in his high school band. He enjoyed playing music with his classmates and friends, and participating in concerts and competitions. He was proud of his musical skills and achievements. A possible conditional statement to explain this is: `If he played cornet, then he played in his high school band.`
+
+9. The correct answer is (C) descend. As the counterweight began to rise, the elevator began to descend into the mine. The elevator was attached to a cable that was balanced by a counterweight. When the counterweight moved up, the cable pulled the elevator down. The elevator was used to transport workers and materials to and from the mine. A possible conditional statement to explain this is: `If the counterweight rose, then the elevator descended.`
+
+"
+As the fox ran into the forest it disappeared into the what?,"['nantucket', 'barn', 'northern hemisphere', 'hen house', 'undergrowth']","Questions: As the fox ran into the forest it disappeared into the what?, Choices: (A) nantucket, (B) barn, (C) northern hemisphere, (D) hen house, (E) undergrowth. Given the question 'As the fox ran into the forest it disappeared into the what?', which among the choices nantucket, barn, northern hemisphere, hen house undergrowth is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) undergrowth. As the fox ran into the forest, it disappeared into the undergrowth. The undergrowth is the dense growth of plants and bushes that covers the ground in a forest. The fox used the undergrowth to hide from its predators and prey, and to find shelter and food. A possible conditional statement to explain this is: `If the fox ran into the forest, then it disappeared into the undergrowth.`
+
+I hope this helps you understand the questions and the answers. If you have any more questions, please feel free to ask me. 😊"
+As the round object rolls down the ramp it will what?,"['sound well', 'fly', 'become broken', 'gain speed', 'fall into hole']","Questions: As the round object rolls down the ramp it will what?, Choices: (A) sound well, (B) fly, (C) become broken, (D) gain speed, (E) fall into hole. Given the question 'As the round object rolls down the ramp it will what?', which among the choices sound well, fly, become broken, gain speed fall into hole is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) gain speed. My reasoning is: If the round object rolls down the ramp, then it will gain speed because of the gravitational force and the decrease in friction.
+"
+As they left his house he insured them that it was okay they could come to the party too because it was taking place where?,"[""friend's house"", 'home', 'patio', 'fraternity house', 'boat']","Questions: As they left his house he insured them that it was okay they could come to the party too because it was taking place where?, Choices: (A) friend's house, (B) home, (C) patio, (D) fraternity house, (E) boat. Given the question 'As they left his house he insured them that it was okay they could come to the party too because it was taking place where?', which among the choices friend's house, home, patio, fraternity house boat is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) patio. My reasoning is: If he insured them that it was okay they could come to the party too, then it was taking place where he lived. If it was taking place where he lived, then it was either at his home or his patio. If it was at his home, then he would not have left his house. Therefore, it was at his patio.
+"
+At a state fair judging pigs requires careful what?,"['verdict', 'judging', 'responsibility', 'evaluating', 'prejudice']","Questions: At a state fair judging pigs requires careful what?, Choices: (A) verdict, (B) judging, (C) responsibility, (D) evaluating, (E) prejudice. Given the question 'At a state fair judging pigs requires careful what?', which among the choices verdict, judging, responsibility, evaluating prejudice is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) evaluating. My reasoning is: If judging pigs requires careful what, then it requires careful evaluating because evaluating means to judge or assess something based on certain criteria or standards.
+"
+At the end of your meal what will a waiter do?,"['serve food', 'eat', 'set table', 'serve meal', 'present bill']","Questions: At the end of your meal what will a waiter do?, Choices: (A) serve food, (B) eat, (C) set table, (D) serve meal, (E) present bill. Given the question 'At the end of your meal what will a waiter do?', which among the choices serve food, eat, set table, serve meal present bill is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) present bill. My reasoning is: If it is the end of your meal, then the waiter will present bill because presenting bill is the final step of the service process and it indicates that the meal is over.
+"
+At what structure can you see people you use a puck professionally?,"['hockey rink', 'locker room', 'sporting goods store', 'used in hockey game', 'teachers']","Questions: At what structure can you see people you use a puck professionally?, Choices: (A) hockey rink, (B) locker room, (C) sporting goods store, (D) used in hockey game, (E) teachers. Given the question 'At what structure can you see people you use a puck professionally?', which among the choices hockey rink, locker room, sporting goods store, used in hockey game teachers is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) hockey rink. My reasoning is: If you want to see people who use a puck professionally, then you have to go to a hockey rink because a hockey rink is the place where hockey players play and use a puck as part of the game.
+"
+Attempting to light a wet match is likely to result in what?,"['make fire', 'rain', 'combustion', 'illumination', 'frustration']","Questions: Attempting to light a wet match is likely to result in what?, Choices: (A) make fire, (B) rain, (C) combustion, (D) illumination, (E) frustration. Given the question 'Attempting to light a wet match is likely to result in what?', which among the choices make fire, rain, combustion, illumination frustration is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) frustration. My reasoning is: If you attempt to light a wet match, then it will result in frustration because frustration is the feeling of being annoyed or upset when something is not working or happening as expected. A wet match will not ignite easily and will waste your time and effort.
+"
+Attending a lecture given by an expert will allow will lead to what?,"['inspiration', 'drowsiness', 'getting bored', 'gain knowledge', 'gaining knowledge']","Questions: Attending a lecture given by an expert will allow will lead to what?, Choices: (A) inspiration, (B) drowsiness, (C) getting bored, (D) gain knowledge, (E) gaining knowledge. Given the question 'Attending a lecture given by an expert will allow will lead to what?', which among the choices inspiration, drowsiness, getting bored, gain knowledge gaining knowledge is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) gain knowledge. My reasoning is: If you attend a lecture given by an expert, then you will gain knowledge because knowledge is the information or understanding that you get from learning or experience. An expert is someone who has a lot of knowledge or skill in a particular field or topic and can share it with others through a lecture.
+"
+Attending church and praying are examples of what?,"['religiosity', 'peacefulness', 'relief', 'feeling better', 'feel better']","Questions: Attending church and praying are examples of what?, Choices: (A) religiosity, (B) peacefulness, (C) relief, (D) feeling better, (E) feel better. Given the question 'Attending church and praying are examples of what?', which among the choices religiosity, peacefulness, relief, feeling better feel better is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) religiosity. My reasoning is: If you attend church and pray, then you are showing religiosity because religiosity is the quality of being religious or having strong religious beliefs or practices. Church and prayer are common examples of religious activities or expressions.
+"
+Australia is a country and also a what?,"['america', 'continent', 'great outdoors', 'friend', 'world']","Questions: Australia is a country and also a what?, Choices: (A) america, (B) continent, (C) great outdoors, (D) friend, (E) world. Given the question 'Australia is a country and also a what?', which among the choices america, continent, great outdoors, friend world is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) continent. My reasoning is: If Australia is a country and also a what, then it is also a continent because a continent is one of the large landmasses of the earth that are divided into several countries. Australia is both a country and a continent because it occupies the entire Australian landmass and has no other countries within it.
+"
+Authors have a wide range of emotions from relief to happiness when they finally what?,"['complete writing', 'write books', 'word passage', 'start book', 'write poems']","Questions: Authors have a wide range of emotions from relief to happiness when they finally what?, Choices: (A) complete writing, (B) write books, (C) word passage, (D) start book, (E) write poems. Given the question 'Authors have a wide range of emotions from relief to happiness when they finally what?', which among the choices complete writing, write books, word passage, start book write poems is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) complete writing. My reasoning is: If authors have a wide range of emotions from relief to happiness when they finally what, then they finally complete writing because completing writing is the act of finishing a piece of writing or a writing project that they have been working on for a long time. Completing writing can cause various emotions such as relief, happiness, satisfaction, pride, etc."
+Awaking in the middle of the night may cause what?,"['depression', 'irritability', 'shock', 'discomfort', 'alertness']","Questions: Awaking in the middle of the night may cause what?, Choices: (A) depression, (B) irritability, (C) shock, (D) discomfort, (E) alertness. Given the question 'Awaking in the middle of the night may cause what?', which among the choices depression, irritability, shock, discomfort alertness is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) irritability. A possible explanation is: If a person awakes in the middle of the night, then they may not get enough sleep. If they do not get enough sleep, then they may feel irritable the next day.
+
+"
+Bailey couldn't find a place to leave his vehicle because he couldn't find a parking lot anywhere.  It was a very small what?,"['business district', 'city', 'town', 'car', 'vehicle']","Questions: Bailey couldn't find a place to leave his vehicle because he couldn't find a parking lot anywhere.  It was a very small what?, Choices: (A) business district, (B) city, (C) town, (D) car, (E) vehicle. Given the question 'Bailey couldn't find a place to leave his vehicle because he couldn't find a parking lot anywhere.  It was a very small what?', which among the choices business district, city, town, car vehicle is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) town. A possible explanation is: If Bailey could not find a parking lot anywhere, then he must have been in a place with very limited space. If he was in a place with very limited space, then it was likely a very small town.
+
+"
+Bailey liked playing games against other people.  He found it exhilarating.  What might Bailey like about games?,"['arguments', 'anger', 'learning', 'relaxation', 'competitiveness']","Questions: Bailey liked playing games against other people.  He found it exhilarating.  What might Bailey like about games?, Choices: (A) arguments, (B) anger, (C) learning, (D) relaxation, (E) competitiveness. Given the question 'Bailey liked playing games against other people.  He found it exhilarating.  What might Bailey like about games?', which among the choices arguments, anger, learning, relaxation competitiveness is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) competitiveness. A possible explanation is: If Bailey liked playing games against other people, then he must have enjoyed the challenge and the thrill of winning. If he enjoyed the challenge and the thrill of winning, then he probably liked the competitiveness of games.
+
+"
+Bailey was a real estate agent and good at his job.  He could easily do what to people?,"['deceive', 'exaggerate', 'incompetent', 'persuade', 'manipulate']","Questions: Bailey was a real estate agent and good at his job.  He could easily do what to people?, Choices: (A) deceive, (B) exaggerate, (C) incompetent, (D) persuade, (E) manipulate. Given the question 'Bailey was a real estate agent and good at his job.  He could easily do what to people?', which among the choices deceive, exaggerate, incompetent, persuade manipulate is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) persuade. A possible explanation is: If Bailey was a real estate agent and good at his job, then he must have been able to convince people to buy or sell properties. If he was able to convince people to buy or sell properties, then he could easily persuade them.
+
+"
+Bald eagles can be spotted more often in the northern versus the southern reaches of what range?,"['on the moon', 'rocky mountains', 'chemotherapy', 'utah', 'british columbia']","Questions: Bald eagles can be spotted more often in the northern versus the southern reaches of what range?, Choices: (A) on the moon, (B) rocky mountains, (C) chemotherapy, (D) utah, (E) british columbia. Given the question 'Bald eagles can be spotted more often in the northern versus the southern reaches of what range?', which among the choices on the moon, rocky mountains, chemotherapy, utah british columbia is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) rocky mountains. A possible explanation is: If bald eagles can be spotted more often in the northern versus the southern reaches of a range, then the range must be a mountainous region. If the range is a mountainous region, then it could be the rocky mountains.
+
+"
+Bald eagles naturally live where?,"['canada', 'great outdoors', 'france', 'toy store', 'nature reserve']","Questions: Bald eagles naturally live where?, Choices: (A) canada, (B) great outdoors, (C) france, (D) toy store, (E) nature reserve. Given the question 'Bald eagles naturally live where?', which among the choices canada, great outdoors, france, toy store nature reserve is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) canada. A possible explanation is: If bald eagles naturally live somewhere, then they must have a suitable habitat and food source. If they have a suitable habitat and food source, then they could live in Canada, where there are many forests, lakes, and fish.
+
+"
+Ballet dancing is a form of artistic what?,"['swan lake', 'intercourse', 'expression', 'become tired', 'fatigue']","Questions: Ballet dancing is a form of artistic what?, Choices: (A) swan lake, (B) intercourse, (C) expression, (D) become tired, (E) fatigue. Given the question 'Ballet dancing is a form of artistic what?', which among the choices swan lake, intercourse, expression, become tired fatigue is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) expression. A possible explanation is: If ballet dancing is a form of artistic something, then it must involve creativity and emotion. If it involves creativity and emotion, then it could be a form of artistic expression.
+
+"
+Balthazar is a popular french restaurant located where?,"['wine', 'manhattan', 'underwater', 'quebec', 'montreal']","Questions: Balthazar is a popular french restaurant located where?, Choices: (A) wine, (B) manhattan, (C) underwater, (D) quebec, (E) montreal. Given the question 'Balthazar is a popular french restaurant located where?', which among the choices wine, manhattan, underwater, quebec montreal is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) manhattan. A possible explanation is: If Balthazar is a popular french restaurant, then it must be located in a place with many people and a high demand for french cuisine. If it is located in a place with many people and a high demand for french cuisine, then it could be in Manhattan, a major city in New York.
+
+"
+Bar service is a very important part of what kind of celebration?,"['wedding', 'entertainment', 'hotel', 'train', 'pool party']","Questions: Bar service is a very important part of what kind of celebration?, Choices: (A) wedding, (B) entertainment, (C) hotel, (D) train, (E) pool party. Given the question 'Bar service is a very important part of what kind of celebration?', which among the choices wedding, entertainment, hotel, train pool party is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) wedding. A possible explanation is: If bar service is a very important part of a kind of celebration, then the celebration must involve a lot of guests and a festive mood. If the celebration involves a lot of guests and a festive mood, then it could be a wedding, a common occasion for bar service.
+
+"
+Beautiful lightning strikes happen on what kind of day?,"['november', 'rainy', 'dull', 'wet', 'average']","Questions: Beautiful lightning strikes happen on what kind of day?, Choices: (A) november, (B) rainy, (C) dull, (D) wet, (E) average. Given the question 'Beautiful lightning strikes happen on what kind of day?', which among the choices november, rainy, dull, wet average is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) rainy. A possible explanation is: If beautiful lightning strikes happen on a kind of day, then the day must have certain weather conditions. If the day has certain weather conditions, then it could be a rainy day, which often produces thunderstorms and lightning."

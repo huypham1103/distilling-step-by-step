@@ -1,0 +1,507 @@
+premise,hypothesis,prompt,rationale
+If you're spending too much time intensely jogging what can happen?,"['blisters', 'practice for mar-than', 'improved health', 'being tired', 'heart attacks']","Questions: If you're spending too much time intensely jogging what can happen?, Choices: (A) blisters, (B) practice for mar-than, (C) improved health, (D) being tired, (E) heart attacks. Given the question 'If you're spending too much time intensely jogging what can happen?', which among the choices blisters, practice for mar-than, improved health, being tired heart attacks is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) heart attacks. A possible explanation is: If you're spending too much time intensely jogging, then you may put too much stress on your heart and increase the risk of heart attacks.
+
+"
+If you're standing in front of people holding index cards what are you likely doing?,"['learning', 'oral report', 'office supply store', 'card catalogue', 'library']","Questions: If you're standing in front of people holding index cards what are you likely doing?, Choices: (A) learning, (B) oral report, (C) office supply store, (D) card catalogue, (E) library. Given the question 'If you're standing in front of people holding index cards what are you likely doing?', which among the choices learning, oral report, office supply store, card catalogue library is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) oral report. A possible explanation is: If you're standing in front of people holding index cards, then you are likely doing an oral report because index cards are often used to write notes or cues for a presentation.
+
+"
+If you're standing in line all day and someone cuts in front of you what may you feel?,"['fainting', 'agitation', 'hunger', 'boredom', 'pain']","Questions: If you're standing in line all day and someone cuts in front of you what may you feel?, Choices: (A) fainting, (B) agitation, (C) hunger, (D) boredom, (E) pain. Given the question 'If you're standing in line all day and someone cuts in front of you what may you feel?', which among the choices fainting, agitation, hunger, boredom pain is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) agitation. A possible explanation is: If you're standing in line all day and someone cuts in front of you, then you may feel agitation because you may think that the person is being rude and unfair.
+
+"
+If you're standing in line and the line isn't moving what might you feel?,"['order', 'queueing up', 'wait turn', 'fatigue', 'anger']","Questions: If you're standing in line and the line isn't moving what might you feel?, Choices: (A) order, (B) queueing up, (C) wait turn, (D) fatigue, (E) anger. Given the question 'If you're standing in line and the line isn't moving what might you feel?', which among the choices order, queueing up, wait turn, fatigue anger is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) anger. A possible explanation is: If you're standing in line and the line isn't moving, then you might feel anger because you may feel frustrated and impatient.
+
+"
+If you're suffering from boredom what can you do on your mobile phone?,"['talk to it', 'surf net', 'play cards', 'play chess', 'see new']","Questions: If you're suffering from boredom what can you do on your mobile phone?, Choices: (A) talk to it, (B) surf net, (C) play cards, (D) play chess, (E) see new. Given the question 'If you're suffering from boredom what can you do on your mobile phone?', which among the choices talk to it, surf net, play cards, play chess see new is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) surf net. A possible explanation is: If you're suffering from boredom, then you can surf the net on your mobile phone because the net offers a variety of information and entertainment options.
+
+"
+If you're suffering from hunger what you likely to do with your meal?,"['order food', 'spend money', 'eat quickly', 'begin work', 'have lunch']","Questions: If you're suffering from hunger what you likely to do with your meal?, Choices: (A) order food, (B) spend money, (C) eat quickly, (D) begin work, (E) have lunch. Given the question 'If you're suffering from hunger what you likely to do with your meal?', which among the choices order food, spend money, eat quickly, begin work have lunch is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) eat quickly. A possible explanation is: If you're suffering from hunger, then you are likely to eat quickly with your meal because you may want to satisfy your hunger as soon as possible.
+
+"
+If you're talking to something then you probable hope that you're also doing what?,"['dry mouth', 'eye contact', 'being heard', 'not listening', 'conversation']","Questions: If you're talking to something then you probable hope that you're also doing what?, Choices: (A) dry mouth, (B) eye contact, (C) being heard, (D) not listening, (E) conversation. Given the question 'If you're talking to something then you probable hope that you're also doing what?', which among the choices dry mouth, eye contact, being heard, not listening conversation is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) being heard. A possible explanation is: If you're talking to something, then you probably hope that you're also being heard because you may want to communicate your thoughts or feelings to the listener.
+
+"
+If you're telling many people about tasks you perform you have what?,"['bragging', 'accomplish', 'annoyance', 'religion', 'learn about']","Questions: If you're telling many people about tasks you perform you have what?, Choices: (A) bragging, (B) accomplish, (C) annoyance, (D) religion, (E) learn about. Given the question 'If you're telling many people about tasks you perform you have what?', which among the choices bragging, accomplish, annoyance, religion learn about is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) bragging. A possible explanation is: If you're telling many people about tasks you perform, then you may have bragging because you may want to impress others with your achievements or abilities.
+
+"
+If you're traveling along a highway what item made of paper can you use to find your way?,"['united states', 'atlas', 'developed land', 'park', 'countryside']","Questions: If you're traveling along a highway what item made of paper can you use to find your way?, Choices: (A) united states, (B) atlas, (C) developed land, (D) park, (E) countryside. Given the question 'If you're traveling along a highway what item made of paper can you use to find your way?', which among the choices united states, atlas, developed land, park countryside is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) atlas. A possible explanation is: If you're traveling along a highway, then an item made of paper that you can use to find your way is an atlas because an atlas is a book of maps that shows the roads and places of a region.
+
+"
+If you're using scuba gear in the ocean where are you?,"['beach', 'surface of earth', 'future', 'waterfalls', 'underwater']","Questions: If you're using scuba gear in the ocean where are you?, Choices: (A) beach, (B) surface of earth, (C) future, (D) waterfalls, (E) underwater. Given the question 'If you're using scuba gear in the ocean where are you?', which among the choices beach, surface of earth, future, waterfalls underwater is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) underwater. A possible explanation is: If you're using scuba gear in the ocean, then you are underwater because scuba gear is a set of equipment that allows you to breathe and move underwater."
+If you're using your reaching advantage on a high cliff what should you be careful not to do?,"['better negotiating position', 'fall', 'victory', 'being ahead', 'eat']","Questions: If you're using your reaching advantage on a high cliff what should you be careful not to do?, Choices: (A) better negotiating position, (B) fall, (C) victory, (D) being ahead, (E) eat. Given the question 'If you're using your reaching advantage on a high cliff what should you be careful not to do?', which among the choices better negotiating position, fall, victory, being ahead eat is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) fall**. A conditional statement is a statement that expresses a logical relationship between two or more propositions. A conditional statement has the form ""if P, then Q"", where P is the antecedent and Q is the consequent. The statement means that Q is true whenever P is true. For example, ""if it rains, then the grass is wet"". A possible conditional statement for this question is:
+
+- If you're using your reaching advantage on a high cliff, then you should be careful not to fall.
+
+"
+If you're very rude while expressing yourself what is likely to happen?,"['people will understand', 'communication', 'being slapped', 'creation of art', 'get gift']","Questions: If you're very rude while expressing yourself what is likely to happen?, Choices: (A) people will understand, (B) communication, (C) being slapped, (D) creation of art, (E) get gift. Given the question 'If you're very rude while expressing yourself what is likely to happen?', which among the choices people will understand, communication, being slapped, creation of art get gift is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) being slapped**. A possible conditional statement for this question is:
+
+- If you're very rude while expressing yourself, then you might get slapped by someone.
+
+"
+If you're waiting for traffic for a long time you might be what arriving to work?,"['lenthy', 'have time to think', 'time consuming', 'being late', 'boredom']","Questions: If you're waiting for traffic for a long time you might be what arriving to work?, Choices: (A) lenthy, (B) have time to think, (C) time consuming, (D) being late, (E) boredom. Given the question 'If you're waiting for traffic for a long time you might be what arriving to work?', which among the choices lenthy, have time to think, time consuming, being late boredom is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) being late**. A possible conditional statement for this question is:
+
+- If you're waiting for traffic for a long time, then you might be late arriving to work.
+
+"
+If you're watching a horror film what are you likely to experience?,"['laughter', 'feisty', 'insight', 'being entertained', 'fear']","Questions: If you're watching a horror film what are you likely to experience?, Choices: (A) laughter, (B) feisty, (C) insight, (D) being entertained, (E) fear. Given the question 'If you're watching a horror film what are you likely to experience?', which among the choices laughter, feisty, insight, being entertained fear is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) fear**. A possible conditional statement for this question is:
+
+- If you're watching a horror film, then you're likely to experience fear.
+
+"
+If you've already received your drinks what is a waiter likely going to do next?,"['set table', 'present bill', 'wears black', 'serve food', 'talk']","Questions: If you've already received your drinks what is a waiter likely going to do next?, Choices: (A) set table, (B) present bill, (C) wears black, (D) serve food, (E) talk. Given the question 'If you've already received your drinks what is a waiter likely going to do next?', which among the choices set table, present bill, wears black, serve food talk is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) serve food**. A possible conditional statement for this question is:
+
+- If you've already received your drinks, then the waiter is likely going to serve food next.
+
+"
+If you've been in front of a computer all day and need to have a rest you can do what do relieve strain?,"['sit down', 'closing eyes', 'relax', 'sleep', 'have dreams']","Questions: If you've been in front of a computer all day and need to have a rest you can do what do relieve strain?, Choices: (A) sit down, (B) closing eyes, (C) relax, (D) sleep, (E) have dreams. Given the question 'If you've been in front of a computer all day and need to have a rest you can do what do relieve strain?', which among the choices sit down, closing eyes, relax, sleep have dreams is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) closing eyes**. A possible conditional statement for this question is:
+
+- If you've been in front of a computer all day and need to have a rest, then you can close your eyes to relieve strain.
+
+"
+If you've been standing in queue for a long time you may develop some what?,"['will have to wait', 'daydreaming', 'impatience', 'angry', 'become impatient']","Questions: If you've been standing in queue for a long time you may develop some what?, Choices: (A) will have to wait, (B) daydreaming, (C) impatience, (D) angry, (E) become impatient. Given the question 'If you've been standing in queue for a long time you may develop some what?', which among the choices will have to wait, daydreaming, impatience, angry become impatient is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) impatience**. A possible conditional statement for this question is:
+
+- If you've been standing in queue for a long time, then you may develop some impatience.
+
+"
+If you've had a difficult work day what are you hoping to gain when buying beer?,"['get arrested', 'relaxation', 'losing money', 'pleasure', 'buzzed']","Questions: If you've had a difficult work day what are you hoping to gain when buying beer?, Choices: (A) get arrested, (B) relaxation, (C) losing money, (D) pleasure, (E) buzzed. Given the question 'If you've had a difficult work day what are you hoping to gain when buying beer?', which among the choices get arrested, relaxation, losing money, pleasure buzzed is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) relaxation**. A possible conditional statement for this question is:
+
+- If you've had a difficult work day, then you're hoping to gain some relaxation when buying beer.
+
+"
+If you've taken off your socks and are lying down where are you likely to be?,"['suitcase', 'bureau', 'pet shop', 'sporting goods store', 'bed']","Questions: If you've taken off your socks and are lying down where are you likely to be?, Choices: (A) suitcase, (B) bureau, (C) pet shop, (D) sporting goods store, (E) bed. Given the question 'If you've taken off your socks and are lying down where are you likely to be?', which among the choices suitcase, bureau, pet shop, sporting goods store bed is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) bed**. A possible conditional statement for this question is:
+
+- If you've taken off your socks and are lying down, then you're likely to be in bed.
+
+"
+If you've thrown a rod you've done damage to what?,"['fishing camp', 'hardware store', 'engine', 'your spine', 'sporting goods store']","Questions: If you've thrown a rod you've done damage to what?, Choices: (A) fishing camp, (B) hardware store, (C) engine, (D) your spine, (E) sporting goods store. Given the question 'If you've thrown a rod you've done damage to what?', which among the choices fishing camp, hardware store, engine, your spine sporting goods store is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) engine**. A possible conditional statement for this question is:
+
+- If you've thrown a rod, then you've done damage to your engine."
+If your hair gel stinks it is too what?,"['barbers', 'messy', 'beauty salon', 'perfumery', 'bathroom']","Questions: If your hair gel stinks it is too what?, Choices: (A) barbers, (B) messy, (C) beauty salon, (D) perfumery, (E) bathroom. Given the question 'If your hair gel stinks it is too what?', which among the choices barbers, messy, beauty salon, perfumery bathroom is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) bathroom. The reasoning is as follows:
+
+- If your hair gel stinks, then it is too bathroom.
+- The hypothesis is ""your hair gel stinks"" and the conclusion is ""it is too bathroom"".
+- This means that the condition for your hair gel to be too bathroom is that it stinks.
+- This makes sense because if your hair gel smells bad, it might be because it has been in the bathroom for too long and has been exposed to moisture, bacteria, or other substances that can cause it to spoil or lose its fragrance.
+- The other choices do not make sense as conclusions for the hypothesis. For example, if your hair gel stinks, it does not necessarily mean that it is too barbers, messy, beauty salon, or perfumery.
+
+"
+If your joke is funny you will not experience surprise if someone does what?,"['scare', 'send flowers', 'laugh', 'cries', 'keep secret']","Questions: If your joke is funny you will not experience surprise if someone does what?, Choices: (A) scare, (B) send flowers, (C) laugh, (D) cries, (E) keep secret. Given the question 'If your joke is funny you will not experience surprise if someone does what?', which among the choices scare, send flowers, laugh, cries keep secret is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) laugh. The reasoning is as follows:
+
+- If your joke is funny, then you will not experience surprise if someone laughs.
+- The hypothesis is ""your joke is funny"" and the conclusion is ""you will not experience surprise if someone laughs"".
+- This means that the condition for you to not experience surprise if someone laughs is that your joke is funny.
+- This makes sense because if your joke is funny, you expect people to laugh at it and you are not surprised by their reaction.
+- The other choices do not make sense as conclusions for the hypothesis. For example, if your joke is funny, you might still experience surprise if someone scares you, sends you flowers, cries, or keeps your joke a secret.
+
+"
+If your opponents in a marathon is very fast it is easy to fall what?,"['lightly', 'behind', 'train', 'slowly', 'sitfast']","Questions: If your opponents in a marathon is very fast it is easy to fall what?, Choices: (A) lightly, (B) behind, (C) train, (D) slowly, (E) sitfast. Given the question 'If your opponents in a marathon is very fast it is easy to fall what?', which among the choices lightly, behind, train, slowly sitfast is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) behind. The reasoning is as follows:
+
+- If your opponents in a marathon are very fast, then it is easy to fall behind.
+- The hypothesis is ""your opponents in a marathon are very fast"" and the conclusion is ""it is easy to fall behind"".
+- This means that the condition for you to fall behind easily is that your opponents are very fast.
+- This makes sense because if your opponents are very fast, they can run faster than you and create a gap between you and them, making it hard for you to catch up or overtake them.
+- The other choices do not make sense as conclusions for the hypothesis. For example, if your opponents are very fast, it does not necessarily mean that it is easy to fall lightly, train, slowly, or sitfast"
+If your payroll tax amount is too much you'll get what from the IRS?,"['discount', 'refund', 'income', 'spend', 'credit']","Questions: If your payroll tax amount is too much you'll get what from the IRS?, Choices: (A) discount, (B) refund, (C) income, (D) spend, (E) credit. Given the question 'If your payroll tax amount is too much you'll get what from the IRS?', which among the choices discount, refund, income, spend credit is the correct answer? Explain your reasoning using conditional statements.
+",
+If your resting and your eyes close what may you be doing?,"['laziness', 'feel better', 'laying down', 'relaxation', 'falling asleep']","Questions: If your resting and your eyes close what may you be doing?, Choices: (A) laziness, (B) feel better, (C) laying down, (D) relaxation, (E) falling asleep. Given the question 'If your resting and your eyes close what may you be doing?', which among the choices laziness, feel better, laying down, relaxation falling asleep is the correct answer? Explain your reasoning using conditional statements.
+",
+If your shoes are too tight what will you get on your feet after jogging?,"['exhaustion', 'shortness of breath', 'knee pain', 'blisters', 'lose weight']","Questions: If your shoes are too tight what will you get on your feet after jogging?, Choices: (A) exhaustion, (B) shortness of breath, (C) knee pain, (D) blisters, (E) lose weight. Given the question 'If your shoes are too tight what will you get on your feet after jogging?', which among the choices exhaustion, shortness of breath, knee pain, blisters lose weight is the correct answer? Explain your reasoning using conditional statements.
+",
+If your trouser fly is unfastened what should you do?,"['do up', 'tie up', 'zip up', 'pick up', 'button up']","Questions: If your trouser fly is unfastened what should you do?, Choices: (A) do up, (B) tie up, (C) zip up, (D) pick up, (E) button up. Given the question 'If your trouser fly is unfastened what should you do?', which among the choices do up, tie up, zip up, pick up button up is the correct answer? Explain your reasoning using conditional statements.
+",
+If your watching television and accomplish nothing what have you done?,"['getting fat', 'get fat', 'typing words', 'falling asleep', 'wasted time']","Questions: If your watching television and accomplish nothing what have you done?, Choices: (A) getting fat, (B) get fat, (C) typing words, (D) falling asleep, (E) wasted time. Given the question 'If your watching television and accomplish nothing what have you done?', which among the choices getting fat, get fat, typing words, falling asleep wasted time is the correct answer? Explain your reasoning using conditional statements.
+",
+Illegitimate designer handbags will not have a certificate of what?,"['actions', 'legal', 'authentic', 'logical', 'legitimate']","Questions: Illegitimate designer handbags will not have a certificate of what?, Choices: (A) actions, (B) legal, (C) authentic, (D) logical, (E) legitimate. Given the question 'Illegitimate designer handbags will not have a certificate of what?', which among the choices actions, legal, authentic, logical legitimate is the correct answer? Explain your reasoning using conditional statements.
+",
+In American it is possible for someone to grow up poor and end up what?,"['rich', 'good', 'being rich', 'adequate', 'famous']","Questions: In American it is possible for someone to grow up poor and end up what?, Choices: (A) rich, (B) good, (C) being rich, (D) adequate, (E) famous. Given the question 'In American it is possible for someone to grow up poor and end up what?', which among the choices rich, good, being rich, adequate famous is the correct answer? Explain your reasoning using conditional statements.
+",.
+In Canada you'll hear most people doing what to converse?,"['speak in tongues', 'water plants', 'talk to each other', 'raise children', 'speaking english']","Questions: In Canada you'll hear most people doing what to converse?, Choices: (A) speak in tongues, (B) water plants, (C) talk to each other, (D) raise children, (E) speaking english. Given the question 'In Canada you'll hear most people doing what to converse?', which among the choices speak in tongues, water plants, talk to each other, raise children speaking english is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) speaking english**. My reasoning is as follows: If most people in Canada speak in tongues, water plants, talk to each other, or raise children to converse, then they would not be able to communicate effectively with each other or with people from other countries. However, if most people in Canada speak English to converse, then they would be able to communicate easily with each other and with people from other countries. Therefore, speaking English is the most reasonable choice for conversing in Canada.
+
+"
+In December how can you throw water at your friends?,"['tsunami', 'puddle', 'snowball', 'glass', 'backpack']","Questions: In December how can you throw water at your friends?, Choices: (A) tsunami, (B) puddle, (C) snowball, (D) glass, (E) backpack. Given the question 'In December how can you throw water at your friends?', which among the choices tsunami, puddle, snowball, glass backpack is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) snowball**. My reasoning is as follows: If you throw a tsunami, a puddle, a glass, or a backpack at your friends, then you would either cause a lot of damage, make a mess, or hurt your friends. However, if you throw a snowball at your friends, then you would have a fun and harmless way of playing with water in December. Therefore, snowball is the most reasonable choice for throwing water at your friends in December.
+
+"
+In Japanese feudal times leaders would despise and punish people who they believe had no what?,"['adore', 'adore', 'honor', 'cherish', 'admire']","Questions: In Japanese feudal times leaders would despise and punish people who they believe had no what?, Choices: (A) adore, (B) adore, (C) honor, (D) cherish, (E) admire. Given the question 'In Japanese feudal times leaders would despise and punish people who they believe had no what?', which among the choices adore, adore, honor, cherish admire is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(C) honor**. My reasoning is as follows: If leaders in Japanese feudal times despised and punished people who they believe had no adore, adore, cherish, or admire, then they would be very unreasonable and cruel. However, if leaders in Japanese feudal times despised and punished people who they believe had no honor, then they would be following the code of bushido, which was the ethical system of the samurai warriors. Therefore, honor is the most reasonable choice for what leaders in Japanese feudal times would value.
+
+"
+In Texas what is likely to happen after stabbing someone to death?,"['killing', 'mess', 'enlightenment', 'capital punishment', 'imprisonment']","Questions: In Texas what is likely to happen after stabbing someone to death?, Choices: (A) killing, (B) mess, (C) enlightenment, (D) capital punishment, (E) imprisonment. Given the question 'In Texas what is likely to happen after stabbing someone to death?', which among the choices killing, mess, enlightenment, capital punishment imprisonment is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) capital punishment**. My reasoning is as follows: If you stab someone to death in Texas, then you would be committing a murder, which is a serious crime. If you are caught and convicted of murder in Texas, then you would likely face capital punishment, which is the legal execution of a person by the state. Therefore, capital punishment is the most reasonable choice for what is likely to happen after stabbing someone to death in Texas.
+
+"
+In a company a chief oversees what people?,"['aquarium', 'peon', 'indian', 'employee', 'follower']","Questions: In a company a chief oversees what people?, Choices: (A) aquarium, (B) peon, (C) indian, (D) employee, (E) follower. Given the question 'In a company a chief oversees what people?', which among the choices aquarium, peon, indian, employee follower is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) employee**. My reasoning is as follows: If a chief in a company oversees an aquarium, a peon, an indian, or a follower, then they would not be doing their job properly. However, if a chief in a company oversees an employee, then they would be managing and supervising the work of their subordinate. Therefore, employee is the most reasonable choice for what a chief in a company oversees.
+
+"
+In a conversation what is the first thing you must do in order to listen?,"['hear things', 'stop speaking', 'look at speaker', ""you'll learn"", 'concentrate on sounds']","Questions: In a conversation what is the first thing you must do in order to listen?, Choices: (A) hear things, (B) stop speaking, (C) look at speaker, (D) you'll learn, (E) concentrate on sounds. Given the question 'In a conversation what is the first thing you must do in order to listen?', which among the choices hear things, stop speaking, look at speaker, you'll learn concentrate on sounds is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) stop speaking**. My reasoning is as follows: If you want to listen to someone in a conversation, then you must first stop speaking, because you cannot listen and speak at the same time. If you hear things, look at the speaker, you'll learn, or concentrate on sounds, then you may or may not be listening, depending on whether you are paying attention to what the speaker is saying. Therefore, stop speaking is the most reasonable choice for what you must do in order to listen in a conversation.
+
+"
+In a court what group passes a sentence?,"['sure', 'arrive at conviction', 'on jury', 'judgemental', 'mom']","Questions: In a court what group passes a sentence?, Choices: (A) sure, (B) arrive at conviction, (C) on jury, (D) judgemental, (E) mom. Given the question 'In a court what group passes a sentence?', which among the choices sure, arrive at conviction, on jury, judgemental mom is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) on jury**. My reasoning is as follows: If you are sure, arrive at conviction, judgemental, or mom in a court, then you are not the group that passes a sentence, but rather an individual or a state of mind. However, if you are on jury in a court, then you are part of the group of citizens that decides the verdict and the sentence of a criminal case. Therefore, on jury is the most reasonable choice for what group passes a sentence in a court.
+
+"
+In a lot of Asian restaurants food is eaten in a?,"['fork', 'zoo', 'spoon', 'bowl', 'kitchen']","Questions: In a lot of Asian restaurants food is eaten in a?, Choices: (A) fork, (B) zoo, (C) spoon, (D) bowl, (E) kitchen. Given the question 'In a lot of Asian restaurants food is eaten in a?', which among the choices fork, zoo, spoon, bowl kitchen is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) bowl**. My reasoning is as follows: If you eat food in a fork, a zoo, a spoon, or a kitchen in a lot of Asian restaurants, then you would either be using a utensil, a place, or a room, which are not suitable for holding food. However, if you eat food in a bowl in a lot of Asian restaurants, then you would be using a container that can hold food such as rice, noodles, soup, or curry. Therefore, bowl is the most reasonable choice for what you eat food in a lot of Asian restaurants.
+
+"
+In a predicament an animal might choose flight or what?,"['leave home', 'hunt for food', 'smell prey', 'feel pain', 'fight for life']","Questions: In a predicament an animal might choose flight or what?, Choices: (A) leave home, (B) hunt for food, (C) smell prey, (D) feel pain, (E) fight for life. Given the question 'In a predicament an animal might choose flight or what?', which among the choices leave home, hunt for food, smell prey, feel pain fight for life is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) fight for life**. My reasoning is as follows: If an animal is in a predicament, such as being attacked by a predator, then it has two options: flight or fight. If an animal chooses flight, then it tries to escape from the danger. If an animal chooses fight, then it tries to defend itself from the danger. If an animal chooses to leave home, hunt for food, smell prey, or feel pain, then it is not choosing either flight or fight, but rather doing something else. Therefore, fight for life is the most reasonable choice for what an animal might choose in a predicament.
+
+"
+In a religious sense where would a lemur be found?,"['heaven', 'cage', 'russia', 'field', 'tree']","Questions: In a religious sense where would a lemur be found?, Choices: (A) heaven, (B) cage, (C) russia, (D) field, (E) tree. Given the question 'In a religious sense where would a lemur be found?', which among the choices heaven, cage, russia, field tree is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(E) tree**. My reasoning is as follows: If a lemur is found in heaven, a cage, russia, or a field in a religious sense, then it would either be dead, captive, out of place, or exposed. However, if a lemur is found in a tree in a religious sense, then it would be living in its natural habitat, which is the forest. Lemurs are considered sacred animals by some people in Madagascar, where they are endemic. Therefore, tree is the most reasonable choice for where a lemur would be found in a religious sense."
+In a volatile social climate people will tend to what?,"['hate each other', 'welcome change', 'make choice', 'adapt', 'talk to each other']","Questions: In a volatile social climate people will tend to what?, Choices: (A) hate each other, (B) welcome change, (C) make choice, (D) adapt, (E) talk to each other. Given the question 'In a volatile social climate people will tend to what?', which among the choices hate each other, welcome change, make choice, adapt talk to each other is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) adapt. A conditional statement that explains the reasoning is: **If** the social climate is volatile, **then** people will tend to adapt to the changing circumstances.
+"
+In any city you usually see a high rise where?,"['residential area', 'san francisco', 'downtown', 'suburbs', 'detroit']","Questions: In any city you usually see a high rise where?, Choices: (A) residential area, (B) san francisco, (C) downtown, (D) suburbs, (E) detroit. Given the question 'In any city you usually see a high rise where?', which among the choices residential area, san francisco, downtown, suburbs detroit is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) downtown. A conditional statement that explains the reasoning is: **If** a city has a high rise, **then** it is usually located in the downtown area where there is more demand for office and commercial space.
+"
+In hat city do the most U.S. politicians work?,"['parliament', 'government', 'washington d.c', 'departaments', 'run for president']","Questions: In hat city do the most U.S. politicians work?, Choices: (A) parliament, (B) government, (C) washington d.c, (D) departaments, (E) run for president. Given the question 'In hat city do the most U.S. politicians work?', which among the choices parliament, government, washington d.c, departaments run for president is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) washington d.c. A conditional statement that explains the reasoning is: **If** a politician works in the U.S., **then** they most likely work in Washington D.C., where the federal government and the Congress are based.
+"
+In many species of animal the whats are the dominate ones?,"['tall', 'attack', 'mammals', 'reproduce asexually', 'males']","Questions: In many species of animal the whats are the dominate ones?, Choices: (A) tall, (B) attack, (C) mammals, (D) reproduce asexually, (E) males. Given the question 'In many species of animal the whats are the dominate ones?', which among the choices tall, attack, mammals, reproduce asexually males is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) males. A conditional statement that explains the reasoning is: **If** an animal species is dominated by one sex, **then** it is usually the males, who often compete for mates and resources.
+"
+In movies car chases usually wreck a what stand?,"['construct', 'produce', 'creation', 'make', 'build']","Questions: In movies car chases usually wreck a what stand?, Choices: (A) construct, (B) produce, (C) creation, (D) make, (E) build. Given the question 'In movies car chases usually wreck a what stand?', which among the choices construct, produce, creation, make build is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) produce. A conditional statement that explains the reasoning is: **If** a car chase wrecks a stand in a movie, **then** it is often a produce stand, which creates a dramatic and messy effect when the fruits and vegetables are scattered.
+"
+In order to ensure accuracey when you write a term paper what must you do?,"['do research', 'have knowledge', 'go to library', 'eat', 'get ideas']","Questions: In order to ensure accuracey when you write a term paper what must you do?, Choices: (A) do research, (B) have knowledge, (C) go to library, (D) eat, (E) get ideas. Given the question 'In order to ensure accuracey when you write a term paper what must you do?', which among the choices do research, have knowledge, go to library, eat get ideas is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) do research. A conditional statement that explains the reasoning is: **If** you want to ensure accuracy when you write a term paper, **then** you must do research to support your arguments and cite your sources.
+"
+In order to fight inflation you should be doing this?,"['dissatisfaction', 'saving money', 'not very much', 'invest', 'higher interest rates']","Questions: In order to fight inflation you should be doing this?, Choices: (A) dissatisfaction, (B) saving money, (C) not very much, (D) invest, (E) higher interest rates. Given the question 'In order to fight inflation you should be doing this?', which among the choices dissatisfaction, saving money, not very much, invest higher interest rates is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) invest. A conditional statement that explains the reasoning is: **If** you want to fight inflation, **then** you should invest your money in assets that appreciate in value or generate income, such as stocks, bonds, or real estate.
+"
+In order to give birth to a child you have to do this with a man?,"['have sex', 'eat vegetables', 'go to school', 'become adult', 'use birth control']","Questions: In order to give birth to a child you have to do this with a man?, Choices: (A) have sex, (B) eat vegetables, (C) go to school, (D) become adult, (E) use birth control. Given the question 'In order to give birth to a child you have to do this with a man?', which among the choices have sex, eat vegetables, go to school, become adult use birth control is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) have sex. A conditional statement that explains the reasoning is: **If** you want to give birth to a child, **then** you have to have sex with a man, who provides the sperm that fertilizes the eg"
+In order to pass a class you will need to finish all of what which are assignments to complete away from school?,"['sleep', 'graduate school', 'study hard', 'smart', 'homework']","Questions: In order to pass a class you will need to finish all of what which are assignments to complete away from school?, Choices: (A) sleep, (B) graduate school, (C) study hard, (D) smart, (E) homework. Given the question 'In order to pass a class you will need to finish all of what which are assignments to complete away from school?', which among the choices sleep, graduate school, study hard, smart homework is the correct answer? Explain your reasoning using conditional statements.
+",
+In order to read a book what must you do to it?,"['open up', 'learn to read', 'choose one', 'get comfortable', 'have time']","Questions: In order to read a book what must you do to it?, Choices: (A) open up, (B) learn to read, (C) choose one, (D) get comfortable, (E) have time. Given the question 'In order to read a book what must you do to it?', which among the choices open up, learn to read, choose one, get comfortable have time is the correct answer? Explain your reasoning using conditional statements.
+",g
+In order to see a story on the big screen what must you do?,"['go to movies', 'visualize', 'reading', 'open book', 'sketching a picture']","Questions: In order to see a story on the big screen what must you do?, Choices: (A) go to movies, (B) visualize, (C) reading, (D) open book, (E) sketching a picture. Given the question 'In order to see a story on the big screen what must you do?', which among the choices go to movies, visualize, reading, open book sketching a picture is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) go to movies. A conditional statement is a statement that expresses a logical relationship between two or more propositions. A conditional statement has the form ""if P, then Q"", where P is the antecedent and Q is the consequent. A possible conditional statement for this question is: **If you want to see a story on the big screen, then you must go to movies.**
+
+"
+In order to sneeze one must do what?,"['inhale', 'fart', 'close eyes', 'spray', 'blow nose']","Questions: In order to sneeze one must do what?, Choices: (A) inhale, (B) fart, (C) close eyes, (D) spray, (E) blow nose. Given the question 'In order to sneeze one must do what?', which among the choices inhale, fart, close eyes, spray blow nose is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) inhale. A possible conditional statement for this question is: **If you want to sneeze, then you must inhale.** Sneezing is a reflex that occurs when the nasal passages are irritated by dust, pollen, or other substances. Inhaling is the first step of the sneezing process, as it draws air into the lungs and stimulates the nerves in the nose.
+
+"
+In order to wrestle better you lift weights to?,"['have strength', 'strong', 'take lessons', 'fo brushing', 'get naked']","Questions: In order to wrestle better you lift weights to?, Choices: (A) have strength, (B) strong, (C) take lessons, (D) fo brushing, (E) get naked. Given the question 'In order to wrestle better you lift weights to?', which among the choices have strength, strong, take lessons, fo brushing get naked is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) have strength. A possible conditional statement for this question is: **If you want to wrestle better, then you must have strength.** Wrestling is a sport that involves grappling, throwing, and pinning opponents using physical force and technique. Having strength is an essential attribute for wrestlers, as it allows them to overpower and outmaneuver their opponents.
+
+"
+In smaller whats are there less needs a bus stop?,"['urban area', 'busy', 'airport', 'boarding bus', 'towns']","Questions: In smaller whats are there less needs a bus stop?, Choices: (A) urban area, (B) busy, (C) airport, (D) boarding bus, (E) towns. Given the question 'In smaller whats are there less needs a bus stop?', which among the choices urban area, busy, airport, boarding bus towns is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) towns. A possible conditional statement for this question is: **If the area is smaller, then there is less need for a bus stop.** A bus stop is a designated place where buses stop to pick up and drop off passengers. In smaller areas, such as towns, there may be less demand for public transportation, as people can walk, bike, or drive to their destinations more easily.
+
+"
+In the 1940's what happened when a radio show decided to pretend the Earth was invaded by Martians?,"['eat cake', 'laughter', 'daydreams', 'religion', 'people believe']","Questions: In the 1940's what happened when a radio show decided to pretend the Earth was invaded by Martians?, Choices: (A) eat cake, (B) laughter, (C) daydreams, (D) religion, (E) people believe. Given the question 'In the 1940's what happened when a radio show decided to pretend the Earth was invaded by Martians?', which among the choices eat cake, laughter, daydreams, religion people believe is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) people believe. A possible conditional statement for this question is: **If a radio show pretends that the Earth is invaded by Martians, then people may believe it.** This question refers to the famous broadcast of ""The War of the Worlds"" by Orson Welles in 1938, which caused panic among some listeners who thought it was a real news report. People may believe what they hear on the radio, especially if it sounds realistic and authoritative.
+
+"
+In the Roman Empire a person who was not of noble birth was called a what?,"['inferior', 'plebeian', 'priest', 'common', 'ignoble']","Questions: In the Roman Empire a person who was not of noble birth was called a what?, Choices: (A) inferior, (B) plebeian, (C) priest, (D) common, (E) ignoble. Given the question 'In the Roman Empire a person who was not of noble birth was called a what?', which among the choices inferior, plebeian, priest, common ignoble is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) plebeian. A possible conditional statement for this question is: **If a person is not of noble birth in the Roman Empire, then they are a plebeian.** A plebeian was a commoner in ancient Rome, who had fewer rights and privileges than the patricians, who were the aristocratic class. Plebeians made up the majority of the population and were involved in various occupations, such as farmers, artisans, and soldiers.
+
+"
+In the middle of the day what will someone do because of being hungry?,"['cook dinner', 'make bread', 'eat in restaurant', 'have lunch', 'make bread']","Questions: In the middle of the day what will someone do because of being hungry?, Choices: (A) cook dinner, (B) make bread, (C) eat in restaurant, (D) have lunch, (E) make bread. Given the question 'In the middle of the day what will someone do because of being hungry?', which among the choices cook dinner, make bread, eat in restaurant, have lunch make bread is the correct answer? Explain your reasoning using conditional statements.
+",
+In the modern days we give what kind of classification to buildings to protect them from being town down?,"['classical', 'old fashioned', 'vintage', 'historical', 'antique']","Questions: In the modern days we give what kind of classification to buildings to protect them from being town down?, Choices: (A) classical, (B) old fashioned, (C) vintage, (D) historical, (E) antique. Given the question 'In the modern days we give what kind of classification to buildings to protect them from being town down?', which among the choices classical, old fashioned, vintage, historical antique is the correct answer? Explain your reasoning using conditional statements.
+",
+In using computers where one thoroughly enjoys himself what may ensue?,"['headache', 'addiction', 'sitting', 'carpal tunnel syndrome', 'editing']","Questions: In using computers where one thoroughly enjoys himself what may ensue?, Choices: (A) headache, (B) addiction, (C) sitting, (D) carpal tunnel syndrome, (E) editing. Given the question 'In using computers where one thoroughly enjoys himself what may ensue?', which among the choices headache, addiction, sitting, carpal tunnel syndrome editing is the correct answer? Explain your reasoning using conditional statements.
+","938, which caused panic among some listeners who thought it was a real news report. People may believe what they hear on the radio, especially if it sounds realistic and authoritative.
+
+6. The correct answer is (B) plebeian. A possible conditional statement for this question is: **If a person is not of noble birth in the Roman Empire, then they are a plebeian.** A plebeian was a commoner in ancient Rome, who had fewer rights and privileges than the patricians, who were the aristocratic class. Plebeians made up the majority of the population and were involved in various occupations, such as farmers, artisans, and soldiers.
+
+7. The correct answer is (D) have lunch. A possible conditional statement for this question is: **If someone is hungry in the middle of the day, then they may have lunch.** Lunch is a meal that is typically eaten around noon or early afternoon. It is usually the second meal of the day, after breakfast and before dinner. Lunch may consist of various foods, such as sandwiches, salads, soups, or leftovers.
+
+8. The correct answer is (D) historical. A possible conditional statement for this question is: **If a building is old and significant in the modern days, then it may be classified as historical.** A historical building is a building that has historical, cultural, or architectural value and is protected from being demolished or altered. Historical buildings may represent different periods, styles, or events in history and may serve as landmarks, museums, or monuments.
+
+9. The correct answer is (B) addiction. A possible conditional statement for this question is: **If someone uses computers excessively and enjoys them, then they may develop an addiction.** An addiction is a compulsive and harmful behavior that interferes with normal functioning and well-being. Computers can be addictive, as they provide entertainment, information, and social interaction. However, excessive computer use can cause problems, such as isolation, neglect, and health issues.
+
+"
+In what area is the use of an air conditioner more common?,"['shower', 'south', 'house', 'home', 'office building']","Questions: In what area is the use of an air conditioner more common?, Choices: (A) shower, (B) south, (C) house, (D) home, (E) office building. Given the question 'In what area is the use of an air conditioner more common?', which among the choices shower, south, house, home office building is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) office building. A possible conditional statement for this question is: **If an area is hot and humid, then the use of an air conditioner may be more common.** An air conditioner is a device that cools and dehumidifies the air in a room or a building. Air conditioners are more common in areas that have high temperatures and humidity, such as the south. Office buildings may use air conditioners to provide a comfortable and productive work environment for their employees."
+In what area will excavation for new roads will cause traffic jams?,"['egypt', 'city', 'open sea', 'desert', 'quarry']","Questions: In what area will excavation for new roads will cause traffic jams?, Choices: (A) egypt, (B) city, (C) open sea, (D) desert, (E) quarry. Given the question 'In what area will excavation for new roads will cause traffic jams?', which among the choices egypt, city, open sea, desert quarry is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) city. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If an area is densely populated and has many vehicles, then excavation for new roads will cause traffic jams.** A city is an area that is densely populated and has many vehicles, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a city. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what environment would you expect to find a shark?,"['sea world', 'deep ocean', 'maritime museum', 'pet store', 'great barrier reef']","Questions: In what environment would you expect to find a shark?, Choices: (A) sea world, (B) deep ocean, (C) maritime museum, (D) pet store, (E) great barrier reef. Given the question 'In what environment would you expect to find a shark?', which among the choices sea world, deep ocean, maritime museum, pet store great barrier reef is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) great barrier reef. A possible conditional statement for this question is: **If an environment has warm, shallow, and clear water with abundant marine life, then you would expect to find a shark there.** The great barrier reef is an environment that has warm, shallow, and clear water with abundant marine life, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for the great barrier reef. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what geological feature will you find fungus growing?,"['shower stall', 'toenails', 'basement', 'forrest', 'cave']","Questions: In what geological feature will you find fungus growing?, Choices: (A) shower stall, (B) toenails, (C) basement, (D) forrest, (E) cave. Given the question 'In what geological feature will you find fungus growing?', which among the choices shower stall, toenails, basement, forrest cave is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) cave. A possible conditional statement for this question is: **If a geological feature is dark, damp, and has organic matter, then you will find fungus growing there.** A cave is a geological feature that is dark, damp, and has organic matter, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a cave. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what glove-shaped state can you get something to eat at a delicatessen?,"['michigan', 'bar', 'large city', 'mall', 'shop']","Questions: In what glove-shaped state can you get something to eat at a delicatessen?, Choices: (A) michigan, (B) bar, (C) large city, (D) mall, (E) shop. Given the question 'In what glove-shaped state can you get something to eat at a delicatessen?', which among the choices michigan, bar, large city, mall shop is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) michigan. A possible conditional statement for this question is: **If a state is shaped like a glove and has a large Jewish population, then you can get something to eat at a delicatessen there.** Michigan is a state that is shaped like a glove and has a large Jewish population, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for Michigan. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what location would a blowfish be most happy?,"['palm tree', 'books', 'fish market', 'coral reef', 'aquarium']","Questions: In what location would a blowfish be most happy?, Choices: (A) palm tree, (B) books, (C) fish market, (D) coral reef, (E) aquarium. Given the question 'In what location would a blowfish be most happy?', which among the choices palm tree, books, fish market, coral reef aquarium is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) coral reef. A possible conditional statement for this question is: **If a location has diverse and colorful fish, plants, and corals, then a blowfish would be most happy there.** A coral reef is a location that has diverse and colorful fish, plants, and corals, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a coral reef. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what place could you find air that has been breathed by many people recently?,"['charming', 'space shuttle', 'house', 'train station', 'surface of earth']","Questions: In what place could you find air that has been breathed by many people recently?, Choices: (A) charming, (B) space shuttle, (C) house, (D) train station, (E) surface of earth. Given the question 'In what place could you find air that has been breathed by many people recently?', which among the choices charming, space shuttle, house, train station surface of earth is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) train station. A possible conditional statement for this question is: **If a place is crowded, enclosed, and has poor ventilation, then you could find air that has been breathed by many people recently there.** A train station is a place that is crowded, enclosed, and has poor ventilation, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a train station. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what place could you find air that has been breathed by only a few people recently?,"['train station', 'house', 'cupboard', 'cricket stadium', 'surface of earth']","Questions: In what place could you find air that has been breathed by only a few people recently?, Choices: (A) train station, (B) house, (C) cupboard, (D) cricket stadium, (E) surface of earth. Given the question 'In what place could you find air that has been breathed by only a few people recently?', which among the choices train station, house, cupboard, cricket stadium surface of earth is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) cupboard. A possible conditional statement for this question is: **If a place is small, hidden, and rarely opened, then you could find air that has been breathed by only a few people recently there.** A cupboard is a place that is small, hidden, and rarely opened, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a cupboard. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what region is a centavo uses?,"['colon', 'austral', 'cordoba', 'indian', 'mexican peso']","Questions: In what region is a centavo uses?, Choices: (A) colon, (B) austral, (C) cordoba, (D) indian, (E) mexican peso. Given the question 'In what region is a centavo uses?', which among the choices colon, austral, cordoba, indian mexican peso is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) mexican peso. A possible conditional statement for this question is: **If a region uses a currency that is subdivided into 100 centavos, then a centavo is used there.** The mexican peso is a currency that is subdivided into 100 centavos, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for the mexican peso. The other choices do not satisfy the hypothesis, so they are not correct.
+
+"
+In what room would you expect to find the sugar?,"['cupboard', 'container', 'kitchen', 'bedroom', ""neighbor's house""]","Questions: In what room would you expect to find the sugar?, Choices: (A) cupboard, (B) container, (C) kitchen, (D) bedroom, (E) neighbor's house. Given the question 'In what room would you expect to find the sugar?', which among the choices cupboard, container, kitchen, bedroom neighbor's house is the correct answer? Explain your reasoning using conditional statements.
+",
+In what society did slaves outnumber the citizens?,"['poor countries', 'ancient rome', 'plantation', 'dungeon', 'canada']","Questions: In what society did slaves outnumber the citizens?, Choices: (A) poor countries, (B) ancient rome, (C) plantation, (D) dungeon, (E) canada. Given the question 'In what society did slaves outnumber the citizens?', which among the choices poor countries, ancient rome, plantation, dungeon canada is the correct answer? Explain your reasoning using conditional statements.
+","100 centavos, then a centavo is used there.** The mexican peso is a currency that is subdivided into 100 centavos, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for the mexican peso. The other choices do not satisfy the hypothesis, so they are not correct.
+
+9. The correct answer is (C) kitchen. A possible conditional statement for this question is: **If a room has appliances, utensils, and ingredients for cooking, then you would expect to find the sugar there.** A kitchen is a room that has appliances, utensils, and ingredients for cooking, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for a kitchen. The other choices do not satisfy the hypothesis, so they are not correct.
+
+10. The correct answer is (B) ancient rome. A possible conditional statement for this question is: **If a society has a large empire, a powerful army, and a system of slavery, then slaves outnumber the citizens there.** Ancient Rome was a society that had a large empire, a powerful army, and a system of slavery, so it satisfies the hypothesis of the conditional statement. Therefore, the conclusion is also true for ancient Rome. The other choices do not satisfy the hypothesis, so they are not correct.
+
+I hope this helps you understand how to use conditional statements to answer questions. 😊"
+In what sort of container should you keep your ficus?,"['refigerator', 'screened porch', 'clay pot', 'shady places', 'arboretum']","Questions: In what sort of container should you keep your ficus?, Choices: (A) refigerator, (B) screened porch, (C) clay pot, (D) shady places, (E) arboretum. Given the question 'In what sort of container should you keep your ficus?', which among the choices refigerator, screened porch, clay pot, shady places arboretum is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) clay pot. A conditional statement is a statement that can be written in the form ""if p, then q"", where p and q are propositions. A possible conditional statement for this question is: ""If you want to keep your ficus healthy, then you should keep it in a clay pot."" This statement is true because clay pots provide good drainage and aeration for the roots of the ficus, which are essential for its growth and survival.
+
+"
+In what sort of region would you expect to find a large number of apartment buildings?,"['suburbs', 'urban area', 'urban environment', 'indiana', 'housing unit']","Questions: In what sort of region would you expect to find a large number of apartment buildings?, Choices: (A) suburbs, (B) urban area, (C) urban environment, (D) indiana, (E) housing unit. Given the question 'In what sort of region would you expect to find a large number of apartment buildings?', which among the choices suburbs, urban area, urban environment, indiana housing unit is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) urban area. A conditional statement for this question is: ""If you expect to find a large number of apartment buildings, then you are in an urban area."" This statement is true because urban areas are densely populated and have limited space for housing, which leads to the construction of apartment buildings as a common form of residence.
+
+"
+In what state could the steakhouses offer fresh-caught lobster?,"['texas', 'michigan', 'kansas city', 'maine', 'ohio']","Questions: In what state could the steakhouses offer fresh-caught lobster?, Choices: (A) texas, (B) michigan, (C) kansas city, (D) maine, (E) ohio. Given the question 'In what state could the steakhouses offer fresh-caught lobster?', which among the choices texas, michigan, kansas city, maine ohio is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) maine. A conditional statement for this question is: ""If the steakhouses offer fresh-caught lobster, then you are in Maine."" This statement is true because Maine is the largest producer of lobster in the United States and has a long tradition of serving lobster as a delicacy.
+
+"
+In what state would you find the Shenandoah Valley?,"['west virginia', 'mountainous region', 'montana', 'continent', 'earth']","Questions: In what state would you find the Shenandoah Valley?, Choices: (A) west virginia, (B) mountainous region, (C) montana, (D) continent, (E) earth. Given the question 'In what state would you find the Shenandoah Valley?', which among the choices west virginia, mountainous region, montana, continent earth is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) west virginia. A conditional statement for this question is: ""If you find the Shenandoah Valley, then you are in West Virginia."" This statement is true because the Shenandoah Valley is a geographic region that lies within the borders of West Virginia and Virginia, and is known for its scenic beauty and historical significance.
+
+"
+In what western sate might one find a bald eagle?,"['captivity', 'colorado', 'zoo', 'canada', 'in washington']","Questions: In what western sate might one find a bald eagle?, Choices: (A) captivity, (B) colorado, (C) zoo, (D) canada, (E) in washington. Given the question 'In what western sate might one find a bald eagle?', which among the choices captivity, colorado, zoo, canada in washington is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) in washington. A conditional statement for this question is: ""If you find a bald eagle, then you are in Washington."" This statement is true because Washington is home to the largest population of bald eagles in the contiguous United States, and has designated the bald eagle as its official state bird.
+
+"
+In what would you find gasoline in the water?,"['gas station', 'refineries', 'drinking glass', 'power mower', 'boat']","Questions: In what would you find gasoline in the water?, Choices: (A) gas station, (B) refineries, (C) drinking glass, (D) power mower, (E) boat. Given the question 'In what would you find gasoline in the water?', which among the choices gas station, refineries, drinking glass, power mower boat is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) boat. A conditional statement for this question is: ""If you find gasoline in the water, then you are in a boat."" This statement is true because boats use gasoline as fuel and may leak or spill some of it into the water, which can cause environmental damage and fire hazards.
+
+"
+In what would you hear a viola along with three other instruments?,"['string quartet', 'string quintent', 'symphony', 'orchestra', 'viola case']","Questions: In what would you hear a viola along with three other instruments?, Choices: (A) string quartet, (B) string quintent, (C) symphony, (D) orchestra, (E) viola case. Given the question 'In what would you hear a viola along with three other instruments?', which among the choices string quartet, string quintent, symphony, orchestra viola case is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) string quartet. A conditional statement for this question is: ""If you hear a viola along with three other instruments, then you are listening to a string quartet."" This statement is true because a string quartet is a musical ensemble that consists of four string instruments: two violins, a viola, and a cello.
+
+"
+Indian restaurants can be found in many of these throughout the world. What are they?,"['more sophisticated town', 'seattle', 'san francisco', 'curry', 'large city']","Questions: Indian restaurants can be found in many of these throughout the world. What are they?, Choices: (A) more sophisticated town, (B) seattle, (C) san francisco, (D) curry, (E) large city. Given the question 'Indian restaurants can be found in many of these throughout the world. What are they?', which among the choices more sophisticated town, seattle, san francisco, curry large city is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) large city. A conditional statement for this question is: ""If you find an Indian restaurant, then you are in a large city."" This statement is true because Indian cuisine is popular and diverse, and can be found in many large cities around the world, especially those with a significant Indian diaspora.
+
+"
+Indoor cats versus outdoor tend to what longer?,"['walk on two legs', 'meow', 'live many years', 'cast shadow', 'see king']","Questions: Indoor cats versus outdoor tend to what longer?, Choices: (A) walk on two legs, (B) meow, (C) live many years, (D) cast shadow, (E) see king. Given the question 'Indoor cats versus outdoor tend to what longer?', which among the choices walk on two legs, meow, live many years, cast shadow see king is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) live many years. A conditional statement for this question is: ""If you are an indoor cat, then you tend to live many years."" This statement is true because indoor cats are protected from predators, diseases, accidents, and other hazards that outdoor cats face, and therefore have a longer life expectancy.
+
+"
+Inside what structure do you normally take a bath?,"['room that is upstairs', 'own home', 'hotel room', 'house', 'found in house']","Questions: Inside what structure do you normally take a bath?, Choices: (A) room that is upstairs, (B) own home, (C) hotel room, (D) house, (E) found in house. Given the question 'Inside what structure do you normally take a bath?', which among the choices room that is upstairs, own home, hotel room, house found in house is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) house. A conditional statement for this question is: ""If you normally take a bath, then you are in a house."" This statement is true because houses usually have bathtubs, which are large containers filled with water that allow people to immerse themselves and wash their bodies. Other structures, such as apartments, hotels, or offices, may not have bathtubs, and may only have showers, which are devices that spray water on the body. "
+Inside what would a listener most likely hear a new student trying a clarinet?,"['clarinet case', 'jazz band', 'spongebob', 'music store', 'orchestra']","Questions: Inside what would a listener most likely hear a new student trying a clarinet?, Choices: (A) clarinet case, (B) jazz band, (C) spongebob, (D) music store, (E) orchestra. Given the question 'Inside what would a listener most likely hear a new student trying a clarinet?', which among the choices clarinet case, jazz band, spongebob, music store orchestra is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) music store. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If a listener is inside a music store, then they are most likely to hear a new student trying a clarinet.**
+
+"
+Is has been speculated that a aliens could be communicating by doing this?,"['effort', 'farting', 'thinking', 'laugh', 'medium']","Questions: Is has been speculated that a aliens could be communicating by doing this?, Choices: (A) effort, (B) farting, (C) thinking, (D) laugh, (E) medium. Given the question 'Is has been speculated that a aliens could be communicating by doing this?', which among the choices effort, farting, thinking, laugh medium is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) farting. A possible conditional statement for this question is: **If aliens are communicating by farting, then they are using methane as a medium.** This is based on the speculation that some alien life forms could use methane as a way of sending signals, as suggested by some scientists.
+
+"
+Is there a way for people going into trance to see things that do not exist?,"['meditate', 'medicated', 'confusion', 'epilepsy', 'hallucination']","Questions: Is there a way for people going into trance to see things that do not exist?, Choices: (A) meditate, (B) medicated, (C) confusion, (D) epilepsy, (E) hallucination. Given the question 'Is there a way for people going into trance to see things that do not exist?', which among the choices meditate, medicated, confusion, epilepsy hallucination is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) hallucination. A possible conditional statement for this question is: **If people are going into trance and seeing things that do not exist, then they are experiencing hallucinations.** A hallucination is a perception of something that is not present in reality, and it can be induced by various factors, such as drugs, hypnosis, or mental disorders.
+
+"
+It is a well known adage that you should not mix business with what?,"['fun', 'nonprofit', 'art', 'pleasure', 'personal']","Questions: It is a well known adage that you should not mix business with what?, Choices: (A) fun, (B) nonprofit, (C) art, (D) pleasure, (E) personal. Given the question 'It is a well known adage that you should not mix business with what?', which among the choices fun, nonprofit, art, pleasure personal is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) pleasure. A possible conditional statement for this question is: **If you mix business with pleasure, then you may compromise your professional integrity.** This is a well-known adage that warns against the potential conflicts of interest or ethical issues that may arise from mixing personal and professional relationships.
+
+"
+It is important to spend time in nature and sometimes get out of where?,"['city', 'man made', 'indoors', 'town', 'artificial']","Questions: It is important to spend time in nature and sometimes get out of where?, Choices: (A) city, (B) man made, (C) indoors, (D) town, (E) artificial. Given the question 'It is important to spend time in nature and sometimes get out of where?', which among the choices city, man made, indoors, town artificial is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) indoors. A possible conditional statement for this question is: **If you spend time in nature and sometimes get out of indoors, then you may improve your physical and mental health.** This is based on the idea that exposure to natural environments can have positive effects on well-being, such as reducing stress, enhancing mood, or boosting immunity.
+
+"
+It is usually difficult to forgive your spouse if they have what with someone else?,"['sex', 'butterflies', 'flood of relief', 'nice to', 'happiness']","Questions: It is usually difficult to forgive your spouse if they have what with someone else?, Choices: (A) sex, (B) butterflies, (C) flood of relief, (D) nice to, (E) happiness. Given the question 'It is usually difficult to forgive your spouse if they have what with someone else?', which among the choices sex, butterflies, flood of relief, nice to happiness is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) sex. A possible conditional statement for this question is: **If your spouse has sex with someone else, then you may find it difficult to forgive them.** This is based on the assumption that sex is an intimate and exclusive act that implies loyalty and commitment in a relationship, and that cheating on one's partner is a major breach of trust and respect.
+
+"
+It seemed weird to have a dental office located next to a candy store and fast food location at the what?,"['medical building', 'hospital', 'school', 'strip mall', 'urban area']","Questions: It seemed weird to have a dental office located next to a candy store and fast food location at the what?, Choices: (A) medical building, (B) hospital, (C) school, (D) strip mall, (E) urban area. Given the question 'It seemed weird to have a dental office located next to a candy store and fast food location at the what?', which among the choices medical building, hospital, school, strip mall urban area is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) strip mall. A possible conditional statement for this question is: **If a dental office is located next to a candy store and a fast food location at a strip mall, then it may seem weird or ironic.** This is based on the contrast between the dental office, which promotes oral health and hygiene, and the candy store and fast food location, which may contribute to tooth decay and other dental problems.
+
+"
+It was a ridiculous answer to a simple question.   The professor expected something loss convoluted and more what?,"['solemn', 'straightforward', 'pensive', 'somber', 'serious']","Questions: It was a ridiculous answer to a simple question.   The professor expected something loss convoluted and more what?, Choices: (A) solemn, (B) straightforward, (C) pensive, (D) somber, (E) serious. Given the question 'It was a ridiculous answer to a simple question.   The professor expected something loss convoluted and more what?', which among the choices solemn, straightforward, pensive, somber serious is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) straightforward. A possible conditional statement for this question is: **If the answer to a simple question is straightforward, then it is clear and easy to understand.** This is based on the definition of straightforward as being direct and uncomplicated, and the opposite of ridiculous, which means absurd or unreasonable.
+
+"
+It was directed towards women but it was mostly couples who what?,"['date', 'have sex', 'enjoy movie', 'row with each other', 'enjoy sex']","Questions: It was directed towards women but it was mostly couples who what?, Choices: (A) date, (B) have sex, (C) enjoy movie, (D) row with each other, (E) enjoy sex. Given the question 'It was directed towards women but it was mostly couples who what?', which among the choices date, have sex, enjoy movie, row with each other enjoy sex is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) enjoy movie. A possible conditional statement for this question is: **If the movie is directed towards women but it is mostly couples who enjoy it, then it may have a romantic or comedic genre.** This is based on the stereotype that women tend to prefer movies that involve romance or humor, and that couples may watch such movies together as a form of entertainment or bonding.
+
+"
+It was tradition for the team to enter what through the central passage?,"['access rooms', 'arena', 'public building', 'access carrers', 'tomb']","Questions: It was tradition for the team to enter what through the central passage?, Choices: (A) access rooms, (B) arena, (C) public building, (D) access carrers, (E) tomb. Given the question 'It was tradition for the team to enter what through the central passage?', which among the choices access rooms, arena, public building, access carrers tomb is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) arena. A possible conditional statement for this question is: **If the team enters the arena through the central passage, then it may follow a tradition or ritual.** This is based on the notion that some teams may have a specific way of entering the arena, such as through a certain entrance or in a certain order, as a way of showing unity or confidence."
+It wasn't at first sight but at first kiss when the two began to what with one another?,"['eat out', 'embrace', 'falling in love', 'smile', 'fall in love']","Questions: It wasn't at first sight but at first kiss when the two began to what with one another?, Choices: (A) eat out, (B) embrace, (C) falling in love, (D) smile, (E) fall in love. Given the question 'It wasn't at first sight but at first kiss when the two began to what with one another?', which among the choices eat out, embrace, falling in love, smile fall in love is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) fall in love. A possible explanation is:
+
+```
+If the two began to what with one another after their first kiss,
+then they must have felt a strong attraction and affection for each other.
+Therefore, they must have fallen in love with one another.
+```
+
+"
+It's 9PM and John has a craving for carrots.  He gets into his car and where does he drive to?,"['attic', 'supermarket', ""farmer's market"", 'refrigerator', 'cellar']","Questions: It's 9PM and John has a craving for carrots.  He gets into his car and where does he drive to?, Choices: (A) attic, (B) supermarket, (C) farmer's market, (D) refrigerator, (E) cellar. Given the question 'It's 9PM and John has a craving for carrots.  He gets into his car and where does he drive to?', which among the choices attic, supermarket, farmer's market, refrigerator cellar is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) supermarket. A possible explanation is:
+
+```
+If John has a craving for carrots at 9PM,
+then he needs to buy some fresh carrots from a store that sells them.
+Therefore, he drives to a supermarket that is open at night.
+```
+
+"
+It's rude to make loud noise and commentary while watching something where?,"['fair', 'carnival', 'classroom', 'bowling alley', 'movie theatre']","Questions: It's rude to make loud noise and commentary while watching something where?, Choices: (A) fair, (B) carnival, (C) classroom, (D) bowling alley, (E) movie theatre. Given the question 'It's rude to make loud noise and commentary while watching something where?', which among the choices fair, carnival, classroom, bowling alley movie theatre is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) movie theatre. A possible explanation is:
+
+```
+If it is rude to make loud noise and commentary while watching something,
+then it must be a place where people expect silence and respect from others.
+Therefore, it is a movie theatre where people pay to watch a film without distractions.
+```
+
+"
+James  and his friends like to play pretend together.  What is it that they like about playing pretend together?,"['day dream', 'have imagination', 'run', 'have fun with', 'good liar']","Questions: James  and his friends like to play pretend together.  What is it that they like about playing pretend together?, Choices: (A) day dream, (B) have imagination, (C) run, (D) have fun with, (E) good liar. Given the question 'James  and his friends like to play pretend together.  What is it that they like about playing pretend together?', which among the choices day dream, have imagination, run, have fun with good liar is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) have imagination. A possible explanation is:
+
+```
+If James and his friends like to play pretend together,
+then they must enjoy creating and exploring different scenarios and characters.
+Therefore, they have imagination and use it to have fun with each other.
+```
+
+"
+James  didn't like getting in line when he was told to be the teacher.  He wasn't someone who appreciated authority figures.  He didn't like what?,"['being ordered', 'less confusion', 'getting advice', 'longer lines', 'standing in line']","Questions: James  didn't like getting in line when he was told to be the teacher.  He wasn't someone who appreciated authority figures.  He didn't like what?, Choices: (A) being ordered, (B) less confusion, (C) getting advice, (D) longer lines, (E) standing in line. Given the question 'James  didn't like getting in line when he was told to be the teacher.  He wasn't someone who appreciated authority figures.  He didn't like what?', which among the choices being ordered, less confusion, getting advice, longer lines standing in line is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) being ordered. A possible explanation is:
+
+```
+If James didn't like getting in line when he was told by the teacher,
+then he must have disliked following instructions from someone else.
+Therefore, he didn't like being ordered by an authority figure.
+```
+
+"
+James and Jenny are good friends.  They spend a lot of time together and usually get home late.   Jenny is very smart and James likes to hear her doing something. What might James like to hear Jenny do?,"['tell story', 'sing', 'clean room', 'going out at night', 'jump rope']","Questions: James and Jenny are good friends.  They spend a lot of time together and usually get home late.   Jenny is very smart and James likes to hear her doing something. What might James like to hear Jenny do?, Choices: (A) tell story, (B) sing, (C) clean room, (D) going out at night, (E) jump rope. Given the question 'James and Jenny are good friends.  They spend a lot of time together and usually get home late.   Jenny is very smart and James likes to hear her doing something. What might James like to hear Jenny do?', which among the choices tell story, sing, clean room, going out at night jump rope is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) tell story. A possible explanation is:
+
+```
+If Jenny is very smart and James likes to hear her doing something,
+then he must appreciate her intelligence and creativity.
+Therefore, he might like to hear her tell stories that showcase her skills and knowledge.
+```
+
+"
+James and Lilly have strong feelings for each other.  To express those feelings they kiss. What else might they do?,"['shake hands', 'fall in love', 'smile', 'embrace', 'falling in love']","Questions: James and Lilly have strong feelings for each other.  To express those feelings they kiss. What else might they do?, Choices: (A) shake hands, (B) fall in love, (C) smile, (D) embrace, (E) falling in love. Given the question 'James and Lilly have strong feelings for each other.  To express those feelings they kiss. What else might they do?', which among the choices shake hands, fall in love, smile, embrace falling in love is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) embrace. A possible explanation is:
+
+```
+If James and Lilly have strong feelings for each other and they kiss,
+then they must want to express their love and intimacy physically.
+Therefore, they might also embrace each other and hold each other close.
+```
+
+"
+James bought a hide bed sofa because it was space efficient. Where might he live?,"['house', 'apartment', 'village', 'beach condo', 'hotel']","Questions: James bought a hide bed sofa because it was space efficient. Where might he live?, Choices: (A) house, (B) apartment, (C) village, (D) beach condo, (E) hotel. Given the question 'James bought a hide bed sofa because it was space efficient. Where might he live?', which among the choices house, apartment, village, beach condo hotel is the correct answer? Explain your reasoning using conditional statements.
+",
+James bought a new monitor and unpacked it.   He discarded the packaging materials and connected it.  What did he connect it to?,"['internet cafe', 'display images', 'box', 'view bluescreen', 'desktop']","Questions: James bought a new monitor and unpacked it.   He discarded the packaging materials and connected it.  What did he connect it to?, Choices: (A) internet cafe, (B) display images, (C) box, (D) view bluescreen, (E) desktop. Given the question 'James bought a new monitor and unpacked it.   He discarded the packaging materials and connected it.  What did he connect it to?', which among the choices internet cafe, display images, box, view bluescreen desktop is the correct answer? Explain your reasoning using conditional statements.
+","9PM,
+then he needs to buy some fresh carrots from a store that sells them.
+Therefore, he drives to a supermarket that is open at night.
+```
+
+3. The correct answer is (E) movie theatre. A possible explanation is:
+
+```
+If it is rude to make loud noise and commentary while watching something,
+then it must be a place where people expect silence and respect from others.
+Therefore, it is a movie theatre where people pay to watch a film without distractions.
+```
+
+4. The correct answer is (B) have imagination. A possible explanation is:
+
+```
+If James and his friends like to play pretend together,
+then they must enjoy creating and exploring different scenarios and characters.
+Therefore, they have imagination and use it to have fun with each other.
+```
+
+5. The correct answer is (A) being ordered. A possible explanation is:
+
+```
+If James didn't like getting in line when he was told by the teacher,
+then he must have disliked following instructions from someone else.
+Therefore, he didn't like being ordered by an authority figure.
+```
+
+6. The correct answer is (A) tell story. A possible explanation is:
+
+```
+If Jenny is very smart and James likes to hear her doing something,
+then he must appreciate her intelligence and creativity.
+Therefore, he might like to hear her tell stories that showcase her skills and knowledge.
+```
+
+7. The correct answer is (D) embrace. A possible explanation is:
+
+```
+If James and Lilly have strong feelings for each other and they kiss,
+then they must want to express their love and intimacy physically.
+Therefore, they might also embrace each other and hold each other close.
+```
+
+8. The correct answer is (B) apartment. A possible explanation is:
+
+```
+If James bought a hide bed sofa because it was space efficient,
+then he must live in a place where space is limited and expensive.
+Therefore, he might live in an apartment that has a small living room.
+```
+
+9. The correct answer is (E) desktop. A possible explanation is:
+
+```
+If James bought a new monitor and connected it,
+then he must have a device that can send signals to the monitor and display images on it.
+Therefore, he connected it to a desktop computer that has a video output port.
+```
+
+"
+James consumed a liquid.  What did he most likely use to hold the liquid?,"['jar', 'cup', 'drinking glass', 'container', 'tankard']","Questions: James consumed a liquid.  What did he most likely use to hold the liquid?, Choices: (A) jar, (B) cup, (C) drinking glass, (D) container, (E) tankard. Given the question 'James consumed a liquid.  What did he most likely use to hold the liquid?', which among the choices jar, cup, drinking glass, container tankard is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) drinking glass. A possible explanation is:
+
+```
+If James consumed a liquid,
+then he must have used a vessel that can hold the liquid and allow him to drink from it easily.
+Therefore, he most likely used a drinking glass that is designed for this purpose.
+```"

@@ -1,0 +1,466 @@
+premise,hypothesis,prompt,rationale
+Where would you find a passageway that is mainly used by visitors?,"['building', 'hotel', 'cave', 'house', 'office']","Questions: Where would you find a passageway that is mainly used by visitors?, Choices: (A) building, (B) hotel, (C) cave, (D) house, (E) office. Given the question 'Where would you find a passageway that is mainly used by visitors?', which among the choices building, hotel, cave, house office is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) hotel. A passageway is a narrow hall or corridor that connects different rooms or areas. A passageway that is mainly used by visitors is likely to be found in a hotel, where guests stay for a short period of time and need to access their rooms or other facilities. A conditional statement for this answer is: **If** a passageway is mainly used by visitors, **then** it is probably in a hotel.
+
+"
+Where would you find a pet jellyfish?,"['australia', 'movie', 'japanese restaurant', 'shore', 'tank']","Questions: Where would you find a pet jellyfish?, Choices: (A) australia, (B) movie, (C) japanese restaurant, (D) shore, (E) tank. Given the question 'Where would you find a pet jellyfish?', which among the choices australia, movie, japanese restaurant, shore tank is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) tank. A pet jellyfish is a type of aquatic animal that can be kept in a home aquarium or tank. A pet jellyfish needs a special tank that can provide the right water conditions, filtration, and lighting. A conditional statement for this answer is: **If** a jellyfish is a pet, **then** it is in a tank.
+
+"
+Where would you find a piano that is owned by a person?,"['music store', 'drawing room', 'music room', 'concert hall', 'restaurant']","Questions: Where would you find a piano that is owned by a person?, Choices: (A) music store, (B) drawing room, (C) music room, (D) concert hall, (E) restaurant. Given the question 'Where would you find a piano that is owned by a person?', which among the choices music store, drawing room, music room, concert hall restaurant is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) music room. A piano is a large musical instrument that has a keyboard and strings that produce sound when struck by hammers. A piano that is owned by a person is likely to be found in a music room, where the owner can practice, play, or store the instrument. A conditional statement for this answer is: **If** a piano is owned by a person, **then** it is in a music room.
+
+"
+Where would you find a playroom with very young children just starting their education?,"['preschool', 'playground', 'big house', 'building', ""grandma's house""]","Questions: Where would you find a playroom with very young children just starting their education?, Choices: (A) preschool, (B) playground, (C) big house, (D) building, (E) grandma's house. Given the question 'Where would you find a playroom with very young children just starting their education?', which among the choices preschool, playground, big house, building grandma's house is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) preschool. A playroom is a room that is designed for children to play and have fun. A playroom with very young children just starting their education is likely to be found in a preschool, where they can learn basic skills and socialize with other kids. A conditional statement for this answer is: **If** a playroom has very young children just starting their education, **then** it is in a preschool.
+
+"
+Where would you find a popular shopping mall?,"['buy clothes', 'suburbs', 'downtown', 'montana', 'large city']","Questions: Where would you find a popular shopping mall?, Choices: (A) buy clothes, (B) suburbs, (C) downtown, (D) montana, (E) large city. Given the question 'Where would you find a popular shopping mall?', which among the choices buy clothes, suburbs, downtown, montana large city is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) large city. A shopping mall is a large building or complex that has many stores, restaurants, and other attractions. A popular shopping mall is likely to be found in a large city, where there is a high demand and variety of goods and services. A conditional statement for this answer is: **If** a shopping mall is popular, **then** it is in a large city.
+
+"
+Where would you find a pot that is being used by someone?,"['toilet', 'porch', 'greenhouse', 'cupboard', 'restaurant']","Questions: Where would you find a pot that is being used by someone?, Choices: (A) toilet, (B) porch, (C) greenhouse, (D) cupboard, (E) restaurant. Given the question 'Where would you find a pot that is being used by someone?', which among the choices toilet, porch, greenhouse, cupboard restaurant is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) restaurant. A pot is a round metal or ceramic container that is used for cooking or storing food. A pot that is being used by someone is likely to be found in a restaurant, where chefs prepare and serve meals for customers. A conditional statement for this answer is: **If** a pot is being used by someone, **then** it is in a restaurant.
+
+"
+Where would you find a pot with something alive in it?,"['kitchen drawer', 'closet', 'greenhouse', 'cupboard', 'restaurant']","Questions: Where would you find a pot with something alive in it?, Choices: (A) kitchen drawer, (B) closet, (C) greenhouse, (D) cupboard, (E) restaurant. Given the question 'Where would you find a pot with something alive in it?', which among the choices kitchen drawer, closet, greenhouse, cupboard restaurant is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) greenhouse. A pot with something alive in it is likely to contain a plant or a flower that needs soil, water, and sunlight to grow. A pot with something alive in it is likely to be found in a greenhouse, where plants are cultivated and protected from harsh weather. A conditional statement for this answer is: **If** a pot has something alive in it, **then** it is in a greenhouse.
+
+"
+Where would you find a public amphitheatre in a city?,"['greece', 'movie house', 'park', 'italy', 'outside']","Questions: Where would you find a public amphitheatre in a city?, Choices: (A) greece, (B) movie house, (C) park, (D) italy, (E) outside. Given the question 'Where would you find a public amphitheatre in a city?', which among the choices greece, movie house, park, italy outside is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) park. A public amphitheatre is a large open-air venue that has a stage and seats for spectators. A public amphitheatre in a city is likely to be found in a park, where people can enjoy outdoor performances, concerts, or events. A conditional statement for this answer is: **If** an amphitheatre is public and in a city, **then** it is in a park.
+
+"
+Where would you find a railing you hold on to while moving up?,"['the moon', 'park', 'porch', 'flight of stairs', 'railway station']","Questions: Where would you find a railing you hold on to while moving up?, Choices: (A) the moon, (B) park, (C) porch, (D) flight of stairs, (E) railway station. Given the question 'Where would you find a railing you hold on to while moving up?', which among the choices the moon, park, porch, flight of stairs railway station is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) flight of stairs. A railing is a barrier or support that is made of metal, wood, or other materials. A railing you hold on to while moving up is likely to be found on a flight of stairs, where you can climb or descend from one level to another. A conditional statement for this answer is: **If** you hold on to a railing while moving up, **then** you are on a flight of stairs.
+
+"
+Where would you find a seafood restaurant in the east coast of North America?,"['maine', 'boston', 'beach town', 'coastal cities', 'ocean']","Questions: Where would you find a seafood restaurant in the east coast of North America?, Choices: (A) maine, (B) boston, (C) beach town, (D) coastal cities, (E) ocean. Given the question 'Where would you find a seafood restaurant in the east coast of North America?', which among the choices maine, boston, beach town, coastal cities ocean is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) coastal cities. A seafood restaurant is a place that serves fish, shellfish, and other aquatic delicacies. A seafood restaurant in the east coast of North America is likely to be found in coastal cities, where there is easy access to fresh and diverse seafood. A conditional statement for this answer is: **If** a restaurant serves seafood and is in the east coast of North America, **then** it is in a coastal city."
+Where would you find a shark that is not alive?,"['great barrier reef', 'deep ocean', 'maritime museum', 'ocean', 'pool hall']","Questions: Where would you find a shark that is not alive?, Choices: (A) great barrier reef, (B) deep ocean, (C) maritime museum, (D) ocean, (E) pool hall. Given the question 'Where would you find a shark that is not alive?', which among the choices great barrier reef, deep ocean, maritime museum, ocean pool hall is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) maritime museum. A maritime museum is a place where you can find exhibits of marine life, including sharks that are not alive. A conditional statement for this answer is: **If** you want to find a shark that is not alive, **then** you should go to a maritime museum.
+
+"
+Where would you find a shelf with toys for young people learning?,"['corner', 'school building', 'wall', 'library', 'bookstore']","Questions: Where would you find a shelf with toys for young people learning?, Choices: (A) corner, (B) school building, (C) wall, (D) library, (E) bookstore. Given the question 'Where would you find a shelf with toys for young people learning?', which among the choices corner, school building, wall, library bookstore is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) bookstore. A bookstore is a place where you can find books and other educational materials, including toys for young people learning. A conditional statement for this answer is: **If** you want to find a shelf with toys for young people learning, **then** you should go to a bookstore.
+
+"
+Where would you find a sign and a long line of cars behind it?,"['texas', 'city', 'street corner', 'roadblock', 'bus stop']","Questions: Where would you find a sign and a long line of cars behind it?, Choices: (A) texas, (B) city, (C) street corner, (D) roadblock, (E) bus stop. Given the question 'Where would you find a sign and a long line of cars behind it?', which among the choices texas, city, street corner, roadblock bus stop is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) roadblock. A roadblock is a place where traffic is stopped or slowed down, usually by police or other authorities. A sign and a long line of cars behind it are common indicators of a roadblock. A conditional statement for this answer is: **If** you want to find a sign and a long line of cars behind it, **then** you should look for a roadblock.
+
+"
+Where would you find a sign with some people lined up next to it?,"['bus stop', 'street corner', 'roadblock', 'fast food drive thru', 'city']","Questions: Where would you find a sign with some people lined up next to it?, Choices: (A) bus stop, (B) street corner, (C) roadblock, (D) fast food drive thru, (E) city. Given the question 'Where would you find a sign with some people lined up next to it?', which among the choices bus stop, street corner, roadblock, fast food drive thru city is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) bus stop. A bus stop is a place where people wait for a bus to arrive, usually marked by a sign. Some people may line up next to the sign to board the bus in an orderly manner. A conditional statement for this answer is: **If** you want to find a sign with some people lined up next to it, **then** you should look for a bus stop.
+
+"
+Where would you find a single air conditioner?,"['house', 'in a bike', 'car', 'hard', 'texas']","Questions: Where would you find a single air conditioner?, Choices: (A) house, (B) in a bike, (C) car, (D) hard, (E) texas. Given the question 'Where would you find a single air conditioner?', which among the choices house, in a bike, car, hard texas is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) house. A house is a place where people live, usually with rooms and appliances. A single air conditioner is a device that cools or heats the air in a room. A house may have one or more air conditioners, depending on the size and climate. A conditional statement for this answer is: **If** you want to find a single air conditioner, **then** you should look for a house.
+
+"
+Where would you find a sloth that is not afraid of being hunted?,"['forest canopy', 'nature preserve', 'zoo', 'tropical rainforest', 'commercial']","Questions: Where would you find a sloth that is not afraid of being hunted?, Choices: (A) forest canopy, (B) nature preserve, (C) zoo, (D) tropical rainforest, (E) commercial. Given the question 'Where would you find a sloth that is not afraid of being hunted?', which among the choices forest canopy, nature preserve, zoo, tropical rainforest commercial is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) nature preserve. A nature preserve is a place where animals and plants are protected from human interference, usually by law. A sloth is a slow-moving mammal that lives in trees, mostly in tropical regions. A sloth that is not afraid of being hunted may live in a nature preserve, where it is safe from predators and poachers. A conditional statement for this answer is: **If** you want to find a sloth that is not afraid of being hunted, **then** you should go to a nature preserve.
+
+"
+Where would you find a spare pillowcase in a house?,"['bedroom', 'linen closet', 'coverning pillow', 'bathroom', 'linen cupboard']","Questions: Where would you find a spare pillowcase in a house?, Choices: (A) bedroom, (B) linen closet, (C) coverning pillow, (D) bathroom, (E) linen cupboard. Given the question 'Where would you find a spare pillowcase in a house?', which among the choices bedroom, linen closet, coverning pillow, bathroom linen cupboard is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) linen closet. A linen closet is a place where linens, such as sheets, towels, and pillowcases, are stored, usually in a house. A spare pillowcase is an extra cover for a pillow, usually used when the original one is dirty or worn out. A spare pillowcase may be found in a linen closet, where it is kept until needed. A conditional statement for this answer is: **If** you want to find a spare pillowcase in a house, **then** you should look for a linen closet.
+
+"
+Where would you find a telephone directory in public?,"['office', 'house', 'phone booth', 'kitchen', 'amusement park']","Questions: Where would you find a telephone directory in public?, Choices: (A) office, (B) house, (C) phone booth, (D) kitchen, (E) amusement park. Given the question 'Where would you find a telephone directory in public?', which among the choices office, house, phone booth, kitchen amusement park is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) phone booth. A phone booth is a place where you can make a phone call, usually in public. A telephone directory is a book that lists the names, addresses, and phone numbers of people and businesses. A telephone directory may be found in a phone booth, where it is provided for the convenience of the callers. A conditional statement for this answer is: **If** you want to find a telephone directory in public, **then** you should look for a phone booth.
+
+"
+Where would you find a tennis court made from red clay?,"['new york', 'wimbledon', 'town', 'country club', 'health club']","Questions: Where would you find a tennis court made from red clay?, Choices: (A) new york, (B) wimbledon, (C) town, (D) country club, (E) health club. Given the question 'Where would you find a tennis court made from red clay?', which among the choices new york, wimbledon, town, country club health club is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) country club. A country club is a place where people can enjoy various recreational activities, such as golf, tennis, swimming, and dining. A tennis court is a place where tennis is played, usually marked by lines and nets. A tennis court made from red clay is a type of tennis court that has a surface of crushed brick or stone, usually found in Europe and South America. A tennis court made from red clay may be found in a country club, where it is used for playing tennis. A conditional statement for this answer is: **If** you want to find a tennis court made from red clay, **then** you should go to a country club.
+
+"
+Where would you find a trash can nearby liquid in a workplace?,"['alley', 'office', 'motel', 'water cooler', 'park']","Questions: Where would you find a trash can nearby liquid in a workplace?, Choices: (A) alley, (B) office, (C) motel, (D) water cooler, (E) park. Given the question 'Where would you find a trash can nearby liquid in a workplace?', which among the choices alley, office, motel, water cooler park is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) water cooler. A water cooler is a place where you can get cold or hot water, usually in a workplace. A trash can is a place where you can dispose of waste, usually made of metal or plastic. A trash can nearby liquid in a workplace may be found near a water cooler, where people may throw away their empty cups or bottles. A conditional statement for this answer is: **If** you want to find a trash can nearby liquid in a workplace, **then** you should look for a water cooler."
+Where would you find a trash can while enjoying the great outdoors?,"['water cooler', 'alley', 'park', 'food place', 'motel']","Questions: Where would you find a trash can while enjoying the great outdoors?, Choices: (A) water cooler, (B) alley, (C) park, (D) food place, (E) motel. Given the question 'Where would you find a trash can while enjoying the great outdoors?', which among the choices water cooler, alley, park, food place motel is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(C) park**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If you are enjoying the great outdoors, then you might find a trash can in a park**. The hypothesis is ""you are enjoying the great outdoors"" and the conclusion is ""you might find a trash can in a park"". The other choices are not likely places to find a trash can while enjoying the great outdoors.
+
+"
+Where would you find a vase in a restaurant?,"['table', 'shelf', 'cabinet', 'windowsill', 'bathroom']","Questions: Where would you find a vase in a restaurant?, Choices: (A) table, (B) shelf, (C) cabinet, (D) windowsill, (E) bathroom. Given the question 'Where would you find a vase in a restaurant?', which among the choices table, shelf, cabinet, windowsill bathroom is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) table**. A possible conditional statement for this question is: **If you are in a restaurant, then you might find a vase on a table**. The hypothesis is ""you are in a restaurant"" and the conclusion is ""you might find a vase on a table"". The other choices are not common places to find a vase in a restaurant.
+
+"
+Where would you find a waiting room with only some fathers?,"['maternity ward', ""dentist's office"", ""doctor's office"", 'clinic', ""pediatrist's waiting room""]","Questions: Where would you find a waiting room with only some fathers?, Choices: (A) maternity ward, (B) dentist's office, (C) doctor's office, (D) clinic, (E) pediatrist's waiting room. Given the question 'Where would you find a waiting room with only some fathers?', which among the choices maternity ward, dentist's office, doctor's office, clinic pediatrist's waiting room is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) maternity ward**. A possible conditional statement for this question is: **If you are in a waiting room with only some fathers, then you might be in a maternity ward**. The hypothesis is ""you are in a waiting room with only some fathers"" and the conclusion is ""you might be in a maternity ward"". The other choices are not likely places to find a waiting room with only some fathers.
+
+"
+Where would you find a welcome mat in a house?,"['floors', 'desert', 'school', 'doorway', 'bathroom']","Questions: Where would you find a welcome mat in a house?, Choices: (A) floors, (B) desert, (C) school, (D) doorway, (E) bathroom. Given the question 'Where would you find a welcome mat in a house?', which among the choices floors, desert, school, doorway bathroom is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) doorway**. A possible conditional statement for this question is: **If you are in a house, then you might find a welcome mat in a doorway**. The hypothesis is ""you are in a house"" and the conclusion is ""you might find a welcome mat in a doorway"". The other choices are not typical places to find a welcome mat in a house.
+
+"
+Where would you find a window in a house?,"['front door', 'space shuttle', 'wall', 'office', 'car']","Questions: Where would you find a window in a house?, Choices: (A) front door, (B) space shuttle, (C) wall, (D) office, (E) car. Given the question 'Where would you find a window in a house?', which among the choices front door, space shuttle, wall, office car is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) wall**. A possible conditional statement for this question is: **If you are in a house, then you might find a window in a wall**. The hypothesis is ""you are in a house"" and the conclusion is ""you might find a window in a wall"". The other choices are not usual places to find a window in a house.
+
+"
+Where would you find an anemone off the eastern U.S.?,"['game preserve', 'intertidal zone', 'atlantic ocean', 'south pacific', 'sea water']","Questions: Where would you find an anemone off the eastern U.S.?, Choices: (A) game preserve, (B) intertidal zone, (C) atlantic ocean, (D) south pacific, (E) sea water. Given the question 'Where would you find an anemone off the eastern U.S.?', which among the choices game preserve, intertidal zone, atlantic ocean, south pacific sea water is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) atlantic ocean**. A possible conditional statement for this question is: **If you are looking for an anemone off the eastern U.S., then you might find it in the atlantic ocean**. The hypothesis is ""you are looking for an anemone off the eastern U.S."" and the conclusion is ""you might find it in the atlantic ocean"". The other choices are not likely places to find an anemone off the eastern U.S.
+
+"
+Where would you find an armoire when you retire at the end of the day?,"['bedroom', 'clothes', 'living room', 'furniture store', 'bathroom']","Questions: Where would you find an armoire when you retire at the end of the day?, Choices: (A) bedroom, (B) clothes, (C) living room, (D) furniture store, (E) bathroom. Given the question 'Where would you find an armoire when you retire at the end of the day?', which among the choices bedroom, clothes, living room, furniture store bathroom is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) bedroom**. A possible conditional statement for this question is: **If you are retiring at the end of the day, then you might find an armoire in a bedroom**. The hypothesis is ""you are retiring at the end of the day"" and the conclusion is ""you might find an armoire in a bedroom"". The other choices are not common places to find an armoire when you retire at the end of the day.
+
+"
+Where would you find an auditorium without students?,"['lights', 'city', 'theater', 'university campus', 'funeral']","Questions: Where would you find an auditorium without students?, Choices: (A) lights, (B) city, (C) theater, (D) university campus, (E) funeral. Given the question 'Where would you find an auditorium without students?', which among the choices lights, city, theater, university campus funeral is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) theater**. A possible conditional statement for this question is: **If you are in an auditorium without students, then you might be in a theater**. The hypothesis is ""you are in an auditorium without students"" and the conclusion is ""you might be in a theater"". The other choices are not probable places to find an auditorium without students.
+
+"
+Where would you find an entrance hall that is used by a single family?,"['person', 'large building', 'school', 'house', 'mansion']","Questions: Where would you find an entrance hall that is used by a single family?, Choices: (A) person, (B) large building, (C) school, (D) house, (E) mansion. Given the question 'Where would you find an entrance hall that is used by a single family?', which among the choices person, large building, school, house mansion is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) house**. A possible conditional statement for this question is: **If you are in an entrance hall that is used by a single family, then you might be in a house**. The hypothesis is ""you are in an entrance hall that is used by a single family"" and the conclusion is ""you might be in a house"". The other choices are not typical places to find an entrance hall that is used by a single family.
+
+"
+Where would you find an expensive lantern?,"[""a collector's house"", 'dark place', 'house', 'antique shop', 'street']","Questions: Where would you find an expensive lantern?, Choices: (A) a collector's house, (B) dark place, (C) house, (D) antique shop, (E) street. Given the question 'Where would you find an expensive lantern?', which among the choices a collector's house, dark place, house, antique shop street is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) antique shop**. A possible conditional statement for this question is: **If you are looking for an expensive lantern, then you might find it in an antique shop**. The hypothesis is ""you are looking for an expensive lantern"" and the conclusion is ""you might find it in an antique shop"". The other choices are not likely places to find an expensive lantern."
+Where would you find bleachers inside?,"['soccer', 'sporting event', 'pharmacy', 'gymnasium', 'seat with view']","Questions: Where would you find bleachers inside?, Choices: (A) soccer, (B) sporting event, (C) pharmacy, (D) gymnasium, (E) seat with view. Given the question 'Where would you find bleachers inside?', which among the choices soccer, sporting event, pharmacy, gymnasium seat with view is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) gymnasium**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If a place has bleachers inside, then it is a gymnasium**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a gymnasium, then it has bleachers inside.
+    - Inverse: If a place does not have bleachers inside, then it is not a gymnasium.
+    - Contrapositive: If a place is not a gymnasium, then it does not have bleachers inside.
+
+"
+Where would you find children playing with a ball or swinging?,"['bearing', 'street', 'gymnasium', 'playground', 'park']","Questions: Where would you find children playing with a ball or swinging?, Choices: (A) bearing, (B) street, (C) gymnasium, (D) playground, (E) park. Given the question 'Where would you find children playing with a ball or swinging?', which among the choices bearing, street, gymnasium, playground park is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) playground**. A possible conditional statement for this question is: **If children are playing with a ball or swinging, then they are in a playground**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If children are in a playground, then they are playing with a ball or swinging.
+    - Inverse: If children are not playing with a ball or swinging, then they are not in a playground.
+    - Contrapositive: If children are not in a playground, then they are not playing with a ball or swinging.
+
+"
+Where would you find cloth to sleep on?,"['kitchen', 'linen closet', 'fabric store', 'bedroom', 'garage']","Questions: Where would you find cloth to sleep on?, Choices: (A) kitchen, (B) linen closet, (C) fabric store, (D) bedroom, (E) garage. Given the question 'Where would you find cloth to sleep on?', which among the choices kitchen, linen closet, fabric store, bedroom garage is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) bedroom**. A possible conditional statement for this question is: **If a place has cloth to sleep on, then it is a bedroom**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a bedroom, then it has cloth to sleep on.
+    - Inverse: If a place does not have cloth to sleep on, then it is not a bedroom.
+    - Contrapositive: If a place is not a bedroom, then it does not have cloth to sleep on.
+
+"
+Where would you find food packaged in MRE's?,"['fairgrounds', 'picnic', ""neighbor's house"", 'supermarket', 'military base']","Questions: Where would you find food packaged in MRE's?, Choices: (A) fairgrounds, (B) picnic, (C) neighbor's house, (D) supermarket, (E) military base. Given the question 'Where would you find food packaged in MRE's?', which among the choices fairgrounds, picnic, neighbor's house, supermarket military base is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) military base**. A possible conditional statement for this question is: **If a place has food packaged in MREs, then it is a military base**. MRE stands for Meal, Ready-to-Eat, which is a self-contained ration used by the military. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a military base, then it has food packaged in MREs.
+    - Inverse: If a place does not have food packaged in MREs, then it is not a military base.
+    - Contrapositive: If a place is not a military base, then it does not have food packaged in MREs.
+
+"
+Where would you find fungus growing on something made from milk?,"['eyes', 'biology laboratory', 'shower stall', 'old cheese', 'decaying matter']","Questions: Where would you find fungus growing on something made from milk?, Choices: (A) eyes, (B) biology laboratory, (C) shower stall, (D) old cheese, (E) decaying matter. Given the question 'Where would you find fungus growing on something made from milk?', which among the choices eyes, biology laboratory, shower stall, old cheese decaying matter is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) old cheese**. A possible conditional statement for this question is: **If a thing has fungus growing on it and is made from milk, then it is old cheese**. Fungus is a type of microorganism that can grow on organic matter, such as cheese. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a thing is old cheese, then it has fungus growing on it and is made from milk.
+    - Inverse: If a thing does not have fungus growing on it or is not made from milk, then it is not old cheese.
+    - Contrapositive: If a thing is not old cheese, then it does not have fungus growing on it or is not made from milk.
+
+"
+Where would you find fungus in a university?,"['cave', 'biology laboratory', 'decaying matter', 'mushroom hunting', 'old cheese']","Questions: Where would you find fungus in a university?, Choices: (A) cave, (B) biology laboratory, (C) decaying matter, (D) mushroom hunting, (E) old cheese. Given the question 'Where would you find fungus in a university?', which among the choices cave, biology laboratory, decaying matter, mushroom hunting old cheese is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) biology laboratory**. A possible conditional statement for this question is: **If a place is in a university and has fungus, then it is a biology laboratory**. A biology laboratory is a place where biological experiments and research are conducted, which may involve fungus. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a biology laboratory, then it is in a university and has fungus.
+    - Inverse: If a place is not in a university or does not have fungus, then it is not a biology laboratory.
+    - Contrapositive: If a place is not a biology laboratory, then it is not in a university or does not have fungus.
+
+"
+Where would you find guns and people in uniform?,"['military base', 'roadblock', 'stadium', 'sporting goods store', 'school']","Questions: Where would you find guns and people in uniform?, Choices: (A) military base, (B) roadblock, (C) stadium, (D) sporting goods store, (E) school. Given the question 'Where would you find guns and people in uniform?', which among the choices military base, roadblock, stadium, sporting goods store school is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) military base**. A possible conditional statement for this question is: **If a place has guns and people in uniform, then it is a military base**. A military base is a place where armed forces are stationed and trained, which may involve guns and uniforms. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a military base, then it has guns and people in uniform.
+    - Inverse: If a place does not have guns or people in uniform, then it is not a military base.
+    - Contrapositive: If a place is not a military base, then it does not have guns or people in uniform.
+
+"
+Where would you find isopropol alcohol and safety glasses?,"['pub', 'restaurants', 'in a park', 'supermarket', 'chemistry lab']","Questions: Where would you find isopropol alcohol and safety glasses?, Choices: (A) pub, (B) restaurants, (C) in a park, (D) supermarket, (E) chemistry lab. Given the question 'Where would you find isopropol alcohol and safety glasses?', which among the choices pub, restaurants, in a park, supermarket chemistry lab is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) chemistry lab**. A possible conditional statement for this question is: **If a place has isopropyl alcohol and safety glasses, then it is a chemistry lab**. Isopropyl alcohol is a common solvent used in chemistry experiments, and safety glasses are a protective equipment worn by chemists. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a chemistry lab, then it has isopropyl alcohol and safety glasses.
+    - Inverse: If a place does not have isopropyl alcohol or safety glasses, then it is not a chemistry lab.
+    - Contrapositive: If a place is not a chemistry lab, then it does not have isopropyl alcohol or safety glasses.
+
+"
+Where would you find many a bookshelf?,"['bedroom', 'library', 'book store', 'furniture store', 'ocean']","Questions: Where would you find many a bookshelf?, Choices: (A) bedroom, (B) library, (C) book store, (D) furniture store, (E) ocean. Given the question 'Where would you find many a bookshelf?', which among the choices bedroom, library, book store, furniture store ocean is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(B) library**. A possible conditional statement for this question is: **If a place has many bookshelves, then it is a library**. A library is a place where books are stored and borrowed, which usually involves many bookshelves. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a library, then it has many bookshelves.
+    - Inverse: If a place does not have many bookshelves, then it is not a library.
+    - Contrapositive: If a place is not a library, then it does not have many bookshelves.
+
+"
+Where would you find many a shelf covered with food items?,"['bookcase', 'grocery store', 'displaying framed photos', 'gas station', 'chest of drawers']","Questions: Where would you find many a shelf covered with food items?, Choices: (A) bookcase, (B) grocery store, (C) displaying framed photos, (D) gas station, (E) chest of drawers. Given the question 'Where would you find many a shelf covered with food items?', which among the choices bookcase, grocery store, displaying framed photos, gas station chest of drawers is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) grocery store**. A possible conditional statement for this question is: **If a place has many shelves covered with food items, then it is a grocery store**. A grocery store is a place where food items are sold, which usually involves many shelves displaying them. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If a place is a grocery store, then it has many shelves covered with food items.
+    - Inverse: If a place does not have many shelves covered with food items, then it is not a grocery store.
+    - Contrapositive: If a place is not a grocery store, then it does not have many shelves covered with food items.
+
+I hope this helps you understand conditional statements and how to apply them to different questions. 😊"
+Where would you find many computers in a group of work spaces?,"['office building', 'canteen', 'backpack', 'house', 'box']","Questions: Where would you find many computers in a group of work spaces?, Choices: (A) office building, (B) canteen, (C) backpack, (D) house, (E) box. Given the question 'Where would you find many computers in a group of work spaces?', which among the choices office building, canteen, backpack, house box is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) office building. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If there are many computers in a group of work spaces, then it is an office building.**
+"
+Where would you find many products for sale?,"['market', 'cost one dollar', 'shelf', 'salon', 'demonstration']","Questions: Where would you find many products for sale?, Choices: (A) market, (B) cost one dollar, (C) shelf, (D) salon, (E) demonstration. Given the question 'Where would you find many products for sale?', which among the choices market, cost one dollar, shelf, salon demonstration is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) market. A possible conditional statement for this question is: **If there are many products for sale, then it is a market.**
+"
+Where would you find many shower curtain being used?,"['bathtub', 'dime store', 'department store', 'hotel', 'police station']","Questions: Where would you find many shower curtain being used?, Choices: (A) bathtub, (B) dime store, (C) department store, (D) hotel, (E) police station. Given the question 'Where would you find many shower curtain being used?', which among the choices bathtub, dime store, department store, hotel police station is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) hotel. A possible conditional statement for this question is: **If there are many shower curtains being used, then it is a hotel.**
+"
+Where would you find many tables of silverware rolled into nice displayed napkins?,"['silver', 'park', 'table', 'cupboard', 'restaurant']","Questions: Where would you find many tables of silverware rolled into nice displayed napkins?, Choices: (A) silver, (B) park, (C) table, (D) cupboard, (E) restaurant. Given the question 'Where would you find many tables of silverware rolled into nice displayed napkins?', which among the choices silver, park, table, cupboard restaurant is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) restaurant. A possible conditional statement for this question is: **If there are many tables of silverware rolled into nice displayed napkins, then it is a restaurant.**
+"
+Where would you find only one churchyard?,"['village', 'city', 'england', 'canada', 'michigan']","Questions: Where would you find only one churchyard?, Choices: (A) village, (B) city, (C) england, (D) canada, (E) michigan. Given the question 'Where would you find only one churchyard?', which among the choices village, city, england, canada michigan is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) village. A possible conditional statement for this question is: **If there is only one churchyard, then it is a village.**
+"
+Where would you find out what a lemur is?,"['house', 'hole', 'wilderness', 'dictionary', 'sunshine']","Questions: Where would you find out what a lemur is?, Choices: (A) house, (B) hole, (C) wilderness, (D) dictionary, (E) sunshine. Given the question 'Where would you find out what a lemur is?', which among the choices house, hole, wilderness, dictionary sunshine is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) dictionary. A possible conditional statement for this question is: **If you want to find out what a lemur is, then you should use a dictionary.**
+"
+Where would you find pamphlets when they're delivered to your home?,"['drawer', 'health department', 'library', 'mail box', 'on the floor']","Questions: Where would you find pamphlets when they're delivered to your home?, Choices: (A) drawer, (B) health department, (C) library, (D) mail box, (E) on the floor. Given the question 'Where would you find pamphlets when they're delivered to your home?', which among the choices drawer, health department, library, mail box on the floor is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) mail box. A possible conditional statement for this question is: **If pamphlets are delivered to your home, then you would find them in your mail box.**
+"
+Where would you find pencils and young people?,"['classroom', 'store', 'backpack', 'school', 'bowling alley']","Questions: Where would you find pencils and young people?, Choices: (A) classroom, (B) store, (C) backpack, (D) school, (E) bowling alley. Given the question 'Where would you find pencils and young people?', which among the choices classroom, store, backpack, school bowling alley is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) school. A possible conditional statement for this question is: **If there are pencils and young people, then it is a school.**
+"
+Where would you find people gathered near liquid in a workplace?,"['water cooler', 'opera', 'hospital', 'hockey game', 'beach']","Questions: Where would you find people gathered near liquid in a workplace?, Choices: (A) water cooler, (B) opera, (C) hospital, (D) hockey game, (E) beach. Given the question 'Where would you find people gathered near liquid in a workplace?', which among the choices water cooler, opera, hospital, hockey game beach is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) water cooler. A possible conditional statement for this question is: **If people are gathered near liquid in a workplace, then it is a water cooler.**
+"
+Where would you find people sleeping in a chair waiting for a vehicle to arrive?,"['airport', 'floor', 'bedroom', 'desk', 'bus station']","Questions: Where would you find people sleeping in a chair waiting for a vehicle to arrive?, Choices: (A) airport, (B) floor, (C) bedroom, (D) desk, (E) bus station. Given the question 'Where would you find people sleeping in a chair waiting for a vehicle to arrive?', which among the choices airport, floor, bedroom, desk bus station is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) airport. A possible conditional statement for this question is: **If people are sleeping in a chair waiting for a vehicle to arrive, then it is an airport.**
+
+I hope this helps you understand how to use conditional statements. Do you have any other questions for me? 😊"
+Where would you find people using a laser to alleviate suffering?,"['nasa', 'cd players', 'laboratory', 'hospital', ""othamologist's office""]","Questions: Where would you find people using a laser to alleviate suffering?, Choices: (A) nasa, (B) cd players, (C) laboratory, (D) hospital, (E) othamologist's office. Given the question 'Where would you find people using a laser to alleviate suffering?', which among the choices nasa, cd players, laboratory, hospital othamologist's office is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) ophthalmologist's office. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. One possible conditional statement for this question is: **If people are using a laser to alleviate suffering, then they are in an ophthalmologist's office.** This is because ophthalmologists use lasers to perform eye surgeries that can improve vision and reduce pain.
+
+"
+Where would you find people who aren't related by blood calling each other brother?,"['family ceremony', 'home', 'house', 'monastery', 'seminary']","Questions: Where would you find people who aren't related by blood calling each other brother?, Choices: (A) family ceremony, (B) home, (C) house, (D) monastery, (E) seminary. Given the question 'Where would you find people who aren't related by blood calling each other brother?', which among the choices family ceremony, home, house, monastery seminary is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) monastery. A conditional statement for this question is: **If people who aren't related by blood are calling each other brother, then they are in a monastery.** This is because monks in a monastery often address each other as brothers as a sign of respect and fraternity.
+
+"
+Where would you find people who work with a round brush?,"['art supplies', 'ladies bathroom', 'shower', 'hair salon', 'make person sick']","Questions: Where would you find people who work with a round brush?, Choices: (A) art supplies, (B) ladies bathroom, (C) shower, (D) hair salon, (E) make person sick. Given the question 'Where would you find people who work with a round brush?', which among the choices art supplies, ladies bathroom, shower, hair salon make person sick is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) hair salon. A conditional statement for this question is: **If people are working with a round brush, then they are in a hair salon.** This is because hair stylists use round brushes to create curls and volume in hair.
+
+"
+Where would you find performers on a platform in public?,"['arena', 'building', 'dock', 'concert hall', 'museum']","Questions: Where would you find performers on a platform in public?, Choices: (A) arena, (B) building, (C) dock, (D) concert hall, (E) museum. Given the question 'Where would you find performers on a platform in public?', which among the choices arena, building, dock, concert hall museum is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) concert hall. A conditional statement for this question is: **If performers are on a platform in public, then they are in a concert hall.** This is because concert halls are venues where musicians, singers, and other performers perform on a stage or platform for an audience.
+
+"
+Where would you find politicians in London?,"['coffee house', 'washington d.c', 'talk nonsense', 'government', 'parliament']","Questions: Where would you find politicians in London?, Choices: (A) coffee house, (B) washington d.c, (C) talk nonsense, (D) government, (E) parliament. Given the question 'Where would you find politicians in London?', which among the choices coffee house, washington d.c, talk nonsense, government parliament is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) parliament. A conditional statement for this question is: **If politicians are in London, then they are in parliament.** This is because parliament is the legislative body of the United Kingdom, which is located in London.
+
+"
+Where would you find rows and rows of speakers?,"['desktop', 'headphones', 'town halls', 'concert', 'conference']","Questions: Where would you find rows and rows of speakers?, Choices: (A) desktop, (B) headphones, (C) town halls, (D) concert, (E) conference. Given the question 'Where would you find rows and rows of speakers?', which among the choices desktop, headphones, town halls, concert conference is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) concert. A conditional statement for this question is: **If there are rows and rows of speakers, then there is a concert.** This is because concerts often use large speakers to amplify the sound of the music and the performers.
+
+"
+Where would you find several businesses in the same location?,"['park', 'skyscraper', 'art', 'big city', 'office building']","Questions: Where would you find several businesses in the same location?, Choices: (A) park, (B) skyscraper, (C) art, (D) big city, (E) office building. Given the question 'Where would you find several businesses in the same location?', which among the choices park, skyscraper, art, big city office building is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) office building. A conditional statement for this question is: **If there are several businesses in the same location, then there is an office building.** This is because office buildings are structures that house multiple offices and businesses.
+
+"
+Where would you find some people who are drinking a glass of water?,"['table', 'court room', 'drinking', 'desk', 'at a winery.']","Questions: Where would you find some people who are drinking a glass of water?, Choices: (A) table, (B) court room, (C) drinking, (D) desk, (E) at a winery.. Given the question 'Where would you find some people who are drinking a glass of water?', which among the choices table, court room, drinking, desk at a winery. is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) table. A conditional statement for this question is: **If people are drinking a glass of water, then they are at a table.** This is because tables are common places where people drink water, especially during meals.
+
+"
+Where would you find some swords in your house?,"['sheath', 'sword closet', 'collection', 'container called scabbard', 'museum']","Questions: Where would you find some swords in your house?, Choices: (A) sheath, (B) sword closet, (C) collection, (D) container called scabbard, (E) museum. Given the question 'Where would you find some swords in your house?', which among the choices sheath, sword closet, collection, container called scabbard museum is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) collection. A conditional statement for this question is: **If there are some swords in your house, then they are part of a collection.** This is because swords are not commonly used as weapons or tools in modern times, but rather as collectibles or decorations.
+
+"
+Where would you find sugar in a town?,"['coffee', 'every home', ""neighbor's house"", 'cupboard', 'drawer']","Questions: Where would you find sugar in a town?, Choices: (A) coffee, (B) every home, (C) neighbor's house, (D) cupboard, (E) drawer. Given the question 'Where would you find sugar in a town?', which among the choices coffee, every home, neighbor's house, cupboard drawer is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) every home. A conditional statement for this question is: **If there is sugar in a town, then it is in every home.** This is because sugar is a widely used ingredient and sweetener that can be found in most households."
+Where would you find teeth whitening bleachers?,"['gymnasium', 'soccer game', 'sporting event', 'pharmacy', 'soccer game']","Questions: Where would you find teeth whitening bleachers?, Choices: (A) gymnasium, (B) soccer game, (C) sporting event, (D) pharmacy, (E) soccer game. Given the question 'Where would you find teeth whitening bleachers?', which among the choices gymnasium, soccer game, sporting event, pharmacy soccer game is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) pharmacy. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: If you want to find teeth whitening bleachers, then you should go to a pharmacy. The hypothesis is ""you want to find teeth whitening bleachers"" and the conclusion is ""you should go to a pharmacy"". This statement is true because a pharmacy is a place that sells products for dental care, including teeth whitening bleachers.
+
+"
+Where would you find the closest items made from wood?,"['own home', 'lumberyard', 'electric store', 'carpet', 'boat']","Questions: Where would you find the closest items made from wood?, Choices: (A) own home, (B) lumberyard, (C) electric store, (D) carpet, (E) boat. Given the question 'Where would you find the closest items made from wood?', which among the choices own home, lumberyard, electric store, carpet boat is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) own home. A possible conditional statement for this question is: If you want to find the closest items made from wood, then you should look in your own home. The hypothesis is ""you want to find the closest items made from wood"" and the conclusion is ""you should look in your own home"". This statement is true because your own home is likely to have many items made from wood, such as furniture, doors, floors, etc.
+
+"
+Where would you find the nearest attic?,"['victorian style house', 'basement', 'older houses', 'own home', 'victorian house']","Questions: Where would you find the nearest attic?, Choices: (A) victorian style house, (B) basement, (C) older houses, (D) own home, (E) victorian house. Given the question 'Where would you find the nearest attic?', which among the choices victorian style house, basement, older houses, own home victorian house is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) own home. A possible conditional statement for this question is: If you want to find the nearest attic, then you should check your own home. The hypothesis is ""you want to find the nearest attic"" and the conclusion is ""you should check your own home"". This statement is true because your own home may have an attic, which is a space under the roof of a house. If your home does not have an attic, then the nearest attic may be in a neighboring house.
+
+"
+Where would you find travelers that are planning to go to a different continent?,"['rest area', 'bus depot', 'train station', 'airport', 'book tickets']","Questions: Where would you find travelers that are planning to go to a different continent?, Choices: (A) rest area, (B) bus depot, (C) train station, (D) airport, (E) book tickets. Given the question 'Where would you find travelers that are planning to go to a different continent?', which among the choices rest area, bus depot, train station, airport book tickets is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) airport. A possible conditional statement for this question is: If you want to find travelers that are planning to go to a different continent, then you should go to an airport. The hypothesis is ""you want to find travelers that are planning to go to a different continent"" and the conclusion is ""you should go to an airport"". This statement is true because an airport is a place where people can board flights to different destinations, including different continents.
+
+"
+Where would you find trees that provide food?,"['yard', 'state park', 'market', 'orchard', 'surface of earth']","Questions: Where would you find trees that provide food?, Choices: (A) yard, (B) state park, (C) market, (D) orchard, (E) surface of earth. Given the question 'Where would you find trees that provide food?', which among the choices yard, state park, market, orchard surface of earth is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) orchard. A possible conditional statement for this question is: If you want to find trees that provide food, then you should go to an orchard. The hypothesis is ""you want to find trees that provide food"" and the conclusion is ""you should go to an orchard"". This statement is true because an orchard is a place where fruit trees are grown and harvested.
+
+"
+Where would you find water that is not visible?,"['crushed ice', 'north', 'tidal waves', 'surface of earth', 'steam room']","Questions: Where would you find water that is not visible?, Choices: (A) crushed ice, (B) north, (C) tidal waves, (D) surface of earth, (E) steam room. Given the question 'Where would you find water that is not visible?', which among the choices crushed ice, north, tidal waves, surface of earth steam room is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) steam room. A possible conditional statement for this question is: If you want to find water that is not visible, then you should go to a steam room. The hypothesis is ""you want to find water that is not visible"" and the conclusion is ""you should go to a steam room"". This statement is true because a steam room is a room that is filled with hot steam, which is water in its gaseous state. Steam is not visible to the naked eye, but it can be felt as heat and moisture.
+
+"
+Where would you fire a projectile ball at a clown's mouth?,"['flintlock', 'tennis court', 'at home', 'motion', 'arcade']","Questions: Where would you fire a projectile ball at a clown's mouth?, Choices: (A) flintlock, (B) tennis court, (C) at home, (D) motion, (E) arcade. Given the question 'Where would you fire a projectile ball at a clown's mouth?', which among the choices flintlock, tennis court, at home, motion arcade is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) arcade. A possible conditional statement for this question is: If you want to fire a projectile ball at a clown's mouth, then you should go to an arcade. The hypothesis is ""you want to fire a projectile ball at a clown's mouth"" and the conclusion is ""you should go to an arcade"". This statement is true because an arcade is a place that has various games and attractions, including one where you can fire a projectile ball at a clown's mouth to win a prize.
+
+"
+Where would you first look for your dog?,"['road', 'back yard', ""neighbor's house"", 'porch', 'farmyard']","Questions: Where would you first look for your dog?, Choices: (A) road, (B) back yard, (C) neighbor's house, (D) porch, (E) farmyard. Given the question 'Where would you first look for your dog?', which among the choices road, back yard, neighbor's house, porch farmyard is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) back yard. A possible conditional statement for this question is: If you want to first look for your dog, then you should check your back yard. The hypothesis is ""you want to first look for your dog"" and the conclusion is ""you should check your back yard"". This statement is true because your back yard is a place where your dog may be playing, resting, or exploring.
+
+"
+Where would you get  a map that shows locations that can only be walked to?,"['cafeteria', 'classroom', 'truck stop', 'amusement park', 'gas station']","Questions: Where would you get  a map that shows locations that can only be walked to?, Choices: (A) cafeteria, (B) classroom, (C) truck stop, (D) amusement park, (E) gas station. Given the question 'Where would you get  a map that shows locations that can only be walked to?', which among the choices cafeteria, classroom, truck stop, amusement park gas station is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) amusement park. A possible conditional statement for this question is: If you want to get a map that shows locations that can only be walked to, then you should go to an amusement park. The hypothesis is ""you want to get a map that shows locations that can only be walked to"" and the conclusion is ""you should go to an amusement park"". This statement is true because an amusement park is a place that has various rides and attractions that are spread out over a large area. An amusement park may provide a map that shows the locations of these rides and attractions, which can only be reached by walking.
+
+"
+Where would you get a bag after someone fills it with clothes?,"['shopping cart', 'cashier', 'shopping mall', 'supermarket', 'bookstore']","Questions: Where would you get a bag after someone fills it with clothes?, Choices: (A) shopping cart, (B) cashier, (C) shopping mall, (D) supermarket, (E) bookstore. Given the question 'Where would you get a bag after someone fills it with clothes?', which among the choices shopping cart, cashier, shopping mall, supermarket bookstore is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) cashier. A possible conditional statement for this question is: If you want to get a bag after someone fills it with clothes, then you should go to a cashier. The hypothesis is ""you want to get a bag after someone fills it with clothes"" and the conclusion is ""you should go to a cashier"". This statement is true because a cashier is a person who works at a store and handles the payment and packaging of the items that customers buy. A cashier may give you a bag after someone fills it with clothes that you have purchased."
+Where would you get a ball if you do not have one?,"['bowling alley', 'soccer field', 'sporting event', 'sporting goods store', 'cuddle']","Questions: Where would you get a ball if you do not have one?, Choices: (A) bowling alley, (B) soccer field, (C) sporting event, (D) sporting goods store, (E) cuddle. Given the question 'Where would you get a ball if you do not have one?', which among the choices bowling alley, soccer field, sporting event, sporting goods store cuddle is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) sporting goods store. A possible explanation is:
+
+If you do not have a ball, then you need to buy one or borrow one.
+If you need to buy one, then you need to go to a place that sells balls.
+If you need to go to a place that sells balls, then a sporting goods store is a good option.
+Therefore, if you do not have a ball, then a sporting goods store is a good place to get one.
+
+"
+Where would you get a baseball if you do not have one?,"['sporting goods store', 'america', 'park', 'sandbox', 'break window']","Questions: Where would you get a baseball if you do not have one?, Choices: (A) sporting goods store, (B) america, (C) park, (D) sandbox, (E) break window. Given the question 'Where would you get a baseball if you do not have one?', which among the choices sporting goods store, america, park, sandbox break window is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) sporting goods store. A possible explanation is:
+
+If you do not have a baseball, then you need to buy one or find one.
+If you need to buy one, then you need to go to a place that sells baseballs.
+If you need to go to a place that sells baseballs, then a sporting goods store is a good option.
+Therefore, if you do not have a baseball, then a sporting goods store is a good place to get one.
+
+"
+Where would you get a bass clarinet to take home?,"['orchestra', 'school band', 'music store', 'opera house', 'home']","Questions: Where would you get a bass clarinet to take home?, Choices: (A) orchestra, (B) school band, (C) music store, (D) opera house, (E) home. Given the question 'Where would you get a bass clarinet to take home?', which among the choices orchestra, school band, music store, opera house home is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) music store. A possible explanation is:
+
+If you want to get a bass clarinet to take home, then you need to buy one or rent one.
+If you need to buy one or rent one, then you need to go to a place that offers bass clarinets.
+If you need to go to a place that offers bass clarinets, then a music store is a good option.
+Therefore, if you want to get a bass clarinet to take home, then a music store is a good place to get one.
+
+"
+Where would you get a chain if you do not have one?,"['tow truck', 'bicycle', 'motorbike', 'chain link fence', 'jewelry store']","Questions: Where would you get a chain if you do not have one?, Choices: (A) tow truck, (B) bicycle, (C) motorbike, (D) chain link fence, (E) jewelry store. Given the question 'Where would you get a chain if you do not have one?', which among the choices tow truck, bicycle, motorbike, chain link fence jewelry store is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) jewelry store. A possible explanation is:
+
+If you do not have a chain, then you need to buy one or make one.
+If you need to buy one, then you need to go to a place that sells chains.
+If you need to go to a place that sells chains, then a jewelry store is a good option.
+Therefore, if you do not have a chain, then a jewelry store is a good place to get one.
+
+"
+Where would you get a contraceptive if you do not have one?,"['health center', 'vagina', 'emergency room', 'drawer', 'medicine cabinet']","Questions: Where would you get a contraceptive if you do not have one?, Choices: (A) health center, (B) vagina, (C) emergency room, (D) drawer, (E) medicine cabinet. Given the question 'Where would you get a contraceptive if you do not have one?', which among the choices health center, vagina, emergency room, drawer medicine cabinet is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) health center. A possible explanation is:
+
+If you do not have a contraceptive, then you need to get one or abstain from sexual activity.
+If you need to get one, then you need to go to a place that provides contraceptives.
+If you need to go to a place that provides contraceptives, then a health center is a good option.
+Therefore, if you do not have a contraceptive, then a health center is a good place to get one.
+
+"
+Where would you get a dog if you do not have one?,"['pet store', 'outside', ""neighbor's house"", 'park', 'rug']","Questions: Where would you get a dog if you do not have one?, Choices: (A) pet store, (B) outside, (C) neighbor's house, (D) park, (E) rug. Given the question 'Where would you get a dog if you do not have one?', which among the choices pet store, outside, neighbor's house, park rug is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) pet store. A possible explanation is:
+
+If you do not have a dog, then you need to adopt one or foster one.
+If you need to adopt one or foster one, then you need to go to a place that has dogs available.
+If you need to go to a place that has dogs available, then a pet store is a good option.
+Therefore, if you do not have a dog, then a pet store is a good place to get one.
+
+"
+Where would you get a freezer if you do not have one?,"['icy cold', 'own home', 'garage', 'freeze food', 'appliance store']","Questions: Where would you get a freezer if you do not have one?, Choices: (A) icy cold, (B) own home, (C) garage, (D) freeze food, (E) appliance store. Given the question 'Where would you get a freezer if you do not have one?', which among the choices icy cold, own home, garage, freeze food appliance store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) appliance store. A possible explanation is:
+
+If you do not have a freezer, then you need to buy one or use someone else's.
+If you need to buy one, then you need to go to a place that sells freezers.
+If you need to go to a place that sells freezers, then an appliance store is a good option.
+Therefore, if you do not have a freezer, then an appliance store is a good place to get one.
+
+"
+Where would you get a gift for someone who only likes some kinds of thing?,"['christmas tree', 'department store', 'variety store', 'specialty store', 'christmas stocking']","Questions: Where would you get a gift for someone who only likes some kinds of thing?, Choices: (A) christmas tree, (B) department store, (C) variety store, (D) specialty store, (E) christmas stocking. Given the question 'Where would you get a gift for someone who only likes some kinds of thing?', which among the choices christmas tree, department store, variety store, specialty store christmas stocking is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) specialty store. A possible explanation is:
+
+If you want to get a gift for someone who only likes some kinds of thing, then you need to find something that matches their preferences.
+If you need to find something that matches their preferences, then you need to go to a place that has a variety of options for that kind of thing.
+If you need to go to a place that has a variety of options for that kind of thing, then a specialty store is a good option.
+Therefore, if you want to get a gift for someone who only likes some kinds of thing, then a specialty store is a good place to get one.
+
+"
+Where would you get a keyboard if you do not have one?,"['office', 'music store', 'school', 'classifieds', 'landfill']","Questions: Where would you get a keyboard if you do not have one?, Choices: (A) office, (B) music store, (C) school, (D) classifieds, (E) landfill. Given the question 'Where would you get a keyboard if you do not have one?', which among the choices office, music store, school, classifieds landfill is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) music store. A possible explanation is:
+
+If you do not have a keyboard, then you need to buy one or borrow one.
+If you need to buy one or borrow one, then you need to go to a place that has keyboards available.
+If you need to go to a place that has keyboards available, then a music store is a good option.
+Therefore, if you do not have a keyboard, then a music store is a good place to get one.
+
+"
+Where would you get a mailbox if you do not have one?,"['downtown area', 'front yard', 'obesity', 'post office', 'hardware store']","Questions: Where would you get a mailbox if you do not have one?, Choices: (A) downtown area, (B) front yard, (C) obesity, (D) post office, (E) hardware store. Given the question 'Where would you get a mailbox if you do not have one?', which among the choices downtown area, front yard, obesity, post office hardware store is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) hardware store. A possible explanation is:
+
+If you do not have a mailbox, then you need to buy one or install one.
+If you need to buy one or install one, then you need to go to a place that sells mailboxes.
+If you need to go to a place that sells mailboxes, then a hardware store is a good option.
+Therefore, if you do not have a mailbox, then a hardware store is a good place to get one."
+Where would you get a marker if you do not have one?,"['office supply store', 'desk', 'pocket', 'drawer', 'briefcase']","Questions: Where would you get a marker if you do not have one?, Choices: (A) office supply store, (B) desk, (C) pocket, (D) drawer, (E) briefcase. Given the question 'Where would you get a marker if you do not have one?', which among the choices office supply store, desk, pocket, drawer briefcase is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) office supply store. A possible explanation is: If you do not have a marker, then you need to buy one. If you need to buy one, then you need to go to a place that sells markers. If you need to go to a place that sells markers, then an office supply store is a good option. Therefore, if you do not have a marker, then you can get one from an office supply store.
+
+"
+Where would you get a radio if you do not have one?,"['school', 'space shuttle', 'trunk', 'stalk', 'shop']","Questions: Where would you get a radio if you do not have one?, Choices: (A) school, (B) space shuttle, (C) trunk, (D) stalk, (E) shop. Given the question 'Where would you get a radio if you do not have one?', which among the choices school, space shuttle, trunk, stalk shop is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) shop. A possible explanation is: If you do not have a radio, then you need to buy one. If you need to buy one, then you need to go to a place that sells radios. If you need to go to a place that sells radios, then a shop is a good option. Therefore, if you do not have a radio, then you can get one from a shop.
+
+"
+Where would you get a saw that you can take home?,"['hardware store', 'tool shed', 'toolbox', 'diy store', 'tool kit']","Questions: Where would you get a saw that you can take home?, Choices: (A) hardware store, (B) tool shed, (C) toolbox, (D) diy store, (E) tool kit. Given the question 'Where would you get a saw that you can take home?', which among the choices hardware store, tool shed, toolbox, diy store tool kit is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) diy store. A possible explanation is: If you want to get a saw that you can take home, then you need to buy one. If you need to buy one, then you need to go to a place that sells saws. If you need to go to a place that sells saws, then a diy store is a good option. Therefore, if you want to get a saw that you can take home, then you can get one from a diy store.
+
+"
+Where would you get a stepladder if you do not have one?,"['hardware store', 'store room', 'garage', ""construction worker's vehicle"", 'tool shed']","Questions: Where would you get a stepladder if you do not have one?, Choices: (A) hardware store, (B) store room, (C) garage, (D) construction worker's vehicle, (E) tool shed. Given the question 'Where would you get a stepladder if you do not have one?', which among the choices hardware store, store room, garage, construction worker's vehicle tool shed is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) hardware store. A possible explanation is: If you do not have a stepladder, then you need to buy one. If you need to buy one, then you need to go to a place that sells stepladders. If you need to go to a place that sells stepladders, then a hardware store is a good option. Therefore, if you do not have a stepladder, then you can get one from a hardware store.
+
+"
+Where would you get a washcloth if you do not have one?,"['bathing', 'bathroom sink', 'garage', 'linen closet', 'walmart']","Questions: Where would you get a washcloth if you do not have one?, Choices: (A) bathing, (B) bathroom sink, (C) garage, (D) linen closet, (E) walmart. Given the question 'Where would you get a washcloth if you do not have one?', which among the choices bathing, bathroom sink, garage, linen closet walmart is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) walmart. A possible explanation is: If you do not have a washcloth, then you need to buy one. If you need to buy one, then you need to go to a place that sells washcloths. If you need to go to a place that sells washcloths, then walmart is a good option. Therefore, if you do not have a washcloth, then you can get one from walmart.
+
+"
+Where would you get an action figure if you do not have one?,"['eat cake', ""little boy's toy box"", 'theater', 'bathtub', 'toy store']","Questions: Where would you get an action figure if you do not have one?, Choices: (A) eat cake, (B) little boy's toy box, (C) theater, (D) bathtub, (E) toy store. Given the question 'Where would you get an action figure if you do not have one?', which among the choices eat cake, little boy's toy box, theater, bathtub toy store is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) toy store. A possible explanation is: If you do not have an action figure, then you need to buy one. If you need to buy one, then you need to go to a place that sells action figures. If you need to go to a place that sells action figures, then a toy store is a good option. Therefore, if you do not have an action figure, then you can get one from a toy store.
+
+"
+Where would you get an apple that you already bought?,"['greengrocer', 'in your grocery bag', 'fridge', 'refrigerator', 'grocery store']","Questions: Where would you get an apple that you already bought?, Choices: (A) greengrocer, (B) in your grocery bag, (C) fridge, (D) refrigerator, (E) grocery store. Given the question 'Where would you get an apple that you already bought?', which among the choices greengrocer, in your grocery bag, fridge, refrigerator grocery store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) in your grocery bag. A possible explanation is: If you already bought an apple, then you have it with you. If you have it with you, then it is likely in the bag that you used to carry your groceries. Therefore, if you already bought an apple, then you can get it from your grocery bag.
+
+"
+Where would you get an electric razor if you do not have one?,"['k mart', ""man's suitcase"", 'medicine cabinet', 'from the electric company', 'bathroom']","Questions: Where would you get an electric razor if you do not have one?, Choices: (A) k mart, (B) man's suitcase, (C) medicine cabinet, (D) from the electric company, (E) bathroom. Given the question 'Where would you get an electric razor if you do not have one?', which among the choices k mart, man's suitcase, medicine cabinet, from the electric company bathroom is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) k mart. A possible explanation is: If you do not have an electric razor, then you need to buy one. If you need to buy one, then you need to go to a place that sells electric razors. If you need to go to a place that sells electric razors, then k mart is a good option. Therefore, if you do not have an electric razor, then you can get one from k mart.
+
+"
+Where would you get an eyeglasses case if you do not have one?,"['factory', 'bag', 'store', 'purse', 'shirt pocket']","Questions: Where would you get an eyeglasses case if you do not have one?, Choices: (A) factory, (B) bag, (C) store, (D) purse, (E) shirt pocket. Given the question 'Where would you get an eyeglasses case if you do not have one?', which among the choices factory, bag, store, purse shirt pocket is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) store. A possible explanation is: If you do not have an eyeglasses case, then you need to buy one. If you need to buy one, then you need to go to a place that sells eyeglasses cases. If you need to go to a place that sells eyeglasses cases, then a store is a good option. Therefore, if you do not have an eyeglasses case, then you can get one from a store.
+
+"
+Where would you get an upright piano if you do not have one?,"['new york', 'living room', 'music room', 'music store', 'house']","Questions: Where would you get an upright piano if you do not have one?, Choices: (A) new york, (B) living room, (C) music room, (D) music store, (E) house. Given the question 'Where would you get an upright piano if you do not have one?', which among the choices new york, living room, music room, music store house is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) music store. A possible explanation is: If you do not have an upright piano, then you need to buy one. If you need to buy one, then you need to go to a place that sells upright pianos. If you need to go to a place that sells upright pianos, then a music store is a good option. Therefore, if you do not have an upright piano, then you can get one from a music store."
+Where would you get maps if you do not have them and want to keep them?,"['guide drivers', 'library', 'bookstore', 'cabinet', 'drawer']","Questions: Where would you get maps if you do not have them and want to keep them?, Choices: (A) guide drivers, (B) library, (C) bookstore, (D) cabinet, (E) drawer. Given the question 'Where would you get maps if you do not have them and want to keep them?', which among the choices guide drivers, library, bookstore, cabinet drawer is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) bookstore. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If you do not have maps and want to keep them, then you would get maps from a bookstore."" This statement is true because a bookstore is a place that sells maps that you can buy and keep.
+
+"
+Where would you get marble if you do not have any?,"['opaque', 'game', 'pawn shop', 'store', 'pouch']","Questions: Where would you get marble if you do not have any?, Choices: (A) opaque, (B) game, (C) pawn shop, (D) store, (E) pouch. Given the question 'Where would you get marble if you do not have any?', which among the choices opaque, game, pawn shop, store pouch is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) store. A possible conditional statement for this question is: ""If you do not have marble, then you would get marble from a store."" This statement is true because a store is a place that sells various items, including marble.
+
+"
+Where would you get nails if you do not have any?,"['store', 'supermarket', 'jar', 'container', 'cabinet']","Questions: Where would you get nails if you do not have any?, Choices: (A) store, (B) supermarket, (C) jar, (D) container, (E) cabinet. Given the question 'Where would you get nails if you do not have any?', which among the choices store, supermarket, jar, container cabinet is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) store. A possible conditional statement for this question is: ""If you do not have nails, then you would get nails from a store."" This statement is true because a store is a place that sells hardware materials, such as nails.
+
+"
+Where would you get prescription mouthwash?,"['optometrist', ""dentist's office"", 'drug store', 'bathroom', 'bottle']","Questions: Where would you get prescription mouthwash?, Choices: (A) optometrist, (B) dentist's office, (C) drug store, (D) bathroom, (E) bottle. Given the question 'Where would you get prescription mouthwash?', which among the choices optometrist, dentist's office, drug store, bathroom bottle is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) drug store. A possible conditional statement for this question is: ""If you need prescription mouthwash, then you would get prescription mouthwash from a drug store."" This statement is true because a drug store is a place that sells medicine and other health products, including prescription mouthwash.
+
+"
+Where would you get some chocolate if you want to bake a cake?,"['box', 'supermarket', 'chicken stall', 'restaurant', 'movies']","Questions: Where would you get some chocolate if you want to bake a cake?, Choices: (A) box, (B) supermarket, (C) chicken stall, (D) restaurant, (E) movies. Given the question 'Where would you get some chocolate if you want to bake a cake?', which among the choices box, supermarket, chicken stall, restaurant movies is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) supermarket. A possible conditional statement for this question is: ""If you want to bake a cake and need some chocolate, then you would get some chocolate from a supermarket."" This statement is true because a supermarket is a place that sells food and other groceries, including chocolate.
+
+"
+Where would you get some knives if you do not have any?,"['restaurant', 'sporting goods store', 'drawer', 'backpack', 'kitchen']","Questions: Where would you get some knives if you do not have any?, Choices: (A) restaurant, (B) sporting goods store, (C) drawer, (D) backpack, (E) kitchen. Given the question 'Where would you get some knives if you do not have any?', which among the choices restaurant, sporting goods store, drawer, backpack kitchen is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) kitchen. A possible conditional statement for this question is: ""If you do not have any knives and need some knives, then you would get some knives from a kitchen."" This statement is true because a kitchen is a place that has utensils and tools for cooking and eating, including knives.
+
+"
+Where would you get some tin if you do not have any?,"['cupboard', 'hardware store', 'antique store', 'shop', 'grocery store']","Questions: Where would you get some tin if you do not have any?, Choices: (A) cupboard, (B) hardware store, (C) antique store, (D) shop, (E) grocery store. Given the question 'Where would you get some tin if you do not have any?', which among the choices cupboard, hardware store, antique store, shop grocery store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) hardware store. A possible conditional statement for this question is: ""If you do not have any tin and need some tin, then you would get some tin from a hardware store."" This statement is true because a hardware store is a place that sells metal and other materials, including tin.
+
+"
+Where would you get sports equipment if you do not have any?,"['sporting goods store', 'sears', 'pool', 'sporting event', 'school']","Questions: Where would you get sports equipment if you do not have any?, Choices: (A) sporting goods store, (B) sears, (C) pool, (D) sporting event, (E) school. Given the question 'Where would you get sports equipment if you do not have any?', which among the choices sporting goods store, sears, pool, sporting event school is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) sporting goods store. A possible conditional statement for this question is: ""If you do not have any sports equipment and need some sports equipment, then you would get some sports equipment from a sporting goods store."" This statement is true because a sporting goods store is a place that sells equipment and accessories for various sports and activities.
+
+"
+Where would you get sugar if you do not have any?,"['kitchen', 'cabinet', ""neighbor's house"", 'container', 'cupboard']","Questions: Where would you get sugar if you do not have any?, Choices: (A) kitchen, (B) cabinet, (C) neighbor's house, (D) container, (E) cupboard. Given the question 'Where would you get sugar if you do not have any?', which among the choices kitchen, cabinet, neighbor's house, container cupboard is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) neighbor's house. A possible conditional statement for this question is: ""If you do not have any sugar and need some sugar, then you would get some sugar from a neighbor's house."" This statement is true because a neighbor's house is a place that might have some sugar that they can lend or give to you.
+
+"
+Where would you give something other than money to a clerk?,"['ticket booth', 'at hotel', 'shop', 'bookstore', 'post office']","Questions: Where would you give something other than money to a clerk?, Choices: (A) ticket booth, (B) at hotel, (C) shop, (D) bookstore, (E) post office. Given the question 'Where would you give something other than money to a clerk?', which among the choices ticket booth, at hotel, shop, bookstore post office is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) ticket booth. A possible conditional statement for this question is: ""If you want to give something other than money to a clerk, then you would give something other than money to a clerk at a ticket booth."" This statement is true because a ticket booth is a place that sells tickets for events or transportation, and you can give a ticket or a voucher instead of money to a clerk there."

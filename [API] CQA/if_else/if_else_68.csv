@@ -1,0 +1,514 @@
+premise,hypothesis,prompt,rationale
+What is the most common but not long lasting side effect of having a bath?,"['use of water', 'drowning', 'rash', 'wet skin', 'dry skin']","Questions: What is the most common but not long lasting side effect of having a bath?, Choices: (A) use of water, (B) drowning, (C) rash, (D) wet skin, (E) dry skin. Given the question 'What is the most common but not long lasting side effect of having a bath?', which among the choices use of water, drowning, rash, wet skin dry skin is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) wet skin**. A possible explanation using conditional statements is:
+
+```
+If you have a bath, then your skin will get wet.
+If your skin is wet, then it will dry after some time.
+Therefore, wet skin is a common but not long lasting side effect of having a bath.
+```
+
+"
+What is the most likely feature of a cat that you can see in the dark?,"['eyes', 'litter of kittens', 'four legs', 'nose', 'flippers']","Questions: What is the most likely feature of a cat that you can see in the dark?, Choices: (A) eyes, (B) litter of kittens, (C) four legs, (D) nose, (E) flippers. Given the question 'What is the most likely feature of a cat that you can see in the dark?', which among the choices eyes, litter of kittens, four legs, nose flippers is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) eyes**. A possible explanation using conditional statements is:
+
+```
+If it is dark, then you cannot see most features of a cat.
+If a cat has eyes, then they can reflect light and appear bright in the dark.
+Therefore, eyes are the most likely feature of a cat that you can see in the dark.
+```
+
+"
+What is the name of a place where cargo is stored?,"['at sea', ""ship's hold"", 'aeroplane', 'airplane', 'boat']","Questions: What is the name of a place where cargo is stored?, Choices: (A) at sea, (B) ship's hold, (C) aeroplane, (D) airplane, (E) boat. Given the question 'What is the name of a place where cargo is stored?', which among the choices at sea, ship's hold, aeroplane, airplane boat is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) ship's hold**. A possible explanation using conditional statements is:
+
+```
+If cargo is stored, then it needs a large and secure space.
+If a ship has a hold, then it can provide a large and secure space for cargo.
+Therefore, ship's hold is the name of a place where cargo is stored.
+```
+
+"
+What is the name of the government building that houses the U.S. Congress?,"['country', 'washington d.c', 'florida', 'democracy', 'capitol building']","Questions: What is the name of the government building that houses the U.S. Congress?, Choices: (A) country, (B) washington d.c, (C) florida, (D) democracy, (E) capitol building. Given the question 'What is the name of the government building that houses the U.S. Congress?', which among the choices country, washington d.c, florida, democracy capitol building is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) capitol building**. A possible explanation using conditional statements is:
+
+```
+If a building houses the U.S. Congress, then it must be located in Washington D.C.
+If a building is located in Washington D.C., then it must have a name that is related to the U.S. government.
+Therefore, capitol building is the name of the government building that houses the U.S. Congress.
+```
+
+"
+What is the natural instinct of someone not known as a fighter when filled with fear?,"['commit perjury', 'fight enemy', 'run', 'urinate', 'sing off-key']","Questions: What is the natural instinct of someone not known as a fighter when filled with fear?, Choices: (A) commit perjury, (B) fight enemy, (C) run, (D) urinate, (E) sing off-key. Given the question 'What is the natural instinct of someone not known as a fighter when filled with fear?', which among the choices commit perjury, fight enemy, run, urinate sing off-key is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) run**. A possible explanation using conditional statements is:
+
+```
+If someone is not known as a fighter, then they are not trained or skilled in combat.
+If someone is filled with fear, then they want to avoid danger or harm.
+Therefore, run is the natural instinct of someone not known as a fighter when filled with fear.
+```
+
+"
+What is the object with a point used for mountain climbing?,"['hat', 'arrowhead', 'needle', 'alpenstock', 'waterpoint']","Questions: What is the object with a point used for mountain climbing?, Choices: (A) hat, (B) arrowhead, (C) needle, (D) alpenstock, (E) waterpoint. Given the question 'What is the object with a point used for mountain climbing?', which among the choices hat, arrowhead, needle, alpenstock waterpoint is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) alpenstock**. A possible explanation using conditional statements is:
+
+```
+If an object has a point, then it can pierce or stab something.
+If an object is used for mountain climbing, then it can help with balance or support.
+Therefore, alpenstock is the object with a point used for mountain climbing.
+```
+
+"
+What is the one thing you cannot do if you're on the move?,"['sit still', 'stationary', 'running', 'stand still', 'stay still']","Questions: What is the one thing you cannot do if you're on the move?, Choices: (A) sit still, (B) stationary, (C) running, (D) stand still, (E) stay still. Given the question 'What is the one thing you cannot do if you're on the move?', which among the choices sit still, stationary, running, stand still stay still is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) stand still**. A possible explanation using conditional statements is:
+
+```
+If you are on the move, then you are changing your position or location.
+If you stand still, then you are not changing your position or location.
+Therefore, stand still is the one thing you cannot do if you're on the move.
+```
+
+"
+What is the only was to recover from exhaustion?,"['mediate', 'have rest', 'stay in bed', 'run out of steam', 'go to sleep']","Questions: What is the only was to recover from exhaustion?, Choices: (A) mediate, (B) have rest, (C) stay in bed, (D) run out of steam, (E) go to sleep. Given the question 'What is the only was to recover from exhaustion?', which among the choices mediate, have rest, stay in bed, run out of steam go to sleep is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) go to sleep**. A possible explanation using conditional statements is:
+
+```
+If you are exhausted, then you are very tired or drained of energy.
+If you go to sleep, then you can restore your energy and feel refreshed.
+Therefore, go to sleep is the only way to recover from exhaustion.
+```
+
+"
+What is the opposite of a village?,"['rural area', 'africa', 'ohio', 'big city', 'tribe']","Questions: What is the opposite of a village?, Choices: (A) rural area, (B) africa, (C) ohio, (D) big city, (E) tribe. Given the question 'What is the opposite of a village?', which among the choices rural area, africa, ohio, big city tribe is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) big city**. A possible explanation using conditional statements is:
+
+```
+If something is opposite of a village, then it has different characteristics from a village.
+If a village is a small and rural settlement, then a big city is a large and urban settlement.
+Therefore, big city is the opposite of a village.
+```
+
+"
+What is the opposite of ambiguous?,"['clear', 'certain', 'distinct', 'blurry', 'explicit']","Questions: What is the opposite of ambiguous?, Choices: (A) clear, (B) certain, (C) distinct, (D) blurry, (E) explicit. Given the question 'What is the opposite of ambiguous?', which among the choices clear, certain, distinct, blurry explicit is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) certain**. A possible explanation using conditional statements is:
+
+```
+If something is opposite of ambiguous, then it has a clear and definite meaning.
+If something is certain, then it has a clear and definite meaning.
+Therefore, certain is the opposite of ambiguous.
+```
+
+I hope this helps. If you have any other questions, feel free to ask me. 😊"
+What is the opposite of an odd number?,"['expected', 'even', 'irregular', 'habitual', 'regular']","Questions: What is the opposite of an odd number?, Choices: (A) expected, (B) even, (C) irregular, (D) habitual, (E) regular. Given the question 'What is the opposite of an odd number?', which among the choices expected, even, irregular, habitual regular is the correct answer? Explain your reasoning using conditional statements.
+",1. The correct answer is **(B) even**. An odd number is a number that is not divisible by 
+What is the opposite of beautiful?,"['a witch', 'plain', 'homely', 'overcast', 'ugly']","Questions: What is the opposite of beautiful?, Choices: (A) a witch, (B) plain, (C) homely, (D) overcast, (E) ugly. Given the question 'What is the opposite of beautiful?', which among the choices a witch, plain, homely, overcast ugly is the correct answer? Explain your reasoning using conditional statements.
+","2, such as 1, "
+What is the opposite of being dead?,"['working', 'breathing', 'born', 'being', 'alive']","Questions: What is the opposite of being dead?, Choices: (A) working, (B) breathing, (C) born, (D) being, (E) alive. Given the question 'What is the opposite of being dead?', which among the choices working, breathing, born, being alive is the correct answer? Explain your reasoning using conditional statements.
+","3, 5, etc. The opposite of an odd number is a number that is divisible by 2, such as 2, "
+What is the opposite of deep?,"['frivolous', 'shallow', 'high', 'light', 'funny']","Questions: What is the opposite of deep?, Choices: (A) frivolous, (B) shallow, (C) high, (D) light, (E) funny. Given the question 'What is the opposite of deep?', which among the choices frivolous, shallow, high, light funny is the correct answer? Explain your reasoning using conditional statements.
+",
+What is the opposite of dissociate with someone?,"['fuse', 'unit', 'join', 'combine', 'incorporate']","Questions: What is the opposite of dissociate with someone?, Choices: (A) fuse, (B) unit, (C) join, (D) combine, (E) incorporate. Given the question 'What is the opposite of dissociate with someone?', which among the choices fuse, unit, join, combine incorporate is the correct answer? Explain your reasoning using conditional statements.
+","5, etc. The opposite of an odd number is a number that is divisible by 2, such as 2, 4, "
+What is the opposite of foolhardy?,"['thoughtful', 'discreet', 'calculated', 'cautious', 'careful']","Questions: What is the opposite of foolhardy?, Choices: (A) thoughtful, (B) discreet, (C) calculated, (D) cautious, (E) careful. Given the question 'What is the opposite of foolhardy?', which among the choices thoughtful, discreet, calculated, cautious careful is the correct answer? Explain your reasoning using conditional statements.
+","6, etc. These numbers are called even numbers. A conditional statement that explains this reasoning is:
+
+`If a number is odd, then it is not divisible by 2.`
+
+2. The correct answer is **(E) ugly**. Beautiful is an adjective that describes something or someone that is pleasing to the senses or the mind, such as a beautiful flower, a beautiful painting, or a beautiful person. The opposite of beautiful is something or someone that is displeasing to the senses or the mind, such as an ugly scar, an ugly mess, or an ugly person. A conditional statement that explains this reasoning is:
+
+`If something or someone is beautiful, then it is pleasing to the senses or the mind.`
+
+3. The correct answer is **(E) alive**. Being dead is a state of no longer living, breathing, or functioning, such as a dead animal, a dead plant, or a dead battery. The opposite of being dead is being alive, which is a state of living, breathing, or functioning, such as a living creature, a living organism, or a living machine. A conditional statement that explains this reasoning is:
+
+`If something or someone is dead, then it is no longer living, breathing, or functioning.`
+
+4. The correct answer is **(B) shallow**. Deep is an adjective that describes something that has a large distance from the top or surface to the bottom, such as a deep well, a deep ocean, or a deep wound. The opposite of deep is something that has a small distance from the top or surface to the bottom, such as a shallow pool, a shallow lake, or a shallow cut. A conditional statement that explains this reasoning is:
+
+`If something is deep, then it has a large distance from the top or surface to the bottom.`
+
+5. The correct answer is **(D) combine**. To dissociate with someone is to separate oneself from a person or a group, such as to dissociate from a friend, a family, or a club. The opposite of dissociating with someone is to join or unite with a person or a group, such as to combine with a partner, a team, or a coalition. A conditional statement that explains this reasoning is:
+
+`If someone dissociates with someone, then they separate themselves from a person or a group."
+What is the opposite of hands?,"['toes', 'body part', 'legs', 'feet', 'foot']","Questions: What is the opposite of hands?, Choices: (A) toes, (B) body part, (C) legs, (D) feet, (E) foot. Given the question 'What is the opposite of hands?', which among the choices toes, body part, legs, feet foot is the correct answer? Explain your reasoning using conditional statements.
+",
+What is the opposite of having fun?,"['playing around', 'activity', 'video games', 'effort', 'relaxing']","Questions: What is the opposite of having fun?, Choices: (A) playing around, (B) activity, (C) video games, (D) effort, (E) relaxing. Given the question 'What is the opposite of having fun?', which among the choices playing around, activity, video games, effort relaxing is the correct answer? Explain your reasoning using conditional statements.
+",
+What is the opposite of hosting a crowd?,"['few people', 'pay debts', 'individual', 'single person', 'small group']","Questions: What is the opposite of hosting a crowd?, Choices: (A) few people, (B) pay debts, (C) individual, (D) single person, (E) small group. Given the question 'What is the opposite of hosting a crowd?', which among the choices few people, pay debts, individual, single person small group is the correct answer? Explain your reasoning using conditional statements.
+",
+What is the opposite of hot?,"['freezing', 'lifeless', 'chilled', 'neutral', 'cold']","Questions: What is the opposite of hot?, Choices: (A) freezing, (B) lifeless, (C) chilled, (D) neutral, (E) cold. Given the question 'What is the opposite of hot?', which among the choices freezing, lifeless, chilled, neutral cold is the correct answer? Explain your reasoning using conditional statements.
+",`
+What is the opposite of little?,"['least', 'much', 'bog', 'lot of', 'big']","Questions: What is the opposite of little?, Choices: (A) least, (B) much, (C) bog, (D) lot of, (E) big. Given the question 'What is the opposite of little?', which among the choices least, much, bog, lot of big is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) big**. The opposite of little is something that is large or has a lot of size. The other choices are not related to the size of something. We can use conditional statements to explain the reasoning as follows:
+
+```
+if (size == ""little"") {
+  opposite = ""big"";
+} else {
+  opposite = ""not related to size"";
+}
+```
+
+"
+What is the opposite of ordinary?,"['strange', 'special', 'unbelievable', 'exceptional', 'weird']","Questions: What is the opposite of ordinary?, Choices: (A) strange, (B) special, (C) unbelievable, (D) exceptional, (E) weird. Given the question 'What is the opposite of ordinary?', which among the choices strange, special, unbelievable, exceptional weird is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) exceptional**. The opposite of ordinary is something that is extraordinary or has a lot of quality. The other choices are not related to the quality of something. They are either synonyms of ordinary (strange, weird) or different aspects of something (special, unbelievable). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (quality == ""ordinary"") {
+  opposite = ""exceptional"";
+} else {
+  opposite = ""not related to quality"";
+}
+```
+
+"
+What is the opposite of pain?,"['feeling good', 'enjoyment', 'agony', 'pleasure', 'feel good']","Questions: What is the opposite of pain?, Choices: (A) feeling good, (B) enjoyment, (C) agony, (D) pleasure, (E) feel good. Given the question 'What is the opposite of pain?', which among the choices feeling good, enjoyment, agony, pleasure feel good is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) pleasure**. The opposite of pain is something that is enjoyable or has a lot of satisfaction. The other choices are not related to the satisfaction of something. They are either synonyms of pain (agony) or different aspects of something (feeling good, enjoyment, feel good). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (satisfaction == ""pain"") {
+  opposite = ""pleasure"";
+} else {
+  opposite = ""not related to satisfaction"";
+}
+```
+
+"
+What is the opposite of progressive?,"['conservative', 'regressive', 'reactionary', 'stable', 'non progressive']","Questions: What is the opposite of progressive?, Choices: (A) conservative, (B) regressive, (C) reactionary, (D) stable, (E) non progressive. Given the question 'What is the opposite of progressive?', which among the choices conservative, regressive, reactionary, stable non progressive is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) regressive**. The opposite of progressive is something that is backward or has a lot of decline. The other choices are not related to the decline of something. They are either synonyms of progressive (conservative, reactionary) or different aspects of something (stable, non progressive). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (decline == ""progressive"") {
+  opposite = ""regressive"";
+} else {
+  opposite = ""not related to decline"";
+}
+```
+
+"
+What is the opposite of remembering?,"['answering question', 'stopping to think', 'knowing', 'closing eyes', 'forgetting']","Questions: What is the opposite of remembering?, Choices: (A) answering question, (B) stopping to think, (C) knowing, (D) closing eyes, (E) forgetting. Given the question 'What is the opposite of remembering?', which among the choices answering question, stopping to think, knowing, closing eyes forgetting is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) forgetting**. The opposite of remembering is something that is losing or has a lot of memory loss. The other choices are not related to the memory loss of something. They are either synonyms of remembering (answering question, knowing) or different aspects of something (stopping to think, closing eyes). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (memory_loss == ""remembering"") {
+  opposite = ""forgetting"";
+} else {
+  opposite = ""not related to memory loss"";
+}
+```
+
+"
+What is the opposite of something being liken to something else?,"['discern', 'distinguish', 'metaphor', 'discriminate', 'contrast']","Questions: What is the opposite of something being liken to something else?, Choices: (A) discern, (B) distinguish, (C) metaphor, (D) discriminate, (E) contrast. Given the question 'What is the opposite of something being liken to something else?', which among the choices discern, distinguish, metaphor, discriminate contrast is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) contrast**. The opposite of something being liken to something else is something that is different or has a lot of dissimilarity. The other choices are not related to the dissimilarity of something. They are either synonyms of something being liken to something else (metaphor) or different aspects of something (discern, distinguish, discriminate). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (dissimilarity == ""liken"") {
+  opposite = ""contrast"";
+} else {
+  opposite = ""not related to dissimilarity"";
+}
+```
+
+"
+What is the opposite of to dignify someone?,"['humiliate', 'mortify', 'demean', 'demean', 'shame']","Questions: What is the opposite of to dignify someone?, Choices: (A) humiliate, (B) mortify, (C) demean, (D) demean, (E) shame. Given the question 'What is the opposite of to dignify someone?', which among the choices humiliate, mortify, demean, demean shame is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) humiliate**. The opposite of to dignify someone is to insult or has a lot of disrespect. The other choices are not related to the disrespect of someone. They are either synonyms of to dignify someone (mortify, demean, shame) or different aspects of someone (demean). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (disrespect == ""dignify"") {
+  opposite = ""humiliate"";
+} else {
+  opposite = ""not related to disrespect"";
+}
+```
+
+"
+What is the opposite of what will happen if you're lying constantly?,"['feeling guilty', 'confusion', 'unhappiness', 'good things', 'rewards']","Questions: What is the opposite of what will happen if you're lying constantly?, Choices: (A) feeling guilty, (B) confusion, (C) unhappiness, (D) good things, (E) rewards. Given the question 'What is the opposite of what will happen if you're lying constantly?', which among the choices feeling guilty, confusion, unhappiness, good things rewards is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) rewards**. The opposite of what will happen if you're lying constantly is what will happen if you're honest or has a lot of benefits. The other choices are not related to the benefits of something. They are either synonyms of what will happen if you're lying constantly (feeling guilty, confusion, unhappiness) or different aspects of something (good things). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (benefits == ""lying"") {
+  opposite = ""rewards"";
+} else {
+  opposite = ""not related to benefits"";
+}
+```
+
+"
+What is the outcome when two people are competing against each other?,"['encouraging', 'injury', 'frustration', 'one winner', 'pride']","Questions: What is the outcome when two people are competing against each other?, Choices: (A) encouraging, (B) injury, (C) frustration, (D) one winner, (E) pride. Given the question 'What is the outcome when two people are competing against each other?', which among the choices encouraging, injury, frustration, one winner pride is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) one winner**. The outcome when two people are competing against each other is that one person will win or has a lot of success. The other choices are not related to the success of something. They are either synonyms of the outcome when two people are competing against each other (encouraging, injury, frustration, pride) or different aspects of something (none). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (success == ""competing"") {
+  outcome = ""one winner"";
+} else {
+  outcome = ""not related to success"";
+}
+```
+
+"
+What is the path of the earth around the sun called?,"['fotograph', 'orbit', 'tree', 'solar system', 'attraction']","Questions: What is the path of the earth around the sun called?, Choices: (A) fotograph, (B) orbit, (C) tree, (D) solar system, (E) attraction. Given the question 'What is the path of the earth around the sun called?', which among the choices fotograph, orbit, tree, solar system attraction is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) orbit**. The path of the earth around the sun is called an orbit or has a lot of circular motion. The other choices are not related to the circular motion of something. They are either synonyms of the path of the earth around the sun (none) or different aspects of something (fotograph, tree, solar system, attraction). We can use conditional statements to explain the reasoning as follows:
+
+```
+if (circular_motion == ""path"") {
+  name = ""orbit"";
+} else {
+  name = ""not related to circular motion"";
+}
+```
+
+I hope this helps you understand the questions and the answers better. 😊"
+What is the payment collected on a toll road designed to do to the condition of roads?,"['good repair', 'new jersey', 'eastern united states', 'connecticut', 'potholes']","Questions: What is the payment collected on a toll road designed to do to the condition of roads?, Choices: (A) good repair, (B) new jersey, (C) eastern united states, (D) connecticut, (E) potholes. Given the question 'What is the payment collected on a toll road designed to do to the condition of roads?', which among the choices good repair, new jersey, eastern united states, connecticut potholes is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) good repair. A conditional statement is: If a toll road collects payment, then the condition of roads should be in good repair.
+"
+What is the ping sent from a spam blog called?,"['ham', 'splurp', 'sping', 'splog', 'blam']","Questions: What is the ping sent from a spam blog called?, Choices: (A) ham, (B) splurp, (C) sping, (D) splog, (E) blam. Given the question 'What is the ping sent from a spam blog called?', which among the choices ham, splurp, sping, splog blam is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) sping. A conditional statement is: If a blog is spam, then it sends a sping to notify other blogs.
+"
+What is the place teenagers hate to go to most but have the most incentive to attend?,"['fast food restaurant', 'mall', 'high school', 'job', 'nightclub']","Questions: What is the place teenagers hate to go to most but have the most incentive to attend?, Choices: (A) fast food restaurant, (B) mall, (C) high school, (D) job, (E) nightclub. Given the question 'What is the place teenagers hate to go to most but have the most incentive to attend?', which among the choices fast food restaurant, mall, high school, job nightclub is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) high school. A conditional statement is: If a teenager hates to go to a place, but has the most incentive to attend, then the place is high school.
+"
+What is the primary duty of a chef?,"['manual', 'thin sauce', 'study french cooking', 'cook dinner', 'prepare food']","Questions: What is the primary duty of a chef?, Choices: (A) manual, (B) thin sauce, (C) study french cooking, (D) cook dinner, (E) prepare food. Given the question 'What is the primary duty of a chef?', which among the choices manual, thin sauce, study french cooking, cook dinner prepare food is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) prepare food. A conditional statement is: If a person is a chef, then their primary duty is to prepare food.
+"
+What is the primary reason for visiting a shop?,"['spending of money', 'spend too much', 'purchasing', 'sell items', 'compare prices']","Questions: What is the primary reason for visiting a shop?, Choices: (A) spending of money, (B) spend too much, (C) purchasing, (D) sell items, (E) compare prices. Given the question 'What is the primary reason for visiting a shop?', which among the choices spending of money, spend too much, purchasing, sell items compare prices is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) purchasing. A conditional statement is: If a person visits a shop, then their primary reason is purchasing.
+"
+What is the process of maintaining rosebushes in a lawn called?,"['cooking', 'landscaping', 'california', 'backyard', 'courtyard']","Questions: What is the process of maintaining rosebushes in a lawn called?, Choices: (A) cooking, (B) landscaping, (C) california, (D) backyard, (E) courtyard. Given the question 'What is the process of maintaining rosebushes in a lawn called?', which among the choices cooking, landscaping, california, backyard courtyard is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) landscaping. A conditional statement is: If a person maintains rosebushes in a lawn, then they are doing landscaping.
+"
+What is the purpose of a basketball court?,"['city', 'use', 'los angeles', 'soccer', 'sports arena']","Questions: What is the purpose of a basketball court?, Choices: (A) city, (B) use, (C) los angeles, (D) soccer, (E) sports arena. Given the question 'What is the purpose of a basketball court?', which among the choices city, use, los angeles, soccer sports arena is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) use. A conditional statement is: If a place is a basketball court, then its purpose is use.
+"
+What is the purpose of a box in a supermarket?,"['hold stuff', 'store food', 'organize', 'hold things', 'store clothes']","Questions: What is the purpose of a box in a supermarket?, Choices: (A) hold stuff, (B) store food, (C) organize, (D) hold things, (E) store clothes. Given the question 'What is the purpose of a box in a supermarket?', which among the choices hold stuff, store food, organize, hold things store clothes is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) hold things. A conditional statement is: If an object is a box in a supermarket, then its purpose is to hold things.
+"
+What is the purpose of a newspaper?,"['motivate', 'announce', 'inform', 'communicate', 'elongate']","Questions: What is the purpose of a newspaper?, Choices: (A) motivate, (B) announce, (C) inform, (D) communicate, (E) elongate. Given the question 'What is the purpose of a newspaper?', which among the choices motivate, announce, inform, communicate elongate is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) inform. A conditional statement is: If a medium is a newspaper, then its purpose is to inform.
+"
+What is the purpose of drinking water?,"['swallow', 'headaches', 'hydration', 'hunger', 'vomiting']","Questions: What is the purpose of drinking water?, Choices: (A) swallow, (B) headaches, (C) hydration, (D) hunger, (E) vomiting. Given the question 'What is the purpose of drinking water?', which among the choices swallow, headaches, hydration, hunger vomiting is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) hydration. A conditional statement is: If a person drinks water, then their purpose is hydration."
+What is the purpose of the cabin in an airplane?,"['crash', 'living', 'slow down', 'carry people', 'speed up']","Questions: What is the purpose of the cabin in an airplane?, Choices: (A) crash, (B) living, (C) slow down, (D) carry people, (E) speed up. Given the question 'What is the purpose of the cabin in an airplane?', which among the choices crash, living, slow down, carry people speed up is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) carry people**. The purpose of the cabin in an airplane is to carry people from one place to another. A conditional statement that explains this is: **If** an airplane has a cabin, **then** it can carry people.
+"
+What is the reason for having a gardener?,"['manicure the lawn', 'garden backyards', 'water plants', 'grow plants', 'pick flowers']","Questions: What is the reason for having a gardener?, Choices: (A) manicure the lawn, (B) garden backyards, (C) water plants, (D) grow plants, (E) pick flowers. Given the question 'What is the reason for having a gardener?', which among the choices manicure the lawn, garden backyards, water plants, grow plants pick flowers is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) grow plants**. The reason for having a gardener is to grow plants in a garden or a yard. A conditional statement that explains this is: **If** someone has a gardener, **then** they can grow plants.
+"
+What is the reason that playing games sometimes take on a more serious tone?,"['entertainment', 'forgetting', 'relaxation', 'competitiveness', 'happiness']","Questions: What is the reason that playing games sometimes take on a more serious tone?, Choices: (A) entertainment, (B) forgetting, (C) relaxation, (D) competitiveness, (E) happiness. Given the question 'What is the reason that playing games sometimes take on a more serious tone?', which among the choices entertainment, forgetting, relaxation, competitiveness happiness is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) competitiveness**. The reason that playing games sometimes take on a more serious tone is that some people are competitive and want to win. A conditional statement that explains this is: **If** a game is competitive, **then** it may take on a more serious tone.
+"
+What is the responsibility of many an adult?,"['drink beer', 'drive train', 'sweeping the floor', 'work', 'marry']","Questions: What is the responsibility of many an adult?, Choices: (A) drink beer, (B) drive train, (C) sweeping the floor, (D) work, (E) marry. Given the question 'What is the responsibility of many an adult?', which among the choices drink beer, drive train, sweeping the floor, work marry is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) work**. The responsibility of many an adult is to work and earn money for themselves and their families. A conditional statement that explains this is: **If** someone is an adult, **then** they may have to work.
+"
+What is the result of getting drunk?,"['intoxication', 'death', 'erections', 'hangover', 'being sick']","Questions: What is the result of getting drunk?, Choices: (A) intoxication, (B) death, (C) erections, (D) hangover, (E) being sick. Given the question 'What is the result of getting drunk?', which among the choices intoxication, death, erections, hangover being sick is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) intoxication**. The result of getting drunk is intoxication, which means that the alcohol affects the brain and the body in a negative way. A conditional statement that explains this is: **If** someone gets drunk, **then** they may experience intoxication.
+"
+What is the result of having a lunch that is sizable?,"['give up', 'obesity', 'feeling satisfied', 'get sleepy', 'feel full']","Questions: What is the result of having a lunch that is sizable?, Choices: (A) give up, (B) obesity, (C) feeling satisfied, (D) get sleepy, (E) feel full. Given the question 'What is the result of having a lunch that is sizable?', which among the choices give up, obesity, feeling satisfied, get sleepy feel full is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) feel full**. The result of having a lunch that is sizable is feeling full, which means that the stomach is satisfied and does not need more food. A conditional statement that explains this is: **If** someone has a sizable lunch, **then** they may feel full.
+"
+What is the result of instituting civil action?,"['bad feelings', 'confusion', 'going to court', 'hurt feelings', 'sandwiches']","Questions: What is the result of instituting civil action?, Choices: (A) bad feelings, (B) confusion, (C) going to court, (D) hurt feelings, (E) sandwiches. Given the question 'What is the result of instituting civil action?', which among the choices bad feelings, confusion, going to court, hurt feelings sandwiches is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) going to court**. The result of instituting civil action is going to court, which means that the parties involved have a legal dispute that needs to be resolved by a judge or a jury. A conditional statement that explains this is: **If** someone institutes civil action, **then** they may have to go to court.
+"
+What is the result of kissing often?,"['arousal', 'pleasurable', 'being happy', 'feeling good', 'sexual excitement']","Questions: What is the result of kissing often?, Choices: (A) arousal, (B) pleasurable, (C) being happy, (D) feeling good, (E) sexual excitement. Given the question 'What is the result of kissing often?', which among the choices arousal, pleasurable, being happy, feeling good sexual excitement is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) sexual excitement**. The result of kissing often is sexual excitement, which means that the kissing stimulates the sexual arousal and desire of the people involved. A conditional statement that explains this is: **If** someone kisses often, **then** they may experience sexual excitement.
+"
+What is the result of more people getting in line?,"['anxiety', 'wait turn', 'late', 'longer lines', 'have to wait for']","Questions: What is the result of more people getting in line?, Choices: (A) anxiety, (B) wait turn, (C) late, (D) longer lines, (E) have to wait for. Given the question 'What is the result of more people getting in line?', which among the choices anxiety, wait turn, late, longer lines have to wait for is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) longer lines**. The result of more people getting in line is longer lines, which means that the waiting time for the service or the product increases. A conditional statement that explains this is: **If** more people get in line, **then** the lines may get longer.
+"
+What is the result of reaching a tentative agreement?,"['communicate with', 'settlement', 'shake hands', 'celebration', 'part ways']","Questions: What is the result of reaching a tentative agreement?, Choices: (A) communicate with, (B) settlement, (C) shake hands, (D) celebration, (E) part ways. Given the question 'What is the result of reaching a tentative agreement?', which among the choices communicate with, settlement, shake hands, celebration part ways is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) settlement**. The result of reaching a tentative agreement is settlement, which means that the parties involved have reached a compromise and resolved their conflict. A conditional statement that explains this is: **If** someone reaches a tentative agreement, **then** they may settle their dispute."
+What is the usual reason people enjoy playing games?,"['entertainment', 'happiness', 'competitiveness', 'anger', 'winning']","Questions: What is the usual reason people enjoy playing games?, Choices: (A) entertainment, (B) happiness, (C) competitiveness, (D) anger, (E) winning. Given the question 'What is the usual reason people enjoy playing games?', which among the choices entertainment, happiness, competitiveness, anger winning is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) entertainment. The usual reason people enjoy playing games is because they find them entertaining. Entertainment is the act of providing or being provided with amusement or enjoyment. If a game is not entertaining, people would not enjoy playing it. Therefore, we can use the following conditional statement to explain the answer:
+
+`If people enjoy playing games, then the games are entertaining.`
+
+"
+What is the way that couples like to have fun?,"['laughter', 'have sex', 'crying', 'spontaneous', 'enjoy yourself']","Questions: What is the way that couples like to have fun?, Choices: (A) laughter, (B) have sex, (C) crying, (D) spontaneous, (E) enjoy yourself. Given the question 'What is the way that couples like to have fun?', which among the choices laughter, have sex, crying, spontaneous enjoy yourself is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) enjoy yourself. The way that couples like to have fun is by enjoying themselves. Enjoying yourself means having a good time or finding pleasure in what you are doing. Couples can have fun in different ways, such as laughter, sex, spontaneity, or anything else that makes them happy. Therefore, we can use the following conditional statement to explain the answer:
+
+`If couples like to have fun, then they enjoy themselves.`
+
+"
+What is the world full of?,"['countries', 'thought', 'water', 'universe', 'galaxy']","Questions: What is the world full of?, Choices: (A) countries, (B) thought, (C) water, (D) universe, (E) galaxy. Given the question 'What is the world full of?', which among the choices countries, thought, water, universe galaxy is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) water. The world is full of water. Water is a liquid substance that covers about 71% of the Earth's surface and is essential for life. The world is not full of countries, thoughts, the universe, or the galaxy, as these are either parts of the world, abstract concepts, or larger entities that contain the world. Therefore, we can use the following conditional statement to explain the answer:
+
+`If the world is full of something, then that something is water.`
+
+"
+What is the world known to be a part of?,"['galaxy', 'solar system', 'universe', 'sky', 'space']","Questions: What is the world known to be a part of?, Choices: (A) galaxy, (B) solar system, (C) universe, (D) sky, (E) space. Given the question 'What is the world known to be a part of?', which among the choices galaxy, solar system, universe, sky space is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) universe. The world is known to be a part of the universe. The universe is the totality of space, time, matter, and energy that exists. The world is a planet that orbits a star in a galaxy, which is a collection of stars in the universe. The world is not known to be a part of the galaxy, the solar system, the sky, or the space, as these are either smaller or larger parts of the universe. Therefore, we can use the following conditional statement to explain the answer:
+
+`If the world is known to be a part of something, then that something is the universe.`
+
+"
+What is the worst outcome of an injury?,"['cause death', 'cause bleeding', 'falling down', 'become infected', 'claim insurance']","Questions: What is the worst outcome of an injury?, Choices: (A) cause death, (B) cause bleeding, (C) falling down, (D) become infected, (E) claim insurance. Given the question 'What is the worst outcome of an injury?', which among the choices cause death, cause bleeding, falling down, become infected claim insurance is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) cause death. The worst outcome of an injury is to cause death. Death is the permanent cessation of all biological functions that sustain a living organism. An injury is a physical harm or damage to the body. If an injury causes death, it means that the injury is fatal and irreversible. Therefore, we can use the following conditional statement to explain the answer:
+
+`If an injury causes something, then the worst thing it can cause is death.`
+
+"
+What is the worst part of playing games?,"['learning', 'happiness', 'competition', 'losing', 'fatigue']","Questions: What is the worst part of playing games?, Choices: (A) learning, (B) happiness, (C) competition, (D) losing, (E) fatigue. Given the question 'What is the worst part of playing games?', which among the choices learning, happiness, competition, losing fatigue is the correct answer? Explain your reasoning using conditional statements.
+",
+What is the worst result of smoking?,"['looking cool', 'lung disease', 'bad breath', 'pleasure', 'death']","Questions: What is the worst result of smoking?, Choices: (A) looking cool, (B) lung disease, (C) bad breath, (D) pleasure, (E) death. Given the question 'What is the worst result of smoking?', which among the choices looking cool, lung disease, bad breath, pleasure death is the correct answer? Explain your reasoning using conditional statements.
+","71% of the Earth's surface and is essential for life. The world is not full of countries, thoughts, the universe, or the galaxy, as these are either parts of the world, abstract concepts, or larger entities that contain the world. Therefore, we can use the following conditional statement to explain the answer:
+
+`If the world is full of something, then that something is water.`
+
+4. The correct answer is (C) universe. The world is known to be a part of the universe. The universe is the totality of space, time, matter, and energy that exists. The world is a planet that orbits a star in a galaxy, which is a collection of stars in the universe. The world is not known to be a part of the galaxy, the solar system, the sky, or the space, as these are either smaller or larger parts of the universe. Therefore, we can use the following conditional statement to explain the answer:
+
+`If the world is known to be a part of something, then that something is the universe.`
+
+5. The correct answer is (A) cause death. The worst outcome of an injury is to cause death. Death is the permanent cessation of all biological functions that sustain a living organism. An injury is a physical harm or damage to the body. If an injury causes death, it means that the injury is fatal and irreversible. Therefore, we can use the following conditional statement to explain the answer:
+
+`If an injury causes something, then the worst thing it can cause is death.`
+
+6. The correct answer is (D) losing. The worst part of playing games is losing. Losing is the act of being defeated or failing to win. Playing games is usually a competitive activity that involves a goal or a challenge. If a player loses a game, it means that they did not achieve the goal or overcome the challenge. Therefore, we can use the following conditional statement to explain the answer:
+
+`If playing games involves something, then the worst thing it can involve is losing.`
+
+7. The correct answer is (E) death. The worst result of smoking is death. Smoking is the act of inhaling and exhaling the smoke of tobacco or other substances. Smoking can cause various health problems, such as lung disease, bad breath, cancer, and heart disease. If smoking causes death, it means that the smoker has died from the effects of smoking. Therefore, we can use the following conditional statement to explain the answer:
+
+`If smoking causes something, then the worst thing it can cause is death.`
+
+"
+What is the worst thing that someone can do while driving?,"['getting somewhere', 'use gas', 'doze off', 'listening others', 'speeding ticket']","Questions: What is the worst thing that someone can do while driving?, Choices: (A) getting somewhere, (B) use gas, (C) doze off, (D) listening others, (E) speeding ticket. Given the question 'What is the worst thing that someone can do while driving?', which among the choices getting somewhere, use gas, doze off, listening others speeding ticket is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) doze off. The worst thing that someone can do while driving is doze off. Dozing off is the act of falling asleep or becoming drowsy. Driving is the act of operating a vehicle on a road or a track. If a driver dozes off while driving, it means that they are not paying attention to the road or the traffic, and they can cause accidents or injuries. Therefore, we can use the following conditional statement to explain the answer:
+
+`If someone does something while driving, then the worst thing they can do is doze off.`
+
+"
+What is the yellow color of the sun an example of?,"['english carrier', 'achromatic', 'courageous', 'bright', 'fearless']","Questions: What is the yellow color of the sun an example of?, Choices: (A) english carrier, (B) achromatic, (C) courageous, (D) bright, (E) fearless. Given the question 'What is the yellow color of the sun an example of?', which among the choices english carrier, achromatic, courageous, bright fearless is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) bright. The yellow color of the sun is an example of bright. Bright is an adjective that means shining or giving off a lot of light. The sun is a star that emits a lot of light and heat. The yellow color of the sun is the result of the sun's radiation and the Earth's atmosphere. The yellow color of the sun is not an example of English carrier, achromatic, courageous, or fearless, as these are either unrelated or metaphorical terms. Therefore, we can use the following conditional statement to explain the answer:
+
+`If the sun has a color, then that color is an example of bright.`
+
+"
+What is ti called when people at work get together to exchange information?,"['online', 'internet', 'break', 'meeting', 'manual']","Questions: What is ti called when people at work get together to exchange information?, Choices: (A) online, (B) internet, (C) break, (D) meeting, (E) manual. Given the question 'What is ti called when people at work get together to exchange information?', which among the choices online, internet, break, meeting manual is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) meeting. It is called a meeting when people at work get together to exchange information. A meeting is a gathering of two or more people for a specific purpose, such as discussing a project, making a decision, or sharing ideas. People at work can use meetings to communicate and collaborate with their colleagues, managers, or clients. A meeting is not called online, internet, break, or manual, as these are either modes, tools, or documents that can be used for or during a meeting. Therefore, we can use the following conditional statement to explain the answer:
+
+`If people at work get together to exchange information, then it is called a meeting.`
+
+I hope this helps you understand the questions and the answers. If you have any more questions, feel free to ask me. 😊"
+What is typically the attitude of a child waiting for something?,"['wisdom', 'anxiety', 'impatience', 'tiredness', 'boredom']","Questions: What is typically the attitude of a child waiting for something?, Choices: (A) wisdom, (B) anxiety, (C) impatience, (D) tiredness, (E) boredom. Given the question 'What is typically the attitude of a child waiting for something?', which among the choices wisdom, anxiety, impatience, tiredness boredom is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) impatience. My reasoning is as follows: If a child is waiting for something, then they usually want it as soon as possible. Therefore, they are likely to be impatient and restless. Wisdom, anxiety, tiredness, and boredom are not typical attitudes of a child waiting for something.
+
+"
+What is typing a form of?,"['conversation', 'printed word', 'communicating', 'indeterminate', 'communication']","Questions: What is typing a form of?, Choices: (A) conversation, (B) printed word, (C) communicating, (D) indeterminate, (E) communication. Given the question 'What is typing a form of?', which among the choices conversation, printed word, communicating, indeterminate communication is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) communication. My reasoning is as follows: Typing is a form of communication because it involves sending and receiving messages using written symbols. Conversation, printed word, and communicating are also forms of communication, but they are not the most general or inclusive term. Indeterminate is not a form of communication at all.
+
+"
+What is used in a bathroom when towels aren't available to get water off your hads?,"['dryer', 'roof', 'swimming pool', 'gym', 'pants']","Questions: What is used in a bathroom when towels aren't available to get water off your hads?, Choices: (A) dryer, (B) roof, (C) swimming pool, (D) gym, (E) pants. Given the question 'What is used in a bathroom when towels aren't available to get water off your hads?', which among the choices dryer, roof, swimming pool, gym pants is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) dryer. My reasoning is as follows: A dryer is a device that blows hot air to dry wet objects. It is often used in bathrooms when towels are not available to get water off the hands. Roof, swimming pool, gym, and pants are not used in bathrooms to dry the hands.
+
+"
+What is used just before leaving a barber shop?,"['water', 'comb', 'military base', 'seville', 'small town']","Questions: What is used just before leaving a barber shop?, Choices: (A) water, (B) comb, (C) military base, (D) seville, (E) small town. Given the question 'What is used just before leaving a barber shop?', which among the choices water, comb, military base, seville small town is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) comb. My reasoning is as follows: A comb is a tool that is used to arrange or smooth the hair. It is often used just before leaving a barber shop to check or fix the haircut. Water, military base, seville, and small town are not used just before leaving a barber shop.
+
+"
+What is used to make beans into a drink?,"['coffee', 'kitchen', 'food store', 'cooking pot', 'cooking']","Questions: What is used to make beans into a drink?, Choices: (A) coffee, (B) kitchen, (C) food store, (D) cooking pot, (E) cooking. Given the question 'What is used to make beans into a drink?', which among the choices coffee, kitchen, food store, cooking pot cooking is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) coffee. My reasoning is as follows: Coffee is a drink that is made from roasted and ground beans of the coffee plant. It is a popular beverage that many people enjoy. Kitchen, food store, cooking pot, and cooking are not used to make beans into a drink, but they are related to the process of making coffee.
+
+"
+What is usually a beautiful sound?,"['concert hall', 'chainsaw', 'movie', 'mouth', 'music']","Questions: What is usually a beautiful sound?, Choices: (A) concert hall, (B) chainsaw, (C) movie, (D) mouth, (E) music. Given the question 'What is usually a beautiful sound?', which among the choices concert hall, chainsaw, movie, mouth music is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) music. My reasoning is as follows: Music is a form of art that involves organized sounds and rhythms. It is usually a beautiful sound that can evoke emotions and feelings. Concert hall, chainsaw, movie, and mouth are not usually beautiful sounds, but they can be related to music in some way.
+
+"
+What is usually next to a door?,"['apartment', 'office', 'wall', 'building', 'kitchen']","Questions: What is usually next to a door?, Choices: (A) apartment, (B) office, (C) wall, (D) building, (E) kitchen. Given the question 'What is usually next to a door?', which among the choices apartment, office, wall, building kitchen is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) wall. My reasoning is as follows: A wall is a structure that divides or encloses a space. It is usually next to a door because doors are openings in walls that allow access or passage. Apartment, office, building, and kitchen are not usually next to a door, but they can have doors inside them.
+
+"
+What is usually the mood when chatting with friends?,"['love', 'social bonding', 'talkative', 'gathering of information', 'feel relaxed']","Questions: What is usually the mood when chatting with friends?, Choices: (A) love, (B) social bonding, (C) talkative, (D) gathering of information, (E) feel relaxed. Given the question 'What is usually the mood when chatting with friends?', which among the choices love, social bonding, talkative, gathering of information feel relaxed is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) feel relaxed. My reasoning is as follows: Feeling relaxed is a mood that involves being calm and comfortable. It is usually the mood when chatting with friends because friends are people who share interests and support each other. Love, social bonding, talkative, and gathering of information are not moods, but they can be related to chatting with friends.
+
+"
+What is usually the purpose of a vehicle?,"['receive damage', 'carry', 'slow down', 'running', 'travel']","Questions: What is usually the purpose of a vehicle?, Choices: (A) receive damage, (B) carry, (C) slow down, (D) running, (E) travel. Given the question 'What is usually the purpose of a vehicle?', which among the choices receive damage, carry, slow down, running travel is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) travel. My reasoning is as follows: Travel is the act of moving from one place to another. It is usually the purpose of a vehicle because a vehicle is a means of transportation that can carry people or goods. Receive damage, carry, slow down, and running are not usually the purpose of a vehicle, but they can be related to the use of a vehicle.
+
+"
+What is usually too small for a cat to fit into?,"['american home', 'barn', 'paper bag', 'bed', 'own home']","Questions: What is usually too small for a cat to fit into?, Choices: (A) american home, (B) barn, (C) paper bag, (D) bed, (E) own home. Given the question 'What is usually too small for a cat to fit into?', which among the choices american home, barn, paper bag, bed own home is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) paper bag. My reasoning is as follows: A paper bag is a container made of thin and flexible material. It is usually too small for a cat to fit into because cats are animals that have a larger size and shape than a paper bag. American home, barn, bed, and own home are not usually too small for a cat to fit into, but they can be places where cats live or sleep."
+What is waging war often considered to be?,"['suffering', 'killing people', 'people dying', 'evil', 'a party']","Questions: What is waging war often considered to be?, Choices: (A) suffering, (B) killing people, (C) people dying, (D) evil, (E) a party. Given the question 'What is waging war often considered to be?', which among the choices suffering, killing people, people dying, evil a party is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) evil. A possible explanation is: If waging war causes suffering, killing people, and people dying, then waging war is evil.
+"
+What is water rapids that are choppy considered?,"['blue', 'dangerous', 'surface of earth', 'shaky', 'important']","Questions: What is water rapids that are choppy considered?, Choices: (A) blue, (B) dangerous, (C) surface of earth, (D) shaky, (E) important. Given the question 'What is water rapids that are choppy considered?', which among the choices blue, dangerous, surface of earth, shaky important is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) dangerous. A possible explanation is: If water rapids are choppy, then they have strong currents and waves that can harm people or boats, so water rapids that are choppy are dangerous.
+"
+What is water to someone?,"['dangerous', 'blue', 'toxic', 'important', 'surface of earth']","Questions: What is water to someone?, Choices: (A) dangerous, (B) blue, (C) toxic, (D) important, (E) surface of earth. Given the question 'What is water to someone?', which among the choices dangerous, blue, toxic, important surface of earth is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) important. A possible explanation is: If water is essential for life, then water is important to someone.
+"
+What is writing a form of?,"['communication', 'listening', 'carpal tunnel syndrome', 'revolutions', ""writer's cramp""]","Questions: What is writing a form of?, Choices: (A) communication, (B) listening, (C) carpal tunnel syndrome, (D) revolutions, (E) writer's cramp. Given the question 'What is writing a form of?', which among the choices communication, listening, carpal tunnel syndrome, revolutions writer's cramp is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) communication. A possible explanation is: If writing is a way of expressing thoughts, ideas, or information, then writing is a form of communication.
+"
+What item does the fork belong on?,"['plate', 'video game', 'kitchen drawer', 'table', 'road']","Questions: What item does the fork belong on?, Choices: (A) plate, (B) video game, (C) kitchen drawer, (D) table, (E) road. Given the question 'What item does the fork belong on?', which among the choices plate, video game, kitchen drawer, table road is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) plate. A possible explanation is: If a fork is a utensil for eating food, then a fork belongs on a plate where food is served.
+"
+What item has parts such as rods and pistons?,"['sporting goods store', 'engine', 'cool', 'eyeball', 'fishing camp']","Questions: What item has parts such as rods and pistons?, Choices: (A) sporting goods store, (B) engine, (C) cool, (D) eyeball, (E) fishing camp. Given the question 'What item has parts such as rods and pistons?', which among the choices sporting goods store, engine, cool, eyeball fishing camp is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) engine. A possible explanation is: If rods and pistons are parts of a machine that converts fuel into mechanical power, then an item that has parts such as rods and pistons is an engine.
+"
+What item is smelted out of minerals on the country side?,"['urban city', 'france', 'metal', 'grass', 'state']","Questions: What item is smelted out of minerals on the country side?, Choices: (A) urban city, (B) france, (C) metal, (D) grass, (E) state. Given the question 'What item is smelted out of minerals on the country side?', which among the choices urban city, france, metal, grass state is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) metal. A possible explanation is: If smelting is a process of extracting a metal from its ore by heating and melting, then an item that is smelted out of minerals on the country side is metal.
+"
+What keeps a cigarette fresh?,"['carton', 'light fire', 'burn down forest', 'ashtray', 'hand']","Questions: What keeps a cigarette fresh?, Choices: (A) carton, (B) light fire, (C) burn down forest, (D) ashtray, (E) hand. Given the question 'What keeps a cigarette fresh?', which among the choices carton, light fire, burn down forest, ashtray hand is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) carton. A possible explanation is: If a carton is a container that protects and preserves its contents, then a carton keeps a cigarette fresh.
+"
+What kind of activity ends with a cash register?,"['toy store', 'shopping spree', 'supermarket', 'shop', 'bookstore']","Questions: What kind of activity ends with a cash register?, Choices: (A) toy store, (B) shopping spree, (C) supermarket, (D) shop, (E) bookstore. Given the question 'What kind of activity ends with a cash register?', which among the choices toy store, shopping spree, supermarket, shop bookstore is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) shopping spree. A possible explanation is: If a shopping spree is an activity of buying a lot of things in a short time, then a shopping spree ends with a cash register where the payment is made.
+"
+What kind of activity is making bread?,"['pride', 'mess', 'gratifying', 'allergic reactions', 'adept']","Questions: What kind of activity is making bread?, Choices: (A) pride, (B) mess, (C) gratifying, (D) allergic reactions, (E) adept. Given the question 'What kind of activity is making bread?', which among the choices pride, mess, gratifying, allergic reactions adept is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) gratifying. A possible explanation is: If making bread is an activity of creating something delicious and satisfying, then making bread is gratifying."
+What kind of area does a cat typically enjoy?,"['warm place', 'barn', 'beam of sunlight', 'backyard', 'high places']","Questions: What kind of area does a cat typically enjoy?, Choices: (A) warm place, (B) barn, (C) beam of sunlight, (D) backyard, (E) high places. Given the question 'What kind of area does a cat typically enjoy?', which among the choices warm place, barn, beam of sunlight, backyard high places is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(C) beam of sunlight**. My reasoning is as follows: If a cat typically enjoys an area, then it must be comfortable and cozy for the cat. A warm place, a barn, a backyard, and high places can be comfortable and cozy for some cats, but not all cats. However, a beam of sunlight is almost universally enjoyed by cats, as they like to bask in the warmth and light. Therefore, a beam of sunlight is the most likely choice for the kind of area that a cat typically enjoys.
+
+"
+What kind of blade cuts living things?,"['scissors', 'blade of grass', 'rollerblade', 'lawn mower', 'helicopter']","Questions: What kind of blade cuts living things?, Choices: (A) scissors, (B) blade of grass, (C) rollerblade, (D) lawn mower, (E) helicopter. Given the question 'What kind of blade cuts living things?', which among the choices scissors, blade of grass, rollerblade, lawn mower helicopter is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(B) blade of grass**. My reasoning is as follows: If a blade cuts living things, then it must be sharp and able to penetrate the skin or tissue of the living things. Scissors, rollerblade, lawn mower, and helicopter are all blades that can cut living things, but they are not the kind of blade that the question is asking for. They are all man-made tools or machines that are used for cutting or flying. A blade of grass, on the other hand, is a natural part of a plant that can also cut living things, especially if it is dry and stiff. A blade of grass can cause small cuts or scratches on the skin of humans or animals, which can be painful and irritating. Therefore, a blade of grass is the most likely choice for the kind of blade that cuts living things.
+
+"
+What kind of box does a fish live in?,"['aquarium', 'ocean', 'pond', 'bay', 'river']","Questions: What kind of box does a fish live in?, Choices: (A) aquarium, (B) ocean, (C) pond, (D) bay, (E) river. Given the question 'What kind of box does a fish live in?', which among the choices aquarium, ocean, pond, bay river is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) aquarium**. My reasoning is as follows: If a box is a container that has a shape and a volume, then a fish can live in a box that is filled with water and has enough space and oxygen for the fish. An ocean, a pond, a bay, and a river are not boxes, as they do not have definite shapes or volumes. They are large bodies of water that have many fish and other aquatic creatures living in them. An aquarium, however, is a box that is designed to hold water and fish. An aquarium can have different shapes and sizes, but it always has a transparent wall that allows people to see the fish inside. Therefore, an aquarium is the most likely choice for the kind of box that a fish lives in.
+
+"
+What kind of breathing makes noise but does not indicate that you are sick?,"['sigh', 'clavicular', 'yawn', 'cough', 'live']","Questions: What kind of breathing makes noise but does not indicate that you are sick?, Choices: (A) sigh, (B) clavicular, (C) yawn, (D) cough, (E) live. Given the question 'What kind of breathing makes noise but does not indicate that you are sick?', which among the choices sigh, clavicular, yawn, cough live is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) yawn**. My reasoning is as follows: If a breathing makes noise but does not indicate that you are sick, then it must be a normal and involuntary action that occurs when you are tired or bored. A sigh, a clavicular, a cough, and a live are not breathings, as they are either sounds, types of breathing, symptoms, or states of being. A yawn, however, is a breathing that makes noise but does not indicate that you are sick. A yawn is a reflex that involves opening your mouth wide and inhaling deeply, usually accompanied by a sound. A yawn can indicate that you are sleepy, drowsy, or uninterested, but it does not mean that you have a disease or an infection. Therefore, a yawn is the most likely choice for the kind of breathing that makes noise but does not indicate that you are sick.
+
+"
+What kind of building has many a book written in Hebrew?,"['library', 'classroom', 'library of congress', 'suitcase', 'synagogue']","Questions: What kind of building has many a book written in Hebrew?, Choices: (A) library, (B) classroom, (C) library of congress, (D) suitcase, (E) synagogue. Given the question 'What kind of building has many a book written in Hebrew?', which among the choices library, classroom, library of congress, suitcase synagogue is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) synagogue**. My reasoning is as follows: If a building has many books written in Hebrew, then it must be a place where Hebrew is the main or official language, or where Hebrew is used for religious or cultural purposes. A library, a classroom, a library of congress, and a suitcase are not buildings, as they are either collections, rooms, institutions, or objects. A synagogue, however, is a building that has many books written in Hebrew. A synagogue is a place of worship and study for Jews, who use Hebrew as their sacred language. A synagogue usually has a library or a room that contains many books written in Hebrew, such as the Torah, the Talmud, and the Mishnah. Therefore, a synagogue is the most likely choice for the kind of building that has many books written in Hebrew.
+
+"
+What kind of building sometimes has a basement and is occupied the most on the day after Saturday?,"['closet', 'office building', 'church', 'shop', 'own house']","Questions: What kind of building sometimes has a basement and is occupied the most on the day after Saturday?, Choices: (A) closet, (B) office building, (C) church, (D) shop, (E) own house. Given the question 'What kind of building sometimes has a basement and is occupied the most on the day after Saturday?', which among the choices closet, office building, church, shop own house is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) church**. My reasoning is as follows: If a building sometimes has a basement and is occupied the most on the day after Saturday, then it must be a place where people gather for a common reason or activity, especially on Sundays. A closet, an office building, a shop, and an own house are not buildings that fit this description, as they are either storage spaces, workplaces, commercial places, or residential places. A church, however, is a building that sometimes has a basement and is occupied the most on the day after Saturday. A church is a place of worship and fellowship for Christians, who usually attend services or meetings on Sundays. A church may have a basement that is used for various purposes, such as storage, education, or socializing. Therefore, a church is the most likely choice for the kind of building that sometimes has a basement and is occupied the most on the day after Saturday.
+
+"
+What kind of building would you expect to find a skylight?,"['roof', 'house', 'windowless room', 'company', 'office building']","Questions: What kind of building would you expect to find a skylight?, Choices: (A) roof, (B) house, (C) windowless room, (D) company, (E) office building. Given the question 'What kind of building would you expect to find a skylight?', which among the choices roof, house, windowless room, company office building is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(B) house**. My reasoning is as follows: If a building would have a skylight, then it must be a place where people live or work, and where they want to have natural light or ventilation. A roof, a windowless room, a company, and an office building are not buildings that would have a skylight, as they are either parts, types, names, or categories of buildings. A house, however, is a building that would have a skylight. A house is a place where people live, and where they may want to have a skylight to brighten up their rooms or to enjoy the view of the sky. A skylight is a window that is installed on the roof or ceiling of a building, and that allows sunlight or moonlight to enter the building. Therefore, a house is the most likely choice for the kind of building that would have a skylight.
+
+"
+What kind of business would you make if you want to help people?,"['nonprofit', 'art', 'pyramid scheme', 'pleasure', 'personal']","Questions: What kind of business would you make if you want to help people?, Choices: (A) nonprofit, (B) art, (C) pyramid scheme, (D) pleasure, (E) personal. Given the question 'What kind of business would you make if you want to help people?', which among the choices nonprofit, art, pyramid scheme, pleasure personal is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(A) nonprofit**. My reasoning is as follows: If a business would help people, then it must be a type of organization that has a social or environmental mission, and that does not aim to make a profit. An art, a pyramid scheme, a pleasure, and a personal are not businesses, as they are either forms, scams, feelings, or adjectives. A nonprofit, however, is a business that would help people. A nonprofit is a type of organization that operates for a public or charitable purpose, and that does not distribute its income to its owners or members. A nonprofit may provide services, goods, or advocacy to help people in need, or to address a social or environmental issue. Therefore, a nonprofit is the most likely choice for the kind of business that would help people.
+
+"
+What kind of call are you on if you're hearing several people over speakers?,"['desktop', 'headphones', 'connect', 'concert', 'conference']","Questions: What kind of call are you on if you're hearing several people over speakers?, Choices: (A) desktop, (B) headphones, (C) connect, (D) concert, (E) conference. Given the question 'What kind of call are you on if you're hearing several people over speakers?', which among the choices desktop, headphones, connect, concert conference is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) conference**. My reasoning is as follows: If a call would have several people over speakers, then it must be a type of communication that involves multiple participants, and that uses audio devices to transmit or amplify sound. A desktop, a headphones, a connect, and a concert are not calls, as they are either devices, accessories, verbs, or events. A conference, however, is a call that would have several people over speakers. A conference is a type of communication that involves two or more people who talk to each other over a phone or a computer network, and that may use speakers to hear or broadcast the conversation. A conference can be used for various purposes, such as business, education, or entertainment. Therefore, a conference is the most likely choice for the kind of call that would have several people over speakers.
+
+"
+What kind of class uses a triangle?,"['mathematics', 'geometry', 'math class', 'math book', 'university']","Questions: What kind of class uses a triangle?, Choices: (A) mathematics, (B) geometry, (C) math class, (D) math book, (E) university. Given the question 'What kind of class uses a triangle?', which among the choices mathematics, geometry, math class, math book university is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) geometry**. My reasoning is as follows: If a class would use a triangle, then it must be a subject or a course that studies shapes and their properties. A mathematics, a math class, a math book, and a university are not classes, as they are either disciplines, types, materials, or institutions. A geometry, however, is a class that would use a triangle. A geometry is a branch of mathematics that deals with the measurement, construction, and relation of points, lines, angles, surfaces, and solids. A triangle is one of the basic shapes in geometry, and it has many applications and theorems. Therefore, a geometry is the most likely choice for the kind of class that would use a triangle."
+What kind of cold storage would you use if you just bought some food?,"['laboratory', 'restaurant', 'freezer', 'grocery store', 'laboratory']","Questions: What kind of cold storage would you use if you just bought some food?, Choices: (A) laboratory, (B) restaurant, (C) freezer, (D) grocery store, (E) laboratory. Given the question 'What kind of cold storage would you use if you just bought some food?', which among the choices laboratory, restaurant, freezer, grocery store laboratory is the correct answer? Explain your reasoning using conditional statements.
+","Hello, this is Bing. I can help you answer these questions using conditional statements. Here are my answers:"
+What kind of computer is not a laptop?,"['library', 'desktop', 'microwave oven', 'space shuttle', 'table']","Questions: What kind of computer is not a laptop?, Choices: (A) library, (B) desktop, (C) microwave oven, (D) space shuttle, (E) table. Given the question 'What kind of computer is not a laptop?', which among the choices library, desktop, microwave oven, space shuttle table is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(C) freezer**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If you just bought some food, then you would use a freezer to store it**. The hypothesis is ""you just bought some food"" and the conclusion is ""you would use a freezer to store it"". The other choices are not suitable for storing food that you just bought, as they are either not cold enough, not accessible, or not relevant."
+What kind of country has a government?,"['democracy', 'washington d.c', 'whitehouse', 'civilization', 'capitol building']","Questions: What kind of country has a government?, Choices: (A) democracy, (B) washington d.c, (C) whitehouse, (D) civilization, (E) capitol building. Given the question 'What kind of country has a government?', which among the choices democracy, washington d.c, whitehouse, civilization capitol building is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) microwave oven**. A possible conditional statement for this question is: **If a device is not a laptop, then it cannot run on battery power**. The hypothesis is ""a device is not a laptop"" and the conclusion is ""it cannot run on battery power"". A microwave oven is a device that is not a laptop and cannot run on battery power, so it satisfies the conditional statement. The other choices are either laptops or devices that can run on battery power."
+What kind of driving leads to accidents?,"['stressful', 'dangerous', 'fun', 'illegal', 'deadly']","Questions: What kind of driving leads to accidents?, Choices: (A) stressful, (B) dangerous, (C) fun, (D) illegal, (E) deadly. Given the question 'What kind of driving leads to accidents?', which among the choices stressful, dangerous, fun, illegal deadly is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) democracy**. A possible conditional statement for this question is: **If a country has a government, then it has a system of rules and laws**. The hypothesis is ""a country has a government"" and the conclusion is ""it has a system of rules and laws"". A democracy is a type of government that has a system of rules and laws, so it satisfies the conditional statement. The other choices are either not countries, not governments, or not systems of rules and laws."
+What kind of emotion does eating at your favorite restaurant bring about?,"['getting full', 'sadness', 'gas', 'gaining weight', 'satisfaction']","Questions: What kind of emotion does eating at your favorite restaurant bring about?, Choices: (A) getting full, (B) sadness, (C) gas, (D) gaining weight, (E) satisfaction. Given the question 'What kind of emotion does eating at your favorite restaurant bring about?', which among the choices getting full, sadness, gas, gaining weight satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) illegal**. A possible conditional statement for this question is: **If a driving behavior is illegal, then it can lead to accidents**. The hypothesis is ""a driving behavior is illegal"" and the conclusion is ""it can lead to accidents"". Illegal driving behaviors, such as speeding, running red lights, or driving under the influence, can lead to accidents, so they satisfy the conditional statement. The other choices are either not driving behaviors, not illegal, or not likely to cause accidents."
+What kind of entertainment may feature a talking weasel on an adventure?,"[""children's story"", 'forrest', 'mulberry bush', 'animated film', 'outdoors']","Questions: What kind of entertainment may feature a talking weasel on an adventure?, Choices: (A) children's story, (B) forrest, (C) mulberry bush, (D) animated film, (E) outdoors. Given the question 'What kind of entertainment may feature a talking weasel on an adventure?', which among the choices children's story, forrest, mulberry bush, animated film outdoors is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) satisfaction**. A possible conditional statement for this question is: **If you eat at your favorite restaurant, then you feel satisfaction**. The hypothesis is ""you eat at your favorite restaurant"" and the conclusion is ""you feel satisfaction"". Satisfaction is an emotion that you can feel when you eat at your favorite restaurant, so it satisfies the conditional statement. The other choices are either not emotions, not related to eating, or not positive."
+What kind of explosive device has a fuse or timer?,"['war', 'fireworks display', 'action film set', 'bomb', 'construction site']","Questions: What kind of explosive device has a fuse or timer?, Choices: (A) war, (B) fireworks display, (C) action film set, (D) bomb, (E) construction site. Given the question 'What kind of explosive device has a fuse or timer?', which among the choices war, fireworks display, action film set, bomb construction site is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) animated film**. A possible conditional statement for this question is: **If an entertainment medium features a talking weasel on an adventure, then it is an animated film**. The hypothesis is ""an entertainment medium features a talking weasel on an adventure"" and the conclusion is ""it is an animated film"". An animated film is an entertainment medium that can feature a talking weasel on an adventure, such as Ice Age or Zootopia, so it satisfies the conditional statement. The other choices are either not entertainment mediums, not featuring a talking weasel, or not involving an adventure."
+What kind of facial expression would the audience have if they liked watching someone perform?,"['smile', 'standing ovation', 'music', 'grimace', 'applause']","Questions: What kind of facial expression would the audience have if they liked watching someone perform?, Choices: (A) smile, (B) standing ovation, (C) music, (D) grimace, (E) applause. Given the question 'What kind of facial expression would the audience have if they liked watching someone perform?', which among the choices smile, standing ovation, music, grimace applause is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) bomb**. A possible conditional statement for this question is: **If an explosive device has a fuse or timer, then it is a bomb**. The hypothesis is ""an explosive device has a fuse or timer"" and the conclusion is ""it is a bomb"". A bomb is an explosive device that has a fuse or timer, such as a dynamite or a grenade, so it satisfies the conditional statement. The other choices are either not explosive devices, not having a fuse or timer, or not relevant."
+What kind of feeling can sex lead to?,"['bliss', 'aids', 'getting pregnant', 'orgasm', 'educations']","Questions: What kind of feeling can sex lead to?, Choices: (A) bliss, (B) aids, (C) getting pregnant, (D) orgasm, (E) educations. Given the question 'What kind of feeling can sex lead to?', which among the choices bliss, aids, getting pregnant, orgasm educations is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(A) smile**. A possible conditional statement for this question is: **If the audience likes watching someone perform, then they have a smile on their face**. The hypothesis is ""the audience likes watching someone perform"" and the conclusion is ""they have a smile on their face"". A smile is a facial expression that the audience can have if they like watching someone perform, so it satisfies the conditional statement. The other choices are either not facial expressions, not related to liking, or not positive."
+What kind of flight cannot be taken to s foreign country?,"['imaginary flight', 'american', 'native', 'indigenous', 'domestic']","Questions: What kind of flight cannot be taken to s foreign country?, Choices: (A) imaginary flight, (B) american, (C) native, (D) indigenous, (E) domestic. Given the question 'What kind of flight cannot be taken to s foreign country?', which among the choices imaginary flight, american, native, indigenous domestic is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) orgasm**. A possible conditional statement for this question is: **If sex leads to a feeling, then it is an orgasm**. The hypothesis is ""sex leads to a feeling"" and the conclusion is ""it is an orgasm"". An orgasm is a feeling that sex can lead to, so it satisfies the conditional statement"

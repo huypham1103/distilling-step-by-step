@@ -1,0 +1,676 @@
+premise,hypothesis,prompt,rationale
+"She caught the first snowflake of her life on her tongue, she was naively excited to be spending a what in a region that actually had snow?","['cloud', 'december', 'air', 'africa', 'winter']","Questions: She caught the first snowflake of her life on her tongue, she was naively excited to be spending a what in a region that actually had snow?, Choices: (A) cloud, (B) december, (C) air, (D) africa, (E) winter. Given the question 'She caught the first snowflake of her life on her tongue, she was naively excited to be spending a what in a region that actually had snow?', which among the choices cloud, december, air, africa winter is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) winter. The reasoning is as follows:
+
+- If she caught the first snowflake of her life on her tongue, then she had never experienced snow before.
+- If she had never experienced snow before, then she was not from a region that had snow.
+- If she was not from a region that had snow, then she was spending a winter in a region that had snow.
+- Therefore, if she caught the first snowflake of her life on her tongue, then she was spending a winter in a region that had snow.
+
+"
+"She celebrated her success by giving a speech, where was she?","['graveyard', 'awards ceremony', 'various situations', 'vocation', 'working hard']","Questions: She celebrated her success by giving a speech, where was she?, Choices: (A) graveyard, (B) awards ceremony, (C) various situations, (D) vocation, (E) working hard. Given the question 'She celebrated her success by giving a speech, where was she?', which among the choices graveyard, awards ceremony, various situations, vocation working hard is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) awards ceremony. The reasoning is as follows:
+
+- If she celebrated her success by giving a speech, then she had achieved something remarkable.
+- If she had achieved something remarkable, then she was likely to be recognized and honored by others.
+- If she was likely to be recognized and honored by others, then she was at an awards ceremony.
+- Therefore, if she celebrated her success by giving a speech, then she was at an awards ceremony.
+
+"
+"She choked while eating hamburger, what was the result?","['satisfaction', 'yum', 'gas', 'death', 'gain weight']","Questions: She choked while eating hamburger, what was the result?, Choices: (A) satisfaction, (B) yum, (C) gas, (D) death, (E) gain weight. Given the question 'She choked while eating hamburger, what was the result?', which among the choices satisfaction, yum, gas, death gain weight is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) death. The reasoning is as follows:
+
+- If she choked while eating hamburger, then she had an obstruction in her airway.
+- If she had an obstruction in her airway, then she could not breathe properly.
+- If she could not breathe properly, then she could die from suffocation.
+- Therefore, if she choked while eating hamburger, then she could die from suffocation.
+
+"
+"She complained about the radio, what was it doing?","['radiotracking', 'turn on', 'train', 'blaring', 'play music']","Questions: She complained about the radio, what was it doing?, Choices: (A) radiotracking, (B) turn on, (C) train, (D) blaring, (E) play music. Given the question 'She complained about the radio, what was it doing?', which among the choices radiotracking, turn on, train, blaring play music is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) blaring. The reasoning is as follows:
+
+- If she complained about the radio, then she was annoyed by the sound it was making.
+- If she was annoyed by the sound it was making, then the sound was either too loud, too distorted, or too unpleasant.
+- If the sound was too loud, then it was blaring.
+- Therefore, if she complained about the radio, then it was blaring.
+
+"
+"She considered a wig, her hair had begun to what up top?","['composted', 'thin out', 'curl', 'worn free', 'fall out']","Questions: She considered a wig, her hair had begun to what up top?, Choices: (A) composted, (B) thin out, (C) curl, (D) worn free, (E) fall out. Given the question 'She considered a wig, her hair had begun to what up top?', which among the choices composted, thin out, curl, worn free fall out is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) thin out. The reasoning is as follows:
+
+- If she considered a wig, then she was unhappy with her natural hair.
+- If she was unhappy with her natural hair, then she had a problem with its appearance or quality.
+- If she had a problem with its appearance or quality, then it could be due to hair loss, damage, or disease.
+- If it was due to hair loss, then her hair had begun to thin out.
+- Therefore, if she considered a wig, then her hair had begun to thin out.
+
+"
+"She could wait for her new terrace to be covered in green next year, it was the final piece of her dream what?","['garden', 'yard', 'southern europe', 'rice paddy', 'house']","Questions: She could wait for her new terrace to be covered in green next year, it was the final piece of her dream what?, Choices: (A) garden, (B) yard, (C) southern europe, (D) rice paddy, (E) house. Given the question 'She could wait for her new terrace to be covered in green next year, it was the final piece of her dream what?', which among the choices garden, yard, southern europe, rice paddy house is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) house. The reasoning is as follows:
+
+- If she could wait for her new terrace to be covered in green next year, then she had a plan for her garden.
+- If she had a plan for her garden, then she cared about the aesthetics and functionality of her outdoor space.
+- If she cared about the aesthetics and functionality of her outdoor space, then she had a dream house.
+- Therefore, if she could wait for her new terrace to be covered in green next year, then she had a dream house.
+
+"
+"She couldn't hide she liked the boy she was talking to, she had a constant what?","['make eye contact', 'smile', 'another person', 'listening', 'compliment']","Questions: She couldn't hide she liked the boy she was talking to, she had a constant what?, Choices: (A) make eye contact, (B) smile, (C) another person, (D) listening, (E) compliment. Given the question 'She couldn't hide she liked the boy she was talking to, she had a constant what?', which among the choices make eye contact, smile, another person, listening compliment is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) smile. The reasoning is as follows:
+
+- If she couldn't hide she liked the boy she was talking to, then she had a positive feeling towards him.
+- If she had a positive feeling towards him, then she wanted to show him her interest and attraction.
+- If she wanted to show him her interest and attraction, then she had a constant smile.
+- Therefore, if she couldn't hide she liked the boy she was talking to, then she had a constant smile.
+
+"
+"She couldn't wait to see the performance, she stood in the line for the box office where?","['theatre', 'venue', 'theater district', 'movie theater', 'ballpark']","Questions: She couldn't wait to see the performance, she stood in the line for the box office where?, Choices: (A) theatre, (B) venue, (C) theater district, (D) movie theater, (E) ballpark. Given the question 'She couldn't wait to see the performance, she stood in the line for the box office where?', which among the choices theatre, venue, theater district, movie theater ballpark is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) theatre. The reasoning is as follows:
+
+- If she couldn't wait to see the performance, then she was eager and excited to watch a show.
+- If she was eager and excited to watch a show, then she was a fan of the arts and entertainment.
+- If she was a fan of the arts and entertainment, then she stood in the line for the box office at a theatre.
+- Therefore, if she couldn't wait to see the performance, then she stood in the line for the box office at a theatre.
+
+"
+"She created music to share how she felt with another, what was her goal?","['express emotion', 'quiet mind', 'beautifull', 'boredom', 'irritate']","Questions: She created music to share how she felt with another, what was her goal?, Choices: (A) express emotion, (B) quiet mind, (C) beautifull, (D) boredom, (E) irritate. Given the question 'She created music to share how she felt with another, what was her goal?', which among the choices express emotion, quiet mind, beautifull, boredom irritate is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) express emotion. The reasoning is as follows:
+
+- If she created music to share how she felt with another, then she had a strong and deep emotion that she wanted to communicate.
+- If she had a strong and deep emotion that she wanted to communicate, then she used music as a medium and a language.
+- If she used music as a medium and a language, then her goal was to express emotion.
+- Therefore, if she created music to share how she felt with another, then her goal was to express emotion.
+
+"
+"She curled up under a blanket to get warm, this made her what on the couch as they started movie?","['sleep', 'feel more comfortable', 'sweating', 'blush', 'cuddle']","Questions: She curled up under a blanket to get warm, this made her what on the couch as they started movie?, Choices: (A) sleep, (B) feel more comfortable, (C) sweating, (D) blush, (E) cuddle. Given the question 'She curled up under a blanket to get warm, this made her what on the couch as they started movie?', which among the choices sleep, feel more comfortable, sweating, blush cuddle is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) feel more comfortable. The reasoning is as follows:
+
+- If she curled up under a blanket to get warm, then she was cold and uncomfortable.
+- If she was cold and uncomfortable, then she wanted to change her situation and feel better.
+- If she wanted to change her situation and feel better, then she made herself feel more comfortable.
+- Therefore, if she curled up under a blanket to get warm, then she made herself feel more comfortable."
+"She dug around her what, but just could not find the baby bottle she swore she packed?","['medicine cabinet', 'grocery store', 'diaper bag', 'dishwasher', 'liquor store']","Questions: She dug around her what, but just could not find the baby bottle she swore she packed?, Choices: (A) medicine cabinet, (B) grocery store, (C) diaper bag, (D) dishwasher, (E) liquor store. Given the question 'She dug around her what, but just could not find the baby bottle she swore she packed?', which among the choices medicine cabinet, grocery store, diaper bag, dishwasher liquor store is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) diaper bag. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If she dug around her diaper bag, then she might find the baby bottle she swore she packed."" This statement is reasonable because a diaper bag is something that a mother would pack for her baby, and it might contain a baby bottle. The other choices are not reasonable because they are not places where a mother would normally pack a baby bottle.
+
+"
+"She enjoyed fabric as a medium, her creativity really showed when she would what?","['create art', 'draw', 'sew', 'write', 'express yourself']","Questions: She enjoyed fabric as a medium, her creativity really showed when she would what?, Choices: (A) create art, (B) draw, (C) sew, (D) write, (E) express yourself. Given the question 'She enjoyed fabric as a medium, her creativity really showed when she would what?', which among the choices create art, draw, sew, write express yourself is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) sew. A possible conditional statement for this question is: ""If she enjoyed fabric as a medium, then she would show her creativity when she would sew."" This statement is reasonable because sewing is an activity that involves using fabric to create something, and it can be a way of expressing creativity. The other choices are not reasonable because they are not activities that use fabric as a medium.
+
+"
+"She enjoyed the song, it was a famous one about a girl with eyes that where what?","['sad', 'green', 'tear up', 'brown', 'blue']","Questions: She enjoyed the song, it was a famous one about a girl with eyes that where what?, Choices: (A) sad, (B) green, (C) tear up, (D) brown, (E) blue. Given the question 'She enjoyed the song, it was a famous one about a girl with eyes that where what?', which among the choices sad, green, tear up, brown blue is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) blue. A possible conditional statement for this question is: ""If she enjoyed the song, then it was a famous one about a girl with eyes that were blue."" This statement is reasonable because there is a famous song by Van Morrison called ""Brown Eyed Girl"" that has the lyrics ""You, my brown eyed girl / You, my brown eyed girl / Do you remember when we used to sing / Sha la la la la la la la la la la dee dah"". The song is about a girl with brown eyes, so the opposite of that would be a girl with blue eyes. The other choices are not reasonable because they are not characteristics of eyes that are mentioned in the song.
+
+"
+"She explained that you won't always get what you want with a goal, but you should still do what with it?","['know how to find', 'work hard', 'remember where', 'reach for', 'purchase']","Questions: She explained that you won't always get what you want with a goal, but you should still do what with it?, Choices: (A) know how to find, (B) work hard, (C) remember where, (D) reach for, (E) purchase. Given the question 'She explained that you won't always get what you want with a goal, but you should still do what with it?', which among the choices know how to find, work hard, remember where, reach for purchase is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) reach for. A possible conditional statement for this question is: ""If she explained that you won't always get what you want with a goal, then you should still reach for it."" This statement is reasonable because reaching for a goal means trying to achieve it, even if it is difficult or uncertain. The other choices are not reasonable because they are not actions that are related to pursuing a goal.
+
+"
+"She felt like she never had any support, people always seemed to what?","['marriage', 'ignore', 'let down', 'aid', 'neglect']","Questions: She felt like she never had any support, people always seemed to what?, Choices: (A) marriage, (B) ignore, (C) let down, (D) aid, (E) neglect. Given the question 'She felt like she never had any support, people always seemed to what?', which among the choices marriage, ignore, let down, aid neglect is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) let down. A possible conditional statement for this question is: ""If she felt like she never had any support, then people always seemed to let her down."" This statement is reasonable because letting someone down means failing to meet their expectations or needs, which can make them feel unsupported. The other choices are not reasonable because they are not actions that are related to support.
+
+"
+"She felt like she was getting a cold, she was not looking forward to this what?","['let down', 'disappointment', 'satisfaction', 'gratitude', 'illness']","Questions: She felt like she was getting a cold, she was not looking forward to this what?, Choices: (A) let down, (B) disappointment, (C) satisfaction, (D) gratitude, (E) illness. Given the question 'She felt like she was getting a cold, she was not looking forward to this what?', which among the choices let down, disappointment, satisfaction, gratitude illness is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) illness. A possible conditional statement for this question is: ""If she felt like she was getting a cold, then she was not looking forward to this illness."" This statement is reasonable because a cold is a type of illness that can cause discomfort and inconvenience, which can make someone not look forward to it. The other choices are not reasonable because they are not nouns that are related to a cold.
+
+"
+"She felt so alone on campus, she just wanted to be what?","['with someone', 'together', 'in crowd', 'many people', 'confined']","Questions: She felt so alone on campus, she just wanted to be what?, Choices: (A) with someone, (B) together, (C) in crowd, (D) many people, (E) confined. Given the question 'She felt so alone on campus, she just wanted to be what?', which among the choices with someone, together, in crowd, many people confined is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) together. A possible conditional statement for this question is: ""If she felt so alone on campus, then she just wanted to be together with someone."" This statement is reasonable because being together with someone means having companionship or intimacy, which can make someone feel less lonely. The other choices are not reasonable because they are not adjectives or prepositions that are related to being together.
+
+"
+"She felt the need to continue to lose weight, this was despite her already being what?","['skinny', 'feel better', 'under weight', 'lift weights', 'healthy']","Questions: She felt the need to continue to lose weight, this was despite her already being what?, Choices: (A) skinny, (B) feel better, (C) under weight, (D) lift weights, (E) healthy. Given the question 'She felt the need to continue to lose weight, this was despite her already being what?', which among the choices skinny, feel better, under weight, lift weights healthy is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) under weight. A possible conditional statement for this question is: ""If she felt the need to continue to lose weight, then this was despite her already being under weight."" This statement is reasonable because being under weight means having a body mass index (BMI) that is below the normal range, which can indicate a health problem or an eating disorder. The other choices are not reasonable because they are not adjectives that are related to weight.
+
+"
+"She filled the thing with water and went to plug it in, she had finally finished her garden with what centerpiece?","['stream', 'perfume', 'sink', 'fountain', 'swamp']","Questions: She filled the thing with water and went to plug it in, she had finally finished her garden with what centerpiece?, Choices: (A) stream, (B) perfume, (C) sink, (D) fountain, (E) swamp. Given the question 'She filled the thing with water and went to plug it in, she had finally finished her garden with what centerpiece?', which among the choices stream, perfume, sink, fountain swamp is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) fountain. A possible conditional statement for this question is: ""If she filled the thing with water and went to plug it in, then she had finally finished her garden with a fountain as a centerpiece."" This statement is reasonable because a fountain is a device that pumps water into the air, creating a decorative effect, and it can be a centerpiece of a garden. The other choices are not reasonable because they are not devices that use water or are related to a garden.
+
+"
+"She finally gave up smoking when they decided to grow their family, this was because she had heard it can cause what?","['pleasure', 'ill-omen', 'birth defects', 'bad breath', 'persistent cough']","Questions: She finally gave up smoking when they decided to grow their family, this was because she had heard it can cause what?, Choices: (A) pleasure, (B) ill-omen, (C) birth defects, (D) bad breath, (E) persistent cough. Given the question 'She finally gave up smoking when they decided to grow their family, this was because she had heard it can cause what?', which among the choices pleasure, ill-omen, birth defects, bad breath persistent cough is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) birth defects. A possible conditional statement for this question is: ""If she finally gave up smoking when they decided to grow their family, then this was because she had heard it can cause birth defects."" This statement is reasonable because birth defects are abnormalities that affect the development of a baby before or after birth, and they can be caused by smoking during pregnancy. The other choices are not reasonable because they are not effects that are related to smoking or pregnancy."
+"She found out who her father was, discovering truth had led her to feel what?","['conclusion', 'pain', 'very sad', 'relief', 'happiness']","Questions: She found out who her father was, discovering truth had led her to feel what?, Choices: (A) conclusion, (B) pain, (C) very sad, (D) relief, (E) happiness. Given the question 'She found out who her father was, discovering truth had led her to feel what?', which among the choices conclusion, pain, very sad, relief happiness is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) pain**. A possible explanation is: If she found out who her father was, then she discovered the truth. If she discovered the truth, then she felt pain. Therefore, if she found out who her father was, then she felt pain.
+
+"
+"She found the housing option in the midwest were plain, where should she look for houses for less plain architecture?","['landscape', 'azawakh', 'middle america', 'georgia', 'countryside']","Questions: She found the housing option in the midwest were plain, where should she look for houses for less plain architecture?, Choices: (A) landscape, (B) azawakh, (C) middle america, (D) georgia, (E) countryside. Given the question 'She found the housing option in the midwest were plain, where should she look for houses for less plain architecture?', which among the choices landscape, azawakh, middle america, georgia countryside is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) georgia**. A possible explanation is: If she found the housing option in the midwest were plain, then she wanted to look for houses with less plain architecture. If she wanted to look for houses with less plain architecture, then she should look for houses in georgia. Therefore, if she found the housing option in the midwest were plain, then she should look for houses in georgia.
+
+"
+"She found the trend quite odd, but it seemed that this was the new what?","['even', 'common', 'regular', 'normal', 'thing to do']","Questions: She found the trend quite odd, but it seemed that this was the new what?, Choices: (A) even, (B) common, (C) regular, (D) normal, (E) thing to do. Given the question 'She found the trend quite odd, but it seemed that this was the new what?', which among the choices even, common, regular, normal thing to do is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(E) thing to do**. A possible explanation is: If she found the trend quite odd, then she did not understand it. If she did not understand it, but it seemed that this was the new thing to do. Therefore, if she found the trend quite odd, then it seemed that this was the new thing to do.
+
+"
+"She got a snack and drink and laid back in her chaise lounge, the day was finally over and she could just read book and what?","['choose one', 'open up', 'get comfortable', 'plot world domination', 'learn to read']","Questions: She got a snack and drink and laid back in her chaise lounge, the day was finally over and she could just read book and what?, Choices: (A) choose one, (B) open up, (C) get comfortable, (D) plot world domination, (E) learn to read. Given the question 'She got a snack and drink and laid back in her chaise lounge, the day was finally over and she could just read book and what?', which among the choices choose one, open up, get comfortable, plot world domination learn to read is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) get comfortable**. A possible explanation is: If she got a snack and drink and laid back in her chaise lounge, then she was relaxing. If she was relaxing, then she could just read a book and get comfortable. Therefore, if she got a snack and drink and laid back in her chaise lounge, then she could just read a book and get comfortable.
+
+"
+"She got an extra blanket to get warm, this would hopefully make her even what?","['more comfortable', 'were cold', 'less cold', ""you're cold"", 'feel comfortable']","Questions: She got an extra blanket to get warm, this would hopefully make her even what?, Choices: (A) more comfortable, (B) were cold, (C) less cold, (D) you're cold, (E) feel comfortable. Given the question 'She got an extra blanket to get warm, this would hopefully make her even what?', which among the choices more comfortable, were cold, less cold, you're cold feel comfortable is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) less cold**. A possible explanation is: If she got an extra blanket to get warm, then she was cold. If she was cold, then this would hopefully make her less cold. Therefore, if she got an extra blanket to get warm, then this would hopefully make her less cold.
+
+"
+"She got home and needed to put away her shirts, where did she put them?","['buttons', 'suitcase', 'washing machine', 'sporting goods store', 'closet']","Questions: She got home and needed to put away her shirts, where did she put them?, Choices: (A) buttons, (B) suitcase, (C) washing machine, (D) sporting goods store, (E) closet. Given the question 'She got home and needed to put away her shirts, where did she put them?', which among the choices buttons, suitcase, washing machine, sporting goods store closet is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) closet**. A possible explanation is: If she got home and needed to put away her shirts, then she had to store them somewhere. If she had to store them somewhere, then she put them in the closet. Therefore, if she got home and needed to put away her shirts, then she put them in the closet.
+
+"
+"She got in the car after becoming inebriated, what did she cause afterwards?","['fall down', 'arrest', 'pass out', 'flew out', 'death and destruction']","Questions: She got in the car after becoming inebriated, what did she cause afterwards?, Choices: (A) fall down, (B) arrest, (C) pass out, (D) flew out, (E) death and destruction. Given the question 'She got in the car after becoming inebriated, what did she cause afterwards?', which among the choices fall down, arrest, pass out, flew out death and destruction is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(E) death and destruction**. A possible explanation is: If she got in the car after becoming inebriated, then she was driving under the influence. If she was driving under the influence, then she caused death and destruction. Therefore, if she got in the car after becoming inebriated, then she caused death and destruction.
+
+"
+"She grabbed the handle very tightly to work out the knots, she began to what?","['juggling', 'brush', 'carry purse', 'umbrella', 'saucepan']","Questions: She grabbed the handle very tightly to work out the knots, she began to what?, Choices: (A) juggling, (B) brush, (C) carry purse, (D) umbrella, (E) saucepan. Given the question 'She grabbed the handle very tightly to work out the knots, she began to what?', which among the choices juggling, brush, carry purse, umbrella saucepan is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) brush**. A possible explanation is: If she grabbed the handle very tightly to work out the knots, then she was holding a brush. If she was holding a brush, then she began to brush. Therefore, if she grabbed the handle very tightly to work out the knots, then she began to brush.
+
+"
+"She ha money and an extravagant hat, where was she heading to gamble with it all?","['race track', 'casino', 'bank account', 'port', 'supermarket']","Questions: She ha money and an extravagant hat, where was she heading to gamble with it all?, Choices: (A) race track, (B) casino, (C) bank account, (D) port, (E) supermarket. Given the question 'She ha money and an extravagant hat, where was she heading to gamble with it all?', which among the choices race track, casino, bank account, port supermarket is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) race track**. A possible explanation is: If she had money and an extravagant hat, then she was ready to gamble. If she was ready to gamble, then she was heading to the race track. Therefore, if she had money and an extravagant hat, then she was heading to the race track.
+
+"
+"She had a bad habit of washing hands over one thousand times a day, what did she experience as a result?","['health', 'become wet', 'skin irritation', 'dry skin', 'medium']","Questions: She had a bad habit of washing hands over one thousand times a day, what did she experience as a result?, Choices: (A) health, (B) become wet, (C) skin irritation, (D) dry skin, (E) medium. Given the question 'She had a bad habit of washing hands over one thousand times a day, what did she experience as a result?', which among the choices health, become wet, skin irritation, dry skin medium is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) dry skin**. A possible explanation is: If she had a bad habit of washing hands over one thousand times a day, then she was exposing her skin to water and soap. If she was exposing her skin to water and soap, then she experienced dry skin. Therefore, if she had a bad habit of washing hands over one thousand times a day, then she experienced dry skin."
+"She had a busy schedule, she had to run errands and pick up the kids the second she did what?","['make time for', 'take money', 'go outdoors', 'leave work', 'field']","Questions: She had a busy schedule, she had to run errands and pick up the kids the second she did what?, Choices: (A) make time for, (B) take money, (C) go outdoors, (D) leave work, (E) field. Given the question 'She had a busy schedule, she had to run errands and pick up the kids the second she did what?', which among the choices make time for, take money, go outdoors, leave work field is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) leave work. A possible explanation is: If she had a busy schedule, then she had to run errands and pick up the kids the second she left work.
+"
+"She had a knack for entertaining, everybody told he she had a what?","['fun', 'talent', 'learn about', 'intelligence', 'recognize']","Questions: She had a knack for entertaining, everybody told he she had a what?, Choices: (A) fun, (B) talent, (C) learn about, (D) intelligence, (E) recognize. Given the question 'She had a knack for entertaining, everybody told he she had a what?', which among the choices fun, talent, learn about, intelligence recognize is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) talent. A possible explanation is: If she had a knack for entertaining, then everybody told her she had a talent.
+"
+"She had a problem that she would always spend money, her favorite hobby was to what?","['make things', 'earn more', 'buy things', 'make money', 'go shopping']","Questions: She had a problem that she would always spend money, her favorite hobby was to what?, Choices: (A) make things, (B) earn more, (C) buy things, (D) make money, (E) go shopping. Given the question 'She had a problem that she would always spend money, her favorite hobby was to what?', which among the choices make things, earn more, buy things, make money go shopping is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) go shopping. A possible explanation is: If she had a problem that she would always spend money, then her favorite hobby was to go shopping.
+"
+"She had a vision before going to bed, what was she doing?","['falling asleep', 'rest', 'cooking food', 'dreaming of', 'laziness']","Questions: She had a vision before going to bed, what was she doing?, Choices: (A) falling asleep, (B) rest, (C) cooking food, (D) dreaming of, (E) laziness. Given the question 'She had a vision before going to bed, what was she doing?', which among the choices falling asleep, rest, cooking food, dreaming of laziness is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) dreaming of. A possible explanation is: If she had a vision before going to bed, then she was dreaming of something.
+"
+"She had an addiction to buying products, it was the act of shopping she was after not actually what anything?","['spending money', 'interacting', 'bankruptcy', 'agony', 'owning']","Questions: She had an addiction to buying products, it was the act of shopping she was after not actually what anything?, Choices: (A) spending money, (B) interacting, (C) bankruptcy, (D) agony, (E) owning. Given the question 'She had an addiction to buying products, it was the act of shopping she was after not actually what anything?', which among the choices spending money, interacting, bankruptcy, agony owning is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) owning. A possible explanation is: If she had an addiction to buying products, then it was the act of shopping she was after not actually owning anything.
+"
+"She had an alacrity for anything life threw her way, but when it came to relationships she had some what?","['reluctance', 'hesitance', 'indifference', 'disinclination', 'apathy']","Questions: She had an alacrity for anything life threw her way, but when it came to relationships she had some what?, Choices: (A) reluctance, (B) hesitance, (C) indifference, (D) disinclination, (E) apathy. Given the question 'She had an alacrity for anything life threw her way, but when it came to relationships she had some what?', which among the choices reluctance, hesitance, indifference, disinclination apathy is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) hesitance. A possible explanation is: If she had an alacrity for anything life threw her way, but when it came to relationships she had some hesitance.
+"
+"She had been applying for job for weeks with no call back, she knew she was qualified, so what did she feel?","['employment', 'frustration', 'stress', 'working hard', 'love']","Questions: She had been applying for job for weeks with no call back, she knew she was qualified, so what did she feel?, Choices: (A) employment, (B) frustration, (C) stress, (D) working hard, (E) love. Given the question 'She had been applying for job for weeks with no call back, she knew she was qualified, so what did she feel?', which among the choices employment, frustration, stress, working hard love is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) frustration. A possible explanation is: If she had been applying for job for weeks with no call back, and she knew she was qualified, then she felt frustration.
+"
+"She had been looking through pictures for hours, she just couldn't eye a suspect among all the what?","[""person's head"", 'faces', 'mammal', 'potato', 'someones face']","Questions: She had been looking through pictures for hours, she just couldn't eye a suspect among all the what?, Choices: (A) person's head, (B) faces, (C) mammal, (D) potato, (E) someones face. Given the question 'She had been looking through pictures for hours, she just couldn't eye a suspect among all the what?', which among the choices person's head, faces, mammal, potato someones face is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) faces. A possible explanation is: If she had been looking through pictures for hours, then she just couldn't eye a suspect among all the faces.
+"
+"She had finally saved enough spending money to buy exactly what her goal was, it gave her great what?","['clutter', 'getting', 'bankruptcy', 'confidence', 'satisfaction']","Questions: She had finally saved enough spending money to buy exactly what her goal was, it gave her great what?, Choices: (A) clutter, (B) getting, (C) bankruptcy, (D) confidence, (E) satisfaction. Given the question 'She had finally saved enough spending money to buy exactly what her goal was, it gave her great what?', which among the choices clutter, getting, bankruptcy, confidence satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) satisfaction. A possible explanation is: If she had finally saved enough spending money to buy exactly what her goal was, then it gave her great satisfaction.
+"
+"She had grown to despise her husband, she though committing murder was the only way to end her what?","['prosecution', 'fear', 'distress', 'marriage', 'misery']","Questions: She had grown to despise her husband, she though committing murder was the only way to end her what?, Choices: (A) prosecution, (B) fear, (C) distress, (D) marriage, (E) misery. Given the question 'She had grown to despise her husband, she though committing murder was the only way to end her what?', which among the choices prosecution, fear, distress, marriage misery is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) misery. A possible explanation is: If she had grown to despise her husband, then she thought committing murder was the only way to end her misery. "
+"She had learned how to make bread that was quite good, she had finished a new loaf and now all there was left to do was to what?","['fresher', 'tastes better than storebought', 'eat bread', ""i'm hungry"", 'throw it away']","Questions: She had learned how to make bread that was quite good, she had finished a new loaf and now all there was left to do was to what?, Choices: (A) fresher, (B) tastes better than storebought, (C) eat bread, (D) i'm hungry, (E) throw it away. Given the question 'She had learned how to make bread that was quite good, she had finished a new loaf and now all there was left to do was to what?', which among the choices fresher, tastes better than storebought, eat bread, i'm hungry throw it away is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) eat bread. The reasoning is as follows:
+
+- If she had learned how to make bread that was quite good, then she would want to enjoy the fruits of her labor.
+- If she had finished a new loaf, then she would have fresh bread available.
+- If she had fresh bread available, then she would eat bread.
+- Therefore, if she had learned how to make bread that was quite good and she had finished a new loaf, then all there was left to do was to eat bread.
+
+"
+"She had locked her key in her car again, but luckily she always kept a spare in her what?","['own home', 'front door', 'pocket', 'garden gnome', 'purse']","Questions: She had locked her key in her car again, but luckily she always kept a spare in her what?, Choices: (A) own home, (B) front door, (C) pocket, (D) garden gnome, (E) purse. Given the question 'She had locked her key in her car again, but luckily she always kept a spare in her what?', which among the choices own home, front door, pocket, garden gnome purse is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) purse. The reasoning is as follows:
+
+- If she had locked her key in her car again, then she would need a spare key to unlock it.
+- If she always kept a spare key in her own home, then she would have to go back to her home to get it.
+- If she always kept a spare key in her front door, then she would have to leave her front door unlocked or have another key for it.
+- If she always kept a spare key in her pocket, then she would not have locked her key in her car in the first place.
+- If she always kept a spare key in her garden gnome, then she would have to find the gnome and hope no one else had taken the key.
+- If she always kept a spare key in her purse, then she would have easy access to it and be able to unlock her car.
+- Therefore, if she had locked her key in her car again and she always kept a spare key in her purse, then she would be able to unlock her car.
+
+"
+"She had seen over 50 marble fountains that day, where was she?","[""lenin's crypt"", 'front of casino', 'rome', 'public place', 'city']","Questions: She had seen over 50 marble fountains that day, where was she?, Choices: (A) lenin's crypt, (B) front of casino, (C) rome, (D) public place, (E) city. Given the question 'She had seen over 50 marble fountains that day, where was she?', which among the choices lenin's crypt, front of casino, rome, public place city is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) rome. The reasoning is as follows:
+
+- If she had seen over 50 marble fountains that day, then she would have been in a place that had many marble fountains.
+- If she had been in lenin's crypt, then she would have seen a mausoleum, not marble fountains.
+- If she had been in front of a casino, then she would have seen a few marble fountains, not over 50.
+- If she had been in rome, then she would have seen many marble fountains, such as the Trevi Fountain, the Fountain of the Four Rivers, and the Fountain of Neptune.
+- If she had been in a public place, then she would have seen some marble fountains, but not necessarily over 50.
+- If she had been in a city, then she would have seen some marble fountains, but not necessarily over 50.
+- Therefore, if she had seen over 50 marble fountains that day, then she would have been in rome"
+"She had to comfort friend that day, she gave her a big ole what?","['friendly', 'sympathetic', 'handshake', 'cook', 'hug']","Questions: She had to comfort friend that day, she gave her a big ole what?, Choices: (A) friendly, (B) sympathetic, (C) handshake, (D) cook, (E) hug. Given the question 'She had to comfort friend that day, she gave her a big ole what?', which among the choices friendly, sympathetic, handshake, cook hug is the correct answer? Explain your reasoning using conditional statements.
+",
+"She had to finish reading book for school, but it was late and she kept what?","['fall asleep', 'falling asleep', 'learning', 'sit', 'the light on']","Questions: She had to finish reading book for school, but it was late and she kept what?, Choices: (A) fall asleep, (B) falling asleep, (C) learning, (D) sit, (E) the light on. Given the question 'She had to finish reading book for school, but it was late and she kept what?', which among the choices fall asleep, falling asleep, learning, sit the light on is the correct answer? Explain your reasoning using conditional statements.
+","50 marble fountains that day, then she would have been in a place that had many marble fountains.
+- If she had been in lenin's crypt, then she would have seen a mausoleum, not marble fountains.
+- If she had been in front of a casino, then she would have seen a few marble fountains, not over 50.
+- If she had been in rome, then she would have seen many marble fountains, such as the Trevi Fountain, the Fountain of the Four Rivers, and the Fountain of Neptune.
+- If she had been in a public place, then she would have seen some marble fountains, but not necessarily over 50.
+- If she had been in a city, then she would have seen some marble fountains, but not necessarily over 50.
+- Therefore, if she had seen over 50 marble fountains that day, then she would have been in rome"
+"She had to run errands that day, she did it right away because she prefers to what?","['complete tasks', 'gain', 'make tea', 'helpful', 'get things done']","Questions: She had to run errands that day, she did it right away because she prefers to what?, Choices: (A) complete tasks, (B) gain, (C) make tea, (D) helpful, (E) get things done. Given the question 'She had to run errands that day, she did it right away because she prefers to what?', which among the choices complete tasks, gain, make tea, helpful get things done is the correct answer? Explain your reasoning using conditional statements.
+",
+"She had trouble remembering her happy wedding day, but when she did, what did she experience?","['hunger', 'knowing', 'depression', 'knowledge', 'pleasure']","Questions: She had trouble remembering her happy wedding day, but when she did, what did she experience?, Choices: (A) hunger, (B) knowing, (C) depression, (D) knowledge, (E) pleasure. Given the question 'She had trouble remembering her happy wedding day, but when she did, what did she experience?', which among the choices hunger, knowing, depression, knowledge pleasure is the correct answer? Explain your reasoning using conditional statements.
+",
+"She had worked hard her whole life saving money, featuring her dream entrance hall she bought a new what?","['hat rack', 'school', 'large home', 'palace', 'gateway']","Questions: She had worked hard her whole life saving money, featuring her dream entrance hall she bought a new what?, Choices: (A) hat rack, (B) school, (C) large home, (D) palace, (E) gateway. Given the question 'She had worked hard her whole life saving money, featuring her dream entrance hall she bought a new what?', which among the choices hat rack, school, large home, palace gateway is the correct answer? Explain your reasoning using conditional statements.
+",
+"She heard a gong while walking through new york city, where was she likely?","['tibet', 'orchestra', 'new york stock exchange', 'music store', 'chinatown']","Questions: She heard a gong while walking through new york city, where was she likely?, Choices: (A) tibet, (B) orchestra, (C) new york stock exchange, (D) music store, (E) chinatown. Given the question 'She heard a gong while walking through new york city, where was she likely?', which among the choices tibet, orchestra, new york stock exchange, music store chinatown is the correct answer? Explain your reasoning using conditional statements.
+",
+"She knew what presents she was getting, none of them were what she wanted and so she felt what?","['excited', 'ownership', 'satisfaction', 'being happy', 'disappointment']","Questions: She knew what presents she was getting, none of them were what she wanted and so she felt what?, Choices: (A) excited, (B) ownership, (C) satisfaction, (D) being happy, (E) disappointment. Given the question 'She knew what presents she was getting, none of them were what she wanted and so she felt what?', which among the choices excited, ownership, satisfaction, being happy disappointment is the correct answer? Explain your reasoning using conditional statements.
+",.
+"She left the states and traveled across the pond, her next art gallery was in what city?","['soho', 'london', 'art museum', 'new york city', 'on a mural']","Questions: She left the states and traveled across the pond, her next art gallery was in what city?, Choices: (A) soho, (B) london, (C) art museum, (D) new york city, (E) on a mural. Given the question 'She left the states and traveled across the pond, her next art gallery was in what city?', which among the choices soho, london, art museum, new york city on a mural is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) london. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she left the states and traveled across the pond"" and the conclusion is ""her next art gallery was in what city?"". The phrase ""across the pond"" is a common way of referring to the Atlantic Ocean, which separates the United States from Europe. Therefore, if she left the states and traveled across the pond, then her next art gallery was in a European city. Among the choices, only london is a European city, so it is the correct answer.
+
+"
+"She let him know he was being over the top, and that his antics where a little what?","['much', 'plenty', 'larger', 'lot of', 'big']","Questions: She let him know he was being over the top, and that his antics where a little what?, Choices: (A) much, (B) plenty, (C) larger, (D) lot of, (E) big. Given the question 'She let him know he was being over the top, and that his antics where a little what?', which among the choices much, plenty, larger, lot of big is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) much. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she let him know he was being over the top"" and the conclusion is ""his antics were a little what?"". The phrase ""over the top"" means excessive or exaggerated, so if she let him know he was being over the top, then his antics were a little too much. Among the choices, only much can be used to modify the word too, so it is the correct answer.
+
+"
+"She like her job at the reception desk, but didn't like her long commute, what did she likely live far away from?","['motel', 'lunch restaurant', 'office park', 'lobby', 'building']","Questions: She like her job at the reception desk, but didn't like her long commute, what did she likely live far away from?, Choices: (A) motel, (B) lunch restaurant, (C) office park, (D) lobby, (E) building. Given the question 'She like her job at the reception desk, but didn't like her long commute, what did she likely live far away from?', which among the choices motel, lunch restaurant, office park, lobby building is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) office park. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she liked her job at the reception desk"" and the conclusion is ""she lived far away from what?"". The reception desk is usually located in an office building, which is often part of an office park. An office park is a large area of land with several office buildings and parking lots. Therefore, if she liked her job at the reception desk, then she likely lived far away from an office park. Among the choices, only office park is related to the reception desk, so it is the correct answer.
+
+"
+"She looked at all the noisy flashing one-armed bandits, if she was going to play she was going to be what?","['saving money', 'spending money', 'being entertained', 'intermission', 'sleepiness']","Questions: She looked at all the noisy flashing one-armed bandits, if she was going to play she was going to be what?, Choices: (A) saving money, (B) spending money, (C) being entertained, (D) intermission, (E) sleepiness. Given the question 'She looked at all the noisy flashing one-armed bandits, if she was going to play she was going to be what?', which among the choices saving money, spending money, being entertained, intermission sleepiness is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) spending money. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she looked at all the noisy flashing one-armed bandits"" and the conclusion is ""she was going to be what?"". The phrase ""one-armed bandits"" is a slang term for slot machines, which are gambling devices that require money to play. Therefore, if she looked at all the noisy flashing one-armed bandits, then she was going to be spending money. Among the choices, only spending money is related to the slot machines, so it is the correct answer.
+
+"
+"She looked longingly at her unrequited love, what did she want to be for him?","['get money from', 'go to college', 'fall down', 'whatever', 'matter to']","Questions: She looked longingly at her unrequited love, what did she want to be for him?, Choices: (A) get money from, (B) go to college, (C) fall down, (D) whatever, (E) matter to. Given the question 'She looked longingly at her unrequited love, what did she want to be for him?', which among the choices get money from, go to college, fall down, whatever matter to is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) matter to. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she looked longingly at her unrequited love"" and the conclusion is ""she wanted to be what for him?"". The phrase ""unrequited love"" means love that is not returned or reciprocated. Therefore, if she looked longingly at her unrequited love, then she wanted to be important or significant for him. Among the choices, only matter to can express this meaning, so it is the correct answer.
+
+"
+"She loved buying products, she was driven by her what to shop more than any practical needs?","['desire', 'money', 'time', 'credit', 'spending money']","Questions: She loved buying products, she was driven by her what to shop more than any practical needs?, Choices: (A) desire, (B) money, (C) time, (D) credit, (E) spending money. Given the question 'She loved buying products, she was driven by her what to shop more than any practical needs?', which among the choices desire, money, time, credit spending money is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) desire. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she loved buying products"" and the conclusion is ""she was driven by her what to shop more than any practical needs?"". The phrase ""buying products"" means purchasing goods or services, which usually requires money. Therefore, if she loved buying products, then she was driven by her want or wish to shop more than any practical needs. Among the choices, only desire can express this meaning, so it is the correct answer.
+
+"
+"She loved finding the art in nature, and loved how what would explain it?","['science', 'math', 'graffiti', 'logic', 'education']","Questions: She loved finding the art in nature, and loved how what would explain it?, Choices: (A) science, (B) math, (C) graffiti, (D) logic, (E) education. Given the question 'She loved finding the art in nature, and loved how what would explain it?', which among the choices science, math, graffiti, logic education is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) science. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she loved finding the art in nature"" and the conclusion is ""she loved how what would explain it?"". The phrase ""finding the art in nature"" means appreciating the beauty or aesthetics of natural phenomena, such as plants, animals, landscapes, etc. Therefore, if she loved finding the art in nature, then she loved how science would explain it. Science is the systematic study of the natural world, which can provide explanations for the art in nature. Among the choices, only science is related to the natural world, so it is the correct answer.
+
+"
+"She loved the music so much, how did she describe it?","['silent', 'express emotion', 'beautifull', 'irritate', 'quiet mind']","Questions: She loved the music so much, how did she describe it?, Choices: (A) silent, (B) express emotion, (C) beautifull, (D) irritate, (E) quiet mind. Given the question 'She loved the music so much, how did she describe it?', which among the choices silent, express emotion, beautifull, irritate quiet mind is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) beautifull. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she loved the music so much"" and the conclusion is ""she described it how?"". The phrase ""loved the music so much"" means having a strong or passionate liking for the music, which is a form of art or expression. Therefore, if she loved the music so much, then she described it as beautifull. Beautifull is an adjective that means pleasing to the senses or mind, which can be used to describe music. Among the choices, only beautifull can be used to describe music, so it is the correct answer.
+
+"
+"She needed a diaphragm, she went to buy one where?","['valve', 'drugstore', 'human', 'organ', ""person's chest""]","Questions: She needed a diaphragm, she went to buy one where?, Choices: (A) valve, (B) drugstore, (C) human, (D) organ, (E) person's chest. Given the question 'She needed a diaphragm, she went to buy one where?', which among the choices valve, drugstore, human, organ person's chest is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) drugstore. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she needed a diaphragm"" and the conclusion is ""she went to buy one where?"". The word ""diaphragm"" has multiple meanings, but in this context, it refers to a contraceptive device that is inserted into the vagina to prevent pregnancy. Therefore, if she needed a diaphragm, then she went to buy one at a drugstore. A drugstore is a store that sells medicines and other health-related products, which can include contraceptives. Among the choices, only drugstore is related to the diaphragm, so it is the correct answer.
+
+"
+"She needed a new night table, what does she need to visit to get one legally?","['furniture store', 'homes', 'hotel', 'hallway', 'grocery']","Questions: She needed a new night table, what does she need to visit to get one legally?, Choices: (A) furniture store, (B) homes, (C) hotel, (D) hallway, (E) grocery. Given the question 'She needed a new night table, what does she need to visit to get one legally?', which among the choices furniture store, homes, hotel, hallway grocery is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) furniture store. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. In this case, the hypothesis is ""she needed a new night table"" and the conclusion is ""she needed to visit what to get one legally?"". The phrase ""night table"" means a small table that is placed next to a bed, which is a piece of furniture. Therefore, if she needed a new night table, then she needed to visit a furniture store to get one legally. A furniture store is a store that sells furniture, which can include night tables. Among the choices, only furniture store is related to the night table, so it is the correct answer."
+"She needed cabbage and make-up, so where did she go to buy both?","['freezer', 'refrigerator', 'plate', 'grocery store', 'supermarket']","Questions: She needed cabbage and make-up, so where did she go to buy both?, Choices: (A) freezer, (B) refrigerator, (C) plate, (D) grocery store, (E) supermarket. Given the question 'She needed cabbage and make-up, so where did she go to buy both?', which among the choices freezer, refrigerator, plate, grocery store supermarket is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) supermarket. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If she needed cabbage and make-up, then she went to a supermarket."" This statement is true because a supermarket is a place that sells both food items and personal care products, unlike the other choices.
+
+"
+"She needs to visit a bookshop after buying the latest fashion, where should she look?","['student union', 'mall', 'department store', 'library', 'town or city']","Questions: She needs to visit a bookshop after buying the latest fashion, where should she look?, Choices: (A) student union, (B) mall, (C) department store, (D) library, (E) town or city. Given the question 'She needs to visit a bookshop after buying the latest fashion, where should she look?', which among the choices student union, mall, department store, library town or city is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) mall. A possible conditional statement for this question is: ""If she needs to visit a bookshop after buying the latest fashion, then she should look at a mall."" This statement is true because a mall is a place that has both clothing stores and bookstores, unlike the other choices.
+
+"
+"She often spent money she didn't have buying products, this lead to what?","['spending money', 'owning', 'pleasure', 'surplus of cash', 'debt']","Questions: She often spent money she didn't have buying products, this lead to what?, Choices: (A) spending money, (B) owning, (C) pleasure, (D) surplus of cash, (E) debt. Given the question 'She often spent money she didn't have buying products, this lead to what?', which among the choices spending money, owning, pleasure, surplus of cash debt is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) debt. A possible conditional statement for this question is: ""If she often spent money she didn't have buying products, then this led to debt."" This statement is true because debt is the result of spending more money than one has, unlike the other choices.
+
+"
+"She preferred the light blanket, what did she think of the older blanket?","['empty', 'calorific', 'crucial', 'cumbersome', 'forceful']","Questions: She preferred the light blanket, what did she think of the older blanket?, Choices: (A) empty, (B) calorific, (C) crucial, (D) cumbersome, (E) forceful. Given the question 'She preferred the light blanket, what did she think of the older blanket?', which among the choices empty, calorific, crucial, cumbersome forceful is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) cumbersome. A possible conditional statement for this question is: ""If she preferred the light blanket, then she thought of the older blanket as cumbersome."" This statement is true because cumbersome means heavy, bulky, or difficult to handle, which is the opposite of light, unlike the other choices.
+
+"
+"She put cozy chairs in all the nooks and crannies, she wanted people to spend time reading and browsing her what?","['conversation', ""friend's house"", 'race track', 'building', 'bookstore']","Questions: She put cozy chairs in all the nooks and crannies, she wanted people to spend time reading and browsing her what?, Choices: (A) conversation, (B) friend's house, (C) race track, (D) building, (E) bookstore. Given the question 'She put cozy chairs in all the nooks and crannies, she wanted people to spend time reading and browsing her what?', which among the choices conversation, friend's house, race track, building bookstore is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) bookstore. A possible conditional statement for this question is: ""If she put cozy chairs in all the nooks and crannies, then she wanted people to spend time reading and browsing her bookstore."" This statement is true because a bookstore is a place that sells books and encourages reading, unlike the other choices.
+
+"
+"She put on some soft music, she just wanted to do what at the end of the day?","['dance', 'opera', 'listen', 'relax', 'skate']","Questions: She put on some soft music, she just wanted to do what at the end of the day?, Choices: (A) dance, (B) opera, (C) listen, (D) relax, (E) skate. Given the question 'She put on some soft music, she just wanted to do what at the end of the day?', which among the choices dance, opera, listen, relax skate is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) relax. A possible conditional statement for this question is: ""If she put on some soft music, then she just wanted to relax at the end of the day."" This statement is true because soft music is soothing and relaxing, unlike the other choices.
+
+"
+"She really enjoyed to make bread, because when you made your own it was always what?","['fresher', 'healthier', ""i'm hungry"", 'eat bread', 'tastes better than storebought']","Questions: She really enjoyed to make bread, because when you made your own it was always what?, Choices: (A) fresher, (B) healthier, (C) i'm hungry, (D) eat bread, (E) tastes better than storebought. Given the question 'She really enjoyed to make bread, because when you made your own it was always what?', which among the choices fresher, healthier, i'm hungry, eat bread tastes better than storebought is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) tastes better than storebought. A possible conditional statement for this question is: ""If she really enjoyed to make bread, then she thought that homemade bread tastes better than storebought bread."" This statement is true because homemade bread is usually fresher, healthier, and more satisfying than storebought bread, unlike the other choices.
+
+"
+"She really wanted her husband to pick a place to have dinner, but he was so used to her choosing he just replied with what?","['wherever', 'medium', 'void', 'nowhere', 'being']","Questions: She really wanted her husband to pick a place to have dinner, but he was so used to her choosing he just replied with what?, Choices: (A) wherever, (B) medium, (C) void, (D) nowhere, (E) being. Given the question 'She really wanted her husband to pick a place to have dinner, but he was so used to her choosing he just replied with what?', which among the choices wherever, medium, void, nowhere being is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) wherever. A possible conditional statement for this question is: ""If she really wanted her husband to pick a place to have dinner, then he replied with wherever."" This statement is true because wherever means any place or no particular place, which shows that he was indecisive or indifferent, unlike the other choices.
+
+"
+"She said it was her turn to watch television, it was time for her to what?","['entertained', 'plug in', ""you're bored"", 'see favorite show', 'sit']","Questions: She said it was her turn to watch television, it was time for her to what?, Choices: (A) entertained, (B) plug in, (C) you're bored, (D) see favorite show, (E) sit. Given the question 'She said it was her turn to watch television, it was time for her to what?', which among the choices entertained, plug in, you're bored, see favorite show sit is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) see favorite show. A possible conditional statement for this question is: ""If she said it was her turn to watch television, then it was time for her to see her favorite show."" This statement is true because watching television is a common way of entertainment, and people usually have a preference for what they want to watch, unlike the other choices.
+
+"
+"She said you had to pay extra for her to swallow semen, something you'd only hear from a what?","[""you're curious"", 'prostitute', 'pornstar', 'gay man in love', ""you're into""]","Questions: She said you had to pay extra for her to swallow semen, something you'd only hear from a what?, Choices: (A) you're curious, (B) prostitute, (C) pornstar, (D) gay man in love, (E) you're into. Given the question 'She said you had to pay extra for her to swallow semen, something you'd only hear from a what?', which among the choices you're curious, prostitute, pornstar, gay man in love you're into is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) prostitute. A possible conditional statement for this question is: ""If she said you had to pay extra for her to swallow semen, then she was a prostitute."" This statement is true because a prostitute is a person who engages in sexual activity for money, and may charge extra for certain services, unlike the other choices"
+"She spent the whole night getting drunk, now she refused to get up off the floor because she figured she would just what again?","['walk', 'vomit', 'throw up', 'staggering', 'fall down']","Questions: She spent the whole night getting drunk, now she refused to get up off the floor because she figured she would just what again?, Choices: (A) walk, (B) vomit, (C) throw up, (D) staggering, (E) fall down. Given the question 'She spent the whole night getting drunk, now she refused to get up off the floor because she figured she would just what again?', which among the choices walk, vomit, throw up, staggering fall down is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) vomit** or **(C) throw up**. These two words are synonyms and mean the same thing. A possible explanation using conditional statements is:
+
+```
+if (she spent the whole night getting drunk) {
+  she would have a high level of alcohol in her blood;
+  if (she had a high level of alcohol in her blood) {
+    she would feel nauseous and sick;
+    if (she felt nauseous and sick) {
+      she would vomit or throw up;
+    }
+  }
+}
+```
+
+"
+"She suffered from mental illness her whole life, but despite that she still what?","['recur', 'cause irrational behaviour', 'effectively treated', 'cause hallucination', 'managed']","Questions: She suffered from mental illness her whole life, but despite that she still what?, Choices: (A) recur, (B) cause irrational behaviour, (C) effectively treated, (D) cause hallucination, (E) managed. Given the question 'She suffered from mental illness her whole life, but despite that she still what?', which among the choices recur, cause irrational behaviour, effectively treated, cause hallucination managed is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(E) managed**. This word implies that she was able to cope with her mental illness and live a normal life. A possible explanation using conditional statements is:
+
+```
+if (she suffered from mental illness her whole life) {
+  she would have some challenges and difficulties;
+  if (she had some challenges and difficulties) {
+    she would need some support and treatment;
+    if (she had some support and treatment) {
+      she would manage her mental illness;
+    }
+  }
+}
+```
+
+"
+"She sure didn't have a green thumb, every time she thought she was making grow something it would what?","['growth', 'flowering', 'ground', 'die', 'plants']","Questions: She sure didn't have a green thumb, every time she thought she was making grow something it would what?, Choices: (A) growth, (B) flowering, (C) ground, (D) die, (E) plants. Given the question 'She sure didn't have a green thumb, every time she thought she was making grow something it would what?', which among the choices growth, flowering, ground, die plants is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) die**. This word means that the plants or flowers that she tried to grow would not survive. A possible explanation using conditional statements is:
+
+```
+if (she did not have a green thumb) {
+  she would not have a natural talent for gardening;
+  if (she did not have a natural talent for gardening) {
+    she would not know how to take care of plants or flowers;
+    if (she did not know how to take care of plants or flowers) {
+      they would die;
+    }
+  }
+}
+```
+
+"
+"She thought she had some old clothes that might work for the costume, she went to retrieve them down in the what?","['basement', 'box', 'trunk', 'store', 'attic']","Questions: She thought she had some old clothes that might work for the costume, she went to retrieve them down in the what?, Choices: (A) basement, (B) box, (C) trunk, (D) store, (E) attic. Given the question 'She thought she had some old clothes that might work for the costume, she went to retrieve them down in the what?', which among the choices basement, box, trunk, store attic is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(A) basement** or **(E) attic**. These two words are places where people usually store old clothes or other items that they do not use often. The word ""down"" in the question suggests that the basement is more likely, but the attic is also possible. A possible explanation using conditional statements is:
+
+```
+if (she had some old clothes that might work for the costume) {
+  she would not wear them regularly;
+  if (she did not wear them regularly) {
+    she would put them away in a storage place;
+    if (she put them away in a storage place) {
+      it would be either the basement or the attic;
+    }
+  }
+}
+```
+
+"
+"She told her child it was okay he was that way, and that everyone is what?","['afraid of', 'part old', 'different', 'good at', 'smart']","Questions: She told her child it was okay he was that way, and that everyone is what?, Choices: (A) afraid of, (B) part old, (C) different, (D) good at, (E) smart. Given the question 'She told her child it was okay he was that way, and that everyone is what?', which among the choices afraid of, part old, different, good at smart is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) different**. This word means that everyone has their own unique characteristics and preferences. A possible explanation using conditional statements is:
+
+```
+if (she told her child it was okay he was that way) {
+  she would accept and love him for who he is;
+  if (she accepted and loved him for who he is) {
+    she would not want him to change or feel bad;
+    if (she did not want him to change or feel bad) {
+      she would say that everyone is different;
+    }
+  }
+}
+```
+
+"
+"She tried to show her grandma she could look up the restaurant's information on her smartphone, but the old lady wanted to just use the what?","['yellow pages', 'new york', 'business sector', 'canada', 'big city']","Questions: She tried to show her grandma she could look up the restaurant's information on her smartphone, but the old lady wanted to just use the what?, Choices: (A) yellow pages, (B) new york, (C) business sector, (D) canada, (E) big city. Given the question 'She tried to show her grandma she could look up the restaurant's information on her smartphone, but the old lady wanted to just use the what?', which among the choices yellow pages, new york, business sector, canada big city is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(A) yellow pages**. This is a book that lists the names, addresses, and phone numbers of businesses and services. It is an old-fashioned way of finding information that some older people may prefer over using a smartphone. A possible explanation using conditional statements is:
+
+```
+if (she tried to show her grandma she could look up the restaurant's information on her smartphone) {
+  she would have access to the internet and online directories;
+  if (she had access to the internet and online directories) {
+    she would be able to find the information quickly and easily;
+    if (she was able to find the information quickly and easily) {
+      she would not need to use the yellow pages;
+    }
+  }
+}
+```
+
+"
+"She used her connections to get an interview, where did she want to work?","['wall', 'store', 'computer network', 'company', 'airport']","Questions: She used her connections to get an interview, where did she want to work?, Choices: (A) wall, (B) store, (C) computer network, (D) company, (E) airport. Given the question 'She used her connections to get an interview, where did she want to work?', which among the choices wall, store, computer network, company airport is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) company**. This is a general word that refers to any organization that employs people and provides goods or services. A possible explanation using conditional statements is:
+
+```
+if (she used her connections to get an interview) {
+  she would have some friends or acquaintances who work in a certain field or industry;
+  if (she had some friends or acquaintances who work in a certain field or industry) {
+    they would be able to recommend her to a potential employer;
+    if (they were able to recommend her to a potential employer) {
+      it would be a company;
+    }
+  }
+}
+```
+
+"
+"She usually didn't like Adam Sandler, so she found it surprising that she found his latest movie what?","['startled', 'important', 'funny', 'shocked', 'laughter']","Questions: She usually didn't like Adam Sandler, so she found it surprising that she found his latest movie what?, Choices: (A) startled, (B) important, (C) funny, (D) shocked, (E) laughter. Given the question 'She usually didn't like Adam Sandler, so she found it surprising that she found his latest movie what?', which among the choices startled, important, funny, shocked laughter is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) funny**. This word means that something makes someone laugh or smile. A possible explanation using conditional statements is:
+
+```
+if (she usually did not like Adam Sandler) {
+  she would not enjoy his style of comedy or humor;
+  if (she did not enjoy his style of comedy or humor) {
+    she would not find his movies amusing or entertaining;
+    if (she did not find his movies amusing or entertaining) {
+      she would be surprised if she found his latest movie funny;
+    }
+  }
+}
+```
+
+"
+"She wanted a condominium near the Gulf of Mexico, where should she look for one?","['michigan', 'washington', 'california', 'community', 'florida']","Questions: She wanted a condominium near the Gulf of Mexico, where should she look for one?, Choices: (A) michigan, (B) washington, (C) california, (D) community, (E) florida. Given the question 'She wanted a condominium near the Gulf of Mexico, where should she look for one?', which among the choices michigan, washington, california, community florida is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) florida**. This is a state in the United States that has a long coastline along the Gulf of Mexico. A possible explanation using conditional statements is:
+
+```
+if (she wanted a condominium near the Gulf of Mexico) {
+  she would want to live close to the sea and enjoy the warm weather;
+  if (she wanted to live close to the sea and enjoy the warm weather) {
+    she would look for a place that has these features;
+    if (she looked for a place that has these features) {
+      it would be florida;
+    }
+  }
+}
+```
+
+"
+"She wanted to be a star, so where did she move?","['solar system', 'theatre', 'constellation', 'hollywood', 'night sky']","Questions: She wanted to be a star, so where did she move?, Choices: (A) solar system, (B) theatre, (C) constellation, (D) hollywood, (E) night sky. Given the question 'She wanted to be a star, so where did she move?', which among the choices solar system, theatre, constellation, hollywood night sky is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) hollywood**. This is a place in Los Angeles, California, that is famous for being the center of the movie industry. Many actors and actresses aspire to work and live there. A possible explanation using conditional statements is:
+
+```
+if (she wanted to be a star) {
+  she would want to be famous and successful in the entertainment business;
+  if (she wanted to be famous and successful in the entertainment business) {
+    she would move to a place where there are many opportunities and connections;
+    if (she moved to a place where there are many opportunities and connections) {
+      it would be hollywood;
+    }
+  }
+}
+```"
+"She wanted to donate her old clothes to charity, she began folding and stacking the clothing into a what?","['box', 'basement', 'trash', 'bag', 'trunk']","Questions: She wanted to donate her old clothes to charity, she began folding and stacking the clothing into a what?, Choices: (A) box, (B) basement, (C) trash, (D) bag, (E) trunk. Given the question 'She wanted to donate her old clothes to charity, she began folding and stacking the clothing into a what?', which among the choices box, basement, trash, bag trunk is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) box. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: If she wanted to donate her old clothes to charity, then she began folding and stacking the clothing into a box.
+
+"
+"She wanted to learn to needlepoint, what was he goal competency?","['collection of folk art', 'sewing', 'livingroom', 'paint', 'frame']","Questions: She wanted to learn to needlepoint, what was he goal competency?, Choices: (A) collection of folk art, (B) sewing, (C) livingroom, (D) paint, (E) frame. Given the question 'She wanted to learn to needlepoint, what was he goal competency?', which among the choices collection of folk art, sewing, livingroom, paint frame is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) sewing. A possible conditional statement for this question is: If she wanted to learn to needlepoint, then her goal competency was sewing.
+
+"
+"She wanted to make a quilt of velvet, where should she look?","['grandma', 'clothing', 'jewelry store', 'clothes', 'fabric store']","Questions: She wanted to make a quilt of velvet, where should she look?, Choices: (A) grandma, (B) clothing, (C) jewelry store, (D) clothes, (E) fabric store. Given the question 'She wanted to make a quilt of velvet, where should she look?', which among the choices grandma, clothing, jewelry store, clothes fabric store is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) fabric store. A possible conditional statement for this question is: If she wanted to make a quilt of velvet, then she should look in a fabric store.
+
+"
+"She wanted to try out her brand new hair dryer, but her hair practically dried on it's own before she got it out of the well packaged what?","['bathroom', 'trash', 'drug store', 'beauty salon', 'box']","Questions: She wanted to try out her brand new hair dryer, but her hair practically dried on it's own before she got it out of the well packaged what?, Choices: (A) bathroom, (B) trash, (C) drug store, (D) beauty salon, (E) box. Given the question 'She wanted to try out her brand new hair dryer, but her hair practically dried on it's own before she got it out of the well packaged what?', which among the choices bathroom, trash, drug store, beauty salon box is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) box. A possible conditional statement for this question is: If she wanted to try out her brand new hair dryer, then her hair practically dried on its own before she got it out of the well packaged box.
+
+"
+"She wanted to use television but couldn't find the remote, and she didn't know how to manually what?","['switch on', 'kill', 'open eyes', 'plug in', 'watch tv']","Questions: She wanted to use television but couldn't find the remote, and she didn't know how to manually what?, Choices: (A) switch on, (B) kill, (C) open eyes, (D) plug in, (E) watch tv. Given the question 'She wanted to use television but couldn't find the remote, and she didn't know how to manually what?', which among the choices switch on, kill, open eyes, plug in watch tv is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) switch on. A possible conditional statement for this question is: If she wanted to use television but couldn't find the remote, then she didn't know how to manually switch on the TV.
+
+"
+"She wants authentic barbecue while visiting southeast Michigan, where should she look?","['retail store', 'garage', 'australia', 'park', 'detroit']","Questions: She wants authentic barbecue while visiting southeast Michigan, where should she look?, Choices: (A) retail store, (B) garage, (C) australia, (D) park, (E) detroit. Given the question 'She wants authentic barbecue while visiting southeast Michigan, where should she look?', which among the choices retail store, garage, australia, park detroit is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) detroit. A possible conditional statement for this question is: If she wants authentic barbecue while visiting southeast Michigan, then she should look in Detroit.
+
+"
+"She was a horrible pet owner, she would put a what on her cat?","['leave outside', 'sharp teeth', 'get wet', 'wool sweater', 'eat vegetables']","Questions: She was a horrible pet owner, she would put a what on her cat?, Choices: (A) leave outside, (B) sharp teeth, (C) get wet, (D) wool sweater, (E) eat vegetables. Given the question 'She was a horrible pet owner, she would put a what on her cat?', which among the choices leave outside, sharp teeth, get wet, wool sweater eat vegetables is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) wool sweater. A possible conditional statement for this question is: If she was a horrible pet owner, then she would put a wool sweater on her cat.
+
+"
+"She was a human in America who wanted to live well, what was a given for her situation?","['think critically', 'need money', 'say hello', 'think critically', 'drink tea']","Questions: She was a human in America who wanted to live well, what was a given for her situation?, Choices: (A) think critically, (B) need money, (C) say hello, (D) think critically, (E) drink tea. Given the question 'She was a human in America who wanted to live well, what was a given for her situation?', which among the choices think critically, need money, say hello, think critically drink tea is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) need money. A possible conditional statement for this question is: If she was a human in America who wanted to live well, then she needed money.
+
+"
+"She was a very vain person, in a crowd she loved nothing more than to do what?","['come home', 'make money', 'draw attention to themselves', 'say thank you', 'catch cold']","Questions: She was a very vain person, in a crowd she loved nothing more than to do what?, Choices: (A) come home, (B) make money, (C) draw attention to themselves, (D) say thank you, (E) catch cold. Given the question 'She was a very vain person, in a crowd she loved nothing more than to do what?', which among the choices come home, make money, draw attention to themselves, say thank you catch cold is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) draw attention to themselves. A possible conditional statement for this question is: If she was a very vain person, then in a crowd she loved nothing more than to draw attention to themselves.
+
+"
+"She was always falling on the ice in comical ways,  what was she growing sick of?","['hair pulling', 'being laughed at', 'contact with', 'lacerations', 'injury']","Questions: She was always falling on the ice in comical ways,  what was she growing sick of?, Choices: (A) hair pulling, (B) being laughed at, (C) contact with, (D) lacerations, (E) injury. Given the question 'She was always falling on the ice in comical ways,  what was she growing sick of?', which among the choices hair pulling, being laughed at, contact with, lacerations injury is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) being laughed at. A possible conditional statement for this question is: If she was always falling on the ice in comical ways, then she was growing sick of being laughed at."
+"She was bad at dancing, so what basic skill did the instructor teach her?","['euphoria', 'rhythmic movement', 'music', 'moving body', 'having fun']","Questions: She was bad at dancing, so what basic skill did the instructor teach her?, Choices: (A) euphoria, (B) rhythmic movement, (C) music, (D) moving body, (E) having fun. Given the question 'She was bad at dancing, so what basic skill did the instructor teach her?', which among the choices euphoria, rhythmic movement, music, moving body having fun is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) rhythmic movement. A possible explanation using conditional statements is:
+
+```python
+if she was bad at dancing:
+  # the instructor taught her a basic skill that is essential for dancing
+  if the basic skill was euphoria:
+    # euphoria is a feeling of happiness, not a skill
+    return False
+  elif the basic skill was rhythmic movement:
+    # rhythmic movement is the ability to move in sync with the music
+    return True
+  elif the basic skill was music:
+    # music is the source of rhythm, not a skill
+    return False
+  elif the basic skill was moving body:
+    # moving body is too vague and does not imply rhythm
+    return False
+  elif the basic skill was having fun:
+    # having fun is a result of dancing, not a skill
+    return False
+  else:
+    # the basic skill is not among the choices
+    return None
+else:
+  # she was not bad at dancing, so the question is invalid
+  return None
+```
+
+"
+"She was beginning to age, an early sign of her memory problems was showing short term what?","['increase in emotional resonance', 'forgetting', 'brainless', 'take shape', 'forgetfulness']","Questions: She was beginning to age, an early sign of her memory problems was showing short term what?, Choices: (A) increase in emotional resonance, (B) forgetting, (C) brainless, (D) take shape, (E) forgetfulness. Given the question 'She was beginning to age, an early sign of her memory problems was showing short term what?', which among the choices increase in emotional resonance, forgetting, brainless, take shape forgetfulness is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) forgetfulness. A possible explanation using conditional statements is:
+
+```python
+if she was beginning to age:
+  # aging is a natural process that may affect memory
+  if the early sign of her memory problems was showing short term increase in emotional resonance:
+    # increase in emotional resonance is not a memory problem, but a emotional reaction
+    return False
+  elif the early sign of her memory problems was showing short term forgetting:
+    # forgetting is a verb, not a noun
+    return False
+  elif the early sign of her memory problems was showing short term brainless:
+    # brainless is an adjective, not a noun
+    return False
+  elif the early sign of her memory problems was showing short term take shape:
+    # take shape is a phrase, not a noun
+    return False
+  elif the early sign of her memory problems was showing short term forgetfulness:
+    # forgetfulness is the inability to remember things, which is a memory problem
+    return True
+  else:
+    # the early sign is not among the choices
+    return None
+else:
+  # she was not beginning to age, so the question is invalid
+  return None
+```
+
+"
+"She was competing, but felt inadequate, what did she apply to improve performance?","['steroids', 'anger', 'increased effort', 'adrenaline rush', 'vain thoughts']","Questions: She was competing, but felt inadequate, what did she apply to improve performance?, Choices: (A) steroids, (B) anger, (C) increased effort, (D) adrenaline rush, (E) vain thoughts. Given the question 'She was competing, but felt inadequate, what did she apply to improve performance?', which among the choices steroids, anger, increased effort, adrenaline rush vain thoughts is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) increased effort. A possible explanation using conditional statements is:
+
+```python
+if she was competing:
+  # competing is an activity that requires performance
+  if she felt inadequate:
+    # feeling inadequate is a negative emotion that may affect performance
+    if she applied steroids to improve performance:
+      # steroids are illegal and harmful substances that may enhance performance temporarily, but have serious side effects
+      return False
+    elif she applied anger to improve performance:
+      # anger is a negative emotion that may impair performance and judgment
+      return False
+    elif she applied increased effort to improve performance:
+      # increased effort is a positive action that may enhance performance and confidence
+      return True
+    elif she applied adrenaline rush to improve performance:
+      # adrenaline rush is a physiological response that may boost performance momentarily, but is not under control
+      return False
+    elif she applied vain thoughts to improve performance:
+      # vain thoughts are irrelevant and distracting thoughts that may hinder performance
+      return False
+    else:
+      # she applied something else that is not among the choices
+      return None
+  else:
+    # she did not feel inadequate, so the question is invalid
+    return None
+else:
+  # she was not competing, so the question is invalid
+  return None
+```
+
+"
+"She was contemplating which make-up to where, what prompted her to think about this?","['food', 'action', 'thinking', 'reflection', 'discovery']","Questions: She was contemplating which make-up to where, what prompted her to think about this?, Choices: (A) food, (B) action, (C) thinking, (D) reflection, (E) discovery. Given the question 'She was contemplating which make-up to where, what prompted her to think about this?', which among the choices food, action, thinking, reflection discovery is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) reflection. A possible explanation using conditional statements is:
+
+```python
+if she was contemplating which make-up to wear:
+  # contemplating is an act of thinking deeply about something
+  if something prompted her to think about this:
+    # something caused her to consider this question
+    if the something was food:
+      # food is not related to make-up
+      return False
+    elif the something was action:
+      # action is too vague and does not specify what kind of action
+      return False
+    elif the something was thinking:
+      # thinking is a circular and redundant answer
+      return False
+    elif the something was reflection:
+      # reflection is a process of examining one's own thoughts and feelings, which may lead to contemplating
+      return True
+    elif the something was discovery:
+      # discovery is a result of finding something new, not a cause of contemplating
+      return False
+    else:
+      # the something is not among the choices
+      return None
+  else:
+    # nothing prompted her to think about this, so the question is invalid
+    return None
+else:
+  # she was not contemplating which make-up to wear, so the question is invalid
+  return None
+```
+
+"
+"She was determined that night, she was a flirt looking to do what with the right man?","['attract attention', 'get in bed', 'have sex', 'train', 'get laid']","Questions: She was determined that night, she was a flirt looking to do what with the right man?, Choices: (A) attract attention, (B) get in bed, (C) have sex, (D) train, (E) get laid. Given the question 'She was determined that night, she was a flirt looking to do what with the right man?', which among the choices attract attention, get in bed, have sex, train get laid is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) get laid. A possible explanation using conditional statements is:
+
+```python
+if she was determined that night:
+  # determined is an adjective that implies a strong intention or goal
+  if she was a flirt:
+    # flirt is a noun or verb that implies a playful or seductive behavior
+    if she was looking to do something with the right man:
+      # looking to do something is a phrase that implies a desire or plan
+      if the something was attract attention:
+        # attract attention is a possible motive of flirting, but not a specific action
+        return False
+      elif the something was get in bed:
+        # get in bed is a possible action of flirting, but not a specific goal
+        return False
+      elif the something was have sex:
+        # have sex is a possible goal of flirting, but not a specific ter"
+"She was distracted in thought in class, she felt alone even what?","['with someone', 'many people', 'with others', 'surrounded', 'in crowd']","Questions: She was distracted in thought in class, she felt alone even what?, Choices: (A) with someone, (B) many people, (C) with others, (D) surrounded, (E) in crowd. Given the question 'She was distracted in thought in class, she felt alone even what?', which among the choices with someone, many people, with others, surrounded in crowd is the correct answer? Explain your reasoning using conditional statements.
+",
+"She was famous for her needlepoint, this one was going to be round so she grabbed her round wooden what?","['livingroom', 'artscraft store', 'sewing', 'frame', 'artefact']","Questions: She was famous for her needlepoint, this one was going to be round so she grabbed her round wooden what?, Choices: (A) livingroom, (B) artscraft store, (C) sewing, (D) frame, (E) artefact. Given the question 'She was famous for her needlepoint, this one was going to be round so she grabbed her round wooden what?', which among the choices livingroom, artscraft store, sewing, frame artefact is the correct answer? Explain your reasoning using conditional statements.
+",
+"She was found guilty of neglect, the judge taking away the child was a serious what?","['notice', 'taking care', 'good', 'regard', 'consideration']","Questions: She was found guilty of neglect, the judge taking away the child was a serious what?, Choices: (A) notice, (B) taking care, (C) good, (D) regard, (E) consideration. Given the question 'She was found guilty of neglect, the judge taking away the child was a serious what?', which among the choices notice, taking care, good, regard consideration is the correct answer? Explain your reasoning using conditional statements.
+",
+"She was giggling and flirting, his mustache elicited what for her?","['joyfulness', 'smile', 'getting excited', 'enthusiasm', 'sexual attraction']","Questions: She was giggling and flirting, his mustache elicited what for her?, Choices: (A) joyfulness, (B) smile, (C) getting excited, (D) enthusiasm, (E) sexual attraction. Given the question 'She was giggling and flirting, his mustache elicited what for her?', which among the choices joyfulness, smile, getting excited, enthusiasm sexual attraction is the correct answer? Explain your reasoning using conditional statements.
+",
+"She was going to barbecue some kangaroo meat while camping in the outback, where was she?","['retail store', 'detroit', 'wyoming', 'australia', 'michigan park']","Questions: She was going to barbecue some kangaroo meat while camping in the outback, where was she?, Choices: (A) retail store, (B) detroit, (C) wyoming, (D) australia, (E) michigan park. Given the question 'She was going to barbecue some kangaroo meat while camping in the outback, where was she?', which among the choices retail store, detroit, wyoming, australia michigan park is the correct answer? Explain your reasoning using conditional statements.
+",m

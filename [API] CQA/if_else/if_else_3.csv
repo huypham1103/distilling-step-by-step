@@ -1,0 +1,551 @@
+premise,hypothesis,prompt,rationale
+"Billy often eat hamburgers, but he did not always have then with cheese.  Billy are cheeseburgers more often than some people, but less often than others.  You could say that it was something he did only when?","['occasionally', 'seldom', 'hardly ever', 'infrequently', 'never']","Questions: Billy often eat hamburgers, but he did not always have then with cheese.  Billy are cheeseburgers more often than some people, but less often than others.  You could say that it was something he did only when?, Choices: (A) occasionally, (B) seldom, (C) hardly ever, (D) infrequently, (E) never. Given the question 'Billy often eat hamburgers, but he did not always have then with cheese.  Billy are cheeseburgers more often than some people, but less often than others.  You could say that it was something he did only when?', which among the choices occasionally, seldom, hardly ever, infrequently never is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) occasionally. This means that Billy did something sometimes, but not very often. A conditional statement that explains this is: If Billy ate a hamburger, then he **occasionally** had it with cheese.
+
+"
+"Billy thought that he was smart, but many of his attitudes didn't were very regressive. How might you describe him?","['backward', 'ignorant', 'garish', 'intelligent', 'annoying']","Questions: Billy thought that he was smart, but many of his attitudes didn't were very regressive. How might you describe him?, Choices: (A) backward, (B) ignorant, (C) garish, (D) intelligent, (E) annoying. Given the question 'Billy thought that he was smart, but many of his attitudes didn't were very regressive. How might you describe him?', which among the choices backward, ignorant, garish, intelligent annoying is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) ignorant. This means that Billy lacked knowledge or awareness of something. A conditional statement that explains this is: If Billy had regressive attitudes, then he was **ignorant** of the current trends or norms.
+
+"
+"Billy thought that there wasn't any point to hunting foxes. Besides, it was too dry to find many.  Where might he have been?","['hen house', 'florida', 'new hampshire', 'north dakota', 'arkansas']","Questions: Billy thought that there wasn't any point to hunting foxes. Besides, it was too dry to find many.  Where might he have been?, Choices: (A) hen house, (B) florida, (C) new hampshire, (D) north dakota, (E) arkansas. Given the question 'Billy thought that there wasn't any point to hunting foxes. Besides, it was too dry to find many.  Where might he have been?', which among the choices hen house, florida, new hampshire, north dakota arkansas is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) North Dakota. This is a state in the US that has a dry climate and a low population of foxes. A conditional statement that explains this is: If Billy was in North Dakota, then he would find it too dry to hunt many foxes.
+
+"
+"Billy tried to arise, but he could not stand from bed. He continued to do what?","['fall down', 'lie flat', 'get down', 'lay down', 'sitting down']","Questions: Billy tried to arise, but he could not stand from bed. He continued to do what?, Choices: (A) fall down, (B) lie flat, (C) get down, (D) lay down, (E) sitting down. Given the question 'Billy tried to arise, but he could not stand from bed. He continued to do what?', which among the choices fall down, lie flat, get down, lay down sitting down is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) lie flat. This means that Billy stayed in a horizontal position on his bed. A conditional statement that explains this is: If Billy could not stand from bed, then he continued to **lie flat**.
+
+"
+"Billy tried to defeat John, but John was just too good.  It seemed that billy could never achieve what?","['winning', 'conquer', 'won', 'control', 'victory']","Questions: Billy tried to defeat John, but John was just too good.  It seemed that billy could never achieve what?, Choices: (A) winning, (B) conquer, (C) won, (D) control, (E) victory. Given the question 'Billy tried to defeat John, but John was just too good.  It seemed that billy could never achieve what?', which among the choices winning, conquer, won, control victory is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) victory. This means that Billy could not achieve the state of having won something. A conditional statement that explains this is: If Billy tried to defeat John, then he could never achieve **victory**.
+
+"
+"Billy wanted to return home, but his mother told him to do what?","['run away', 'leave', 'going away', 'backspace', 'go away']","Questions: Billy wanted to return home, but his mother told him to do what?, Choices: (A) run away, (B) leave, (C) going away, (D) backspace, (E) go away. Given the question 'Billy wanted to return home, but his mother told him to do what?', which among the choices run away, leave, going away, backspace go away is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) go away. This means that Billy's mother told him to leave or depart from somewhere. A conditional statement that explains this is: If Billy wanted to return home, then his mother told him to **go away**.
+
+"
+"Billy wants to learn how to socialize, but he doesn't know where to start.  He calls his best friend and asks for what?","['have friends', 'meet new people', 'entertainment', 'input', 'friendship']","Questions: Billy wants to learn how to socialize, but he doesn't know where to start.  He calls his best friend and asks for what?, Choices: (A) have friends, (B) meet new people, (C) entertainment, (D) input, (E) friendship. Given the question 'Billy wants to learn how to socialize, but he doesn't know where to start.  He calls his best friend and asks for what?', which among the choices have friends, meet new people, entertainment, input friendship is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) input. This means that Billy asked his best friend for advice or suggestions on how to socialize. A conditional statement that explains this is: If Billy wanted to learn how to socialize, then he called his best friend and asked for **input**.
+
+"
+"Billy wants to understand people better.  He's a very big-hearrted person,  He has a lot of what?","['peace', 'love', 'compassion', 'friendships', 'satisfaction']","Questions: Billy wants to understand people better.  He's a very big-hearrted person,  He has a lot of what?, Choices: (A) peace, (B) love, (C) compassion, (D) friendships, (E) satisfaction. Given the question 'Billy wants to understand people better.  He's a very big-hearrted person,  He has a lot of what?', which among the choices peace, love, compassion, friendships satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) compassion. This means that Billy had a lot of sympathy and concern for the suffering or well-being of others. A conditional statement that explains this is: If Billy was a big-hearted person, then he had a lot of **compassion**.
+
+"
+"Billy was a forgiving person.  When Marna confessed to him, she felt what?","['redemption', 'absolution', 'great relief', 'very sad', 'make up']","Questions: Billy was a forgiving person.  When Marna confessed to him, she felt what?, Choices: (A) redemption, (B) absolution, (C) great relief, (D) very sad, (E) make up. Given the question 'Billy was a forgiving person.  When Marna confessed to him, she felt what?', which among the choices redemption, absolution, great relief, very sad make up is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) great relief. This means that Marna felt a lot of stress or worry being removed or reduced after she confessed to Billy. A conditional statement that explains this is: If Billy was a forgiving person, then Marna felt **great relief** when she confessed to him.
+
+"
+"Billy was a human, and he had human bodily functions.  He needed to catch his flight but ended up missing it, because he had too much mexican and was stuck where?","['bed', 'couch', 'bathroom', 'school', 'airport']","Questions: Billy was a human, and he had human bodily functions.  He needed to catch his flight but ended up missing it, because he had too much mexican and was stuck where?, Choices: (A) bed, (B) couch, (C) bathroom, (D) school, (E) airport. Given the question 'Billy was a human, and he had human bodily functions.  He needed to catch his flight but ended up missing it, because he had too much mexican and was stuck where?', which among the choices bed, couch, bathroom, school airport is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) bathroom. This means that Billy was stuck in a room where he could use a toilet or a shower. A conditional statement that explains this is: If Billy had too much mexican food, then he was stuck in the **bathroom**."
+"Billy was a kooky person, but he wasn't gay.  What was he?","['mainstream', 'conventional', 'straight', 'standard', 'ordinary']","Questions: Billy was a kooky person, but he wasn't gay.  What was he?, Choices: (A) mainstream, (B) conventional, (C) straight, (D) standard, (E) ordinary. Given the question 'Billy was a kooky person, but he wasn't gay.  What was he?', which among the choices mainstream, conventional, straight, standard ordinary is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) straight. A conditional statement is a statement that can be written in the form ""if p, then q"", where p and q are propositions. A possible conditional statement for this question is: ""If Billy is not gay, then he is straight."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is false (Billy is not gay) and q is true (Billy is straight), so the statement is true.
+
+"
+"Billy was cogitating the situation, but soon he would have to come to what?","['decision', 'enlightenment', 'new thoughts', 'headaches', 'annurism']","Questions: Billy was cogitating the situation, but soon he would have to come to what?, Choices: (A) decision, (B) enlightenment, (C) new thoughts, (D) headaches, (E) annurism. Given the question 'Billy was cogitating the situation, but soon he would have to come to what?', which among the choices decision, enlightenment, new thoughts, headaches annurism is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) decision. A possible conditional statement for this question is: ""If Billy is cogitating the situation, then he will have to come to a decision."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy is cogitating the situation) and q is true (he will have to come to a decision), so the statement is true.
+
+"
+"Billy was was going on a long vacation, but before he did he got a bite to eat.  Where might he have eaten?","['space shuttle', ""friend's house"", 'disneyland', 'supermarket', 'gas station']","Questions: Billy was was going on a long vacation, but before he did he got a bite to eat.  Where might he have eaten?, Choices: (A) space shuttle, (B) friend's house, (C) disneyland, (D) supermarket, (E) gas station. Given the question 'Billy was was going on a long vacation, but before he did he got a bite to eat.  Where might he have eaten?', which among the choices space shuttle, friend's house, disneyland, supermarket gas station is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) gas station. A possible conditional statement for this question is: ""If Billy is going on a long vacation, then he might have eaten at a gas station."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy is going on a long vacation) and q is true (he might have eaten at a gas station), so the statement is true.
+
+"
+"Billy wasn't a stranger, but they hadn't spoken to him often, either.  How would you describe him?","['family', 'known person', 'friend', 'relative', 'crowd']","Questions: Billy wasn't a stranger, but they hadn't spoken to him often, either.  How would you describe him?, Choices: (A) family, (B) known person, (C) friend, (D) relative, (E) crowd. Given the question 'Billy wasn't a stranger, but they hadn't spoken to him often, either.  How would you describe him?', which among the choices family, known person, friend, relative crowd is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) known person. A possible conditional statement for this question is: ""If Billy is not a stranger, then he is a known person."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy is not a stranger) and q is true (he is a known person), so the statement is true.
+
+"
+"Billy's boss told him to get a book from a high shelf, so he took a stepladder from what?","['store room', 'tool shed', 'hardware store', ""construction worker's vehicle"", 'library']","Questions: Billy's boss told him to get a book from a high shelf, so he took a stepladder from what?, Choices: (A) store room, (B) tool shed, (C) hardware store, (D) construction worker's vehicle, (E) library. Given the question 'Billy's boss told him to get a book from a high shelf, so he took a stepladder from what?', which among the choices store room, tool shed, hardware store, construction worker's vehicle library is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) store room. A possible conditional statement for this question is: ""If Billy's boss told him to get a book from a high shelf, then he took a stepladder from a store room."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy's boss told him to get a book from a high shelf) and q is true (he took a stepladder from a store room), so the statement is true.
+
+"
+"Billy's disability prevented him from moving, but it didn't alter his mind or what?","['activity', 'potence', 'qualification', 'competency', 'strength']","Questions: Billy's disability prevented him from moving, but it didn't alter his mind or what?, Choices: (A) activity, (B) potence, (C) qualification, (D) competency, (E) strength. Given the question 'Billy's disability prevented him from moving, but it didn't alter his mind or what?', which among the choices activity, potence, qualification, competency strength is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) competency. A possible conditional statement for this question is: ""If Billy's disability did not alter his mind, then it did not alter his competency."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy's disability did not alter his mind) and q is true (it did not alter his competency), so the statement is true.
+
+"
+"Billy's oven was broken so he couldn't cook.  His microwave was also not working, so he couldn't use it, either.  Billy needed money so that he could do what?","['go on a date', 'pay bills', 'get things', 'control people', 'buy food']","Questions: Billy's oven was broken so he couldn't cook.  His microwave was also not working, so he couldn't use it, either.  Billy needed money so that he could do what?, Choices: (A) go on a date, (B) pay bills, (C) get things, (D) control people, (E) buy food. Given the question 'Billy's oven was broken so he couldn't cook.  His microwave was also not working, so he couldn't use it, either.  Billy needed money so that he could do what?', which among the choices go on a date, pay bills, get things, control people buy food is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) buy food. A possible conditional statement for this question is: ""If Billy's oven and microwave were not working, then he needed money to buy food."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Billy's oven and microwave were not working) and q is true (he needed money to buy food), so the statement is true.
+
+"
+"Bo wanted to put on his clean clothes, but that would have required doing what to his dirty ones?","['get dirty', 'organize', 'sort', 'take off', 'soap']","Questions: Bo wanted to put on his clean clothes, but that would have required doing what to his dirty ones?, Choices: (A) get dirty, (B) organize, (C) sort, (D) take off, (E) soap. Given the question 'Bo wanted to put on his clean clothes, but that would have required doing what to his dirty ones?', which among the choices get dirty, organize, sort, take off soap is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) take off. A possible conditional statement for this question is: ""If Bo wanted to put on his clean clothes, then he had to take off his dirty ones."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Bo wanted to put on his clean clothes) and q is true (he had to take off his dirty ones), so the statement is true.
+
+"
+"Bob and Boris were standing in a queue at the grocery store.  They were standing in place.  The line was fast, but the children in front of them were loud.   They were what?","['frustration', 'being annoyed', 'delays', 'irritation', 'out of order']","Questions: Bob and Boris were standing in a queue at the grocery store.  They were standing in place.  The line was fast, but the children in front of them were loud.   They were what?, Choices: (A) frustration, (B) being annoyed, (C) delays, (D) irritation, (E) out of order. Given the question 'Bob and Boris were standing in a queue at the grocery store.  They were standing in place.  The line was fast, but the children in front of them were loud.   They were what?', which among the choices frustration, being annoyed, delays, irritation out of order is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) being annoyed. A possible conditional statement for this question is: ""If Bob and Boris were standing in a fast queue, then they were being annoyed by the loud children."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Bob and Boris were standing in a fast queue) and q is true (they were being annoyed by the loud children), so the statement is true.
+
+"
+"Bob doesn't want to buy a plain stereo system. He wants something studio quality, with all of the what?","['decorative', 'extravagant', 'speakers', 'exotic', 'bells and whistles']","Questions: Bob doesn't want to buy a plain stereo system. He wants something studio quality, with all of the what?, Choices: (A) decorative, (B) extravagant, (C) speakers, (D) exotic, (E) bells and whistles. Given the question 'Bob doesn't want to buy a plain stereo system. He wants something studio quality, with all of the what?', which among the choices decorative, extravagant, speakers, exotic bells and whistles is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) bells and whistles. A possible conditional statement for this question is: ""If Bob wanted something studio quality, then he wanted all of the bells and whistles."" This statement is true when both p and q are true, or when p is false and q is true. In this case, p is true (Bob wanted something studio quality) and q is true (he wanted all of the bells and whistles), so the statement is true."
+"Bob found a bunch of ball bearings behind a wall when he was renovating.  He didn't want them to scatter around, so he picked them up in put them in a what?","['machines', 'pool', 'can', 'church', 'high quality motor']","Questions: Bob found a bunch of ball bearings behind a wall when he was renovating.  He didn't want them to scatter around, so he picked them up in put them in a what?, Choices: (A) machines, (B) pool, (C) can, (D) church, (E) high quality motor. Given the question 'Bob found a bunch of ball bearings behind a wall when he was renovating.  He didn't want them to scatter around, so he picked them up in put them in a what?', which among the choices machines, pool, can, church high quality motor is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) can. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If Bob found a bunch of ball bearings behind a wall when he was renovating, then he picked them up and put them in a can."" The hypothesis is ""Bob found a bunch of ball bearings behind a wall when he was renovating"" and the conclusion is ""he picked them up and put them in a can"". The other choices do not make sense as conclusions for this hypothesis.
+
+"
+"Bob lights a fire in the wood stove in the winter, what does he want?","['emits light', 'warm hands', 'boil water', 'emit light', 'warm house']","Questions: Bob lights a fire in the wood stove in the winter, what does he want?, Choices: (A) emits light, (B) warm hands, (C) boil water, (D) emit light, (E) warm house. Given the question 'Bob lights a fire in the wood stove in the winter, what does he want?', which among the choices emits light, warm hands, boil water, emit light warm house is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) warm house. A possible conditional statement for this question is: ""If Bob lights a fire in the wood stove in the winter, then he wants a warm house."" The hypothesis is ""Bob lights a fire in the wood stove in the winter"" and the conclusion is ""he wants a warm house"". The other choices are not logical or relevant conclusions for this hypothesis.
+
+"
+"Bob thought that his Pokemon cards were common and worthless, but he was wrong about them. They were really what?","['personal', 'special', 'shiny', 'rare', 'irregular']","Questions: Bob thought that his Pokemon cards were common and worthless, but he was wrong about them. They were really what?, Choices: (A) personal, (B) special, (C) shiny, (D) rare, (E) irregular. Given the question 'Bob thought that his Pokemon cards were common and worthless, but he was wrong about them. They were really what?', which among the choices personal, special, shiny, rare irregular is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) rare. A possible conditional statement for this question is: ""If Bob thought that his Pokemon cards were common and worthless, then he was wrong about them being rare."" The hypothesis is ""Bob thought that his Pokemon cards were common and worthless"" and the conclusion is ""he was wrong about them being rare"". The other choices do not describe the quality of the Pokemon cards that Bob was mistaken about.
+
+"
+"Bob walks up to the second floor to his bedroom, where is he?","['house', 'office building', 'hotel', 'school', 'hotel']","Questions: Bob walks up to the second floor to his bedroom, where is he?, Choices: (A) house, (B) office building, (C) hotel, (D) school, (E) hotel. Given the question 'Bob walks up to the second floor to his bedroom, where is he?', which among the choices house, office building, hotel, school hotel is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) house. A possible conditional statement for this question is: ""If Bob walks up to the second floor to his bedroom, then he is in his house."" The hypothesis is ""Bob walks up to the second floor to his bedroom"" and the conclusion is ""he is in his house"". The other choices are not places where Bob would have his bedroom.
+
+"
+"Bob wants to talk, but he's surrounded by gnats and he thinks they're gross.   No one can hear him because refuses to do what?","['will listen', 'open mouth', 'speak up', 'express opinions', 'make sound']","Questions: Bob wants to talk, but he's surrounded by gnats and he thinks they're gross.   No one can hear him because refuses to do what?, Choices: (A) will listen, (B) open mouth, (C) speak up, (D) express opinions, (E) make sound. Given the question 'Bob wants to talk, but he's surrounded by gnats and he thinks they're gross.   No one can hear him because refuses to do what?', which among the choices will listen, open mouth, speak up, express opinions make sound is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) open mouth. A possible conditional statement for this question is: ""If Bob wants to talk, but he's surrounded by gnats and he thinks they're gross, then he refuses to open his mouth."" The hypothesis is ""Bob wants to talk, but he's surrounded by gnats and he thinks they're gross"" and the conclusion is ""he refuses to open his mouth"". The other choices are not actions that Bob would refuse to do because of the gnats.
+
+"
+"Bob's feet hurt from running barefoot on the hot pavement.  I lost his shoes, didn't know where they landed, and had to run from the corner store to his home.  About where did he run?","['a bed of nails', 'town', 'attractive consistent look', 'city block', 'ground']","Questions: Bob's feet hurt from running barefoot on the hot pavement.  I lost his shoes, didn't know where they landed, and had to run from the corner store to his home.  About where did he run?, Choices: (A) a bed of nails, (B) town, (C) attractive consistent look, (D) city block, (E) ground. Given the question 'Bob's feet hurt from running barefoot on the hot pavement.  I lost his shoes, didn't know where they landed, and had to run from the corner store to his home.  About where did he run?', which among the choices a bed of nails, town, attractive consistent look, city block ground is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) city block. A possible conditional statement for this question is: ""If Bob's feet hurt from running barefoot on the hot pavement, and he lost his shoes, didn't know where they landed, and had to run from the corner store to his home, then he ran about a city block."" The hypothesis is ""Bob's feet hurt from running barefoot on the hot pavement, and he lost his shoes, didn't know where they landed, and had to run from the corner store to his home"" and the conclusion is ""he ran about a city block"". The other choices are not reasonable estimates of the distance that Bob ran.
+
+"
+"Bobby had a toothache so he went to the closet dentist office, which was in a strange place.  Where might it be?","['town', 'office building', 'patient', 'medical center', 'candy shop']","Questions: Bobby had a toothache so he went to the closet dentist office, which was in a strange place.  Where might it be?, Choices: (A) town, (B) office building, (C) patient, (D) medical center, (E) candy shop. Given the question 'Bobby had a toothache so he went to the closet dentist office, which was in a strange place.  Where might it be?', which among the choices town, office building, patient, medical center candy shop is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) candy shop. A possible conditional statement for this question is: ""If Bobby had a toothache and he went to the closest dentist office, which was in a strange place, then it might be a candy shop."" The hypothesis is ""Bobby had a toothache and he went to the closest dentist office, which was in a strange place"" and the conclusion is ""it might be a candy shop"". The other choices are not strange places for a dentist office to be.
+
+"
+"Bobby sat on the examination table.  Happy that this was a simple procedure, and he could do it here instead of staying overnight some place else.  Where might he be?","['hospital', 'school', 'obituary', ""doctor's office"", 'vets office']","Questions: Bobby sat on the examination table.  Happy that this was a simple procedure, and he could do it here instead of staying overnight some place else.  Where might he be?, Choices: (A) hospital, (B) school, (C) obituary, (D) doctor's office, (E) vets office. Given the question 'Bobby sat on the examination table.  Happy that this was a simple procedure, and he could do it here instead of staying overnight some place else.  Where might he be?', which among the choices hospital, school, obituary, doctor's office vets office is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) doctor's office. A possible conditional statement for this question is: ""If Bobby sat on the examination table, happy that this was a simple procedure, and he could do it here instead of staying overnight some place else, then he might be in a doctor's office."" The hypothesis is ""Bobby sat on the examination table, happy that this was a simple procedure, and he could do it here instead of staying overnight some place else"" and the conclusion is ""he might be in a doctor's office"". The other choices are not places where Bobby could do a simple procedure without staying overnight.
+
+"
+"Bobby was doing housework when he became sick.   He thought he worked too hard, but the doctor said what it was what?","['sneezing', 'exhaustion', 'itchy', 'cleanliness', 'allergies']","Questions: Bobby was doing housework when he became sick.   He thought he worked too hard, but the doctor said what it was what?, Choices: (A) sneezing, (B) exhaustion, (C) itchy, (D) cleanliness, (E) allergies. Given the question 'Bobby was doing housework when he became sick.   He thought he worked too hard, but the doctor said what it was what?', which among the choices sneezing, exhaustion, itchy, cleanliness allergies is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) allergies. A possible conditional statement for this question is: ""If Bobby was doing housework when he became sick, and he thought he worked too hard, but the doctor said it was something else, then it might be allergies."" The hypothesis is ""Bobby was doing housework when he became sick, and he thought he worked too hard, but the doctor said it was something else"" and the conclusion is ""it might be allergies"". The other choices are not likely causes of Bobby's sickness.
+
+"
+"Bobby was just having fun when he jumped off of the slide, but that didn't help.  When he landed, he had what?","['glee', 'injuries', 'being happy', 'sandwiches', 'pleasure']","Questions: Bobby was just having fun when he jumped off of the slide, but that didn't help.  When he landed, he had what?, Choices: (A) glee, (B) injuries, (C) being happy, (D) sandwiches, (E) pleasure. Given the question 'Bobby was just having fun when he jumped off of the slide, but that didn't help.  When he landed, he had what?', which among the choices glee, injuries, being happy, sandwiches pleasure is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) injuries. A possible conditional statement for this question is: ""If Bobby was just having fun when he jumped off of the slide, but that didn't help, then when he landed, he had injuries."" The hypothesis is ""Bobby was just having fun when he jumped off of the slide, but that didn't help"" and the conclusion is ""when he landed, he had injuries"". The other choices are not things that Bobby would have when he landed from the slide."
+"Bobby was looking to be farmland because he wanted to get away from the city. He didn't care where, just so long as it was in what?","['illinois', 'countryside', 'south dakota', 'michigan', 'midwest']","Questions: Bobby was looking to be farmland because he wanted to get away from the city. He didn't care where, just so long as it was in what?, Choices: (A) illinois, (B) countryside, (C) south dakota, (D) michigan, (E) midwest. Given the question 'Bobby was looking to be farmland because he wanted to get away from the city. He didn't care where, just so long as it was in what?', which among the choices illinois, countryside, south dakota, michigan midwest is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) countryside. The reasoning is as follows: If Bobby wanted to get away from the city, then he would look for a place that is not urban. The countryside is a place that is not urban. Therefore, if Bobby wanted to get away from the city, then he would look for a place that is in the countryside.
+
+"
+"Bobby worked in a kosher deli, but all delis were kosher where he lived.   Where might he live?","['germany', 'jerusalem', 'town', 'new york city', 'food court']","Questions: Bobby worked in a kosher deli, but all delis were kosher where he lived.   Where might he live?, Choices: (A) germany, (B) jerusalem, (C) town, (D) new york city, (E) food court. Given the question 'Bobby worked in a kosher deli, but all delis were kosher where he lived.   Where might he live?', which among the choices germany, jerusalem, town, new york city food court is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) jerusalem. The reasoning is as follows: If all delis were kosher where Bobby lived, then he would live in a place that has a large Jewish population. Jerusalem is a place that has a large Jewish population. Therefore, if all delis were kosher where Bobby lived, then he would live in Jerusalem.
+
+"
+"Boredom led him to go out to the bar, there were many characters there and he what?","['meet interesting people', 'play games', 'field', 'skateboard', 'listen to music']","Questions: Boredom led him to go out to the bar, there were many characters there and he what?, Choices: (A) meet interesting people, (B) play games, (C) field, (D) skateboard, (E) listen to music. Given the question 'Boredom led him to go out to the bar, there were many characters there and he what?', which among the choices meet interesting people, play games, field, skateboard listen to music is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) meet interesting people. The reasoning is as follows: If there were many characters at the bar, then he would have a chance to interact with them. Meeting interesting people is a way of interacting with them. Therefore, if there were many characters at the bar, then he would meet interesting people.
+
+"
+"Both sides were presenting their arguments as fact, this when clearly both were just voicing an what?","['opinion', 'eat cake', 'untrue', 'belief', 'factfile']","Questions: Both sides were presenting their arguments as fact, this when clearly both were just voicing an what?, Choices: (A) opinion, (B) eat cake, (C) untrue, (D) belief, (E) factfile. Given the question 'Both sides were presenting their arguments as fact, this when clearly both were just voicing an what?', which among the choices opinion, eat cake, untrue, belief factfile is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) opinion. The reasoning is as follows: If both sides were just voicing an opinion, then they would not have factual evidence to support their arguments. Presenting arguments as fact is a way of having factual evidence to support them. Therefore, if both sides were just voicing an opinion, then they would not present their arguments as fact.
+
+"
+"Breathing was difficult after the injury, but he was still able to what with it?","['choke', 'give up', 'live', 'sigh', 'cough']","Questions: Breathing was difficult after the injury, but he was still able to what with it?, Choices: (A) choke, (B) give up, (C) live, (D) sigh, (E) cough. Given the question 'Breathing was difficult after the injury, but he was still able to what with it?', which among the choices choke, give up, live, sigh cough is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) live. The reasoning is as follows: If breathing was difficult after the injury, then he would have a reduced oxygen intake. Living is a way of having a sufficient oxygen intake. Therefore, if breathing was difficult after the injury, then he would still be able to live with it.
+
+"
+"Brian  took the tool  from the shelf. He thought no one noticed.  As he was talking out, the cashier told him to do what to it?","['drop', 'bring', 'move slowly', 'caretake', 'give']","Questions: Brian  took the tool  from the shelf. He thought no one noticed.  As he was talking out, the cashier told him to do what to it?, Choices: (A) drop, (B) bring, (C) move slowly, (D) caretake, (E) give. Given the question 'Brian  took the tool  from the shelf. He thought no one noticed.  As he was talking out, the cashier told him to do what to it?', which among the choices drop, bring, move slowly, caretake give is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) bring. The reasoning is as follows: If Brian took the tool from the shelf, then he would have to pay for it. Bringing the tool to the cashier is a way of paying for it. Therefore, if Brian took the tool from the shelf, then the cashier would tell him to bring it to him.
+
+"
+"Broom stood in the middle of the room.  There were two doors on opposite sides of him, but he couldn't see them.  Where were they?","['large small', 'extremes', 'left right', 'invisible', 'front back']","Questions: Broom stood in the middle of the room.  There were two doors on opposite sides of him, but he couldn't see them.  Where were they?, Choices: (A) large small, (B) extremes, (C) left right, (D) invisible, (E) front back. Given the question 'Broom stood in the middle of the room.  There were two doors on opposite sides of him, but he couldn't see them.  Where were they?', which among the choices large small, extremes, left right, invisible front back is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) left right. The reasoning is as follows: If there were two doors on opposite sides of him, then he would have to turn his head to see them. Turning his head to the left or right is a way of seeing them. Therefore, if there were two doors on opposite sides of him, then they would be on his left and right.
+
+"
+"Brother Mike escaped the collapsed mine.  Ever since, he was afraid of what?","['be imprisoned', 'captured', 'stay in', 'being caught', 'being trapped']","Questions: Brother Mike escaped the collapsed mine.  Ever since, he was afraid of what?, Choices: (A) be imprisoned, (B) captured, (C) stay in, (D) being caught, (E) being trapped. Given the question 'Brother Mike escaped the collapsed mine.  Ever since, he was afraid of what?', which among the choices be imprisoned, captured, stay in, being caught being trapped is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) being trapped. The reasoning is as follows: If Brother Mike escaped the collapsed mine, then he would have experienced a life-threatening situation. Being trapped is a way of experiencing a life-threatening situation. Therefore, if Brother Mike escaped the collapsed mine, then he would be afraid of being trapped.
+
+"
+"Buying a house was his lifelong dream, but the lazy man did not enjoy having to maintain a what?","['yard', 'rooms', 'basement', 'kitchen', 'door knobs']","Questions: Buying a house was his lifelong dream, but the lazy man did not enjoy having to maintain a what?, Choices: (A) yard, (B) rooms, (C) basement, (D) kitchen, (E) door knobs. Given the question 'Buying a house was his lifelong dream, but the lazy man did not enjoy having to maintain a what?', which among the choices yard, rooms, basement, kitchen door knobs is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) yard. The reasoning is as follows: If buying a house was his lifelong dream, then he would have a lot of space to use. Maintaining a yard is a way of using a lot of space. Therefore, if buying a house was his lifelong dream, then he would not enjoy having to maintain a yard.
+
+"
+"Buying products is difficult, even impossible, if you experience what?","['agony', 'owning', 'bankruptcy', 'economic boom', 'pleasure']","Questions: Buying products is difficult, even impossible, if you experience what?, Choices: (A) agony, (B) owning, (C) bankruptcy, (D) economic boom, (E) pleasure. Given the question 'Buying products is difficult, even impossible, if you experience what?', which among the choices agony, owning, bankruptcy, economic boom pleasure is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) bankruptcy. The reasoning is as follows: If buying products is difficult, even impossible, then he would have no money to spend. Bankruptcy is a way of having no money to spend. Therefore, if buying products is difficult, even impossible, then he would experience bankruptcy."
+"By laughing while playing, what were the children doing?","['learning', 'getting tired', 'injuries', 'having fun', 'winning']","Questions: By laughing while playing, what were the children doing?, Choices: (A) learning, (B) getting tired, (C) injuries, (D) having fun, (E) winning. Given the question 'By laughing while playing, what were the children doing?', which among the choices learning, getting tired, injuries, having fun winning is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) having fun. A possible explanation is: If the children were laughing while playing, then they were having fun. This is a sufficient condition for having fun. The other choices are not necessarily true or related to laughing while playing.
+
+"
+"By playing with educational materials, what were the children doing?","['fighting', 'learning', 'getting tired', 'injuries', 'having fun']","Questions: By playing with educational materials, what were the children doing?, Choices: (A) fighting, (B) learning, (C) getting tired, (D) injuries, (E) having fun. Given the question 'By playing with educational materials, what were the children doing?', which among the choices fighting, learning, getting tired, injuries having fun is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) learning. A possible explanation is: If the children were playing with educational materials, then they were learning. This is a necessary condition for playing with educational materials. The other choices are not directly implied or relevant to playing with educational materials.
+
+"
+"Cats are easily entertained, they love to what?","['need food', 'go bowling', 'go outside', 'go out at night', 'play with toys']","Questions: Cats are easily entertained, they love to what?, Choices: (A) need food, (B) go bowling, (C) go outside, (D) go out at night, (E) play with toys. Given the question 'Cats are easily entertained, they love to what?', which among the choices need food, go bowling, go outside, go out at night play with toys is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) play with toys. A possible explanation is: If cats are easily entertained, then they love to play with toys. This is a reasonable inference based on common knowledge. The other choices are not directly related to being easily entertained or are too specific or unlikely.
+
+"
+"Cats are looking longingly at an aquarium, what are they looking to do?","['like heat', 'play', 'eating fish', 'drink water', 'come to dinner']","Questions: Cats are looking longingly at an aquarium, what are they looking to do?, Choices: (A) like heat, (B) play, (C) eating fish, (D) drink water, (E) come to dinner. Given the question 'Cats are looking longingly at an aquarium, what are they looking to do?', which among the choices like heat, play, eating fish, drink water come to dinner is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) eating fish. A possible explanation is: If cats are looking longingly at an aquarium, then they are looking to do eating fish. This is a plausible assumption based on cat behavior and preference. The other choices are not logically connected or consistent with looking longingly at an aquarium.
+
+"
+"Cats mark their territories, they do this by a spray they what?","['eat meat', 'have cancer', 'cross roads', 'meows', 'excrete']","Questions: Cats mark their territories, they do this by a spray they what?, Choices: (A) eat meat, (B) have cancer, (C) cross roads, (D) meows, (E) excrete. Given the question 'Cats mark their territories, they do this by a spray they what?', which among the choices eat meat, have cancer, cross roads, meows excrete is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) excrete. A possible explanation is: If cats mark their territories, then they do this by a spray they excrete. This is a factual statement based on cat anatomy and biology. The other choices are not relevant or accurate to the question.
+
+"
+"Charlie had a desire to learn, but didn't live near a school, so what did he do?","['attend school', 'understand better', 'memorize', 'work in cafe', 'read book']","Questions: Charlie had a desire to learn, but didn't live near a school, so what did he do?, Choices: (A) attend school, (B) understand better, (C) memorize, (D) work in cafe, (E) read book. Given the question 'Charlie had a desire to learn, but didn't live near a school, so what did he do?', which among the choices attend school, understand better, memorize, work in cafe read book is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) read book. A possible explanation is: If Charlie had a desire to learn, but didn't live near a school, then he did read book. This is a reasonable solution based on the given situation and the availability of books. The other choices are either impossible, irrelevant, or insufficient to the question.
+
+"
+"China transports lots of cargo, one way is by sea in a very large what?","[""ship's hold"", 'boat', 'bus', 'aeroplane', 'airplane']","Questions: China transports lots of cargo, one way is by sea in a very large what?, Choices: (A) ship's hold, (B) boat, (C) bus, (D) aeroplane, (E) airplane. Given the question 'China transports lots of cargo, one way is by sea in a very large what?', which among the choices ship's hold, boat, bus, aeroplane airplane is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) boat. A possible explanation is: If China transports lots of cargo, one way is by sea in a very large boat. This is a simple and general statement based on common sense and geography. The other choices are either too specific, incorrect, or irrelevant to the question.
+
+"
+"Choosing a cruise for traveling can have many benefits, socially you're in close proximity strangers and get to experience what more quickly?","['getting somewhere', 'motion sickness', 'meeting new people', 'disorientation', 'bad food']","Questions: Choosing a cruise for traveling can have many benefits, socially you're in close proximity strangers and get to experience what more quickly?, Choices: (A) getting somewhere, (B) motion sickness, (C) meeting new people, (D) disorientation, (E) bad food. Given the question 'Choosing a cruise for traveling can have many benefits, socially you're in close proximity strangers and get to experience what more quickly?', which among the choices getting somewhere, motion sickness, meeting new people, disorientation bad food is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) meeting new people. A possible explanation is: If choosing a cruise for traveling can have many benefits, socially you're in close proximity strangers and get to experience meeting new people more quickly. This is a logical and positive outcome based on the nature of cruises and social interactions. The other choices are either negative, unrelated, or unlikely to the question.
+
+"
+"Climbing is quite a talent, it requires the use of very particular whats?","['strength', 'skill', 'experience', 'dexterity', 'muscles']","Questions: Climbing is quite a talent, it requires the use of very particular whats?, Choices: (A) strength, (B) skill, (C) experience, (D) dexterity, (E) muscles. Given the question 'Climbing is quite a talent, it requires the use of very particular whats?', which among the choices strength, skill, experience, dexterity muscles is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) muscles. A possible explanation is: If climbing is quite a talent, it requires the use of very particular muscles. This is a factual and specific statement based on the physical demands of climbing. The other choices are either too vague, irrelevant, or insufficient to the question.
+
+"
+"Committing the murder wore on the man, because of his what he swore he could still hear the man's heart beating?","['great sorrow', 'stethoscope', 'guilty conscience', 'find god', 'go to jail']","Questions: Committing the murder wore on the man, because of his what he swore he could still hear the man's heart beating?, Choices: (A) great sorrow, (B) stethoscope, (C) guilty conscience, (D) find god, (E) go to jail. Given the question 'Committing the murder wore on the man, because of his what he swore he could still hear the man's heart beating?', which among the choices great sorrow, stethoscope, guilty conscience, find god go to jail is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) guilty conscience. A possible explanation is: If committing the murder wore on the man, because of his guilty conscience he swore he could still hear the man's heart beating. This is a psychological and literary interpretation based on the famous story ""The Tell-Tale Heart"" by Edgar Allan Poe. The other choices are either unrelated, incorrect, or implausible to the question."
+"Computers have always been cutting edge technology, so they what?","['networked', 'connect', 'cost money', 'do work', 'teach']","Questions: Computers have always been cutting edge technology, so they what?, Choices: (A) networked, (B) connect, (C) cost money, (D) do work, (E) teach. Given the question 'Computers have always been cutting edge technology, so they what?', which among the choices networked, connect, cost money, do work teach is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) do work. A conditional statement is a sentence that expresses a logical relationship between two propositions. A conditional statement has the form ""if P, then Q"", where P is the antecedent and Q is the consequent. The antecedent is a sufficient condition for the consequent, and the consequent is a necessary condition for the antecedent. A possible conditional statement for this question is:
+
+- If computers have always been cutting edge technology, then they do work.
+
+This statement means that doing work is a necessary feature of cutting edge technology, and being cutting edge technology is a sufficient reason for doing work. The other choices are not necessarily related to being cutting edge technology or doing work.
+
+"
+"Computers were important in John's work, but they were useless if they weren't what?","['help people', 'networked', 'crash', 'enable', 'do work']","Questions: Computers were important in John's work, but they were useless if they weren't what?, Choices: (A) help people, (B) networked, (C) crash, (D) enable, (E) do work. Given the question 'Computers were important in John's work, but they were useless if they weren't what?', which among the choices help people, networked, crash, enable do work is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) networked. A possible conditional statement for this question is:
+
+- If computers were important in John's work, then they were networked.
+
+This statement means that being networked is a necessary condition for being important in John's work, and being important in John's work is a sufficient condition for being networked. The other choices are not necessarily related to being important in John's work or being networked.
+
+"
+"Creating art fulfilled me, what else did it give me therefor?","['strong emotion', 'work of art', 'communication', 'feeling of accomplishment', 'scholarship']","Questions: Creating art fulfilled me, what else did it give me therefor?, Choices: (A) strong emotion, (B) work of art, (C) communication, (D) feeling of accomplishment, (E) scholarship. Given the question 'Creating art fulfilled me, what else did it give me therefor?', which among the choices strong emotion, work of art, communication, feeling of accomplishment scholarship is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) feeling of accomplishment. A possible conditional statement for this question is:
+
+- If creating art fulfilled me, then it gave me a feeling of accomplishment.
+
+This statement means that giving me a feeling of accomplishment is a necessary consequence of creating art that fulfilled me, and creating art that fulfilled me is a sufficient cause for giving me a feeling of accomplishment. The other choices are not necessarily related to creating art that fulfilled me or giving me a feeling of accomplishment.
+
+"
+"Curiosity caused a cat to jump on john's table, and knock over his lunch.  It was ruined.  He needed to get more, by doing what?","['find truth', 'examine thing', 'go to market', 'attend school', 'cooking']","Questions: Curiosity caused a cat to jump on john's table, and knock over his lunch.  It was ruined.  He needed to get more, by doing what?, Choices: (A) find truth, (B) examine thing, (C) go to market, (D) attend school, (E) cooking. Given the question 'Curiosity caused a cat to jump on john's table, and knock over his lunch.  It was ruined.  He needed to get more, by doing what?', which among the choices find truth, examine thing, go to market, attend school cooking is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) go to market. A possible conditional statement for this question is:
+
+- If curiosity caused a cat to jump on John's table and knock over his lunch, then he needed to go to market.
+
+This statement means that needing to go to market is a necessary result of curiosity causing a cat to jump on John's table and knock over his lunch, and curiosity causing a cat to jump on John's table and knock over his lunch is a sufficient reason for needing to go to market. The other choices are not necessarily related to curiosity causing a cat to jump on John's table and knock over his lunch or needing to go to market.
+
+"
+"Curiosity drove the archaeologist, more that the objects themselves he was always looking to what?","['make money', 'go somewhere', 'design software', 'find truth', 'use television']","Questions: Curiosity drove the archaeologist, more that the objects themselves he was always looking to what?, Choices: (A) make money, (B) go somewhere, (C) design software, (D) find truth, (E) use television. Given the question 'Curiosity drove the archaeologist, more that the objects themselves he was always looking to what?', which among the choices make money, go somewhere, design software, find truth use television is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) find truth. A possible conditional statement for this question is:
+
+- If curiosity drove the archaeologist, then he was always looking to find truth.
+
+This statement means that looking to find truth is a necessary goal of curiosity driving the archaeologist, and curiosity driving the archaeologist is a sufficient motivation for looking to find truth. The other choices are not necessarily related to curiosity driving the archaeologist or looking to find truth.
+
+"
+"Curiosity got him out of his small hometown, he simply wanted to what?","['analyse', 'die', 'go somewhere', 'see favorite show', 'read book']","Questions: Curiosity got him out of his small hometown, he simply wanted to what?, Choices: (A) analyse, (B) die, (C) go somewhere, (D) see favorite show, (E) read book. Given the question 'Curiosity got him out of his small hometown, he simply wanted to what?', which among the choices analyse, die, go somewhere, see favorite show read book is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) go somewhere. A possible conditional statement for this question is:
+
+- If curiosity got him out of his small hometown, then he simply wanted to go somewhere.
+
+This statement means that wanting to go somewhere is a necessary desire of curiosity getting him out of his small hometown, and curiosity getting him out of his small hometown is a sufficient explanation for wanting to go somewhere. The other choices are not necessarily related to curiosity getting him out of his small hometown or wanting to go somewhere.
+
+"
+"Curiosity was high since it was a good tour guide, she explained things first then took the group to what?","['hear testimony', 'examine thing', 'surf net', 'browsing', 'see exhibits']","Questions: Curiosity was high since it was a good tour guide, she explained things first then took the group to what?, Choices: (A) hear testimony, (B) examine thing, (C) surf net, (D) browsing, (E) see exhibits. Given the question 'Curiosity was high since it was a good tour guide, she explained things first then took the group to what?', which among the choices hear testimony, examine thing, surf net, browsing see exhibits is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) see exhibits. A possible conditional statement for this question is:
+
+- If curiosity was high since it was a good tour guide, then she explained things first then took the group to see exhibits.
+
+This statement means that explaining things first then taking the group to see exhibits is a necessary action of curiosity being high since it was a good tour guide, and curiosity being high since it was a good tour guide is a sufficient reason for explaining things first then taking the group to see exhibits. The other choices are not necessarily related to curiosity being high since it was a good tour guide or explaining things first then taking the group to see exhibits.
+
+"
+"Dad is putting away folding chairs after a party, where does he store them?","['church', 'garage', 'attic', 'room', 'closet']","Questions: Dad is putting away folding chairs after a party, where does he store them?, Choices: (A) church, (B) garage, (C) attic, (D) room, (E) closet. Given the question 'Dad is putting away folding chairs after a party, where does he store them?', which among the choices church, garage, attic, room closet is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) garage. A possible conditional statement for this question is:
+
+- If dad is putting away folding chairs after a party, then he stores them in the garage.
+
+This statement means that storing them in the garage is a necessary place of dad putting away folding chairs after a party, and dad putting away folding chairs after a party is a sufficient occasion for storing them in the garage. The other choices are not necessarily related to dad putting away folding chairs after a party or storing them in the garage.
+
+"
+"Dan didn't like what he was seeing, so he turned the control know and flipped it to Andy.  What is the knob on?","['doorway', 'control panel', 'television', 'drawer', 'opening doors']","Questions: Dan didn't like what he was seeing, so he turned the control know and flipped it to Andy.  What is the knob on?, Choices: (A) doorway, (B) control panel, (C) television, (D) drawer, (E) opening doors. Given the question 'Dan didn't like what he was seeing, so he turned the control know and flipped it to Andy.  What is the knob on?', which among the choices doorway, control panel, television, drawer opening doors is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) television. A possible conditional statement for this question is:
+
+- If Dan didn't like what he was seeing, then he turned the control knob and flipped it to Andy.
+
+This statement means that turning the control knob and flipping it to Andy is a necessary reaction of Dan not liking what he was seeing, and Dan not liking what he was seeing is a sufficient cause for turning the control knob and flipping it to Andy. The other choices are not necessarily related to Dan not liking what he was seeing or turning the control knob and flipping it to Andy.
+
+"
+"Dan is driving a car, though he's stopped at a light right now. What else can we assume that he's doing?","['listening to the radio', 'car crash', 'moving', 'get sleepy', 'going someplace']","Questions: Dan is driving a car, though he's stopped at a light right now. What else can we assume that he's doing?, Choices: (A) listening to the radio, (B) car crash, (C) moving, (D) get sleepy, (E) going someplace. Given the question 'Dan is driving a car, though he's stopped at a light right now. What else can we assume that he's doing?', which among the choices listening to the radio, car crash, moving, get sleepy going someplace is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) going someplace. A possible conditional statement for this question is:
+
+- If Dan is driving a car, then he is going someplace.
+
+This statement means that going someplace is a necessary purpose of Dan driving a car, and Dan driving a car is a sufficient means of going someplace. The other choices are not necessarily related to Dan driving a car or going someplace."
+"Dan was living on his own in a big city.   He was okay with his situation, and enjoyed all the fun things to do, but he was still searching for something. What was he searching for?","['the mafia', 'happiness', 'death', 'pollution', 'have experiences']","Questions: Dan was living on his own in a big city.   He was okay with his situation, and enjoyed all the fun things to do, but he was still searching for something. What was he searching for?, Choices: (A) the mafia, (B) happiness, (C) death, (D) pollution, (E) have experiences. Given the question 'Dan was living on his own in a big city.   He was okay with his situation, and enjoyed all the fun things to do, but he was still searching for something. What was he searching for?', which among the choices the mafia, happiness, death, pollution have experiences is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) happiness. Dan was living on his own in a big city, which means he had a lot of freedom and opportunities, but he was not satisfied with his life. He was still searching for something that would make him happy and fulfilled. A possible conditional statement is: If Dan was living on his own in a big city, then he was searching for happiness.
+
+"
+"Danny loved having food, but food doesn't love him.  If he eats what he likes he often develops what?","['gas', 'not hungry', 'digesting', 'weight gain', 'cataracts']","Questions: Danny loved having food, but food doesn't love him.  If he eats what he likes he often develops what?, Choices: (A) gas, (B) not hungry, (C) digesting, (D) weight gain, (E) cataracts. Given the question 'Danny loved having food, but food doesn't love him.  If he eats what he likes he often develops what?', which among the choices gas, not hungry, digesting, weight gain cataracts is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) weight gain. Danny loved having food, but food doesn't love him, which means he had a negative consequence from eating too much or too unhealthy. If he eats what he likes, he often develops weight gain, which can affect his health and appearance. A possible conditional statement is: If Danny eats what he likes, then he often develops weight gain.
+
+"
+"Danny needed a new mouse, his was jumping around  whenever he moved it.   Where might his mouse be?","['abandoned houses', 'corn field', 'cupboard', 'cabinet', 'desktop']","Questions: Danny needed a new mouse, his was jumping around  whenever he moved it.   Where might his mouse be?, Choices: (A) abandoned houses, (B) corn field, (C) cupboard, (D) cabinet, (E) desktop. Given the question 'Danny needed a new mouse, his was jumping around  whenever he moved it.   Where might his mouse be?', which among the choices abandoned houses, corn field, cupboard, cabinet desktop is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) desktop. Danny needed a new mouse, his was jumping around whenever he moved it, which means he had a problem with his computer mouse. A computer mouse is usually connected to a desktop, which is a personal computer that sits on a desk. A possible conditional statement is: If Danny needed a new mouse, then his mouse was on a desktop.
+
+"
+"Danny thought that the show was divine.   Lila disagreed.  She didn't think it was bad, but she thought it was what?","['godless', 'horrible', 'undivine', 'humdrum', 'mortal']","Questions: Danny thought that the show was divine.   Lila disagreed.  She didn't think it was bad, but she thought it was what?, Choices: (A) godless, (B) horrible, (C) undivine, (D) humdrum, (E) mortal. Given the question 'Danny thought that the show was divine.   Lila disagreed.  She didn't think it was bad, but she thought it was what?', which among the choices godless, horrible, undivine, humdrum mortal is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) humdrum. Danny thought that the show was divine, which means he thought it was excellent and amazing. Lila disagreed, she didn't think it was bad, but she thought it was humdrum, which means she thought it was boring and ordinary. A possible conditional statement is: If Danny thought that the show was divine, then Lila thought that the show was humdrum.
+
+"
+"Danny was a human.  He needed to catch a flight, but stayed to long in an object made for humans to relax in.  Where might he have been?","['bathroom', 'couch', 'airport', 'homes', 'bed']","Questions: Danny was a human.  He needed to catch a flight, but stayed to long in an object made for humans to relax in.  Where might he have been?, Choices: (A) bathroom, (B) couch, (C) airport, (D) homes, (E) bed. Given the question 'Danny was a human.  He needed to catch a flight, but stayed to long in an object made for humans to relax in.  Where might he have been?', which among the choices bathroom, couch, airport, homes bed is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) bed. Danny was a human, he needed to catch a flight, but stayed too long in an object made for humans to relax in, which means he overslept or procrastinated. A bed is an object made for humans to relax in, especially to sleep. A possible conditional statement is: If Danny stayed too long in an object made for humans to relax in, then he stayed too long in a bed.
+
+"
+"Danny was meeting his friend James, but James didn't show up. James was always punctual.  As time wore on and it became clear that his friend wasn't coming, Danny began to do what?","['cheer', 'panic', 'anger', 'relaxation', 'joy']","Questions: Danny was meeting his friend James, but James didn't show up. James was always punctual.  As time wore on and it became clear that his friend wasn't coming, Danny began to do what?, Choices: (A) cheer, (B) panic, (C) anger, (D) relaxation, (E) joy. Given the question 'Danny was meeting his friend James, but James didn't show up. James was always punctual.  As time wore on and it became clear that his friend wasn't coming, Danny began to do what?', which among the choices cheer, panic, anger, relaxation joy is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) panic. Danny was meeting his friend James, but James didn't show up. James was always punctual, which means he was always on time and reliable. As time wore on and it became clear that his friend wasn't coming, Danny began to panic, which means he began to feel anxious and worried. A possible conditional statement is: If James didn't show up, then Danny began to panic.
+
+"
+"Danny was studying statistics in class, and he something disturbing about driving.   It causes a significant number of what?","['deaths', 'moving', 'car wrecks', 'using gas', 'may die']","Questions: Danny was studying statistics in class, and he something disturbing about driving.   It causes a significant number of what?, Choices: (A) deaths, (B) moving, (C) car wrecks, (D) using gas, (E) may die. Given the question 'Danny was studying statistics in class, and he something disturbing about driving.   It causes a significant number of what?', which among the choices deaths, moving, car wrecks, using gas may die is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) deaths. Danny was studying statistics in class, and he learned something disturbing about driving. Driving causes a significant number of deaths, which means it is a dangerous and risky activity that can result in fatal accidents. A possible conditional statement is: If Danny learned something disturbing about driving, then he learned that driving causes a significant number of deaths.
+
+"
+"Danny was visiting a museum.  He spent all day looking at exhibits.  He studied them all careful.  In the end, he went home.  Why might he have gone home?","['tired feet', 'pondering', 'gaining knowledge', 'exhilaration', 'wonder']","Questions: Danny was visiting a museum.  He spent all day looking at exhibits.  He studied them all careful.  In the end, he went home.  Why might he have gone home?, Choices: (A) tired feet, (B) pondering, (C) gaining knowledge, (D) exhilaration, (E) wonder. Given the question 'Danny was visiting a museum.  He spent all day looking at exhibits.  He studied them all careful.  In the end, he went home.  Why might he have gone home?', which among the choices tired feet, pondering, gaining knowledge, exhilaration wonder is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) tired feet. Danny was visiting a museum, he spent all day looking at exhibits. He studied them all carefully, which means he was interested and attentive. In the end, he went home, which means he left the museum. A possible reason why he went home is that he had tired feet, which means he was exhausted from walking and standing for a long time. A possible conditional statement is: If Danny spent all day looking at exhibits, then he had tired feet.
+
+"
+"Dave didn't mind that Josh was punishing him, because he was experiencing what emotion?","['feel sorry for', 'hatred', 'feel guilty', 'retribution', 'worried']","Questions: Dave didn't mind that Josh was punishing him, because he was experiencing what emotion?, Choices: (A) feel sorry for, (B) hatred, (C) feel guilty, (D) retribution, (E) worried. Given the question 'Dave didn't mind that Josh was punishing him, because he was experiencing what emotion?', which among the choices feel sorry for, hatred, feel guilty, retribution worried is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) feel guilty. Dave didn't mind that Josh was punishing him, because he was experiencing an emotion that made him accept the punishment. Dave was experiencing feel guilty, which means he was feeling remorseful and responsible for something he did wrong. A possible conditional statement is: If Dave didn't mind that Josh was punishing him, then he was experiencing feel guilty.
+
+"
+"Dave put his beer where he could get to it, but it would be off the floor.  Where did he put it?","['refrigerator', 'closet', 'can', 'shelf', 'soccer game']","Questions: Dave put his beer where he could get to it, but it would be off the floor.  Where did he put it?, Choices: (A) refrigerator, (B) closet, (C) can, (D) shelf, (E) soccer game. Given the question 'Dave put his beer where he could get to it, but it would be off the floor.  Where did he put it?', which among the choices refrigerator, closet, can, shelf soccer game is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) shelf. Dave put his beer where he could get to it, but it would be off the floor, which means he placed it somewhere high and accessible. A shelf is a flat surface that is attached to a wall or a piece of furniture, and it can be used to store or display items. A possible conditional statement is: If Dave put his beer where he could get to it, then he put his beer on a shelf."
+"Dave wants to build a new ranch house, but he's worried about mudslides, fires, earthquakes,  and restrictive zoning codes.  Where might he live?","['montana', 'west', 'california', 'outback', 'texas']","Questions: Dave wants to build a new ranch house, but he's worried about mudslides, fires, earthquakes,  and restrictive zoning codes.  Where might he live?, Choices: (A) montana, (B) west, (C) california, (D) outback, (E) texas. Given the question 'Dave wants to build a new ranch house, but he's worried about mudslides, fires, earthquakes,  and restrictive zoning codes.  Where might he live?', which among the choices montana, west, california, outback texas is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) california. My reasoning is: If Dave lives in California, then he is likely to face mudslides, fires, earthquakes, and restrictive zoning codes. None of the other choices have all of these hazards or challenges.
+
+"
+"David hurt all over. He was tired, he was shaking, and he was in pain.  He hadn't gotten what he needed in a long time.  He was suffering from what?","['addiction', 'fatigue', 'relaxation', 'headaches', 'over eating']","Questions: David hurt all over. He was tired, he was shaking, and he was in pain.  He hadn't gotten what he needed in a long time.  He was suffering from what?, Choices: (A) addiction, (B) fatigue, (C) relaxation, (D) headaches, (E) over eating. Given the question 'David hurt all over. He was tired, he was shaking, and he was in pain.  He hadn't gotten what he needed in a long time.  He was suffering from what?', which among the choices addiction, fatigue, relaxation, headaches over eating is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) addiction. My reasoning is: If David is suffering from addiction, then he would hurt all over, be tired, shake, and be in pain. He would also not get what he needed in a long time, which could be a substance or a behavior. None of the other choices explain all of his symptoms.
+
+"
+"David was lost but he couldn't remember where he put the map.  He knew that he had it the last time he stopped.  He remembered getting out his toothbrush and brushing, then putting everything up. Where might the map be?","['atlas', 'rest area', 'posession', 'heaven', 'suitcase']","Questions: David was lost but he couldn't remember where he put the map.  He knew that he had it the last time he stopped.  He remembered getting out his toothbrush and brushing, then putting everything up. Where might the map be?, Choices: (A) atlas, (B) rest area, (C) posession, (D) heaven, (E) suitcase. Given the question 'David was lost but he couldn't remember where he put the map.  He knew that he had it the last time he stopped.  He remembered getting out his toothbrush and brushing, then putting everything up. Where might the map be?', which among the choices atlas, rest area, posession, heaven suitcase is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) suitcase. My reasoning is: If David put the map in his suitcase, then he would not remember where he put it. He would also have it the last time he stopped, when he got out his toothbrush and brushed. None of the other choices make sense for where he would put the map.
+
+"
+"Debbie buys a ficus on how own, but she doesn't want to keep it in a pot.  Where does she put it?","['window', 'park', 'hair salon', 'family room', 'flower garden']","Questions: Debbie buys a ficus on how own, but she doesn't want to keep it in a pot.  Where does she put it?, Choices: (A) window, (B) park, (C) hair salon, (D) family room, (E) flower garden. Given the question 'Debbie buys a ficus on how own, but she doesn't want to keep it in a pot.  Where does she put it?', which among the choices window, park, hair salon, family room flower garden is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) flower garden. My reasoning is: If Debbie buys a ficus on her own, then she can put it wherever she wants. If she doesn't want to keep it in a pot, then she would put it in the ground. A flower garden is a place where she can plant the ficus. None of the other choices are suitable for planting a ficus.
+
+"
+"Debbie doesn't want a plain dress, she wants something unusual and attention-getting.  What would be a good adjective to describe the sort of dress she wants?","['exotic', 'decorative', 'bells and whistles', 'silly', 'extravagant']","Questions: Debbie doesn't want a plain dress, she wants something unusual and attention-getting.  What would be a good adjective to describe the sort of dress she wants?, Choices: (A) exotic, (B) decorative, (C) bells and whistles, (D) silly, (E) extravagant. Given the question 'Debbie doesn't want a plain dress, she wants something unusual and attention-getting.  What would be a good adjective to describe the sort of dress she wants?', which among the choices exotic, decorative, bells and whistles, silly extravagant is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) exotic. My reasoning is: If Debbie wants something unusual and attention-getting, then she would want a dress that is different from the norm. An exotic dress is one that is foreign or unusual in style or design. None of the other choices describe the sort of dress she wants.
+
+"
+"Denny couldn't find his hairbrush.  He looked everywhere for it.  Under and over, up and down, it was not where he thought it would be.  So he closed the door behind him and continued his systematic search.  Where might Denny have looked first?","['house', 'kitchen', 'car', 'drugstore', 'bedroom']","Questions: Denny couldn't find his hairbrush.  He looked everywhere for it.  Under and over, up and down, it was not where he thought it would be.  So he closed the door behind him and continued his systematic search.  Where might Denny have looked first?, Choices: (A) house, (B) kitchen, (C) car, (D) drugstore, (E) bedroom. Given the question 'Denny couldn't find his hairbrush.  He looked everywhere for it.  Under and over, up and down, it was not where he thought it would be.  So he closed the door behind him and continued his systematic search.  Where might Denny have looked first?', which among the choices house, kitchen, car, drugstore bedroom is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) bedroom. My reasoning is: If Denny couldn't find his hairbrush, then he would look in the places where he usually uses it. If he closed the door behind him, then he was in a room with a door. A bedroom is a room with a door where he might use his hairbrush. None of the other choices are likely places where he would look first.
+
+"
+"Despite doctor's orders, she ate breakfast in bed, what did she feel?","['happiness', 'feel guilty', 'weight gain', 'spills', 'indigestion']","Questions: Despite doctor's orders, she ate breakfast in bed, what did she feel?, Choices: (A) happiness, (B) feel guilty, (C) weight gain, (D) spills, (E) indigestion. Given the question 'Despite doctor's orders, she ate breakfast in bed, what did she feel?', which among the choices happiness, feel guilty, weight gain, spills indigestion is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) feel guilty. My reasoning is: If she ate breakfast in bed despite doctor's orders, then she would feel bad about disobeying the doctor. Feeling guilty is a negative emotion that comes from doing something wrong. None of the other choices are feelings that she would have.
+
+"
+"Despite reports of bad weather, the wedding day was gorgeous, what did the weather do?","['surprise us', 'thunderstorm', 'occur here', 'change quickly', 'look beautiful']","Questions: Despite reports of bad weather, the wedding day was gorgeous, what did the weather do?, Choices: (A) surprise us, (B) thunderstorm, (C) occur here, (D) change quickly, (E) look beautiful. Given the question 'Despite reports of bad weather, the wedding day was gorgeous, what did the weather do?', which among the choices surprise us, thunderstorm, occur here, change quickly look beautiful is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) surprise us. My reasoning is: If the wedding day was gorgeous despite reports of bad weather, then the weather did something unexpected. Surprising us is an action that the weather can do that is contrary to what we expected. None of the other choices are actions that the weather can do.
+
+"
+"Despite warnings to not do it while printing on printer, they still had an issue with people carelessly doing what near it?","['drink coffee', 'paper and ink', 'printer', 'error', 'using paper']","Questions: Despite warnings to not do it while printing on printer, they still had an issue with people carelessly doing what near it?, Choices: (A) drink coffee, (B) paper and ink, (C) printer, (D) error, (E) using paper. Given the question 'Despite warnings to not do it while printing on printer, they still had an issue with people carelessly doing what near it?', which among the choices drink coffee, paper and ink, printer, error using paper is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) drink coffee. My reasoning is: If they had an issue with people carelessly doing something near the printer, then it would be something that could damage the printer or the paper. Drinking coffee is an activity that could spill liquid on the printer or the paper. None of the other choices are activities that could cause an issue near the printer.
+
+"
+"Dinner was finished and the dishes cleared, the bust boy then wiped all the crumbs off the what?","['box of crackers', 'face', 'rug', 'table', 'floor']","Questions: Dinner was finished and the dishes cleared, the bust boy then wiped all the crumbs off the what?, Choices: (A) box of crackers, (B) face, (C) rug, (D) table, (E) floor. Given the question 'Dinner was finished and the dishes cleared, the bust boy then wiped all the crumbs off the what?', which among the choices box of crackers, face, rug, table floor is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) table. My reasoning is: If the bus boy wiped all the crumbs off something, then it would be something that had crumbs on it. A table is an object that could have crumbs on it after dinner. None of the other choices are objects that would have crumbs on them."
+"Doctors gave sedative to the patient complaining of pain, what did he say afterwards?","['enjoyment', 'good sometimes', 'immobilize', 'feels good', 'good feeling']","Questions: Doctors gave sedative to the patient complaining of pain, what did he say afterwards?, Choices: (A) enjoyment, (B) good sometimes, (C) immobilize, (D) feels good, (E) good feeling. Given the question 'Doctors gave sedative to the patient complaining of pain, what did he say afterwards?', which among the choices enjoyment, good sometimes, immobilize, feels good good feeling is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) feels good**. A possible explanation is:
+
+    * If doctors gave sedative to the patient, then the patient would feel less pain.
+    * If the patient felt less pain, then the patient would feel good.
+    * Therefore, if doctors gave sedative to the patient, then the patient would say feels good afterwards.
+
+"
+"Dogs are active pets, especially on hot days it's important to keep their bowl full because they what?","['do many things', 'trained', 'withstand dehydration', 'require water', 'get lost']","Questions: Dogs are active pets, especially on hot days it's important to keep their bowl full because they what?, Choices: (A) do many things, (B) trained, (C) withstand dehydration, (D) require water, (E) get lost. Given the question 'Dogs are active pets, especially on hot days it's important to keep their bowl full because they what?', which among the choices do many things, trained, withstand dehydration, require water get lost is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) require water**. A possible explanation is:
+
+    * If dogs are active pets, then they burn a lot of energy.
+    * If dogs burn a lot of energy, then they lose a lot of water.
+    * If dogs lose a lot of water, then they require water to replenish it.
+    * Therefore, if dogs are active pets, then they require water to replenish it.
+
+"
+"Dogs get hot and tired, then they like to sloppily do what?","['smell', 'drink water', 'fleas', 'eat meat', 'sleep']","Questions: Dogs get hot and tired, then they like to sloppily do what?, Choices: (A) smell, (B) drink water, (C) fleas, (D) eat meat, (E) sleep. Given the question 'Dogs get hot and tired, then they like to sloppily do what?', which among the choices smell, drink water, fleas, eat meat sleep is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) drink water**. A possible explanation is:
+
+    * If dogs get hot and tired, then they lose a lot of water.
+    * If dogs lose a lot of water, then they need to drink water to hydrate themselves.
+    * If dogs drink water, then they often do it sloppily.
+    * Therefore, if dogs get hot and tired, then they like to sloppily drink water.
+
+"
+"Dogs run around all day, it's a good thing they have what?","['pointed ears', 'fleas', 'bones', 'tails', 'four legs']","Questions: Dogs run around all day, it's a good thing they have what?, Choices: (A) pointed ears, (B) fleas, (C) bones, (D) tails, (E) four legs. Given the question 'Dogs run around all day, it's a good thing they have what?', which among the choices pointed ears, fleas, bones, tails four legs is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) four legs**. A possible explanation is:
+
+    * If dogs run around all day, then they need a lot of stamina.
+    * If dogs need a lot of stamina, then they need a lot of support from their limbs.
+    * If dogs have four legs, then they have more support from their limbs than if they had fewer legs.
+    * Therefore, if dogs run around all day, then it's a good thing they have four legs.
+
+"
+"Doing housework is hard, what can that lead to?","['boredom', 'arguments', 'exhaustion', 'magic powers', 'headache']","Questions: Doing housework is hard, what can that lead to?, Choices: (A) boredom, (B) arguments, (C) exhaustion, (D) magic powers, (E) headache. Given the question 'Doing housework is hard, what can that lead to?', which among the choices boredom, arguments, exhaustion, magic powers headache is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) exhaustion**. A possible explanation is:
+
+    * If doing housework is hard, then it requires a lot of effort.
+    * If doing housework requires a lot of effort, then it drains a lot of energy.
+    * If doing housework drains a lot of energy, then it can lead to exhaustion.
+    * Therefore, if doing housework is hard, then it can lead to exhaustion.
+
+"
+"Drinking alcohol should be avoided. In addition to making you sick, it can cause what?","['accidents', 'have fun', 'vomiting', 'wicked', 'frequent urination']","Questions: Drinking alcohol should be avoided. In addition to making you sick, it can cause what?, Choices: (A) accidents, (B) have fun, (C) vomiting, (D) wicked, (E) frequent urination. Given the question 'Drinking alcohol should be avoided. In addition to making you sick, it can cause what?', which among the choices accidents, have fun, vomiting, wicked frequent urination is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(A) accidents**. A possible explanation is:
+
+    * If drinking alcohol should be avoided, then it has negative effects.
+    * If drinking alcohol has negative effects, then it can impair judgment and coordination.
+    * If drinking alcohol impairs judgment and coordination, then it can cause accidents.
+    * Therefore, if drinking alcohol should be avoided, then it can cause accidents.
+
+"
+"Driving car can be monotonous, so many turn the dial and do what?","['concentrate', 'change gears', 'have fun', 'listen to radio', 'play']","Questions: Driving car can be monotonous, so many turn the dial and do what?, Choices: (A) concentrate, (B) change gears, (C) have fun, (D) listen to radio, (E) play. Given the question 'Driving car can be monotonous, so many turn the dial and do what?', which among the choices concentrate, change gears, have fun, listen to radio play is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) listen to radio**. A possible explanation is:
+
+    * If driving car can be monotonous, then it can be boring.
+    * If driving car can be boring, then many drivers want to entertain themselves.
+    * If many drivers want to entertain themselves, then they turn the dial and listen to radio.
+    * Therefore, if driving car can be monotonous, then many drivers turn the dial and listen to radio.
+
+"
+"Driving drunk is very stupid, it can even end up what?","['damage', 'dangerous', 'deadly', 'stressful', 'fun']","Questions: Driving drunk is very stupid, it can even end up what?, Choices: (A) damage, (B) dangerous, (C) deadly, (D) stressful, (E) fun. Given the question 'Driving drunk is very stupid, it can even end up what?', which among the choices damage, dangerous, deadly, stressful fun is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) deadly**. A possible explanation is:
+
+    * If driving drunk is very stupid, then it is very dangerous.
+    * If driving drunk is very dangerous, then it can result in fatal crashes.
+    * If driving drunk can result in fatal crashes, then it can end up deadly.
+    * Therefore, if driving drunk is very stupid, then it can end up deadly.
+
+"
+"Driving to work can be monotonous, she would play her favorite music and just what along with it?","['sing', 'listen to radio', 'listen to music', 'speed', 'head bang']","Questions: Driving to work can be monotonous, she would play her favorite music and just what along with it?, Choices: (A) sing, (B) listen to radio, (C) listen to music, (D) speed, (E) head bang. Given the question 'Driving to work can be monotonous, she would play her favorite music and just what along with it?', which among the choices sing, listen to radio, listen to music, speed head bang is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) sing**. A possible explanation is:
+
+    * If driving to work can be monotonous, then it can be boring.
+    * If driving to work can be boring, then she would play her favorite music to enjoy herself.
+    * If she played her favorite music, then she would just sing along with it.
+    * Therefore, if driving to work can be monotonous, then she would play her favorite music and just sing along with it.
+
+"
+"Driving to work late is never pleasant, but you still shouldn't what?","['listen to radio', 'sing', 'speed', 'anger', 'statue']","Questions: Driving to work late is never pleasant, but you still shouldn't what?, Choices: (A) listen to radio, (B) sing, (C) speed, (D) anger, (E) statue. Given the question 'Driving to work late is never pleasant, but you still shouldn't what?', which among the choices listen to radio, sing, speed, anger statue is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) speed**. A possible explanation is:
+
+    * If driving to work late is never pleasant, then it can be stressful.
+    * If driving to work late can be stressful, then some drivers might be tempted to drive faster.
+    * If some drivers drive faster, then they might break the speed limit and endanger themselves and others.
+    * Therefore, if driving to work late is never pleasant, then they still shouldn't speed."
+"During battle he felt great anger, this drove him to do what?","['drive car', 'destroy enemy', 'punch', 'release energy', 'write letter']","Questions: During battle he felt great anger, this drove him to do what?, Choices: (A) drive car, (B) destroy enemy, (C) punch, (D) release energy, (E) write letter. Given the question 'During battle he felt great anger, this drove him to do what?', which among the choices drive car, destroy enemy, punch, release energy write letter is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) release energy. A possible explanation using conditional statements is:
+
+```
+If he felt great anger during battle, then he would want to express his anger in some way.
+If he wanted to express his anger in some way, then he would do something that would release his anger.
+If he did something that would release his anger, then he would release energy.
+Therefore, if he felt great anger during battle, then he would release energy.
+```
+
+"
+"During his guilty sentencing for the killing the suspect was stoned faced, he expressed remorse for the what he had caused the victim's families?","['grief', 'bloody mess', 'freedom', 'sorrow', 'death of']","Questions: During his guilty sentencing for the killing the suspect was stoned faced, he expressed remorse for the what he had caused the victim's families?, Choices: (A) grief, (B) bloody mess, (C) freedom, (D) sorrow, (E) death of. Given the question 'During his guilty sentencing for the killing the suspect was stoned faced, he expressed remorse for the what he had caused the victim's families?', which among the choices grief, bloody mess, freedom, sorrow death of is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) grief. A possible explanation using conditional statements is:
+
+```
+If he expressed remorse for what he had caused the victim's families, then he would acknowledge the negative impact of his actions.
+If he acknowledged the negative impact of his actions, then he would recognize the emotional pain that the victim's families felt.
+If he recognized the emotional pain that the victim's families felt, then he would use a word that describes that pain.
+If he used a word that describes that pain, then he would use grief.
+Therefore, if he expressed remorse for what he had caused the victim's families, then he would use grief.
+```
+
+"
+"During the date she explained her belief in fatalism, this contrasted with his strong belief in a person's what?","['free will', 'fate', 'fatality', 'indeterminism', 'freedom']","Questions: During the date she explained her belief in fatalism, this contrasted with his strong belief in a person's what?, Choices: (A) free will, (B) fate, (C) fatality, (D) indeterminism, (E) freedom. Given the question 'During the date she explained her belief in fatalism, this contrasted with his strong belief in a person's what?', which among the choices free will, fate, fatality, indeterminism freedom is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) free will. A possible explanation using conditional statements is:
+
+```
+If she explained her belief in fatalism, then she would believe that human actions are predetermined by fate.
+If he had a strong belief in a person's what, then he would believe that human actions are influenced by choice.
+If he believed that human actions are influenced by choice, then he would use a word that describes that ability to choose.
+If he used a word that describes that ability to choose, then he would use free will.
+Therefore, if she explained her belief in fatalism and he had a strong belief in a person's what, then he would use free will.
+```
+
+"
+"During the roadtrip they finally stopped seeing signs for falling rock, there surroundings were getting less step as the entered the open what?","['mountain range', 'countryside', 'volcano', 'ground', 'bridge']","Questions: During the roadtrip they finally stopped seeing signs for falling rock, there surroundings were getting less step as the entered the open what?, Choices: (A) mountain range, (B) countryside, (C) volcano, (D) ground, (E) bridge. Given the question 'During the roadtrip they finally stopped seeing signs for falling rock, there surroundings were getting less step as the entered the open what?', which among the choices mountain range, countryside, volcano, ground bridge is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) countryside. A possible explanation using conditional statements is:
+
+```
+If they finally stopped seeing signs for falling rock, then they would have left the area where rocks could fall.
+If they left the area where rocks could fall, then they would have moved away from the mountains.
+If they moved away from the mountains, then they would have entered a flatter terrain.
+If they entered a flatter terrain, then they would use a word that describes that type of landscape.
+If they used a word that describes that type of landscape, then they would use countryside.
+Therefore, if they finally stopped seeing signs for falling rock, then they would use countryside.
+```
+
+"
+"During the seated interview the hiring agent hired the man on the spot, he got a contract and pen out of the what right on the spot?","['other mans pocket', ""friend's house"", 'desk drawer', 'office supply store', 'briefcase']","Questions: During the seated interview the hiring agent hired the man on the spot, he got a contract and pen out of the what right on the spot?, Choices: (A) other mans pocket, (B) friend's house, (C) desk drawer, (D) office supply store, (E) briefcase. Given the question 'During the seated interview the hiring agent hired the man on the spot, he got a contract and pen out of the what right on the spot?', which among the choices other mans pocket, friend's house, desk drawer, office supply store briefcase is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) desk drawer. A possible explanation using conditional statements is:
+
+```
+If the hiring agent hired the man on the spot, then he would have the contract and pen ready to sign.
+If he had the contract and pen ready to sign, then he would have them in a place that was accessible and convenient.
+If he had them in a place that was accessible and convenient, then he would have them in a furniture that was near him.
+If he had them in a furniture that was near him, then he would have them in a desk drawer.
+Therefore, if the hiring agent hired the man on the spot, then he would have the contract and pen in a desk drawer.
+```
+
+"
+"Each witness had to take oath, this oath was to what?","['laugh', 'truthful', 'not lie', 'think', 'sense of duty']","Questions: Each witness had to take oath, this oath was to what?, Choices: (A) laugh, (B) truthful, (C) not lie, (D) think, (E) sense of duty. Given the question 'Each witness had to take oath, this oath was to what?', which among the choices laugh, truthful, not lie, think sense of duty is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) not lie. A possible explanation using conditional statements is:
+
+```
+If each witness had to take an oath, then they would have to promise to do something.
+If they had to promise to do something, then they would have to promise to follow a rule or a principle.
+If they had to promise to follow a rule or a principle, then they would have to promise to respect the truth.
+If they had to promise to respect the truth, then they would have to promise to not lie.
+Therefore, if each witness had to take an oath, then they would have to promise to not lie.
+```
+
+"
+"Eating breakfast in bed can make you feel what, assuming that you don't spill anything?","['vomiting', 'pleasure', 'happiness', 'contentment', 'mess']","Questions: Eating breakfast in bed can make you feel what, assuming that you don't spill anything?, Choices: (A) vomiting, (B) pleasure, (C) happiness, (D) contentment, (E) mess. Given the question 'Eating breakfast in bed can make you feel what, assuming that you don't spill anything?', which among the choices vomiting, pleasure, happiness, contentment mess is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) contentment. A possible explanation using conditional statements is:
+
+```
+If eating breakfast in bed can make you feel something, then it would be a positive feeling.
+If it would be a positive feeling, then it would be a feeling of satisfaction or happiness.
+If it would be a feeling of satisfaction or happiness, then it would be a feeling of fulfillment or peace.
+If it would be a feeling of fulfillment or peace, then it would be a feeling of contentment.
+Therefore, if eating breakfast in bed can make you feel something, then it would be a feeling of contentment.
+```
+
+"
+"Emilio needed the exercise, but he didn't do it.  He suffered from what?","['suffered from bad breath', 'work out', 'lazy', 'couch potato', 'sloth']","Questions: Emilio needed the exercise, but he didn't do it.  He suffered from what?, Choices: (A) suffered from bad breath, (B) work out, (C) lazy, (D) couch potato, (E) sloth. Given the question 'Emilio needed the exercise, but he didn't do it.  He suffered from what?', which among the choices suffered from bad breath, work out, lazy, couch potato sloth is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) sloth. A possible explanation using conditional statements is:
+
+```
+If Emilio needed the exercise, but he didn't do it, then he would have a lack of motivation or discipline.
+If he had a lack of motivation or discipline, then he would have a tendency to avoid work or effort.
+If he had a tendency to avoid work or effort, then he would have a character flaw or a vice.
+If he had a character flaw or a vice, then he would have a word that describes that flaw or vice.
+If he had a word that describes that flaw or vice, then he would have sloth.
+Therefore, if Emilio needed the exercise, but he didn't do it, then he would have sloth.
+```
+
+"
+"Even drinking was difficult after the surgery, he was having trouble doing what?","['coloring', 'glass', 'swallowing', 'use glass', 'mouth']","Questions: Even drinking was difficult after the surgery, he was having trouble doing what?, Choices: (A) coloring, (B) glass, (C) swallowing, (D) use glass, (E) mouth. Given the question 'Even drinking was difficult after the surgery, he was having trouble doing what?', which among the choices coloring, glass, swallowing, use glass mouth is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) swallowing. A possible explanation using conditional statements is:
+
+```
+If drinking was difficult after the surgery, then he would have a problem with his throat or mouth.
+If he had a problem with his throat or mouth, then he would have a problem with the action that involves the throat or mouth.
+If he had a problem with the action that involves the throat or mouth, then he would have a problem with the action that moves the liquid from the mouth to the stomach.
+If he had a problem with the action that moves the liquid from the mouth to the stomach, then he would have a problem with swallowing.
+Therefore, if drinking was difficult after the surgery, then he would have a problem with swallowing.
+```
+
+"
+"Even if not all events are enjoyable, what is a person traveling to many different places likely to have?","['lots of tickets', 'interesting experiences', 'compliments', 'feel pleasure', 'look attractive']","Questions: Even if not all events are enjoyable, what is a person traveling to many different places likely to have?, Choices: (A) lots of tickets, (B) interesting experiences, (C) compliments, (D) feel pleasure, (E) look attractive. Given the question 'Even if not all events are enjoyable, what is a person traveling to many different places likely to have?', which among the choices lots of tickets, interesting experiences, compliments, feel pleasure look attractive is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) interesting experiences. A possible explanation using conditional statements is:
+
+```
+If a person travels to many different places, then they would see many different things.
+If they see many different things, then they would learn many different things.
+If they learn many different things, then they would have many different stories to tell.
+If they have many different stories to tell, then they would have interesting experiences.
+Therefore, if a person travels to many different places, then they would have interesting experiences.
+```"

@@ -1,0 +1,501 @@
+premise,hypothesis,prompt,rationale
+John wrote a religions tract and decided to give them away.  He felt that he should go somewhere where he could reach a large and diverse group from many places.  Where is he likely to distribute his tracts?,"['public place', 'airport', 'subway car', 'shopping mall', 'laundromat']","Questions: John wrote a religions tract and decided to give them away.  He felt that he should go somewhere where he could reach a large and diverse group from many places.  Where is he likely to distribute his tracts?, Choices: (A) public place, (B) airport, (C) subway car, (D) shopping mall, (E) laundromat. Given the question 'John wrote a religions tract and decided to give them away.  He felt that he should go somewhere where he could reach a large and diverse group from many places.  Where is he likely to distribute his tracts?', which among the choices public place, airport, subway car, shopping mall laundromat is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) airport. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If John wants to reach a large and diverse group from many places, then he will distribute his tracts at the airport.**
+
+"
+John's RV needs electricity so that he can cook lunch.  Where would he go to plug in?,"['toy store', 'basement', 'school', 'rest area', 'building']","Questions: John's RV needs electricity so that he can cook lunch.  Where would he go to plug in?, Choices: (A) toy store, (B) basement, (C) school, (D) rest area, (E) building. Given the question 'John's RV needs electricity so that he can cook lunch.  Where would he go to plug in?', which among the choices toy store, basement, school, rest area building is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) rest area. A possible conditional statement for this question is: **If John's RV needs electricity to cook lunch, then he will go to a rest area to plug in.**
+
+"
+John's know that friends didn't respect him. Every day he suffered what at their hands?,"['humiliate', 'belittlement', 'contempt', 'embarrassed', 'irreverence']","Questions: John's know that friends didn't respect him. Every day he suffered what at their hands?, Choices: (A) humiliate, (B) belittlement, (C) contempt, (D) embarrassed, (E) irreverence. Given the question 'John's know that friends didn't respect him. Every day he suffered what at their hands?', which among the choices humiliate, belittlement, contempt, embarrassed irreverence is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) belittlement. A possible conditional statement for this question is: **If John's friends do not respect him, then he will suffer belittlement at their hands.**
+
+"
+John's parking space was in a great position.  Where was it in relation to the building?,"['jar', 'front', 'universe', 'box', 'answer']","Questions: John's parking space was in a great position.  Where was it in relation to the building?, Choices: (A) jar, (B) front, (C) universe, (D) box, (E) answer. Given the question 'John's parking space was in a great position.  Where was it in relation to the building?', which among the choices jar, front, universe, box answer is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) front. A possible conditional statement for this question is: **If John's parking space is in a great position, then it is in the front of the building.**
+
+"
+Johnny and bill fought over money.  Johnny wanted it to be over.  What might he choose to do?,"['control people', 'settle everything', 'buy food', 'increase power', 'kill bill']","Questions: Johnny and bill fought over money.  Johnny wanted it to be over.  What might he choose to do?, Choices: (A) control people, (B) settle everything, (C) buy food, (D) increase power, (E) kill bill. Given the question 'Johnny and bill fought over money.  Johnny wanted it to be over.  What might he choose to do?', which among the choices control people, settle everything, buy food, increase power kill bill is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) settle everything. A possible conditional statement for this question is: **If Johnny wants to end the fight over money, then he will choose to settle everything with Bill.**
+
+"
+Johnny had a disease that kept him from playing with friends.  His family only wanted him to achieve what?,"['healthy', 'wellness', 'passing around', 'cure', 'infect']","Questions: Johnny had a disease that kept him from playing with friends.  His family only wanted him to achieve what?, Choices: (A) healthy, (B) wellness, (C) passing around, (D) cure, (E) infect. Given the question 'Johnny had a disease that kept him from playing with friends.  His family only wanted him to achieve what?', which among the choices healthy, wellness, passing around, cure infect is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) cure. A possible conditional statement for this question is: **If Johnny has a disease that keeps him from playing with friends, then his family only wants him to achieve a cure.**
+
+"
+Johnny sat on a bench and relaxed after doing a lot of work on his hobby.  Where is he?,"['state park', 'bus depot', 'garden', 'gym', 'rest area']","Questions: Johnny sat on a bench and relaxed after doing a lot of work on his hobby.  Where is he?, Choices: (A) state park, (B) bus depot, (C) garden, (D) gym, (E) rest area. Given the question 'Johnny sat on a bench and relaxed after doing a lot of work on his hobby.  Where is he?', which among the choices state park, bus depot, garden, gym rest area is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) garden. A possible conditional statement for this question is: **If Johnny sat on a bench and relaxed after doing a lot of work on his hobby, then he is in a garden.**
+
+"
+Johnny was looking for blowfish in places that weren't near America.  Where would he look?,"['fish market', 'hawaiian waters', 'gulf of mexico', 'tropical sea', 'south pacific ocean']","Questions: Johnny was looking for blowfish in places that weren't near America.  Where would he look?, Choices: (A) fish market, (B) hawaiian waters, (C) gulf of mexico, (D) tropical sea, (E) south pacific ocean. Given the question 'Johnny was looking for blowfish in places that weren't near America.  Where would he look?', which among the choices fish market, hawaiian waters, gulf of mexico, tropical sea south pacific ocean is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) south pacific ocean. A possible conditional statement for this question is: **If Johnny is looking for blowfish in places that are not near America, then he will look in the south pacific ocean.**
+
+"
+Johnny was looking for cookies that his mom had hid from him.  Where might he look for them?,"['dessert', 'evercookie', 'evercookie', 'store', 'jar']","Questions: Johnny was looking for cookies that his mom had hid from him.  Where might he look for them?, Choices: (A) dessert, (B) evercookie, (C) evercookie, (D) store, (E) jar. Given the question 'Johnny was looking for cookies that his mom had hid from him.  Where might he look for them?', which among the choices dessert, evercookie, evercookie, store jar is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) jar. A possible conditional statement for this question is: **If Johnny is looking for cookies that his mom hid from him, then he will look in a jar.**
+
+"
+Jon put drops in his eyes so that they wouldn't do what?,"['fill with tears', 'glass over', 'see work', 'dry out', 'fall out']","Questions: Jon put drops in his eyes so that they wouldn't do what?, Choices: (A) fill with tears, (B) glass over, (C) see work, (D) dry out, (E) fall out. Given the question 'Jon put drops in his eyes so that they wouldn't do what?', which among the choices fill with tears, glass over, see work, dry out fall out is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) dry out. A possible conditional statement for this question is: **If Jon put drops in his eyes, then they will not dry out.**"
+Josh was experiencing hunger so he took his keys and his wallet and did what?,"['went to restaurant', 'bring home fish', 'go to market', 'make bread', 'cook dinner']","Questions: Josh was experiencing hunger so he took his keys and his wallet and did what?, Choices: (A) went to restaurant, (B) bring home fish, (C) go to market, (D) make bread, (E) cook dinner. Given the question 'Josh was experiencing hunger so he took his keys and his wallet and did what?', which among the choices went to restaurant, bring home fish, go to market, make bread cook dinner is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) went to restaurant. A possible explanation is:
+
+If Josh was experiencing hunger, then he needed to eat something.
+If he took his keys and his wallet, then he was planning to go out.
+If he was planning to go out, then he had some options to get food.
+Among the choices, the most likely option to get food is (A) went to restaurant.
+Therefore, if Josh was experiencing hunger and he took his keys and his wallet, then he did (A) went to restaurant.
+
+"
+Jumping up and down over a rope is a form of what?,"['headaches', 'fun', 'getting warm', 'broken', 'exercise']","Questions: Jumping up and down over a rope is a form of what?, Choices: (A) headaches, (B) fun, (C) getting warm, (D) broken, (E) exercise. Given the question 'Jumping up and down over a rope is a form of what?', which among the choices headaches, fun, getting warm, broken exercise is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) exercise. A possible explanation is:
+
+If someone is jumping up and down over a rope, then they are doing a physical activity.
+If they are doing a physical activity, then they are using their muscles and burning calories.
+If they are using their muscles and burning calories, then they are improving their health and fitness.
+Among the choices, the term that describes improving health and fitness is (E) exercise.
+Therefore, if someone is jumping up and down over a rope, then they are doing a form of (E) exercise.
+
+"
+Justin couldn't dance long because he experienced what?,"['meeting people', 'having fun', 'fatigue', 'manual', 'become tired']","Questions: Justin couldn't dance long because he experienced what?, Choices: (A) meeting people, (B) having fun, (C) fatigue, (D) manual, (E) become tired. Given the question 'Justin couldn't dance long because he experienced what?', which among the choices meeting people, having fun, fatigue, manual become tired is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) become tired. A possible explanation is:
+
+If Justin was dancing, then he was doing a physical activity.
+If he was doing a physical activity, then he was using his energy and stamina.
+If he was using his energy and stamina, then he could not sustain it for a long time.
+Among the choices, the condition that describes not being able to sustain a physical activity for a long time is (E) become tired.
+Therefore, if Justin was dancing and he could not dance long, then he experienced (E) become tired.
+
+"
+Killing will result in what kind of trial?,"['criminal trial', 'guilty conscience', 'trial of the sword', 'going to jail', 'no longer live']","Questions: Killing will result in what kind of trial?, Choices: (A) criminal trial, (B) guilty conscience, (C) trial of the sword, (D) going to jail, (E) no longer live. Given the question 'Killing will result in what kind of trial?', which among the choices criminal trial, guilty conscience, trial of the sword, going to jail no longer live is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) criminal trial. A possible explanation is:
+
+If someone is killing, then they are committing a serious crime.
+If they are committing a serious crime, then they are breaking the law and violating the rights of others.
+If they are breaking the law and violating the rights of others, then they are subject to legal consequences and punishment.
+Among the choices, the process that determines the legal consequences and punishment for a serious crime is (A) criminal trial.
+Therefore, if someone is killing, then they will result in (A) criminal trial.
+
+"
+Knitting can cause what kind of illness in the hand?,"['your', 'have fun', 'shredded hands', 'arthritis', 'relaxation']","Questions: Knitting can cause what kind of illness in the hand?, Choices: (A) your, (B) have fun, (C) shredded hands, (D) arthritis, (E) relaxation. Given the question 'Knitting can cause what kind of illness in the hand?', which among the choices your, have fun, shredded hands, arthritis relaxation is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) arthritis. A possible explanation is:
+
+If someone is knitting, then they are using their hands and fingers repeatedly.
+If they are using their hands and fingers repeatedly, then they are putting stress and strain on their joints and tendons.
+If they are putting stress and strain on their joints and tendons, then they could develop inflammation and pain in their hand.
+Among the choices, the illness that describes inflammation and pain in the hand due to stress and strain is (D) arthritis.
+Therefore, if someone is knitting, then they can cause (D) arthritis in the hand.
+
+"
+Knitting for a long time can lead to what condition?,"['bleeding', 'have fun', 'relaxation', 'carpal tunnel syndrome', 'sore hands']","Questions: Knitting for a long time can lead to what condition?, Choices: (A) bleeding, (B) have fun, (C) relaxation, (D) carpal tunnel syndrome, (E) sore hands. Given the question 'Knitting for a long time can lead to what condition?', which among the choices bleeding, have fun, relaxation, carpal tunnel syndrome sore hands is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) carpal tunnel syndrome. A possible explanation is:
+
+If someone is knitting for a long time, then they are using their hands and fingers repeatedly for a prolonged period.
+If they are using their hands and fingers repeatedly for a prolonged period, then they are compressing the median nerve that runs through the wrist.
+If they are compressing the median nerve that runs through the wrist, then they could experience numbness, tingling, and weakness in the hand.
+Among the choices, the condition that describes numbness, tingling, and weakness in the hand due to compression of the median nerve is (D) carpal tunnel syndrome.
+Therefore, if someone is knitting for a long time, then they can lead to (D) carpal tunnel syndrome.
+
+"
+Knitting with a group of friends is a great way to do what?,"['relaxation', 'carpal tunnel syndrome', 'talk', 'have fun', 'bleeding']","Questions: Knitting with a group of friends is a great way to do what?, Choices: (A) relaxation, (B) carpal tunnel syndrome, (C) talk, (D) have fun, (E) bleeding. Given the question 'Knitting with a group of friends is a great way to do what?', which among the choices relaxation, carpal tunnel syndrome, talk, have fun bleeding is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) have fun. A possible explanation is:
+
+If someone is knitting with a group of friends, then they are doing a hobby that they enjoy with people that they like.
+If they are doing a hobby that they enjoy with people that they like, then they are having a positive and pleasant experience.
+If they are having a positive and pleasant experience, then they are feeling happy and satisfied.
+Among the choices, the term that describes feeling happy and satisfied is (D) have fun.
+Therefore, if someone is knitting with a group of friends, then they are doing a great way to (D) have fun.
+
+"
+LEds  are commonly found on kehyboards and other what?,"['television', 'electronic devices', 'pc board', 'electrical machine', 'dashboard']","Questions: LEds  are commonly found on kehyboards and other what?, Choices: (A) television, (B) electronic devices, (C) pc board, (D) electrical machine, (E) dashboard. Given the question 'LEds  are commonly found on kehyboards and other what?', which among the choices television, electronic devices, pc board, electrical machine dashboard is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) electronic devices. A possible explanation is:
+
+If something is an LED, then it is a light-emitting diode that produces light when an electric current passes through it.
+If something produces light when an electric current passes through it, then it is a component that can be used for illumination or display purposes.
+If something can be used for illumination or display purposes, then it can be found on various devices that use electricity and have lights or screens.
+Among the choices, the term that describes devices that use electricity and have lights or screens is (B) electronic devices.
+Therefore, if something is an LED, then it is commonly found on (B) electronic devices.
+
+"
+Laddie owned a dentist office.  It was the only dentist office in the area.  Where might Laddie live?,"['dental office', 'town', 'main street', 'patient', 'office building']","Questions: Laddie owned a dentist office.  It was the only dentist office in the area.  Where might Laddie live?, Choices: (A) dental office, (B) town, (C) main street, (D) patient, (E) office building. Given the question 'Laddie owned a dentist office.  It was the only dentist office in the area.  Where might Laddie live?', which among the choices dental office, town, main street, patient office building is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) town. A possible explanation is:
+
+If Laddie owned a dentist office, then he was a dentist who provided dental services to his clients.
+If he was the only dentist office in the area, then he had no competition and a large demand for his services.
+If he had no competition and a large demand for his services, then he could make a lot of money and afford a good place to live.
+Among the choices, the place that is most likely to have a large area, no competition, and a good place to live is (B) town.
+Therefore, if Laddie owned a dentist office and it was the only dentist office in the area, then he might live in a (B) town.
+
+"
+Lance loved playing simulations on his computer.  He spent his time building an entire what?,"['university', 'large city', 'mit', 'post office', 'paper']","Questions: Lance loved playing simulations on his computer.  He spent his time building an entire what?, Choices: (A) university, (B) large city, (C) mit, (D) post office, (E) paper. Given the question 'Lance loved playing simulations on his computer.  He spent his time building an entire what?', which among the choices university, large city, mit, post office paper is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) large city. A possible explanation is:
+
+If Lance loved playing simulations on his computer, then he was interested in creating and controlling virtual environments and scenarios.
+If he spent his time building an entire something, then he was working on a large and complex project that required a lot of creativity and detail.
+If he was working on a large and complex project that required a lot of creativity and detail, then he was likely to choose something that had a lot of variety and challenge.
+Among the choices, the thing that has a lot of variety and challenge in terms of creating and controlling a virtual environment is (B) large city.
+Therefore, if Lance loved playing simulations on his computer and he spent his time building an entire something, then he was building an entire (B) large city."
+Lance owns a vineyard.  To make grapes he needs plenty of what?,"['deserts', 'shops', 'sunshine', 'kitchen', 'terrain']","Questions: Lance owns a vineyard.  To make grapes he needs plenty of what?, Choices: (A) deserts, (B) shops, (C) sunshine, (D) kitchen, (E) terrain. Given the question 'Lance owns a vineyard.  To make grapes he needs plenty of what?', which among the choices deserts, shops, sunshine, kitchen terrain is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) sunshine. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If Lance owns a vineyard, then he needs plenty of sunshine.** This is because sunshine is essential for the growth of grapes, and a vineyard is a place where grapes are grown.
+
+"
+Lance spotted a wet beaver in the river.  Where might have lance been?,"['dictionary', 'books', 'australia', 'seaside', 'countryside']","Questions: Lance spotted a wet beaver in the river.  Where might have lance been?, Choices: (A) dictionary, (B) books, (C) australia, (D) seaside, (E) countryside. Given the question 'Lance spotted a wet beaver in the river.  Where might have lance been?', which among the choices dictionary, books, australia, seaside countryside is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) countryside. A possible conditional statement for this question is: **If Lance spotted a wet beaver in the river, then he might have been in the countryside.** This is because beavers are semi-aquatic animals that live in wooded areas near water, and the countryside is a rural area that typically has more natural habitats than urban areas.
+
+"
+Large fluffy clouds do what to people who watch them?,"['blanket', 'cause rain to fall', 'awe inspiring', 'rain water', 'bring rain']","Questions: Large fluffy clouds do what to people who watch them?, Choices: (A) blanket, (B) cause rain to fall, (C) awe inspiring, (D) rain water, (E) bring rain. Given the question 'Large fluffy clouds do what to people who watch them?', which among the choices blanket, cause rain to fall, awe inspiring, rain water bring rain is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) awe inspiring. A possible conditional statement for this question is: **If large fluffy clouds are in the sky, then they can be awe inspiring to people who watch them.** This is because large fluffy clouds can have various shapes and colors that can spark the imagination and admiration of the viewers.
+
+"
+Lars Ulrich might not be happy if your borrow a song from what?,"['store', 'record', 'musical', 'jukebox', 'napster']","Questions: Lars Ulrich might not be happy if your borrow a song from what?, Choices: (A) store, (B) record, (C) musical, (D) jukebox, (E) napster. Given the question 'Lars Ulrich might not be happy if your borrow a song from what?', which among the choices store, record, musical, jukebox napster is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) napster. A possible conditional statement for this question is: **If you borrow a song from napster, then Lars Ulrich might not be happy.** This is because Lars Ulrich is the drummer of the metal band Metallica, and he was one of the most vocal opponents of napster, a file-sharing service that allowed users to download music for free, which he considered to be piracy and theft.
+
+"
+Lawyers often lease where?,"['courtroom', 'sign documents', 'apartments', 'work', 'office building']","Questions: Lawyers often lease where?, Choices: (A) courtroom, (B) sign documents, (C) apartments, (D) work, (E) office building. Given the question 'Lawyers often lease where?', which among the choices courtroom, sign documents, apartments, work office building is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) office building. A possible conditional statement for this question is: **If lawyers work in a city, then they often lease an office building.** This is because lawyers need a professional space to meet with clients, conduct research, and prepare cases, and office buildings are common types of commercial real estate that can provide such facilities.
+
+"
+Learning about science can cause what emotion?,"['smiles', 'feeling hot', 'invent', 'excitement', 'frustration']","Questions: Learning about science can cause what emotion?, Choices: (A) smiles, (B) feeling hot, (C) invent, (D) excitement, (E) frustration. Given the question 'Learning about science can cause what emotion?', which among the choices smiles, feeling hot, invent, excitement frustration is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) excitement. A possible conditional statement for this question is: **If you learn about science, then you can feel excitement.** This is because science is the study of the natural world and its phenomena, and learning about it can stimulate your curiosity, interest, and wonder.
+
+"
+Learning usually leads to greater what?,"['get to know', 'gain knowledge', 'intelligence', 'education', 'gaining knowledge']","Questions: Learning usually leads to greater what?, Choices: (A) get to know, (B) gain knowledge, (C) intelligence, (D) education, (E) gaining knowledge. Given the question 'Learning usually leads to greater what?', which among the choices get to know, gain knowledge, intelligence, education gaining knowledge is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) intelligence. A possible conditional statement for this question is: **If you learn new things, then you can increase your intelligence.** This is because intelligence is the ability to acquire and apply knowledge and skills, and learning is the process of doing so.
+
+"
+Letters are sometimes delivered by hand through one of these.,"['mail box', 'suitcase', 'front door', 'bowl', 'post office']","Questions: Letters are sometimes delivered by hand through one of these., Choices: (A) mail box, (B) suitcase, (C) front door, (D) bowl, (E) post office. Given the question 'Letters are sometimes delivered by hand through one of these.', which among the choices mail box, suitcase, front door, bowl post office is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) mail box. A possible conditional statement for this question is: **If letters are delivered by hand, then they can go through a mail box.** This is because a mail box is a receptacle for receiving mail, and delivering by hand is one of the methods of sending mail.
+
+"
+Light from the sun goes past earth and becomes weaker as it spreads out into the what/,"['a locked room', 'attic', 'desk', 'universe', 'ocean']","Questions: Light from the sun goes past earth and becomes weaker as it spreads out into the what/, Choices: (A) a locked room, (B) attic, (C) desk, (D) universe, (E) ocean. Given the question 'Light from the sun goes past earth and becomes weaker as it spreads out into the what/', which among the choices a locked room, attic, desk, universe ocean is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) universe. A possible conditional statement for this question is: **If light from the sun goes past earth, then it becomes weaker as it spreads out into the universe.** This is because the universe is the totality of space and everything in it, and light is a form of electromagnetic radiation that travels in waves and loses intensity as it expands.
+
+"
+Light is what when trying to read?,"['heavy', 'forceful', 'unimportant', 'crucial', 'cumbersome']","Questions: Light is what when trying to read?, Choices: (A) heavy, (B) forceful, (C) unimportant, (D) crucial, (E) cumbersome. Given the question 'Light is what when trying to read?', which among the choices heavy, forceful, unimportant, crucial cumbersome is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) crucial. A possible conditional statement for this question is: **If you want to read, then light is crucial.** This is because light is necessary for vision, and reading is an activity that involves seeing and interpreting written symbols."
+Lighting a match in a dark tunnel is most likely for what?,"['starting fire', 'illumination', 'heat', 'make fire', 'frustration']","Questions: Lighting a match in a dark tunnel is most likely for what?, Choices: (A) starting fire, (B) illumination, (C) heat, (D) make fire, (E) frustration. Given the question 'Lighting a match in a dark tunnel is most likely for what?', which among the choices starting fire, illumination, heat, make fire frustration is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) illumination. My reasoning is: If someone is in a dark tunnel, then they might want to see where they are going or what is around them. Therefore, lighting a match is most likely for illumination.
+
+"
+Lilly enjoyed watching films before bed. They were her favorite form of what?,"['falling asleep', 'fatigue', 'crying', 'entertainment', 'fall asleep']","Questions: Lilly enjoyed watching films before bed. They were her favorite form of what?, Choices: (A) falling asleep, (B) fatigue, (C) crying, (D) entertainment, (E) fall asleep. Given the question 'Lilly enjoyed watching films before bed. They were her favorite form of what?', which among the choices falling asleep, fatigue, crying, entertainment fall asleep is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) entertainment. My reasoning is: If someone enjoys watching films before bed, then they probably find them fun or interesting. Therefore, films are their favorite form of entertainment.
+
+"
+Lilly owns the only kosher deli in the area.  She isn't in a heavily populated area.  Where might she live?,"['food court', 'jerusalem', 'new york city', 'jewish community', 'town']","Questions: Lilly owns the only kosher deli in the area.  She isn't in a heavily populated area.  Where might she live?, Choices: (A) food court, (B) jerusalem, (C) new york city, (D) jewish community, (E) town. Given the question 'Lilly owns the only kosher deli in the area.  She isn't in a heavily populated area.  Where might she live?', which among the choices food court, jerusalem, new york city, jewish community town is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) town. My reasoning is: If someone owns the only kosher deli in the area, then they must cater to a specific dietary preference. If they are not in a heavily populated area, then they are unlikely to be in a big city or a place with a large Jewish community. Therefore, they might live in a town.
+
+"
+Lilly wanted to go about procreating but what no desire to have sex with a man.  So she went to a clinic and bought something.  What did she buy?,"['partner', 'in bed', 'orgasm', 'cum', 'naked']","Questions: Lilly wanted to go about procreating but what no desire to have sex with a man.  So she went to a clinic and bought something.  What did she buy?, Choices: (A) partner, (B) in bed, (C) orgasm, (D) cum, (E) naked. Given the question 'Lilly wanted to go about procreating but what no desire to have sex with a man.  So she went to a clinic and bought something.  What did she buy?', which among the choices partner, in bed, orgasm, cum naked is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) cum. My reasoning is: If someone wants to go about procreating but has no desire to have sex with a man, then they need a source of sperm to fertilize their eggs. If they go to a clinic, then they can buy cum from a dono"
+Lily bought some new clothing at the mall. She put it in her car and took it somewhere. Where might she take it?,"['closet', 'yard sale', 'drawer', 'trunk', 'house']","Questions: Lily bought some new clothing at the mall. She put it in her car and took it somewhere. Where might she take it?, Choices: (A) closet, (B) yard sale, (C) drawer, (D) trunk, (E) house. Given the question 'Lily bought some new clothing at the mall. She put it in her car and took it somewhere. Where might she take it?', which among the choices closet, yard sale, drawer, trunk house is the correct answer? Explain your reasoning using conditional statements.
+",
+Linda wanted to talk to someone because she knew that she was doing bad stuff and that talking was the first step to doing what?,"['communicating with others', 'hurt feelings', 'changing behavior', 'dry mouth', 'communication']","Questions: Linda wanted to talk to someone because she knew that she was doing bad stuff and that talking was the first step to doing what?, Choices: (A) communicating with others, (B) hurt feelings, (C) changing behavior, (D) dry mouth, (E) communication. Given the question 'Linda wanted to talk to someone because she knew that she was doing bad stuff and that talking was the first step to doing what?', which among the choices communicating with others, hurt feelings, changing behavior, dry mouth communication is the correct answer? Explain your reasoning using conditional statements.
+",
+Lindy was a senior.  He lived with his children because he didn't want to go where?,"['republican party', ""old people's home"", 'office', 'park', 'high school or college']","Questions: Lindy was a senior.  He lived with his children because he didn't want to go where?, Choices: (A) republican party, (B) old people's home, (C) office, (D) park, (E) high school or college. Given the question 'Lindy was a senior.  He lived with his children because he didn't want to go where?', which among the choices republican party, old people's home, office, park high school or college is the correct answer? Explain your reasoning using conditional statements.
+",
+Lips are found on a person's what?,"['body', 'knee', 'motion', 'faces', 'human face']","Questions: Lips are found on a person's what?, Choices: (A) body, (B) knee, (C) motion, (D) faces, (E) human face. Given the question 'Lips are found on a person's what?', which among the choices body, knee, motion, faces human face is the correct answer? Explain your reasoning using conditional statements.
+",
+Lisa was driving down the highway when she saw a billboard telling her that she was near the border.  Where might she be?,"['street', 'in the usa', 'texas', 'every city', 'countryside']","Questions: Lisa was driving down the highway when she saw a billboard telling her that she was near the border.  Where might she be?, Choices: (A) street, (B) in the usa, (C) texas, (D) every city, (E) countryside. Given the question 'Lisa was driving down the highway when she saw a billboard telling her that she was near the border.  Where might she be?', which among the choices street, in the usa, texas, every city countryside is the correct answer? Explain your reasoning using conditional statements.
+",
+Litter collects where when it's thrown out of a car?,"['ground', 'highways', 'roadsides', 'park', 'street corner']","Questions: Litter collects where when it's thrown out of a car?, Choices: (A) ground, (B) highways, (C) roadsides, (D) park, (E) street corner. Given the question 'Litter collects where when it's thrown out of a car?', which among the choices ground, highways, roadsides, park street corner is the correct answer? Explain your reasoning using conditional statements.
+",r
+Little cameras in the car made doing what easier?,"['technical difficulties', 'heat up', 'carpooler', 'set off', 'back up']","Questions: Little cameras in the car made doing what easier?, Choices: (A) technical difficulties, (B) heat up, (C) carpooler, (D) set off, (E) back up. Given the question 'Little cameras in the car made doing what easier?', which among the choices technical difficulties, heat up, carpooler, set off back up is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) back up**. Little cameras in the car made doing what easier? If the car has little cameras, then it can show the driver what is behind the car. This can make it easier to back up without hitting anything. A conditional statement that explains this is: **If the car has little cameras, then it can make backing up easier.**
+
+"
+Little sarah didn't think that anyone should be kissing boys.  She thought that boys had what?,"['arousal', 'disease', 'sweet', 'halatosis', 'cooties']","Questions: Little sarah didn't think that anyone should be kissing boys.  She thought that boys had what?, Choices: (A) arousal, (B) disease, (C) sweet, (D) halatosis, (E) cooties. Given the question 'Little sarah didn't think that anyone should be kissing boys.  She thought that boys had what?', which among the choices arousal, disease, sweet, halatosis cooties is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(E) cooties**. Little sarah didn't think that anyone should be kissing boys. She thought that boys had what? Cooties is a slang term for imaginary germs that children use to avoid contact with the opposite sex. Little Sarah might have thought that boys had cooties because she was too young to understand romance or sexuality. A conditional statement that explains this is: **If Little Sarah thinks that boys have cooties, then she will not want to kiss them.**
+
+"
+Living life is about good and bad experiences and doing what from them?,"['make love', 'get married', 'have children', 'learning', 'repeating']","Questions: Living life is about good and bad experiences and doing what from them?, Choices: (A) make love, (B) get married, (C) have children, (D) learning, (E) repeating. Given the question 'Living life is about good and bad experiences and doing what from them?', which among the choices make love, get married, have children, learning repeating is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) learning**. Living life is about good and bad experiences and doing what from them? Learning is the process of acquiring new knowledge or skills from experiences. Living life is about learning from both good and bad experiences, as they can teach us valuable lessons or help us grow as a person. A conditional statement that explains this is: **If we live life, then we will learn from our experiences.**
+
+"
+Lizards are able to regrow what if it is cut off?,"['bones', 'four legs', '4 legs', 'backbone', 'tail']","Questions: Lizards are able to regrow what if it is cut off?, Choices: (A) bones, (B) four legs, (C) 4 legs, (D) backbone, (E) tail. Given the question 'Lizards are able to regrow what if it is cut off?', which among the choices bones, four legs, 4 legs, backbone tail is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) tail**. Lizards are able to regrow what if it is cut off? Lizards have the ability to regrow their tails if they are cut off or detached. This is a defense mechanism that allows them to escape from predators. The tail can regenerate over time, but it may not look exactly like the original one. A conditional statement that explains this is: **If a lizard's tail is cut off, then it can regrow it.**
+
+"
+Loraine didn't like drinking alcohol. She didn't get a buzz from it.  What might she have experienced when drinking?,"['intoxication', 'toxicity', 'getting laid', 'sickness', 'nausea']","Questions: Loraine didn't like drinking alcohol. She didn't get a buzz from it.  What might she have experienced when drinking?, Choices: (A) intoxication, (B) toxicity, (C) getting laid, (D) sickness, (E) nausea. Given the question 'Loraine didn't like drinking alcohol. She didn't get a buzz from it.  What might she have experienced when drinking?', which among the choices intoxication, toxicity, getting laid, sickness nausea is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) nausea**. Loraine didn't like drinking alcohol. She didn't get a buzz from it. What might she have experienced when drinking? Nausea is a feeling of sickness or discomfort in the stomach that can make one feel like vomiting. Loraine might have experienced nausea when drinking alcohol, as alcohol can irritate the stomach lining or cause dehydration. She didn't get a buzz from it, which means she didn't feel any positive effects of alcohol, such as relaxation or euphoria. A conditional statement that explains this is: **If Loraine drinks alcohol, then she might feel nausea.**
+
+"
+Losing weight may mean fat is going through what?,"['weight loss', 'death', 'shrinking', 'decomposition', 'hunger']","Questions: Losing weight may mean fat is going through what?, Choices: (A) weight loss, (B) death, (C) shrinking, (D) decomposition, (E) hunger. Given the question 'Losing weight may mean fat is going through what?', which among the choices weight loss, death, shrinking, decomposition hunger is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) shrinking**. Losing weight may mean fat is going through what? Shrinking is the process of becoming smaller in size or volume. Losing weight may mean fat is going through shrinking, as fat cells can reduce their size when they release stored energy. This can result in a lower body mass or a slimmer appearance. A conditional statement that explains this is: **If fat is going through shrinking, then weight loss may occur.**
+
+"
+Louisiana was a confederate state in the what?,"['deep south', 'united states', ""98 of world's crayfish"", 'revolutionary war', 'gulf states']","Questions: Louisiana was a confederate state in the what?, Choices: (A) deep south, (B) united states, (C) 98 of world's crayfish, (D) revolutionary war, (E) gulf states. Given the question 'Louisiana was a confederate state in the what?', which among the choices deep south, united states, 98 of world's crayfish, revolutionary war gulf states is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) deep south**. Louisiana was a confederate state in the what? The deep south is a term that refers to the states in the southeastern region of the United States that seceded from the Union and formed the Confederate States of America during the American Civil War. Louisiana was one of these states, along with Alabama, Arkansas, Florida, Georgia, Mississippi, South Carolina, and Texas. A conditional statement that explains this is: **If a state was in the deep south, then it was a confederate state.**
+
+"
+Love leads people to fully do what?,"['live life', 'wait for the inevitable', 'entertain', 'please parents', 'wait for']","Questions: Love leads people to fully do what?, Choices: (A) live life, (B) wait for the inevitable, (C) entertain, (D) please parents, (E) wait for. Given the question 'Love leads people to fully do what?', which among the choices live life, wait for the inevitable, entertain, please parents wait for is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(A) live life**. Love leads people to fully do what? Live life is a phrase that means to enjoy or make the most of one's life. Love can lead people to fully live life, as love can inspire, motivate, or enrich one's life. Love can also make people happier, healthier, or more fulfilled. A conditional statement that explains this is: **If love leads people, then they will fully live life.**
+
+"
+Lying can cause what when trying to find accurate information?,"['distrust', 'hurt feelings', 'confusion', 'good things', 'unhappiness']","Questions: Lying can cause what when trying to find accurate information?, Choices: (A) distrust, (B) hurt feelings, (C) confusion, (D) good things, (E) unhappiness. Given the question 'Lying can cause what when trying to find accurate information?', which among the choices distrust, hurt feelings, confusion, good things unhappiness is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) confusion**. Lying can cause what when trying to find accurate information? Confusion is a state of being unclear, uncertain, or perplexed. Lying can cause confusion when trying to find accurate information, as lying can distort, conceal, or contradict the truth. Lying can also make it harder to trust or verify the source of information. A conditional statement that explains this is: **If lying occurs, then confusion can result.**
+
+"
+Lying to a spouse is likely to make them?,"['unhappiness', 'happy', 'confusion', 'good things', 'being fired']","Questions: Lying to a spouse is likely to make them?, Choices: (A) unhappiness, (B) happy, (C) confusion, (D) good things, (E) being fired. Given the question 'Lying to a spouse is likely to make them?', which among the choices unhappiness, happy, confusion, good things being fired is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) unhappiness**. Lying to a spouse is likely to make them? Unhappiness is a state of being sad, dissatisfied, or miserable. Lying to a spouse is likely to make them unhappy, as lying can damage, betray, or hurt the relationship. Lying can also cause guilt, resentment, or anger. A conditional statement that explains this is: **If lying to a spouse happens, then unhappiness is likely.**
+
+I hope this helps you with your questions. If you have any more questions, feel free to ask me. 😊"
+Mable loved horses.  She'd do what with them every time she visited the farm?,"['clean', 'play', 'eat grass', 'dominated', 'kept in barn stalls']","Questions: Mable loved horses.  She'd do what with them every time she visited the farm?, Choices: (A) clean, (B) play, (C) eat grass, (D) dominated, (E) kept in barn stalls. Given the question 'Mable loved horses.  She'd do what with them every time she visited the farm?', which among the choices clean, play, eat grass, dominated kept in barn stalls is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) play. A possible explanation is:
+
+```
+If Mable loved horses, then she would enjoy spending time with them.
+If she enjoyed spending time with them, then she would do something fun with them.
+If she did something fun with them, then she would play with them.
+Therefore, if Mable loved horses, then she would play with them.
+```
+
+"
+Malls are where you go shopping. What else do you do at malls?,"['purchasing', 'spending money', 'meeting friends', 'walking', 'compare prices']","Questions: Malls are where you go shopping. What else do you do at malls?, Choices: (A) purchasing, (B) spending money, (C) meeting friends, (D) walking, (E) compare prices. Given the question 'Malls are where you go shopping. What else do you do at malls?', which among the choices purchasing, spending money, meeting friends, walking compare prices is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) meeting friends. A possible explanation is:
+
+```
+If malls are where you go shopping, then they are places where you can buy things.
+If they are places where you can buy things, then they are also places where you can meet people.
+If they are places where you can meet people, then they are places where you can meet friends.
+Therefore, if malls are where you go shopping, then they are places where you can meet friends.
+```
+
+"
+Man probably invented sports because of its instinctual need to be what?,"['recreational', 'competitive', 'good looking', 'fun', 'violent']","Questions: Man probably invented sports because of its instinctual need to be what?, Choices: (A) recreational, (B) competitive, (C) good looking, (D) fun, (E) violent. Given the question 'Man probably invented sports because of its instinctual need to be what?', which among the choices recreational, competitive, good looking, fun violent is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) competitive. A possible explanation is:
+
+```
+If man invented sports, then he created rules and goals for physical activities.
+If he created rules and goals for physical activities, then he wanted to challenge himself and others.
+If he wanted to challenge himself and others, then he had an instinctual need to be competitive.
+Therefore, if man invented sports, then he had an instinctual need to be competitive.
+```
+
+"
+Mandy was naturally entertaining.  She enjoyed making people feel good and hoped that she could bring lasting what to them?,"['happiness', 'laughter', 'fulfillment', 'like', 'infection']","Questions: Mandy was naturally entertaining.  She enjoyed making people feel good and hoped that she could bring lasting what to them?, Choices: (A) happiness, (B) laughter, (C) fulfillment, (D) like, (E) infection. Given the question 'Mandy was naturally entertaining.  She enjoyed making people feel good and hoped that she could bring lasting what to them?', which among the choices happiness, laughter, fulfillment, like infection is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) laughter. A possible explanation is:
+
+```
+If Mandy was naturally entertaining, then she had a talent for making people laugh.
+If she had a talent for making people laugh, then she enjoyed making people feel good.
+If she enjoyed making people feel good, then she hoped that she could bring lasting laughter to them.
+Therefore, if Mandy was naturally entertaining, then she hoped that she could bring lasting laughter to them.
+```
+
+"
+Mandy was watching television because she had a long day.  She could do much else because she was experiencing what?,"['joy', 'addiction', 'relaxation', 'fatigue', 'headaches']","Questions: Mandy was watching television because she had a long day.  She could do much else because she was experiencing what?, Choices: (A) joy, (B) addiction, (C) relaxation, (D) fatigue, (E) headaches. Given the question 'Mandy was watching television because she had a long day.  She could do much else because she was experiencing what?', which among the choices joy, addiction, relaxation, fatigue headaches is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) fatigue. A possible explanation is:
+
+```
+If Mandy was watching television, then she was not doing anything active.
+If she was not doing anything active, then she was resting.
+If she was resting, then she was tired.
+If she was tired, then she was experiencing fatigue.
+Therefore, if Mandy was watching television, then she was experiencing fatigue.
+```
+
+"
+Manny broke his triangle.  Where might he go to get a new one?,"['music shop', 'trigonometry', 'science class', 'math book', 'music room']","Questions: Manny broke his triangle.  Where might he go to get a new one?, Choices: (A) music shop, (B) trigonometry, (C) science class, (D) math book, (E) music room. Given the question 'Manny broke his triangle.  Where might he go to get a new one?', which among the choices music shop, trigonometry, science class, math book music room is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) music shop. A possible explanation is:
+
+```
+If Manny broke his triangle, then he damaged a musical instrument.
+If he damaged a musical instrument, then he needed a new one.
+If he needed a new one, then he had to buy one.
+If he had to buy one, then he had to go to a music shop.
+Therefore, if Manny broke his triangle, then he had to go to a music shop.
+```
+
+"
+Many containers full of goods are unloaded where after their long sea journey,"['port', 'cargo ship', 'refrigerator', 'food', 'lorry']","Questions: Many containers full of goods are unloaded where after their long sea journey, Choices: (A) port, (B) cargo ship, (C) refrigerator, (D) food, (E) lorry. Given the question 'Many containers full of goods are unloaded where after their long sea journey', which among the choices port, cargo ship, refrigerator, food lorry is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) port. A possible explanation is:
+
+```
+If many containers full of goods are unloaded, then they are taken off a vehicle.
+If they are taken off a vehicle, then they are transported by a vehicle.
+If they are transported by a vehicle, then they are moved from one place to another.
+If they are moved from one place to another, then they have a destination.
+If they have a long sea journey, then their destination is a port.
+Therefore, if many containers full of goods are unloaded after their long sea journey, then they are unloaded at a port.
+```
+
+"
+Many different materials are needed to make what dwelling for people?,"['construction', 'house', 'anything', 'dwelling', 'fabric store']","Questions: Many different materials are needed to make what dwelling for people?, Choices: (A) construction, (B) house, (C) anything, (D) dwelling, (E) fabric store. Given the question 'Many different materials are needed to make what dwelling for people?', which among the choices construction, house, anything, dwelling fabric store is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) house. A possible explanation is:
+
+```
+If many different materials are needed, then they are used for a purpose.
+If they are used for a purpose, then they are combined to form something.
+If they are combined to form something, then they create a structure.
+If they create a structure, then they make a dwelling for people.
+If they make a dwelling for people, then they make a house.
+Therefore, if many different materials are needed, then they are needed to make a house.
+```
+
+"
+Many examples of the stone arch have found that date back to what civilization?,"['foot', 'cathedral', 'ancient rome', 'building', 'my bathroom']","Questions: Many examples of the stone arch have found that date back to what civilization?, Choices: (A) foot, (B) cathedral, (C) ancient rome, (D) building, (E) my bathroom. Given the question 'Many examples of the stone arch have found that date back to what civilization?', which among the choices foot, cathedral, ancient rome, building my bathroom is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) ancient rome. A possible explanation is:
+
+```
+If many examples of the stone arch have been found, then they have been preserved for a long time.
+If they have been preserved for a long time, then they belong to a historical period.
+If they belong to a historical period, then they are associated with a civilization.
+If they are associated with a civilization, then they are attributed to a culture.
+If they are attributed to a culture, then they are related to ancient rome.
+Therefore, if many examples of the stone arch have been found, then they date back to ancient rome.
+```
+
+"
+Many grains of sand together form what?,"['eye', 'bathing suit', 'sand pile', 'clam', 'create pearl']","Questions: Many grains of sand together form what?, Choices: (A) eye, (B) bathing suit, (C) sand pile, (D) clam, (E) create pearl. Given the question 'Many grains of sand together form what?', which among the choices eye, bathing suit, sand pile, clam create pearl is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) sand pile. A possible explanation is:
+
+```
+If many grains of sand are together, then they are close to each other.
+If they are close to each other, then they form a shape.
+If they form a shape, then they create an object.
+If they create an object, then they make a sand pile.
+Therefore, if many grains of sand are together, then they form a sand pile.
+```"
+Many people complain after jumping up and down of which dizziness and?,"['exercise', 'get tired', 'cramps', 'headaches', 'exhaustion']","Questions: Many people complain after jumping up and down of which dizziness and?, Choices: (A) exercise, (B) get tired, (C) cramps, (D) headaches, (E) exhaustion. Given the question 'Many people complain after jumping up and down of which dizziness and?', which among the choices exercise, get tired, cramps, headaches exhaustion is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) headaches. A possible explanation is: If people jump up and down, then they may experience dizziness and headaches. Headaches are a common symptom of dizziness caused by changes in blood pressure or inner ear problems.
+
+"
+Many people have a mailbox where near the road?,"['downtown area', 'front yard', 'porch', 'basement', 'hardware store']","Questions: Many people have a mailbox where near the road?, Choices: (A) downtown area, (B) front yard, (C) porch, (D) basement, (E) hardware store. Given the question 'Many people have a mailbox where near the road?', which among the choices downtown area, front yard, porch, basement hardware store is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) front yard. A possible explanation is: If people have a mailbox, then they usually place it near the road in their front yard. Front yard is a common location for mailboxes because it is convenient for mail carriers and homeowners to access.
+
+"
+Many people take public transportation and can be found waiting where?,"['in the cricket ground', 'surface of earth', 'train station', 'bus depot', 'football stadium']","Questions: Many people take public transportation and can be found waiting where?, Choices: (A) in the cricket ground, (B) surface of earth, (C) train station, (D) bus depot, (E) football stadium. Given the question 'Many people take public transportation and can be found waiting where?', which among the choices in the cricket ground, surface of earth, train station, bus depot football stadium is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) train station. A possible explanation is: If people take public transportation, then they can be found waiting at a train station. Train station is a common place for public transportation because it connects different areas and modes of transport.
+
+"
+Many powers that be are fighting inflation to avoid what?,"['not noticeable', 'economic instability', 'war', 'problems', 'rising interest rates']","Questions: Many powers that be are fighting inflation to avoid what?, Choices: (A) not noticeable, (B) economic instability, (C) war, (D) problems, (E) rising interest rates. Given the question 'Many powers that be are fighting inflation to avoid what?', which among the choices not noticeable, economic instability, war, problems rising interest rates is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) economic instability. A possible explanation is: If inflation is high, then it may cause economic instability. Economic instability is a negative consequence of inflation because it reduces the purchasing power of money and creates uncertainty for businesses and consumers.
+
+"
+Many prison movies take place at what famous prison?,"['forest', 'city', 'countryside', 'america', 'alcatraz']","Questions: Many prison movies take place at what famous prison?, Choices: (A) forest, (B) city, (C) countryside, (D) america, (E) alcatraz. Given the question 'Many prison movies take place at what famous prison?', which among the choices forest, city, countryside, america alcatraz is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) alcatraz. A possible explanation is: If a prison movie takes place at a famous prison, then it is likely to be alcatraz. Alcatraz is a famous prison because it was a maximum-security facility that housed notorious criminals and escape attempts.
+
+"
+Many random citizens would use an entrance hall to enter this sort of building. What is it?,"['school', 'public building', 'large building', 'auditorum', 'convention center']","Questions: Many random citizens would use an entrance hall to enter this sort of building. What is it?, Choices: (A) school, (B) public building, (C) large building, (D) auditorum, (E) convention center. Given the question 'Many random citizens would use an entrance hall to enter this sort of building. What is it?', which among the choices school, public building, large building, auditorum convention center is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) public building. A possible explanation is: If random citizens use an entrance hall to enter a building, then it is probably a public building. Public building is a general term for a building that is open to the public and serves a specific function, such as a museum, library, or courthouse.
+
+"
+Many sea anemones live in what group of tiny marine animals?,"['intertidal zone', 'florida keys', 'flower bed', 'coral sea', 'cool']","Questions: Many sea anemones live in what group of tiny marine animals?, Choices: (A) intertidal zone, (B) florida keys, (C) flower bed, (D) coral sea, (E) cool. Given the question 'Many sea anemones live in what group of tiny marine animals?', which among the choices intertidal zone, florida keys, flower bed, coral sea cool is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) coral sea. A possible explanation is: If sea anemones live in a group of tiny marine animals, then they are part of the coral sea. Coral sea is a term for a marine ecosystem that consists of coral reefs and the animals that live in them, such as sea anemones, fish, and crustaceans.
+
+"
+Many women carry a lot of stuff in their purse which is also known as a what?,"['bulk bag', 'handbag', 'pocket', 'department store', 'home']","Questions: Many women carry a lot of stuff in their purse which is also known as a what?, Choices: (A) bulk bag, (B) handbag, (C) pocket, (D) department store, (E) home. Given the question 'Many women carry a lot of stuff in their purse which is also known as a what?', which among the choices bulk bag, handbag, pocket, department store home is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) handbag. A possible explanation is: If women carry a lot of stuff in their purse, then it is also known as a handbag. Handbag is a synonym for purse that refers to a large bag that women use to carry personal items, such as wallet, phone, keys, and cosmetics.
+
+"
+Marcy couldn't cry.  She didn't want her parents to know that she was sad.  She hid her sobs by doing what?,"['shed tears', 'be happy', 'laughing', 'smile', 'talk']","Questions: Marcy couldn't cry.  She didn't want her parents to know that she was sad.  She hid her sobs by doing what?, Choices: (A) shed tears, (B) be happy, (C) laughing, (D) smile, (E) talk. Given the question 'Marcy couldn't cry.  She didn't want her parents to know that she was sad.  She hid her sobs by doing what?', which among the choices shed tears, be happy, laughing, smile talk is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) laughing. A possible explanation is: If Marcy couldn't cry and wanted to hide her sobs, then she would try to laugh. Laughing is a way of masking sadness by pretending to be happy or amused.
+
+"
+Mario was away for the first time.  He was excited when he met the what?,"['at home', 'present', 'being here', 'home team', 'family']","Questions: Mario was away for the first time.  He was excited when he met the what?, Choices: (A) at home, (B) present, (C) being here, (D) home team, (E) family. Given the question 'Mario was away for the first time.  He was excited when he met the what?', which among the choices at home, present, being here, home team family is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) family. A possible explanation is: If Mario was away for the first time and was excited, then he would be happy to meet his family. Family is a group of people who are related by blood or marriage and who care for each other."
+Marmot's can be found in high places.  They have hands that they can use to get to the top of what?,"['outside', 'hill', 'jungle', 'rocky hillside', 'tree']","Questions: Marmot's can be found in high places.  They have hands that they can use to get to the top of what?, Choices: (A) outside, (B) hill, (C) jungle, (D) rocky hillside, (E) tree. Given the question 'Marmot's can be found in high places.  They have hands that they can use to get to the top of what?', which among the choices outside, hill, jungle, rocky hillside tree is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) rocky hillside**. Marmots are large rodents that live in mountainous regions, where they dig burrows and hibernate in winter. They have strong claws that help them climb on rocky slopes. A possible conditional statement is: `If a marmot wants to reach a high place, then it uses its hands to get to the top of a rocky hillside.`
+
+"
+Marmot's don't uisually live in buildings.They're most likely to be found where?,"['tree', 'rocky hillside', 'park', 'outside', 'vancouver island']","Questions: Marmot's don't uisually live in buildings.They're most likely to be found where?, Choices: (A) tree, (B) rocky hillside, (C) park, (D) outside, (E) vancouver island. Given the question 'Marmot's don't uisually live in buildings.They're most likely to be found where?', which among the choices tree, rocky hillside, park, outside vancouver island is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(B) rocky hillside**. As mentioned above, marmots prefer to live in mountainous areas with rocky terrain, where they can find shelter and food. They are not likely to live in trees, parks, or outside buildings, as these habitats are too exposed or unsuitable for them. Vancouver Island is a specific location that may or may not have marmots, depending on the elevation and climate. A possible conditional statement is: `If a marmot does not live in a building, then it is most likely to be found on a rocky hillside.`
+
+"
+Mary never allowed her animal friend to do what without a leash?,"['leave home', 'vomit', 'eating', 'hunt for food', 'fight for life']","Questions: Mary never allowed her animal friend to do what without a leash?, Choices: (A) leave home, (B) vomit, (C) eating, (D) hunt for food, (E) fight for life. Given the question 'Mary never allowed her animal friend to do what without a leash?', which among the choices leave home, vomit, eating, hunt for food fight for life is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) leave home**. Mary is a common name for a human, and humans often keep animals as pets. A leash is a device that attaches to an animal's collar or harness, and allows the human to control the animal's movement. Humans usually put leashes on their pets when they take them outside their homes, to prevent them from running away or getting into trouble. A possible conditional statement is: `If Mary has an animal friend, then she never allows it to leave home without a leash.`
+
+"
+Mary was singing because she wasn't happen and she wanted to do what?,"['being heard', 'sore throats', 'hoarse voice', 'change in mood', 'sad']","Questions: Mary was singing because she wasn't happen and she wanted to do what?, Choices: (A) being heard, (B) sore throats, (C) hoarse voice, (D) change in mood, (E) sad. Given the question 'Mary was singing because she wasn't happen and she wanted to do what?', which among the choices being heard, sore throats, hoarse voice, change in mood sad is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) change in mood**. Singing is an activity that involves producing musical sounds with the voice. People may sing for various reasons, such as expressing emotions, having fun, or performing. Mary was singing because she was not happy, and she wanted to do something that could make her feel better. Singing can change one's mood by releasing endorphins, reducing stress, or boosting confidence. A possible conditional statement is: `If Mary is not happy, then she sings to change her mood.`
+
+"
+Math competitions are for those who enjoy the subject or find it what?,"['difficult for students', 'fun', 'class', 'class', 'interesting']","Questions: Math competitions are for those who enjoy the subject or find it what?, Choices: (A) difficult for students, (B) fun, (C) class, (D) class, (E) interesting. Given the question 'Math competitions are for those who enjoy the subject or find it what?', which among the choices difficult for students, fun, class, class interesting is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) interesting**. Math competitions are contests that test one's mathematical skills and knowledge. They are usually organized by schools, universities, or organizations, and involve solving problems or answering questions. Math competitions are for those who enjoy the subject, or find it interesting, meaning that they are curious, fascinated, or intrigued by it. Math can be interesting for many reasons, such as its beauty, logic, applications, or challenges. A possible conditional statement is: `If someone enjoys math or finds it interesting, then they may participate in math competitions.`
+
+"
+Max looked for the onions so that he could  made a stew.  Where might he have looked?,"['market', 'pizza', 'refrigerator', 'servant', 'table']","Questions: Max looked for the onions so that he could  made a stew.  Where might he have looked?, Choices: (A) market, (B) pizza, (C) refrigerator, (D) servant, (E) table. Given the question 'Max looked for the onions so that he could  made a stew.  Where might he have looked?', which among the choices market, pizza, refrigerator, servant table is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) refrigerator**. Max is a common name for a human, and humans often cook food using various ingredients. Onions are a type of vegetable that have a pungent smell and taste, and are used in many dishes, such as stews. A stew is a dish that consists of meat and vegetables cooked slowly in liquid. Humans usually store onions in a refrigerator, which is a device that keeps food cold and fresh. A refrigerator is often found in a kitchen, which is a room where humans prepare and cook food. A possible conditional statement is: `If Max wants to make a stew with onions, then he looks for the onions in the refrigerator.`
+
+"
+Mercury building up in the bodies of certain fish can make them what?,"['toxic', 'uninhabitable', 'barren and airless', 'poisonous', 'obesity']","Questions: Mercury building up in the bodies of certain fish can make them what?, Choices: (A) toxic, (B) uninhabitable, (C) barren and airless, (D) poisonous, (E) obesity. Given the question 'Mercury building up in the bodies of certain fish can make them what?', which among the choices toxic, uninhabitable, barren and airless, poisonous obesity is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) toxic**. Mercury is a chemical element that is liquid at room temperature and has a silvery appearance. It is also a heavy metal that can accumulate in the bodies of certain fish, especially those that live in polluted waters or eat other contaminated fish. Mercury can make fish toxic, meaning that they are harmful or deadly to other organisms, including humans, that consume them. Mercury can cause various health problems, such as neurological damage, kidney failure, or birth defects. A possible conditional statement is: `If mercury builds up in the bodies of certain fish, then it makes them toxic.`
+
+"
+Mildew is a type of fungus you most often find where?,"['toenails', 'shower stall', 'mushroom', 'cave', 'basement']","Questions: Mildew is a type of fungus you most often find where?, Choices: (A) toenails, (B) shower stall, (C) mushroom, (D) cave, (E) basement. Given the question 'Mildew is a type of fungus you most often find where?', which among the choices toenails, shower stall, mushroom, cave basement is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) shower stall**. Mildew is a type of fungus that grows on damp or moist surfaces, and has a white or gray color. It is often found in bathrooms, where there is a lot of moisture and humidity. A shower stall is a part of a bathroom that is enclosed by walls or curtains, and has a shower head that sprays water. A shower stall is a common place where mildew can grow, as it is frequently wet and warm. A possible conditional statement is: `If there is mildew in a bathroom, then it is most often found in the shower stall.`
+
+"
+Mimicry is a skill parrots use to do what?,"['say words', 'outlive owners', 'learn to speak', 'talk with', 'to draw']","Questions: Mimicry is a skill parrots use to do what?, Choices: (A) say words, (B) outlive owners, (C) learn to speak, (D) talk with, (E) to draw. Given the question 'Mimicry is a skill parrots use to do what?', which among the choices say words, outlive owners, learn to speak, talk with to draw is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) say words**. Mimicry is a skill that involves imitating the sounds or actions of another organism. Parrots are a type of bird that have colorful feathers and a curved beak. Parrots are known for their ability to mimic human speech, as well as other noises, such as sirens, phones, or music. Parrots use mimicry to say words, meaning that they produce sounds that resemble the words spoken by humans. Parrots may say words for various reasons, such as communicating, learning, or entertaining. A possible conditional statement is: `If a parrot uses mimicry, then it can say words.`
+
+"
+Minerals can be found on what third rock from the sun?,"['nebraska', 'multivitamin', 'michigan', 'ore', 'earth']","Questions: Minerals can be found on what third rock from the sun?, Choices: (A) nebraska, (B) multivitamin, (C) michigan, (D) ore, (E) earth. Given the question 'Minerals can be found on what third rock from the sun?', which among the choices nebraska, multivitamin, michigan, ore earth is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(E) earth**. Minerals are natural substances that have a definite chemical composition and crystal structure. They are usually solid and inorganic, and can have various colors, shapes, and properties. Minerals can be found on earth, which is the third planet from the sun in the solar system. Earth has a rocky surface that is composed of various minerals, such as quartz, feldspar, or mica. Earth also has a core that is rich in iron and nickel, which are also minerals. A possible conditional statement is: `If a mineral is found on a planet, then it is most likely earth.`"
+Modesty is an important virtue.   An insufficient amount of it in the face of individuals of greater station may be interpreted as what?,"['extravagance', 'lack', 'impudence', 'boldness', 'immodesty']","Questions: Modesty is an important virtue.   An insufficient amount of it in the face of individuals of greater station may be interpreted as what?, Choices: (A) extravagance, (B) lack, (C) impudence, (D) boldness, (E) immodesty. Given the question 'Modesty is an important virtue.   An insufficient amount of it in the face of individuals of greater station may be interpreted as what?', which among the choices extravagance, lack, impudence, boldness immodesty is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) impudence. Impudence means being rude or disrespectful, especially to someone who is older or more important. Modesty is an important virtue, which means being humble and not showing off. An insufficient amount of modesty in the face of individuals of greater station may be interpreted as impudence, because it shows a lack of respect and deference. A possible conditional statement is: If a person is not modest enough, then they may be seen as impudent by others.
+
+"
+Mold on what will lead to a smelly room?,"['make-up kit', 'carpet', 'fridge', 'refrigerator', 'cellar']","Questions: Mold on what will lead to a smelly room?, Choices: (A) make-up kit, (B) carpet, (C) fridge, (D) refrigerator, (E) cellar. Given the question 'Mold on what will lead to a smelly room?', which among the choices make-up kit, carpet, fridge, refrigerator cellar is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) carpet. Mold is a type of fungus that grows in damp and dark places. Mold on any surface will lead to a smelly room, but carpet is more likely to retain moisture and dirt than other surfaces, making it more prone to mold growth. A possible conditional statement is: If there is mold on the carpet, then the room will smell bad.
+
+"
+Mom said that Sarah should stay in bed until she was able to go to school again..  What did mom say to Sarah when she tried to get up?,"[""you're sick"", 'were sick', 'more rest', 'rest more', 'get back under the covers']","Questions: Mom said that Sarah should stay in bed until she was able to go to school again..  What did mom say to Sarah when she tried to get up?, Choices: (A) you're sick, (B) were sick, (C) more rest, (D) rest more, (E) get back under the covers. Given the question 'Mom said that Sarah should stay in bed until she was able to go to school again..  What did mom say to Sarah when she tried to get up?', which among the choices you're sick, were sick, more rest, rest more get back under the covers is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) get back under the covers. Mom said that Sarah should stay in bed until she was able to go to school again, which means that Sarah was sick and needed rest. When Sarah tried to get up, mom would tell her to get back under the covers, because that would keep her warm and comfortable. A possible conditional statement is: If Sarah tries to get up, then mom will tell her to get back under the covers.
+
+"
+Most adult Americans split their time between home and what?,"['tent', 'work', 'apartment', 'the office', 'foreign']","Questions: Most adult Americans split their time between home and what?, Choices: (A) tent, (B) work, (C) apartment, (D) the office, (E) foreign. Given the question 'Most adult Americans split their time between home and what?', which among the choices tent, work, apartment, the office foreign is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) work. Most adult Americans split their time between home and work, which means that they have a job or a career that requires them to go to a specific place for a certain number of hours. Work is a common activity that most adults do, and it is often related to their income and lifestyle. A possible conditional statement is: If a person is an adult American, then they will spend some time at work.
+
+"
+Most dentist offices are found in what groups of homes and businesses?,"['street', 'suburb', 'city', 'hospital', 'town']","Questions: Most dentist offices are found in what groups of homes and businesses?, Choices: (A) street, (B) suburb, (C) city, (D) hospital, (E) town. Given the question 'Most dentist offices are found in what groups of homes and businesses?', which among the choices street, suburb, city, hospital town is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) city. Most dentist offices are found in cities, which are large and densely populated areas that have many homes and businesses. Cities have more people who need dental services, and more opportunities for dentists to establish their offices. A possible conditional statement is: If a place is a city, then it will have many dentist offices.
+
+"
+Most human hair is where?,"['mammals', 'legs', 'sink', 'arm', ""person's head""]","Questions: Most human hair is where?, Choices: (A) mammals, (B) legs, (C) sink, (D) arm, (E) person's head. Given the question 'Most human hair is where?', which among the choices mammals, legs, sink, arm person's head is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) person's head. Most human hair is on a person's head, which is the part of the body that contains the brain and the face. Hair is a type of protein that grows from the skin, and it serves various functions such as protection, insulation, and decoration. A possible conditional statement is: If a part of the body is a person's head, then it will have most of the human hair.
+
+"
+Most lizards achieve locomotion using what?,"['four legs', 'bones', 'tail', 'change color of skin', 'backbone']","Questions: Most lizards achieve locomotion using what?, Choices: (A) four legs, (B) bones, (C) tail, (D) change color of skin, (E) backbone. Given the question 'Most lizards achieve locomotion using what?', which among the choices four legs, bones, tail, change color of skin backbone is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) four legs. Most lizards achieve locomotion using four legs, which are appendages that extend from the body and have joints and muscles. Locomotion is the ability to move from one place to another, and it is essential for survival and adaptation. Four legs allow lizards to run, climb, and swim in different environments. A possible conditional statement is: If an animal is a lizard, then it will use four legs for locomotion.
+
+"
+Most of the country can be described as something.  What can it be described as?,"['continent', 'region', 'america', 'great outdoors', 'forests']","Questions: Most of the country can be described as something.  What can it be described as?, Choices: (A) continent, (B) region, (C) america, (D) great outdoors, (E) forests. Given the question 'Most of the country can be described as something.  What can it be described as?', which among the choices continent, region, america, great outdoors forests is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) region. Most of the country can be described as a region, which is a large area of land that has common features or characteristics. A country is a political and geographical entity that has a government and a population. A region can be based on physical, cultural, economic, or historical factors, and it can help to understand the diversity and complexity of a country. A possible conditional statement is: If an area is a country, then it can be described as a region.
+
+"
+Most people have what which they use to carry things?,"['two eyes', 'two hands', 'two arms', 'carry bags', 'ears']","Questions: Most people have what which they use to carry things?, Choices: (A) two eyes, (B) two hands, (C) two arms, (D) carry bags, (E) ears. Given the question 'Most people have what which they use to carry things?', which among the choices two eyes, two hands, two arms, carry bags ears is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) two arms. Most people have two arms, which are the upper limbs of the body that extend from the shoulders to the hands. People use their arms to carry things, which means to hold or support something while moving. Arms have bones, muscles, nerves, and blood vessels that allow them to move and feel. A possible conditional statement is: If a person has two arms, then they can use them to carry things.
+
+"
+Most people recognize that earth experiences a set of distinct what?,"['four seasons', 'one moon', 'cold tempurature', 'gravity', 'six populated continents']","Questions: Most people recognize that earth experiences a set of distinct what?, Choices: (A) four seasons, (B) one moon, (C) cold tempurature, (D) gravity, (E) six populated continents. Given the question 'Most people recognize that earth experiences a set of distinct what?', which among the choices four seasons, one moon, cold tempurature, gravity six populated continents is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) four seasons. Most people recognize that earth experiences a set of distinct four seasons, which are periods of the year that have different weather and daylight patterns. Earth experiences seasons because of its tilted axis and its orbit around the sun, which cause variations in the amount of solar energy that reaches different parts of the planet. The four seasons are winter, spring, summer, and autumn. A possible conditional statement is: If a planet is earth, then it will experience four seasons."
+Most people won't always say what they mean.   They're twisty like that.  They want to avoid conflict. You have to use your brain if you want to understand.    What do most people due sometimes?,"['lie', 'set table', 'think', 'read books', 'not speak']","Questions: Most people won't always say what they mean.   They're twisty like that.  They want to avoid conflict. You have to use your brain if you want to understand.    What do most people due sometimes?, Choices: (A) lie, (B) set table, (C) think, (D) read books, (E) not speak. Given the question 'Most people won't always say what they mean.   They're twisty like that.  They want to avoid conflict. You have to use your brain if you want to understand.    What do most people due sometimes?', which among the choices lie, set table, think, read books not speak is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) not speak. My reasoning is: If most people won't always say what they mean, then they might not speak sometimes to avoid conflict.
+"
+Most people would think killing people is what kind of act?,"['going to jail', 'joy', 'terrible', 'mistake', 'murder']","Questions: Most people would think killing people is what kind of act?, Choices: (A) going to jail, (B) joy, (C) terrible, (D) mistake, (E) murder. Given the question 'Most people would think killing people is what kind of act?', which among the choices going to jail, joy, terrible, mistake murder is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) terrible. My reasoning is: If most people would think killing people is a terrible act, then they would have a negative moral judgment about it.
+"
+Movies which contain unusual or unexpected events which are lighthearted in tone are trying to be what?,"['clever', 'entertaining', 'watched by people', 'funny', 'excellent']","Questions: Movies which contain unusual or unexpected events which are lighthearted in tone are trying to be what?, Choices: (A) clever, (B) entertaining, (C) watched by people, (D) funny, (E) excellent. Given the question 'Movies which contain unusual or unexpected events which are lighthearted in tone are trying to be what?', which among the choices clever, entertaining, watched by people, funny excellent is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) funny. My reasoning is: If movies contain unusual or unexpected events that are lighthearted in tone, then they are trying to be funny and make the audience laugh.
+"
+Much like a bicycle a chain drives the back wheel of a what?,"['gear shift', 'jewelry store', 'tow truck', 'motorbike', 'saloon']","Questions: Much like a bicycle a chain drives the back wheel of a what?, Choices: (A) gear shift, (B) jewelry store, (C) tow truck, (D) motorbike, (E) saloon. Given the question 'Much like a bicycle a chain drives the back wheel of a what?', which among the choices gear shift, jewelry store, tow truck, motorbike saloon is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) motorbike. My reasoning is: If a chain drives the back wheel of a vehicle, then it is similar to a bicycle. A motorbike is a vehicle that has a chain and a back wheel like a bicycle.
+"
+Music that has been download without paying has been what?,"['opera', 'composed', 'stolen', 'written on paper', 'uploaded']","Questions: Music that has been download without paying has been what?, Choices: (A) opera, (B) composed, (C) stolen, (D) written on paper, (E) uploaded. Given the question 'Music that has been download without paying has been what?', which among the choices opera, composed, stolen, written on paper uploaded is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) stolen. My reasoning is: If music has been downloaded without paying, then it has been taken illegally from the owner. To take something illegally is to steal it.
+"
+Must people get up and live life because they?,"['help people', 'all know', 'was given to', 'have no other choice', ""can't help it""]","Questions: Must people get up and live life because they?, Choices: (A) help people, (B) all know, (C) was given to, (D) have no other choice, (E) can't help it. Given the question 'Must people get up and live life because they?', which among the choices help people, all know, was given to, have no other choice can't help it is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) have no other choice. My reasoning is: If people must get up and live life, then they have no other option. To have no other option is to have no other choice.
+"
+My chest is swelling at the prospect of gaining more land. Why is my chest swelling?,"['go to war', 'higher taxes', 'heart attack', 'pride', 'disputes']","Questions: My chest is swelling at the prospect of gaining more land. Why is my chest swelling?, Choices: (A) go to war, (B) higher taxes, (C) heart attack, (D) pride, (E) disputes. Given the question 'My chest is swelling at the prospect of gaining more land. Why is my chest swelling?', which among the choices go to war, higher taxes, heart attack, pride disputes is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) pride. My reasoning is: If my chest is swelling at the prospect of gaining more land, then I am feeling very pleased and satisfied with myself. To feel very pleased and satisfied with oneself is to feel pride.
+"
+My company is vertical.  How do I make it more horizontal?,"['branch out', 'ship goods', 'commit crime', 'change strategies', 'own resources']","Questions: My company is vertical.  How do I make it more horizontal?, Choices: (A) branch out, (B) ship goods, (C) commit crime, (D) change strategies, (E) own resources. Given the question 'My company is vertical.  How do I make it more horizontal?', which among the choices branch out, ship goods, commit crime, change strategies own resources is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) branch out. My reasoning is: If my company is vertical, then it controls all the stages of production or service delivery. To make it more horizontal, I need to diversify into other products or services. To diversify into other products or services is to branch out.
+"
+My company's auditors are extremely worried about my practices. Should I care?,"['liquidated', 'commit crime', 'branch out', 'go for a ride', 'own resources']","Questions: My company's auditors are extremely worried about my practices. Should I care?, Choices: (A) liquidated, (B) commit crime, (C) branch out, (D) go for a ride, (E) own resources. Given the question 'My company's auditors are extremely worried about my practices. Should I care?', which among the choices liquidated, commit crime, branch out, go for a ride own resources is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) commit crime. My reasoning is: If my company's auditors are extremely worried about my practices, then they suspect that I am doing something illegal or unethical. To do something illegal or unethical is to commit crime.
+"
+Name a sort of place where live crabs are not allowed.,"['most offices', 'fish department', 'basin', 'fancy restaurant', 'fish market']","Questions: Name a sort of place where live crabs are not allowed., Choices: (A) most offices, (B) fish department, (C) basin, (D) fancy restaurant, (E) fish market. Given the question 'Name a sort of place where live crabs are not allowed.', which among the choices most offices, fish department, basin, fancy restaurant fish market is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) most offices. My reasoning is: If live crabs are not allowed in a place, then it is a place that is not suitable for keeping or selling seafood. Most offices are places that are not suitable for keeping or selling seafood."

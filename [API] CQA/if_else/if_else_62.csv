@@ -1,0 +1,471 @@
+premise,hypothesis,prompt,rationale
+What does someone gain from getting divorce?,"['poorer', 'sadness', 'depression', 'tears', 'freedom']","Questions: What does someone gain from getting divorce?, Choices: (A) poorer, (B) sadness, (C) depression, (D) tears, (E) freedom. Given the question 'What does someone gain from getting divorce?', which among the choices poorer, sadness, depression, tears freedom is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) freedom. A possible explanation is: If someone gets divorced, then they gain freedom from their former spouse. Freedom is the only choice that implies a positive outcome of getting divorced, while the other choices imply negative outcomes.
+
+"
+What does someone immoral do when they are taking final exams without studying?,"['cheat', 'study', 'great joy', 'graduation', 'sweat']","Questions: What does someone immoral do when they are taking final exams without studying?, Choices: (A) cheat, (B) study, (C) great joy, (D) graduation, (E) sweat. Given the question 'What does someone immoral do when they are taking final exams without studying?', which among the choices cheat, study, great joy, graduation sweat is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) cheat. A possible explanation is: If someone is immoral and they are taking final exams without studying, then they cheat to pass the exams. Cheat is the only choice that matches the immoral behavior of the person, while the other choices are either irrelevant or contradictory.
+
+"
+What does someone likely need after finding the right shoe?,"['house', 'left foot', 'wedding', 'socks', 'closet']","Questions: What does someone likely need after finding the right shoe?, Choices: (A) house, (B) left foot, (C) wedding, (D) socks, (E) closet. Given the question 'What does someone likely need after finding the right shoe?', which among the choices house, left foot, wedding, socks closet is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) left foot. A possible explanation is: If someone finds the right shoe, then they likely need the left shoe to match it. Left foot is the only choice that logically follows from finding the right shoe, while the other choices are either unrelated or absurd.
+
+"
+What does someone living life fully feel?,"['joy', 'valuable', 'happiness', 'early death', 'adventurous']","Questions: What does someone living life fully feel?, Choices: (A) joy, (B) valuable, (C) happiness, (D) early death, (E) adventurous. Given the question 'What does someone living life fully feel?', which among the choices joy, valuable, happiness, early death adventurous is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) happiness. A possible explanation is: If someone is living life fully, then they feel happiness. Happiness is the only choice that expresses a positive emotion that is associated with living life fully, while the other choices are either negative or neutral.
+
+"
+What does someone need to do to begin creating art?,"['relax', 'controversy', 'pleasure', 'frustration', 'needs theater']","Questions: What does someone need to do to begin creating art?, Choices: (A) relax, (B) controversy, (C) pleasure, (D) frustration, (E) needs theater. Given the question 'What does someone need to do to begin creating art?', which among the choices relax, controversy, pleasure, frustration needs theater is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) relax. A possible explanation is: If someone wants to begin creating art, then they need to relax their mind and body. Relax is the only choice that suggests a state of calmness and openness that is conducive to creativity, while the other choices are either distracting or discouraging.
+
+"
+What does someone need when they're feeling hunger?,"['starvation', 'eat hamburger', 'eating', 'pizza', 'discomfort']","Questions: What does someone need when they're feeling hunger?, Choices: (A) starvation, (B) eat hamburger, (C) eating, (D) pizza, (E) discomfort. Given the question 'What does someone need when they're feeling hunger?', which among the choices starvation, eat hamburger, eating, pizza discomfort is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) eating. A possible explanation is: If someone is feeling hunger, then they need to eat something. Eating is the only choice that directly addresses the need of hunger, while the other choices are either causes or consequences of hunger.
+
+"
+What does someone obsessed with grooming likely enjoy?,"['satisfaction', 'cleanliness', 'smoothness', 'beauty', 'mistakes']","Questions: What does someone obsessed with grooming likely enjoy?, Choices: (A) satisfaction, (B) cleanliness, (C) smoothness, (D) beauty, (E) mistakes. Given the question 'What does someone obsessed with grooming likely enjoy?', which among the choices satisfaction, cleanliness, smoothness, beauty mistakes is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) beauty. A possible explanation is: If someone is obsessed with grooming, then they likely enjoy beauty. Beauty is the only choice that reflects the goal or motivation of grooming, while the other choices are either vague or negative.
+
+"
+What does someone say when they tell you to go to sleep?,"['start slowing down', 'get up early', 'rest up', 'dream', 'wake up']","Questions: What does someone say when they tell you to go to sleep?, Choices: (A) start slowing down, (B) get up early, (C) rest up, (D) dream, (E) wake up. Given the question 'What does someone say when they tell you to go to sleep?', which among the choices start slowing down, get up early, rest up, dream wake up is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) rest up. A possible explanation is: If someone tells you to go to sleep, then they say ""rest up"". Rest up is the only choice that is a common expression that means to sleep well, while the other choices are either irrelevant or opposite.
+
+"
+What does someone want to do fast when they complete something in a perfunctory way?,"['careful', 'complete', 'thoughtful', 'thorough', 'go on']","Questions: What does someone want to do fast when they complete something in a perfunctory way?, Choices: (A) careful, (B) complete, (C) thoughtful, (D) thorough, (E) go on. Given the question 'What does someone want to do fast when they complete something in a perfunctory way?', which among the choices careful, complete, thoughtful, thorough go on is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) go on. A possible explanation is: If someone completes something in a perfunctory way, then they want to go on to the next thing. Go on is the only choice that implies a sense of haste or indifference that is characteristic of perfunctory work, while the other choices are either incompatible or unnecessary.
+
+"
+What does someone want to do if they want to travel?,"['go somewhere', 'time', 'energy', 'have money', 'go someplace']","Questions: What does someone want to do if they want to travel?, Choices: (A) go somewhere, (B) time, (C) energy, (D) have money, (E) go someplace. Given the question 'What does someone want to do if they want to travel?', which among the choices go somewhere, time, energy, have money go someplace is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) have money. A possible explanation is: If someone wants to travel, then they need to have money. Have money is the only choice that is a prerequisite for traveling, while the other choices are either outcomes or alternatives of traveling."
+What does someone want to do when they have greed?,"['make friends', 'buy food', 'share the wealth', 'lie', 'get']","Questions: What does someone want to do when they have greed?, Choices: (A) make friends, (B) buy food, (C) share the wealth, (D) lie, (E) get. Given the question 'What does someone want to do when they have greed?', which among the choices make friends, buy food, share the wealth, lie get is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) get**. Someone who has greed wants to get more of something, such as money, power, or fame. A possible conditional statement is: **If someone has greed, then they want to get more of something.**
+
+"
+What does someone want when having fun with their friends and trying to fit in?,"['being understood', 'beer', 'playing around', 'hug', 'visiting friends']","Questions: What does someone want when having fun with their friends and trying to fit in?, Choices: (A) being understood, (B) beer, (C) playing around, (D) hug, (E) visiting friends. Given the question 'What does someone want when having fun with their friends and trying to fit in?', which among the choices being understood, beer, playing around, hug visiting friends is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) being understood**. Someone who is having fun with their friends and trying to fit in wants to be understood by their peers and feel accepted. A possible conditional statement is: **If someone is having fun with their friends and trying to fit in, then they want to be understood by their peers.**
+
+"
+What does someone who does not feel alacrity or anything feel?,"['apathy', 'detachment', 'indifference', 'hesitance', 'reluctance']","Questions: What does someone who does not feel alacrity or anything feel?, Choices: (A) apathy, (B) detachment, (C) indifference, (D) hesitance, (E) reluctance. Given the question 'What does someone who does not feel alacrity or anything feel?', which among the choices apathy, detachment, indifference, hesitance reluctance is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(C) indifference**. Someone who does not feel alacrity or anything feels indifference, which means a lack of interest, concern, or emotion. A possible conditional statement is: **If someone does not feel alacrity or anything, then they feel indifference.**
+
+"
+What does someone who has a greed for energy do?,"['cause businesses to grow', 'get', 'lie', 'buy food', 'win']","Questions: What does someone who has a greed for energy do?, Choices: (A) cause businesses to grow, (B) get, (C) lie, (D) buy food, (E) win. Given the question 'What does someone who has a greed for energy do?', which among the choices cause businesses to grow, get, lie, buy food win is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) get**. Someone who has a greed for energy wants to get more energy, such as electricity, oil, or gas. A possible conditional statement is: **If someone has a greed for energy, then they want to get more energy.**
+
+"
+What does someone who likes to hear someone play violin enjoy?,"['like music', 'inspiring', 'make music', 'learn how to play', 'ears']","Questions: What does someone who likes to hear someone play violin enjoy?, Choices: (A) like music, (B) inspiring, (C) make music, (D) learn how to play, (E) ears. Given the question 'What does someone who likes to hear someone play violin enjoy?', which among the choices like music, inspiring, make music, learn how to play ears is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(B) inspiring**. Someone who likes to hear someone play violin enjoys inspiring music, which means music that motivates, encourages, or stimulates them. A possible conditional statement is: **If someone likes to hear someone play violin, then they enjoy inspiring music.**
+
+"
+What does the D in DRC stand for?,"['dictatorship', 'democracy', 'democracy', 'state', 'democratic']","Questions: What does the D in DRC stand for?, Choices: (A) dictatorship, (B) democracy, (C) democracy, (D) state, (E) democratic. Given the question 'What does the D in DRC stand for?', which among the choices dictatorship, democracy, democracy, state democratic is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) democratic**. The D in DRC stands for democratic, which means relating to or supporting democracy, a system of government where people have the power to choose their leaders. A possible conditional statement is: **If the D in DRC stands for democratic, then the DRC is a democratic country.**
+
+"
+What does the Indian Ocean border?,"['east', 'africa', 'asia', 'earth', 'southern hemisphere']","Questions: What does the Indian Ocean border?, Choices: (A) east, (B) africa, (C) asia, (D) earth, (E) southern hemisphere. Given the question 'What does the Indian Ocean border?', which among the choices east, africa, asia, earth southern hemisphere is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(B) africa** and **(C) asia**. The Indian Ocean borders Africa and Asia, two continents that are located on the eastern and western sides of the ocean. A possible conditional statement is: **If the Indian Ocean borders Africa and Asia, then Africa and Asia are adjacent to the Indian Ocean.**
+
+"
+What does the best horse in the world win?,"['race track', 'kentucky derby', 'trophy', 'american southwest', 'triple crown']","Questions: What does the best horse in the world win?, Choices: (A) race track, (B) kentucky derby, (C) trophy, (D) american southwest, (E) triple crown. Given the question 'What does the best horse in the world win?', which among the choices race track, kentucky derby, trophy, american southwest triple crown is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) triple crown**. The best horse in the world wins the triple crown, which is a series of three prestigious horse races in the United States: the Kentucky Derby, the Preakness Stakes, and the Belmont Stakes. A possible conditional statement is: **If the best horse in the world wins the triple crown, then the best horse in the world wins the Kentucky Derby, the Preakness Stakes, and the Belmont Stakes.**
+
+"
+What does the bird have in tree?,"['forest', 'hope', 'sky', 'nest', 'roof']","Questions: What does the bird have in tree?, Choices: (A) forest, (B) hope, (C) sky, (D) nest, (E) roof. Given the question 'What does the bird have in tree?', which among the choices forest, hope, sky, nest roof is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) nest**. The bird has a nest in the tree, which is a structure made of twigs, grass, or other materials where the bird lays eggs and raises its young. A possible conditional statement is: **If the bird has a nest in the tree, then the bird has a home in the tree.**
+
+"
+What does the first person in a group of people to have a child often feel like doing?,"['love', 'give birth', 'having fun', 'anxiety', 'making new friends']","Questions: What does the first person in a group of people to have a child often feel like doing?, Choices: (A) love, (B) give birth, (C) having fun, (D) anxiety, (E) making new friends. Given the question 'What does the first person in a group of people to have a child often feel like doing?', which among the choices love, give birth, having fun, anxiety making new friends is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) anxiety**. The first person in a group of people to have a child often feels like doing anxiety, which means feeling nervous, worried, or afraid about something. A possible conditional statement is: **If the first person in a group of people to have a child often feels like doing anxiety, then the first person in a group of people to have a child often faces challenges and uncertainties.**"
+What does the government have control over?,"['trouble', 'country', 'army', 'city', 'control']","Questions: What does the government have control over?, Choices: (A) trouble, (B) country, (C) army, (D) city, (E) control. Given the question 'What does the government have control over?', which among the choices trouble, country, army, city control is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) country**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If the government has control over something, then it is a country**. This statement is true because the government is the governing body of a country, and it has the authority to make and enforce laws for the country.
+
+"
+What does the government sometimes have too much of?,"['canada', 'trouble', 'city', 'control', 'water']","Questions: What does the government sometimes have too much of?, Choices: (A) canada, (B) trouble, (C) city, (D) control, (E) water. Given the question 'What does the government sometimes have too much of?', which among the choices canada, trouble, city, control water is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) control**. A possible conditional statement for this question is: **If the government sometimes has too much of something, then it is control**. This statement is true because the government can abuse its power and interfere with the rights and freedoms of the people, which is considered having too much control.
+
+"
+What does the idea of going on vacation inspire ?,"['relaxation', 'overspending', 'staying there', 'pie', 'pleasant thoughts']","Questions: What does the idea of going on vacation inspire ?, Choices: (A) relaxation, (B) overspending, (C) staying there, (D) pie, (E) pleasant thoughts. Given the question 'What does the idea of going on vacation inspire ?', which among the choices relaxation, overspending, staying there, pie pleasant thoughts is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(E) pleasant thoughts**. A possible conditional statement for this question is: **If the idea of going on vacation inspires something, then it is pleasant thoughts**. This statement is true because going on vacation is usually a positive and enjoyable experience, and it can make people think of happy and relaxing things.
+
+"
+What does the policeman gain from discovering the truth in a crime?,"['enlightenment', 'confusion', 'liberating', 'peace of mind', 'increased knowledge']","Questions: What does the policeman gain from discovering the truth in a crime?, Choices: (A) enlightenment, (B) confusion, (C) liberating, (D) peace of mind, (E) increased knowledge. Given the question 'What does the policeman gain from discovering the truth in a crime?', which among the choices enlightenment, confusion, liberating, peace of mind increased knowledge is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) peace of mind**. A possible conditional statement for this question is: **If the policeman gains something from discovering the truth in a crime, then it is peace of mind**. This statement is true because the policeman can feel satisfied and relieved that he has solved the case and brought justice to the victims, which can give him peace of mind.
+
+"
+What does the sky look like on a sunny day?,"['dark', 'cloud over', 'rain water', 'appear blue', 'starry']","Questions: What does the sky look like on a sunny day?, Choices: (A) dark, (B) cloud over, (C) rain water, (D) appear blue, (E) starry. Given the question 'What does the sky look like on a sunny day?', which among the choices dark, cloud over, rain water, appear blue starry is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) appear blue**. A possible conditional statement for this question is: **If the sky looks like something on a sunny day, then it appears blue**. This statement is true because the sky is blue due to the scattering of sunlight by the atmosphere, and this effect is more visible on a sunny day.
+
+"
+What does there need to be for a shadow to appear?,"['ground', 'bright light', 'bridge', 'sunshine', 'beam']","Questions: What does there need to be for a shadow to appear?, Choices: (A) ground, (B) bright light, (C) bridge, (D) sunshine, (E) beam. Given the question 'What does there need to be for a shadow to appear?', which among the choices ground, bright light, bridge, sunshine beam is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) bright light**. A possible conditional statement for this question is: **If there needs to be something for a shadow to appear, then it is a bright light**. This statement is true because a shadow is the dark area where light is blocked by an opaque object, and there needs to be a bright light source behind the object to create a contrast.
+
+"
+What does too much lead do to a person?,"['toxic', 'very heavy', 'very dense', 'very resistant to corrosion', 'follow']","Questions: What does too much lead do to a person?, Choices: (A) toxic, (B) very heavy, (C) very dense, (D) very resistant to corrosion, (E) follow. Given the question 'What does too much lead do to a person?', which among the choices toxic, very heavy, very dense, very resistant to corrosion follow is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) toxic**. A possible conditional statement for this question is: **If too much lead does something to a person, then it is toxic**. This statement is true because lead is a heavy metal that can cause serious health problems if ingested or inhaled, such as brain damage, kidney failure, and anemia.
+
+"
+What does waiting for something for a response from an interview cause?,"['have fun', 'patience', 'anxiety', 'tedious', 'impatience']","Questions: What does waiting for something for a response from an interview cause?, Choices: (A) have fun, (B) patience, (C) anxiety, (D) tedious, (E) impatience. Given the question 'What does waiting for something for a response from an interview cause?', which among the choices have fun, patience, anxiety, tedious impatience is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) anxiety**. A possible conditional statement for this question is: **If waiting for something for a response from an interview causes something, then it is anxiety**. This statement is true because waiting for a response from an interview can be stressful and nerve-wracking, and it can make people feel anxious about the outcome.
+
+"
+What does watching something entertaining cause people to have?,"['they cant watching recognize and hospitality', 'talent', 'recognize', 'fun', 'intelligence']","Questions: What does watching something entertaining cause people to have?, Choices: (A) they cant watching recognize and hospitality, (B) talent, (C) recognize, (D) fun, (E) intelligence. Given the question 'What does watching something entertaining cause people to have?', which among the choices they cant watching recognize and hospitality, talent, recognize, fun intelligence is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) fun**. A possible conditional statement for this question is: **If watching something entertaining causes people to have something, then it is fun**. This statement is true because watching something entertaining can make people laugh, smile, and enjoy themselves, which is fun.
+
+"
+What does water do when I submerges clothing?,"['rushes', 'planet earth', 'drenching', 'ocean', 'septic tank']","Questions: What does water do when I submerges clothing?, Choices: (A) rushes, (B) planet earth, (C) drenching, (D) ocean, (E) septic tank. Given the question 'What does water do when I submerges clothing?', which among the choices rushes, planet earth, drenching, ocean septic tank is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) drenching**. A possible conditional statement for this question is: **If water does something when I submerge clothing, then it is drenching**. This statement is true because water can soak and wet the clothing, which is drenching."
+What does you body do when you exercise?,"['need for food', 'thirst', 'work out', 'sweating', 'injury']","Questions: What does you body do when you exercise?, Choices: (A) need for food, (B) thirst, (C) work out, (D) sweating, (E) injury. Given the question 'What does you body do when you exercise?', which among the choices need for food, thirst, work out, sweating injury is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) sweating. A possible explanation is:
+
+```
+if (you exercise) {
+  your body temperature increases;
+  your body tries to cool down by sweating;
+}
+```
+
+"
+What does your body do when walking?,"['exercise', 'move', 'getting somewhere', 'moving forward', 'keep moving forward']","Questions: What does your body do when walking?, Choices: (A) exercise, (B) move, (C) getting somewhere, (D) moving forward, (E) keep moving forward. Given the question 'What does your body do when walking?', which among the choices exercise, move, getting somewhere, moving forward keep moving forward is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) move. A possible explanation is:
+
+```
+if (you walk) {
+  your body uses muscles to move your legs;
+  your body moves from one place to another;
+}
+```
+
+"
+What doorway is likely to have a large wooden door?,"['home', 'airport', 'skyscraper', 'castle', 'every building']","Questions: What doorway is likely to have a large wooden door?, Choices: (A) home, (B) airport, (C) skyscraper, (D) castle, (E) every building. Given the question 'What doorway is likely to have a large wooden door?', which among the choices home, airport, skyscraper, castle every building is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) castle. A possible explanation is:
+
+```
+if (a doorway has a large wooden door) {
+  it is likely to be old and historical;
+  it is likely to be part of a large and fortified building;
+  it is likely to be a castle;
+}
+```
+
+"
+What draws ground water away from your and your neighbor's yard?,"['house next door', 'next house', 'suburbs', 'ditch', 'trees']","Questions: What draws ground water away from your and your neighbor's yard?, Choices: (A) house next door, (B) next house, (C) suburbs, (D) ditch, (E) trees. Given the question 'What draws ground water away from your and your neighbor's yard?', which among the choices house next door, next house, suburbs, ditch trees is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) ditch. A possible explanation is:
+
+```
+if (a ditch is near your and your neighbor's yard) {
+  it is lower than the surrounding ground;
+  it collects water from rain or runoff;
+  it draws ground water away from your and your neighbor's yard;
+}
+```
+
+"
+What drinking vessel can overflow if filled with too much water?,"['riverbed', 'sewer', 'drain', 'creek', 'glass']","Questions: What drinking vessel can overflow if filled with too much water?, Choices: (A) riverbed, (B) sewer, (C) drain, (D) creek, (E) glass. Given the question 'What drinking vessel can overflow if filled with too much water?', which among the choices riverbed, sewer, drain, creek glass is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) glass. A possible explanation is:
+
+```
+if (a glass is filled with too much water) {
+  it has a limited capacity;
+  it cannot hold more water than its volume;
+  it overflows;
+}
+```
+
+"
+What drives the people to play well in fencing?,"['judge', 'perspiration', 'injury', 'severe injuries', 'competition']","Questions: What drives the people to play well in fencing?, Choices: (A) judge, (B) perspiration, (C) injury, (D) severe injuries, (E) competition. Given the question 'What drives the people to play well in fencing?', which among the choices judge, perspiration, injury, severe injuries competition is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) competition. A possible explanation is:
+
+```
+if (people play fencing) {
+  they face an opponent who tries to score points;
+  they want to win the match and improve their skills;
+  they are driven by competition;
+}
+```
+
+"
+What drops from clouds on a warm day?,"['move in', 'rain water', 'awe inspiring', 'boiling oil', 'bring rain']","Questions: What drops from clouds on a warm day?, Choices: (A) move in, (B) rain water, (C) awe inspiring, (D) boiling oil, (E) bring rain. Given the question 'What drops from clouds on a warm day?', which among the choices move in, rain water, awe inspiring, boiling oil bring rain is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) rain water. A possible explanation is:
+
+```
+if (clouds drop something on a warm day) {
+  it is likely to be liquid;
+  it is likely to be water that condensed from vapor;
+  it is likely to be rain water;
+}
+```
+
+"
+What dry state can a lizard be found in?,"['books', 'tropics', 'new mexico', 'dessert', 'usa']","Questions: What dry state can a lizard be found in?, Choices: (A) books, (B) tropics, (C) new mexico, (D) dessert, (E) usa. Given the question 'What dry state can a lizard be found in?', which among the choices books, tropics, new mexico, dessert usa is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) new mexico. A possible explanation is:
+
+```
+if (a state is dry) {
+  it has low precipitation and humidity;
+  it has high temperature and evaporation;
+  it is likely to be new mexico;
+}
+```
+
+"
+What dwelling might one take a bowl to after buying it?,"['restaurant', 'grave yard', 'apartment', 'cupboard', 'refrigerator']","Questions: What dwelling might one take a bowl to after buying it?, Choices: (A) restaurant, (B) grave yard, (C) apartment, (D) cupboard, (E) refrigerator. Given the question 'What dwelling might one take a bowl to after buying it?', which among the choices restaurant, grave yard, apartment, cupboard refrigerator is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) apartment. A possible explanation is:
+
+```
+if (one takes a bowl to a dwelling after buying it) {
+  it is likely to be a place where one lives or stays;
+  it is likely to have a kitchen or a dining area;
+  it is likely to be an apartment;
+}
+```
+
+"
+What east coast city is known for their pizzerias?,"['capital cities', 'mall', 'populated area', 'new york', 'chicago']","Questions: What east coast city is known for their pizzerias?, Choices: (A) capital cities, (B) mall, (C) populated area, (D) new york, (E) chicago. Given the question 'What east coast city is known for their pizzerias?', which among the choices capital cities, mall, populated area, new york chicago is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) new york. A possible explanation is:
+
+```
+if (an east coast city is known for their pizzerias) {
+  it is likely to have a large and diverse population;
+  it is likely to have a strong influence from Italian immigrants;
+  it is likely to be new york;
+}
+```
+
+I hope this helps you understand how to use conditional statements to answer questions. 😊"
+What eastern U.S. local government has plenty of crab fishing?,"['north carolina', 'chesapeake bay', 'crab pots', 'sandy beach', 'eastern coast']","Questions: What eastern U.S. local government has plenty of crab fishing?, Choices: (A) north carolina, (B) chesapeake bay, (C) crab pots, (D) sandy beach, (E) eastern coast. Given the question 'What eastern U.S. local government has plenty of crab fishing?', which among the choices north carolina, chesapeake bay, crab pots, sandy beach eastern coast is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) chesapeake bay**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. One possible conditional statement for this question is: **If a local government has plenty of crab fishing, then it is located near the Chesapeake Bay**. The hypothesis is true for the choice (B), and false for the other choices, so the conclusion is also true for (B) and false for the others.
+
+"
+What eastern U.S. region is know for bbq and not apple trees?,"['great outdoors', 'washington state', 'garden of eden', 'north carolina', 'maine']","Questions: What eastern U.S. region is know for bbq and not apple trees?, Choices: (A) great outdoors, (B) washington state, (C) garden of eden, (D) north carolina, (E) maine. Given the question 'What eastern U.S. region is know for bbq and not apple trees?', which among the choices great outdoors, washington state, garden of eden, north carolina maine is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) north carolina**. A possible conditional statement for this question is: **If a region is known for bbq and not apple trees, then it is located in the southeastern part of the U.S.**. The hypothesis is true for the choice (D), and false for the other choices, so the conclusion is also true for (D) and false for the others.
+
+"
+What eastern continent would you travel to in order to see a gazelle in their disneyland's zoo?,"['australia', 'wildlife refuge', 'ivory coast', 'open plain', 'asia']","Questions: What eastern continent would you travel to in order to see a gazelle in their disneyland's zoo?, Choices: (A) australia, (B) wildlife refuge, (C) ivory coast, (D) open plain, (E) asia. Given the question 'What eastern continent would you travel to in order to see a gazelle in their disneyland's zoo?', which among the choices australia, wildlife refuge, ivory coast, open plain asia is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(E) asia**. A possible conditional statement for this question is: **If a continent has a Disneyland park with a zoo that has gazelles, then it is Asia**. The hypothesis is true for the choice (E), and false for the other choices, so the conclusion is also true for (E) and false for the others. The only Disneyland park with a zoo is the Hong Kong Disneyland, which is located in Asia.
+
+"
+What eastern state is home to a mountain?,"['switzerland', 'pennsylvania', 'picture', 'asia', 'austria']","Questions: What eastern state is home to a mountain?, Choices: (A) switzerland, (B) pennsylvania, (C) picture, (D) asia, (E) austria. Given the question 'What eastern state is home to a mountain?', which among the choices switzerland, pennsylvania, picture, asia austria is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) pennsylvania**. A possible conditional statement for this question is: **If a state is home to a mountain, then it has a high elevation**. The hypothesis is true for the choice (B), and false for the other choices, so the conclusion is also true for (B) and false for the others. Pennsylvania has the Appalachian Mountains, which have a high elevation.
+
+"
+What effect did the TV have on the kids?,"['become adults', 'wonder about', 'open door', 'became healthy', 'distracting']","Questions: What effect did the TV have on the kids?, Choices: (A) become adults, (B) wonder about, (C) open door, (D) became healthy, (E) distracting. Given the question 'What effect did the TV have on the kids?', which among the choices become adults, wonder about, open door, became healthy distracting is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(E) distracting**. A possible conditional statement for this question is: **If the TV has an effect on the kids, then it affects their attention span**. The hypothesis is true for all the choices, but the conclusion is only true for the choice (E), so the answer is (E).
+
+"
+What effect did the sun have on the residents inside?,"['dry clothes', 'warm room', 'a tan', 'warm house', 'dry ground']","Questions: What effect did the sun have on the residents inside?, Choices: (A) dry clothes, (B) warm room, (C) a tan, (D) warm house, (E) dry ground. Given the question 'What effect did the sun have on the residents inside?', which among the choices dry clothes, warm room, a tan, warm house dry ground is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) warm room**. A possible conditional statement for this question is: **If the sun has an effect on the residents inside, then it affects the temperature of their environment**. The hypothesis is true for all the choices, but the conclusion is only true for the choice (B), so the answer is (B).
+
+"
+What electronic device would be used when being bored?,"['surf net', 'go somewhere', 'use television', 'make patchwork quilt', 'hang out with friend']","Questions: What electronic device would be used when being bored?, Choices: (A) surf net, (B) go somewhere, (C) use television, (D) make patchwork quilt, (E) hang out with friend. Given the question 'What electronic device would be used when being bored?', which among the choices surf net, go somewhere, use television, make patchwork quilt hang out with friend is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) use television**. A possible conditional statement for this question is: **If an electronic device is used when being bored, then it provides entertainment**. The hypothesis is true for the choices (A) and (C), but the conclusion is only true for the choice (C), so the answer is (C).
+
+"
+What else might one feel when hurting?,"['death', 'feel sad', 'more hurt', 'punishment', 'accident']","Questions: What else might one feel when hurting?, Choices: (A) death, (B) feel sad, (C) more hurt, (D) punishment, (E) accident. Given the question 'What else might one feel when hurting?', which among the choices death, feel sad, more hurt, punishment accident is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) feel sad**. A possible conditional statement for this question is: **If one feels something else when hurting, then it is an emotion**. The hypothesis is true for the choices (B), (C), and (E), but the conclusion is only true for the choice (B), so the answer is (B).
+
+"
+What emotion do people expressing themselves show when they trip in front of a crowd and break their leg?,"['communication', 'suffering', 'pain', 'laughter', 'embarrassment']","Questions: What emotion do people expressing themselves show when they trip in front of a crowd and break their leg?, Choices: (A) communication, (B) suffering, (C) pain, (D) laughter, (E) embarrassment. Given the question 'What emotion do people expressing themselves show when they trip in front of a crowd and break their leg?', which among the choices communication, suffering, pain, laughter embarrassment is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) embarrassment**. A possible conditional statement for this question is: **If people express themselves when they trip in front of a crowd and break their leg, then they show their feelings**. The hypothesis is true for all the choices, but the conclusion is only true for the choice (E), so the answer is (E).
+
+"
+What emotion does committing murder induce?,"['fear', 'go to jail', 'problems', 'cruel', 'dead']","Questions: What emotion does committing murder induce?, Choices: (A) fear, (B) go to jail, (C) problems, (D) cruel, (E) dead. Given the question 'What emotion does committing murder induce?', which among the choices fear, go to jail, problems, cruel dead is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) fear**. A possible conditional statement for this question is: **If committing murder induces an emotion, then it is a negative emotion**. The hypothesis is true for all the choices, but the conclusion is only true for the choice (A), so the answer is (A)."
+What emotion does getting paid lead to?,"['sorrow', 'paying bills', 'happiness', 'frustration', 'spending money']","Questions: What emotion does getting paid lead to?, Choices: (A) sorrow, (B) paying bills, (C) happiness, (D) frustration, (E) spending money. Given the question 'What emotion does getting paid lead to?', which among the choices sorrow, paying bills, happiness, frustration spending money is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) happiness. Getting paid leads to happiness because it is a reward for one's work and it allows one to buy things or save money. A conditional statement that explains this is: `If one gets paid, then one feels happy.`
+
+"
+What emotion might someone feel if they've been doing housework all day and someone messed up your home?,"['tiredness', 'anger', 'stress', 'boredom', 'anxiety']","Questions: What emotion might someone feel if they've been doing housework all day and someone messed up your home?, Choices: (A) tiredness, (B) anger, (C) stress, (D) boredom, (E) anxiety. Given the question 'What emotion might someone feel if they've been doing housework all day and someone messed up your home?', which among the choices tiredness, anger, stress, boredom anxiety is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) anger. Someone might feel anger if they have been doing housework all day and someone messed up their home because it shows disrespect and disregard for their effort and time. A conditional statement that explains this is: `If one has been doing housework all day and someone messed up their home, then one feels angry.`
+
+"
+What emotional state are you in if driving a car in heavy traffic?,"['transportation', 'patient', 'stress', 'getting somewhere', 'relaxation']","Questions: What emotional state are you in if driving a car in heavy traffic?, Choices: (A) transportation, (B) patient, (C) stress, (D) getting somewhere, (E) relaxation. Given the question 'What emotional state are you in if driving a car in heavy traffic?', which among the choices transportation, patient, stress, getting somewhere relaxation is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) stress. Driving a car in heavy traffic can cause stress because it is a challenging and unpredictable situation that requires constant attention and can have negative consequences. A conditional statement that explains this is: `If one drives a car in heavy traffic, then one feels stress.`
+
+"
+What enables most people to transport themselves?,"['helicopter', 'own cars', 'speak words', 'believe in god', 'dance together']","Questions: What enables most people to transport themselves?, Choices: (A) helicopter, (B) own cars, (C) speak words, (D) believe in god, (E) dance together. Given the question 'What enables most people to transport themselves?', which among the choices helicopter, own cars, speak words, believe in god dance together is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) own cars. Most people can transport themselves using their own cars because cars are a common and convenient mode of transportation that can cover long distances and carry passengers and cargo. A conditional statement that explains this is: `If one has a car, then one can transport oneself.`
+
+"
+What entity would have a fire extinguisher in their boardroom?,"['boat', 'apartment', 'public building', 'most businesses', 'chemistry lab']","Questions: What entity would have a fire extinguisher in their boardroom?, Choices: (A) boat, (B) apartment, (C) public building, (D) most businesses, (E) chemistry lab. Given the question 'What entity would have a fire extinguisher in their boardroom?', which among the choices boat, apartment, public building, most businesses chemistry lab is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) chemistry lab. A chemistry lab would have a fire extinguisher in their boardroom because chemistry experiments can involve flammable or explosive substances that can cause fires or accidents. A conditional statement that explains this is: `If one is in a chemistry lab, then one needs a fire extinguisher.`
+
+"
+What estuary in Maryland and Virginia is known for its crab?,"['fish market', 'clam chowder', 'cooking pot', 'tidepools', 'chesapeake bay']","Questions: What estuary in Maryland and Virginia is known for its crab?, Choices: (A) fish market, (B) clam chowder, (C) cooking pot, (D) tidepools, (E) chesapeake bay. Given the question 'What estuary in Maryland and Virginia is known for its crab?', which among the choices fish market, clam chowder, cooking pot, tidepools chesapeake bay is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) chesapeake bay. The Chesapeake Bay is an estuary in Maryland and Virginia that is known for its crab because it is a large and productive ecosystem that supports a variety of marine life, including blue crabs, which are a popular seafood delicacy. A conditional statement that explains this is: `If one is in the Chesapeake Bay, then one can find crab.`
+
+"
+What event might cause someone to get rid of their car?,"['roll over', 'move quickly', 'cost money', 'home', 'crash']","Questions: What event might cause someone to get rid of their car?, Choices: (A) roll over, (B) move quickly, (C) cost money, (D) home, (E) crash. Given the question 'What event might cause someone to get rid of their car?', which among the choices roll over, move quickly, cost money, home crash is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) crash. A crash might cause someone to get rid of their car because it can damage the car beyond repair or make it unsafe or illegal to drive. A conditional statement that explains this is: `If one crashes their car, then one might get rid of their car.`
+
+"
+What event would a well dressed person visit a box office for?,"['fox theater', 'theater district', 'ballpark', 'theatre', 'counseling']","Questions: What event would a well dressed person visit a box office for?, Choices: (A) fox theater, (B) theater district, (C) ballpark, (D) theatre, (E) counseling. Given the question 'What event would a well dressed person visit a box office for?', which among the choices fox theater, theater district, ballpark, theatre counseling is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) theatre. A well dressed person would visit a box office for a theatre event because theatre is a form of art and entertainment that often requires formal attire and tickets. A conditional statement that explains this is: `If one is well dressed, then one might visit a box office for a theatre event.`
+
+"
+What event would soldiers be trained to use explosive devices?,"['bomb', 'construction site', 'landmine', 'emergency', 'war']","Questions: What event would soldiers be trained to use explosive devices?, Choices: (A) bomb, (B) construction site, (C) landmine, (D) emergency, (E) war. Given the question 'What event would soldiers be trained to use explosive devices?', which among the choices bomb, construction site, landmine, emergency war is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) war. Soldiers would be trained to use explosive devices in a war because war is a violent and hostile situation that involves fighting and destroying the enemy. A conditional statement that explains this is: `If one is a soldier in a war, then one might use explosive devices.`
+
+"
+What expression should you make if you're trying to make friends?,"['nice', 'smile', 'hand shake', 'meet new people', 'meet people']","Questions: What expression should you make if you're trying to make friends?, Choices: (A) nice, (B) smile, (C) hand shake, (D) meet new people, (E) meet people. Given the question 'What expression should you make if you're trying to make friends?', which among the choices nice, smile, hand shake, meet new people meet people is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) smile. One should make a smile if they are trying to make friends because a smile is a universal sign of friendliness and happiness that can attract and invite others. A conditional statement that explains this is: `If one wants to make friends, then one should smile.`"
+What extremely large southern area in the U.S. has venomous snakes?,"['western texas', 'feild', 'amazon river', 'high grass', 'falling down']","Questions: What extremely large southern area in the U.S. has venomous snakes?, Choices: (A) western texas, (B) feild, (C) amazon river, (D) high grass, (E) falling down. Given the question 'What extremely large southern area in the U.S. has venomous snakes?', which among the choices western texas, feild, amazon river, high grass falling down is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) western texas. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If an area is extremely large and southern in the U.S., then it has venomous snakes.** Western texas is an example of such an area, while the other choices are not.
+
+"
+What falls out of the sky but is generally well received?,"['rain water', 'cloud over', 'becomes purple in evening', 'spoons', 'appear blue']","Questions: What falls out of the sky but is generally well received?, Choices: (A) rain water, (B) cloud over, (C) becomes purple in evening, (D) spoons, (E) appear blue. Given the question 'What falls out of the sky but is generally well received?', which among the choices rain water, cloud over, becomes purple in evening, spoons appear blue is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) rain water. A possible conditional statement for this question is: **If something falls out of the sky and is generally well received, then it is rain water.** Rain water is beneficial for plants, animals, and humans, while the other choices are either nonsensical or undesirable.
+
+"
+What familiarity would one have for more remembering?,"['nostalgia', 'sadness', 'depression', 'pleasure', 'knowledge']","Questions: What familiarity would one have for more remembering?, Choices: (A) nostalgia, (B) sadness, (C) depression, (D) pleasure, (E) knowledge. Given the question 'What familiarity would one have for more remembering?', which among the choices nostalgia, sadness, depression, pleasure knowledge is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) nostalgia. A possible conditional statement for this question is: **If one has familiarity for more remembering, then one has nostalgia.** Nostalgia is a sentimental longing for the past, while the other choices are either negative emotions or unrelated concepts.
+
+"
+What feature can a river flow through?,"['valley', 'wisconsin', 'wilderness', 'bridge', 'waterfall']","Questions: What feature can a river flow through?, Choices: (A) valley, (B) wisconsin, (C) wilderness, (D) bridge, (E) waterfall. Given the question 'What feature can a river flow through?', which among the choices valley, wisconsin, wilderness, bridge waterfall is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) valley. A possible conditional statement for this question is: **If a river can flow through a feature, then the feature is a valley.** A valley is a low area between hills or mountains, where a river can run through, while the other choices are either locations or structures that a river cannot flow through.
+
+"
+What feeling does see favorite show eliminate?,"['bored', 'happiness', 'entertained', 'entertains', 'buy tickets']","Questions: What feeling does see favorite show eliminate?, Choices: (A) bored, (B) happiness, (C) entertained, (D) entertains, (E) buy tickets. Given the question 'What feeling does see favorite show eliminate?', which among the choices bored, happiness, entertained, entertains buy tickets is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) bored. A possible conditional statement for this question is: **If one sees their favorite show, then one eliminates the feeling of being bored.** Being bored is a state of having nothing to do or being uninterested, while seeing one's favorite show is a form of entertainment or enjoyment. The other choices are either synonyms or unrelated to the question.
+
+"
+What feeling might propel one to instituting civil action?,"['complications', 'tiredness', 'anger', 'trial', 'court case']","Questions: What feeling might propel one to instituting civil action?, Choices: (A) complications, (B) tiredness, (C) anger, (D) trial, (E) court case. Given the question 'What feeling might propel one to instituting civil action?', which among the choices complications, tiredness, anger, trial court case is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) anger. A possible conditional statement for this question is: **If one feels anger, then one might propel to instituting civil action.** Anger is a strong emotion of displeasure or hostility, which can motivate one to seek justice or compensation through legal means. The other choices are either irrelevant or consequences of civil action, not causes.
+
+"
+What floor do you run between rooms?,"['carpet', 'exchange', 'dance', 'building', 'hallway']","Questions: What floor do you run between rooms?, Choices: (A) carpet, (B) exchange, (C) dance, (D) building, (E) hallway. Given the question 'What floor do you run between rooms?', which among the choices carpet, exchange, dance, building hallway is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) hallway. A possible conditional statement for this question is: **If one runs between rooms, then one runs on a hallway.** A hallway is a passage connecting rooms in a building, while the other choices are either types of flooring or unrelated activities.
+
+"
+What floral area is a monument usually placed in?,"['public growth areas', 'state park', 'public gardens', 'municipal park', 'cemetary']","Questions: What floral area is a monument usually placed in?, Choices: (A) public growth areas, (B) state park, (C) public gardens, (D) municipal park, (E) cemetary. Given the question 'What floral area is a monument usually placed in?', which among the choices public growth areas, state park, public gardens, municipal park cemetary is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) municipal park. A possible conditional statement for this question is: **If a monument is placed in a floral area, then the area is a municipal park.** A municipal park is a public park that is maintained by a city or town, where monuments can be erected to commemorate historical events or figures. The other choices are either not floral areas or not suitable for monuments.
+
+"
+What force keeps objects on the surface of the earth?,"['tectonic plates', 'the sun', 'one moon', 'gravity', 'four seasons']","Questions: What force keeps objects on the surface of the earth?, Choices: (A) tectonic plates, (B) the sun, (C) one moon, (D) gravity, (E) four seasons. Given the question 'What force keeps objects on the surface of the earth?', which among the choices tectonic plates, the sun, one moon, gravity four seasons is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) gravity. A possible conditional statement for this question is: **If a force keeps objects on the surface of the earth, then the force is gravity.** Gravity is the natural phenomenon that attracts objects toward the center of the earth, while the other choices are either unrelated or have no effect on the objects.
+
+"
+What form of alcohol is made from grapes?,"['wine', 'plane', 'beer', 'distillery', 'cider']","Questions: What form of alcohol is made from grapes?, Choices: (A) wine, (B) plane, (C) beer, (D) distillery, (E) cider. Given the question 'What form of alcohol is made from grapes?', which among the choices wine, plane, beer, distillery cider is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) wine. A possible conditional statement for this question is: **If a form of alcohol is made from grapes, then the form is wine.** Wine is an alcoholic beverage that is fermented from grape juice, while the other choices are either made from different ingredients or not forms of alcohol."
+What form of government is most associated with kingdoms?,"['monarchy', 'ruled by government', 'europe', 'book', 'king']","Questions: What form of government is most associated with kingdoms?, Choices: (A) monarchy, (B) ruled by government, (C) europe, (D) book, (E) king. Given the question 'What form of government is most associated with kingdoms?', which among the choices monarchy, ruled by government, europe, book king is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) monarchy. A monarchy is a form of government where a single person, usually a king or a queen, has the supreme authority over a state or a country. Kingdoms are typically ruled by monarchs, who inherit their power from their ancestors. A conditional statement that explains this reasoning is: If a state or a country is a kingdom, then it is most likely ruled by a monarchy.
+
+"
+What fruit growing area is not likely to contain an apple tree?,"['washington state', 'orchid', 'farmland', 'grape vineyard', 'vineyard']","Questions: What fruit growing area is not likely to contain an apple tree?, Choices: (A) washington state, (B) orchid, (C) farmland, (D) grape vineyard, (E) vineyard. Given the question 'What fruit growing area is not likely to contain an apple tree?', which among the choices washington state, orchid, farmland, grape vineyard vineyard is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) grape vineyard. A grape vineyard is a place where grapes are grown for making wine or other products. Apple trees are not usually planted in grape vineyards, because they have different soil and climate requirements, and they may compete for resources or attract pests. A conditional statement that explains this reasoning is: If a fruit growing area is a grape vineyard, then it is not likely to contain an apple tree.
+
+"
+What garment popular with the flappers of the 1920's has thin shoulder straps?,"['iphone', 'baggage', 'golf bag', 'chemise', 'brassiere']","Questions: What garment popular with the flappers of the 1920's has thin shoulder straps?, Choices: (A) iphone, (B) baggage, (C) golf bag, (D) chemise, (E) brassiere. Given the question 'What garment popular with the flappers of the 1920's has thin shoulder straps?', which among the choices iphone, baggage, golf bag, chemise brassiere is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) chemise. A chemise is a loose-fitting garment that hangs straight from the shoulders and covers the body. It was popular with the flappers of the 1920s, who wore it as a symbol of freedom and rebellion. A chemise has thin shoulder straps that hold it in place. A conditional statement that explains this reasoning is: If a garment is popular with the flappers of the 1920s and has thin shoulder straps, then it is most likely a chemise.
+
+"
+What gas vehicle uses a chain to move the back wheel?,"['gear shift', 'bicycle', 'car', 'tow truck', 'motorbike']","Questions: What gas vehicle uses a chain to move the back wheel?, Choices: (A) gear shift, (B) bicycle, (C) car, (D) tow truck, (E) motorbike. Given the question 'What gas vehicle uses a chain to move the back wheel?', which among the choices gear shift, bicycle, car, tow truck motorbike is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) motorbike. A motorbike is a gas vehicle that uses a chain to move the back wheel. The chain connects the engine to the rear sprocket, which rotates the back wheel. A motorbike also has a front wheel, a handlebar, and a seat. A conditional statement that explains this reasoning is: If a gas vehicle uses a chain to move the back wheel, then it is most likely a motorbike.
+
+"
+What gathering of loved ones follows your final birthday?,"['new age', 'burial', 'die', 'funeral', 'happy']","Questions: What gathering of loved ones follows your final birthday?, Choices: (A) new age, (B) burial, (C) die, (D) funeral, (E) happy. Given the question 'What gathering of loved ones follows your final birthday?', which among the choices new age, burial, die, funeral happy is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) funeral. A funeral is a gathering of loved ones that follows your final birthday. Your final birthday is the day you die, and a funeral is a ceremony that honors your life and memory. A funeral usually involves a coffin, a grave, and a speech. A conditional statement that explains this reasoning is: If a gathering of loved ones follows your final birthday, then it is most likely a funeral.
+
+"
+What general area is a monkey found in?,"['research laboratory', 'great outdoors', 'zoo', 'tree tops', 'zoological gardens']","Questions: What general area is a monkey found in?, Choices: (A) research laboratory, (B) great outdoors, (C) zoo, (D) tree tops, (E) zoological gardens. Given the question 'What general area is a monkey found in?', which among the choices research laboratory, great outdoors, zoo, tree tops zoological gardens is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) tree tops. Tree tops are the general area where monkeys are found in. Monkeys are primates that have long tails and opposable thumbs. They live in tropical and subtropical regions, and they spend most of their time in the tree tops, where they find food, shelter, and safety. A conditional statement that explains this reasoning is: If a general area is where monkeys are found in, then it is most likely the tree tops.
+
+"
+What generally elected position might be prone to be labelled a weasel?,"['public office', 'out of doors', 'washington dc', 'swimming pool', 'henhouse']","Questions: What generally elected position might be prone to be labelled a weasel?, Choices: (A) public office, (B) out of doors, (C) washington dc, (D) swimming pool, (E) henhouse. Given the question 'What generally elected position might be prone to be labelled a weasel?', which among the choices public office, out of doors, washington dc, swimming pool henhouse is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) public office. A public office is a generally elected position that might be prone to be labelled a weasel. A weasel is a small, furry animal that is known for being sneaky and cunning. A weasel is also a slang term for a person who is dishonest, untrustworthy, or self-serving. Some people may label a public office holder as a weasel, if they think that they are corrupt, deceitful, or incompetent. A conditional statement that explains this reasoning is: If a generally elected position is prone to be labelled a weasel, then it is most likely a public office.
+
+"
+What geological feature is made mostly of rock?,"['countryside', 'ground', 'street', 'mountain range', 'bridge']","Questions: What geological feature is made mostly of rock?, Choices: (A) countryside, (B) ground, (C) street, (D) mountain range, (E) bridge. Given the question 'What geological feature is made mostly of rock?', which among the choices countryside, ground, street, mountain range bridge is the correct answer? Explain your reasoning using conditional statements.
+",
+What gets rid of a mundane routine?,"['sophisticated', 'imprevist', 'arcane', 'heavenly', 'new']","Questions: What gets rid of a mundane routine?, Choices: (A) sophisticated, (B) imprevist, (C) arcane, (D) heavenly, (E) new. Given the question 'What gets rid of a mundane routine?', which among the choices sophisticated, imprevist, arcane, heavenly new is the correct answer? Explain your reasoning using conditional statements.
+","920s, who wore it as a symbol of freedom and rebellion. A chemise has thin shoulder straps that hold it in place. A conditional statement that explains this reasoning is: If a garment is popular with the flappers of the 1920s and has thin shoulder straps, then it is most likely a chemise.
+
+4. The correct answer is (E) motorbike. A motorbike is a gas vehicle that uses a chain to move the back wheel. The chain connects the engine to the rear sprocket, which rotates the back wheel. A motorbike also has a front wheel, a handlebar, and a seat. A conditional statement that explains this reasoning is: If a gas vehicle uses a chain to move the back wheel, then it is most likely a motorbike.
+
+5. The correct answer is (D) funeral. A funeral is a gathering of loved ones that follows your final birthday. Your final birthday is the day you die, and a funeral is a ceremony that honors your life and memory. A funeral usually involves a coffin, a grave, and a speech. A conditional statement that explains this reasoning is: If a gathering of loved ones follows your final birthday, then it is most likely a funeral.
+
+6. The correct answer is (D) tree tops. Tree tops are the general area where monkeys are found in. Monkeys are primates that have long tails and opposable thumbs. They live in tropical and subtropical regions, and they spend most of their time in the tree tops, where they find food, shelter, and safety. A conditional statement that explains this reasoning is: If a general area is where monkeys are found in, then it is most likely the tree tops.
+
+7. The correct answer is (A) public office. A public office is a generally elected position that might be prone to be labelled a weasel. A weasel is a small, furry animal that is known for being sneaky and cunning. A weasel is also a slang term for a person who is dishonest, untrustworthy, or self-serving. Some people may label a public office holder as a weasel, if they think that they are corrupt, deceitful, or incompetent. A conditional statement that explains this reasoning is: If a generally elected position is prone to be labelled a weasel, then it is most likely a public office.
+
+8. The correct answer is (D) mountain range. A mountain range is a geological feature that is made mostly of rock. A mountain range is a series of mountains that are connected by high ground. A mountain range is formed by the movement of tectonic plates, which push up the earth's crust and create peaks and valleys. A mountain range is composed of different types of rocks, such as granite, limestone, and basalt. A conditional statement that explains this reasoning is: If a geological feature is made mostly of rock, then it is most likely a mountain range.
+
+9. The correct answer is (B) imprevist. Imprevist is a word that means unexpected, surprising, or unplanned. It can also mean a person who enjoys or seeks adventure or novelty. Imprevist can get rid of a mundane routine, which is a boring or ordinary pattern of activities or tasks. Imprevist can introduce some variety, excitement, or challenge to a mundane routine, and make it more interesting or enjoyable. A conditional statement that explains this reasoning is: If a word means unexpected or adventurous, then it can get rid of a mundane routine.
+
+"
+What gift do people claim that god has for people?,"['bible', 'everywhere', 'judge people', 'care for people', 'work miracles']","Questions: What gift do people claim that god has for people?, Choices: (A) bible, (B) everywhere, (C) judge people, (D) care for people, (E) work miracles. Given the question 'What gift do people claim that god has for people?', which among the choices bible, everywhere, judge people, care for people work miracles is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) work miracles. A miracle is an extraordinary event that defies the laws of nature and is attributed to a divine or supernatural power. Some people claim that God has the gift of working miracles for people, such as healing the sick, raising the dead, or changing the weather. They believe that God can intervene in the natural order and perform wonders that benefit or astonish people. A conditional statement that explains this reasoning is: If a gift is an extraordinary event that defies the laws of nature and is attributed to God, then it is most likely working miracles."
+What goes well with drinks?,"['show', 'bar', 'soda', 'dinner', 'refrigerator']","Questions: What goes well with drinks?, Choices: (A) show, (B) bar, (C) soda, (D) dinner, (E) refrigerator. Given the question 'What goes well with drinks?', which among the choices show, bar, soda, dinner refrigerator is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) dinner. A possible explanation is: If something goes well with drinks, then it is something that can be consumed or enjoyed along with drinks. Dinner is something that can be consumed or enjoyed along with drinks. Therefore, dinner goes well with drinks.
+
+"
+What group is likely to contain a human weasel?,"['farmer', 'congress', 'washington d.c', ""children's song"", 'chicken coop']","Questions: What group is likely to contain a human weasel?, Choices: (A) farmer, (B) congress, (C) washington d.c, (D) children's song, (E) chicken coop. Given the question 'What group is likely to contain a human weasel?', which among the choices farmer, congress, washington d.c, children's song chicken coop is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) congress. A possible explanation is: If a group is likely to contain a human weasel, then it is a group that involves politics, deception, or self-interest. Congress is a group that involves politics, deception, or self-interest. Therefore, congress is likely to contain a human weasel.
+
+"
+What group may be one of the few where playing the bugle has a big role?,"['trumpet', 'military base', 'military band', 'american army', 'music store']","Questions: What group may be one of the few where playing the bugle has a big role?, Choices: (A) trumpet, (B) military base, (C) military band, (D) american army, (E) music store. Given the question 'What group may be one of the few where playing the bugle has a big role?', which among the choices trumpet, military base, military band, american army music store is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) military band. A possible explanation is: If a group may be one of the few where playing the bugle has a big role, then it is a group that performs music for military ceremonies or events. A military band is a group that performs music for military ceremonies or events. Therefore, a military band may be one of the few where playing the bugle has a big role.
+
+"
+What group of musicians will include someone playing the cello?,"['ocean', 'symphony', 'band', 'music store', 'music shop']","Questions: What group of musicians will include someone playing the cello?, Choices: (A) ocean, (B) symphony, (C) band, (D) music store, (E) music shop. Given the question 'What group of musicians will include someone playing the cello?', which among the choices ocean, symphony, band, music store music shop is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) symphony. A possible explanation is: If a group of musicians will include someone playing the cello, then it is a group that plays classical or orchestral music. A symphony is a group that plays classical or orchestral music. Therefore, a symphony will include someone playing the cello.
+
+"
+What group of old testimant believers gather in a place called a temple to worship?,"['middle east', 'abrahamic', 'city', 'jerusalem', 'jewish community']","Questions: What group of old testimant believers gather in a place called a temple to worship?, Choices: (A) middle east, (B) abrahamic, (C) city, (D) jerusalem, (E) jewish community. Given the question 'What group of old testimant believers gather in a place called a temple to worship?', which among the choices middle east, abrahamic, city, jerusalem jewish community is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) jewish community. A possible explanation is: If a group of old testament believers gather in a place called a temple to worship, then it is a group that follows Judaism. The jewish community is a group that follows Judaism. Therefore, the jewish community gathers in a place called a temple to worship.
+
+"
+What grows from all mammal skin?,"['fur', 'nipples', 'hair', 'fur', 'spinal cord']","Questions: What grows from all mammal skin?, Choices: (A) fur, (B) nipples, (C) hair, (D) fur, (E) spinal cord. Given the question 'What grows from all mammal skin?', which among the choices fur, nipples, hair, fur spinal cord is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) hair. A possible explanation is: If something grows from all mammal skin, then it is something that is made of keratin and covers the body of mammals. Hair is something that is made of keratin and covers the body of mammals. Therefore, hair grows from all mammal skin.
+
+"
+What grows well in the sun?,"['west', 'beach', 'beans', 'universe', 'plants']","Questions: What grows well in the sun?, Choices: (A) west, (B) beach, (C) beans, (D) universe, (E) plants. Given the question 'What grows well in the sun?', which among the choices west, beach, beans, universe plants is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) plants. A possible explanation is: If something grows well in the sun, then it is something that uses photosynthesis to produce energy. Plants are something that use photosynthesis to produce energy. Therefore, plants grow well in the sun.
+
+"
+What handle did the man grab to when he wanted a snack?,"['fridge', 'hardware store', 'frying pan', 'water fountain', 'drawer']","Questions: What handle did the man grab to when he wanted a snack?, Choices: (A) fridge, (B) hardware store, (C) frying pan, (D) water fountain, (E) drawer. Given the question 'What handle did the man grab to when he wanted a snack?', which among the choices fridge, hardware store, frying pan, water fountain drawer is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) fridge. A possible explanation is: If a handle is something that the man grabbed to when he wanted a snack, then it is something that opens a container that stores food. A fridge is something that opens a container that stores food. Therefore, a fridge handle is something that the man grabbed to when he wanted a snack.
+
+"
+What happened to the boy to make him cry?,"['hurt', 'acting', 'make happy', 'miserable', 'got injured']","Questions: What happened to the boy to make him cry?, Choices: (A) hurt, (B) acting, (C) make happy, (D) miserable, (E) got injured. Given the question 'What happened to the boy to make him cry?', which among the choices hurt, acting, make happy, miserable got injured is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) hurt. A possible explanation is: If something happened to the boy to make him cry, then it is something that caused him physical or emotional pain. Hurt is something that causes physical or emotional pain. Therefore, hurt happened to the boy to make him cry.
+
+"
+What happened when economic forces don't match a changing society?,"['change in leadership', 'anger', 'resentment', 'heartache', 'depression']","Questions: What happened when economic forces don't match a changing society?, Choices: (A) change in leadership, (B) anger, (C) resentment, (D) heartache, (E) depression. Given the question 'What happened when economic forces don't match a changing society?', which among the choices change in leadership, anger, resentment, heartache depression is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) resentment. A possible explanation is: If something happened when economic forces don't match a changing society, then it is something that reflects dissatisfaction, frustration, or anger. Resentment is something that reflects dissatisfaction, frustration, or anger. Therefore, resentment happened when economic forces don't match a changing society."
+What happens after an extended amount of living for a person?,"['getting old', 'palpitations', 'death', 'perspiration', 'make friends']","Questions: What happens after an extended amount of living for a person?, Choices: (A) getting old, (B) palpitations, (C) death, (D) perspiration, (E) make friends. Given the question 'What happens after an extended amount of living for a person?', which among the choices getting old, palpitations, death, perspiration make friends is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) getting old. My reasoning is: If a person lives for an extended amount of time, then they will get old. This is a logical consequence of living longer. The other choices are not necessarily related to living longer, and some of them are contradictory or irrelevant.
+
+"
+What happens after committing murder?,"['distress', 'kill', 'problems', 'go to jail', 'fear']","Questions: What happens after committing murder?, Choices: (A) distress, (B) kill, (C) problems, (D) go to jail, (E) fear. Given the question 'What happens after committing murder?', which among the choices distress, kill, problems, go to jail fear is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) go to jail. My reasoning is: If a person commits murder, then they will go to jail. This is a legal consequence of committing a crime. The other choices are not necessarily related to committing murder, and some of them are vague or subjective.
+
+"
+What happens after eating dinner?,"['heart burn', 'become tired', 'become full', 'flatulence', 'indigestion']","Questions: What happens after eating dinner?, Choices: (A) heart burn, (B) become tired, (C) become full, (D) flatulence, (E) indigestion. Given the question 'What happens after eating dinner?', which among the choices heart burn, become tired, become full, flatulence indigestion is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) become full. My reasoning is: If a person eats dinner, then they will become full. This is a physiological consequence of eating food. The other choices are not necessarily related to eating dinner, and some of them are conditional or possible outcomes.
+
+"
+What happens after having food too much?,"['being full', 'laziness', 'weight gain', 'getting fat', 'will not starve']","Questions: What happens after having food too much?, Choices: (A) being full, (B) laziness, (C) weight gain, (D) getting fat, (E) will not starve. Given the question 'What happens after having food too much?', which among the choices being full, laziness, weight gain, getting fat will not starve is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) weight gain. My reasoning is: If a person has food too much, then they will gain weight. This is a biological consequence of consuming excess calories. The other choices are not necessarily related to having food too much, and some of them are redundant or irrelevant.
+
+"
+What happens after making friends with someone of the opposite sex?,"['falling in love', 'smile', 'talking', 'shake hands', 'punch in the face']","Questions: What happens after making friends with someone of the opposite sex?, Choices: (A) falling in love, (B) smile, (C) talking, (D) shake hands, (E) punch in the face. Given the question 'What happens after making friends with someone of the opposite sex?', which among the choices falling in love, smile, talking, shake hands punch in the face is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) talking. My reasoning is: If a person makes friends with someone of the opposite sex, then they will talk. This is a social consequence of making friends. The other choices are not necessarily related to making friends with someone of the opposite sex, and some of them are speculative or negative.
+
+"
+What happens after people perform a concert?,"['smile', 'music', 'medium', 'applause', 'accomplish']","Questions: What happens after people perform a concert?, Choices: (A) smile, (B) music, (C) medium, (D) applause, (E) accomplish. Given the question 'What happens after people perform a concert?', which among the choices smile, music, medium, applause accomplish is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) applause. My reasoning is: If people perform a concert, then they will receive applause. This is a cultural consequence of performing a concert. The other choices are not necessarily related to performing a concert, and some of them are ambiguous or trivial.
+
+"
+What happens at the first opening of a business if it's not succesful?,"['making money', 'grand opening', 'wealth', 'lose money', 'get rich']","Questions: What happens at the first opening of a business if it's not succesful?, Choices: (A) making money, (B) grand opening, (C) wealth, (D) lose money, (E) get rich. Given the question 'What happens at the first opening of a business if it's not succesful?', which among the choices making money, grand opening, wealth, lose money get rich is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) lose money. My reasoning is: If a business is not successful at the first opening, then it will lose money. This is an economic consequence of failing to attract customers. The other choices are not necessarily related to the first opening of a business, and some of them are opposite or unrealistic.
+
+"
+What happens if lovers want to show affection?,"['kiss each other', 'show disgust of each other', 'argue', 'part ways', 'break up']","Questions: What happens if lovers want to show affection?, Choices: (A) kiss each other, (B) show disgust of each other, (C) argue, (D) part ways, (E) break up. Given the question 'What happens if lovers want to show affection?', which among the choices kiss each other, show disgust of each other, argue, part ways break up is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) kiss each other. My reasoning is: If lovers want to show affection, then they will kiss each other. This is a romantic consequence of wanting to show affection. The other choices are not necessarily related to wanting to show affection, and some of them are negative or hostile.
+
+"
+What happens if you eat hamburger that's very big?,"['hungry', 'choking', 'get full', 'lose weight', 'getting fat']","Questions: What happens if you eat hamburger that's very big?, Choices: (A) hungry, (B) choking, (C) get full, (D) lose weight, (E) getting fat. Given the question 'What happens if you eat hamburger that's very big?', which among the choices hungry, choking, get full, lose weight getting fat is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) get full. My reasoning is: If a person eats a hamburger that's very big, then they will get full. This is a physiological consequence of eating a large amount of food. The other choices are not necessarily related to eating a hamburger that's very big, and some of them are contradictory or improbable.
+
+"
+What happens if you mess up while skating?,"['having fun', 'fly to the moon', 'may fall', 'can fall', 'get cold']","Questions: What happens if you mess up while skating?, Choices: (A) having fun, (B) fly to the moon, (C) may fall, (D) can fall, (E) get cold. Given the question 'What happens if you mess up while skating?', which among the choices having fun, fly to the moon, may fall, can fall get cold is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) can fall. My reasoning is: If a person messes up while skating, then they can fall. This is a physical consequence of losing balance. The other choices are not necessarily related to messing up while skating, and some of them are absurd or irrelevant."

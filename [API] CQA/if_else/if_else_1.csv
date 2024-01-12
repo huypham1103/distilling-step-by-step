@@ -1,0 +1,830 @@
+premise,hypothesis,prompt,rationale
+"A person woke up in bed.  Their spouse was sleeping beside them.  They rolled over, did something, and stood.  What did they do before standing?","['put on shoes', 'sit up', 'thank god', 'say love', 'converse']","Questions: A person woke up in bed.  Their spouse was sleeping beside them.  They rolled over, did something, and stood.  What did they do before standing?, Choices: (A) put on shoes, (B) sit up, (C) thank god, (D) say love, (E) converse. Given the question 'A person woke up in bed.  Their spouse was sleeping beside them.  They rolled over, did something, and stood.  What did they do before standing?', which among the choices put on shoes, sit up, thank god, say love converse is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) sit up. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If a person woke up in bed, rolled over, and stood, then they must have sat up before standing."" This statement is true because sitting up is a necessary step before standing from a lying position. The other choices are not necessary or logical actions before standing.
+
+"
+"A person writes a check to a clerk, where does the clerk put them?","['cash register', 'desk drawer', 'pay envelope', 'throw away', 'box']","Questions: A person writes a check to a clerk, where does the clerk put them?, Choices: (A) cash register, (B) desk drawer, (C) pay envelope, (D) throw away, (E) box. Given the question 'A person writes a check to a clerk, where does the clerk put them?', which among the choices cash register, desk drawer, pay envelope, throw away box is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) cash register. A possible conditional statement for this question is: ""If a person writes a check to a clerk, then the clerk will put it in the cash register."" This statement is true because the cash register is where the clerk can store the check and record the transaction. The other choices are not appropriate places to put a check.
+
+"
+"A person, cannot afford their home, they are likely to be experiencing what?","['schizophrenia', 'deception', 'live in poverty', 'bad feelings', 'wealth']","Questions: A person, cannot afford their home, they are likely to be experiencing what?, Choices: (A) schizophrenia, (B) deception, (C) live in poverty, (D) bad feelings, (E) wealth. Given the question 'A person, cannot afford their home, they are likely to be experiencing what?', which among the choices schizophrenia, deception, live in poverty, bad feelings wealth is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) live in poverty. A possible conditional statement for this question is: ""If a person cannot afford their home, then they are likely to live in poverty."" This statement is true because poverty is defined as the state of being extremely poor and unable to meet basic needs. The other choices are not directly related to the inability to afford a home.
+
+"
+"A politician makes countless empty promises during a campaign, but the only real goal is to what?","['power', 'influence', 'win elections', 're elected', 'bribe']","Questions: A politician makes countless empty promises during a campaign, but the only real goal is to what?, Choices: (A) power, (B) influence, (C) win elections, (D) re elected, (E) bribe. Given the question 'A politician makes countless empty promises during a campaign, but the only real goal is to what?', which among the choices power, influence, win elections, re elected bribe is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) win elections. A possible conditional statement for this question is: ""If a politician makes countless empty promises during a campaign, then their only real goal is to win elections."" This statement is true because winning elections is the ultimate objective of any political campaign, and empty promises are a common tactic to attract voters. The other choices are not the only real goal of a politician.
+
+"
+"A poor family has no decorations in December, what would make a great gift?","['food', 'specialty store', 'christmas tree', 'department store', 'christmas stocking']","Questions: A poor family has no decorations in December, what would make a great gift?, Choices: (A) food, (B) specialty store, (C) christmas tree, (D) department store, (E) christmas stocking. Given the question 'A poor family has no decorations in December, what would make a great gift?', which among the choices food, specialty store, christmas tree, department store christmas stocking is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) food. A possible conditional statement for this question is: ""If a poor family has no decorations in December, then a great gift for them would be food."" This statement is true because food is a basic necessity that a poor family may lack, and it would be more useful and appreciated than decorations. The other choices are not great gifts for a poor family.
+
+"
+"A quarter of it was twenty five pounds, so the whole was what?","['school year', 'hundredweight', 'upper', 'century', 'hour']","Questions: A quarter of it was twenty five pounds, so the whole was what?, Choices: (A) school year, (B) hundredweight, (C) upper, (D) century, (E) hour. Given the question 'A quarter of it was twenty five pounds, so the whole was what?', which among the choices school year, hundredweight, upper, century hour is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) hundredweight. A possible conditional statement for this question is: ""If a quarter of it was twenty five pounds, then the whole was a hundredweight."" This statement is true because a hundredweight is a unit of weight equal to 100 pounds, and a quarter of it is 25 pounds. The other choices are not units of weight or related to the question.
+
+"
+"A regular everyday human would just call it a meeting, but people like cardinals might call it a what?","['conclave', 'sanctuary', 'homes', 'mortuary', 'stadium']","Questions: A regular everyday human would just call it a meeting, but people like cardinals might call it a what?, Choices: (A) conclave, (B) sanctuary, (C) homes, (D) mortuary, (E) stadium. Given the question 'A regular everyday human would just call it a meeting, but people like cardinals might call it a what?', which among the choices conclave, sanctuary, homes, mortuary stadium is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) conclave. A possible conditional statement for this question is: ""If a regular everyday human would just call it a meeting, then people like cardinals might call it a conclave."" This statement is true because a conclave is a secret or private meeting of a group of people with shared interests or power, especially of cardinals to elect a pope. The other choices are not terms for meetings used by cardinals.
+
+"
+"A relationship that was once filled with the heat of passion but now has someone showing no emotion towards the other, the person has now demonstrated what towards the other?","['indifference', 'air conditioning', 'coolness', 'coldness', 'cooling']","Questions: A relationship that was once filled with the heat of passion but now has someone showing no emotion towards the other, the person has now demonstrated what towards the other?, Choices: (A) indifference, (B) air conditioning, (C) coolness, (D) coldness, (E) cooling. Given the question 'A relationship that was once filled with the heat of passion but now has someone showing no emotion towards the other, the person has now demonstrated what towards the other?', which among the choices indifference, air conditioning, coolness, coldness cooling is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) coldness. A possible conditional statement for this question is: ""If a relationship was once filled with the heat of passion but now has someone showing no emotion towards the other, then the person has now demonstrated coldness towards the other."" This statement is true because coldness is a state of being unemotional or indifferent, and it contrasts with the heat of passion. The other choices are not synonyms for coldness or related to the question.
+
+"
+"A rock hit the windshield while he was on the highway, it caused him to nearly crash his what?","['motorboat', 'airplane', 'automobile', 'barrier', 'motor vehicle']","Questions: A rock hit the windshield while he was on the highway, it caused him to nearly crash his what?, Choices: (A) motorboat, (B) airplane, (C) automobile, (D) barrier, (E) motor vehicle. Given the question 'A rock hit the windshield while he was on the highway, it caused him to nearly crash his what?', which among the choices motorboat, airplane, automobile, barrier motor vehicle is the correct answer? Explain your reasoning using conditional statements.
+",
+"A sailor has to do a lot of prep work before the ship can leave, but what is the first step he must take?","['leave dock', 'coming home', 'row boat', 'sail boat', 'board ship']","Questions: A sailor has to do a lot of prep work before the ship can leave, but what is the first step he must take?, Choices: (A) leave dock, (B) coming home, (C) row boat, (D) sail boat, (E) board ship. Given the question 'A sailor has to do a lot of prep work before the ship can leave, but what is the first step he must take?', which among the choices leave dock, coming home, row boat, sail boat board ship is the correct answer? Explain your reasoning using conditional statements.
+","100 pounds, and a quarter of it is 25 pounds. The other choices are not units of weight or related to the question.
+
+7. The correct answer is (A) conclave. A possible conditional statement for this question is: ""If a regular everyday human would just call it a meeting, then people like cardinals might call it a conclave."" This statement is true because a conclave is a secret or private meeting of a group of people with shared interests or power, especially of cardinals to elect a pope. The other choices are not terms for meetings used by cardinals.
+
+8. The correct answer is (D) coldness. A possible conditional statement for this question is: ""If a relationship was once filled with the heat of passion but now has someone showing no emotion towards the other, then the person has now demonstrated coldness towards the other."" This statement is true because coldness is a state of being unemotional or indifferent, and it contrasts with the heat of passion. The other choices are not synonyms for coldness or related to the question.
+
+9. The correct answer is (E) motor vehicle. A possible conditional statement for this question is: ""If a rock hit the windshield while he was on the highway, then it caused him to nearly crash his motor vehicle."" This statement is true because a motor vehicle is a general term for any road vehicle that has a motor, such as a car, truck, or bus. The other choices are not types of motor vehicles or related to the question.
+
+10. The correct answer is (E) board ship. A possible conditional statement for this question is: ""If a sailor has to do a lot of prep work before the ship can leave, then the first step he must take is to board the ship."" This statement is true because boarding the ship is a necessary action before doing any other prep work on the ship. The other choices are not the first step or related to the question."
+"A sedentary lifestyle of always sitting down is nearly as unhealthy as a bad diet, but still people sit on the couch all day and what?","['talk', 'relaxing', 'pee', 'gardening', 'watch tv']","Questions: A sedentary lifestyle of always sitting down is nearly as unhealthy as a bad diet, but still people sit on the couch all day and what?, Choices: (A) talk, (B) relaxing, (C) pee, (D) gardening, (E) watch tv. Given the question 'A sedentary lifestyle of always sitting down is nearly as unhealthy as a bad diet, but still people sit on the couch all day and what?', which among the choices talk, relaxing, pee, gardening watch tv is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) watch tv**. A possible explanation is:
+
+```python
+# A conditional statement is a statement that uses the keywords if, elif, or else to execute a block of code based on a condition.
+# A condition is a boolean expression that evaluates to either True or False.
+# For example, the condition x > 10 is True if x is greater than 10, and False otherwise.
+
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of sitting on the couch all day.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_1():
+  # Choice (A) talk
+  if talk == ""sitting on the couch all day"":
+    return ""(A) talk""
+  # Choice (B) relaxing
+  elif relaxing == ""sitting on the couch all day"":
+    return ""(B) relaxing""
+  # Choice (C) pee
+  elif pee == ""sitting on the couch all day"":
+    return ""(C) pee""
+  # Choice (D) gardening
+  elif gardening == ""sitting on the couch all day"":
+    return ""(D) gardening""
+  # Choice (E) watch tv
+  else:
+    return ""(E) watch tv""
+```
+
+"
+"A shark is stuck in a lake, where does it need to go provided it isn't a bull shark?","['medium', 'saltwater', 'sea world', 'atlantic ocean', 'seawater']","Questions: A shark is stuck in a lake, where does it need to go provided it isn't a bull shark?, Choices: (A) medium, (B) saltwater, (C) sea world, (D) atlantic ocean, (E) seawater. Given the question 'A shark is stuck in a lake, where does it need to go provided it isn't a bull shark?', which among the choices medium, saltwater, sea world, atlantic ocean seawater is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(B) saltwater**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of where a shark needs to go, except for a bull shark.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_2():
+  # Choice (A) medium
+  if medium == ""where a shark needs to go, except for a bull shark"":
+    return ""(A) medium""
+  # Choice (B) saltwater
+  elif saltwater == ""where a shark needs to go, except for a bull shark"":
+    return ""(B) saltwater""
+  # Choice (C) sea world
+  elif sea_world == ""where a shark needs to go, except for a bull shark"":
+    return ""(C) sea world""
+  # Choice (D) atlantic ocean
+  elif atlantic_ocean == ""where a shark needs to go, except for a bull shark"":
+    return ""(D) atlantic ocean""
+  # Choice (E) seawater
+  else:
+    return ""(E) seawater""
+```
+
+"
+"A shark isn't something you have to worry about at the lake in the woods, but there are plenty of dangers in the what?","['great oceans', 'great outdoors', 'tropical waters', 'pacific ocean', 'gulf of mexico']","Questions: A shark isn't something you have to worry about at the lake in the woods, but there are plenty of dangers in the what?, Choices: (A) great oceans, (B) great outdoors, (C) tropical waters, (D) pacific ocean, (E) gulf of mexico. Given the question 'A shark isn't something you have to worry about at the lake in the woods, but there are plenty of dangers in the what?', which among the choices great oceans, great outdoors, tropical waters, pacific ocean gulf of mexico is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) great outdoors**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of where there are plenty of dangers, besides a shark.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_3():
+  # Choice (A) great oceans
+  if great_oceans == ""where there are plenty of dangers, besides a shark"":
+    return ""(A) great oceans""
+  # Choice (B) great outdoors
+  elif great_outdoors == ""where there are plenty of dangers, besides a shark"":
+    return ""(B) great outdoors""
+  # Choice (C) tropical waters
+  elif tropical_waters == ""where there are plenty of dangers, besides a shark"":
+    return ""(C) tropical waters""
+  # Choice (D) pacific ocean
+  elif pacific_ocean == ""where there are plenty of dangers, besides a shark"":
+    return ""(D) pacific ocean""
+  # Choice (E) gulf of mexico
+  else:
+    return ""(E) gulf of mexico""
+```
+
+"
+"A shark swam in the background aquarium as the card players sat emotionless, what were they playing?","['sea world', 'court room', 'shallow waters', 'poker game', 'card shark']","Questions: A shark swam in the background aquarium as the card players sat emotionless, what were they playing?, Choices: (A) sea world, (B) court room, (C) shallow waters, (D) poker game, (E) card shark. Given the question 'A shark swam in the background aquarium as the card players sat emotionless, what were they playing?', which among the choices sea world, court room, shallow waters, poker game card shark is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) poker game**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what the card players were playing, with a shark in the background aquarium and sitting emotionless.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_4():
+  # Choice (A) sea world
+  if sea_world == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(A) sea world""
+  # Choice (B) court room
+  elif court_room == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(B) court room""
+  # Choice (C) shallow waters
+  elif shallow_waters == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(C) shallow waters""
+  # Choice (D) poker game
+  elif poker_game == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(D) poker game""
+  # Choice (E) card shark
+  else:
+    return ""(E) card shark""
+```
+
+"
+"A single person is going to a party of other singles, what do they want to do?","['visit friends', 'race cars', 'meeting people', 'having fun', 'drinking alcohol']","Questions: A single person is going to a party of other singles, what do they want to do?, Choices: (A) visit friends, (B) race cars, (C) meeting people, (D) having fun, (E) drinking alcohol. Given the question 'A single person is going to a party of other singles, what do they want to do?', which among the choices visit friends, race cars, meeting people, having fun drinking alcohol is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) meeting people**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what a single person wants to do at a party of other singles.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_5():
+  # Choice (A) visit friends
+  if visit_friends == ""what a single person wants to do at a party of other singles"":
+    return ""(A) visit friends""
+  # Choice (B) race cars
+  elif race_cars == ""what a single person wants to do at a party of other singles"":
+    return ""(B) race cars""
+  # Choice (C) meeting people
+  elif meeting_people == ""what a single person wants to do at a party of other singles"":
+    return ""(C) meeting people""
+  # Choice (D) having fun
+  elif having_fun == ""what a single person wants to do at a party of other singles"":
+    return ""(D) having fun""
+  # Choice (E) drinking alcohol
+  else:
+    return ""(E) drinking alcohol""
+```
+
+"
+"A skateboard can have a steep learning curve, but once the basics are mastered you can what?","['relax', 'teenager', 'freedom', 'have fun', 'give up']","Questions: A skateboard can have a steep learning curve, but once the basics are mastered you can what?, Choices: (A) relax, (B) teenager, (C) freedom, (D) have fun, (E) give up. Given the question 'A skateboard can have a steep learning curve, but once the basics are mastered you can what?', which among the choices relax, teenager, freedom, have fun give up is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) have fun**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what a skateboarder can do once the basics are mastered.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_6():
+  # Choice (A) relax
+  if relax == ""what a skateboarder can do once the basics are mastered"":
+    return ""(A) relax""
+  # Choice (B) teenager
+  elif teenager == ""what a skateboarder can do once the basics are mastered"":
+    return ""(B) teenager""
+  # Choice (C) freedom
+  elif freedom == ""what a skateboarder can do once the basics are mastered"":
+    return ""(C) freedom""
+  # Choice (D) have fun
+  elif have_fun == ""what a skateboarder can do once the basics are mastered"":
+    return ""(D) have fun""
+  # Choice (E) give up
+  else:
+    return ""(E) give up""
+```
+
+"
+"A skill he has was being able to string bass, what else could he likely do?","['bass guitar', 'music shop', 'marching band', 'write music', 'orchestra']","Questions: A skill he has was being able to string bass, what else could he likely do?, Choices: (A) bass guitar, (B) music shop, (C) marching band, (D) write music, (E) orchestra. Given the question 'A skill he has was being able to string bass, what else could he likely do?', which among the choices bass guitar, music shop, marching band, write music orchestra is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) bass guitar**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what else a person who can string bass could likely do.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_7():
+  # Choice (A) bass guitar
+  if bass_guitar == ""what else a person who can string bass could likely do"":
+    return ""(A) bass guitar""
+  # Choice (B) music shop
+  elif music_shop == ""what else a person who can string bass could likely do"":
+    return ""(B) music shop""
+  # Choice (C) marching band
+  elif marching_band == ""what else a person who can string bass could likely do"":
+    return ""(C) marching band""
+  # Choice (D) write music
+  elif write_music == ""what else a person who can string bass could likely do"":
+    return ""(D) write music""
+  # Choice (E) orchestra
+  else:
+    return ""(E) orchestra""
+```
+
+"
+"A sloth climbs slow, but it can eventually reach all the way up where?","['forest canopy', 'universe', 'tropical rainforest', 'large trees', 'nature preserve']","Questions: A sloth climbs slow, but it can eventually reach all the way up where?, Choices: (A) forest canopy, (B) universe, (C) tropical rainforest, (D) large trees, (E) nature preserve. Given the question 'A sloth climbs slow, but it can eventually reach all the way up where?', which among the choices forest canopy, universe, tropical rainforest, large trees nature preserve is the correct answer? Explain your reasoning using conditional statements.
+",8. The correct answer is **(A) fores
+"A small dog envied his friends, who were attached to sleds and pulled people though the thick snowy wilderness.  Where might he live?","[""person's house"", 'basket', 'canada', 'illinois', 'mexico']","Questions: A small dog envied his friends, who were attached to sleds and pulled people though the thick snowy wilderness.  Where might he live?, Choices: (A) person's house, (B) basket, (C) canada, (D) illinois, (E) mexico. Given the question 'A small dog envied his friends, who were attached to sleds and pulled people though the thick snowy wilderness.  Where might he live?', which among the choices person's house, basket, canada, illinois mexico is the correct answer? Explain your reasoning using conditional statements.
+",
+"A small dog is lost in Copenhagen, what is the dogs likely nationality?","['denmark', 'new hampshire', 'backyard', 'danish', 'coffin']","Questions: A small dog is lost in Copenhagen, what is the dogs likely nationality?, Choices: (A) denmark, (B) new hampshire, (C) backyard, (D) danish, (E) coffin. Given the question 'A small dog is lost in Copenhagen, what is the dogs likely nationality?', which among the choices denmark, new hampshire, backyard, danish coffin is the correct answer? Explain your reasoning using conditional statements.
+","10 is True if x is greater than 10, and False otherwise.
+
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of sitting on the couch all day.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_1():
+  # Choice (A) talk
+  if talk == ""sitting on the couch all day"":
+    return ""(A) talk""
+  # Choice (B) relaxing
+  elif relaxing == ""sitting on the couch all day"":
+    return ""(B) relaxing""
+  # Choice (C) pee
+  elif pee == ""sitting on the couch all day"":
+    return ""(C) pee""
+  # Choice (D) gardening
+  elif gardening == ""sitting on the couch all day"":
+    return ""(D) gardening""
+  # Choice (E) watch tv
+  else:
+    return ""(E) watch tv""
+```
+
+2. The correct answer is **(B) saltwater**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of where a shark needs to go, except for a bull shark.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_2():
+  # Choice (A) medium
+  if medium == ""where a shark needs to go, except for a bull shark"":
+    return ""(A) medium""
+  # Choice (B) saltwater
+  elif saltwater == ""where a shark needs to go, except for a bull shark"":
+    return ""(B) saltwater""
+  # Choice (C) sea world
+  elif sea_world == ""where a shark needs to go, except for a bull shark"":
+    return ""(C) sea world""
+  # Choice (D) atlantic ocean
+  elif atlantic_ocean == ""where a shark needs to go, except for a bull shark"":
+    return ""(D) atlantic ocean""
+  # Choice (E) seawater
+  else:
+    return ""(E) seawater""
+```
+
+3. The correct answer is **(B) great outdoors**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of where there are plenty of dangers, besides a shark.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_3():
+  # Choice (A) great oceans
+  if great_oceans == ""where there are plenty of dangers, besides a shark"":
+    return ""(A) great oceans""
+  # Choice (B) great outdoors
+  elif great_outdoors == ""where there are plenty of dangers, besides a shark"":
+    return ""(B) great outdoors""
+  # Choice (C) tropical waters
+  elif tropical_waters == ""where there are plenty of dangers, besides a shark"":
+    return ""(C) tropical waters""
+  # Choice (D) pacific ocean
+  elif pacific_ocean == ""where there are plenty of dangers, besides a shark"":
+    return ""(D) pacific ocean""
+  # Choice (E) gulf of mexico
+  else:
+    return ""(E) gulf of mexico""
+```
+
+4. The correct answer is **(D) poker game**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what the card players were playing, with a shark in the background aquarium and sitting emotionless.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_4():
+  # Choice (A) sea world
+  if sea_world == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(A) sea world""
+  # Choice (B) court room
+  elif court_room == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(B) court room""
+  # Choice (C) shallow waters
+  elif shallow_waters == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(C) shallow waters""
+  # Choice (D) poker game
+  elif poker_game == ""what the card players were playing, with a shark in the background aquarium and sitting emotionless"":
+    return ""(D) poker game""
+  # Choice (E) card shark
+  else:
+    return ""(E) card shark""
+```
+
+5. The correct answer is **(C) meeting people**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what a single person wants to do at a party of other singles.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_5():
+  # Choice (A) visit friends
+  if visit_friends == ""what a single person wants to do at a party of other singles"":
+    return ""(A) visit friends""
+  # Choice (B) race cars
+  elif race_cars == ""what a single person wants to do at a party of other singles"":
+    return ""(B) race cars""
+  # Choice (C) meeting people
+  elif meeting_people == ""what a single person wants to do at a party of other singles"":
+    return ""(C) meeting people""
+  # Choice (D) having fun
+  elif having_fun == ""what a single person wants to do at a party of other singles"":
+    return ""(D) having fun""
+  # Choice (E) drinking alcohol
+  else:
+    return ""(E) drinking alcohol""
+```
+
+6. The correct answer is **(D) have fun**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what a skateboarder can do once the basics are mastered.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_6():
+  # Choice (A) relax
+  if relax == ""what a skateboarder can do once the basics are mastered"":
+    return ""(A) relax""
+  # Choice (B) teenager
+  elif teenager == ""what a skateboarder can do once the basics are mastered"":
+    return ""(B) teenager""
+  # Choice (C) freedom
+  elif freedom == ""what a skateboarder can do once the basics are mastered"":
+    return ""(C) freedom""
+  # Choice (D) have fun
+  elif have_fun == ""what a skateboarder can do once the basics are mastered"":
+    return ""(D) have fun""
+  # Choice (E) give up
+  else:
+    return ""(E) give up""
+```
+
+7. The correct answer is **(A) bass guitar**. A possible explanation is:
+
+```python
+# To answer the question, we can use a conditional statement to check each choice and see if it matches the description of what else a person who can string bass could likely do.
+# We can use the keyword if for the first choice, and elif for the rest of the choices, except for the last one, which we can use else for.
+# We can use the keyword return to end the function and return the answer.
+
+def answer_question_7():
+  # Choice (A) bass guitar
+  if bass_guitar == ""what else a person who can string bass could likely do"":
+    return ""(A) bass guitar""
+  # Choice (B) music shop
+  elif music_shop == ""what else a person who can string bass could likely do"":
+    return ""(B) music shop""
+  # Choice (C) marching band
+  elif marching_band == ""what else a person who can string bass could likely do"":
+    return ""(C) marching band""
+  # Choice (D) write music
+  elif write_music == ""what else a person who can string bass could likely do"":
+    return ""(D) write music""
+  # Choice (E) orchestra
+  else:
+    return ""(E) orchestra""
+```
+
+8. The correct answer is **(A) forest"
+"A small dog is lost in New England, where would it likely be found?","['own home', 'old england', 'new hampshire', 'coffin', 'denmark']","Questions: A small dog is lost in New England, where would it likely be found?, Choices: (A) own home, (B) old england, (C) new hampshire, (D) coffin, (E) denmark. Given the question 'A small dog is lost in New England, where would it likely be found?', which among the choices own home, old england, new hampshire, coffin denmark is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) new hampshire. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If a small dog is lost in New England, then it is likely to be found in New Hampshire."" This is because New Hampshire is one of the six states that make up New England, and it is more probable that the dog would wander within the same region than to other places.
+
+"
+"A snake is not something you want to come across on a plane, but it's most likely to happen while out in mother what?","['nature', 'pet shop', 'georgia', 'tropical forest', 'france']","Questions: A snake is not something you want to come across on a plane, but it's most likely to happen while out in mother what?, Choices: (A) nature, (B) pet shop, (C) georgia, (D) tropical forest, (E) france. Given the question 'A snake is not something you want to come across on a plane, but it's most likely to happen while out in mother what?', which among the choices nature, pet shop, georgia, tropical forest france is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) nature. A possible conditional statement for this question is: ""If a snake is not something you want to come across on a plane, then it is most likely to happen while out in mother nature."" This is because snakes are wild animals that live in natural habitats, and it is very rare to encounter them on a plane or in other places.
+
+"
+"A sporting goods store is usually found in shopping squares and malls, but the privately owned shop was just right there in the small what?","['village', 'town', 'buy fishing pole', 'jerseys', 'city']","Questions: A sporting goods store is usually found in shopping squares and malls, but the privately owned shop was just right there in the small what?, Choices: (A) village, (B) town, (C) buy fishing pole, (D) jerseys, (E) city. Given the question 'A sporting goods store is usually found in shopping squares and malls, but the privately owned shop was just right there in the small what?', which among the choices village, town, buy fishing pole, jerseys city is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) town. A possible conditional statement for this question is: ""If a sporting goods store is usually found in shopping squares and malls, then the privately owned shop was just right there in the small town."" This is because towns are smaller than cities, and they may have less competition and more loyal customers for a niche business like a sporting goods store.
+
+"
+"A squirrel ran up to it's home, where is the small dog likely to be barking up?","['manhattan apartment', 'wood', ""neighbor's yard"", 'tree', 'basket']","Questions: A squirrel ran up to it's home, where is the small dog likely to be barking up?, Choices: (A) manhattan apartment, (B) wood, (C) neighbor's yard, (D) tree, (E) basket. Given the question 'A squirrel ran up to it's home, where is the small dog likely to be barking up?', which among the choices manhattan apartment, wood, neighbor's yard, tree basket is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) tree. A possible conditional statement for this question is: ""If a squirrel ran up to its home, then the small dog is likely to be barking up the tree."" This is because squirrels typically live in trees, and dogs often chase and bark at squirrels when they see them.
+
+"
+"A steak house was looking for a quaint place to operate, where did they open?","['new york', 'town', 'library', 'mexico', 'united states']","Questions: A steak house was looking for a quaint place to operate, where did they open?, Choices: (A) new york, (B) town, (C) library, (D) mexico, (E) united states. Given the question 'A steak house was looking for a quaint place to operate, where did they open?', which among the choices new york, town, library, mexico united states is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) town. A possible conditional statement for this question is: ""If a steak house was looking for a quaint place to operate, then they opened in the town."" This is because towns are more likely to have a cozy and charming atmosphere than big cities or other places, which may suit the style of a steak house.
+
+"
+"A student puked in the cafeteria, the janitor retrieved his bucket of sawdust from the what?","['utility closet', 'well', 'garden shed', 'pantry', 'cupboard']","Questions: A student puked in the cafeteria, the janitor retrieved his bucket of sawdust from the what?, Choices: (A) utility closet, (B) well, (C) garden shed, (D) pantry, (E) cupboard. Given the question 'A student puked in the cafeteria, the janitor retrieved his bucket of sawdust from the what?', which among the choices utility closet, well, garden shed, pantry cupboard is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) utility closet. A possible conditional statement for this question is: ""If a student puked in the cafeteria, then the janitor retrieved his bucket of sawdust from the utility closet."" This is because utility closets are common places where janitors store their cleaning supplies, and sawdust is often used to absorb liquids and odors.
+
+"
+"A student takes an unpaid membership, why on Earth would he do that?","['gain experience', 'taking notes', 'listen carefully', 'study book', 'capitalist exploitation']","Questions: A student takes an unpaid membership, why on Earth would he do that?, Choices: (A) gain experience, (B) taking notes, (C) listen carefully, (D) study book, (E) capitalist exploitation. Given the question 'A student takes an unpaid membership, why on Earth would he do that?', which among the choices gain experience, taking notes, listen carefully, study book capitalist exploitation is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) gain experience. A possible conditional statement for this question is: ""If a student takes an unpaid membership, then he does it to gain experience."" This is because gaining experience is one of the main benefits of doing unpaid work, especially for students who want to learn new skills or explore different fields.
+
+"
+"A student want to recall information from class later, what is he doing?","['gain experience', 'study book', 'paying attention', 'listen carefully', 'taking notes']","Questions: A student want to recall information from class later, what is he doing?, Choices: (A) gain experience, (B) study book, (C) paying attention, (D) listen carefully, (E) taking notes. Given the question 'A student want to recall information from class later, what is he doing?', which among the choices gain experience, study book, paying attention, listen carefully taking notes is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) taking notes. A possible conditional statement for this question is: ""If a student wants to recall information from class later, then he is taking notes."" This is because taking notes is a proven strategy to improve memory and comprehension of the material taught in class.
+
+"
+"A student wants to hear what the professor is saying, what does he do?","['gain experience', 'taking notes', 'listen carefully', 'complete test', 'focus']","Questions: A student wants to hear what the professor is saying, what does he do?, Choices: (A) gain experience, (B) taking notes, (C) listen carefully, (D) complete test, (E) focus. Given the question 'A student wants to hear what the professor is saying, what does he do?', which among the choices gain experience, taking notes, listen carefully, complete test focus is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) listen carefully. A possible conditional statement for this question is: ""If a student wants to hear what the professor is saying, then he listens carefully."" This is because listening carefully is the most basic and effective way to understand what someone is saying, especially in an academic setting.
+
+"
+"A teacher thought that John wasn't doing  his best. She knew he had potential, so she tried to do what to him?","['tell story', 'lower expectations', 'time test', 'bribe', 'encourage']","Questions: A teacher thought that John wasn't doing  his best. She knew he had potential, so she tried to do what to him?, Choices: (A) tell story, (B) lower expectations, (C) time test, (D) bribe, (E) encourage. Given the question 'A teacher thought that John wasn't doing  his best. She knew he had potential, so she tried to do what to him?', which among the choices tell story, lower expectations, time test, bribe encourage is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) encourage. A possible conditional statement for this question is: ""If a teacher thought that John wasn't doing his best, then she tried to encourage him."" This is because encouragement is a positive and supportive way to motivate someone to improve their performance and reach their potential."
+"A traveler from Atlanta wants to meet friends in Hong Kong, so he drives where?","['car', 'bus stop', 'subway', 'skateboard', 'airport']","Questions: A traveler from Atlanta wants to meet friends in Hong Kong, so he drives where?, Choices: (A) car, (B) bus stop, (C) subway, (D) skateboard, (E) airport. Given the question 'A traveler from Atlanta wants to meet friends in Hong Kong, so he drives where?', which among the choices car, bus stop, subway, skateboard airport is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) airport. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If a traveler from Atlanta wants to meet friends in Hong Kong, then he drives to the airport."" The hypothesis is true, since the traveler does want to meet friends in Hong Kong. The conclusion is also true, since the airport is the only place where he can board a flight to Hong Kong. Therefore, the conditional statement is true.
+
+"
+"A weasel is cursed by a witch, where is the weasel stuck?","['corn fields', 'great outdoors', 'fairytale', 'imagination', 'chicken coop']","Questions: A weasel is cursed by a witch, where is the weasel stuck?, Choices: (A) corn fields, (B) great outdoors, (C) fairytale, (D) imagination, (E) chicken coop. Given the question 'A weasel is cursed by a witch, where is the weasel stuck?', which among the choices corn fields, great outdoors, fairytale, imagination chicken coop is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (C) fairytale. A possible conditional statement for this question is: ""If a weasel is cursed by a witch, then he is stuck in a fairytale."" The hypothesis is true, since the weasel is indeed cursed by a witch. The conclusion is also true, since a fairytale is a fictional story that often involves magic and supernatural elements. Therefore, the conditional statement is true.
+
+"
+"A wife asks a husband to stop being married to her, what is he likely to feel even with friends?","['happiness', 'pleasure', 'happy', 'grief', 'isolation']","Questions: A wife asks a husband to stop being married to her, what is he likely to feel even with friends?, Choices: (A) happiness, (B) pleasure, (C) happy, (D) grief, (E) isolation. Given the question 'A wife asks a husband to stop being married to her, what is he likely to feel even with friends?', which among the choices happiness, pleasure, happy, grief isolation is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) grief. A possible conditional statement for this question is: ""If a wife asks a husband to stop being married to her, then he is likely to feel grief even with friends."" The hypothesis is true, since the wife does ask the husband to stop being married to her. The conclusion is also true, since grief is a natural response to losing a loved one or a relationship. Therefore, the conditional statement is true.
+
+"
+"A wild animal got in and destroyed the carpeting, who is likely at fault?","['cub', 'istanbul', 'home or office', 'man', 'bedroom']","Questions: A wild animal got in and destroyed the carpeting, who is likely at fault?, Choices: (A) cub, (B) istanbul, (C) home or office, (D) man, (E) bedroom. Given the question 'A wild animal got in and destroyed the carpeting, who is likely at fault?', which among the choices cub, istanbul, home or office, man bedroom is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) cub. A possible conditional statement for this question is: ""If a wild animal got in and destroyed the carpeting, then it is likely a cub."" The hypothesis is true, since a wild animal did get in and destroy the carpeting. The conclusion is also true, since a cub is a young animal that is often curious and playful, and may cause damage to the surroundings. Therefore, the conditional statement is true.
+
+"
+"A woman was running around town doing her errands, what was she gathering?","['help people', 'get dress', 'helpful', 'gain', 'supplies']","Questions: A woman was running around town doing her errands, what was she gathering?, Choices: (A) help people, (B) get dress, (C) helpful, (D) gain, (E) supplies. Given the question 'A woman was running around town doing her errands, what was she gathering?', which among the choices help people, get dress, helpful, gain supplies is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) supplies. A possible conditional statement for this question is: ""If a woman was running around town doing her errands, then she was gathering supplies."" The hypothesis is true, since the woman was indeed running around town doing her errands. The conclusion is also true, since supplies are things that are needed or useful for a particular purpose or activity. Therefore, the conditional statement is true.
+
+"
+"A woodworker is missing a screw, where should he look for it?","['tool box', 'wall outlet fixture', 'on the ground', 'motorcycle', 'computer']","Questions: A woodworker is missing a screw, where should he look for it?, Choices: (A) tool box, (B) wall outlet fixture, (C) on the ground, (D) motorcycle, (E) computer. Given the question 'A woodworker is missing a screw, where should he look for it?', which among the choices tool box, wall outlet fixture, on the ground, motorcycle computer is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) tool box. A possible conditional statement for this question is: ""If a woodworker is missing a screw, then he should look for it in his tool box."" The hypothesis is true, since the woodworker is indeed missing a screw. The conclusion is also true, since a tool box is a container that holds tools and hardware, such as screws. Therefore, the conditional statement is true.
+
+"
+"After I urinate and flush the toilet and wash my hands, what should I do next?","['flush toilet', 'dry hands', 'zip pants', 'eat', 'wash hands']","Questions: After I urinate and flush the toilet and wash my hands, what should I do next?, Choices: (A) flush toilet, (B) dry hands, (C) zip pants, (D) eat, (E) wash hands. Given the question 'After I urinate and flush the toilet and wash my hands, what should I do next?', which among the choices flush toilet, dry hands, zip pants, eat wash hands is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) dry hands. A possible conditional statement for this question is: ""If I urinate and flush the toilet and wash my hands, then I should dry my hands next."" The hypothesis is true, since I did urinate and flush the toilet and wash my hands. The conclusion is also true, since drying my hands is a hygienic and comfortable practice after washing them. Therefore, the conditional statement is true.
+
+"
+"After a long night out the drunken man lost consciousness, he showed a sign of sickness right before passing out, what was it?","['dream', 'vomiting', 'panic', 'cancer', 'blurred vision']","Questions: After a long night out the drunken man lost consciousness, he showed a sign of sickness right before passing out, what was it?, Choices: (A) dream, (B) vomiting, (C) panic, (D) cancer, (E) blurred vision. Given the question 'After a long night out the drunken man lost consciousness, he showed a sign of sickness right before passing out, what was it?', which among the choices dream, vomiting, panic, cancer blurred vision is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) vomiting. A possible conditional statement for this question is: ""If a drunken man lost consciousness, then he showed a sign of sickness right before passing out."" The hypothesis is true, since the drunken man did lose consciousness. The conclusion is also true, since vomiting is a common sign of sickness, especially after drinking too much alcohol. Therefore, the conditional statement is true.
+
+"
+"After a person celebrates an occasion for hours on end, what might the person experience?","['hangovers', 'being happy', 'drinking', 'becoming tired', 'nirvana']","Questions: After a person celebrates an occasion for hours on end, what might the person experience?, Choices: (A) hangovers, (B) being happy, (C) drinking, (D) becoming tired, (E) nirvana. Given the question 'After a person celebrates an occasion for hours on end, what might the person experience?', which among the choices hangovers, being happy, drinking, becoming tired nirvana is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) becoming tired. A possible conditional statement for this question is: ""If a person celebrates an occasion for hours on end, then he might experience becoming tired."" The hypothesis is true, since the person did celebrate an occasion for hours on end. The conclusion is also true, since becoming tired is a natural consequence of expending energy and staying awake for a long time. Therefore, the conditional statement is true.
+
+"
+"After a while playing, what was happening to the children?","['fights', 'competitiveness', 'having fun', 'getting tired', 'learning']","Questions: After a while playing, what was happening to the children?, Choices: (A) fights, (B) competitiveness, (C) having fun, (D) getting tired, (E) learning. Given the question 'After a while playing, what was happening to the children?', which among the choices fights, competitiveness, having fun, getting tired learning is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) getting tired. A possible conditional statement for this question is: ""If the children played for a while, then they were getting tired."" The hypothesis is true, since the children did play for a while. The conclusion is also true, since getting tired is a natural result of physical and mental activity. Therefore, the conditional statement is true."
+"After a winning baseball game, what experience would a team member feel?","['sensation', 'celebrating', 'happiness', 'recognition', 'pride']","Questions: After a winning baseball game, what experience would a team member feel?, Choices: (A) sensation, (B) celebrating, (C) happiness, (D) recognition, (E) pride. Given the question 'After a winning baseball game, what experience would a team member feel?', which among the choices sensation, celebrating, happiness, recognition pride is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) pride. A team member would feel pride after a winning baseball game because they have achieved a goal and performed well. A possible conditional statement is: `If a team wins a baseball game, then the team members feel pride.`
+"
+"After answering questions from the press for hours, what did the police chief feel?","['irritation', 'sadness', 'polite', 'teaching', 'detective']","Questions: After answering questions from the press for hours, what did the police chief feel?, Choices: (A) irritation, (B) sadness, (C) polite, (D) teaching, (E) detective. Given the question 'After answering questions from the press for hours, what did the police chief feel?', which among the choices irritation, sadness, polite, teaching detective is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) irritation. The police chief would feel irritation after answering questions from the press for hours because they have to deal with repeated or intrusive inquiries and criticism. A possible conditional statement is: `If a person answers questions from the press for hours, then the person feels irritation.`
+"
+"After becoming inebriated, she laid down on a bench, what happened afterwards?","['death and destruction', 'fall down', 'drunkenness', 'sleeping', 'pass out']","Questions: After becoming inebriated, she laid down on a bench, what happened afterwards?, Choices: (A) death and destruction, (B) fall down, (C) drunkenness, (D) sleeping, (E) pass out. Given the question 'After becoming inebriated, she laid down on a bench, what happened afterwards?', which among the choices death and destruction, fall down, drunkenness, sleeping pass out is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) pass out. She would pass out after becoming inebriated and laying down on a bench because she has consumed too much alcohol and lost consciousness. A possible conditional statement is: `If a person becomes inebriated and lays down on a bench, then the person passes out.`
+"
+"After beginning work, what did the man do because he was tired?","['sitting down', 'procrastination', 'getting tired', 'stress', 'relax']","Questions: After beginning work, what did the man do because he was tired?, Choices: (A) sitting down, (B) procrastination, (C) getting tired, (D) stress, (E) relax. Given the question 'After beginning work, what did the man do because he was tired?', which among the choices sitting down, procrastination, getting tired, stress relax is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) procrastination. The man would procrastinate after beginning work and feeling tired because he has low motivation and energy to complete his tasks. A possible conditional statement is: `If a person begins work and feels tired, then the person procrastinates.`
+"
+"After being in a hospital for weeks and breathing fresh air finally, what happened to the released patient?","['cheer', 'relaxation', 'feel better', 'silence', 'coughing']","Questions: After being in a hospital for weeks and breathing fresh air finally, what happened to the released patient?, Choices: (A) cheer, (B) relaxation, (C) feel better, (D) silence, (E) coughing. Given the question 'After being in a hospital for weeks and breathing fresh air finally, what happened to the released patient?', which among the choices cheer, relaxation, feel better, silence coughing is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) feel better. The released patient would feel better after being in a hospital for weeks and breathing fresh air finally because they have recovered from their illness and enjoyed the natural environment. A possible conditional statement is: `If a person is in a hospital for weeks and breathes fresh air finally, then the person feels better.`
+"
+"After being in shock, he settle and felt what?","['quiet noisey', 'calm', 'lost', 'surprised', 'expected']","Questions: After being in shock, he settle and felt what?, Choices: (A) quiet noisey, (B) calm, (C) lost, (D) surprised, (E) expected. Given the question 'After being in shock, he settle and felt what?', which among the choices quiet noisey, calm, lost, surprised expected is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) calm. He would feel calm after being in shock and settling down because he has regained his composure and rationality. A possible conditional statement is: `If a person is in shock and settles down, then the person feels calm.`
+"
+"After being in space the astronaut was happy to be breathing fresh air, it left him what?","['breathe deeply', 'feeling good', 'feel refreshed', 'living', 'continue']","Questions: After being in space the astronaut was happy to be breathing fresh air, it left him what?, Choices: (A) breathe deeply, (B) feeling good, (C) feel refreshed, (D) living, (E) continue. Given the question 'After being in space the astronaut was happy to be breathing fresh air, it left him what?', which among the choices breathe deeply, feeling good, feel refreshed, living continue is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) feel refreshed. The astronaut would feel refreshed after being in space and breathing fresh air because they have experienced a change of scenery and atmosphere. A possible conditional statement is: `If a person is in space and breathes fresh air, then the person feels refreshed.`
+"
+"After being shipwrecked, Robinson relied on the huge tree to do what?","['falling down', 'provide shelter', 'bud', 'produce fruit', 'back yard']","Questions: After being shipwrecked, Robinson relied on the huge tree to do what?, Choices: (A) falling down, (B) provide shelter, (C) bud, (D) produce fruit, (E) back yard. Given the question 'After being shipwrecked, Robinson relied on the huge tree to do what?', which among the choices falling down, provide shelter, bud, produce fruit back yard is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) provide shelter. Robinson relied on the huge tree to provide shelter after being shipwrecked because he needed a place to protect him from the elements and predators. A possible conditional statement is: `If a person is shipwrecked and relies on a huge tree, then the tree provides shelter.`
+"
+"After being stopping being married to someone who takes everything, what are you likely to experience?","['fights', 'pleasure', 'happiness', 'bankruptcy', 'detachment']","Questions: After being stopping being married to someone who takes everything, what are you likely to experience?, Choices: (A) fights, (B) pleasure, (C) happiness, (D) bankruptcy, (E) detachment. Given the question 'After being stopping being married to someone who takes everything, what are you likely to experience?', which among the choices fights, pleasure, happiness, bankruptcy detachment is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) happiness. The person would feel happiness after stopping being married to someone who takes everything because they have freed themselves from a toxic and abusive relationship. A possible conditional statement is: `If a person stops being married to someone who takes everything, then the person feels happiness.`
+"
+"After building his fire, the camper tried washing his hands, what was the immediate result?","['dry skin', 'health', 'dry hands', 'skin irritation', 'become wet']","Questions: After building his fire, the camper tried washing his hands, what was the immediate result?, Choices: (A) dry skin, (B) health, (C) dry hands, (D) skin irritation, (E) become wet. Given the question 'After building his fire, the camper tried washing his hands, what was the immediate result?', which among the choices dry skin, health, dry hands, skin irritation become wet is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) become wet. The camper would become wet after building his fire and trying to wash his hands because he has exposed his hands to water or another liquid. A possible conditional statement is: `If a person builds a fire and tries to wash his hands, then the person becomes wet.`
+
+I hope this helps you understand how to use conditional statements to answer questions. If you have any other questions, please let me know. 😊"
+"After buying products, reading the manual enables what?","['understand details', 'being able to use', 'loss of money', 'economic boom', 'spending money']","Questions: After buying products, reading the manual enables what?, Choices: (A) understand details, (B) being able to use, (C) loss of money, (D) economic boom, (E) spending money. Given the question 'After buying products, reading the manual enables what?', which among the choices understand details, being able to use, loss of money, economic boom spending money is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) being able to use. My reasoning is: If you read the manual after buying products, then you will be able to use them properly and safely. Reading the manual does not necessarily enable you to understand the details, lose money, cause an economic boom, or spend money.
+
+"
+"After chewing food and swallowing it during meals, what needs to happen for you to be able to successfully use the bathroom later?","['good digestion', 'aid digestion', 'eating', 'sore mouth', 'toothache']","Questions: After chewing food and swallowing it during meals, what needs to happen for you to be able to successfully use the bathroom later?, Choices: (A) good digestion, (B) aid digestion, (C) eating, (D) sore mouth, (E) toothache. Given the question 'After chewing food and swallowing it during meals, what needs to happen for you to be able to successfully use the bathroom later?', which among the choices good digestion, aid digestion, eating, sore mouth toothache is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) good digestion. My reasoning is: If you chew food and swallow it during meals, then you need good digestion to break down the food and absorb the nutrients. Good digestion is necessary for you to be able to use the bathroom later. Chewing food and swallowing it does not need aid digestion, eating, sore mouth, or toothache.
+
+"
+"After coming home from his trip to the west coat, John hung the fox on his wall.  He could do this because the fox was what?","['hen house', 'painting', 'california', 'virginia', 'blowing the house down']","Questions: After coming home from his trip to the west coat, John hung the fox on his wall.  He could do this because the fox was what?, Choices: (A) hen house, (B) painting, (C) california, (D) virginia, (E) blowing the house down. Given the question 'After coming home from his trip to the west coat, John hung the fox on his wall.  He could do this because the fox was what?', which among the choices hen house, painting, california, virginia blowing the house down is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) painting. My reasoning is: If John hung the fox on his wall, then the fox must have been a painting or a similar object that can be hung. The fox could not have been a hen house, a state, or an action. A painting is the most reasonable choice among the options.
+
+"
+"After eating a dinner of uncooked chicken, what was felt by the poor man?","['indigestion', 'died', 'illness', 'feel better', 'throwing up']","Questions: After eating a dinner of uncooked chicken, what was felt by the poor man?, Choices: (A) indigestion, (B) died, (C) illness, (D) feel better, (E) throwing up. Given the question 'After eating a dinner of uncooked chicken, what was felt by the poor man?', which among the choices indigestion, died, illness, feel better throwing up is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) illness. My reasoning is: If you eat a dinner of uncooked chicken, then you are likely to get sick from bacteria or parasites. Illness is the most general term that describes the feeling of being unwell. Indigestion, dying, feeling better, and throwing up are possible consequences of eating uncooked chicken, but they are not the best answer.
+
+"
+"After eating dinner, having plenty to eat, and exercising, what is likely to happen?","['become tired', 'indigestion', 'flatulence', 'become intoxicated', 'become full']","Questions: After eating dinner, having plenty to eat, and exercising, what is likely to happen?, Choices: (A) become tired, (B) indigestion, (C) flatulence, (D) become intoxicated, (E) become full. Given the question 'After eating dinner, having plenty to eat, and exercising, what is likely to happen?', which among the choices become tired, indigestion, flatulence, become intoxicated become full is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) become tired. My reasoning is: If you eat dinner, have plenty to eat, and exercise, then you will expend a lot of energy and need rest. Becoming tired is the most common and natural outcome of this scenario. Indigestion, flatulence, becoming intoxicated, and becoming full are possible effects of eating dinner, but they are not directly related to exercising.
+
+"
+"After eating very quickly and jumping up and down, what is likely to occur?","['getting warm', 'hiccups', 'vomiting', 'lot of noise', 'exhaustion']","Questions: After eating very quickly and jumping up and down, what is likely to occur?, Choices: (A) getting warm, (B) hiccups, (C) vomiting, (D) lot of noise, (E) exhaustion. Given the question 'After eating very quickly and jumping up and down, what is likely to occur?', which among the choices getting warm, hiccups, vomiting, lot of noise exhaustion is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) vomiting. My reasoning is: If you eat very quickly and jump up and down, then you will disturb your stomach and cause nausea. Vomiting is the most likely and unpleasant result of this behavior. Getting warm, hiccups, lot of noise, and exhaustion are possible effects of eating quickly and jumping, but they are not as severe or probable as vomiting.
+
+"
+"After exercising for 3 hours straight, what did the girl experience?","['exhaustion', 'muscle growth', 'tiredness', 'sore muscles', 'pain']","Questions: After exercising for 3 hours straight, what did the girl experience?, Choices: (A) exhaustion, (B) muscle growth, (C) tiredness, (D) sore muscles, (E) pain. Given the question 'After exercising for 3 hours straight, what did the girl experience?', which among the choices exhaustion, muscle growth, tiredness, sore muscles pain is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) sore muscles. My reasoning is: If you exercise for 3 hours straight, then you will strain your muscles and cause inflammation. Sore muscles are the most common and expected symptom of overexercising. Exhaustion, muscle growth, tiredness, and pain are possible effects of exercising for 3 hours, but they are not as specific or accurate as sore muscles.
+
+"
+"After exiting a ring road and headed to a group of homes, where are you going?","['freeway system', 'home', 'town', 'cars', 'european city']","Questions: After exiting a ring road and headed to a group of homes, where are you going?, Choices: (A) freeway system, (B) home, (C) town, (D) cars, (E) european city. Given the question 'After exiting a ring road and headed to a group of homes, where are you going?', which among the choices freeway system, home, town, cars european city is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) home. My reasoning is: If you exit a ring road and head to a group of homes, then you are going to a residential area. Home is the most appropriate term for a place where people live. Freeway system, town, cars, and european city are not relevant or suitable choices for this question.
+
+"
+"After four long years he would no longer be a student, what had he been able to do?","['solve equation', 'begin teaching', 'study book', 'graduate', 'finish college']","Questions: After four long years he would no longer be a student, what had he been able to do?, Choices: (A) solve equation, (B) begin teaching, (C) study book, (D) graduate, (E) finish college. Given the question 'After four long years he would no longer be a student, what had he been able to do?', which among the choices solve equation, begin teaching, study book, graduate finish college is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) finish college. My reasoning is: If you are no longer a student after four long years, then you have completed your education. Finishing college is the most common and reasonable way to end your student status. Solving equation, beginning teaching, studying book, and graduating are possible activities or achievements for a student, but they are not the best answer.
+
+"
+"After getting a divorce, what is your marital status?","['being single', 'stressful', 'emotional distress', 'anguish', 'bad feelings']","Questions: After getting a divorce, what is your marital status?, Choices: (A) being single, (B) stressful, (C) emotional distress, (D) anguish, (E) bad feelings. Given the question 'After getting a divorce, what is your marital status?', which among the choices being single, stressful, emotional distress, anguish bad feelings is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) being single. My reasoning is: If you get a divorce, then you are no longer married. Being single is the most simple and clear way to describe your marital status after a divorce. Stressful, emotional distress, anguish, and bad feelings are possible emotions or states of mind after a divorce, but they are not the best answer."
+"After getting dressed very formally and getting the stereotypical viewing glasses, they went to the ticket office where?","['movie theaters', 'eye doctor', 'opera house', 'auditorium', 'end of line']","Questions: After getting dressed very formally and getting the stereotypical viewing glasses, they went to the ticket office where?, Choices: (A) movie theaters, (B) eye doctor, (C) opera house, (D) auditorium, (E) end of line. Given the question 'After getting dressed very formally and getting the stereotypical viewing glasses, they went to the ticket office where?', which among the choices movie theaters, eye doctor, opera house, auditorium end of line is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) opera house. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If they got dressed very formally and got the stereotypical viewing glasses, then they went to the opera house.""
+"
+"After getting drunk and crashing his car, what resulted for him?","['police award', 'erections', 'violence', 'injury', 'illness']","Questions: After getting drunk and crashing his car, what resulted for him?, Choices: (A) police award, (B) erections, (C) violence, (D) injury, (E) illness. Given the question 'After getting drunk and crashing his car, what resulted for him?', which among the choices police award, erections, violence, injury illness is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) injury. A possible conditional statement for this question is: ""If he got drunk and crashed his car, then he got injured.""
+"
+"After getting drunk people couldn't understand him, it was because of his what?","['lower standards', 'slurred speech', 'death', 'hangover', 'falling down']","Questions: After getting drunk people couldn't understand him, it was because of his what?, Choices: (A) lower standards, (B) slurred speech, (C) death, (D) hangover, (E) falling down. Given the question 'After getting drunk people couldn't understand him, it was because of his what?', which among the choices lower standards, slurred speech, death, hangover falling down is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (B) slurred speech. A possible conditional statement for this question is: ""If he got drunk, then he had slurred speech.""
+"
+"After getting high his memory seemed shot, he felt practically what?","['dead', 'forgotten', 'brainless', 'forgetting', 'forgetfulness']","Questions: After getting high his memory seemed shot, he felt practically what?, Choices: (A) dead, (B) forgotten, (C) brainless, (D) forgetting, (E) forgetfulness. Given the question 'After getting high his memory seemed shot, he felt practically what?', which among the choices dead, forgotten, brainless, forgetting forgetfulness is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) brainless. A possible conditional statement for this question is: ""If he got high, then he felt brainless.""
+"
+"After hearing it for so long he finally gave in, he began talking to the what?","['sound', 'listening', 'voice', 'another person', 'language']","Questions: After hearing it for so long he finally gave in, he began talking to the what?, Choices: (A) sound, (B) listening, (C) voice, (D) another person, (E) language. Given the question 'After hearing it for so long he finally gave in, he began talking to the what?', which among the choices sound, listening, voice, another person language is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) voice. A possible conditional statement for this question is: ""If he heard it for so long, then he began talking to the voice.""
+"
+"After his mother saw his report card he knew he was going to be doing housework, what could have prevented this?","['sneezing', 'fatigue', 'house clean', 'feeling satisfied', 'getting good grades']","Questions: After his mother saw his report card he knew he was going to be doing housework, what could have prevented this?, Choices: (A) sneezing, (B) fatigue, (C) house clean, (D) feeling satisfied, (E) getting good grades. Given the question 'After his mother saw his report card he knew he was going to be doing housework, what could have prevented this?', which among the choices sneezing, fatigue, house clean, feeling satisfied getting good grades is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) getting good grades. A possible conditional statement for this question is: ""If he got good grades, then he would not have to do housework.""
+"
+"After hours of eating, what did he satisfyingly have?","['stomach aches', 'full belly', 'getting full', 'full stomach', 'satisfaction']","Questions: After hours of eating, what did he satisfyingly have?, Choices: (A) stomach aches, (B) full belly, (C) getting full, (D) full stomach, (E) satisfaction. Given the question 'After hours of eating, what did he satisfyingly have?', which among the choices stomach aches, full belly, getting full, full stomach satisfaction is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) full belly. A possible conditional statement for this question is: ""If he ate for hours, then he had a full belly.""
+"
+"After jumping up and down on the floor, the child's mother yelled after she was told she was distracting her downstairs neighbors because of making what?","['exercise', 'tantrums', 'lot of noise', 'hiccups', 'getting warm']","Questions: After jumping up and down on the floor, the child's mother yelled after she was told she was distracting her downstairs neighbors because of making what?, Choices: (A) exercise, (B) tantrums, (C) lot of noise, (D) hiccups, (E) getting warm. Given the question 'After jumping up and down on the floor, the child's mother yelled after she was told she was distracting her downstairs neighbors because of making what?', which among the choices exercise, tantrums, lot of noise, hiccups getting warm is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) lot of noise. A possible conditional statement for this question is: ""If she jumped up and down on the floor, then she made a lot of noise.""
+"
+"After killing the animal, what was the animal doing?","['dies', 'dying', 'not living', 'grief', 'suicide']","Questions: After killing the animal, what was the animal doing?, Choices: (A) dies, (B) dying, (C) not living, (D) grief, (E) suicide. Given the question 'After killing the animal, what was the animal doing?', which among the choices dies, dying, not living, grief suicide is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) dying. A possible conditional statement for this question is: ""If he killed the animal, then the animal was dying.""
+"
+"After loading up his plate with all the food, what did he look for to wash it all down?","['falling down', 'cup', 'fork', 'food', 'bowl']","Questions: After loading up his plate with all the food, what did he look for to wash it all down?, Choices: (A) falling down, (B) cup, (C) fork, (D) food, (E) bowl. Given the question 'After loading up his plate with all the food, what did he look for to wash it all down?', which among the choices falling down, cup, fork, food bowl is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) cup. A possible conditional statement for this question is: ""If he loaded up his plate with all the food, then he looked for a cup to wash it all down."""
+"After running for 100 miles, he couldn't any more, what is he suffering?","['moving fast', 'accidents', 'injuries', 'shortness of breath', 'losing']","Questions: After running for 100 miles, he couldn't any more, what is he suffering?, Choices: (A) moving fast, (B) accidents, (C) injuries, (D) shortness of breath, (E) losing. Given the question 'After running for 100 miles, he couldn't any more, what is he suffering?', which among the choices moving fast, accidents, injuries, shortness of breath losing is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) injuries. A possible explanation is:
+
+```
+If he ran for 100 miles, then he exerted his muscles and joints a lot.
+If he exerted his muscles and joints a lot, then he is likely to suffer from injuries such as sprains, strains, or cramps.
+Therefore, if he ran for 100 miles, then he is likely to suffer from injuries.
+```
+
+"
+"After running twenty six miles he felt like he had lost twenty six pounds, this was from all the what?","['exercise', 'sweat', 'pass out', 'collapse', 'drink water']","Questions: After running twenty six miles he felt like he had lost twenty six pounds, this was from all the what?, Choices: (A) exercise, (B) sweat, (C) pass out, (D) collapse, (E) drink water. Given the question 'After running twenty six miles he felt like he had lost twenty six pounds, this was from all the what?', which among the choices exercise, sweat, pass out, collapse drink water is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) sweat. A possible explanation is:
+
+```
+If he ran for twenty six miles, then he burned a lot of calories and generated a lot of heat.
+If he burned a lot of calories and generated a lot of heat, then he lost a lot of water through sweat.
+Therefore, if he ran for twenty six miles, then he lost a lot of water through sweat.
+```
+
+"
+"After running twenty six miles, what physical feeling is nearly every person likely to feel?","['excruciating pain', 'bloody legs', 'exhaustion', 'death', 'passing out']","Questions: After running twenty six miles, what physical feeling is nearly every person likely to feel?, Choices: (A) excruciating pain, (B) bloody legs, (C) exhaustion, (D) death, (E) passing out. Given the question 'After running twenty six miles, what physical feeling is nearly every person likely to feel?', which among the choices excruciating pain, bloody legs, exhaustion, death passing out is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) exhaustion. A possible explanation is:
+
+```
+If he ran for twenty six miles, then he used up a lot of his energy and oxygen.
+If he used up a lot of his energy and oxygen, then he felt very tired and weak.
+Therefore, if he ran for twenty six miles, then he felt very tired and weak, which is another way of saying he felt exhaustion.
+```
+
+"
+"After spending a hot summer day running after ball while playing baseball, what might happen to a person's body?","['physical exertion', 'tiredness', 'sweating', 'injury', 'breathing heavily']","Questions: After spending a hot summer day running after ball while playing baseball, what might happen to a person's body?, Choices: (A) physical exertion, (B) tiredness, (C) sweating, (D) injury, (E) breathing heavily. Given the question 'After spending a hot summer day running after ball while playing baseball, what might happen to a person's body?', which among the choices physical exertion, tiredness, sweating, injury breathing heavily is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) sweating. A possible explanation is:
+
+```
+If he spent a hot summer day running after ball while playing baseball, then he was exposed to high temperatures and physical activity.
+If he was exposed to high temperatures and physical activity, then he perspired a lot to cool down his body.
+Therefore, if he spent a hot summer day running after ball while playing baseball, then he perspired a lot, which is another way of saying he was sweating.
+```
+
+"
+"After stopping being married to a person you no longer love, what emotion may you experience?","['depression', 'grief', 'relief', 'anger', 'wrong']","Questions: After stopping being married to a person you no longer love, what emotion may you experience?, Choices: (A) depression, (B) grief, (C) relief, (D) anger, (E) wrong. Given the question 'After stopping being married to a person you no longer love, what emotion may you experience?', which among the choices depression, grief, relief, anger wrong is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) relief. A possible explanation is:
+
+```
+If he stopped being married to a person he no longer loved, then he ended a relationship that was unhappy and stressful.
+If he ended a relationship that was unhappy and stressful, then he felt a sense of freedom and peace.
+Therefore, if he stopped being married to a person he no longer loved, then he felt a sense of freedom and peace, which is another way of saying he felt relief.
+```
+
+"
+"After studying many self-help books, what did he feel in his heart?","['inspiration', 'dreams', 'more intelligence', 'understanding', 'knowing more']","Questions: After studying many self-help books, what did he feel in his heart?, Choices: (A) inspiration, (B) dreams, (C) more intelligence, (D) understanding, (E) knowing more. Given the question 'After studying many self-help books, what did he feel in his heart?', which among the choices inspiration, dreams, more intelligence, understanding knowing more is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) inspiration. A possible explanation is:
+
+```
+If he studied many self-help books, then he learned a lot of tips and advice on how to improve his life and achieve his goals.
+If he learned a lot of tips and advice on how to improve his life and achieve his goals, then he felt motivated and encouraged to take action and make positive changes.
+Therefore, if he studied many self-help books, then he felt motivated and encouraged, which is another way of saying he felt inspiration.
+```
+
+"
+"After studying science for years, what did the agnostic person begin to lose?","['astronomy', 'arts', 'faith', 'math', 'chemistry']","Questions: After studying science for years, what did the agnostic person begin to lose?, Choices: (A) astronomy, (B) arts, (C) faith, (D) math, (E) chemistry. Given the question 'After studying science for years, what did the agnostic person begin to lose?', which among the choices astronomy, arts, faith, math chemistry is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) faith. A possible explanation is:
+
+```
+If he studied science for years, then he learned a lot of facts and evidence that explain the natural world and its phenomena.
+If he learned a lot of facts and evidence that explain the natural world and its phenomena, then he might have questioned or doubted the existence of a supernatural being or force that is beyond scientific understanding.
+Therefore, if he studied science for years, then he might have questioned or doubted the existence of a supernatural being or force, which is another way of saying he began to lose faith.
+```
+
+"
+"After suffering a bad injury, where will a person get taken?","['hockey game', 'home', 'hospital', 'emergency room', ""doctor's office""]","Questions: After suffering a bad injury, where will a person get taken?, Choices: (A) hockey game, (B) home, (C) hospital, (D) emergency room, (E) doctor's office. Given the question 'After suffering a bad injury, where will a person get taken?', which among the choices hockey game, home, hospital, emergency room doctor's office is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) hospital. A possible explanation is:
+
+```
+If he suffered a bad injury, then he needed urgent medical attention and care.
+If he needed urgent medical attention and care, then he was taken to a place where he could receive professional diagnosis and treatment.
+Therefore, if he suffered a bad injury, then he was taken to a place where he could receive professional diagnosis and treatment, which is another way of saying he was taken to a hospital.
+```
+
+"
+"After taking measurements with an armband, the doctor recommended medicine for what purpose?","['guard against disease', 'lower cholesterol', 'cargo', 'lower blood pressure', 'diabetes']","Questions: After taking measurements with an armband, the doctor recommended medicine for what purpose?, Choices: (A) guard against disease, (B) lower cholesterol, (C) cargo, (D) lower blood pressure, (E) diabetes. Given the question 'After taking measurements with an armband, the doctor recommended medicine for what purpose?', which among the choices guard against disease, lower cholesterol, cargo, lower blood pressure diabetes is the correct answer? Explain your reasoning using conditional statements.
+",
+"After taking my final exams I got my grades back and had  a 4.0 gpa, how did I feel?","['graduation', 'headaches', 'fail again', 'success', 'failure']","Questions: After taking my final exams I got my grades back and had  a 4.0 gpa, how did I feel?, Choices: (A) graduation, (B) headaches, (C) fail again, (D) success, (E) failure. Given the question 'After taking my final exams I got my grades back and had  a 4.0 gpa, how did I feel?', which among the choices graduation, headaches, fail again, success failure is the correct answer? Explain your reasoning using conditional statements.
+","100 miles, then he exerted his muscles and joints a lot.
+If he exerted his muscles and joints a lot, then he is likely to suffer from injuries such as sprains, strains, or cramps.
+Therefore, if he ran for 100 miles, then he is likely to suffer from injuries.
+```
+
+2. The correct answer is (B) sweat. A possible explanation is:
+
+```
+If he ran for twenty six miles, then he burned a lot of calories and generated a lot of heat.
+If he burned a lot of calories and generated a lot of heat, then he lost a lot of water through sweat.
+Therefore, if he ran for twenty six miles, then he lost a lot of water through sweat.
+```
+
+3. The correct answer is (C) exhaustion. A possible explanation is:
+
+```
+If he ran for twenty six miles, then he used up a lot of his energy and oxygen.
+If he used up a lot of his energy and oxygen, then he felt very tired and weak.
+Therefore, if he ran for twenty six miles, then he felt very tired and weak, which is another way of saying he felt exhaustion.
+```
+
+4. The correct answer is (C) sweating. A possible explanation is:
+
+```
+If he spent a hot summer day running after ball while playing baseball, then he was exposed to high temperatures and physical activity.
+If he was exposed to high temperatures and physical activity, then he perspired a lot to cool down his body.
+Therefore, if he spent a hot summer day running after ball while playing baseball, then he perspired a lot, which is another way of saying he was sweating.
+```
+
+5. The correct answer is (C) relief. A possible explanation is:
+
+```
+If he stopped being married to a person he no longer loved, then he ended a relationship that was unhappy and stressful.
+If he ended a relationship that was unhappy and stressful, then he felt a sense of freedom and peace.
+Therefore, if he stopped being married to a person he no longer loved, then he felt a sense of freedom and peace, which is another way of saying he felt relief.
+```
+
+6. The correct answer is (A) inspiration. A possible explanation is:
+
+```
+If he studied many self-help books, then he learned a lot of tips and advice on how to improve his life and achieve his goals.
+If he learned a lot of tips and advice on how to improve his life and achieve his goals, then he felt motivated and encouraged to take action and make positive changes.
+Therefore, if he studied many self-help books, then he felt motivated and encouraged, which is another way of saying he felt inspiration.
+```
+
+7. The correct answer is (C) faith. A possible explanation is:
+
+```
+If he studied science for years, then he learned a lot of facts and evidence that explain the natural world and its phenomena.
+If he learned a lot of facts and evidence that explain the natural world and its phenomena, then he might have questioned or doubted the existence of a supernatural being or force that is beyond scientific understanding.
+Therefore, if he studied science for years, then he might have questioned or doubted the existence of a supernatural being or force, which is another way of saying he began to lose faith.
+```
+
+8. The correct answer is (C) hospital. A possible explanation is:
+
+```
+If he suffered a bad injury, then he needed urgent medical attention and care.
+If he needed urgent medical attention and care, then he was taken to a place where he could receive professional diagnosis and treatment.
+Therefore, if he suffered a bad injury, then he was taken to a place where he could receive professional diagnosis and treatment, which is another way of saying he was taken to a hospital.
+```
+
+9. The correct answer is (D) lower blood pressure. A possible explanation is:
+
+```
+If he took measurements with an armband, then he checked his blood pressure level.
+If he checked his blood pressure level, then he might have found out that it was too high or too low.
+If he found out that his blood pressure level was too high, then he needed medicine to lower it and prevent serious health problems such as heart attack or stroke.
+Therefore, if he took measurements with an armband and found out that his blood pressure level was too high, then he needed medicine to lower it.
+```
+
+10. The correct answer is (D) success. A possible explanation is:
+
+```
+If he took his final exams, then he completed his academic requirements and showed his knowledge and skills.
+If he got his grades back and had a 4.0 gpa, then he achieved the highest possible score and demonstrated excellence and mastery.
+Therefore, if he took his final exams and got his grades back and had a 4.0 gpa, then he achieved the highest possible score and demonstrated excellence and mastery, which is another way of saying he felt success.
+```"
+"After the bald eagle was caught, where did it spend the rest of its life?","['cliff', 'captivity', 'colorado', 'texas', 'utah']","Questions: After the bald eagle was caught, where did it spend the rest of its life?, Choices: (A) cliff, (B) captivity, (C) colorado, (D) texas, (E) utah. Given the question 'After the bald eagle was caught, where did it spend the rest of its life?', which among the choices cliff, captivity, colorado, texas utah is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) captivity. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If the bald eagle was caught, then it spent the rest of its life in captivity.**
+
+"
+"After the concert he was glad to be away from the crowd, he valued times of what?","['small group', 'solitude', 'alone', 'leisurely', 'solitary']","Questions: After the concert he was glad to be away from the crowd, he valued times of what?, Choices: (A) small group, (B) solitude, (C) alone, (D) leisurely, (E) solitary. Given the question 'After the concert he was glad to be away from the crowd, he valued times of what?', which among the choices small group, solitude, alone, leisurely solitary is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) solitude. A conditional statement for this question is: **If he was glad to be away from the crowd, then he valued times of solitude.**
+
+"
+"After the guilty verdict in the killing the judge gave a speech, he told the murderer he was pure what?","['wrong', 'death of', 'bad', 'negative', 'evil']","Questions: After the guilty verdict in the killing the judge gave a speech, he told the murderer he was pure what?, Choices: (A) wrong, (B) death of, (C) bad, (D) negative, (E) evil. Given the question 'After the guilty verdict in the killing the judge gave a speech, he told the murderer he was pure what?', which among the choices wrong, death of, bad, negative evil is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) evil. A conditional statement for this question is: **If the judge gave a speech after the guilty verdict, then he told the murderer he was pure evil.**
+
+"
+"After the guy is successful in cashing in his check, what does he feel?","['sad', 'quitting', 'extra money', 'great joy', 'leave']","Questions: After the guy is successful in cashing in his check, what does he feel?, Choices: (A) sad, (B) quitting, (C) extra money, (D) great joy, (E) leave. Given the question 'After the guy is successful in cashing in his check, what does he feel?', which among the choices sad, quitting, extra money, great joy leave is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) great joy. A conditional statement for this question is: **If the guy was successful in cashing in his check, then he felt great joy.**
+
+"
+"After the loss, we really need one of these?","['contemplate', 'win', 'gain', 'money', 'profit']","Questions: After the loss, we really need one of these?, Choices: (A) contemplate, (B) win, (C) gain, (D) money, (E) profit. Given the question 'After the loss, we really need one of these?', which among the choices contemplate, win, gain, money profit is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) win. A conditional statement for this question is: **If we had a loss, then we really needed a win.**
+
+"
+"After the lunch break, what did the men resume doing?","['working', 'fix it', 'accelerate', 'putting together', 'breakdance']","Questions: After the lunch break, what did the men resume doing?, Choices: (A) working, (B) fix it, (C) accelerate, (D) putting together, (E) breakdance. Given the question 'After the lunch break, what did the men resume doing?', which among the choices working, fix it, accelerate, putting together breakdance is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) working. A conditional statement for this question is: **If the men had a lunch break, then they resumed working.**
+
+"
+"After the magic show they returned to their hotel, there was lots to see where?","['touristic area', 'different country', 'las vegas', 'resort', 'city']","Questions: After the magic show they returned to their hotel, there was lots to see where?, Choices: (A) touristic area, (B) different country, (C) las vegas, (D) resort, (E) city. Given the question 'After the magic show they returned to their hotel, there was lots to see where?', which among the choices touristic area, different country, las vegas, resort city is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) las vegas. A conditional statement for this question is: **If they returned to their hotel after the magic show, then there was lots to see in las vegas.**
+
+"
+"After the sex she had spent the night at his house, he got up early to make and what?","['love another', 'coffee', 'smoke', 'eat breakfast', 'wait for']","Questions: After the sex she had spent the night at his house, he got up early to make and what?, Choices: (A) love another, (B) coffee, (C) smoke, (D) eat breakfast, (E) wait for. Given the question 'After the sex she had spent the night at his house, he got up early to make and what?', which among the choices love another, coffee, smoke, eat breakfast wait for is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) coffee. A conditional statement for this question is: **If he got up early after the sex, then he made coffee.**
+
+"
+"After the windstorm it needed replacing, he decided to get a heavier tile what?","['roof', 'home', 'fabric', 'floor', 'computer game']","Questions: After the windstorm it needed replacing, he decided to get a heavier tile what?, Choices: (A) roof, (B) home, (C) fabric, (D) floor, (E) computer game. Given the question 'After the windstorm it needed replacing, he decided to get a heavier tile what?', which among the choices roof, home, fabric, floor computer game is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) roof. A conditional statement for this question is: **If it needed replacing after the windstorm, then he decided to get a heavier tile roof.**
+
+"
+"After waiting in long lines at the airport he finally got to the ticket checker, he got out his billfold to show his ticket and what?","['wallet', 'mans pocket', 'identification', 'money', 'hip pocket']","Questions: After waiting in long lines at the airport he finally got to the ticket checker, he got out his billfold to show his ticket and what?, Choices: (A) wallet, (B) mans pocket, (C) identification, (D) money, (E) hip pocket. Given the question 'After waiting in long lines at the airport he finally got to the ticket checker, he got out his billfold to show his ticket and what?', which among the choices wallet, mans pocket, identification, money hip pocket is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) identification. A conditional statement for this question is: **If he got out his billfold to show his ticket, then he also showed his identification.**
+
+I hope this helps you understand how to use conditional statements. 😊"
+"After work and errands the mother just wanted some peace and quiet, she couldn't wait to just get where?","['sea', 'library', 'driveway', 'top of mountain', 'home']","Questions: After work and errands the mother just wanted some peace and quiet, she couldn't wait to just get where?, Choices: (A) sea, (B) library, (C) driveway, (D) top of mountain, (E) home. Given the question 'After work and errands the mother just wanted some peace and quiet, she couldn't wait to just get where?', which among the choices sea, library, driveway, top of mountain home is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) home. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If the mother just wanted some peace and quiet, then she couldn't wait to just get home."" The hypothesis is ""the mother just wanted some peace and quiet"" and the conclusion is ""she couldn't wait to just get home"". The other choices do not match the conclusion as well as home does.
+
+"
+"After working overtime and double shifts he was cashing in, that weekend he would celebrate and relax with some unhealthy what?","['get rich', 'binge drinking', 'getting money', 'increase in money', 'drinking coffee']","Questions: After working overtime and double shifts he was cashing in, that weekend he would celebrate and relax with some unhealthy what?, Choices: (A) get rich, (B) binge drinking, (C) getting money, (D) increase in money, (E) drinking coffee. Given the question 'After working overtime and double shifts he was cashing in, that weekend he would celebrate and relax with some unhealthy what?', which among the choices get rich, binge drinking, getting money, increase in money drinking coffee is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) binge drinking. A possible conditional statement for this question is: ""If he was cashing in, then he would celebrate and relax with some unhealthy binge drinking."" The hypothesis is ""he was cashing in"" and the conclusion is ""he would celebrate and relax with some unhealthy binge drinking"". The other choices do not match the conclusion as well as binge drinking does.
+
+"
+"Alcohol wasn't allowed at the meeting, so where did the alcoholic put his flask?","['science lab', 'laboratory', 'coat pocket', 'the meeting room', 'chemistry lab']","Questions: Alcohol wasn't allowed at the meeting, so where did the alcoholic put his flask?, Choices: (A) science lab, (B) laboratory, (C) coat pocket, (D) the meeting room, (E) chemistry lab. Given the question 'Alcohol wasn't allowed at the meeting, so where did the alcoholic put his flask?', which among the choices science lab, laboratory, coat pocket, the meeting room chemistry lab is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) coat pocket. A possible conditional statement for this question is: ""If alcohol wasn't allowed at the meeting, then the alcoholic would put his flask in his coat pocket."" The hypothesis is ""alcohol wasn't allowed at the meeting"" and the conclusion is ""the alcoholic would put his flask in his coat pocket"". The other choices do not match the conclusion as well as coat pocket does.
+
+"
+"All his friends said they liked girls who were thick, but he preferred them healthy but what?","['slim', 'brainy', 'ocean', 'slender', 'runny']","Questions: All his friends said they liked girls who were thick, but he preferred them healthy but what?, Choices: (A) slim, (B) brainy, (C) ocean, (D) slender, (E) runny. Given the question 'All his friends said they liked girls who were thick, but he preferred them healthy but what?', which among the choices slim, brainy, ocean, slender runny is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) slender. A possible conditional statement for this question is: ""If he preferred them healthy, then he liked girls who were slender."" The hypothesis is ""he preferred them healthy"" and the conclusion is ""he liked girls who were slender"". The other choices do not match the conclusion as well as slender does.
+
+"
+"All people need to move, otherwise what will atrophy?","['feelings', 'shrink', 'free will', 'muscles', 'parents']","Questions: All people need to move, otherwise what will atrophy?, Choices: (A) feelings, (B) shrink, (C) free will, (D) muscles, (E) parents. Given the question 'All people need to move, otherwise what will atrophy?', which among the choices feelings, shrink, free will, muscles parents is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) muscles. A possible conditional statement for this question is: ""If people do not move, then their muscles will atrophy."" The hypothesis is ""people do not move"" and the conclusion is ""their muscles will atrophy"". The other choices do not match the conclusion as well as muscles does.
+
+"
+"All that was left to purchase was a bass drum, what would he have as a result?","['rock band', 'marching band', 'drum set', 'orchestra', 'violin']","Questions: All that was left to purchase was a bass drum, what would he have as a result?, Choices: (A) rock band, (B) marching band, (C) drum set, (D) orchestra, (E) violin. Given the question 'All that was left to purchase was a bass drum, what would he have as a result?', which among the choices rock band, marching band, drum set, orchestra violin is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) drum set. A possible conditional statement for this question is: ""If all that was left to purchase was a bass drum, then he would have a drum set as a result."" The hypothesis is ""all that was left to purchase was a bass drum"" and the conclusion is ""he would have a drum set as a result"". The other choices do not match the conclusion as well as drum set does.
+
+"
+"All the adults were sitting quietly in the other room watching TV, they were hoping the baby would what?","['meditate', 'fall asleep', 'join them', 'reading', 'think']","Questions: All the adults were sitting quietly in the other room watching TV, they were hoping the baby would what?, Choices: (A) meditate, (B) fall asleep, (C) join them, (D) reading, (E) think. Given the question 'All the adults were sitting quietly in the other room watching TV, they were hoping the baby would what?', which among the choices meditate, fall asleep, join them, reading think is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) fall asleep. A possible conditional statement for this question is: ""If the adults were sitting quietly in the other room watching TV, then they were hoping the baby would fall asleep."" The hypothesis is ""the adults were sitting quietly in the other room watching TV"" and the conclusion is ""they were hoping the baby would fall asleep"". The other choices do not match the conclusion as well as fall asleep does.
+
+"
+"All the artist had to do was paint the lips, what would his end result be on the canvas?","['human face', 'motion', 'faces', 'body', 'clown']","Questions: All the artist had to do was paint the lips, what would his end result be on the canvas?, Choices: (A) human face, (B) motion, (C) faces, (D) body, (E) clown. Given the question 'All the artist had to do was paint the lips, what would his end result be on the canvas?', which among the choices human face, motion, faces, body clown is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) human face. A possible conditional statement for this question is: ""If all the artist had to do was paint the lips, then his end result would be a human face on the canvas."" The hypothesis is ""all the artist had to do was paint the lips"" and the conclusion is ""his end result would be a human face on the canvas"". The other choices do not match the conclusion as well as human face does.
+
+"
+"All the business owners had a monthly committee meeting, it was to introduce new tenants and discuss issues of the what?","['town', 'office building', 'boardroom', 'government', 'city hall']","Questions: All the business owners had a monthly committee meeting, it was to introduce new tenants and discuss issues of the what?, Choices: (A) town, (B) office building, (C) boardroom, (D) government, (E) city hall. Given the question 'All the business owners had a monthly committee meeting, it was to introduce new tenants and discuss issues of the what?', which among the choices town, office building, boardroom, government city hall is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) office building. A possible conditional statement for this question is: ""If the business owners had a monthly committee meeting, then it was to introduce new tenants and discuss issues of the office building."" The hypothesis is ""the business owners had a monthly committee meeting"" and the conclusion is ""it was to introduce new tenants and discuss issues of the office building"". The other choices do not match the conclusion as well as office building does.
+
+"
+"All the children were having fun, the game of tag was a great choice of what?","['effort', 'exercise', 'relaxing', 'playing around', 'activity']","Questions: All the children were having fun, the game of tag was a great choice of what?, Choices: (A) effort, (B) exercise, (C) relaxing, (D) playing around, (E) activity. Given the question 'All the children were having fun, the game of tag was a great choice of what?', which among the choices effort, exercise, relaxing, playing around activity is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) activity. A possible conditional statement for this question is: ""If the children were having fun, then the game of tag was a great choice of activity."" The hypothesis is ""the children were having fun"" and the conclusion is ""the game of tag was a great choice of activity"". The other choices do not match the conclusion as well as activity does."

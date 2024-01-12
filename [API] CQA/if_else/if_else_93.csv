@@ -1,0 +1,539 @@
+premise,hypothesis,prompt,rationale
+Where would you put condiments to stop them from combining with other condiments?,"['cup', 'refrigerator', 'table', 'pantry', 'container']","Questions: Where would you put condiments to stop them from combining with other condiments?, Choices: (A) cup, (B) refrigerator, (C) table, (D) pantry, (E) container. Given the question 'Where would you put condiments to stop them from combining with other condiments?', which among the choices cup, refrigerator, table, pantry container is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) container**. A possible explanation is:
+
+```
+If you want to stop condiments from combining with other condiments, then you should put them in a container.
+A container is a closed and separate space that can prevent the mixing of different substances.
+A cup, a refrigerator, a table, and a pantry are not containers, but places where containers can be stored.
+Therefore, a container is the best choice among the given options.
+```
+
+"
+Where would you put groceries after you have bought them and reached your house?,"['refrigerator', 'supermarket', 'pantry', 'shelf', 'trunk']","Questions: Where would you put groceries after you have bought them and reached your house?, Choices: (A) refrigerator, (B) supermarket, (C) pantry, (D) shelf, (E) trunk. Given the question 'Where would you put groceries after you have bought them and reached your house?', which among the choices refrigerator, supermarket, pantry, shelf trunk is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) refrigerator**. A possible explanation is:
+
+```
+If you have bought groceries and reached your house, then you should put them in a refrigerator.
+A refrigerator is a device that can keep food fresh and prevent spoilage by lowering the temperature.
+A supermarket, a trunk, and a shelf are not places where you can store groceries at your house, but places where you can buy or transport groceries.
+A pantry is a place where you can store dry and canned food, but not perishable food that needs refrigeration.
+Therefore, a refrigerator is the best choice among the given options.
+```
+
+"
+Where would you put jewlery if you do not plan to use it soon?,"[""lady's boudoir"", 'suitcase', 'bedroom drawer', 'safe deposit box', 'department store']","Questions: Where would you put jewlery if you do not plan to use it soon?, Choices: (A) lady's boudoir, (B) suitcase, (C) bedroom drawer, (D) safe deposit box, (E) department store. Given the question 'Where would you put jewlery if you do not plan to use it soon?', which among the choices lady's boudoir, suitcase, bedroom drawer, safe deposit box department store is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) safe deposit box**. A possible explanation is:
+
+```
+If you do not plan to use jewelry soon, then you should put it in a safe deposit box.
+A safe deposit box is a secure and locked container that can protect valuable items from theft, fire, or damage.
+A lady's boudoir, a suitcase, a bedroom drawer, and a department store are not places where you can safely store jewelry for a long time, but places where you can wear, pack, organize, or buy jewelry.
+Therefore, a safe deposit box is the best choice among the given options.
+```
+
+"
+Where would you put nails to stop them from damaging other things nearby?,"['store', 'build doghouse', 'cabinet', 'hammer', 'container']","Questions: Where would you put nails to stop them from damaging other things nearby?, Choices: (A) store, (B) build doghouse, (C) cabinet, (D) hammer, (E) container. Given the question 'Where would you put nails to stop them from damaging other things nearby?', which among the choices store, build doghouse, cabinet, hammer container is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) container**. A possible explanation is:
+
+```
+If you want to stop nails from damaging other things nearby, then you should put them in a container.
+A container is a closed and separate space that can prevent the contact of sharp and hard objects with other surfaces.
+A store, a doghouse, a cabinet, and a hammer are not containers, but places where you can buy, use, store, or handle nails.
+Therefore, a container is the best choice among the given options.
+```
+
+"
+Where would you put onions right before chopping them?,"['table', 'pantry', 'refrigerator', 'pizza', 'front porch']","Questions: Where would you put onions right before chopping them?, Choices: (A) table, (B) pantry, (C) refrigerator, (D) pizza, (E) front porch. Given the question 'Where would you put onions right before chopping them?', which among the choices table, pantry, refrigerator, pizza front porch is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) table**. A possible explanation is:
+
+```
+If you want to chop onions, then you should put them on a table.
+A table is a flat and stable surface that can support the cutting of food with a knife.
+A pantry, a refrigerator, a pizza, and a front porch are not places where you can chop onions, but places where you can store, cool, eat, or grow onions.
+Therefore, a table is the best choice among the given options.
+```
+
+"
+Where would you put refuse if you do not want it to exist any more?,"['basement', 'dump', 'wastebasket', 'garbage can', 'incinerator']","Questions: Where would you put refuse if you do not want it to exist any more?, Choices: (A) basement, (B) dump, (C) wastebasket, (D) garbage can, (E) incinerator. Given the question 'Where would you put refuse if you do not want it to exist any more?', which among the choices basement, dump, wastebasket, garbage can incinerator is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) incinerator**. A possible explanation is:
+
+```
+If you do not want refuse to exist anymore, then you should put it in an incinerator.
+An incinerator is a device that can burn waste and reduce it to ashes.
+A basement, a dump, a wastebasket, and a garbage can are not places where you can eliminate refuse, but places where you can store or dispose of refuse.
+Therefore, an incinerator is the best choice among the given options.
+```
+
+"
+Where would you put scissors if you will need to use them in another building soon?,"['haversack', 'desk', 'cabinet', 'backpack', 'house']","Questions: Where would you put scissors if you will need to use them in another building soon?, Choices: (A) haversack, (B) desk, (C) cabinet, (D) backpack, (E) house. Given the question 'Where would you put scissors if you will need to use them in another building soon?', which among the choices haversack, desk, cabinet, backpack house is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) backpack**. A possible explanation is:
+
+```
+If you will need to use scissors in another building soon, then you should put them in a backpack.
+A backpack is a portable and convenient bag that can carry various items, including scissors.
+A haversack, a desk, a cabinet, and a house are not places where you can transport scissors to another building, but places where you can store, use, or live with scissors.
+Therefore, a backpack is the best choice among the given options.
+```
+
+"
+Where would you put some coffee if you are thirsty?,"['container', 'internet cafe', 'starbucks', 'cup', 'supermarket']","Questions: Where would you put some coffee if you are thirsty?, Choices: (A) container, (B) internet cafe, (C) starbucks, (D) cup, (E) supermarket. Given the question 'Where would you put some coffee if you are thirsty?', which among the choices container, internet cafe, starbucks, cup supermarket is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) cup**. A possible explanation is:
+
+```
+If you are thirsty and want some coffee, then you should put it in a cup.
+A cup is a vessel that can hold and serve liquid beverages, such as coffee.
+A container, an internet cafe, a starbucks, and a supermarket are not places where you can drink coffee, but places where you can store, buy, or order coffee.
+Therefore, a cup is the best choice among the given options.
+```
+
+"
+Where would you put some coffee if you do not need it immediately?,"['container', 'cryogenic pod', 'train station', 'cup', 'internet cafe']","Questions: Where would you put some coffee if you do not need it immediately?, Choices: (A) container, (B) cryogenic pod, (C) train station, (D) cup, (E) internet cafe. Given the question 'Where would you put some coffee if you do not need it immediately?', which among the choices container, cryogenic pod, train station, cup internet cafe is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) container**. A possible explanation is:
+
+```
+If you do not need coffee immediately, then you should put it in a container.
+A container is a closed and separate space that can preserve the quality and flavor of coffee by preventing exposure to air, moisture, or light.
+A cryogenic pod, a train station, a cup, and an internet cafe are not places where you can store coffee for later use, but places where you can freeze, travel, drink, or order coffee.
+Therefore, a container is the best choice among the given options.
+```
+
+"
+Where would you put some pennies that you plan to use soon?,"['pocket', 'jar', 'water fountain', 'drawer', 'trunk']","Questions: Where would you put some pennies that you plan to use soon?, Choices: (A) pocket, (B) jar, (C) water fountain, (D) drawer, (E) trunk. Given the question 'Where would you put some pennies that you plan to use soon?', which among the choices pocket, jar, water fountain, drawer trunk is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) pocket**. A possible explanation is:
+
+```
+If you plan to use some pennies soon, then you should put them in your pocket.
+Your pocket is a part of your clothing that can hold and carry small items, such as pennies.
+A jar, a water fountain, a drawer, and a trunk are not places where you can access pennies easily, but places where you can save, donate, organize, or transport pennies.
+Therefore, your pocket is the best choice among the given options.
+```
+
+I hope this helps you understand how to use conditional statements to answer questions. If you have any other questions, please feel free to ask me. 😊"
+Where would you put something after an iron has been used on it?,"['ironing board', 'house', 'linen closet', 'laundry room', 'kitchen']","Questions: Where would you put something after an iron has been used on it?, Choices: (A) ironing board, (B) house, (C) linen closet, (D) laundry room, (E) kitchen. Given the question 'Where would you put something after an iron has been used on it?', which among the choices ironing board, house, linen closet, laundry room kitchen is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) linen closet. A possible explanation is: If something has been ironed, then it is usually folded and stored in a linen closet. An ironing board is where the ironing is done, not where the ironed items are put. A house is too general and vague. A laundry room is where the items are washed and dried, not where they are stored. A kitchen is where the food is prepared and eaten, not where the ironed items are put.
+
+"
+Where would you put sunglasses if you do not have a shirt but want to bring the sunglasses with you?,"['in shoes', 'bag', 'shirt pocket', 'drugstore', 'glove compartment of car']","Questions: Where would you put sunglasses if you do not have a shirt but want to bring the sunglasses with you?, Choices: (A) in shoes, (B) bag, (C) shirt pocket, (D) drugstore, (E) glove compartment of car. Given the question 'Where would you put sunglasses if you do not have a shirt but want to bring the sunglasses with you?', which among the choices in shoes, bag, shirt pocket, drugstore glove compartment of car is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) bag. A possible explanation is: If you do not have a shirt, then you cannot put the sunglasses in a shirt pocket. If you want to bring the sunglasses with you, then you need something that can carry them. A bag is a common item that can carry sunglasses and other things. In shoes is not a good place to put sunglasses because they can get damaged or lost. A drugstore is a place where you can buy sunglasses, not where you can put them. A glove compartment of a car is a place where you can store sunglasses, but not if you want to bring them with you.
+
+"
+Where would you put sunglasses if you do not have anything to put them in that can be carried with you?,"['stores along beach', 'shirt pocket', 'eye doctor', 'drugstore', 'bag']","Questions: Where would you put sunglasses if you do not have anything to put them in that can be carried with you?, Choices: (A) stores along beach, (B) shirt pocket, (C) eye doctor, (D) drugstore, (E) bag. Given the question 'Where would you put sunglasses if you do not have anything to put them in that can be carried with you?', which among the choices stores along beach, shirt pocket, eye doctor, drugstore bag is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) stores along beach. A possible explanation is: If you do not have anything to put the sunglasses in that can be carried with you, then you need to find a place where you can leave them temporarily and retrieve them later. A store along the beach is a possible place where you can ask the owner or the staff to keep your sunglasses for you until you come back. A shirt pocket is not an option because you do not have a shirt. An eye doctor is not a place where you can leave your sunglasses. A drugstore is a place where you can buy sunglasses, not where you can leave them. A bag is something that can carry sunglasses, but you do not have one.
+
+"
+Where would you put the end of a steel cable if you want to use it as a lightningrod?,"['ship', 'building', 'in the air', 'ground', 'suspension bridge']","Questions: Where would you put the end of a steel cable if you want to use it as a lightningrod?, Choices: (A) ship, (B) building, (C) in the air, (D) ground, (E) suspension bridge. Given the question 'Where would you put the end of a steel cable if you want to use it as a lightningrod?', which among the choices ship, building, in the air, ground suspension bridge is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) ground. A possible explanation is: If you want to use a steel cable as a lightning rod, then you need to connect one end of the cable to a metal rod that is placed high above the ground, such as on a ship, a building, or a suspension bridge. The other end of the cable needs to be connected to the ground, so that the electric current from the lightning can flow safely to the earth. In the air is not a place where you can put the end of a cable, because it is not a solid surface.
+
+"
+Where would you put things in a paper bag?,"['synagogue', 'classroom', 'grocery store', 'lunchbox', 'front porch']","Questions: Where would you put things in a paper bag?, Choices: (A) synagogue, (B) classroom, (C) grocery store, (D) lunchbox, (E) front porch. Given the question 'Where would you put things in a paper bag?', which among the choices synagogue, classroom, grocery store, lunchbox front porch is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) grocery store. A possible explanation is: If you want to put things in a paper bag, then you are most likely buying groceries or other items from a store. A grocery store is a common place where paper bags are used to pack the items that you buy. A synagogue is a place of worship, not a place where you can put things in a paper bag. A classroom is a place where you can learn, not a place where you can put things in a paper bag. A lunchbox is something that can contain food, not something that can be put in a paper bag. A front porch is a part of a house, not a place where you can put things in a paper bag.
+
+"
+Where would you put tin after you buy it?,"['hardware store', 'antique store', 'shopping bag', 'shed', 'landfill']","Questions: Where would you put tin after you buy it?, Choices: (A) hardware store, (B) antique store, (C) shopping bag, (D) shed, (E) landfill. Given the question 'Where would you put tin after you buy it?', which among the choices hardware store, antique store, shopping bag, shed landfill is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) shed. A possible explanation is: If you buy tin, then you are most likely using it for some DIY project or craft. A shed is a place where you can store your tools and materials, such as tin. A hardware store is a place where you can buy tin, not where you can put it. An antique store is a place where you can buy or sell old and valuable items, not where you can put tin. A shopping bag is something that can carry tin, not something that can be put in tin. A landfill is a place where you can dispose of waste, not where you can put tin.
+
+"
+Where would you put your car keys if you want to go driving?,"['ignition switch', 'pocket', 'purse', 'home', 'trunk']","Questions: Where would you put your car keys if you want to go driving?, Choices: (A) ignition switch, (B) pocket, (C) purse, (D) home, (E) trunk. Given the question 'Where would you put your car keys if you want to go driving?', which among the choices ignition switch, pocket, purse, home trunk is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) ignition switch. A possible explanation is: If you want to go driving, then you need to start your car. To start your car, you need to insert your car keys into the ignition switch and turn it. A pocket is a place where you can keep your car keys, not where you can put them to drive. A purse is a bag that can carry your car keys, not where you can put them to drive. A home is a place where you can live, not where you can put your car keys to drive. A trunk is a part of a car that can store things, not where you can put your car keys to drive.
+
+"
+Where would you put your change if you plan to use it soon and you are a man?,"['backseat of car', 'purse', 'pocket', 'jar', 'wallet']","Questions: Where would you put your change if you plan to use it soon and you are a man?, Choices: (A) backseat of car, (B) purse, (C) pocket, (D) jar, (E) wallet. Given the question 'Where would you put your change if you plan to use it soon and you are a man?', which among the choices backseat of car, purse, pocket, jar wallet is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) wallet. A possible explanation is: If you plan to use your change soon and you are a man, then you need to keep your change in a place that is convenient and secure. A wallet is a common item that men use to store their money and cards. A backseat of a car is not a good place to keep your change because it is not easily accessible and it can get lost or stolen. A purse is a bag that women usually use to carry their belongings, not men. A pocket is a place where you can keep your change, but it is not as secure as a wallet. A jar is a container that can store your change, but it is not portable or convenient.
+
+"
+Where would you put your change if you plan to use it soon and you are not a man?,"['wardrobe', 'jar', 'pocket', 'purse', 'backseat of car']","Questions: Where would you put your change if you plan to use it soon and you are not a man?, Choices: (A) wardrobe, (B) jar, (C) pocket, (D) purse, (E) backseat of car. Given the question 'Where would you put your change if you plan to use it soon and you are not a man?', which among the choices wardrobe, jar, pocket, purse backseat of car is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) purse. A possible explanation is: If you plan to use your change soon and you are not a man, then you need to keep your change in a place that is convenient and secure. A purse is a common item that women use to carry their belongings, including their money and cards. A wardrobe is a furniture that can store your clothes, not your change. A jar is a container that can store your change, but it is not portable or convenient. A pocket is a place where you can keep your change, but it is not as secure as a purse. A backseat of a car is not a good place to keep your change because it is not easily accessible and it can get lost or stolen.
+
+"
+Where would you put your change if you will not need to use it soon?,"['purse', 'slot machine', 'jar', 'pocket', 'casino']","Questions: Where would you put your change if you will not need to use it soon?, Choices: (A) purse, (B) slot machine, (C) jar, (D) pocket, (E) casino. Given the question 'Where would you put your change if you will not need to use it soon?', which among the choices purse, slot machine, jar, pocket casino is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) jar. A possible explanation is: If you will not need to use your change soon, then you can save it for later. A jar is a common item that people use to store their spare change. A purse is a bag that can carry your change, but it is not a good place to save it. A slot machine is a device that can accept your change, but it is not a place where you can put it. A pocket is a place where you can keep your change, but it is not a good place to save it. A casino is a place where you can gamble your change, but it is not a place where you can put it."
+Where would you put your foot if it is already covered in cloth?,"['desk', 'shoe', 'ground', 'sock', 'table']","Questions: Where would you put your foot if it is already covered in cloth?, Choices: (A) desk, (B) shoe, (C) ground, (D) sock, (E) table. Given the question 'Where would you put your foot if it is already covered in cloth?', which among the choices desk, shoe, ground, sock table is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (B) shoe. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If your foot is already covered in cloth, then you can put it in a shoe.""
+"
+Where would you put your garden?,"['park', 'fence', 'ground', 'backyard', 'balcony']","Questions: Where would you put your garden?, Choices: (A) park, (B) fence, (C) ground, (D) backyard, (E) balcony. Given the question 'Where would you put your garden?', which among the choices park, fence, ground, backyard balcony is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) backyard. A possible conditional statement for this question is: ""If you have a backyard, then you can put your garden there.""
+"
+Where would you read a passage but not write it?,"['diary', 'city', 'bible', 'graffiti', 'labyrinth']","Questions: Where would you read a passage but not write it?, Choices: (A) diary, (B) city, (C) bible, (D) graffiti, (E) labyrinth. Given the question 'Where would you read a passage but not write it?', which among the choices diary, city, bible, graffiti labyrinth is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) bible. A possible conditional statement for this question is: ""If you are reading a passage from the bible, then you are not writing it.""
+"
+Where would you read magazines while waiting to board winged transportation?,"['airport', 'bis atation', 'library', 'bed', 'dentist']","Questions: Where would you read magazines while waiting to board winged transportation?, Choices: (A) airport, (B) bis atation, (C) library, (D) bed, (E) dentist. Given the question 'Where would you read magazines while waiting to board winged transportation?', which among the choices airport, bis atation, library, bed dentist is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) airport. A possible conditional statement for this question is: ""If you are waiting to board winged transportation, then you are at an airport.""
+"
+Where would you see a conductor and performers singing in German?,"['subway', 'listen to music', 'orchestra', 'broadway', 'opera']","Questions: Where would you see a conductor and performers singing in German?, Choices: (A) subway, (B) listen to music, (C) orchestra, (D) broadway, (E) opera. Given the question 'Where would you see a conductor and performers singing in German?', which among the choices subway, listen to music, orchestra, broadway opera is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) opera. A possible conditional statement for this question is: ""If you see a conductor and performers singing in German, then you are at an opera.""
+"
+Where would you see a performer at a gathering of you friends?,"['cinema', 'opera', 'party', 'stage', 'dance']","Questions: Where would you see a performer at a gathering of you friends?, Choices: (A) cinema, (B) opera, (C) party, (D) stage, (E) dance. Given the question 'Where would you see a performer at a gathering of you friends?', which among the choices cinema, opera, party, stage dance is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) party. A possible conditional statement for this question is: ""If you see a performer at a gathering of your friends, then you are at a party.""
+"
+Where would you see a picture created by a professional?,"['wall', 'shelf', 'on a wall', 'desktop', 'art show']","Questions: Where would you see a picture created by a professional?, Choices: (A) wall, (B) shelf, (C) on a wall, (D) desktop, (E) art show. Given the question 'Where would you see a picture created by a professional?', which among the choices wall, shelf, on a wall, desktop art show is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) art show. A possible conditional statement for this question is: ""If you see a picture created by a professional, then you are at an art show.""
+"
+Where would you see a stranger that is planning to use a large vehicle made up of multiple sections that are attached to each other?,"['park', 'bus station', 'town', 'bus', 'train station']","Questions: Where would you see a stranger that is planning to use a large vehicle made up of multiple sections that are attached to each other?, Choices: (A) park, (B) bus station, (C) town, (D) bus, (E) train station. Given the question 'Where would you see a stranger that is planning to use a large vehicle made up of multiple sections that are attached to each other?', which among the choices park, bus station, town, bus train station is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) train station. A possible conditional statement for this question is: ""If you see a stranger that is planning to use a large vehicle made up of multiple sections that are attached to each other, then you are at a train station.""
+"
+Where would you see footprints that happen due to dirt being left behind inside?,"['roof', 'ground', 'rug', 'surface of earth', 'floorboards']","Questions: Where would you see footprints that happen due to dirt being left behind inside?, Choices: (A) roof, (B) ground, (C) rug, (D) surface of earth, (E) floorboards. Given the question 'Where would you see footprints that happen due to dirt being left behind inside?', which among the choices roof, ground, rug, surface of earth floorboards is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) rug. A possible conditional statement for this question is: ""If you see footprints that happen due to dirt being left behind inside, then you are on a rug.""
+"
+Where would you see footprints that happen due to the formation of an impression?,"['rug', 'surface of earth', 'roof', 'ground', 'suface of moon']","Questions: Where would you see footprints that happen due to the formation of an impression?, Choices: (A) rug, (B) surface of earth, (C) roof, (D) ground, (E) suface of moon. Given the question 'Where would you see footprints that happen due to the formation of an impression?', which among the choices rug, surface of earth, roof, ground suface of moon is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) surface of moon. A possible conditional statement for this question is: ""If you see footprints that happen due to the formation of an impression, then you are on the surface of the moon."""
+Where would you see people in uniform playing with a ball?,"['hole', 'television', 'sporting goods store', 'pool table', 'sporting event']","Questions: Where would you see people in uniform playing with a ball?, Choices: (A) hole, (B) television, (C) sporting goods store, (D) pool table, (E) sporting event. Given the question 'Where would you see people in uniform playing with a ball?', which among the choices hole, television, sporting goods store, pool table sporting event is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) sporting event**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If people are in uniform playing with a ball, then they are at a sporting event**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If people are at a sporting event, then they are in uniform playing with a ball.
+    - Inverse: If people are not in uniform playing with a ball, then they are not at a sporting event.
+    - Contrapositive: If people are not at a sporting event, then they are not in uniform playing with a ball.
+
+"
+Where would you see some civilians standing in a line inside?,"['bus stop', 'military base', 'apartment', 'swimming pool', 'water fountain']","Questions: Where would you see some civilians standing in a line inside?, Choices: (A) bus stop, (B) military base, (C) apartment, (D) swimming pool, (E) water fountain. Given the question 'Where would you see some civilians standing in a line inside?', which among the choices bus stop, military base, apartment, swimming pool water fountain is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(E) water fountain**. A possible conditional statement for this question is: **If some civilians are standing in a line inside, then they are near a water fountain**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If some civilians are near a water fountain, then they are standing in a line inside.
+    - Inverse: If some civilians are not standing in a line inside, then they are not near a water fountain.
+    - Contrapositive: If some civilians are not near a water fountain, then they are not standing in a line inside.
+
+"
+Where would you see some people doing jumping jacks?,"['military base', 'opera', 'water fountain', 'bus stop', 'church']","Questions: Where would you see some people doing jumping jacks?, Choices: (A) military base, (B) opera, (C) water fountain, (D) bus stop, (E) church. Given the question 'Where would you see some people doing jumping jacks?', which among the choices military base, opera, water fountain, bus stop church is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) military base**. A possible conditional statement for this question is: **If some people are doing jumping jacks, then they are at a military base**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If some people are at a military base, then they are doing jumping jacks.
+    - Inverse: If some people are not doing jumping jacks, then they are not at a military base.
+    - Contrapositive: If some people are not at a military base, then they are not doing jumping jacks.
+
+"
+Where would you see some people standing on a line near a road?,"['water fountain', 'military base', 'apartment', 'fire house', 'bus stop']","Questions: Where would you see some people standing on a line near a road?, Choices: (A) water fountain, (B) military base, (C) apartment, (D) fire house, (E) bus stop. Given the question 'Where would you see some people standing on a line near a road?', which among the choices water fountain, military base, apartment, fire house bus stop is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) bus stop**. A possible conditional statement for this question is: **If some people are standing on a line near a road, then they are at a bus stop**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If some people are at a bus stop, then they are standing on a line near a road.
+    - Inverse: If some people are not standing on a line near a road, then they are not at a bus stop.
+    - Contrapositive: If some people are not at a bus stop, then they are not standing on a line near a road.
+
+"
+Where would you see someone typing on a keyboard?,"['landfill', 'finger', 'with camera', 'office', 'music store']","Questions: Where would you see someone typing on a keyboard?, Choices: (A) landfill, (B) finger, (C) with camera, (D) office, (E) music store. Given the question 'Where would you see someone typing on a keyboard?', which among the choices landfill, finger, with camera, office music store is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) office**. A possible conditional statement for this question is: **If someone is typing on a keyboard, then they are in an office**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is in an office, then they are typing on a keyboard.
+    - Inverse: If someone is not typing on a keyboard, then they are not in an office.
+    - Contrapositive: If someone is not in an office, then they are not typing on a keyboard.
+
+"
+Where would you see someone using a thermometer?,"['outside', 'hospital', 'cabinet', ""doctor's office"", 'drawer']","Questions: Where would you see someone using a thermometer?, Choices: (A) outside, (B) hospital, (C) cabinet, (D) doctor's office, (E) drawer. Given the question 'Where would you see someone using a thermometer?', which among the choices outside, hospital, cabinet, doctor's office drawer is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) doctor's office**. A possible conditional statement for this question is: **If someone is using a thermometer, then they are in a doctor's office**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is in a doctor's office, then they are using a thermometer.
+    - Inverse: If someone is not using a thermometer, then they are not in a doctor's office.
+    - Contrapositive: If someone is not in a doctor's office, then they are not using a thermometer.
+
+"
+Where would you sit in a chair to watch four-legged animals complete?,"['bookstore', 'house', 'race track', ""friend's house"", 'building']","Questions: Where would you sit in a chair to watch four-legged animals complete?, Choices: (A) bookstore, (B) house, (C) race track, (D) friend's house, (E) building. Given the question 'Where would you sit in a chair to watch four-legged animals complete?', which among the choices bookstore, house, race track, friend's house building is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) race track**. A possible conditional statement for this question is: **If someone is sitting in a chair to watch four-legged animals compete, then they are at a race track**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is at a race track, then they are sitting in a chair to watch four-legged animals compete.
+    - Inverse: If someone is not sitting in a chair to watch four-legged animals compete, then they are not at a race track.
+    - Contrapositive: If someone is not at a race track, then they are not sitting in a chair to watch four-legged animals compete.
+
+"
+Where would you sit in a waiting room before getting an x-ray of your jaw?,"['waiting room', ""doctor's office"", 'maternity ward', ""dentist's office"", 'clinic']","Questions: Where would you sit in a waiting room before getting an x-ray of your jaw?, Choices: (A) waiting room, (B) doctor's office, (C) maternity ward, (D) dentist's office, (E) clinic. Given the question 'Where would you sit in a waiting room before getting an x-ray of your jaw?', which among the choices waiting room, doctor's office, maternity ward, dentist's office clinic is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) dentist's office**. A possible conditional statement for this question is: **If someone is sitting in a waiting room before getting an x-ray of their jaw, then they are in a dentist's office**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is in a dentist's office, then they are sitting in a waiting room before getting an x-ray of their jaw.
+    - Inverse: If someone is not sitting in a waiting room before getting an x-ray of their jaw, then they are not in a dentist's office.
+    - Contrapositive: If someone is not in a dentist's office, then they are not sitting in a waiting room before getting an x-ray of their jaw.
+
+"
+Where would you stand in a line and need a coat if it is cold?,"['graph', 'bank at noon', 'good book', 'post office', 'bus stop']","Questions: Where would you stand in a line and need a coat if it is cold?, Choices: (A) graph, (B) bank at noon, (C) good book, (D) post office, (E) bus stop. Given the question 'Where would you stand in a line and need a coat if it is cold?', which among the choices graph, bank at noon, good book, post office bus stop is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) bus stop**. A possible conditional statement for this question is: **If someone is standing in a line and needs a coat if it is cold, then they are at a bus stop**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is at a bus stop, then they are standing in a line and need a coat if it is cold.
+    - Inverse: If someone is not standing in a line and does not need a coat if it is cold, then they are not at a bus stop.
+    - Contrapositive: If someone is not at a bus stop, then they are not standing in a line and do not need a coat if it is cold.
+
+"
+Where would you stand in a line and not need a coat if it is cold outside?,"['good book', 'bus stop', 'post office', 'triangle', 'graph']","Questions: Where would you stand in a line and not need a coat if it is cold outside?, Choices: (A) good book, (B) bus stop, (C) post office, (D) triangle, (E) graph. Given the question 'Where would you stand in a line and not need a coat if it is cold outside?', which among the choices good book, bus stop, post office, triangle graph is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) post office**. A possible conditional statement for this question is: **If someone is standing in a line and does not need a coat if it is cold outside, then they are in a post office**. The converse, inverse, and contrapositive of this statement are:
+
+    - Converse: If someone is in a post office, then they are standing in a line and do not need a coat if it is cold outside.
+    - Inverse: If someone is not standing in a line and needs a coat if it is cold outside, then they are not in a post office.
+    - Contrapositive: If someone is not in a post office, then they are not standing in a line and need a coat if it is cold outside.
+
+I hope this helps you understand how to use conditional statements to answer these questions. 😊"
+Where would you store a board game?,"['shelf', 'home', 'house', 'basement', 'cupboard']","Questions: Where would you store a board game?, Choices: (A) shelf, (B) home, (C) house, (D) basement, (E) cupboard. Given the question 'Where would you store a board game?', which among the choices shelf, home, house, basement cupboard is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) cupboard**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If I want to store a board game, then I will put it in a cupboard**. The hypothesis is ""I want to store a board game"" and the conclusion is ""I will put it in a cupboard"". A cupboard is a reasonable place to store a board game because it is usually dry, spacious, and easy to access.
+
+"
+Where would you store a book that you're taking with you on vacation?,"['classroom', 'briefcase', 'suitcase', 'book store', 'synagogue']","Questions: Where would you store a book that you're taking with you on vacation?, Choices: (A) classroom, (B) briefcase, (C) suitcase, (D) book store, (E) synagogue. Given the question 'Where would you store a book that you're taking with you on vacation?', which among the choices classroom, briefcase, suitcase, book store synagogue is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) suitcase**. A possible conditional statement for this question is: **If I am taking a book with me on vacation, then I will store it in a suitcase**. The hypothesis is ""I am taking a book with me on vacation"" and the conclusion is ""I will store it in a suitcase"". A suitcase is a reasonable place to store a book for a vacation because it is portable, secure, and can fit other items as well.
+
+"
+Where would you store a saltshaker when not in use?,"['own kitchen', 'empty restaurant', 'table setting', 'kitchen cupboard', 'cruet']","Questions: Where would you store a saltshaker when not in use?, Choices: (A) own kitchen, (B) empty restaurant, (C) table setting, (D) kitchen cupboard, (E) cruet. Given the question 'Where would you store a saltshaker when not in use?', which among the choices own kitchen, empty restaurant, table setting, kitchen cupboard cruet is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) kitchen cupboard**. A possible conditional statement for this question is: **If I am not using a saltshaker, then I will store it in a kitchen cupboard**. The hypothesis is ""I am not using a saltshaker"" and the conclusion is ""I will store it in a kitchen cupboard"". A kitchen cupboard is a reasonable place to store a saltshaker when not in use because it is clean, organized, and close to where the saltshaker is needed.
+
+"
+Where would you store a shopping bag if all the seats in your vehicle are full?,"['the roof', 'storage cabinet', 'car trunk', 'retail store', 'home']","Questions: Where would you store a shopping bag if all the seats in your vehicle are full?, Choices: (A) the roof, (B) storage cabinet, (C) car trunk, (D) retail store, (E) home. Given the question 'Where would you store a shopping bag if all the seats in your vehicle are full?', which among the choices the roof, storage cabinet, car trunk, retail store home is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) car trunk**. A possible conditional statement for this question is: **If all the seats in my vehicle are full, then I will store a shopping bag in the car trunk**. The hypothesis is ""all the seats in my vehicle are full"" and the conclusion is ""I will store a shopping bag in the car trunk"". A car trunk is a reasonable place to store a shopping bag when the seats are full because it is spacious, safe, and out of sight.
+
+"
+Where would you store a stack of paper when not immediately needed?,"['notebook', 'cabinet', 'classroom', 'suitcase', 'portfolio']","Questions: Where would you store a stack of paper when not immediately needed?, Choices: (A) notebook, (B) cabinet, (C) classroom, (D) suitcase, (E) portfolio. Given the question 'Where would you store a stack of paper when not immediately needed?', which among the choices notebook, cabinet, classroom, suitcase portfolio is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(B) cabinet**. A possible conditional statement for this question is: **If I do not need a stack of paper immediately, then I will store it in a cabinet**. The hypothesis is ""I do not need a stack of paper immediately"" and the conclusion is ""I will store it in a cabinet"". A cabinet is a reasonable place to store a stack of paper when not immediately needed because it is neat, protected, and easy to find.
+
+"
+Where would you store a violin along with all of your other instruments?,"['string quartet', 'orchestra', 'band room', 'attic', 'music room']","Questions: Where would you store a violin along with all of your other instruments?, Choices: (A) string quartet, (B) orchestra, (C) band room, (D) attic, (E) music room. Given the question 'Where would you store a violin along with all of your other instruments?', which among the choices string quartet, orchestra, band room, attic music room is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) music room**. A possible conditional statement for this question is: **If I have a violin and other instruments, then I will store them in a music room**. The hypothesis is ""I have a violin and other instruments"" and the conclusion is ""I will store them in a music room"". A music room is a reasonable place to store a violin and other instruments because it is dedicated, soundproof, and conducive to playing music.
+
+"
+Where would you store glue when it's not in use?,"['desk drawer', 'art room', 'classroom', 'bathroom', 'school']","Questions: Where would you store glue when it's not in use?, Choices: (A) desk drawer, (B) art room, (C) classroom, (D) bathroom, (E) school. Given the question 'Where would you store glue when it's not in use?', which among the choices desk drawer, art room, classroom, bathroom school is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) desk drawer**. A possible conditional statement for this question is: **If I am not using glue, then I will store it in a desk drawer**. The hypothesis is ""I am not using glue"" and the conclusion is ""I will store it in a desk drawer"". A desk drawer is a reasonable place to store glue when it is not in use because it is convenient, dry, and out of reach of children.
+
+"
+Where would you store potato chips in their home?,"['supermarket', 'toilet', 'pantry', 'bar', 'motherboard']","Questions: Where would you store potato chips in their home?, Choices: (A) supermarket, (B) toilet, (C) pantry, (D) bar, (E) motherboard. Given the question 'Where would you store potato chips in their home?', which among the choices supermarket, toilet, pantry, bar motherboard is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) pantry**. A possible conditional statement for this question is: **If I have potato chips in my home, then I will store them in a pantry**. The hypothesis is ""I have potato chips in my home"" and the conclusion is ""I will store them in a pantry"". A pantry is a reasonable place to store potato chips in a home because it is cool, dark, and away from pests.
+
+"
+Where would you store potatoes for the winter?,"['countryside', 'sliced', 'cellar', 'restaurant', 'fried']","Questions: Where would you store potatoes for the winter?, Choices: (A) countryside, (B) sliced, (C) cellar, (D) restaurant, (E) fried. Given the question 'Where would you store potatoes for the winter?', which among the choices countryside, sliced, cellar, restaurant fried is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) cellar**. A possible conditional statement for this question is: **If I want to store potatoes for the winter, then I will store them in a cellar**. The hypothesis is ""I want to store potatoes for the winter"" and the conclusion is ""I will store them in a cellar"". A cellar is a reasonable place to store potatoes for the winter because it is cold, humid, and underground.
+
+"
+Where would you store your hair gel near where you get clean?,"['barbers', 'bathroom', 'bath', 'perfumery', 'beauty salon']","Questions: Where would you store your hair gel near where you get clean?, Choices: (A) barbers, (B) bathroom, (C) bath, (D) perfumery, (E) beauty salon. Given the question 'Where would you store your hair gel near where you get clean?', which among the choices barbers, bathroom, bath, perfumery beauty salon is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) bathroom**. A possible conditional statement for this question is: **If I want to store my hair gel near where I get clean, then I will store it in a bathroom**. The hypothesis is ""I want to store my hair gel near where I get clean"" and the conclusion is ""I will store it in a bathroom"". A bathroom is a reasonable place to store hair gel near where one gets clean because it is where one usually applies hair gel, has a mirror, and has a sink."
+Where would you throw some pennies?,"['pocket', 'jar', 'worthless', 'water fountain', 'copper']","Questions: Where would you throw some pennies?, Choices: (A) pocket, (B) jar, (C) worthless, (D) water fountain, (E) copper. Given the question 'Where would you throw some pennies?', which among the choices pocket, jar, worthless, water fountain copper is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) water fountain. A possible explanation is:
+
+    * If you throw some pennies in a pocket, then they will stay in your possession.
+    * If you throw some pennies in a jar, then they will be saved for later use.
+    * If you throw some pennies away as worthless, then they will be wasted and discarded.
+    * If you throw some pennies in a water fountain, then they will be used to make a wish.
+    * If you throw some pennies in copper, then they will be redundant and useless.
+    * Therefore, the only choice that makes sense is to throw some pennies in a water fountain.
+
+"
+Where would you use a changing room before gym?,"['gym', 'clothing store', ""change baby's diaper"", 'department store', 'schools']","Questions: Where would you use a changing room before gym?, Choices: (A) gym, (B) clothing store, (C) change baby's diaper, (D) department store, (E) schools. Given the question 'Where would you use a changing room before gym?', which among the choices gym, clothing store, change baby's diaper, department store schools is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) gym. A possible explanation is:
+
+    * If you use a changing room before gym in a gym, then you will be ready to exercise.
+    * If you use a changing room before gym in a clothing store, then you will be trying on new clothes.
+    * If you use a changing room before gym to change baby's diaper, then you will be taking care of a baby.
+    * If you use a changing room before gym in a department store, then you will be shopping for clothes.
+    * If you use a changing room before gym in schools, then you will be attending classes.
+    * Therefore, the only choice that matches the purpose is to use a changing room before gym in a gym.
+
+"
+Where would you use a computer while gaining knowledge?,"['apartment', 'house', 'table', 'house', 'school']","Questions: Where would you use a computer while gaining knowledge?, Choices: (A) apartment, (B) house, (C) table, (D) house, (E) school. Given the question 'Where would you use a computer while gaining knowledge?', which among the choices apartment, house, table, house school is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) school. A possible explanation is:
+
+    * If you use a computer while gaining knowledge in an apartment, then you will be learning at home.
+    * If you use a computer while gaining knowledge in a house, then you will be learning at home.
+    * If you use a computer while gaining knowledge on a table, then you will be learning on a surface.
+    * If you use a computer while gaining knowledge in a house, then you will be learning at home.
+    * If you use a computer while gaining knowledge in a school, then you will be learning in an educational institution.
+    * Therefore, the only choice that specifies the location is to use a computer while gaining knowledge in a school.
+
+"
+Where would you use a turnstile that does not require inserting a ticket?,"['theatre', 'subway station', 'train station', 'amusement park', 'store']","Questions: Where would you use a turnstile that does not require inserting a ticket?, Choices: (A) theatre, (B) subway station, (C) train station, (D) amusement park, (E) store. Given the question 'Where would you use a turnstile that does not require inserting a ticket?', which among the choices theatre, subway station, train station, amusement park store is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) subway station. A possible explanation is:
+
+    * If you use a turnstile that does not require inserting a ticket in a theatre, then you will be watching a movie or a show.
+    * If you use a turnstile that does not require inserting a ticket in a subway station, then you will be taking a train.
+    * If you use a turnstile that does not require inserting a ticket in a train station, then you will be taking a train.
+    * If you use a turnstile that does not require inserting a ticket in an amusement park, then you will be enjoying rides and attractions.
+    * If you use a turnstile that does not require inserting a ticket in a store, then you will be shopping for goods.
+    * Therefore, the only choice that does not require inserting a ticket is to use a turnstile in a subway station.
+
+"
+Where would you usually find a freezer with food in it?,"['appliance store', 'garage', 'freeze food', 'bedroom', 'own home']","Questions: Where would you usually find a freezer with food in it?, Choices: (A) appliance store, (B) garage, (C) freeze food, (D) bedroom, (E) own home. Given the question 'Where would you usually find a freezer with food in it?', which among the choices appliance store, garage, freeze food, bedroom own home is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) own home. A possible explanation is:
+
+    * If you usually find a freezer with food in it in an appliance store, then you will be buying a new freezer.
+    * If you usually find a freezer with food in it in a garage, then you will be storing food in a cold place.
+    * If you usually find a freezer with food in it to freeze food, then you will be preserving food for longer shelf life.
+    * If you usually find a freezer with food in it in a bedroom, then you will be keeping food close to your bed.
+    * If you usually find a freezer with food in it in your own home, then you will be accessing food for your daily needs.
+    * Therefore, the most common and reasonable choice is to find a freezer with food in it in your own home.
+
+"
+Where would you usually find a hole made by an animal?,"['trap', 'golf course', 'wall', 'ground', 'swiss cheese']","Questions: Where would you usually find a hole made by an animal?, Choices: (A) trap, (B) golf course, (C) wall, (D) ground, (E) swiss cheese. Given the question 'Where would you usually find a hole made by an animal?', which among the choices trap, golf course, wall, ground swiss cheese is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) ground. A possible explanation is:
+
+    * If you usually find a hole made by an animal in a trap, then you will be catching an animal.
+    * If you usually find a hole made by an animal in a golf course, then you will be playing golf.
+    * If you usually find a hole made by an animal in a wall, then you will be dealing with a pest problem.
+    * If you usually find a hole made by an animal in the ground, then you will be observing an animal's burrow or den.
+    * If you usually find a hole made by an animal in swiss cheese, then you will be eating cheese with holes.
+    * Therefore, the most natural and likely choice is to find a hole made by an animal in the ground.
+
+"
+Where would you usually keep your personal telephone directory?,"['office', 'building', 'house', 'desk', 'phone booth']","Questions: Where would you usually keep your personal telephone directory?, Choices: (A) office, (B) building, (C) house, (D) desk, (E) phone booth. Given the question 'Where would you usually keep your personal telephone directory?', which among the choices office, building, house, desk phone booth is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) desk. A possible explanation is:
+
+    * If you usually keep your personal telephone directory in an office, then you will be working in a professional setting.
+    * If you usually keep your personal telephone directory in a building, then you will be living or working in a structure.
+    * If you usually keep your personal telephone directory in a house, then you will be residing in a dwelling.
+    * If you usually keep your personal telephone directory in a desk, then you will be storing it in a furniture.
+    * If you usually keep your personal telephone directory in a phone booth, then you will be making a call in a public place.
+    * Therefore, the most convenient and accessible choice is to keep your personal telephone directory in a desk.
+
+"
+Where would you visit a ticket booth before going on a ride?,"['amusement park', 'train station', 'metro station', 'fairgrounds', 'museum']","Questions: Where would you visit a ticket booth before going on a ride?, Choices: (A) amusement park, (B) train station, (C) metro station, (D) fairgrounds, (E) museum. Given the question 'Where would you visit a ticket booth before going on a ride?', which among the choices amusement park, train station, metro station, fairgrounds museum is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) amusement park. A possible explanation is:
+
+    * If you visit a ticket booth before going on a ride in an amusement park, then you will be paying for admission or tokens.
+    * If you visit a ticket booth before going on a ride in a train station, then you will be buying a ticket for a train.
+    * If you visit a ticket booth before going on a ride in a metro station, then you will be buying a ticket for a subway.
+    * If you visit a ticket booth before going on a ride in a fairgrounds, then you will be paying for entry or tickets.
+    * If you visit a ticket booth before going on a ride in a museum, then you will be paying for admission or membership.
+    * Therefore, the most relevant and specific choice is to visit a ticket booth before going on a ride in an amusement park.
+
+"
+Where would you walk in a passage?,"['store', 'city', 'diary', 'bible', 'labyrinth']","Questions: Where would you walk in a passage?, Choices: (A) store, (B) city, (C) diary, (D) bible, (E) labyrinth. Given the question 'Where would you walk in a passage?', which among the choices store, city, diary, bible labyrinth is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) labyrinth. A possible explanation is:
+
+    * If you walk in a passage in a store, then you will be browsing through aisles or sections.
+    * If you walk in a passage in a city, then you will be exploring streets or alleys.
+    * If you walk in a passage in a diary, then you will be reading a personal entry or note.
+    * If you walk in a passage in a bible, then you will be studying a scripture or verse.
+    * If you walk in a passage in a labyrinth, then you will be navigating a maze or puzzle.
+    * Therefore, the most appropriate and fitting choice is to walk in a passage in a labyrinth.
+
+"
+Where would you write down a passage?,"['labyrinth', 'bible', 'hotel', 'diary', 'journal']","Questions: Where would you write down a passage?, Choices: (A) labyrinth, (B) bible, (C) hotel, (D) diary, (E) journal. Given the question 'Where would you write down a passage?', which among the choices labyrinth, bible, hotel, diary journal is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) diary. A possible explanation is:
+
+    * If you write down a passage in a labyrinth, then you will be leaving a clue or a message.
+    * If you write down a passage in a bible, then you will be copying a scripture or a verse.
+    * If you write down a passage in a hotel, then you will be staying in a room or a suite.
+    * If you write down a passage in a diary, then you will be recording a personal entry or note.
+    * If you write down a passage in a journal, then you will be documenting a research or a project.
+    * Therefore, the most common and suitable choice is to write down a passage in a diary."
+Where you have finished a conversation with a person what do you say?,"['open letter', 'thank god', 'say goodbye', 'bless you', 'listen to radio']","Questions: Where you have finished a conversation with a person what do you say?, Choices: (A) open letter, (B) thank god, (C) say goodbye, (D) bless you, (E) listen to radio. Given the question 'Where you have finished a conversation with a person what do you say?', which among the choices open letter, thank god, say goodbye, bless you listen to radio is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(C) say goodbye**. A possible conditional statement is: `If you have finished a conversation with a person, then you say goodbye.` This is a polite and common way to end a conversation. The other choices are not appropriate for this situation.
+
+"
+Whether it's livestock or produce a farmer does what?,"['produce food', 'raise crops', 'can produce', 'grow corn', 'plant seeds']","Questions: Whether it's livestock or produce a farmer does what?, Choices: (A) produce food, (B) raise crops, (C) can produce, (D) grow corn, (E) plant seeds. Given the question 'Whether it's livestock or produce a farmer does what?', which among the choices produce food, raise crops, can produce, grow corn plant seeds is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) produce food**. A possible conditional statement is: `If it's livestock or produce, then a farmer produces food.` This is a general statement that covers both types of farming. The other choices are too specific or not relevant for this question.
+
+"
+Which athletic competitions have the most excitement?,"['soccer', 'hockey game', 'dance', 'library', 'car show']","Questions: Which athletic competitions have the most excitement?, Choices: (A) soccer, (B) hockey game, (C) dance, (D) library, (E) car show. Given the question 'Which athletic competitions have the most excitement?', which among the choices soccer, hockey game, dance, library car show is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) hockey game**. A possible conditional statement is: `If it is an athletic competition, then a hockey game has the most excitement.` This is a subjective opinion, but one could argue that hockey games are fast-paced, unpredictable, and thrilling. The other choices are either not athletic competitions or not as exciting as hockey games.
+
+"
+Which coast are toll roads not near the pacific ocean on?,"['delaware', 'new jersey', 'eastern united states', 'connecticut', 'good repair']","Questions: Which coast are toll roads not near the pacific ocean on?, Choices: (A) delaware, (B) new jersey, (C) eastern united states, (D) connecticut, (E) good repair. Given the question 'Which coast are toll roads not near the pacific ocean on?', which among the choices delaware, new jersey, eastern united states, connecticut good repair is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) eastern united states**. A possible conditional statement is: `If a coast is not near the Pacific Ocean, then it is in the eastern United States.` This is a geographical fact, as the Pacific Ocean borders the western coast of the United States. The other choices are either states or terms that are not relevant for this question.
+
+"
+Which country is very known to have a mine and explosion problem?,"['pennsylvania', 'mountain', 'cambodia', 'desert', 'canada']","Questions: Which country is very known to have a mine and explosion problem?, Choices: (A) pennsylvania, (B) mountain, (C) cambodia, (D) desert, (E) canada. Given the question 'Which country is very known to have a mine and explosion problem?', which among the choices pennsylvania, mountain, cambodia, desert canada is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) cambodia**. A possible conditional statement is: `If a country is very known to have a mine and explosion problem, then it is Cambodia.` This is based on historical and current events, as Cambodia has suffered from landmines and unexploded ordnance left over from decades of war and conflict. The other choices are either not countries or not known for this problem.
+
+"
+Which door with lock do you secure when running an errand?,"['house', 'garage', 'automobile', 'safe', 'trunk']","Questions: Which door with lock do you secure when running an errand?, Choices: (A) house, (B) garage, (C) automobile, (D) safe, (E) trunk. Given the question 'Which door with lock do you secure when running an errand?', which among the choices house, garage, automobile, safe trunk is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) automobile**. A possible conditional statement is: `If you are running an errand, then you secure the door with lock of your automobile.` This is a logical and practical action, as you would want to protect your vehicle and its contents from theft or damage. The other choices are either not doors with locks or not relevant for this situation.
+
+"
+Which door with lock holds valuables?,"['safe', 'vault', 'garage', 'house', 'automobile']","Questions: Which door with lock holds valuables?, Choices: (A) safe, (B) vault, (C) garage, (D) house, (E) automobile. Given the question 'Which door with lock holds valuables?', which among the choices safe, vault, garage, house automobile is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) safe**. A possible conditional statement is: `If a door with lock holds valuables, then it is a safe.` This is a reasonable assumption, as a safe is designed to store and protect valuable items such as money, jewelry, documents, etc. The other choices are either not doors with locks or not typically used to hold valuables.
+
+"
+Which effect of stress could cause death if not treated immediately?,"['age grieving person', 'heart attacks', 'depression', 'hair loss', 'headache']","Questions: Which effect of stress could cause death if not treated immediately?, Choices: (A) age grieving person, (B) heart attacks, (C) depression, (D) hair loss, (E) headache. Given the question 'Which effect of stress could cause death if not treated immediately?', which among the choices age grieving person, heart attacks, depression, hair loss headache is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) heart attacks**. A possible conditional statement is: `If an effect of stress could cause death if not treated immediately, then it is a heart attack.` This is a medical fact, as a heart attack is a serious and potentially fatal condition that occurs when the blood supply to the heart is blocked. The other choices are either not effects of stress or not life-threatening.
+
+"
+Which entrance would you use if you do not want to use the back entrance?,"['side', 'main', 'anterior', 'current', 'front']","Questions: Which entrance would you use if you do not want to use the back entrance?, Choices: (A) side, (B) main, (C) anterior, (D) current, (E) front. Given the question 'Which entrance would you use if you do not want to use the back entrance?', which among the choices side, main, anterior, current front is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) front**. A possible conditional statement is: `If you do not want to use the back entrance, then you use the front entrance.` This is a simple and logical alternative, as the front entrance is usually the main and most accessible entrance to a building. The other choices are either not entrances or not common for this situation.
+
+"
+Which group is the cover for tonight's musical program?,"['opera', 'concert', 'television', 'symphonic', 'computer']","Questions: Which group is the cover for tonight's musical program?, Choices: (A) opera, (B) concert, (C) television, (D) symphonic, (E) computer. Given the question 'Which group is the cover for tonight's musical program?', which among the choices opera, concert, television, symphonic computer is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) symphonic**. A possible conditional statement is: `If it is a musical program, then a symphonic group is the cover.` This is a plausible and reasonable guess, as a symphonic group is a large ensemble of musicians that plays classical music. The other choices are either not musical groups or not likely to be the cover for a musical program."
+Which horseman of the apocalypse is often depicted next to death?,"['battlefield', 'the healer.', 'funeral', 'war', 'hospital']","Questions: Which horseman of the apocalypse is often depicted next to death?, Choices: (A) battlefield, (B) the healer., (C) funeral, (D) war, (E) hospital. Given the question 'Which horseman of the apocalypse is often depicted next to death?', which among the choices battlefield, the healer., funeral, war hospital is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) war**. The horseman of the apocalypse that is often depicted next to death is war, according to the biblical book of Revelation. A possible conditional statement to explain this is: `if the horseman is next to death, then the horseman is war`.
+"
+Which large state does colorado not bordeR?,"['new york', 'united states', 'texas', 'mexico', 'nevada']","Questions: Which large state does colorado not bordeR?, Choices: (A) new york, (B) united states, (C) texas, (D) mexico, (E) nevada. Given the question 'Which large state does colorado not bordeR?', which among the choices new york, united states, texas, mexico nevada is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) new york**. Colorado does not border New York, which is a large state in the northeastern part of the United States. A possible conditional statement to explain this is: `if the state is large and does not border Colorado, then the state is New York`.
+"
+Which larger group contains snare drum players and is usually done at a sports game?,"['high school band', 'drum kit', 'marching band', 'musical band', 'orchestra']","Questions: Which larger group contains snare drum players and is usually done at a sports game?, Choices: (A) high school band, (B) drum kit, (C) marching band, (D) musical band, (E) orchestra. Given the question 'Which larger group contains snare drum players and is usually done at a sports game?', which among the choices high school band, drum kit, marching band, musical band orchestra is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(C) marching band**. A marching band is a larger group that contains snare drum players and is usually done at a sports game, such as a football or basketball game. A possible conditional statement to explain this is: `if the group contains snare drum players and is done at a sports game, then the group is a marching band`.
+"
+Which lawn do people not care about as much since people don't see it?,"['golf course', 'front yard', 'back yard', 'garden', 'suburbia']","Questions: Which lawn do people not care about as much since people don't see it?, Choices: (A) golf course, (B) front yard, (C) back yard, (D) garden, (E) suburbia. Given the question 'Which lawn do people not care about as much since people don't see it?', which among the choices golf course, front yard, back yard, garden suburbia is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) back yard**. People usually do not care about their back yard as much as their front yard, since the back yard is not visible to the public or the neighbors. A possible conditional statement to explain this is: `if the lawn is not seen by others, then the lawn is the back yard`.
+"
+Which location has spots where people can take their kids to play on playgrounds?,"['conference', 'town', 'apartment', 'wedding', 'theater']","Questions: Which location has spots where people can take their kids to play on playgrounds?, Choices: (A) conference, (B) town, (C) apartment, (D) wedding, (E) theater. Given the question 'Which location has spots where people can take their kids to play on playgrounds?', which among the choices conference, town, apartment, wedding theater is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(B) town**. A town is a location that has spots where people can take their kids to play on playgrounds, such as parks, schools, or community centers. A possible conditional statement to explain this is: `if the location has playgrounds for kids, then the location is a town`.
+"
+Which long saga will we be watching on tonight's program?,"['concert', 'opera', 'theater', 'take class', 'television']","Questions: Which long saga will we be watching on tonight's program?, Choices: (A) concert, (B) opera, (C) theater, (D) take class, (E) television. Given the question 'Which long saga will we be watching on tonight's program?', which among the choices concert, opera, theater, take class television is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) opera**. An opera is a long saga that we can watch on tonight's program, if we are interested in musical drama. An opera usually has a complex plot, multiple characters, and several acts. A possible conditional statement to explain this is: `if the saga is long and musical, then the saga is an opera`.
+"
+Which region has the most famous temple?,"['jerusalem', 'jewish community', 'middle east', 'city', 'mosque']","Questions: Which region has the most famous temple?, Choices: (A) jerusalem, (B) jewish community, (C) middle east, (D) city, (E) mosque. Given the question 'Which region has the most famous temple?', which among the choices jerusalem, jewish community, middle east, city mosque is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) jerusalem**. Jerusalem is a region that has the most famous temple, which is the Temple Mount, also known as the Haram al-Sharif. It is a sacred site for Jews, Muslims, and Christians. A possible conditional statement to explain this is: `if the region has the Temple Mount, then the region is Jerusalem`.
+"
+Which side of Africa is the Indian Ocean on?,"['earth', 'west', 'asia', 'east', 'southern hemisphere']","Questions: Which side of Africa is the Indian Ocean on?, Choices: (A) earth, (B) west, (C) asia, (D) east, (E) southern hemisphere. Given the question 'Which side of Africa is the Indian Ocean on?', which among the choices earth, west, asia, east southern hemisphere is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) east**. The Indian Ocean is on the east side of Africa, as we can see on a map or a globe. A possible conditional statement to explain this is: `if the ocean is the Indian Ocean, then the side of Africa is the east`.
+"
+Which state are you in if you're at a tennis court in a mitten-shaped state?,"['town', 'country club', 'health club', 'florida', 'michigan']","Questions: Which state are you in if you're at a tennis court in a mitten-shaped state?, Choices: (A) town, (B) country club, (C) health club, (D) florida, (E) michigan. Given the question 'Which state are you in if you're at a tennis court in a mitten-shaped state?', which among the choices town, country club, health club, florida michigan is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) michigan**. Michigan is a state that is shaped like a mitten, as we can see on a map or a flag. If we are at a tennis court in a mitten-shaped state, we are most likely in Michigan. A possible conditional statement to explain this is: `if the state is shaped like a mitten, then the state is Michigan`.
+"
+Which state has blue ridge mountains that are called Blue Mountain?,"['appalachians', 'virginia', 'pennsylvania', 'north carolina', 'montana']","Questions: Which state has blue ridge mountains that are called Blue Mountain?, Choices: (A) appalachians, (B) virginia, (C) pennsylvania, (D) north carolina, (E) montana. Given the question 'Which state has blue ridge mountains that are called Blue Mountain?', which among the choices appalachians, virginia, pennsylvania, north carolina montana is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) pennsylvania**. Pennsylvania is a state that has blue ridge mountains that are called Blue Mountain, as we can see on a map or a sign. The Blue Mountain is a ridge that forms part of the Appalachian Mountains. A possible conditional statement to explain this is: `if the state has blue ridge mountains called Blue Mountain, then the state is Pennsylvania`."
+Which state is the blue ridge mountains roanoke city in?,"['appalachians', 'north carolina', 'virginia', 'pennsylvania', 'montana']","Questions: Which state is the blue ridge mountains roanoke city in?, Choices: (A) appalachians, (B) north carolina, (C) virginia, (D) pennsylvania, (E) montana. Given the question 'Which state is the blue ridge mountains roanoke city in?', which among the choices appalachians, north carolina, virginia, pennsylvania montana is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) virginia. The Blue Ridge Mountains are a range of mountains that extend from Georgia to Pennsylvania, and Roanoke City is a city in Virginia that lies within the Blue Ridge Mountains. Therefore, if Roanoke City is in the Blue Ridge Mountains, then it must be in Virginia. We can write this as a conditional statement: If Roanoke City is in the Blue Ridge Mountains, then Roanoke City is in Virginia.
+
+"
+Which state still has wild bald eagles?,"['canada', 'cliff', 'mountains', 'captivity', 'utah']","Questions: Which state still has wild bald eagles?, Choices: (A) canada, (B) cliff, (C) mountains, (D) captivity, (E) utah. Given the question 'Which state still has wild bald eagles?', which among the choices canada, cliff, mountains, captivity utah is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) utah. Bald eagles are the national bird of the United States, and they can be found in every state except Hawaii. However, some states have more bald eagles than others, and Utah is one of them. According to the Utah Division of Wildlife Resources, Utah has about 1,200 bald eagles that migrate to the state every winter, and some of them stay year-round. Therefore, if we are looking for a state that still has wild bald eagles, then Utah is a good choice. We can write this as a conditional statement: If we are looking for a state that still has wild bald eagles, then Utah is a good choice.
+
+"
+Which way is the pacific ocean from Nevada?,"['atlas', 'san francisco bay', 'beach', 'southern hemisphere', 'west']","Questions: Which way is the pacific ocean from Nevada?, Choices: (A) atlas, (B) san francisco bay, (C) beach, (D) southern hemisphere, (E) west. Given the question 'Which way is the pacific ocean from Nevada?', which among the choices atlas, san francisco bay, beach, southern hemisphere west is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) west. The Pacific Ocean is the largest and deepest ocean in the world, and it covers about one-third of the Earth's surface. Nevada is a state in the western United States, and it borders California, Oregon, Idaho, Utah, and Arizona. The Pacific Ocean is west of Nevada, and the closest point to the ocean from Nevada is about 200 miles away. Therefore, if we want to know which way is the Pacific Ocean from Nevada, then the answer is west. We can write this as a conditional statement: If we want to know which way is the Pacific Ocean from Nevada, then the answer is west.
+
+"
+While attending a lecture what should be done in the auditorium?,"['take notes', 'listening', 'fall asleep', 'falling asleep', 'learning']","Questions: While attending a lecture what should be done in the auditorium?, Choices: (A) take notes, (B) listening, (C) fall asleep, (D) falling asleep, (E) learning. Given the question 'While attending a lecture what should be done in the auditorium?', which among the choices take notes, listening, fall asleep, falling asleep learning is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) listening. A lecture is a form of oral presentation that delivers information or teaches a topic to an audience. While attending a lecture, the most appropriate thing to do in the auditorium is to listen to the speaker and pay attention to the content. Listening is an active process that involves hearing, understanding, and remembering what is being said. Therefore, if we are attending a lecture, then we should be listening in the auditorium. We can write this as a conditional statement: If we are attending a lecture, then we should be listening in the auditorium.
+
+"
+While doing housework you came across a dusty corner which caused you to start doing what?,"['sneezing', 'tired', 'boredom', 'fatigue', 'anxiety']","Questions: While doing housework you came across a dusty corner which caused you to start doing what?, Choices: (A) sneezing, (B) tired, (C) boredom, (D) fatigue, (E) anxiety. Given the question 'While doing housework you came across a dusty corner which caused you to start doing what?', which among the choices sneezing, tired, boredom, fatigue anxiety is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (A) sneezing. Sneezing is a reflex action that occurs when the nose is irritated by something, such as dust, pollen, or smoke. Sneezing helps to expel the irritant from the nasal passages and clear the airways. While doing housework, we may come across a dusty corner that has not been cleaned for a long time, and this may cause us to start sneezing. Therefore, if we come across a dusty corner while doing housework, then we may start sneezing. We can write this as a conditional statement: If we come across a dusty corner while doing housework, then we may start sneezing.
+
+"
+While driving to work she felt the what of the important decisions to be made today?,"['agitation', 'pressure', 'promotion', 'impatience', 'stress']","Questions: While driving to work she felt the what of the important decisions to be made today?, Choices: (A) agitation, (B) pressure, (C) promotion, (D) impatience, (E) stress. Given the question 'While driving to work she felt the what of the important decisions to be made today?', which among the choices agitation, pressure, promotion, impatience stress is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) stress. Stress is a state of mental or emotional strain or tension that results from demanding or challenging situations. While driving to work, we may feel the stress of the important decisions that we have to make today, such as meeting deadlines, solving problems, or dealing with conflicts. Stress can affect our mood, behavior, and health, and it can make us feel anxious, nervous, or overwhelmed. Therefore, if we are driving to work and we have important decisions to make today, then we may feel the stress of those decisions. We can write this as a conditional statement: If we are driving to work and we have important decisions to make today, then we may feel the stress of those decisions.
+
+"
+While he had great disdain for the King and his knights he still respected their what?,"['reverence', 'respect', 'honor', 'admiration', 'kindness']","Questions: While he had great disdain for the King and his knights he still respected their what?, Choices: (A) reverence, (B) respect, (C) honor, (D) admiration, (E) kindness. Given the question 'While he had great disdain for the King and his knights he still respected their what?', which among the choices reverence, respect, honor, admiration kindness is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) honor. Honor is a quality of respect, honesty, and integrity that is shown or given to someone or something. While he had great disdain for the King and his knights, he still respected their honor, which means that he acknowledged their courage, loyalty, and dignity, even though he did not like or agree with them. Therefore, if he had great disdain for the King and his knights, then he still respected their honor. We can write this as a conditional statement: If he had great disdain for the King and his knights, then he still respected their honor.
+
+"
+While in a zoological park where would you find a bald eagle?,"['painting', 'aviary', 'the aquarium', 'in washington', 'rural area']","Questions: While in a zoological park where would you find a bald eagle?, Choices: (A) painting, (B) aviary, (C) the aquarium, (D) in washington, (E) rural area. Given the question 'While in a zoological park where would you find a bald eagle?', which among the choices painting, aviary, the aquarium, in washington rural area is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) aviary. An aviary is a large enclosure or cage that houses birds and allows them to fly freely. While in a zoological park, we would find a bald eagle in an aviary, where it can be observed and protected. A bald eagle is a large bird of prey that has a white head and tail, and a brown body and wings. It is native to North America, and it feeds on fish, rodents, and carrion. Therefore, if we are in a zoological park and we want to find a bald eagle, then we should look for an aviary. We can write this as a conditional statement: If we are in a zoological park and we want to find a bald eagle, then we should look for an aviary.
+
+"
+While performing she fell off the stage causing what?,"['action', 'fear', 'injury', 'pride', 'butterflies']","Questions: While performing she fell off the stage causing what?, Choices: (A) action, (B) fear, (C) injury, (D) pride, (E) butterflies. Given the question 'While performing she fell off the stage causing what?', which among the choices action, fear, injury, pride butterflies is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) injury. An injury is a physical harm or damage that is caused by an accident, violence, or disease. While performing, she fell off the stage, causing an injury, which means that she hurt herself or broke a bone when she landed on the ground. Falling off the stage is a risky and painful situation that can result in serious consequences. Therefore, if she fell off the stage while performing, then she caused an injury. We can write this as a conditional statement: If she fell off the stage while performing, then she caused an injury.
+
+"
+While resting what are you trying to achieve?,"['lazy', 'relaxation', 'falling asleep', 'feel better', 'laziness']","Questions: While resting what are you trying to achieve?, Choices: (A) lazy, (B) relaxation, (C) falling asleep, (D) feel better, (E) laziness. Given the question 'While resting what are you trying to achieve?', which among the choices lazy, relaxation, falling asleep, feel better laziness is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) relaxation. Relaxation is a state of being calm, comfortable, and free from stress or tension. While resting, we are trying to achieve relaxation, which means that we are trying to reduce our physical and mental fatigue and improve our well-being. Resting can involve sleeping, meditating, reading, or doing any other activity that helps us relax. Therefore, if we are resting, then we are trying to achieve relaxation. We can write this as a conditional statement: If we are resting, then we are trying to achieve relaxation."
+While visiting a museum what feeling may you have looking at paintings of pastoral scenes?,"['seeing artifacts', 'joy', 'wonder', 'shock', 'peace']","Questions: While visiting a museum what feeling may you have looking at paintings of pastoral scenes?, Choices: (A) seeing artifacts, (B) joy, (C) wonder, (D) shock, (E) peace. Given the question 'While visiting a museum what feeling may you have looking at paintings of pastoral scenes?', which among the choices seeing artifacts, joy, wonder, shock peace is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) peace**. A possible explanation is: If you are looking at paintings of pastoral scenes, then you may feel peace because pastoral scenes are usually calm and serene.
+"
+While you're at the store buy beer what happens to your wealth?,"['relaxation', 'get arrested', 'wealth increases', 'losing money', 'pleasure']","Questions: While you're at the store buy beer what happens to your wealth?, Choices: (A) relaxation, (B) get arrested, (C) wealth increases, (D) losing money, (E) pleasure. Given the question 'While you're at the store buy beer what happens to your wealth?', which among the choices relaxation, get arrested, wealth increases, losing money pleasure is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) losing money**. A possible explanation is: If you buy beer at the store, then you are losing money because you are spending money on something that is not essential.
+"
+While you're shopping for greeting cards where would you child like to be?,"['toy store', 'play games', 'casino', 'table', 'deck']","Questions: While you're shopping for greeting cards where would you child like to be?, Choices: (A) toy store, (B) play games, (C) casino, (D) table, (E) deck. Given the question 'While you're shopping for greeting cards where would you child like to be?', which among the choices toy store, play games, casino, table deck is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) toy store**. A possible explanation is: If you are shopping for greeting cards, then your child may like to be at the toy store because toy stores have more fun and interesting things for children than greeting cards.
+"
+Who can I play with if I know how to play an upright piano?,"['college', 'band', 'living room', 'military', 'house']","Questions: Who can I play with if I know how to play an upright piano?, Choices: (A) college, (B) band, (C) living room, (D) military, (E) house. Given the question 'Who can I play with if I know how to play an upright piano?', which among the choices college, band, living room, military house is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) band**. A possible explanation is: If you know how to play an upright piano, then you can play with a band because a band is a group of musicians who play different instruments together, and a piano is a common instrument in many bands.
+"
+Who can have the most influence on washington from a given county?,"['representative', 'cleverest', 'bitterest', 'alter', 'sweet']","Questions: Who can have the most influence on washington from a given county?, Choices: (A) representative, (B) cleverest, (C) bitterest, (D) alter, (E) sweet. Given the question 'Who can have the most influence on washington from a given county?', which among the choices representative, cleverest, bitterest, alter sweet is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) representative**. A possible explanation is: If you are from a given county, then your representative can have the most influence on Washington because your representative is elected by the people of your county to represent their interests and needs in the federal government.
+"
+Who collects many a drop of blood?,"['mosquito', 'human body', 'needle', 'slaughter house', 'blood bank']","Questions: Who collects many a drop of blood?, Choices: (A) mosquito, (B) human body, (C) needle, (D) slaughter house, (E) blood bank. Given the question 'Who collects many a drop of blood?', which among the choices mosquito, human body, needle, slaughter house blood bank is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) blood bank**. A possible explanation is: A blood bank collects many a drop of blood because a blood bank is a place where blood is donated, stored, and distributed for medical purposes, and blood is composed of many drops of liquid.
+"
+Who designs a building?,"['builders', 'driver', 'architect', 'fall down', 'tradesmen']","Questions: Who designs a building?, Choices: (A) builders, (B) driver, (C) architect, (D) fall down, (E) tradesmen. Given the question 'Who designs a building?', which among the choices builders, driver, architect, fall down tradesmen is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) architect**. A possible explanation is: An architect designs a building because an architect is a person who plans, designs, and oversees the construction of buildings, and a building is a structure that has a roof and walls.
+"
+Who do you give money to at a ticket booth?,"['venue', 'movie theater', 'museum', 'train station', 'clerk']","Questions: Who do you give money to at a ticket booth?, Choices: (A) venue, (B) movie theater, (C) museum, (D) train station, (E) clerk. Given the question 'Who do you give money to at a ticket booth?', which among the choices venue, movie theater, museum, train station clerk is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) clerk**. A possible explanation is: You give money to a clerk at a ticket booth because a clerk is a person who works at a ticket booth and sells tickets for a venue, a movie theater, a museum, a train station, or other places that require tickets for entry.
+"
+Who does the government help with schools?,"['school children', 'parents', 'get money', 'require to pay taxes', 'take money']","Questions: Who does the government help with schools?, Choices: (A) school children, (B) parents, (C) get money, (D) require to pay taxes, (E) take money. Given the question 'Who does the government help with schools?', which among the choices school children, parents, get money, require to pay taxes take money is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) school children**. A possible explanation is: The government helps school children with schools because school children are the students who attend schools, and the government provides funding, regulations, standards, and programs for schools to educate them.
+"
+Who does the teacher speak with most during the week?,"['school children', 'teach pupils', 'work in school', 'other teachers', 'time test']","Questions: Who does the teacher speak with most during the week?, Choices: (A) school children, (B) teach pupils, (C) work in school, (D) other teachers, (E) time test. Given the question 'Who does the teacher speak with most during the week?', which among the choices school children, teach pupils, work in school, other teachers time test is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(D) other teachers**. A possible explanation is: The teacher speaks with other teachers most during the week because other teachers are the colleagues of the teacher who work in the same school, and the teacher has to communicate with them regularly for planning, collaboration, and professional development."

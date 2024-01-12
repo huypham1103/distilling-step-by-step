@@ -14,12 +14,15 @@ from concurrent.futures import ThreadPoolExecutor
 # g4f.debug.version_check = False  # Disable automatic version checking
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
+FOLDER = 'contrastive'
+TYPE = 'contrastive'
+
 class APIData:
     def __init__(self, data, token_idx, idx, tokens=None):
         self.tokens = tokens
         self.data = data
         self.prompt_list = []
-        self.prompt_template=   '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the correct answer to the question '%s' with the options %s, %s, %s, %s %s? Provide a straightforward explanation. \n'''
+        self.prompt_template=   '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', among the choices %s, %s, %s, %s %s, which is the most likely answer? Highlight what sets your choice apart from the others.\n'''
         self.limit = 10
         self.token_idx = token_idx
         self.idx = idx
@@ -40,10 +43,11 @@ class APIData:
     
     def call_api(self, messages, token):
         return g4f.ChatCompletion.create(
-            model=g4f.models.gpt_4,
+            model='gpt-3.5-turbo',
             messages=messages,
             provider=g4f.Provider.Bing,
             stream=False,
+            # timeout=120,
             # auth="token",
             # access_token=token
             # ignore_stream_and_auth=True
@@ -63,8 +67,9 @@ class APIData:
                 try:
                     result = self.call_api(messages, self.token)
                 except Exception as e:
-                    print(e)
-                    print(self.token)
+                    # print(e)
+                    # print(self.token)
+                    pass
             return result
     
     def get_answer(self, response):
@@ -94,10 +99,10 @@ class APIData:
         try:
             index_mask = self.data['premise'].isin(premise) & self.data['hypothesis'].isin(hypothesis)
             self.data.loc[index_mask, 'rationale'] = answer[:len(premise)]
-            self.data.to_csv(f'[API] CQA/neutral_{self.idx}.csv', index=False)
+            self.data.to_csv(f'[API] CQA/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
         except Exception as e:
             print(answer)
-            self.data.to_csv(f'[API] CQA/neutral_{self.idx}.csv', index=False)
+            self.data.to_csv(f'[API] CQA/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
         
     def run(self):
         self.handle_data()
@@ -111,20 +116,20 @@ class APIData:
 
 
 if __name__ == '__main__':
-    # with ThreadPoolExecutor(max_workers=20) as executor:
-        for i in range(0, 100):
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        for i in range(80, 100):
             start = i * 100
             end = (i+1) * 100
-            # data = pd.read_csv('[API] CQA/neutral.csv', index_col=False)[['question', 'choices']][start:end]
-            data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
+            data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
+            # data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
             # data = data[start:end]
 
             # run get api data parallel by 3 tokens
             # print(f"Start api at token {i}")
-            APIData(data, i%3, i, tokens=None).run()
-            # executor.submit(APIData(data, i%3, i, tokens=None).run)
+            # APIData(data, i%3, i, tokens=None).run()
+            executor.submit(APIData(data, i%3, i, tokens=None).run)
             # print(start, end)
-            break
+            # break
 
 # import g4f
 

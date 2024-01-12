@@ -1,0 +1,546 @@
+premise,hypothesis,prompt,rationale
+Where could you find a person standing next to a net?,"['ocean', 'soccer game', 'fishing gear', ""fisherman's boat"", 'fishing boat']","Questions: Where could you find a person standing next to a net?, Choices: (A) ocean, (B) soccer game, (C) fishing gear, (D) fisherman's boat, (E) fishing boat. Given the question 'Where could you find a person standing next to a net?', which among the choices ocean, soccer game, fishing gear, fisherman's boat fishing boat is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(B) soccer game**. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: **If a person is standing next to a net, then they are at a soccer game**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a person standing next to a net could be in the ocean, on a fisherman's boat, or near fishing gear, but not necessarily so.
+
+"
+Where could you find a pit that is burned?,"['hungry', 'cherry', 'backyard', 'peach', 'mine']","Questions: Where could you find a pit that is burned?, Choices: (A) hungry, (B) cherry, (C) backyard, (D) peach, (E) mine. Given the question 'Where could you find a pit that is burned?', which among the choices hungry, cherry, backyard, peach mine is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(C) backyard**. A possible conditional statement for this question is: **If a pit is burned, then it is in a backyard**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a pit that is burned could be a cherry pit, a peach pit, or a mine pit, but not necessarily so. The choice of hungry does not make sense, as hungry is not a place where a pit could be found.
+
+"
+Where could you find a policeman that is not stopping cars but that is outside?,"['statue', 'street', 'roadblock', 'police station', 'donut shop']","Questions: Where could you find a policeman that is not stopping cars but that is outside?, Choices: (A) statue, (B) street, (C) roadblock, (D) police station, (E) donut shop. Given the question 'Where could you find a policeman that is not stopping cars but that is outside?', which among the choices statue, street, roadblock, police station donut shop is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) statue**. A possible conditional statement for this question is: **If a policeman is not stopping cars but is outside, then he is a statue**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a policeman that is not stopping cars but is outside could be on the street, at a roadblock, at a police station, or at a donut shop, but not necessarily so.
+
+"
+Where could you find a policeman that is sitting down?,"['front door', 'office', 'police station', 'street', 'roadblock']","Questions: Where could you find a policeman that is sitting down?, Choices: (A) front door, (B) office, (C) police station, (D) street, (E) roadblock. Given the question 'Where could you find a policeman that is sitting down?', which among the choices front door, office, police station, street roadblock is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) police station**. A possible conditional statement for this question is: **If a policeman is sitting down, then he is at a police station**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a policeman that is sitting down could be at a front door, in an office, on the street, or at a roadblock, but not necessarily so.
+
+"
+Where could you find a quite old clavichord?,"['parlor', 'music hall', 'make music', 'museum', 'music room']","Questions: Where could you find a quite old clavichord?, Choices: (A) parlor, (B) music hall, (C) make music, (D) museum, (E) music room. Given the question 'Where could you find a quite old clavichord?', which among the choices parlor, music hall, make music, museum music room is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) museum**. A possible conditional statement for this question is: **If a clavichord is quite old, then it is in a museum**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a clavichord that is quite old could be in a parlor, a music hall, a music room, or used to make music, but not necessarily so.
+
+"
+Where could you find a real knight?,"['chess board', 'middle ages', 'video game', 'chess set', 'fairy tale']","Questions: Where could you find a real knight?, Choices: (A) chess board, (B) middle ages, (C) video game, (D) chess set, (E) fairy tale. Given the question 'Where could you find a real knight?', which among the choices chess board, middle ages, video game, chess set fairy tale is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) middle ages**. A possible conditional statement for this question is: **If a knight is real, then he is from the middle ages**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a knight that is real could be on a chess board, in a video game, in a chess set, or in a fairy tale, but not necessarily so.
+
+"
+Where could you find a seat that sometimes vibrates?,"['mall', 'in cinema', 'airplane', 'martorell', 'auditorium']","Questions: Where could you find a seat that sometimes vibrates?, Choices: (A) mall, (B) in cinema, (C) airplane, (D) martorell, (E) auditorium. Given the question 'Where could you find a seat that sometimes vibrates?', which among the choices mall, in cinema, airplane, martorell auditorium is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) airplane**. A possible conditional statement for this question is: **If a seat sometimes vibrates, then it is on an airplane**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a seat that sometimes vibrates could be in a mall, in a cinema, in Martorell, or in an auditorium, but not necessarily so.
+
+"
+Where could you find a steel cable that has not been completed yet?,"['winch', 'factory', 'roller coaster', 'ship', 'building']","Questions: Where could you find a steel cable that has not been completed yet?, Choices: (A) winch, (B) factory, (C) roller coaster, (D) ship, (E) building. Given the question 'Where could you find a steel cable that has not been completed yet?', which among the choices winch, factory, roller coaster, ship building is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) factory**. A possible conditional statement for this question is: **If a steel cable has not been completed yet, then it is in a factory**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a steel cable that has not been completed yet could be on a winch, on a roller coaster, on a ship, or on a building, but not necessarily so.
+
+"
+Where could you find a stray small dog?,"['animal shelter', 'big house', 'own home', 'georgia', 'on a leash']","Questions: Where could you find a stray small dog?, Choices: (A) animal shelter, (B) big house, (C) own home, (D) georgia, (E) on a leash. Given the question 'Where could you find a stray small dog?', which among the choices animal shelter, big house, own home, georgia on a leash is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) animal shelter**. A possible conditional statement for this question is: **If a small dog is stray, then it is in an animal shelter**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a small dog that is stray could be in a big house, in its own home, in Georgia, or on a leash, but not necessarily so.
+
+"
+Where could you find a tennis game?,"['field with tennis court', 'match', 'progress', 'park', 'highschool']","Questions: Where could you find a tennis game?, Choices: (A) field with tennis court, (B) match, (C) progress, (D) park, (E) highschool. Given the question 'Where could you find a tennis game?', which among the choices field with tennis court, match, progress, park highschool is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) match**. A possible conditional statement for this question is: **If a tennis game is happening, then it is a match**. This statement is true when the hypothesis and the conclusion are both true, and false otherwise. The other choices do not match the condition of the question, as a tennis game that is happening could be on a field with a tennis court, in progress, in a park, or in a high school, but not necessarily so.
+
+I hope this helps you understand how to use conditional statements to answer questions. If you have any other questions, feel free to ask me. 😊"
+Where could you find a theater which only has unpaid actors?,"['shopping mall', 'hospitals', 'populated area', 'school', 'military base']","Questions: Where could you find a theater which only has unpaid actors?, Choices: (A) shopping mall, (B) hospitals, (C) populated area, (D) school, (E) military base. Given the question 'Where could you find a theater which only has unpaid actors?', which among the choices shopping mall, hospitals, populated area, school military base is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) school**. A theater which only has unpaid actors is likely to be a school theater, where students perform for educational or extracurricular purposes. The other choices are unlikely to have theaters or actors at all. We can use conditional statements to explain our reasoning as follows:
+
+    - If a theater has unpaid actors, then it is not a professional theater.
+    - If a theater is not a professional theater, then it is not located in a shopping mall, a hospital, a populated area, or a military base.
+    - Therefore, if a theater has unpaid actors, then it is located in a school.
+
+"
+Where could you find a toilet that anyone can use?,"['bathroom', 'apartment', 'stall', 'hospital', 'rest area']","Questions: Where could you find a toilet that anyone can use?, Choices: (A) bathroom, (B) apartment, (C) stall, (D) hospital, (E) rest area. Given the question 'Where could you find a toilet that anyone can use?', which among the choices bathroom, apartment, stall, hospital rest area is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(E) rest area**. A toilet that anyone can use is likely to be found in a public place, such as a rest area along a highway. The other choices are either private or restricted places, where only certain people can use the toilets. We can use conditional statements to explain our reasoning as follows:
+
+    - If a toilet can be used by anyone, then it is not located in a private or restricted place.
+    - If a toilet is located in a bathroom, an apartment, a stall, or a hospital, then it is a private or restricted place.
+    - Therefore, if a toilet can be used by anyone, then it is not located in a bathroom, an apartment, a stall, or a hospital.
+    - Therefore, if a toilet can be used by anyone, then it is located in a rest area.
+
+"
+Where could you find a very large amount of air?,"['park', 'surface of earth', 'train station', 'space shuttle', 'house']","Questions: Where could you find a very large amount of air?, Choices: (A) park, (B) surface of earth, (C) train station, (D) space shuttle, (E) house. Given the question 'Where could you find a very large amount of air?', which among the choices park, surface of earth, train station, space shuttle house is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) surface of earth**. A very large amount of air is likely to be found on the surface of the earth, where the atmosphere is thickest and most breathable. The other choices are either too small or too sparse to contain a very large amount of air. We can use conditional statements to explain our reasoning as follows:
+
+    - If a place has a very large amount of air, then it has a high air pressure and a high air density.
+    - If a place is a park, a train station, a space shuttle, or a house, then it has a low air pressure and a low air density.
+    - Therefore, if a place has a very large amount of air, then it is not a park, a train station, a space shuttle, or a house.
+    - Therefore, if a place has a very large amount of air, then it is the surface of the earth.
+
+"
+Where could you find a weasel that is not alive?,"['court room', 'cherry tree', 'chicken coop', 'natural history museum', 'zoo']","Questions: Where could you find a weasel that is not alive?, Choices: (A) court room, (B) cherry tree, (C) chicken coop, (D) natural history museum, (E) zoo. Given the question 'Where could you find a weasel that is not alive?', which among the choices court room, cherry tree, chicken coop, natural history museum zoo is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(D) natural history museum**. A weasel that is not alive is likely to be found in a natural history museum, where it could be displayed as a taxidermy specimen or a fossil. The other choices are either places where weasels are alive or places where weasels are not found at all. We can use conditional statements to explain our reasoning as follows:
+
+    - If a weasel is not alive, then it is either preserved or extinct.
+    - If a weasel is preserved or extinct, then it is likely to be found in a natural history museum.
+    - Therefore, if a weasel is not alive, then it is likely to be found in a natural history museum.
+
+"
+Where could you find an actual weasel?,"['great outdoors', 'fairytale', 'zoo', 'court room', 'chicken coop']","Questions: Where could you find an actual weasel?, Choices: (A) great outdoors, (B) fairytale, (C) zoo, (D) court room, (E) chicken coop. Given the question 'Where could you find an actual weasel?', which among the choices great outdoors, fairytale, zoo, court room chicken coop is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) great outdoors**. An actual weasel is likely to be found in the great outdoors, where it lives in the wild and hunts for food. The other choices are either places where weasels are not real or places where weasels are rare or captive. We can use conditional statements to explain our reasoning as follows:
+
+    - If a weasel is actual, then it is a living animal.
+    - If a weasel is a living animal, then it prefers to live in its natural habitat.
+    - If a weasel lives in its natural habitat, then it is likely to be found in the great outdoors.
+    - Therefore, if a weasel is actual, then it is likely to be found in the great outdoors.
+
+"
+Where could you find an apple tree?,"['bloom', 'washington state', 'new hampshire', 'around water', 'sunshine']","Questions: Where could you find an apple tree?, Choices: (A) bloom, (B) washington state, (C) new hampshire, (D) around water, (E) sunshine. Given the question 'Where could you find an apple tree?', which among the choices bloom, washington state, new hampshire, around water sunshine is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(B) washington state**. An apple tree is likely to be found in Washington state, which is the largest producer of apples in the United States. The other choices are either too vague or too irrelevant to indicate the location of an apple tree. We can use conditional statements to explain our reasoning as follows:
+
+    - If a place has an apple tree, then it has a suitable climate and soil for growing apples.
+    - If a place has a suitable climate and soil for growing apples, then it is likely to be Washington state.
+    - Therefore, if a place has an apple tree, then it is likely to be Washington state.
+
+"
+Where could you find an armchair that is used by many people?,"['lounge', 'office', 'study', 'hospital', 'furniture store']","Questions: Where could you find an armchair that is used by many people?, Choices: (A) lounge, (B) office, (C) study, (D) hospital, (E) furniture store. Given the question 'Where could you find an armchair that is used by many people?', which among the choices lounge, office, study, hospital furniture store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) lounge**. An armchair that is used by many people is likely to be found in a lounge, where people can relax and socialize. The other choices are either places where armchairs are used by few people or places where armchairs are not used at all. We can use conditional statements to explain our reasoning as follows:
+
+    - If an armchair is used by many people, then it is located in a public or communal place.
+    - If an armchair is located in an office, a study, a hospital, or a furniture store, then it is not a public or communal place.
+    - Therefore, if an armchair is used by many people, then it is not located in an office, a study, a hospital, or a furniture store.
+    - Therefore, if an armchair is used by many people, then it is located in a lounge.
+
+"
+Where could you find an armchair that is used by only a few people?,"[""doctor's office"", 'hospital', 'apartment', 'study', 'furniture store']","Questions: Where could you find an armchair that is used by only a few people?, Choices: (A) doctor's office, (B) hospital, (C) apartment, (D) study, (E) furniture store. Given the question 'Where could you find an armchair that is used by only a few people?', which among the choices doctor's office, hospital, apartment, study furniture store is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) study**. An armchair that is used by only a few people is likely to be found in a study, where people can read or work in a quiet and private environment. The other choices are either places where armchairs are used by many people or places where armchairs are not used at all. We can use conditional statements to explain our reasoning as follows:
+
+    - If an armchair is used by only a few people, then it is located in a private or exclusive place.
+    - If an armchair is located in a doctor's office, a hospital, an apartment, or a furniture store, then it is not a private or exclusive place.
+    - Therefore, if an armchair is used by only a few people, then it is not located in a doctor's office, a hospital, an apartment, or a furniture store.
+    - Therefore, if an armchair is used by only a few people, then it is located in a study.
+
+"
+Where could you find an artificial light source?,"['store', 'house', 'candle', 'books', 'sky']","Questions: Where could you find an artificial light source?, Choices: (A) store, (B) house, (C) candle, (D) books, (E) sky. Given the question 'Where could you find an artificial light source?', which among the choices store, house, candle, books sky is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) candle**. An artificial light source is likely to be a candle, which produces light by burning a wick and wax. The other choices are either places where artificial light sources are found or natural light sources. We can use conditional statements to explain our reasoning as follows:
+
+    - If a thing is an artificial light source, then it produces light by using electricity or fire.
+    - If a thing is a store, a house, a book, or the sky, then it does not produce light by using electricity or fire.
+    - Therefore, if a thing is an artificial light source, then it is not a store, a house, a book, or the sky.
+    - Therefore, if a thing is an artificial light source, then it is a candle.
+
+"
+Where could you find an organ that cannot be played?,"['system', 'human body', 'cathedral', 'music store', 'band hall']","Questions: Where could you find an organ that cannot be played?, Choices: (A) system, (B) human body, (C) cathedral, (D) music store, (E) band hall. Given the question 'Where could you find an organ that cannot be played?', which among the choices system, human body, cathedral, music store band hall is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) human body**. An organ that cannot be played is likely to be a human organ, such as the heart or the liver, which performs vital functions for the body. The other choices are either places where musical organs are found or things that are not organs at all. We can use conditional statements to explain our reasoning as follows:
+
+    - If an organ cannot be played, then it is not a musical instrument.
+    - If an organ is a musical instrument, then it is likely to be found in a cathedral, a music store, or a band hall.
+    - Therefore, if an organ cannot be played, then it is not likely to be found in a cathedral, a music store, or a band hall.
+    - Therefore, if an organ cannot be played, then it is likely to be found in a human body."
+Where could you find hundreds of thousands of mailbox?,"['porch', 'hardware store', 'front yard', 'diner', 'downtown area']","Questions: Where could you find hundreds of thousands of mailbox?, Choices: (A) porch, (B) hardware store, (C) front yard, (D) diner, (E) downtown area. Given the question 'Where could you find hundreds of thousands of mailbox?', which among the choices porch, hardware store, front yard, diner downtown area is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) downtown area. My reasoning is as follows: If you want to find hundreds of thousands of mailbox, you need to look for a place that has a high population density and a lot of buildings. A porch, a hardware store, a front yard, and a diner are all places that have a limited number of mailbox, and they are not likely to be found in such large numbers. A downtown area, on the other hand, is a place that has many skyscrapers, apartments, offices, and shops, and each of them may have multiple mailbox. Therefore, a downtown area is the most likely place to find hundreds of thousands of mailbox. In conditional statements, this can be written as:
+
+```
+if (place == porch) or (place == hardware store) or (place == front yard) or (place == diner):
+    return False
+elif place == downtown area:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find insects eating something green?,"['air', 'rock', 'arctic', 'log', 'field']","Questions: Where could you find insects eating something green?, Choices: (A) air, (B) rock, (C) arctic, (D) log, (E) field. Given the question 'Where could you find insects eating something green?', which among the choices air, rock, arctic, log field is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) field. My reasoning is as follows: If you want to find insects eating something green, you need to look for a place that has a lot of plants and vegetation. Air, rock, and arctic are all places that have little or no green plants, and they are not suitable habitats for most insects. A log may have some green plants, such as moss or fungi, but it is not a very common place to find insects eating them. A field, on the other hand, is a place that has a lot of grass, crops, flowers, and trees, and many insects feed on them. Therefore, a field is the most likely place to find insects eating something green. In conditional statements, this can be written as:
+
+```
+if (place == air) or (place == rock) or (place == arctic):
+    return False
+elif place == log:
+    return Maybe
+elif place == field:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find many people standing inside?,"['school', 'supermarket', 'street corner', 'public place', 'space shuttle']","Questions: Where could you find many people standing inside?, Choices: (A) school, (B) supermarket, (C) street corner, (D) public place, (E) space shuttle. Given the question 'Where could you find many people standing inside?', which among the choices school, supermarket, street corner, public place space shuttle is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) public place. My reasoning is as follows: If you want to find many people standing inside, you need to look for a place that has a large indoor space and a lot of visitors or customers. A school, a supermarket, and a street corner are all places that may have many people, but they are not necessarily standing inside. A school may have people sitting in classrooms, a supermarket may have people walking around or waiting in line, and a street corner may have people outside or in cars. A space shuttle is a place that has a very small indoor space and a very few people, and they are not likely to be standing at all. A public place, on the other hand, is a place that has a large indoor space and a lot of visitors or customers, such as a museum, a library, a theater, or a mall. Therefore, a public place is the most likely place to find many people standing inside. In conditional statements, this can be written as:
+
+```
+if place == space shuttle:
+    return False
+elif (place == school) or (place == supermarket) or (place == street corner):
+    return Maybe
+elif place == public place:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find many radio studio?,"['radio station', 'country', 'clear area', 'office building', 'large city']","Questions: Where could you find many radio studio?, Choices: (A) radio station, (B) country, (C) clear area, (D) office building, (E) large city. Given the question 'Where could you find many radio studio?', which among the choices radio station, country, clear area, office building large city is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) radio station. My reasoning is as follows: If you want to find many radio studio, you need to look for a place that has a lot of equipment and staff for broadcasting radio programs. A country, a clear area, an office building, and a large city are all places that may have some radio studio, but they are not the main places where radio programs are produced. A country may have a few national radio stations, a clear area may have a good signal for radio transmission, an office building may have some radio studio for rent, and a large city may have a high demand for radio programs. However, none of these places are dedicated to radio production. A radio station, on the other hand, is a place that has a lot of equipment and staff for broadcasting radio programs, and it may have multiple radio studio for different genres, hosts, and audiences. Therefore, a radio station is the most likely place to find many radio studio. In conditional statements, this can be written as:
+
+```
+if (place == country) or (place == clear area) or (place == office building) or (place == large city):
+    return Maybe
+elif place == radio station:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find many theater?,"['school', 'populated area', 'military base', 'opera', 'church']","Questions: Where could you find many theater?, Choices: (A) school, (B) populated area, (C) military base, (D) opera, (E) church. Given the question 'Where could you find many theater?', which among the choices school, populated area, military base, opera church is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) populated area. My reasoning is as follows: If you want to find many theater, you need to look for a place that has a lot of people and a lot of cultural activities. A school, a military base, an opera, and a church are all places that may have some theater, but they are not the main places where theater performances are held. A school may have a theater club or a drama class, a military base may have a theater for entertainment or morale, an opera may have a theater for singing or music, and a church may have a theater for religious or educational purposes. However, none of these places are focused on theater as an art form. A populated area, on the other hand, is a place that has a lot of people and a lot of cultural activities, such as a city, a town, or a village. A populated area may have many theater for different types, styles, and audiences of theater performances, such as comedy, tragedy, musical, or experimental. Therefore, a populated area is the most likely place to find many theater. In conditional statements, this can be written as:
+
+```
+if (place == school) or (place == military base) or (place == opera) or (place == church):
+    return Maybe
+elif place == populated area:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find millions of brownstone?,"['ring', 'brooklyn', 'subdivision', 'new york city', 'apartment complex']","Questions: Where could you find millions of brownstone?, Choices: (A) ring, (B) brooklyn, (C) subdivision, (D) new york city, (E) apartment complex. Given the question 'Where could you find millions of brownstone?', which among the choices ring, brooklyn, subdivision, new york city apartment complex is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) new york city. My reasoning is as follows: If you want to find millions of brownstone, you need to look for a place that has a lot of historical and architectural buildings. A ring, a subdivision, an apartment complex, and a brooklyn are all places that may have some brownstone, but they are not the main places where brownstone buildings are found. A ring may have a brownstone gemstone, a subdivision may have a brownstone house, an apartment complex may have a brownstone facade, and a brooklyn may have a brownstone neighborhood. However, none of these places have millions of brownstone buildings. New york city, on the other hand, is a place that has a lot of historical and architectural buildings, and it is known for its brownstone rowhouses, townhouses, and mansions. New york city has millions of brownstone buildings that date back to the 19th and 20th centuries, and they are considered a distinctive feature of the city's urban landscape. Therefore, new york city is the most likely place to find millions of brownstone. In conditional statements, this can be written as:
+
+```
+if (place == ring) or (place == subdivision) or (place == apartment complex) or (place == brooklyn):
+    return Maybe
+elif place == new york city:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find millions of ficus?,"['arboretum', 'california', 'teapot', 'apartment', 'ground']","Questions: Where could you find millions of ficus?, Choices: (A) arboretum, (B) california, (C) teapot, (D) apartment, (E) ground. Given the question 'Where could you find millions of ficus?', which among the choices arboretum, california, teapot, apartment ground is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) california. My reasoning is as follows: If you want to find millions of ficus, you need to look for a place that has a lot of tropical and subtropical plants. An arboretum, a teapot, an apartment, and a ground are all places that may have some ficus, but they are not the main places where ficus plants are grown. An arboretum may have a few ficus trees or shrubs, a teapot may have a ficus bonsai or miniature, an apartment may have a ficus potted plant or indoor plant, and a ground may have a ficus weed or vine. However, none of these places have millions of ficus plants. California, on the other hand, is a place that has a lot of tropical and subtropical plants, and it is one of the major producers and consumers of ficus plants in the United States. California has millions of ficus plants that are grown for ornamental, medicinal, or edible purposes, such as figs, rubber plants, or laurels. Therefore, california is the most likely place to find millions of ficus. In conditional statements, this can be written as:
+
+```
+if (place == arboretum) or (place == teapot) or (place == apartment) or (place == ground):
+    return Maybe
+elif place == california:
+    return True
+else:
+    return Unknown
+```
+
+"
+Where could you find millions of jellyfish?,"['north sea', 'smack', ""sponge bob's house"", 'store', 'sea water']","Questions: Where could you find millions of jellyfish?, Choices: (A) north sea, (B) smack, (C) sponge bob's house, (D) store, (E) sea water. Given the question 'Where could you find millions of jellyfish?', which among the choices north sea, smack, sponge bob's house, store sea water is the correct answer? Explain your reasoning using conditional statements.
+",
+Where could you find more than a few bald eagle?,"['the park', 'in washington', ""eagle's nest"", 'aerie', 'western north america']","Questions: Where could you find more than a few bald eagle?, Choices: (A) the park, (B) in washington, (C) eagle's nest, (D) aerie, (E) western north america. Given the question 'Where could you find more than a few bald eagle?', which among the choices the park, in washington, eagle's nest, aerie western north america is the correct answer? Explain your reasoning using conditional statements.
+","9th and 20th centuries, and they are considered a distinctive feature of the city's urban landscape. Therefore, new york city is the most likely place to find millions of brownstone. In conditional statements, this can be written as:
+
+```
+if (place == ring) or (place == subdivision) or (place == apartment complex) or (place == brooklyn):
+    return Maybe
+elif place == new york city:
+    return True
+else:
+    return Unknown
+```
+
+7. The correct answer is (B) california. My reasoning is as follows: If you want to find millions of ficus, you need to look for a place that has a lot of tropical and subtropical plants. An arboretum, a teapot, an apartment, and a ground are all places that may have some ficus, but they are not the main places where ficus plants are grown. An arboretum may have a few ficus trees or shrubs, a teapot may have a ficus bonsai or miniature, an apartment may have a ficus potted plant or indoor plant, and a ground may have a ficus weed or vine. However, none of these places have millions of ficus plants. California, on the other hand, is a place that has a lot of tropical and subtropical plants, and it is one of the major producers and consumers of ficus plants in the United States. California has millions of ficus plants that are grown for ornamental, medicinal, or edible purposes, such as figs, rubber plants, or laurels. Therefore, california is the most likely place to find millions of ficus. In conditional statements, this can be written as:
+
+```
+if (place == arboretum) or (place == teapot) or (place == apartment) or (place == ground):
+    return Maybe
+elif place == california:
+    return True
+else:
+    return Unknown
+```
+
+8. The correct answer is (E) sea water. My reasoning is as follows: If you want to find millions of jellyfish, you need to look for a place that has a lot of aquatic and marine life. The north sea, a smack, sponge bob's house, and a store are all places that may have some jellyfish, but they are not the main places where jellyfish are found. The north sea may have a few jellyfish species, such as moon jellyfish or lion's mane jellyfish, a smack may have a group of jellyfish swimming together, sponge bob's house may have a jellyfish pet or neighbor, and a store may have a jellyfish product or souvenir. However, none of these places have millions of jellyfish. Sea water, on the other hand, is a place that has a lot of aquatic and marine life, and it is the natural habitat of jellyfish. Sea water has millions of jellyfish that belong to different classes, orders, families, and genera, such as scyphozoa, hydrozoa, cu"
+Where could you find multiple ruler that are owned by different people?,"['measure distance', 'england', 'office', 'drawer', 'desk']","Questions: Where could you find multiple ruler that are owned by different people?, Choices: (A) measure distance, (B) england, (C) office, (D) drawer, (E) desk. Given the question 'Where could you find multiple ruler that are owned by different people?', which among the choices measure distance, england, office, drawer desk is the correct answer? Explain your reasoning using conditional statements.
+",b
+Where could you find one booking office?,"['city', 'bank', 'building', 'mall', 'england']","Questions: Where could you find one booking office?, Choices: (A) city, (B) bank, (C) building, (D) mall, (E) england. Given the question 'Where could you find one booking office?', which among the choices city, bank, building, mall england is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) mall. A booking office is a place where you can buy tickets for travel or entertainment. A mall is a large building that has many shops and stores. Therefore, you could find one booking office in a mall. A conditional statement for this answer is: **If** you are looking for a booking office, **then** you could go to a mall.
+
+"
+Where could you find only a few place to stay?,"['phone book', 'town', 'mexico', 'a holiday', 'city']","Questions: Where could you find only a few place to stay?, Choices: (A) phone book, (B) town, (C) mexico, (D) a holiday, (E) city. Given the question 'Where could you find only a few place to stay?', which among the choices phone book, town, mexico, a holiday city is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) town. A place to stay is a location where you can sleep and rest, such as a hotel or a hostel. A town is a small area that has some houses and buildings. Therefore, you could find only a few places to stay in a town. A conditional statement for this answer is: **If** you want to find only a few places to stay, **then** you could go to a town.
+
+"
+Where could you find out about a cow that does not exist?,"['story book', 'great outdoors', 'field', 'toy store', 'barnyard']","Questions: Where could you find out about a cow that does not exist?, Choices: (A) story book, (B) great outdoors, (C) field, (D) toy store, (E) barnyard. Given the question 'Where could you find out about a cow that does not exist?', which among the choices story book, great outdoors, field, toy store barnyard is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) story book. A cow that does not exist is a fictional animal that is not real. A story book is a book that contains stories that are made up by the author. Therefore, you could find out about a cow that does not exist in a story book. A conditional statement for this answer is: **If** you want to find out about a cow that does not exist, **then** you could read a story book.
+
+"
+Where could you find out more about a type of lizard?,"['in the garden floor', 'rocks', 'books', 'bushes', 'garden']","Questions: Where could you find out more about a type of lizard?, Choices: (A) in the garden floor, (B) rocks, (C) books, (D) bushes, (E) garden. Given the question 'Where could you find out more about a type of lizard?', which among the choices in the garden floor, rocks, books, bushes garden is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (C) books. A type of lizard is a kind of reptile that has scales and a long tail. A book is a printed or electronic document that contains information or stories. Therefore, you could find out more about a type of lizard in a book. A conditional statement for this answer is: **If** you want to find out more about a type of lizard, **then** you could read a book.
+
+"
+Where could you find passengers that are planning to travel to another continent?,"['car', 'bus depot', 'bus stop', 'library', 'airport']","Questions: Where could you find passengers that are planning to travel to another continent?, Choices: (A) car, (B) bus depot, (C) bus stop, (D) library, (E) airport. Given the question 'Where could you find passengers that are planning to travel to another continent?', which among the choices car, bus depot, bus stop, library airport is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) airport. Passengers that are planning to travel to another continent are people who are going to fly to a different landmass. An airport is a place where airplanes take off and land. Therefore, you could find passengers that are planning to travel to another continent in an airport. A conditional statement for this answer is: **If** you want to find passengers that are planning to travel to another continent, **then** you could go to an airport.
+
+"
+Where could you find some airplanes that are not being used?,"['war', 'aircraft carrier', 'sky', 'graveyard', 'crash']","Questions: Where could you find some airplanes that are not being used?, Choices: (A) war, (B) aircraft carrier, (C) sky, (D) graveyard, (E) crash. Given the question 'Where could you find some airplanes that are not being used?', which among the choices war, aircraft carrier, sky, graveyard crash is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) graveyard. Some airplanes that are not being used are aircrafts that are old, damaged, or retired. A graveyard is a place where dead things are buried or stored. Therefore, you could find some airplanes that are not being used in a graveyard. A conditional statement for this answer is: **If** you want to find some airplanes that are not being used, **then** you could go to a graveyard.
+
+"
+Where could you find some large pieces of paper that are not for sale?,"['cabinet', 'computer printer', 'suitcase', 'office supply store', ""artist's studio""]","Questions: Where could you find some large pieces of paper that are not for sale?, Choices: (A) cabinet, (B) computer printer, (C) suitcase, (D) office supply store, (E) artist's studio. Given the question 'Where could you find some large pieces of paper that are not for sale?', which among the choices cabinet, computer printer, suitcase, office supply store artist's studio is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) artist's studio. Some large pieces of paper that are not for sale are big sheets of paper that are used for drawing or painting. An artist's studio is a room or building where an artist works and creates art. Therefore, you could find some large pieces of paper that are not for sale in an artist's studio. A conditional statement for this answer is: **If** you want to find some large pieces of paper that are not for sale, **then** you could go to an artist's studio.
+
+"
+Where could you find some plumbing that would be able to help you if you are thirsty?,"['show', 'oil refineries', 'bathroom', 'hardware store', 'water fountain']","Questions: Where could you find some plumbing that would be able to help you if you are thirsty?, Choices: (A) show, (B) oil refineries, (C) bathroom, (D) hardware store, (E) water fountain. Given the question 'Where could you find some plumbing that would be able to help you if you are thirsty?', which among the choices show, oil refineries, bathroom, hardware store water fountain is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) water fountain. Some plumbing that would be able to help you if you are thirsty are pipes or fixtures that provide clean and drinkable water. A water fountain is a device that shoots water into the air or into a basin. Therefore, you could find some plumbing that would be able to help you if you are thirsty in a water fountain. A conditional statement for this answer is: **If** you are thirsty, **then** you could use some plumbing in a water fountain.
+
+"
+Where could you find some plumbing that would not be of use to you if you are thirsty?,"['oil refineries', 'wall', 'show', 'own home', 'water fountain']","Questions: Where could you find some plumbing that would not be of use to you if you are thirsty?, Choices: (A) oil refineries, (B) wall, (C) show, (D) own home, (E) water fountain. Given the question 'Where could you find some plumbing that would not be of use to you if you are thirsty?', which among the choices oil refineries, wall, show, own home water fountain is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) oil refineries. Some plumbing that would not be of use to you if you are thirsty are pipes or fixtures that carry or process oil or gas. An oil refinery is a place where crude oil is converted into useful products. Therefore, you could find some plumbing that would not be of use to you if you are thirsty in an oil refinery. A conditional statement for this answer is: **If** you are thirsty, **then** you could not use some plumbing in an oil refinery.
+
+"
+Where could you find super computers?,"['library', 'post office', 'university', 'technical store', 'large city']","Questions: Where could you find super computers?, Choices: (A) library, (B) post office, (C) university, (D) technical store, (E) large city. Given the question 'Where could you find super computers?', which among the choices library, post office, university, technical store large city is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) university. Super computers are very powerful and fast computers that can perform complex calculations. A university is an institution of higher education and research. Therefore, you could find super computers in a university. A conditional statement for this answer is: **If** you want to find super computers, **then** you could go to a university."
+Where could you find thousands of chair?,"[""friend's house"", ""neighbor's house"", 'office', 'school room', 'earth']","Questions: Where could you find thousands of chair?, Choices: (A) friend's house, (B) neighbor's house, (C) office, (D) school room, (E) earth. Given the question 'Where could you find thousands of chair?', which among the choices friend's house, neighbor's house, office, school room earth is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) earth. You could find thousands of chairs on earth, because earth is a large and diverse planet that contains many places where chairs are used, such as homes, offices, schools, restaurants, etc. A conditional statement that explains this is: **If** a place is on earth, **then** it is possible to find thousands of chairs there.
+"
+Where could you find thousands or millions of office?,"['zoo', 'work', 'school building', 'public building', 'city']","Questions: Where could you find thousands or millions of office?, Choices: (A) zoo, (B) work, (C) school building, (D) public building, (E) city. Given the question 'Where could you find thousands or millions of office?', which among the choices zoo, work, school building, public building city is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) city. You could find thousands or millions of offices in a city, because a city is a large and densely populated area that contains many buildings and businesses where offices are located, such as skyscrapers, corporations, banks, etc. A conditional statement that explains this is: **If** a place is a city, **then** it is likely to have thousands or millions of offices there.
+"
+Where could you find ticket office that are all of the same type?,"['humans', 'city', 'movie theaters', 'arena', 'courthouse']","Questions: Where could you find ticket office that are all of the same type?, Choices: (A) humans, (B) city, (C) movie theaters, (D) arena, (E) courthouse. Given the question 'Where could you find ticket office that are all of the same type?', which among the choices humans, city, movie theaters, arena courthouse is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) movie theaters. You could find ticket offices that are all of the same type in movie theaters, because movie theaters are places where people go to watch films and they usually have ticket offices where they sell or check tickets for admission. A conditional statement that explains this is: **If** a place is a movie theater, **then** it has ticket offices that are all of the same type there.
+"
+Where could you get something that is made out of wool but cannot be worn?,"['clothing store', 'sweater', 'fabric store', 'jewelry', 'clothing factory']","Questions: Where could you get something that is made out of wool but cannot be worn?, Choices: (A) clothing store, (B) sweater, (C) fabric store, (D) jewelry, (E) clothing factory. Given the question 'Where could you get something that is made out of wool but cannot be worn?', which among the choices clothing store, sweater, fabric store, jewelry clothing factory is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (D) jewelry. You could get something that is made out of wool but cannot be worn in jewelry, because jewelry is a category of items that are used for decoration or adornment and some of them are made out of wool, such as bracelets, necklaces, earrings, etc. A conditional statement that explains this is: **If** an item is jewelry, **then** it is possible that it is made out of wool but cannot be worn.
+"
+Where could you go on top of a superhighway?,"['city', 'rural area', 'cyberspace', 'computer network', 'industrialized country']","Questions: Where could you go on top of a superhighway?, Choices: (A) city, (B) rural area, (C) cyberspace, (D) computer network, (E) industrialized country. Given the question 'Where could you go on top of a superhighway?', which among the choices city, rural area, cyberspace, computer network industrialized country is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) cyberspace. You could go on top of a superhighway in cyberspace, because cyberspace is a term that refers to the virtual world of computer networks and the internet, and a superhighway is a metaphor for a fast and efficient network of information. A conditional statement that explains this is: **If** a place is cyberspace, **then** it has a superhighway that you can go on top of.
+"
+Where could you go to spend money?,"['supermarket', 'car show', 'water fountain', 'bank vault', 'art show']","Questions: Where could you go to spend money?, Choices: (A) supermarket, (B) car show, (C) water fountain, (D) bank vault, (E) art show. Given the question 'Where could you go to spend money?', which among the choices supermarket, car show, water fountain, bank vault art show is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) supermarket. You could go to spend money in a supermarket, because a supermarket is a place where people go to buy groceries and other goods, and they usually have to pay for them with money. A conditional statement that explains this is: **If** a place is a supermarket, **then** you can go there to spend money.
+"
+Where could you have fun with lots of people around you?,"['good', ""friend's house"", 'fairgrounds', 'watching television', 'expensive']","Questions: Where could you have fun with lots of people around you?, Choices: (A) good, (B) friend's house, (C) fairgrounds, (D) watching television, (E) expensive. Given the question 'Where could you have fun with lots of people around you?', which among the choices good, friend's house, fairgrounds, watching television expensive is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) fairgrounds. You could have fun with lots of people around you in fairgrounds, because fairgrounds are places where people go to enjoy various attractions and activities, such as rides, games, shows, food, etc., and they usually have large crowds of people. A conditional statement that explains this is: **If** a place is fairgrounds, **then** you can have fun with lots of people around you there.
+"
+Where could you hear an organ being played?,"['system', 'veterinarian', 'human body', 'cathedral', 'music store']","Questions: Where could you hear an organ being played?, Choices: (A) system, (B) veterinarian, (C) human body, (D) cathedral, (E) music store. Given the question 'Where could you hear an organ being played?', which among the choices system, veterinarian, human body, cathedral music store is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (D) cathedral. You could hear an organ being played in a cathedral, because a cathedral is a large and ornate church that often has an organ, which is a musical instrument that produces sound by blowing air through pipes, and it is usually played during religious services or ceremonies. A conditional statement that explains this is: **If** a place is a cathedral, **then** you can hear an organ being played there.
+"
+Where could you keep you stamps while traveling?,"['suitcase', 'cabinet', 'wallet', 'desk', 'drawer']","Questions: Where could you keep you stamps while traveling?, Choices: (A) suitcase, (B) cabinet, (C) wallet, (D) desk, (E) drawer. Given the question 'Where could you keep you stamps while traveling?', which among the choices suitcase, cabinet, wallet, desk drawer is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) wallet. You could keep your stamps while traveling in a wallet, because a wallet is a small and portable item that people use to store and carry money, cards, and other valuables, and it can also hold stamps, which are small pieces of paper that are used for postage or collection. A conditional statement that explains this is: **If** an item is a wallet, **then** you can keep your stamps while traveling in it.
+"
+Where could you learn about someone's paper?,"['cabinet', 'conference', 'front door', 'garden', 'suitcase']","Questions: Where could you learn about someone's paper?, Choices: (A) cabinet, (B) conference, (C) front door, (D) garden, (E) suitcase. Given the question 'Where could you learn about someone's paper?', which among the choices cabinet, conference, front door, garden suitcase is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) conference. You could learn about someone's paper in a conference, because a conference is an event where people gather to exchange and discuss ideas, research, or projects, and a paper is a written document that presents or summarizes a topic, and it is often presented or published at a conference. A conditional statement that explains this is: **If** an event is a conference, **then** you can learn about someone's paper there."
+Where could you make a hole with your fist?,"['swiss cheese', 'football ground', 'ground', 'golf course', 'wall']","Questions: Where could you make a hole with your fist?, Choices: (A) swiss cheese, (B) football ground, (C) ground, (D) golf course, (E) wall. Given the question 'Where could you make a hole with your fist?', which among the choices swiss cheese, football ground, ground, golf course wall is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) wall. You could make a hole with your fist in a wall if the wall is thin or weak enough. A conditional statement for this reasoning is: **If** the wall is thin or weak enough, **then** you could make a hole with your fist in it.
+
+"
+Where could you most easily find a pilot?,"['space shuttle', 'cockpit', 'shower', 'airplane', 'sky']","Questions: Where could you most easily find a pilot?, Choices: (A) space shuttle, (B) cockpit, (C) shower, (D) airplane, (E) sky. Given the question 'Where could you most easily find a pilot?', which among the choices space shuttle, cockpit, shower, airplane sky is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) cockpit. You could most easily find a pilot in a cockpit because that is where they usually sit and control the aircraft. A conditional statement for this reasoning is: **If** you want to find a pilot most easily, **then** you should look in a cockpit.
+
+"
+Where could you put a clock on the floor?,"['shelf', 'on the hand', 'own bedroom', 'wall', 'department store']","Questions: Where could you put a clock on the floor?, Choices: (A) shelf, (B) on the hand, (C) own bedroom, (D) wall, (E) department store. Given the question 'Where could you put a clock on the floor?', which among the choices shelf, on the hand, own bedroom, wall department store is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) own bedroom. You could put a clock on the floor in your own bedroom because you have the freedom to do so. A conditional statement for this reasoning is: **If** you have the freedom to put a clock on the floor, **then** you could do it in your own bedroom.
+
+"
+Where could you put a dollar that would make it hard to get out without breaking?,"['cash drawer', 'piggy bank', 'purse', 'box', 'pocket']","Questions: Where could you put a dollar that would make it hard to get out without breaking?, Choices: (A) cash drawer, (B) piggy bank, (C) purse, (D) box, (E) pocket. Given the question 'Where could you put a dollar that would make it hard to get out without breaking?', which among the choices cash drawer, piggy bank, purse, box pocket is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) piggy bank. You could put a dollar in a piggy bank that would make it hard to get out without breaking because most piggy banks have only one small opening and no other way to access the money inside. A conditional statement for this reasoning is: **If** the piggy bank has only one small opening and no other way to access the money inside, **then** you could put a dollar in it that would make it hard to get out without breaking.
+
+"
+Where could you put some knives if you are planning to bring them outside with you?,"['purse', 'backpack', 'drawer', 'sporting goods store', 'kitchen']","Questions: Where could you put some knives if you are planning to bring them outside with you?, Choices: (A) purse, (B) backpack, (C) drawer, (D) sporting goods store, (E) kitchen. Given the question 'Where could you put some knives if you are planning to bring them outside with you?', which among the choices purse, backpack, drawer, sporting goods store kitchen is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) backpack. You could put some knives in a backpack if you are planning to bring them outside with you because a backpack is a convenient and safe way to carry them. A conditional statement for this reasoning is: **If** you want to bring some knives outside with you, **then** you could put them in a backpack.
+
+"
+Where could you put some olives if you want to cook them?,"['jar', 'pizza', 'refrigerator', 'oven', 'pressed for thier oil']","Questions: Where could you put some olives if you want to cook them?, Choices: (A) jar, (B) pizza, (C) refrigerator, (D) oven, (E) pressed for thier oil. Given the question 'Where could you put some olives if you want to cook them?', which among the choices jar, pizza, refrigerator, oven pressed for thier oil is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) oven. You could put some olives in an oven if you want to cook them because an oven is a device that can heat up food and make it edible. A conditional statement for this reasoning is: **If** you want to cook some olives, **then** you could put them in an oven.
+
+"
+Where could you put some olives to keep them fresh?,"['jar', 'pressed for thier oil', 'ice box', 'pizza', 'refrigerator']","Questions: Where could you put some olives to keep them fresh?, Choices: (A) jar, (B) pressed for thier oil, (C) ice box, (D) pizza, (E) refrigerator. Given the question 'Where could you put some olives to keep them fresh?', which among the choices jar, pressed for thier oil, ice box, pizza refrigerator is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) refrigerator. You could put some olives in a refrigerator to keep them fresh because a refrigerator is a device that can preserve food and prevent it from spoiling. A conditional statement for this reasoning is: **If** you want to keep some olives fresh, **then** you could put them in a refrigerator.
+
+"
+Where could you put some olives to prevent them from getting nearby food wet?,"['eaten', 'glassess', 'jar', 'pizza', 'refrigerator']","Questions: Where could you put some olives to prevent them from getting nearby food wet?, Choices: (A) eaten, (B) glassess, (C) jar, (D) pizza, (E) refrigerator. Given the question 'Where could you put some olives to prevent them from getting nearby food wet?', which among the choices eaten, glassess, jar, pizza refrigerator is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (C) jar. You could put some olives in a jar to prevent them from getting nearby food wet because a jar is a container that can hold liquids and solids and prevent them from spilling. A conditional statement for this reasoning is: **If** you want to prevent some olives from getting nearby food wet, **then** you could put them in a jar.
+
+"
+Where could you see a bone?,"['museum', 'vertebrates', 'cow', 'texas', 'arm']","Questions: Where could you see a bone?, Choices: (A) museum, (B) vertebrates, (C) cow, (D) texas, (E) arm. Given the question 'Where could you see a bone?', which among the choices museum, vertebrates, cow, texas arm is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (B) vertebrates. You could see a bone in vertebrates because vertebrates are animals that have a skeleton made of bones. A conditional statement for this reasoning is: **If** you want to see a bone, **then** you could look at a vertebrate.
+
+"
+Where could you see a gentleman that is not real?,"['movie', 'church', 'big house', 'a tv screen', 'tuxedo']","Questions: Where could you see a gentleman that is not real?, Choices: (A) movie, (B) church, (C) big house, (D) a tv screen, (E) tuxedo. Given the question 'Where could you see a gentleman that is not real?', which among the choices movie, church, big house, a tv screen tuxedo is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) movie. You could see a gentleman that is not real in a movie because a movie is a form of entertainment that can show fictional characters and scenarios. A conditional statement for this reasoning is: **If** you want to see a gentleman that is not real, **then** you could watch a movie."
+Where could you see a mammoth that is not real?,"['stone age', 'ice age', 'ancient history', 'museum of natural history', 'storybook']","Questions: Where could you see a mammoth that is not real?, Choices: (A) stone age, (B) ice age, (C) ancient history, (D) museum of natural history, (E) storybook. Given the question 'Where could you see a mammoth that is not real?', which among the choices stone age, ice age, ancient history, museum of natural history storybook is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) storybook**. A conditional statement is a sentence that expresses a condition and a consequence. For example, ""If it rains, then the grass gets wet."" A possible conditional statement for this question is: ""If you see a mammoth that is not real, then you are reading a storybook."" This statement is true because mammoths are extinct animals that only exist in fiction or history.
+
+"
+Where could you see a moving weasel that is not real?,"['imagination', 'corn fields', 'chicken coop', 'animated film', ""children's story""]","Questions: Where could you see a moving weasel that is not real?, Choices: (A) imagination, (B) corn fields, (C) chicken coop, (D) animated film, (E) children's story. Given the question 'Where could you see a moving weasel that is not real?', which among the choices imagination, corn fields, chicken coop, animated film children's story is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) animated film**. A possible conditional statement for this question is: ""If you see a moving weasel that is not real, then you are watching an animated film."" This statement is true because weasels are real animals that do not move in other media such as imagination, corn fields, chicken coop, or children's story.
+
+"
+Where could you see a single bee?,"['soft drink', 'swarm', 'countryside', 'apiary', 'united states']","Questions: Where could you see a single bee?, Choices: (A) soft drink, (B) swarm, (C) countryside, (D) apiary, (E) united states. Given the question 'Where could you see a single bee?', which among the choices soft drink, swarm, countryside, apiary united states is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(D) apiary**. An apiary is a place where bees are kept and honey is produced. A possible conditional statement for this question is: ""If you see a single bee, then you are in an apiary."" This statement is true because bees usually live in colonies or swarms, and it is unlikely to see a single bee in other places such as soft drink, countryside, or united states.
+
+"
+Where could you see a sloth that is not real?,"['bad dream', 'picture book', 'another place', 'universe', 'zoo']","Questions: Where could you see a sloth that is not real?, Choices: (A) bad dream, (B) picture book, (C) another place, (D) universe, (E) zoo. Given the question 'Where could you see a sloth that is not real?', which among the choices bad dream, picture book, another place, universe zoo is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(B) picture book**. A possible conditional statement for this question is: ""If you see a sloth that is not real, then you are looking at a picture book."" This statement is true because sloths are real animals that do not appear in other media such as bad dream, another place, universe, or zoo.
+
+"
+Where could you see a sloth that only exists in your head?,"['picture book', 'bad dream', 'another place', 'universe', 'rainforest']","Questions: Where could you see a sloth that only exists in your head?, Choices: (A) picture book, (B) bad dream, (C) another place, (D) universe, (E) rainforest. Given the question 'Where could you see a sloth that only exists in your head?', which among the choices picture book, bad dream, another place, universe rainforest is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) picture book**. A possible conditional statement for this question is: ""If you see a sloth that only exists in your head, then you are reading a picture book."" This statement is true because sloths are real animals that do not exist in other places such as bad dream, another place, universe, or rainforest.
+
+"
+Where could you see an advertisement while reading news?,"['television', 'bus', 'email', 'web page', 'la ville']","Questions: Where could you see an advertisement while reading news?, Choices: (A) television, (B) bus, (C) email, (D) web page, (E) la ville. Given the question 'Where could you see an advertisement while reading news?', which among the choices television, bus, email, web page la ville is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) web page**. A possible conditional statement for this question is: ""If you see an advertisement while reading news, then you are on a web page."" This statement is true because web pages are the most common source of news and advertisements in the digital age. Other sources such as television, bus, email, or la ville may not have both news and advertisements at the same time.
+
+"
+Where could you see someone pretending to be an action figure but not trying to sell action figures?,"['bathtub', 'theater', 'museum', 'store4', 'toy store']","Questions: Where could you see someone pretending to be an action figure but not trying to sell action figures?, Choices: (A) bathtub, (B) theater, (C) museum, (D) store4, (E) toy store. Given the question 'Where could you see someone pretending to be an action figure but not trying to sell action figures?', which among the choices bathtub, theater, museum, store4 toy store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(B) theater**. A possible conditional statement for this question is: ""If you see someone pretending to be an action figure but not trying to sell action figures, then you are in a theater."" This statement is true because theater is a form of art where actors perform on stage and pretend to be different characters. Other places such as bathtub, museum, store4, or toy store may not have people pretending to be action figures or they may have a commercial purpose.
+
+"
+Where did Europeans take their slaves from?,"['houses', 'ancient rome', 'south', 'plantation', 'poor countries']","Questions: Where did Europeans take their slaves from?, Choices: (A) houses, (B) ancient rome, (C) south, (D) plantation, (E) poor countries. Given the question 'Where did Europeans take their slaves from?', which among the choices houses, ancient rome, south, plantation poor countries is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) south**. A possible conditional statement for this question is: ""If you are a European who took slaves, then you took them from the south."" This statement is true because the south refers to the regions of Africa and America where the European slave trade was most active. Other places such as houses, ancient rome, plantation, or poor countries may not be specific or accurate enough to describe the origin of the slaves.
+
+"
+Where did a shop get the sand dollars you can buy?,"['high school', 'container', 'atm', 'ocean floor', 'downtown area']","Questions: Where did a shop get the sand dollars you can buy?, Choices: (A) high school, (B) container, (C) atm, (D) ocean floor, (E) downtown area. Given the question 'Where did a shop get the sand dollars you can buy?', which among the choices high school, container, atm, ocean floor downtown area is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) ocean floor**. A possible conditional statement for this question is: ""If you buy a sand dollar from a shop, then the shop got it from the ocean floor."" This statement is true because sand dollars are marine animals that live on the ocean floor. Other places such as high school, container, atm, or downtown area may not have sand dollars or they may not be the source of the sand dollars.
+
+"
+Where did he put the newspaper for his new puppy's leaks?,"['floor', 'jail', 'next door', 'library', 'porch']","Questions: Where did he put the newspaper for his new puppy's leaks?, Choices: (A) floor, (B) jail, (C) next door, (D) library, (E) porch. Given the question 'Where did he put the newspaper for his new puppy's leaks?', which among the choices floor, jail, next door, library porch is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) floor**. A possible conditional statement for this question is: ""If he put the newspaper for his new puppy's leaks, then he put it on the floor."" This statement is true because the floor is the most common and convenient place to put the newspaper for the puppy's training. Other places such as jail, next door, library, or porch may not be suitable or accessible for the puppy or the newspaper."
+Where did his wife ask him to look first when he complained of missing deodorant?,"['grocery store', 'nightstand', 'armpits', 'own bathroom', 'medicine chest']","Questions: Where did his wife ask him to look first when he complained of missing deodorant?, Choices: (A) grocery store, (B) nightstand, (C) armpits, (D) own bathroom, (E) medicine chest. Given the question 'Where did his wife ask him to look first when he complained of missing deodorant?', which among the choices grocery store, nightstand, armpits, own bathroom medicine chest is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (C) armpits. A possible explanation is:
+
+If he complained of missing deodorant, then his wife asked him to look first in his armpits.
+He complained of missing deodorant.
+Therefore, his wife asked him to look first in his armpits.
+
+"
+Where did many municipalities have their cemetery?,"['churchyard', 'personal homes', 'most cities', 'populated area', 'field']","Questions: Where did many municipalities have their cemetery?, Choices: (A) churchyard, (B) personal homes, (C) most cities, (D) populated area, (E) field. Given the question 'Where did many municipalities have their cemetery?', which among the choices churchyard, personal homes, most cities, populated area field is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) churchyard. A possible explanation is:
+
+If many municipalities had their cemetery, then they had it in a churchyard.
+Many municipalities had their cemetery.
+Therefore, they had it in a churchyard.
+
+"
+Where did most people keep their telephone directory near the nourishment they keep in their house?,"['kitchen', 'building', 'office', 'boat', 'library']","Questions: Where did most people keep their telephone directory near the nourishment they keep in their house?, Choices: (A) kitchen, (B) building, (C) office, (D) boat, (E) library. Given the question 'Where did most people keep their telephone directory near the nourishment they keep in their house?', which among the choices kitchen, building, office, boat library is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (A) kitchen. A possible explanation is:
+
+If most people kept their telephone directory near the nourishment they keep in their house, then they kept it in the kitchen.
+Most people kept their telephone directory near the nourishment they keep in their house.
+Therefore, they kept it in the kitchen.
+
+"
+Where did people used to go so they could watch a movie in their home?,"['show', 'vcr', '(vcr and plane are in the above answers twice)', 'television', 'video store']","Questions: Where did people used to go so they could watch a movie in their home?, Choices: (A) show, (B) vcr, (C) (vcr and plane are in the above answers twice), (D) television, (E) video store. Given the question 'Where did people used to go so they could watch a movie in their home?', which among the choices show, vcr, (vcr and plane are in the above answers twice), television video store is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) video store. A possible explanation is:
+
+If people used to go so they could watch a movie in their home, then they went to a video store.
+People used to go so they could watch a movie in their home.
+Therefore, they went to a video store.
+
+"
+Where did the bald eagle make its nest so that it couldn't be reached after it escaped?,"['colorado', 'cliff', 'in a palm tree', 'utah', 'captivity']","Questions: Where did the bald eagle make its nest so that it couldn't be reached after it escaped?, Choices: (A) colorado, (B) cliff, (C) in a palm tree, (D) utah, (E) captivity. Given the question 'Where did the bald eagle make its nest so that it couldn't be reached after it escaped?', which among the choices colorado, cliff, in a palm tree, utah captivity is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) cliff. A possible explanation is:
+
+If the bald eagle made its nest so that it couldn't be reached after it escaped, then it made it on a cliff.
+The bald eagle made its nest so that it couldn't be reached after it escaped.
+Therefore, it made it on a cliff.
+
+"
+Where did the compassionate farmer allow the heifer to reside during her last days?,"['cattle ranch', 'countryside', 'grocery store', 'slaughterhouse', 'dairy farm']","Questions: Where did the compassionate farmer allow the heifer to reside during her last days?, Choices: (A) cattle ranch, (B) countryside, (C) grocery store, (D) slaughterhouse, (E) dairy farm. Given the question 'Where did the compassionate farmer allow the heifer to reside during her last days?', which among the choices cattle ranch, countryside, grocery store, slaughterhouse dairy farm is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (B) countryside. A possible explanation is:
+
+If the compassionate farmer allowed the heifer to reside during her last days, then he allowed her to reside in the countryside.
+The compassionate farmer allowed the heifer to reside during her last days.
+Therefore, he allowed her to reside in the countryside.
+
+"
+Where did the farmer send the heifer to make money when she was no longer useful to the farm?,"['sanctuary farm', 'cow pasture', 'countryside', 'cattle ranch', 'slaughterhouse']","Questions: Where did the farmer send the heifer to make money when she was no longer useful to the farm?, Choices: (A) sanctuary farm, (B) cow pasture, (C) countryside, (D) cattle ranch, (E) slaughterhouse. Given the question 'Where did the farmer send the heifer to make money when she was no longer useful to the farm?', which among the choices sanctuary farm, cow pasture, countryside, cattle ranch slaughterhouse is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) slaughterhouse. A possible explanation is:
+
+If the farmer sent the heifer to make money when she was no longer useful to the farm, then he sent her to a slaughterhouse.
+The farmer sent the heifer to make money when she was no longer useful to the farm.
+Therefore, he sent her to a slaughterhouse.
+
+"
+Where did the group of in crowd guys throw their big party on campus?,"['fraternity house', 'neigborhood', 'ce ebrating mothers birthday', 'home', ""friend's house""]","Questions: Where did the group of in crowd guys throw their big party on campus?, Choices: (A) fraternity house, (B) neigborhood, (C) ce ebrating mothers birthday, (D) home, (E) friend's house. Given the question 'Where did the group of in crowd guys throw their big party on campus?', which among the choices fraternity house, neigborhood, ce ebrating mothers birthday, home friend's house is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) fraternity house. A possible explanation is:
+
+If the group of in crowd guys threw their big party on campus, then they threw it in a fraternity house.
+The group of in crowd guys threw their big party on campus.
+Therefore, they threw it in a fraternity house.
+
+"
+Where did the kidnappers take the sloth from?,"['wilderness', 'encyclopedia', 'school', 'dictionary', 'countryside']","Questions: Where did the kidnappers take the sloth from?, Choices: (A) wilderness, (B) encyclopedia, (C) school, (D) dictionary, (E) countryside. Given the question 'Where did the kidnappers take the sloth from?', which among the choices wilderness, encyclopedia, school, dictionary countryside is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) wilderness. A possible explanation is:
+
+If the kidnappers took the sloth from somewhere, then they took it from the wilderness.
+The kidnappers took the sloth from somewhere.
+Therefore, they took it from the wilderness.
+
+"
+Where did the monkey chase the weasel?,"['in the clouds', 'banana tree', 'mulberry bush', 'research laboratory', 'sailor suit']","Questions: Where did the monkey chase the weasel?, Choices: (A) in the clouds, (B) banana tree, (C) mulberry bush, (D) research laboratory, (E) sailor suit. Given the question 'Where did the monkey chase the weasel?', which among the choices in the clouds, banana tree, mulberry bush, research laboratory sailor suit is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (C) mulberry bush. A possible explanation is:
+
+If the monkey chased the weasel, then he chased it around the mulberry bush.
+The monkey chased the weasel.
+Therefore, he chased it around the mulberry bush."
+Where did the old ladies indoor only pet cat stay?,"['front door', 'zoo', 'jail cell', 'residence', 'floor']","Questions: Where did the old ladies indoor only pet cat stay?, Choices: (A) front door, (B) zoo, (C) jail cell, (D) residence, (E) floor. Given the question 'Where did the old ladies indoor only pet cat stay?', which among the choices front door, zoo, jail cell, residence floor is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) residence. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If the cat is an indoor only pet, then it stays in the residence."" This statement is true because the hypothesis implies the conclusion.
+
+"
+Where did the person have to walk downstairs to get the tool?,"['hardware store', 'basement', 'garage', 'repair shop', 'the library.']","Questions: Where did the person have to walk downstairs to get the tool?, Choices: (A) hardware store, (B) basement, (C) garage, (D) repair shop, (E) the library.. Given the question 'Where did the person have to walk downstairs to get the tool?', which among the choices hardware store, basement, garage, repair shop the library. is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) basement. A possible conditional statement for this question is: ""If the person has to walk downstairs to get the tool, then the tool is in the basement."" This statement is true because the conclusion follows from the hypothesis.
+
+"
+Where did the two best friends end up having a slumber party?,"['movie internet cafe', 'fraternity house', 'internet cafe', ""friend's house"", 'school']","Questions: Where did the two best friends end up having a slumber party?, Choices: (A) movie internet cafe, (B) fraternity house, (C) internet cafe, (D) friend's house, (E) school. Given the question 'Where did the two best friends end up having a slumber party?', which among the choices movie internet cafe, fraternity house, internet cafe, friend's house school is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) friend's house. A possible conditional statement for this question is: ""If the two best friends end up having a slumber party, then they are at a friend's house."" This statement is true because the conclusion is a reasonable inference from the hypothesis.
+
+"
+Where did the two friends party and get drunk before going back to their sorority?,"['wedding', 'fraternity house', ""friend's house"", 'school', 'bar']","Questions: Where did the two friends party and get drunk before going back to their sorority?, Choices: (A) wedding, (B) fraternity house, (C) friend's house, (D) school, (E) bar. Given the question 'Where did the two friends party and get drunk before going back to their sorority?', which among the choices wedding, fraternity house, friend's house, school bar is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) bar. A possible conditional statement for this question is: ""If the two friends party and get drunk, then they are at a bar."" This statement is true because the conclusion is a common consequence of the hypothesis.
+
+"
+Where did you try many escalators?,"['motion', 'bringing people up', 'mall', 'vacuum bay', 'department store']","Questions: Where did you try many escalators?, Choices: (A) motion, (B) bringing people up, (C) mall, (D) vacuum bay, (E) department store. Given the question 'Where did you try many escalators?', which among the choices motion, bringing people up, mall, vacuum bay department store is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) mall. A possible conditional statement for this question is: ""If you try many escalators, then you are at a mall."" This statement is true because the conclusion is a likely location for the hypothesis.
+
+"
+Where do  you park in the parking lot with shopping bags?,"['amusement park', 'urban area', 'airport', 'shopping malls', 'train station']","Questions: Where do  you park in the parking lot with shopping bags?, Choices: (A) amusement park, (B) urban area, (C) airport, (D) shopping malls, (E) train station. Given the question 'Where do  you park in the parking lot with shopping bags?', which among the choices amusement park, urban area, airport, shopping malls train station is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) shopping malls. A possible conditional statement for this question is: ""If you park in the parking lot with shopping bags, then you are at a shopping mall."" This statement is true because the conclusion is a typical scenario for the hypothesis.
+
+"
+Where do I go to pick more candy up when it's all gone?,"['online', 'supermarket', 'store', 'box', 'shop']","Questions: Where do I go to pick more candy up when it's all gone?, Choices: (A) online, (B) supermarket, (C) store, (D) box, (E) shop. Given the question 'Where do I go to pick more candy up when it's all gone?', which among the choices online, supermarket, store, box shop is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) shop. A possible conditional statement for this question is: ""If you go to pick more candy up when it's all gone, then you go to a shop."" This statement is true because the conclusion is a logical action for the hypothesis.
+
+"
+Where do I put a folding chair if I have more guests than expected in my house?,"['auditorium', 'ocean', 'church', 'room', 'garage']","Questions: Where do I put a folding chair if I have more guests than expected in my house?, Choices: (A) auditorium, (B) ocean, (C) church, (D) room, (E) garage. Given the question 'Where do I put a folding chair if I have more guests than expected in my house?', which among the choices auditorium, ocean, church, room garage is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) garage. A possible conditional statement for this question is: ""If you have more guests than expected in your house, then you put a folding chair in the garage."" This statement is true because the conclusion is a reasonable solution for the hypothesis.
+
+"
+Where do I put my coffee mug after it's dry?,"['shelf', 'desktop', 'cabinet', 'kitchen', 'cupboard']","Questions: Where do I put my coffee mug after it's dry?, Choices: (A) shelf, (B) desktop, (C) cabinet, (D) kitchen, (E) cupboard. Given the question 'Where do I put my coffee mug after it's dry?', which among the choices shelf, desktop, cabinet, kitchen cupboard is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) cabinet. A possible conditional statement for this question is: ""If you put your coffee mug after it's dry, then you put it in the cabinet."" This statement is true because the conclusion is a common place for the hypothesis.
+
+"
+Where do I store folding chairs for religious experiences?,"['closet', 'church', 'room', 'basement', 'garage']","Questions: Where do I store folding chairs for religious experiences?, Choices: (A) closet, (B) church, (C) room, (D) basement, (E) garage. Given the question 'Where do I store folding chairs for religious experiences?', which among the choices closet, church, room, basement garage is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (A) closet. A possible conditional statement for this question is: ""If you store folding chairs for religious experiences, then you store them in the closet."" This statement is true because the conclusion is a plausible option for the hypothesis."
+Where do a lot of people store their extra toilet paper?,"['bathroom', 'grocery store', 'bedroom', 'cabinet', 'restroom']","Questions: Where do a lot of people store their extra toilet paper?, Choices: (A) bathroom, (B) grocery store, (C) bedroom, (D) cabinet, (E) restroom. Given the question 'Where do a lot of people store their extra toilet paper?', which among the choices bathroom, grocery store, bedroom, cabinet restroom is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (D) cabinet. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A possible conditional statement for this question is: ""If a lot of people store their extra toilet paper in a place, then that place is a cabinet."" This statement is true because a cabinet is a common and convenient place to store extra toilet paper, while the other choices are either too public, too far, or too occupied.
+
+"
+Where do airplanes usually go?,"['war', 'aircraft carrier', 'crash', 'taxi', 'sky']","Questions: Where do airplanes usually go?, Choices: (A) war, (B) aircraft carrier, (C) crash, (D) taxi, (E) sky. Given the question 'Where do airplanes usually go?', which among the choices war, aircraft carrier, crash, taxi sky is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (E) sky. A possible conditional statement for this question is: ""If an airplane usually goes to a place, then that place is the sky."" This statement is true because the sky is the natural and necessary environment for airplanes to fly, while the other choices are either too specific, too rare, or too irrelevant.
+
+"
+Where do all marmot live before they are captured?,"['switzerland', 'spain', 'vancouver island', 'wilderness', 'australia']","Questions: Where do all marmot live before they are captured?, Choices: (A) switzerland, (B) spain, (C) vancouver island, (D) wilderness, (E) australia. Given the question 'Where do all marmot live before they are captured?', which among the choices switzerland, spain, vancouver island, wilderness australia is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) wilderness. A possible conditional statement for this question is: ""If a marmot lives in a place before it is captured, then that place is the wilderness."" This statement is true because the wilderness is the natural and original habitat for marmots, while the other choices are either too far, too urban, or too artificial.
+
+"
+Where do almost all humans live?,"['china', 'on planet earth', 'train wreck', 'homes', 'dress shop']","Questions: Where do almost all humans live?, Choices: (A) china, (B) on planet earth, (C) train wreck, (D) homes, (E) dress shop. Given the question 'Where do almost all humans live?', which among the choices china, on planet earth, train wreck, homes dress shop is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (B) on planet earth. A possible conditional statement for this question is: ""If a human lives in a place, then that place is on planet earth."" This statement is true because planet earth is the only known planet that can support human life, while the other choices are either too narrow, too dangerous, or too absurd.
+
+"
+Where do almost all people live?,"['football stadium', 'apartment', 'surface of earth', 'car show', 'house']","Questions: Where do almost all people live?, Choices: (A) football stadium, (B) apartment, (C) surface of earth, (D) car show, (E) house. Given the question 'Where do almost all people live?', which among the choices football stadium, apartment, surface of earth, car show house is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) surface of earth. A possible conditional statement for this question is: ""If a person lives in a place, then that place is on the surface of earth."" This statement is true because the surface of earth is the most accessible and habitable area for people, while the other choices are either too specific, too crowded, or too uncommon.
+
+"
+Where do animals frolick?,"['fairgrounds', 'kennel', 'surface of earth', 'meadow', 'zoos']","Questions: Where do animals frolick?, Choices: (A) fairgrounds, (B) kennel, (C) surface of earth, (D) meadow, (E) zoos. Given the question 'Where do animals frolick?', which among the choices fairgrounds, kennel, surface of earth, meadow zoos is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) meadow. A possible conditional statement for this question is: ""If an animal frolics in a place, then that place is a meadow."" This statement is true because a meadow is a grassy and open area that is suitable for animals to run and play, while the other choices are either too artificial, too confined, or too boring.
+
+"
+Where do audiences cheer for athletes?,"['sporting event', 'movie theater', 'theatre', 'church', 'concert']","Questions: Where do audiences cheer for athletes?, Choices: (A) sporting event, (B) movie theater, (C) theatre, (D) church, (E) concert. Given the question 'Where do audiences cheer for athletes?', which among the choices sporting event, movie theater, theatre, church concert is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (A) sporting event. A possible conditional statement for this question is: ""If an audience cheers for athletes in a place, then that place is a sporting event."" This statement is true because a sporting event is a competitive and exciting occasion that involves athletes and their fans, while the other choices are either too unrelated, too quiet, or too different.
+
+"
+Where do bees congregate with red flowerS?,"['trash can', 'honey', 'bouquet of flowers', 'rose garden', 'field of flowers']","Questions: Where do bees congregate with red flowerS?, Choices: (A) trash can, (B) honey, (C) bouquet of flowers, (D) rose garden, (E) field of flowers. Given the question 'Where do bees congregate with red flowerS?', which among the choices trash can, honey, bouquet of flowers, rose garden field of flowers is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (E) field of flowers. A possible conditional statement for this question is: ""If bees congregate with red flowers in a place, then that place is a field of flowers."" This statement is true because a field of flowers is a colorful and abundant source of nectar and pollen for bees, while the other choices are either too dirty, too sweet, too small, or too limited.
+
+"
+Where do bees go to find wildflowers?,"['united states', 'sky', 'beach', 'michigan', 'countryside']","Questions: Where do bees go to find wildflowers?, Choices: (A) united states, (B) sky, (C) beach, (D) michigan, (E) countryside. Given the question 'Where do bees go to find wildflowers?', which among the choices united states, sky, beach, michigan countryside is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) countryside. A possible conditional statement for this question is: ""If bees go to find wildflowers in a place, then that place is the countryside."" This statement is true because the countryside is a rural and natural area that has many wildflowers for bees to visit, while the other choices are either too broad, too high, too sandy, or too specific.
+
+"
+Where do bees spend time traveling?,"['in flower fields', 'orchard', 'field of flowers', 'sky', 'united states']","Questions: Where do bees spend time traveling?, Choices: (A) in flower fields, (B) orchard, (C) field of flowers, (D) sky, (E) united states. Given the question 'Where do bees spend time traveling?', which among the choices in flower fields, orchard, field of flowers, sky united states is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (D) sky. A possible conditional statement for this question is: ""If bees spend time traveling in a place, then that place is the sky."" This statement is true because the sky is the medium and the route for bees to fly from one place to another, while the other choices are either too destination-oriented, too restricted, or too large."

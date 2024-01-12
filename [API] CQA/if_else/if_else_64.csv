@@ -1,0 +1,452 @@
+premise,hypothesis,prompt,rationale
+What is a beaver likely to chew up?,"['american forests', 'great outdoors', 'rocks', 'canada', 'pair of pants']","Questions: What is a beaver likely to chew up?, Choices: (A) american forests, (B) great outdoors, (C) rocks, (D) canada, (E) pair of pants. Given the question 'What is a beaver likely to chew up?', which among the choices american forests, great outdoors, rocks, canada pair of pants is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) american forests. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A beaver is likely to chew up american forests if it lives in North America and needs to build dams or lodges with wood. Therefore, the conditional statement is: **If a beaver lives in North America and needs to build dams or lodges with wood, then it is likely to chew up american forests.**
+
+"
+What is a body of water similar to a stream is called?,"['synagogue', 'pastry', 'ocean', 'brook', 'cup of coffee']","Questions: What is a body of water similar to a stream is called?, Choices: (A) synagogue, (B) pastry, (C) ocean, (D) brook, (E) cup of coffee. Given the question 'What is a body of water similar to a stream is called?', which among the choices synagogue, pastry, ocean, brook cup of coffee is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (D) brook. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A body of water similar to a stream is called a brook if it is a small, natural stream of fresh water. Therefore, the conditional statement is: **If a body of water is a small, natural stream of fresh water, then it is called a brook.**
+
+"
+What is a book where you can find the meaning of a word?,"['encyclopedia', 'sentence', 'dictionary', 'phrase', 'language']","Questions: What is a book where you can find the meaning of a word?, Choices: (A) encyclopedia, (B) sentence, (C) dictionary, (D) phrase, (E) language. Given the question 'What is a book where you can find the meaning of a word?', which among the choices encyclopedia, sentence, dictionary, phrase language is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) dictionary. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A book where you can find the meaning of a word is called a dictionary if it is a collection of words and their definitions, usually arranged alphabetically. Therefore, the conditional statement is: **If a book is a collection of words and their definitions, usually arranged alphabetically, then it is called a dictionary.**
+
+"
+What is a bound stack of papers called?,"['book', 'classroom', 'cabinet', 'notebook', 'suitcase']","Questions: What is a bound stack of papers called?, Choices: (A) book, (B) classroom, (C) cabinet, (D) notebook, (E) suitcase. Given the question 'What is a bound stack of papers called?', which among the choices book, classroom, cabinet, notebook suitcase is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) book. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A bound stack of papers is called a book if it has a cover and pages with printed or written text or images. Therefore, the conditional statement is: **If a bound stack of papers has a cover and pages with printed or written text or images, then it is called a book.**
+
+"
+What is a business leader likely to be in charge of?,"['army', 'country', 'micromanagement', 'pack', 'organization']","Questions: What is a business leader likely to be in charge of?, Choices: (A) army, (B) country, (C) micromanagement, (D) pack, (E) organization. Given the question 'What is a business leader likely to be in charge of?', which among the choices army, country, micromanagement, pack organization is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (E) organization. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A business leader is likely to be in charge of an organization if it is a group of people who work together to achieve a common goal or purpose. Therefore, the conditional statement is: **If an organization is a group of people who work together to achieve a common goal or purpose, then a business leader is likely to be in charge of it.**
+
+"
+What is a characteristic of thin glass?,"['break easily', 'shattering', 'melt', 'bend', 'hold water']","Questions: What is a characteristic of thin glass?, Choices: (A) break easily, (B) shattering, (C) melt, (D) bend, (E) hold water. Given the question 'What is a characteristic of thin glass?', which among the choices break easily, shattering, melt, bend hold water is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (A) break easily. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A characteristic of thin glass is that it can break easily if it is subjected to a strong force or impact. Therefore, the conditional statement is: **If thin glass is subjected to a strong force or impact, then it can break easily.**
+
+"
+What is a child going to play likely to feel?,"['have fun', 'sleepy', 'rush', 'enjoyment', 'meet']","Questions: What is a child going to play likely to feel?, Choices: (A) have fun, (B) sleepy, (C) rush, (D) enjoyment, (E) meet. Given the question 'What is a child going to play likely to feel?', which among the choices have fun, sleepy, rush, enjoyment meet is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (D) enjoyment. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A child going to play is likely to feel enjoyment if it likes the activity and has fun with others. Therefore, the conditional statement is: **If a child likes the activity and has fun with others, then it is likely to feel enjoyment when going to play.**
+
+"
+What is a child likely hoping to achieve by going to play?,"['have fun', 'enjoyment', 'rush', 'being entertained', 'get hungry']","Questions: What is a child likely hoping to achieve by going to play?, Choices: (A) have fun, (B) enjoyment, (C) rush, (D) being entertained, (E) get hungry. Given the question 'What is a child likely hoping to achieve by going to play?', which among the choices have fun, enjoyment, rush, being entertained get hungry is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) have fun. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A child likely hopes to achieve having fun by going to play if it enjoys the activity and feels happy. Therefore, the conditional statement is: **If a child enjoys the activity and feels happy, then it likely hopes to achieve having fun by going to play.**
+
+"
+What is a child likely to do while going to play?,"['laugh', 'sit', 'happiness', 'being entertained', 'walk slowly']","Questions: What is a child likely to do while going to play?, Choices: (A) laugh, (B) sit, (C) happiness, (D) being entertained, (E) walk slowly. Given the question 'What is a child likely to do while going to play?', which among the choices laugh, sit, happiness, being entertained walk slowly is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (A) laugh. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A child likely to do while going to play is laugh if it finds something funny or amusing. Therefore, the conditional statement is: **If a child finds something funny or amusing, then it is likely to do laugh while going to play.**
+
+"
+What is a child's reaction likely to be when going to play?,"['happiness', 'meet', 'surprised', 'being entertained', 'happy']","Questions: What is a child's reaction likely to be when going to play?, Choices: (A) happiness, (B) meet, (C) surprised, (D) being entertained, (E) happy. Given the question 'What is a child's reaction likely to be when going to play?', which among the choices happiness, meet, surprised, being entertained happy is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) happy. A conditional statement is a statement that can be written in the form ""if p, then q"", where p is the hypothesis and q is the conclusion. A child's reaction likely to be when going to play is happy if it anticipates having fun and enjoyment. Therefore, the conditional statement is: **If a child anticipates having fun and enjoyment, then its reaction likely to be when going to play is happy.**"
+What is a clever way to say someone isn't very good at what they do?,"['clumsy', 'dull', 'stupid', 'dummy', 'ineffectual']","Questions: What is a clever way to say someone isn't very good at what they do?, Choices: (A) clumsy, (B) dull, (C) stupid, (D) dummy, (E) ineffectual. Given the question 'What is a clever way to say someone isn't very good at what they do?', which among the choices clumsy, dull, stupid, dummy ineffectual is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) ineffectual**. A clever way to say someone isn't very good at what they do is to say they are ineffectual, which means not producing any significant or desired effect. My reasoning is as follows:
+
+- If someone is clumsy, then they are awkward or careless in their movements or actions.
+- If someone is dull, then they are boring or lacking in interest or excitement.
+- If someone is stupid, then they are lacking intelligence or common sense.
+- If someone is dummy, then they are a model or replica of a human being, used for display or testing purposes.
+- If someone is ineffectual, then they are not producing any significant or desired effect.
+
+- Therefore, if the question is what is a clever way to say someone isn't very good at what they do, then the answer is ineffectual.
+
+"
+What is a common cause of injury?,"['accident', 'theatre', ""doctor's office"", 'hockey game', 'living thing']","Questions: What is a common cause of injury?, Choices: (A) accident, (B) theatre, (C) doctor's office, (D) hockey game, (E) living thing. Given the question 'What is a common cause of injury?', which among the choices accident, theatre, doctor's office, hockey game living thing is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(A) accident**. A common cause of injury is an accident, which is an unfortunate or unexpected event that results in damage or harm. My reasoning is as follows:
+
+- If something is an accident, then it is an unfortunate or unexpected event that results in damage or harm.
+- If something is a theatre, then it is a building or outdoor area where plays and other dramatic performances are given.
+- If something is a doctor's office, then it is a place where a medical practitioner receives or treats patients.
+- If something is a hockey game, then it is a sport in which two teams play against each other by trying to maneuver a ball or a puck into the opponent's goal using a hockey stick.
+- If something is a living thing, then it is an organism that has the capacity for growth, reproduction, functional activity, and continual change.
+
+- Therefore, if the question is what is a common cause of injury, then the answer is accident.
+
+"
+What is a common sign that someone is lying?,"['ordering dog food online', 'avoid eye contact', 'feel guilty', 'fall asleep', 'blush']","Questions: What is a common sign that someone is lying?, Choices: (A) ordering dog food online, (B) avoid eye contact, (C) feel guilty, (D) fall asleep, (E) blush. Given the question 'What is a common sign that someone is lying?', which among the choices ordering dog food online, avoid eye contact, feel guilty, fall asleep blush is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) avoid eye contact**. A common sign that someone is lying is to avoid eye contact, which means to look away from someone's eyes when speaking or listening. My reasoning is as follows:
+
+- If someone is ordering dog food online, then they are buying food for their pet dog through the internet.
+- If someone is avoiding eye contact, then they are looking away from someone's eyes when speaking or listening.
+- If someone is feeling guilty, then they are experiencing remorse or regret for doing something wrong or harmful.
+- If someone is falling asleep, then they are losing consciousness or becoming drowsy as a result of fatigue or boredom.
+- If someone is blushing, then they are becoming red in the face as a result of embarrassment or shame.
+
+- Therefore, if the question is what is a common sign that someone is lying, then the answer is avoid eye contact.
+
+"
+What is a computer known to do?,"['think', 'hardware', 'process information', 'run programs', 'make decisions']","Questions: What is a computer known to do?, Choices: (A) think, (B) hardware, (C) process information, (D) run programs, (E) make decisions. Given the question 'What is a computer known to do?', which among the choices think, hardware, process information, run programs make decisions is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) process information**. A computer is known to do process information, which means to perform operations on data or instructions according to a set of rules or algorithms. My reasoning is as follows:
+
+- If something is thinking, then it is using one's mind to produce thoughts or ideas.
+- If something is hardware, then it is the physical components of a computer or other electronic device.
+- If something is processing information, then it is performing operations on data or instructions according to a set of rules or algorithms.
+- If something is running programs, then it is executing a set of instructions or commands that tell a computer what to do.
+- If something is making decisions, then it is choosing between two or more alternatives or courses of action.
+
+- Therefore, if the question is what is a computer known to do, then the answer is process information.
+
+"
+What is a computer terminal?,"['electrical device', 'battery', 'electronics', 'transportation system', 'initial']","Questions: What is a computer terminal?, Choices: (A) electrical device, (B) battery, (C) electronics, (D) transportation system, (E) initial. Given the question 'What is a computer terminal?', which among the choices electrical device, battery, electronics, transportation system initial is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(A) electrical device**. A computer terminal is an electrical device, which means a device that operates by means of electricity. My reasoning is as follows:
+
+- If something is an electrical device, then it is a device that operates by means of electricity.
+- If something is a battery, then it is a device that stores electrical energy and can be used to power other devices.
+- If something is electronics, then it is the branch of science and technology that deals with circuits, devices, and systems that use electricity, magnetism, and electromagnetic radiation.
+- If something is a transportation system, then it is a system that facilitates the movement of people or goods from one place to another.
+- If something is initial, then it is the first letter of a word or name.
+
+- Therefore, if the question is what is a computer terminal, then the answer is electrical device.
+
+"
+What is a computer unable to do?,"['process information', 'cast shadow', 'crash', 'make decisions', 'become sensible']","Questions: What is a computer unable to do?, Choices: (A) process information, (B) cast shadow, (C) crash, (D) make decisions, (E) become sensible. Given the question 'What is a computer unable to do?', which among the choices process information, cast shadow, crash, make decisions become sensible is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) become sensible**. A computer is unable to do become sensible, which means to acquire or show good sense or judgment. My reasoning is as follows:
+
+- If something is processing information, then it is performing operations on data or instructions according to a set of rules or algorithms.
+- If something is casting shadow, then it is blocking the light from a source and creating a dark area behind an object.
+- If something is crashing, then it is stopping working suddenly or malfunctioning.
+- If something is making decisions, then it is choosing between two or more alternatives or courses of action.
+- If something is becoming sensible, then it is acquiring or showing good sense or judgment.
+
+- Therefore, if the question is what is a computer unable to do, then the answer is become sensible.
+
+"
+What is a computer user likely to think a computer crash  is?,"['own home', 'school', 'work', 'hell', 'house']","Questions: What is a computer user likely to think a computer crash  is?, Choices: (A) own home, (B) school, (C) work, (D) hell, (E) house. Given the question 'What is a computer user likely to think a computer crash  is?', which among the choices own home, school, work, hell house is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(D) hell**. A computer user is likely to think a computer crash is hell, which means a place or state of extreme suffering or torment. My reasoning is as follows:
+
+- If something is own home, then it is the place where one lives or resides, especially as a member of a family or household.
+- If something is school, then it is an institution for educating children or students.
+- If something is work, then it is the activity involving mental or physical effort done in order to achieve a purpose or result.
+- If something is hell, then it is a place or state of extreme suffering or torment.
+- If something is house, then it is a building for human habitation.
+
+- Therefore, if the question is what is a computer user likely to think a computer crash is, then the answer is hell.
+
+"
+What is a computer user using Zillow have as a goal?,"['house', 'hell', 'office building', 'own home', 'car']","Questions: What is a computer user using Zillow have as a goal?, Choices: (A) house, (B) hell, (C) office building, (D) own home, (E) car. Given the question 'What is a computer user using Zillow have as a goal?', which among the choices house, hell, office building, own home car is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(D) own home**. A computer user using Zillow has as a goal own home, which means a place where one lives or resides, especially as a member of a family or household, that one owns or has bought. My reasoning is as follows:
+
+- If something is a house, then it is a building for human habitation.
+- If something is hell, then it is a place or state of extreme suffering or torment.
+- If something is an office building, then it is a large building that contains offices or workplaces for various organizations or businesses.
+- If something is own home, then it is a place where one lives or resides, especially as a member of a family or household, that one owns or has bought.
+- If something is a car, then it is a road vehicle, typically with four wheels, powered by an internal combustion engine or electric motor and able to carry a small number of people.
+
+- Therefore, if the question is what is a computer user using Zillow have as a goal, then the answer is own home.
+
+"
+What is a convenient place for a bus station?,"['maps', 'street', 'catch bus', 'city centre', 'school']","Questions: What is a convenient place for a bus station?, Choices: (A) maps, (B) street, (C) catch bus, (D) city centre, (E) school. Given the question 'What is a convenient place for a bus station?', which among the choices maps, street, catch bus, city centre school is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(D) city centre**. A convenient place for a bus station is city centre, which means the central part of a city, where most of the business and entertainment activities are located. My reasoning is as follows:
+
+- If something is maps, then it is a diagrammatic representation of an area of land or sea showing physical features, cities, roads, etc.
+- If something is a street, then it is a public road in a city or town, typically with houses and buildings on one or both sides.
+- If something is catch bus, then it is to get on a bus that is travelling to a destination.
+- If something is city centre, then it is the central part of a city, where most of the business and entertainment activities are located.
+- If something is school, then it is an institution for educating children or students.
+
+- Therefore, if the question is what is a convenient place for a bus station, then the answer is city centre.
+
+"
+What is a convenient way for a farmer to preserve their crops?,"['can produce', 'harvestation', 'water plants', 'produce food', 'rise early']","Questions: What is a convenient way for a farmer to preserve their crops?, Choices: (A) can produce, (B) harvestation, (C) water plants, (D) produce food, (E) rise early. Given the question 'What is a convenient way for a farmer to preserve their crops?', which among the choices can produce, harvestation, water plants, produce food rise early is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) can produce**. A convenient way for a farmer to preserve their crops is to can produce, which means to seal food, especially fruits and vegetables, in airtight containers for long-term storage. My reasoning is as follows:
+
+- If something is can produce, then it is to seal food, especially fruits and vegetables, in airtight containers for long-term storage.
+- If something is harvestation, then it is not a word in the English language.
+- If something is water plants, then it is to supply water to plants to help them grow.
+- If something is produce food, then it is to grow or make food, especially by farming or processing.
+- If something is rise early, then it is to get up from bed or sleep at an early hour.
+
+- Therefore, if the question is what is a convenient way for a farmer to preserve their crops, then the answer is can produce."
+What is a corrupt government likely to lead to?,"['civilization', 'money', 'city', 'control', 'trouble']","Questions: What is a corrupt government likely to lead to?, Choices: (A) civilization, (B) money, (C) city, (D) control, (E) trouble. Given the question 'What is a corrupt government likely to lead to?', which among the choices civilization, money, city, control trouble is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(E) trouble**. A possible explanation is: If a government is corrupt, then it does not serve the public interest. If a government does not serve the public interest, then it causes dissatisfaction and unrest among the people. If there is dissatisfaction and unrest among the people, then there is trouble.
+
+"
+What is a country that is known for a high population of beaver?,"['woodlands', 'rivers', 'ontario', 'canada', 'zoo']","Questions: What is a country that is known for a high population of beaver?, Choices: (A) woodlands, (B) rivers, (C) ontario, (D) canada, (E) zoo. Given the question 'What is a country that is known for a high population of beaver?', which among the choices woodlands, rivers, ontario, canada zoo is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) canada**. A possible explanation is: If a country is known for a high population of beaver, then it has a lot of natural habitats for beaver. If a country has a lot of natural habitats for beaver, then it has a lot of forests and rivers. If a country has a lot of forests and rivers, then it is likely to be Canada.
+
+"
+What is a dangerous outdoor activity for children?,"['play games', 'wrong house', 'sun themselves', 'watch television', 'set table']","Questions: What is a dangerous outdoor activity for children?, Choices: (A) play games, (B) wrong house, (C) sun themselves, (D) watch television, (E) set table. Given the question 'What is a dangerous outdoor activity for children?', which among the choices play games, wrong house, sun themselves, watch television set table is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) wrong house**. A possible explanation is: If an activity is dangerous for children, then it exposes them to harm or danger. If an activity exposes children to harm or danger, then it involves something that is unfamiliar or risky. If an activity involves something that is unfamiliar or risky, then it could be going to the wrong house.
+
+"
+What is a facial sign of having fun?,"['laughter', 'pleasure', 'smiling', 'being happy', 'showing teeth']","Questions: What is a facial sign of having fun?, Choices: (A) laughter, (B) pleasure, (C) smiling, (D) being happy, (E) showing teeth. Given the question 'What is a facial sign of having fun?', which among the choices laughter, pleasure, smiling, being happy showing teeth is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(C) smiling**. A possible explanation is: If a person is having fun, then they are enjoying themselves. If a person is enjoying themselves, then they are expressing positive emotions. If a person is expressing positive emotions, then they are smiling.
+
+"
+What is a fairly new way to access information?,"['book', 'internet', 'manual', 'library', 'manual']","Questions: What is a fairly new way to access information?, Choices: (A) book, (B) internet, (C) manual, (D) library, (E) manual. Given the question 'What is a fairly new way to access information?', which among the choices book, internet, manual, library manual is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(B) internet**. A possible explanation is: If a way to access information is fairly new, then it was not available or widely used in the past. If a way to access information was not available or widely used in the past, then it is based on recent technology or innovation. If a way to access information is based on recent technology or innovation, then it is the internet.
+
+"
+What is a farmer growing in Illinois or Iowa?,"['grow plants', 'seed plants', 'seed crops', 'grow animals', 'raise corn']","Questions: What is a farmer growing in Illinois or Iowa?, Choices: (A) grow plants, (B) seed plants, (C) seed crops, (D) grow animals, (E) raise corn. Given the question 'What is a farmer growing in Illinois or Iowa?', which among the choices grow plants, seed plants, seed crops, grow animals raise corn is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) raise corn**. A possible explanation is: If a farmer is growing something in Illinois or Iowa, then they are producing a crop that is suitable for the climate and soil of those states. If a crop is suitable for the climate and soil of Illinois or Iowa, then it is a type of grain or cereal. If a type of grain or cereal is grown by a farmer in Illinois or Iowa, then it is likely to be corn.
+
+"
+What is a fast but expensive way to send small cargo?,"['airplane', ""ship's hold"", 'boat', 'truck', 'train']","Questions: What is a fast but expensive way to send small cargo?, Choices: (A) airplane, (B) ship's hold, (C) boat, (D) truck, (E) train. Given the question 'What is a fast but expensive way to send small cargo?', which among the choices airplane, ship's hold, boat, truck train is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) airplane**. A possible explanation is: If a way to send small cargo is fast, then it reduces the time it takes to transport it from one place to another. If a way to reduce the time it takes to transport small cargo from one place to another, then it uses a mode of transportation that is faster than land or water. If a mode of transportation that is faster than land or water is used to send small cargo, then it is an airplane.
+
+"
+What is a flirty person known for?,"['good looking', 'pleasure', 'playfulness', 'own house', 'new experiences']","Questions: What is a flirty person known for?, Choices: (A) good looking, (B) pleasure, (C) playfulness, (D) own house, (E) new experiences. Given the question 'What is a flirty person known for?', which among the choices good looking, pleasure, playfulness, own house new experiences is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) playfulness**. A possible explanation is: If a person is flirty, then they are showing interest or attraction to someone else. If a person is showing interest or attraction to someone else, then they are using words or actions that are suggestive or teasing. If a person is using words or actions that are suggestive or teasing, then they are being playful.
+
+"
+What is a food that a child wouldn't want to have?,"['eat vegetables', 'go to school', 'grounded', 'sweets', 'have sex']","Questions: What is a food that a child wouldn't want to have?, Choices: (A) eat vegetables, (B) go to school, (C) grounded, (D) sweets, (E) have sex. Given the question 'What is a food that a child wouldn't want to have?', which among the choices eat vegetables, go to school, grounded, sweets have sex is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(A) eat vegetables**. A possible explanation is: If a food is something that a child wouldn't want to have, then it is something that they dislike or avoid. If a food is something that a child dislikes or avoids, then it is something that they find unpleasant or boring. If a food is something that a child finds unpleasant or boring, then it could be vegetables.
+
+"
+What is a front yard generally filled with?,"['grass', 'neighborhood', 'playhouse', 'barbeques', 'suburb']","Questions: What is a front yard generally filled with?, Choices: (A) grass, (B) neighborhood, (C) playhouse, (D) barbeques, (E) suburb. Given the question 'What is a front yard generally filled with?', which among the choices grass, neighborhood, playhouse, barbeques suburb is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(A) grass**. A possible explanation is: If a front yard is generally filled with something, then it is something that covers most of the space or area of the yard. If something covers most of the space or area of the front yard, then it is something that is common or typical for a front yard. If something is common or typical for a front yard, then it is grass."
+What is a fun way for children to be learning about science?,"['time', 'frustration', 'become educated', 'experiment', 'excitement']","Questions: What is a fun way for children to be learning about science?, Choices: (A) time, (B) frustration, (C) become educated, (D) experiment, (E) excitement. Given the question 'What is a fun way for children to be learning about science?', which among the choices time, frustration, become educated, experiment excitement is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) experiment**. A fun way for children to be learning about science is to experiment with different materials, methods, and phenomena. Experimenting allows children to explore, discover, and test their hypotheses in a hands-on way. A possible conditional statement is: **If children experiment with science, then they will have fun and learn more.**
+
+"
+What is a genius likely to be in all subjects?,"['virtuous', 'exceptional', 'ordinary', 'advantageous', 'sufficient']","Questions: What is a genius likely to be in all subjects?, Choices: (A) virtuous, (B) exceptional, (C) ordinary, (D) advantageous, (E) sufficient. Given the question 'What is a genius likely to be in all subjects?', which among the choices virtuous, exceptional, ordinary, advantageous sufficient is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(B) exceptional**. A genius is likely to be exceptional in all subjects, meaning that they excel or surpass others in their performance, skills, or abilities. Exceptional implies a high degree of excellence or rarity. A possible conditional statement is: **If someone is a genius, then they are exceptional in all subjects.**
+
+"
+What is a good container for a potato?,"['kitchen cabinet', 'pantry', 'own kitchen', 'a flower vase.', 'clam chowder']","Questions: What is a good container for a potato?, Choices: (A) kitchen cabinet, (B) pantry, (C) own kitchen, (D) a flower vase., (E) clam chowder. Given the question 'What is a good container for a potato?', which among the choices kitchen cabinet, pantry, own kitchen, a flower vase. clam chowder is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(B) pantry**. A good container for a potato is a pantry, which is a room or closet where food, dishes, or provisions are stored. A pantry is usually cool, dark, and dry, which are ideal conditions for storing potatoes. A possible conditional statement is: **If a potato is stored in a pantry, then it will last longer and stay fresh.**
+
+"
+What is a good description of the sloth's native habitat?,"['basement', 'universe', 'amazonia', 'forest', 'tropical jungle']","Questions: What is a good description of the sloth's native habitat?, Choices: (A) basement, (B) universe, (C) amazonia, (D) forest, (E) tropical jungle. Given the question 'What is a good description of the sloth's native habitat?', which among the choices basement, universe, amazonia, forest tropical jungle is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) tropical jungle**. A good description of the sloth's native habitat is a tropical jungle, which is a dense forest with a hot and humid climate, abundant rainfall, and diverse vegetation and wildlife. Sloths are arboreal animals that live in the treetops of tropical jungles, mainly in Central and South America. A possible conditional statement is: **If a sloth lives in a tropical jungle, then it will have plenty of food, shelter, and camouflage.**
+
+"
+What is a good place for a grumpy cat?,"['sand box', 'back yard', 'ground', 'warm bed', 'shelf']","Questions: What is a good place for a grumpy cat?, Choices: (A) sand box, (B) back yard, (C) ground, (D) warm bed, (E) shelf. Given the question 'What is a good place for a grumpy cat?', which among the choices sand box, back yard, ground, warm bed shelf is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(D) warm bed**. A good place for a grumpy cat is a warm bed, which is a comfortable and cozy spot where a cat can relax, sleep, or snuggle. A warm bed can help a grumpy cat feel more calm, content, and secure. A possible conditional statement is: **If a grumpy cat sleeps in a warm bed, then it will be less grumpy and more happy.**
+
+"
+What is a good place for a potato to mix with other veggies?,"['beef stew', 'restaurants', 'garden', 'steak house', 'cooking pot']","Questions: What is a good place for a potato to mix with other veggies?, Choices: (A) beef stew, (B) restaurants, (C) garden, (D) steak house, (E) cooking pot. Given the question 'What is a good place for a potato to mix with other veggies?', which among the choices beef stew, restaurants, garden, steak house cooking pot is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(E) cooking pot**. A good place for a potato to mix with other veggies is a cooking pot, which is a metal or ceramic container used for boiling, stewing, or frying food. A cooking pot can allow a potato to blend with other veggies in various dishes, such as soups, stews, curries, or casseroles. A possible conditional statement is: **If a potato is cooked in a pot with other veggies, then it will become more flavorful and nutritious.**
+
+"
+What is a good result of jogging?,"['insect repellent', 'heart attacks', 'improved health', 'shin splints', 'being tired']","Questions: What is a good result of jogging?, Choices: (A) insect repellent, (B) heart attacks, (C) improved health, (D) shin splints, (E) being tired. Given the question 'What is a good result of jogging?', which among the choices insect repellent, heart attacks, improved health, shin splints being tired is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(C) improved health**. A good result of jogging is improved health, which is a state of physical, mental, and social well-being. Jogging can improve health by strengthening the heart, lungs, muscles, and bones, burning calories, reducing stress, and boosting mood. A possible conditional statement is: **If someone jogs regularly, then they will improve their health and fitness.**
+
+"
+What is a good result of losing weight?,"['increased energy', 'healthier', 'loose skin', 'beauty', 'death']","Questions: What is a good result of losing weight?, Choices: (A) increased energy, (B) healthier, (C) loose skin, (D) beauty, (E) death. Given the question 'What is a good result of losing weight?', which among the choices increased energy, healthier, loose skin, beauty death is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(B) healthier**. A good result of losing weight is healthier, which means having a better condition or quality of health. Losing weight can make someone healthier by lowering the risk of various diseases, such as diabetes, heart disease, or stroke, improving blood pressure, cholesterol, and blood sugar levels, and enhancing self-esteem and confidence. A possible conditional statement is: **If someone loses weight in a healthy way, then they will become healthier and happier.**
+
+"
+What is a good simile about trees that can be used in the workplace?,"['fall down', 'split open', 'die', 'stand together', 'branch out']","Questions: What is a good simile about trees that can be used in the workplace?, Choices: (A) fall down, (B) split open, (C) die, (D) stand together, (E) branch out. Given the question 'What is a good simile about trees that can be used in the workplace?', which among the choices fall down, split open, die, stand together branch out is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) branch out**. A good simile about trees that can be used in the workplace is branch out, which means to expand one's scope, interests, or activities. Branching out can be beneficial in the workplace by creating new opportunities, learning new skills, or meeting new people. A possible conditional statement is: **If someone branches out in their career, then they will grow professionally and personally.**
+
+"
+What is a good thing about playing football?,"['head injuries', 'having fun', 'death', 'concussions', 'getting hurt']","Questions: What is a good thing about playing football?, Choices: (A) head injuries, (B) having fun, (C) death, (D) concussions, (E) getting hurt. Given the question 'What is a good thing about playing football?', which among the choices head injuries, having fun, death, concussions getting hurt is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(B) having fun**. A good thing about playing football is having fun, which means enjoying oneself or having a good time. Playing football can be fun by providing entertainment, excitement, challenge, or satisfaction. A possible conditional statement is: **If someone plays football, then they will have fun and make friends.**"
+What is a good thing for farmers to have to start off?,"['farm land', 'raise cattle', 'grow corn', 'supply food', 'raise horses']","Questions: What is a good thing for farmers to have to start off?, Choices: (A) farm land, (B) raise cattle, (C) grow corn, (D) supply food, (E) raise horses. Given the question 'What is a good thing for farmers to have to start off?', which among the choices farm land, raise cattle, grow corn, supply food raise horses is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) farm land. A good thing for farmers to have to start off is farm land because it is the basic requirement for farming. A conditional statement for this answer is: **If** a person wants to be a farmer, **then** they need to have farm land.
+
+"
+What is a good thing to do while eating?,"['chewing', 'drink', 'watching tv', 'watching television', 'talking']","Questions: What is a good thing to do while eating?, Choices: (A) chewing, (B) drink, (C) watching tv, (D) watching television, (E) talking. Given the question 'What is a good thing to do while eating?', which among the choices chewing, drink, watching tv, watching television talking is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) chewing. A good thing to do while eating is chewing because it helps digest the food and prevents choking. A conditional statement for this answer is: **If** a person is eating, **then** they should chew their food.
+
+"
+What is a good way for children to learn about dining etiquette?,"['wrong house', 'read a book', 'watch television', 'sun themselves', 'set table']","Questions: What is a good way for children to learn about dining etiquette?, Choices: (A) wrong house, (B) read a book, (C) watch television, (D) sun themselves, (E) set table. Given the question 'What is a good way for children to learn about dining etiquette?', which among the choices wrong house, read a book, watch television, sun themselves set table is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) set table. A good way for children to learn about dining etiquette is to set table because it teaches them how to arrange the utensils, plates, and glasses properly. A conditional statement for this answer is: **If** a child wants to learn about dining etiquette, **then** they should set table.
+
+"
+What is a good way to carry a small dog?,"['good hands', 'backpack', 'chinese food', 'grocery bag', 'basket']","Questions: What is a good way to carry a small dog?, Choices: (A) good hands, (B) backpack, (C) chinese food, (D) grocery bag, (E) basket. Given the question 'What is a good way to carry a small dog?', which among the choices good hands, backpack, chinese food, grocery bag basket is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (E) basket. A good way to carry a small dog is basket because it is comfortable and safe for the dog and easy for the owner to carry. A conditional statement for this answer is: **If** a person has a small dog, **then** they should carry it in a basket.
+
+"
+What is a good way to get food hot?,"['fridge', 'field', 'oven', 'table', 'cupboard']","Questions: What is a good way to get food hot?, Choices: (A) fridge, (B) field, (C) oven, (D) table, (E) cupboard. Given the question 'What is a good way to get food hot?', which among the choices fridge, field, oven, table cupboard is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (C) oven. A good way to get food hot is oven because it can heat up the food evenly and quickly. A conditional statement for this answer is: **If** a person wants to get food hot, **then** they should use an oven.
+
+"
+What is a great place to lay in the sun?,"['in the basement', 'west', 'solar system', 'beach', 'beans']","Questions: What is a great place to lay in the sun?, Choices: (A) in the basement, (B) west, (C) solar system, (D) beach, (E) beans. Given the question 'What is a great place to lay in the sun?', which among the choices in the basement, west, solar system, beach beans is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) beach. A great place to lay in the sun is beach because it has sand, water, and a nice view. A conditional statement for this answer is: **If** a person wants to lay in the sun, **then** they should go to the beach.
+
+"
+What is a great thing to do with used glass?,"['shattered', 'recycled', 'shatter', 'tempered', 'broken']","Questions: What is a great thing to do with used glass?, Choices: (A) shattered, (B) recycled, (C) shatter, (D) tempered, (E) broken. Given the question 'What is a great thing to do with used glass?', which among the choices shattered, recycled, shatter, tempered broken is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) recycled. A great thing to do with used glass is recycled because it helps reduce waste and conserve resources. A conditional statement for this answer is: **If** a person has used glass, **then** they should recycle it.
+
+"
+What is a great way for teens to build character and pad their resume?,"['hang out', 'volunteer', 'smoke', 'be stranded on a desert island', 'homework']","Questions: What is a great way for teens to build character and pad their resume?, Choices: (A) hang out, (B) volunteer, (C) smoke, (D) be stranded on a desert island, (E) homework. Given the question 'What is a great way for teens to build character and pad their resume?', which among the choices hang out, volunteer, smoke, be stranded on a desert island homework is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) volunteer. A great way for teens to build character and pad their resume is volunteer because it shows that they care about the community and have valuable skills. A conditional statement for this answer is: **If** a teen wants to build character and pad their resume, **then** they should volunteer.
+
+"
+What is a group of bungalows in a small area?,"['park', 'woods', 'bed', 'neighborhood', 'suburbs']","Questions: What is a group of bungalows in a small area?, Choices: (A) park, (B) woods, (C) bed, (D) neighborhood, (E) suburbs. Given the question 'What is a group of bungalows in a small area?', which among the choices park, woods, bed, neighborhood suburbs is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (D) neighborhood. A group of bungalows in a small area is neighborhood because it is a residential area with similar houses. A conditional statement for this answer is: **If** a group of bungalows is in a small area, **then** it is a neighborhood.
+
+"
+What is a group of three or four musicians called?,"['group', 'band', 'show', 'opera', 'play in band']","Questions: What is a group of three or four musicians called?, Choices: (A) group, (B) band, (C) show, (D) opera, (E) play in band. Given the question 'What is a group of three or four musicians called?', which among the choices group, band, show, opera play in band is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) band. A group of three or four musicians is band because it is a musical group that plays together. A conditional statement for this answer is: **If** a group of three or four musicians plays together, **then** it is a band."
+What is a grumpy person likely to have?,"['headache', 'understand themselves', 'compliments', 'own house', 'happiness']","Questions: What is a grumpy person likely to have?, Choices: (A) headache, (B) understand themselves, (C) compliments, (D) own house, (E) happiness. Given the question 'What is a grumpy person likely to have?', which among the choices headache, understand themselves, compliments, own house happiness is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (A) headache. A grumpy person is likely to have a headache because they are often in a bad mood, stressed, or irritated. A conditional statement for this is: **If** a person is grumpy, **then** they are likely to have a headache.
+
+"
+What is a hand?,"['body part', 'foot', 'handglide', 'feet', 'help']","Questions: What is a hand?, Choices: (A) body part, (B) foot, (C) handglide, (D) feet, (E) help. Given the question 'What is a hand?', which among the choices body part, foot, handglide, feet help is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (A) body part. A hand is a body part that humans and some animals have. It has fingers, a palm, and a wrist. A conditional statement for this is: **If** something is a hand, **then** it is a body part.
+
+"
+What is a head attached to?,"['home', 'subordinate', 'foot', 'base', 'point']","Questions: What is a head attached to?, Choices: (A) home, (B) subordinate, (C) foot, (D) base, (E) point. Given the question 'What is a head attached to?', which among the choices home, subordinate, foot, base point is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (D) base. A head is attached to a base, which is the upper part of the neck. The base supports the head and allows it to move. A conditional statement for this is: **If** something is a head, **then** it is attached to a base.
+
+"
+What is a health benefit of jumping rope?,"['increased heart rate', 'get weight', 'having fun', 'sweating', 'hopping']","Questions: What is a health benefit of jumping rope?, Choices: (A) increased heart rate, (B) get weight, (C) having fun, (D) sweating, (E) hopping. Given the question 'What is a health benefit of jumping rope?', which among the choices increased heart rate, get weight, having fun, sweating hopping is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) increased heart rate. A health benefit of jumping rope is increased heart rate, which improves cardiovascular fitness and burns calories. A conditional statement for this is: **If** a person jumps rope, **then** their heart rate increases.
+
+"
+What is a heat source that can be obtained for free?,"['bedroom', 'fire', 'car', 'solar energy', 'gasoline']","Questions: What is a heat source that can be obtained for free?, Choices: (A) bedroom, (B) fire, (C) car, (D) solar energy, (E) gasoline. Given the question 'What is a heat source that can be obtained for free?', which among the choices bedroom, fire, car, solar energy gasoline is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) solar energy. A heat source that can be obtained for free is solar energy, which comes from the sun. Solar energy can be used to heat water, generate electricity, or warm buildings. A conditional statement for this is: **If** a person uses solar energy, **then** they get a heat source for free.
+
+"
+What is a human adapted to handle?,"['co2', 'community', 'population', 'diverse situations', 'school']","Questions: What is a human adapted to handle?, Choices: (A) co2, (B) community, (C) population, (D) diverse situations, (E) school. Given the question 'What is a human adapted to handle?', which among the choices co2, community, population, diverse situations school is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (D) diverse situations. A human is adapted to handle diverse situations, which means they can cope with different challenges, environments, and cultures. A conditional statement for this is: **If** a being is human, **then** they are adapted to handle diverse situations.
+
+"
+What is a jury judging?,"['responsibility', 'film festival', 'resentment', 'go to jail', 'controversy']","Questions: What is a jury judging?, Choices: (A) responsibility, (B) film festival, (C) resentment, (D) go to jail, (E) controversy. Given the question 'What is a jury judging?', which among the choices responsibility, film festival, resentment, go to jail controversy is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (B) film festival. A jury is judging a film festival, which is an event where films are screened and evaluated by a panel of experts. A conditional statement for this is: **If** a group is a jury, **then** they are judging a film festival.
+
+"
+What is a kind of literature?,"['newspaper', 'books and magazines', 'own home', 'public library', 'good homes']","Questions: What is a kind of literature?, Choices: (A) newspaper, (B) books and magazines, (C) own home, (D) public library, (E) good homes. Given the question 'What is a kind of literature?', which among the choices newspaper, books and magazines, own home, public library good homes is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) books and magazines. A kind of literature is books and magazines, which are written works that contain stories, information, or opinions. A conditional statement for this is: **If** something is a kind of literature, **then** it is books and magazines.
+
+"
+What is a landscape gardner likely to do?,"['water lawn', 'water plants', 'plant trees', 'garden roses', 'playing on ground']","Questions: What is a landscape gardner likely to do?, Choices: (A) water lawn, (B) water plants, (C) plant trees, (D) garden roses, (E) playing on ground. Given the question 'What is a landscape gardner likely to do?', which among the choices water lawn, water plants, plant trees, garden roses playing on ground is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (C) plant trees. A landscape gardener is likely to do plant trees, which are woody plants that have a trunk, branches, and leaves. Planting trees can improve the appearance, biodiversity, and climate of a landscape. A conditional statement for this is: **If** a person is a landscape gardener, **then** they are likely to do plant trees.
+
+"
+What is a large group of human beings?,"['an infestation', 'civilisation', 'homes', 'graveyard', 'spacecraft']","Questions: What is a large group of human beings?, Choices: (A) an infestation, (B) civilisation, (C) homes, (D) graveyard, (E) spacecraft. Given the question 'What is a large group of human beings?', which among the choices an infestation, civilisation, homes, graveyard spacecraft is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) civilisation. A large group of human beings is civilisation, which is a complex society that has culture, government, and technology. A conditional statement for this is: **If** a group is large and human, **then** it is civilisation."
+What is a lawyer required to do during the discovery phase of a trial?,"['charge fee for service', 'come early', 'convict', 'produce evidence', 'state case']","Questions: What is a lawyer required to do during the discovery phase of a trial?, Choices: (A) charge fee for service, (B) come early, (C) convict, (D) produce evidence, (E) state case. Given the question 'What is a lawyer required to do during the discovery phase of a trial?', which among the choices charge fee for service, come early, convict, produce evidence state case is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(D) produce evidence**. A lawyer is required to produce evidence during the discovery phase of a trial because this is the stage where both parties exchange information and documents that are relevant to the case. A conditional statement that explains this reasoning is: **If** a lawyer is in the discovery phase of a trial, **then** they must produce evidence.
+
+"
+What is a leaf pulled off of?,"['forrest', 'ground', 'compost pile', 'cactus', 'floral arrangement']","Questions: What is a leaf pulled off of?, Choices: (A) forrest, (B) ground, (C) compost pile, (D) cactus, (E) floral arrangement. Given the question 'What is a leaf pulled off of?', which among the choices forrest, ground, compost pile, cactus floral arrangement is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(E) floral arrangement**. A leaf can be pulled off of a floral arrangement because this is an object that consists of flowers and leaves that are arranged in a certain way. A conditional statement that explains this reasoning is: **If** a leaf is part of a floral arrangement, **then** it can be pulled off.
+
+"
+What is a light source that does not require electricity?,"['hallway', 'light switch', 'candle', 'lamp', 'house']","Questions: What is a light source that does not require electricity?, Choices: (A) hallway, (B) light switch, (C) candle, (D) lamp, (E) house. Given the question 'What is a light source that does not require electricity?', which among the choices hallway, light switch, candle, lamp house is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(C) candle**. A candle is a light source that does not require electricity because it produces light by burning a wick and wax. A conditional statement that explains this reasoning is: **If** a light source does not require electricity, **then** it could be a candle.
+
+"
+What is a likely result of returning to work?,"['earn money', 'depression', 'work overload', 'stress', 'sobering']","Questions: What is a likely result of returning to work?, Choices: (A) earn money, (B) depression, (C) work overload, (D) stress, (E) sobering. Given the question 'What is a likely result of returning to work?', which among the choices earn money, depression, work overload, stress sobering is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(A) earn money**. A likely result of returning to work is to earn money because this is the main motivation and benefit of working for most people. A conditional statement that explains this reasoning is: **If** someone returns to work, **then** they are likely to earn money.
+
+"
+What is a living thing with a lip?,"['mouth', 'can', 'human', 'snake', 'kentucky fried chicken']","Questions: What is a living thing with a lip?, Choices: (A) mouth, (B) can, (C) human, (D) snake, (E) kentucky fried chicken. Given the question 'What is a living thing with a lip?', which among the choices mouth, can, human, snake kentucky fried chicken is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(C) human**. A human is a living thing with a lip because this is a body part that is located on the edge of the mouth and is used for speaking, eating, and expressing emotions. A conditional statement that explains this reasoning is: **If** a living thing has a lip, **then** it could be a human.
+
+"
+What is a lover likely to want to do with their partner?,"['build family together', 'fall in love', 'make love', 'complete', 'distance themselves']","Questions: What is a lover likely to want to do with their partner?, Choices: (A) build family together, (B) fall in love, (C) make love, (D) complete, (E) distance themselves. Given the question 'What is a lover likely to want to do with their partner?', which among the choices build family together, fall in love, make love, complete distance themselves is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(C) make love**. A lover is likely to want to do this with their partner because this is a way of expressing their physical and emotional intimacy and affection. A conditional statement that explains this reasoning is: **If** someone is a lover, **then** they are likely to want to make love with their partner.
+
+"
+What is a maid usually hired for?,"['cleaning house', 'iron shirts and trousers', 'clean house', 'maid uniform', 'clean room']","Questions: What is a maid usually hired for?, Choices: (A) cleaning house, (B) iron shirts and trousers, (C) clean house, (D) maid uniform, (E) clean room. Given the question 'What is a maid usually hired for?', which among the choices cleaning house, iron shirts and trousers, clean house, maid uniform clean room is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) cleaning house**. A maid is usually hired for cleaning house because this is the main service that they provide to their employers. A conditional statement that explains this reasoning is: **If** someone is a maid, **then** they are usually hired for cleaning house.
+
+"
+What is a marmot likely to be good at finding?,"['food', 'hiding place', 'yellow pages', 'jungle', 'high mountains']","Questions: What is a marmot likely to be good at finding?, Choices: (A) food, (B) hiding place, (C) yellow pages, (D) jungle, (E) high mountains. Given the question 'What is a marmot likely to be good at finding?', which among the choices food, hiding place, yellow pages, jungle high mountains is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(E) high mountains**. A marmot is likely to be good at finding high mountains because this is the habitat where they live and thrive. A conditional statement that explains this reasoning is: **If** a living thing is a marmot, **then** it is likely to be good at finding high mountains.
+
+"
+What is a method expressing yourself while making an object of lasting beauty?,"['understood', 'being slapped', 'people will understand', 'pain', 'creation of art']","Questions: What is a method expressing yourself while making an object of lasting beauty?, Choices: (A) understood, (B) being slapped, (C) people will understand, (D) pain, (E) creation of art. Given the question 'What is a method expressing yourself while making an object of lasting beauty?', which among the choices understood, being slapped, people will understand, pain creation of art is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(E) creation of art**. A method of expressing yourself while making an object of lasting beauty is the creation of art because this is a form of human activity that involves imagination, creativity, and aesthetic value. A conditional statement that explains this reasoning is: **If** someone wants to express themselves while making an object of lasting beauty, **then** they could create art.
+
+"
+What is a mobile launching platform found in the ocean?,"['launch pad', 'circus', 'aircraft carrier', 'large open area', 'space station']","Questions: What is a mobile launching platform found in the ocean?, Choices: (A) launch pad, (B) circus, (C) aircraft carrier, (D) large open area, (E) space station. Given the question 'What is a mobile launching platform found in the ocean?', which among the choices launch pad, circus, aircraft carrier, large open area space station is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(C) aircraft carrier**. A mobile launching platform found in the ocean is an aircraft carrier because this is a type of naval vessel that can launch and land airplanes on its deck. A conditional statement that explains this reasoning is: **If** a launching platform is mobile and found in the ocean, **then** it could be an aircraft carrier."
+What is a negative consequence of learning about the world?,"['sadness', 'hopelessness', 'loss of innocence', 'confusion', 'anger']","Questions: What is a negative consequence of learning about the world?, Choices: (A) sadness, (B) hopelessness, (C) loss of innocence, (D) confusion, (E) anger. Given the question 'What is a negative consequence of learning about the world?', which among the choices sadness, hopelessness, loss of innocence, confusion anger is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is **(C) loss of innocence**. My reasoning is: If someone learns about the world, then they might discover some harsh realities that could shatter their naive or idealistic views. Therefore, learning about the world could lead to loss of innocence.
+
+"
+What is a negative effect of creating art?,"['communication', 'pride', 'pleasure', 'controversy', 'recognition']","Questions: What is a negative effect of creating art?, Choices: (A) communication, (B) pride, (C) pleasure, (D) controversy, (E) recognition. Given the question 'What is a negative effect of creating art?', which among the choices communication, pride, pleasure, controversy recognition is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is **(D) controversy**. My reasoning is: If someone creates art, then they might express their opinions or emotions that could offend or challenge others. Therefore, creating art could lead to controversy.
+
+"
+What is a negative effect of getting divorce that does not involve people other than the person getting divorced?,"['lot of grief', 'freedom', 'happiness', 'no spouse', 'children suffer']","Questions: What is a negative effect of getting divorce that does not involve people other than the person getting divorced?, Choices: (A) lot of grief, (B) freedom, (C) happiness, (D) no spouse, (E) children suffer. Given the question 'What is a negative effect of getting divorce that does not involve people other than the person getting divorced?', which among the choices lot of grief, freedom, happiness, no spouse children suffer is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is **(A) lot of grief**. My reasoning is: If someone gets divorced, then they might feel sad or regretful about the end of their marriage. Therefore, getting divorced could lead to lot of grief.
+
+"
+What is a negative effect to someone other than a spouse when two spouses are getting divorced?,"['lot of grief', 'depression', 'no spouse', 'lose money', 'children suffer']","Questions: What is a negative effect to someone other than a spouse when two spouses are getting divorced?, Choices: (A) lot of grief, (B) depression, (C) no spouse, (D) lose money, (E) children suffer. Given the question 'What is a negative effect to someone other than a spouse when two spouses are getting divorced?', which among the choices lot of grief, depression, no spouse, lose money children suffer is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is **(E) children suffer**. My reasoning is: If two spouses get divorced, then they might affect their children's well-being or happiness. Therefore, getting divorced could lead to children suffer.
+
+"
+What is a negative external consequence for someone who takes part in a killing?,"['dies', 'being imprisoned', 'blood', 'bloody mess', 'feeling of guilt']","Questions: What is a negative external consequence for someone who takes part in a killing?, Choices: (A) dies, (B) being imprisoned, (C) blood, (D) bloody mess, (E) feeling of guilt. Given the question 'What is a negative external consequence for someone who takes part in a killing?', which among the choices dies, being imprisoned, blood, bloody mess feeling of guilt is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is **(B) being imprisoned**. My reasoning is: If someone takes part in a killing, then they might face legal consequences or punishment. Therefore, taking part in a killing could lead to being imprisoned.
+
+"
+What is a nerd most likely to have a curiosity to do that others wouldn't?,"['listen to music', 'use television', 'find truth', 'design software', 'read book']","Questions: What is a nerd most likely to have a curiosity to do that others wouldn't?, Choices: (A) listen to music, (B) use television, (C) find truth, (D) design software, (E) read book. Given the question 'What is a nerd most likely to have a curiosity to do that others wouldn't?', which among the choices listen to music, use television, find truth, design software read book is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is **(D) design software**. My reasoning is: If someone is a nerd, then they might have a passion or interest in technology or programming. Therefore, a nerd is most likely to have a curiosity to design software that others wouldn't.
+
+"
+What is a northern country where one might find a bald eagle preserve?,"['canada', 'colorado', 'mountain top', 'utah', 'in washington']","Questions: What is a northern country where one might find a bald eagle preserve?, Choices: (A) canada, (B) colorado, (C) mountain top, (D) utah, (E) in washington. Given the question 'What is a northern country where one might find a bald eagle preserve?', which among the choices canada, colorado, mountain top, utah in washington is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is **(A) canada**. My reasoning is: Canada is a northern country that has a large population of bald eagles and several protected areas for them. Therefore, Canada is a northern country where one might find a bald eagle preserve.
+
+"
+What is a painful condition that would make going to the opera uncomfortable?,"['fall asleep', 'haircut', 'headache', 'fresh', 'relaxation']","Questions: What is a painful condition that would make going to the opera uncomfortable?, Choices: (A) fall asleep, (B) haircut, (C) headache, (D) fresh, (E) relaxation. Given the question 'What is a painful condition that would make going to the opera uncomfortable?', which among the choices fall asleep, haircut, headache, fresh relaxation is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is **(C) headache**. My reasoning is: If someone has a headache, then they might feel pain or discomfort in their head or ears. Therefore, having a headache would make going to the opera uncomfortable.
+
+"
+What is a parents primary duty?,"['speak freely', 'happiness of a child', 'care for children', 'school child', 'control children']","Questions: What is a parents primary duty?, Choices: (A) speak freely, (B) happiness of a child, (C) care for children, (D) school child, (E) control children. Given the question 'What is a parents primary duty?', which among the choices speak freely, happiness of a child, care for children, school child control children is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is **(C) care for children**. My reasoning is: If someone is a parent, then they have a responsibility or obligation to provide for their children's needs or welfare. Therefore, caring for children is a parent's primary duty.
+
+"
+What is a performance by actors on tv to promote buying a certain product?,"['newspaper', 'show', 'theatre', 'movie', 'commercial']","Questions: What is a performance by actors on tv to promote buying a certain product?, Choices: (A) newspaper, (B) show, (C) theatre, (D) movie, (E) commercial. Given the question 'What is a performance by actors on tv to promote buying a certain product?', which among the choices newspaper, show, theatre, movie commercial is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is **(E) commercial**. My reasoning is: A commercial is a short performance by actors on tv that aims to persuade or influence viewers to buy a certain product. Therefore, a commercial is a performance by actors on tv to promote buying a certain product."
+What is a person chatting with friends likely hoping to accomplish?,"['gathering of information', 'communication', 'feel relaxed', 'kill boredom', 'social bonding']","Questions: What is a person chatting with friends likely hoping to accomplish?, Choices: (A) gathering of information, (B) communication, (C) feel relaxed, (D) kill boredom, (E) social bonding. Given the question 'What is a person chatting with friends likely hoping to accomplish?', which among the choices gathering of information, communication, feel relaxed, kill boredom social bonding is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) social bonding. A person chatting with friends is likely hoping to accomplish social bonding because they want to maintain or strengthen their relationships with their friends. A possible conditional statement is: If a person chats with friends, then they are likely hoping to accomplish social bonding.
+
+"
+What is a person dressed as a clown hoping to accomplish?,"['own house', 'make others happy', 'compliments', 'low crime', 'good lover']","Questions: What is a person dressed as a clown hoping to accomplish?, Choices: (A) own house, (B) make others happy, (C) compliments, (D) low crime, (E) good lover. Given the question 'What is a person dressed as a clown hoping to accomplish?', which among the choices own house, make others happy, compliments, low crime good lover is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) make others happy. A person dressed as a clown is hoping to accomplish making others happy because they want to entertain them with jokes, tricks, or funny gestures. A possible conditional statement is: If a person is dressed as a clown, then they are hoping to accomplish making others happy.
+
+"
+What is a person going for a long walk in need of?,"['roads', 'headache', 'comfortable shoes', 'slim waist', 'best things in life']","Questions: What is a person going for a long walk in need of?, Choices: (A) roads, (B) headache, (C) comfortable shoes, (D) slim waist, (E) best things in life. Given the question 'What is a person going for a long walk in need of?', which among the choices roads, headache, comfortable shoes, slim waist best things in life is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (C) comfortable shoes. A person going for a long walk is in need of comfortable shoes because they want to avoid hurting their feet or getting blisters. A possible conditional statement is: If a person is going for a long walk, then they are in need of comfortable shoes.
+
+"
+What is a person likely to feel when they are abandoned by everyone after they stop being married to someone else?,"['grief', 'solo', 'isolation', 'pleasure', 'happiness']","Questions: What is a person likely to feel when they are abandoned by everyone after they stop being married to someone else?, Choices: (A) grief, (B) solo, (C) isolation, (D) pleasure, (E) happiness. Given the question 'What is a person likely to feel when they are abandoned by everyone after they stop being married to someone else?', which among the choices grief, solo, isolation, pleasure happiness is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) grief. A person is likely to feel grief when they are abandoned by everyone after they stop being married to someone else because they have lost their spouse and their social support. A possible conditional statement is: If a person is abandoned by everyone after they stop being married to someone else, then they are likely to feel grief.
+
+"
+What is a person likely to lock at night?,"['own', 'gate', 'entrance', 'front door', 'controlling whether door opened']","Questions: What is a person likely to lock at night?, Choices: (A) own, (B) gate, (C) entrance, (D) front door, (E) controlling whether door opened. Given the question 'What is a person likely to lock at night?', which among the choices own, gate, entrance, front door controlling whether door opened is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (D) front door. A person is likely to lock their front door at night because they want to protect their home and belongings from intruders. A possible conditional statement is: If a person is at home at night, then they are likely to lock their front door.
+
+"
+What is a person that is able to create art called?,"['take class', 'thought', 'artist', 'inspired', 'imagine']","Questions: What is a person that is able to create art called?, Choices: (A) take class, (B) thought, (C) artist, (D) inspired, (E) imagine. Given the question 'What is a person that is able to create art called?', which among the choices take class, thought, artist, inspired imagine is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (C) artist. A person that is able to create art is called an artist because they have the skill or talent to produce something that is beautiful, meaningful, or expressive. A possible conditional statement is: If a person is able to create art, then they are called an artist.
+
+"
+What is a person that is not from the east?,"['north', 'westerly', 'eastside', 'westward', 'western']","Questions: What is a person that is not from the east?, Choices: (A) north, (B) westerly, (C) eastside, (D) westward, (E) western. Given the question 'What is a person that is not from the east?', which among the choices north, westerly, eastside, westward western is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (E) western. A person that is not from the east is western because they belong to the opposite direction or region of the east. A possible conditional statement is: If a person is not from the east, then they are western.
+
+"
+What is a person the leader of after they are inagurated?,"['earth', 'country', 'pack', 'organization', 'army']","Questions: What is a person the leader of after they are inagurated?, Choices: (A) earth, (B) country, (C) pack, (D) organization, (E) army. Given the question 'What is a person the leader of after they are inagurated?', which among the choices earth, country, pack, organization army is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (B) country. A person is the leader of a country after they are inaugurated because they have been officially sworn in as the head of state or government of a nation. A possible conditional statement is: If a person is inaugurated, then they are the leader of a country.
+
+"
+What is a person using their whole body for work likely to complain of?,"['aching back', 'make mistakes', 'big muscles', 'lower back pain', 'sore muscles']","Questions: What is a person using their whole body for work likely to complain of?, Choices: (A) aching back, (B) make mistakes, (C) big muscles, (D) lower back pain, (E) sore muscles. Given the question 'What is a person using their whole body for work likely to complain of?', which among the choices aching back, make mistakes, big muscles, lower back pain sore muscles is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) sore muscles. A person using their whole body for work is likely to complain of sore muscles because they have exerted their physical strength and endurance. A possible conditional statement is: If a person uses their whole body for work, then they are likely to complain of sore muscles.
+
+"
+What is a person visiting  a museum likely to feel after realizing an object is missing?,"['happiness', 'shock', 'seeing artifacts', 'peace', 'being bored']","Questions: What is a person visiting  a museum likely to feel after realizing an object is missing?, Choices: (A) happiness, (B) shock, (C) seeing artifacts, (D) peace, (E) being bored. Given the question 'What is a person visiting  a museum likely to feel after realizing an object is missing?', which among the choices happiness, shock, seeing artifacts, peace being bored is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (B) shock. A person visiting a museum is likely to feel shock after realizing an object is missing because they have witnessed something unexpected and alarming. A possible conditional statement is: If a person visits a museum and realizes an object is missing, then they are likely to feel shock."
+What is a person who has become a minimalist hope to achieve?,"['peaceful sleep', 'peacefulness', 'new computer', 'own house', 'freedom from want']","Questions: What is a person who has become a minimalist hope to achieve?, Choices: (A) peaceful sleep, (B) peacefulness, (C) new computer, (D) own house, (E) freedom from want. Given the question 'What is a person who has become a minimalist hope to achieve?', which among the choices peaceful sleep, peacefulness, new computer, own house freedom from want is the correct answer? Explain your reasoning using conditional statements.
+","1. The correct answer is (E) freedom from want. A person who has become a minimalist hopes to achieve freedom from want by reducing their possessions and needs to the minimum. A conditional statement that explains this is: **If** a person is a minimalist, **then** they hope to achieve freedom from want.
+"
+What is a person who is well educated?,"['illiterate', 'knowledgable', 'own house', 'have enough food', 'meet expectations']","Questions: What is a person who is well educated?, Choices: (A) illiterate, (B) knowledgable, (C) own house, (D) have enough food, (E) meet expectations. Given the question 'What is a person who is well educated?', which among the choices illiterate, knowledgable, own house, have enough food meet expectations is the correct answer? Explain your reasoning using conditional statements.
+","2. The correct answer is (B) knowledgable. A person who is well educated is knowledgable about various subjects and topics. A conditional statement that explains this is: **If** a person is well educated, **then** they are knowledgable.
+"
+What is a person's goal to ownas an adult with a family?,"['wellness', 'number 1', 'headache', 'their own failings', 'own home']","Questions: What is a person's goal to ownas an adult with a family?, Choices: (A) wellness, (B) number 1, (C) headache, (D) their own failings, (E) own home. Given the question 'What is a person's goal to ownas an adult with a family?', which among the choices wellness, number 1, headache, their own failings own home is the correct answer? Explain your reasoning using conditional statements.
+","3. The correct answer is (E) own home. A person's goal to own as an adult with a family is usually their own home where they can live comfortably and securely. A conditional statement that explains this is: **If** a person is an adult with a family, **then** their goal to own is their own home.
+"
+What is a person's immediate reaction to winning the lottery?,"['feel lucky', 'wash themselves', 'wonder what happened', 'cross street', 'run']","Questions: What is a person's immediate reaction to winning the lottery?, Choices: (A) feel lucky, (B) wash themselves, (C) wonder what happened, (D) cross street, (E) run. Given the question 'What is a person's immediate reaction to winning the lottery?', which among the choices feel lucky, wash themselves, wonder what happened, cross street run is the correct answer? Explain your reasoning using conditional statements.
+","4. The correct answer is (A) feel lucky. A person's immediate reaction to winning the lottery is to feel lucky and happy about their fortune. A conditional statement that explains this is: **If** a person wins the lottery, **then** they feel lucky.
+"
+What is a place that could have hundreds of sporting goods store?,"['buy athletic equipment', 'city', 'espn', 'town', 'jerseys']","Questions: What is a place that could have hundreds of sporting goods store?, Choices: (A) buy athletic equipment, (B) city, (C) espn, (D) town, (E) jerseys. Given the question 'What is a place that could have hundreds of sporting goods store?', which among the choices buy athletic equipment, city, espn, town jerseys is the correct answer? Explain your reasoning using conditional statements.
+","5. The correct answer is (B) city. A place that could have hundreds of sporting goods store is a city where there is a large population and demand for sports equipment and apparel. A conditional statement that explains this is: **If** a place has hundreds of sporting goods store, **then** it is a city.
+"
+What is a place that could have hundreds of thousands of chess board?,"['park', 'ymca', 'house', 'room', 'germany']","Questions: What is a place that could have hundreds of thousands of chess board?, Choices: (A) park, (B) ymca, (C) house, (D) room, (E) germany. Given the question 'What is a place that could have hundreds of thousands of chess board?', which among the choices park, ymca, house, room germany is the correct answer? Explain your reasoning using conditional statements.
+","6. The correct answer is (E) germany. A place that could have hundreds of thousands of chess board is Germany where chess is a popular and widely played game. A conditional statement that explains this is: **If** a place has hundreds of thousands of chess board, **then** it is Germany.
+"
+What is a place that could have tens of thousands of fiddle?,"['tennessee', 'band practice', 'orchestra', 'violin case', 'music store']","Questions: What is a place that could have tens of thousands of fiddle?, Choices: (A) tennessee, (B) band practice, (C) orchestra, (D) violin case, (E) music store. Given the question 'What is a place that could have tens of thousands of fiddle?', which among the choices tennessee, band practice, orchestra, violin case music store is the correct answer? Explain your reasoning using conditional statements.
+","7. The correct answer is (C) orchestra. A place that could have tens of thousands of fiddle is an orchestra where fiddle is a common musical instrument used to play classical music. A conditional statement that explains this is: **If** a place has tens of thousands of fiddle, **then** it is an orchestra.
+"
+What is a place that has a queen who is not an insect?,"['england', 'castle', 'monarchy', 'bee hive', 'palace']","Questions: What is a place that has a queen who is not an insect?, Choices: (A) england, (B) castle, (C) monarchy, (D) bee hive, (E) palace. Given the question 'What is a place that has a queen who is not an insect?', which among the choices england, castle, monarchy, bee hive palace is the correct answer? Explain your reasoning using conditional statements.
+","8. The correct answer is (A) england. A place that has a queen who is not an insect is England where the queen is the head of state and a human being. A conditional statement that explains this is: **If** a place has a queen who is not an insect, **then** it is England.
+"
+What is a place that has only one ceiling and which could be on ground level?,"['house', 'building', 'loft', 'classroom', 'airplane']","Questions: What is a place that has only one ceiling and which could be on ground level?, Choices: (A) house, (B) building, (C) loft, (D) classroom, (E) airplane. Given the question 'What is a place that has only one ceiling and which could be on ground level?', which among the choices house, building, loft, classroom airplane is the correct answer? Explain your reasoning using conditional statements.
+","9. The correct answer is (E) airplane. A place that has only one ceiling and which could be on ground level is an airplane which has a single roof and can be parked on the runway. A conditional statement that explains this is: **If** a place has only one ceiling and which could be on ground level, **then** it is an airplane.
+"
+What is a place that might not always have a queen?,"['bee hive', 'england', 'castle', 'deck of cards', 'chess game']","Questions: What is a place that might not always have a queen?, Choices: (A) bee hive, (B) england, (C) castle, (D) deck of cards, (E) chess game. Given the question 'What is a place that might not always have a queen?', which among the choices bee hive, england, castle, deck of cards chess game is the correct answer? Explain your reasoning using conditional statements.
+","10. The correct answer is (E) chess game. A place that might not always have a queen is a chess game where the queen is a piece that can be captured and removed from the board. A conditional statement that explains this is: **If** a place is a chess game, **then** it might not always have a queen."
