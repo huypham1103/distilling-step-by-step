@@ -14,15 +14,25 @@ from concurrent.futures import ThreadPoolExecutor
 # g4f.debug.version_check = False  # Disable automatic version checking
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
-FOLDER = 'contrastive'
-TYPE = 'contrastive'
+FOLDER = 'neutral'
+TYPE = 'error'
+
+prompt_template=   {
+    'consensus': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the commonly agreed-upon answer to the question '%s' with options %s, %s, %s, %s %s? Justify your answer based on general knowledge. \n''',
+    'if_else': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Given the question '%s', which among the choices %s, %s, %s, %s %s, is the correct answer? Explain your reasoning using conditional statements.\n''',
+    'contrastive': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', among the choices %s, %s, %s, %s %s, which is the most likely answer? Highlight what sets your choice apart from the others.\n''',
+    'neutral': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the correct answer to the question '%s' with the options %s, %s, %s, %s %s? Provide a straightforward explanation. \n''',
+    'causal': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', what is the correct answer among the choices %s, %s, %s, %s %s? Explain the cause-and-effect relationship between the question and your chosen answer.\n''',
+    'comparative': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Compare the options %s, %s, %s, %s %s and identify the most likely answer to the question '%s'. Explain why your choice is better than the others.\n''',
+    'historical': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Based on what is historically known, what is the most likely answer to the question '%s' with options %s, %s, %s, %s %s? Provide historical context in your rationale. \n''',
+}
 
 class APIData:
     def __init__(self, data, token_idx, idx, tokens=None):
         self.tokens = tokens
         self.data = data
         self.prompt_list = []
-        self.prompt_template=   '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', among the choices %s, %s, %s, %s %s, which is the most likely answer? Highlight what sets your choice apart from the others.\n'''
+        self.prompt_template =   prompt_template[f'{FOLDER}']
         self.limit = 10
         self.token_idx = token_idx
         self.idx = idx
@@ -117,12 +127,12 @@ class APIData:
 
 if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=20) as executor:
-        for i in range(80, 100):
+        for i in range(0, 100):
             start = i * 100
             end = (i+1) * 100
-            data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
-            # data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
-            # data = data[start:end]
+            # data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
+            data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
+            data = data[start:end]
 
             # run get api data parallel by 3 tokens
             # print(f"Start api at token {i}")
