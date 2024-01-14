@@ -1,3 +1,4 @@
 ,premise,hypothesis,prompt,rationale,split,correct_index,LLM_answer
-9737,"She often spent money she didn't have buying products, this lead to what?","['spending money', 'owning', 'pleasure', 'surplus of cash', 'debt']",,nan,nan,{},
-9738,"She preferred the light blanket, what did she think of the older blanket?","['empty', 'calorific', 'crucial', 'cumbersome', 'forceful']",,nan,nan,{},
+9492,"John wanted to hunt blowfish, but he didn't want to leave America.  Where might he search?","['tropical sea', 'south pacific ocean', 'hawaiian waters', 'sushi store', 'fish market']",,nan,nan,{},
+9715,"The sloth was very muscular, but he couldn't compete in the contest because it had a humans only rule.  What contest was the sloth trying to enter?","['universe', 'dictionary', 'global', 'commercial', 'countryside']",,nan,nan,{},
+9716,"Where on a river can a human hold a cup upright to catch water on a sunny, clear day?","['bridge', 'waterfall', 'mountainous area', 'planet earth', 'valley']",,nan,nan,{},
