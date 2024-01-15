@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
 FOLDER = 'historical'
-TYPE = 'historical'
+TYPE = 'error___'
 
 prompt_template=   {
     'consensus': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the commonly agreed-upon answer to the question '%s' with options %s, %s, %s, %s %s? Justify your answer based on general knowledge. \n''',
@@ -127,12 +127,12 @@ class APIData:
 
 if __name__ == '__main__':
     with ThreadPoolExecutor(max_workers=20) as executor:
-        for i in range(0, 50):
+        for i in range(0, 100):
             start = i * 100
             end = (i+1) * 100
-            data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
-            # data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
-            # data = data[start:end]
+            # data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
+            data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
+            data = data[start:end]
 
             # run get api data parallel by 3 tokens
             # print(f"Start api at token {i}")
