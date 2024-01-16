@@ -1,0 +1,39 @@
+premise,hypothesis,prompt,rationale
+Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike,Tall humans waiting,"Premise: Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike, Hypothesis: Tall humans waiting. What is the commonly agreed-upon answer to the premise 'Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike' and hypothesis Tall humans waiting with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","1. The answer is **neutral**. The premise does not provide any information about the height of the friends or the man with the snowball, so the hypothesis is neither entailed nor contradicted by the premise. The hypothesis is irrelevant to the premise.
+
+"
+Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike,Nobody is waiting,"Premise: Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike, Hypothesis: Nobody is waiting. What is the commonly agreed-upon answer to the premise 'Two friends await their demise as a man with a giant snowball held above his head waits for the perfect time to strike' and hypothesis Nobody is waiting with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","2. The answer is **contradiction**. The premise clearly states that two friends are waiting, so the hypothesis that nobody is waiting is false if the premise is true. The hypothesis negates the premise.
+
+"
+two dogs playing,The two dogs are sleeping under the porch of the house.,"Premise: two dogs playing, Hypothesis: The two dogs are sleeping under the porch of the house.. What is the commonly agreed-upon answer to the premise 'two dogs playing' and hypothesis The two dogs are sleeping under the porch of the house. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","3. The answer is **contradiction**. The premise states that two dogs are playing, which implies that they are awake and active, so the hypothesis that the two dogs are sleeping under the porch of the house is false if the premise is true. The hypothesis is incompatible with the premise.
+
+"
+two dogs playing,There are two animals in this picture.,"Premise: two dogs playing, Hypothesis: There are two animals in this picture.. What is the commonly agreed-upon answer to the premise 'two dogs playing' and hypothesis There are two animals in this picture. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","4. The answer is **entailment**. The premise states that two dogs are playing, which implies that there are two animals in the picture, so the hypothesis is true if the premise is true. The hypothesis is a generalization of the premise.
+
+"
+two dogs playing,"The two dogs are chasing a frisbee across the field, thrown over and over by their owner.","Premise: two dogs playing, Hypothesis: The two dogs are chasing a frisbee across the field, thrown over and over by their owner.. What is the commonly agreed-upon answer to the premise 'two dogs playing' and hypothesis The two dogs are chasing a frisbee across the field, thrown over and over by their owner. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","5. The answer is **neutral**. The premise states that two dogs are playing, but it does not specify what they are playing with or where they are playing, so the hypothesis that the two dogs are chasing a frisbee across the field, thrown over and over by their owner is neither entailed nor contradicted by the premise. The hypothesis is a possible but not certain scenario based on the premise.
+
+"
+Two dogs look at one another outside.,Two dogs are outside.,"Premise: Two dogs look at one another outside., Hypothesis: Two dogs are outside.. What is the commonly agreed-upon answer to the premise 'Two dogs look at one another outside.' and hypothesis Two dogs are outside. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","6. The answer is **entailment**. The premise states that two dogs look at one another outside, which implies that two dogs are outside, so the hypothesis is true if the premise is true. The hypothesis is a simplification of the premise.
+
+"
+Two dogs look at one another outside.,Two dogs are in the backyard glaring at each other over which will get to reach the bone first.,"Premise: Two dogs look at one another outside., Hypothesis: Two dogs are in the backyard glaring at each other over which will get to reach the bone first.. What is the commonly agreed-upon answer to the premise 'Two dogs look at one another outside.' and hypothesis Two dogs are in the backyard glaring at each other over which will get to reach the bone first. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","7. The answer is **neutral**. The premise states that two dogs look at one another outside, but it does not specify where they are or what they are thinking, so the hypothesis that two dogs are in the backyard glaring at each other over which will get to reach the bone first is neither entailed nor contradicted by the premise. The hypothesis is a possible but not certain interpretation of the premise.
+
+"
+Two dogs look at one another outside.,Four dogs look at one another inside.,"Premise: Two dogs look at one another outside., Hypothesis: Four dogs look at one another inside.. What is the commonly agreed-upon answer to the premise 'Two dogs look at one another outside.' and hypothesis Four dogs look at one another inside. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","8. The answer is **contradiction**. The premise states that two dogs look at one another outside, which implies that there are two dogs and they are outside, so the hypothesis that four dogs look at one another inside is false if the premise is true. The hypothesis contradicts the premise on both the number of dogs and their location.
+
+"
+Two small dogs run across the green grass.,Two little dogs run across the grass.,"Premise: Two small dogs run across the green grass., Hypothesis: Two little dogs run across the grass.. What is the commonly agreed-upon answer to the premise 'Two small dogs run across the green grass.' and hypothesis Two little dogs run across the grass. with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","9. The answer is **entailment**. The premise states that two small dogs run across the green grass, which implies that two little dogs run across the grass, so the hypothesis is true if the premise is true. The hypothesis is a paraphrase of the premise.
+
+"
+Two small dogs run across the green grass.,animals are running outdoors,"Premise: Two small dogs run across the green grass., Hypothesis: animals are running outdoors. What is the commonly agreed-upon answer to the premise 'Two small dogs run across the green grass.' and hypothesis animals are running outdoors with options ""entailment"", ""neutral"", ""contradiction""? Justify your answer based on general knowledge. 
+","10. The answer is **entailment**. The premise states that two small dogs run across the green grass, which implies that animals are running outdoors, so the hypothesis is true if the premise is true. The hypothesis is a generalization of the premise."

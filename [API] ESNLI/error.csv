@@ -1,0 +1,17 @@
+,premise,hypothesis,prompt,rationale,split,correct_index,LLM_answer
+9068,Three women of different ages in white dresses sitting in a dusty clearing in front of trees.,Three ladies of different ages are sitting in front of the forest.,,nan,nan,{},
+9374,"A person, dressed in green hoodie and shorts, stands in front of a vista of green hills.",The pers,,"5. The correct answer is **invalid**. This means that the hypothesis is incomplete and cannot be evaluated. A possible conditional statement is: If a person, dressed in green hoodie and shorts, stands in front of a vista of green hills, then the pers... (missing information).
+
+","5. the correct answer is **invalid**. this means that the hypothesis is incomplete and cannot be evaluated. a possible conditional statement is: if a person, dressed in green hoodie and shorts, stands in front of a vista of green hills, then the pers... (missing information).
+
+",{},
+9450,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,The men are throwing a football to each other.,,nan,nan,{},
+9451,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,The men are running on the field.,,nan,nan,{},
+9452,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,two men play soccer,,nan,nan,{},
+9453,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,The Olympic soccer trials in Belgium.,,nan,nan,{},
+9454,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,The black team is winning.,,nan,nan,{},
+9455,An very nice capture of a soccer game going on between two men as the man from the team in black attempts to interrupt the red and white teams stride.,two men playing fifa on xbox on the couch,,nan,nan,{},
+9456,"Two soccer players, one in black and one in red, with the one in black attempting to steal the ball.",The kids are playing basketball.,,nan,nan,{},
+9457,"Two soccer players, one in black and one in red, with the one in black attempting to steal the ball.",The team wearing red is in the lead.,,nan,nan,{},
+9458,"Two soccer players, one in black and one in red, with the one in black attempting to steal the ball.",Two people are playing soccer.,,nan,nan,{},
+9459,A soccer player in a red shirt kicks the ball while another player in a black shirt tries to stop him.,The soccer player in red is shooting at the goal.,,nan,nan,{},

@@ -14,17 +14,17 @@ from concurrent.futures import ThreadPoolExecutor
 # g4f.debug.version_check = False  # Disable automatic version checking
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
-FOLDER = 'historical'
-TYPE = 'error___'
+FOLDER = 'if_else'
+TYPE = 'error_'
 
 prompt_template=   {
-    'consensus': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the commonly agreed-upon answer to the question '%s' with options %s, %s, %s, %s %s? Justify your answer based on general knowledge. \n''',
-    'if_else': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Given the question '%s', which among the choices %s, %s, %s, %s %s, is the correct answer? Explain your reasoning using conditional statements.\n''',
-    'contrastive': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', among the choices %s, %s, %s, %s %s, which is the most likely answer? Highlight what sets your choice apart from the others.\n''',
-    'neutral': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the correct answer to the question '%s' with the options %s, %s, %s, %s %s? Provide a straightforward explanation. \n''',
-    'causal': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. For the question '%s', what is the correct answer among the choices %s, %s, %s, %s %s? Explain the cause-and-effect relationship between the question and your chosen answer.\n''',
-    'comparative': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Compare the options %s, %s, %s, %s %s and identify the most likely answer to the question '%s'. Explain why your choice is better than the others.\n''',
-    'historical': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. Based on what is historically known, what is the most likely answer to the question '%s' with options %s, %s, %s, %s %s? Provide historical context in your rationale. \n''',
+    'consensus': '''Premise: %s, Hypothesis: %s. What is the commonly agreed-upon answer to the premise '%s' and hypothesis %s with options "entailment", "neutral", "contradiction"? Justify your answer based on general knowledge. \n''',
+    'if_else': '''Premise: %s, Hypothesis: %s. Given the premise '%s' and hypothesis %s, which among the choices "entailment", "neutral", "contradiction", is the correct answer? Explain your reasoning using conditional statements.\n''',
+    'contrastive': '''Premise: %s, Hypothesis: %s. For the premise '%s' and hypothesis %s, among the choices "entailment", "neutral", "contradiction", which is the most likely answer? Highlight what sets your choice apart from the others.\n''',
+    'neutral': '''Premise: %s, Hypothesis: %s. What is the correct answer to the premise '%s' and hypothesis %s with the options "entailment", "neutral", "contradiction"? Provide a straightforward explanation. \n''',
+    'causal': '''Premise: %s, Hypothesis: %s. For the premise '%s' and hypothesis %s, what is the correct answer among the options "entailment", "neutral", "contradiction"? Explain the cause-and-effect relationship between the question and your chosen answer.\n''',
+    'comparative': '''Premise: %s, Hypothesis: %s. Compare the options "entailment", "neutral", "contradiction" and identify the most likely answer to the premise '%s' and hypothesis %s. Explain why your choice is better than the others.\n''',
+    'historical': '''Premise: %s, Hypothesis: %s. Based on what is historically known, what is the most likely answer to the premise '%s' and hypothesis %s with options "entailment", "neutral", "contradiction"? Provide historical context in your rationale.\n''',
 }
 
 class APIData:
@@ -42,9 +42,9 @@ class APIData:
     
     def handle_data(self):
         self.data.rename(columns={'question': 'premise', 'choices': 'hypothesis'}, inplace=True)
-        self.data['hypothesis'] = self.data['hypothesis'].apply(ast.literal_eval)
-        self.data['prompt'] = self.data.apply(lambda x: self.prompt_template % (x['premise'], x['hypothesis'][0], x['hypothesis'][1], x['hypothesis'][2], x['hypothesis'][3], x['hypothesis'][4], 
-                                                                                x['premise'], x['hypothesis'][0], x['hypothesis'][1], x['hypothesis'][2], x['hypothesis'][3], x['hypothesis'][4]), axis=1)
+        # self.data['hypothesis'] = self.data['hypothesis'].apply(ast.literal_eval)
+        self.data['prompt'] = self.data.apply(lambda x: self.prompt_template % (x['premise'], x['hypothesis'], 
+                                                                                x['premise'], x['hypothesis']), axis=1)
         
         self.prompts = [self.get_bulk_prompt(self.data['prompt'][i:i+self.limit]) for i in range(0, len(self.data), self.limit)]
         self.premise = [self.data['premise'][i:i+self.limit].values for i in range(0, len(self.data), self.limit)]
@@ -109,10 +109,10 @@ class APIData:
         try:
             index_mask = self.data['premise'].isin(premise) & self.data['hypothesis'].isin(hypothesis)
             self.data.loc[index_mask, 'rationale'] = answer[:len(premise)]
-            self.data.to_csv(f'[API] CQA/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
+            self.data.to_csv(f'[API] ESNLI/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
         except Exception as e:
             print(answer)
-            self.data.to_csv(f'[API] CQA/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
+            self.data.to_csv(f'[API] ESNLI/{FOLDER}/{TYPE}_{self.idx}.csv', index=False)
         
     def run(self):
         self.handle_data()
@@ -126,18 +126,19 @@ class APIData:
 
 
 if __name__ == '__main__':
+    # data = pd.read_csv('[API] ESNLI/paper.csv', index_col=False)[['premise', 'hypothesis']]
+    data = pd.read_csv('[API] ESNLI/error.csv', index_col=False)[['premise', 'hypothesis']]
+
     with ThreadPoolExecutor(max_workers=20) as executor:
         for i in range(0, 100):
             start = i * 100
             end = (i+1) * 100
-            # data = pd.read_csv('[API] CQA/cqa_train.csv', index_col=False)[['question', 'choices']][start:end]
-            data = pd.read_csv('[API] CQA/error.csv', index_col=False)[['premise', 'hypothesis']]
-            data = data[start:end]
+            sub_data = data[start:end]
 
             # run get api data parallel by 3 tokens
             # print(f"Start api at token {i}")
             # APIData(data, i%3, i, tokens=None).run()
-            executor.submit(APIData(data, i%3, i, tokens=None).run)
+            executor.submit(APIData(sub_data, i%3, i, tokens=None).run)
             # print(start, end)
             # break
 
