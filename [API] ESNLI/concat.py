@@ -1,12 +1,12 @@
 import os, sys
 import pandas as pd
 
-type_rationale = "if_else"
+type_rationale = "contrastive"
 path = f"[API] ESNLI/{type_rationale}"
 
 # read all files in the directory and concatenate them
 files = os.listdir(path)
-# df = pd.DataFrame()
+df = pd.DataFrame()
 df = pd.read_csv(f"[API] ESNLI/{type_rationale}.csv", index_col=False)
 
 # for file in files:
@@ -16,7 +16,7 @@ df = pd.read_csv(f"[API] ESNLI/{type_rationale}.csv", index_col=False)
 
 error = pd.DataFrame()
 for file in files:
-    if 'error__' in file:
+    if 'error_0' in file:
         error = pd.concat([error, pd.read_csv(f"{path}/" + file, index_col=False)])
 
 # assign rationale from error file to df
