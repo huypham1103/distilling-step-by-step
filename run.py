@@ -181,40 +181,26 @@ def run(args):
 
         import pandas as pd
         from datasets import Dataset 
-        train = pd.DataFrame(datasets['train'])
-        train['question'] = train['input'].apply(lambda x: x.split('\n')[0])
-        train = train.set_index('question')
-        val = pd.DataFrame(datasets['valid'])
-        val['question'] = val['input'].apply(lambda x: x.split('\n')[0])
-        val = val.set_index('question')
         test = pd.DataFrame(datasets['test'])
-        test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
-        test = test.set_index('question')
-
-        # if args.dataset == 'esnli' and args.data_size:
-        #     train = train.sample(frac=args.data_size/100, random_state=0)
-        #     val = val.sample(frac=args.data_size/100, random_state=0)
-        #     val = pd.concat([val, train[5000:]])
-        #     train = train[:5000]
-
-        rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
-        rationales.set_index(['premise'], inplace=True)
-        # modify the encode char
-        train['rationale'] = rationales.loc[train.index]['rationale'].values
-        val['rationale'] = rationales.loc[val.index]['rationale'].values
-        # test['rationale'] = rationales.loc[test.index][f'rationales'].values
-
-        train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
-        # test['label'] = rationales.loc[test.index]['LLM_answer'].values
+        # test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
+        test = test.set_index('input')
         
+        rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+        rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
+        rationales.set_index('input', inplace=True)
+        rationales['label'] = rationales['LLM_answer']
+        rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
+        # split train, valid
+        train = rationales.sample(frac=0.8, random_state=0)
+        val = rationales.drop(train.index)
+                
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'question'],
+            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -234,60 +220,60 @@ def run(args):
 
 
 if __name__ == '__main__':
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument('--dataset', type=str, required=True)
-    # parser.add_argument('--subsample', type=float, default=1.0)
-    # parser.add_argument('--alpha', type=float, default=0.5)
-    # parser.add_argument('--max_steps', type=int, default=10000)
-    # parser.add_argument('--eval_steps', type=int, default=250)
-    # parser.add_argument('--batch_size', type=int, default=64)
-    # parser.add_argument('--optimizer_name', type=str, default='AdamW')
-    # parser.add_argument('--lr', type=float, default=5e-5)
-    # parser.add_argument('--run', type=int, default=0)
-    # parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
-    # parser.add_argument('--label_type', type=str, default='gt')
-    # parser.add_argument('--llm', type=str, default='palm')
-    # parser.add_argument('--max_input_length', type=int, default=1024)
-    # parser.add_argument('--grad_steps', type=int, default=1)
-    # parser.add_argument('--local_rank', type=int, default=-1)
-    # parser.add_argument('--gen_max_len', type=int, default=64)
-    # parser.add_argument('--parallelize', action='store_true')
-    # parser.add_argument('--model_type', type=str, default='task_prefix')
-    # parser.add_argument('--bf16', action='store_true')
-    # parser.add_argument('--no_log', action='store_true')
-    # parser.add_argument('--output_rationale', action='store_true')
-    # parser.add_argument('--type_rationale', type=str, default='if_else')
-    # parser.add_argument('--data_size', type=int, default=1)
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, required=True)
+    parser.add_argument('--subsample', type=float, default=1.0)
+    parser.add_argument('--alpha', type=float, default=0.5)
+    parser.add_argument('--max_steps', type=int, default=10000)
+    parser.add_argument('--eval_steps', type=int, default=250)
+    parser.add_argument('--batch_size', type=int, default=64)
+    parser.add_argument('--optimizer_name', type=str, default='AdamW')
+    parser.add_argument('--lr', type=float, default=5e-5)
+    parser.add_argument('--run', type=int, default=0)
+    parser.add_argument('--from_pretrained', type=str, default='google/t5-v1_1-base')
+    parser.add_argument('--label_type', type=str, default='gt')
+    parser.add_argument('--llm', type=str, default='palm')
+    parser.add_argument('--max_input_length', type=int, default=1024)
+    parser.add_argument('--grad_steps', type=int, default=1)
+    parser.add_argument('--local_rank', type=int, default=-1)
+    parser.add_argument('--gen_max_len', type=int, default=64)
+    parser.add_argument('--parallelize', action='store_true')
+    parser.add_argument('--model_type', type=str, default='task_prefix')
+    parser.add_argument('--bf16', action='store_true')
+    parser.add_argument('--no_log', action='store_true')
+    parser.add_argument('--output_rationale', action='store_true')
+    parser.add_argument('--type_rationale', type=str, default='if_else')
+    parser.add_argument('--data_size', type=int, default=1)
 
-    # args = parser.parse_args()
+    args = parser.parse_args()
 
-    dic = {
-        'dataset': 'esnli',
-        'subsample': 1.0,
-        'alpha': 0.5,
-        'max_steps': 10000,
-        'eval_steps': 1,
-        'batch_size': 2,
-        'optimizer_name': 'AdamW',
-        'lr': 5e-05,
-        'run': 0,
-        'from_pretrained': 'google/t5-v1_1-base',
-        'label_type': 'gt',
-        'llm': 'palm',
-        'max_input_length': 1024,
-        'grad_steps': 1,
-        'local_rank': -1,
-        'gen_max_len': 64,
-        'parallelize': False,
-        'model_type': 'task_prefix',
-        'bf16': False,
-        'no_log': False,
-        'output_rationale': False,
-        'type_rationale': 'neutral',
-        'data_size': 1
-    }
-    from types import SimpleNamespace
-    args = SimpleNamespace(**dic)
+    # dic = {
+    #     'dataset': 'esnli',
+    #     'subsample': 1.0,
+    #     'alpha': 0.5,
+    #     'max_steps': 10000,
+    #     'eval_steps': 1,
+    #     'batch_size': 2,
+    #     'optimizer_name': 'AdamW',
+    #     'lr': 5e-05,
+    #     'run': 0,
+    #     'from_pretrained': 'google/t5-v1_1-base',
+    #     'label_type': 'gt',
+    #     'llm': 'palm',
+    #     'max_input_length': 1024,
+    #     'grad_steps': 1,
+    #     'local_rank': -1,
+    #     'gen_max_len': 64,
+    #     'parallelize': False,
+    #     'model_type': 'task_prefix',
+    #     'bf16': False,
+    #     'no_log': False,
+    #     'output_rationale': False,
+    #     'type_rationale': 'neutral',
+    #     'data_size': 1
+    # }
+    # from types import SimpleNamespace
+    # args = SimpleNamespace(**dic)
 
     run(args)
     
