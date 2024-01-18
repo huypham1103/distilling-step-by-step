@@ -1,0 +1,3 @@
+premise,hypothesis,prompt,rationale
+Woman wearing green jacket taking a picture with a camera.,A woman in a green jacket takes photos.,"Premise: Woman wearing green jacket taking a picture with a camera., Hypothesis: A woman in a green jacket takes photos.. Based on what is historically known, what is the most likely answer to the premise 'Woman wearing green jacket taking a picture with a camera.' and hypothesis A woman in a green jacket takes photos. with options ""entailment"", ""neutral"", ""contradiction""? Provide historical context in your rationale.
+",
