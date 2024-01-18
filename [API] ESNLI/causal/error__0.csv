@@ -1,0 +1,3 @@
+premise,hypothesis,prompt,rationale
+"A person, dressed in green hoodie and shorts, stands in front of a vista of green hills.",The pers,"Premise: A person, dressed in green hoodie and shorts, stands in front of a vista of green hills., Hypothesis: The pers. For the premise 'A person, dressed in green hoodie and shorts, stands in front of a vista of green hills.' and hypothesis The pers, what is the correct answer among the options ""entailment"", ""neutral"", ""contradiction""? Explain the cause-and-effect relationship between the question and your chosen answer.
+",

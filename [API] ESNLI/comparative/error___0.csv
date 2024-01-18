@@ -1,0 +1,3 @@
+premise,hypothesis,prompt,rationale
+Two small dogs run across the green grass.,the pets are laying on the floor inside.,"Premise: Two small dogs run across the green grass., Hypothesis: the pets are laying on the floor inside.. Compare the options ""entailment"", ""neutral"", ""contradiction"" and identify the most likely answer to the premise 'Two small dogs run across the green grass.' and hypothesis the pets are laying on the floor inside.. Explain why your choice is better than the others.
+",
