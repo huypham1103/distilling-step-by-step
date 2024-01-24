@@ -1,7 +1,7 @@
 import os, sys
 import pandas as pd
 
-type_rationale = "historical"
+type_rationale = "consensus"
 path = f"[API] CQA/{type_rationale}"
 
 # read all files in the directory and concatenate them
@@ -16,7 +16,7 @@ df = pd.read_csv(f"[API] CQA/{type_rationale}.csv", index_col=False)
 
 error = pd.DataFrame()
 for file in files:
-    if 'error____' in file:
+    if 'error_____' in file:
         error = pd.concat([error, pd.read_csv(f"{path}/" + file, index_col=False)])
 
 # assign rationale from error file to df

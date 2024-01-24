@@ -14,8 +14,8 @@ from concurrent.futures import ThreadPoolExecutor
 # g4f.debug.version_check = False  # Disable automatic version checking
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
-FOLDER = 'historical'
-TYPE = 'error___'
+FOLDER = 'consensus'
+TYPE = 'error____'
 
 prompt_template=   {
     'consensus': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the commonly agreed-upon answer to the question '%s' with options %s, %s, %s, %s %s? Justify your answer based on general knowledge. \n''',
