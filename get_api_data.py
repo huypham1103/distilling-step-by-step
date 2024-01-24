@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
 FOLDER = 'consensus'
-TYPE = 'error____'
+TYPE = 'error_____________1'
 
 prompt_template=   {
     'consensus': '''Questions: %s, Choices: (A) %s, (B) %s, (C) %s, (D) %s, (E) %s. What is the commonly agreed-upon answer to the question '%s' with options %s, %s, %s, %s %s? Justify your answer based on general knowledge. \n''',
@@ -33,7 +33,7 @@ class APIData:
         self.data = data
         self.prompt_list = []
         self.prompt_template =   prompt_template[f'{FOLDER}']
-        self.limit = 10
+        self.limit = 5
         self.token_idx = token_idx
         self.idx = idx
         
