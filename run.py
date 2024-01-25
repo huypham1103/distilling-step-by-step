@@ -138,16 +138,22 @@ def run(args):
     if args.model_type == 'task_prefix' and args.llm is not None:
         def tokenize_function(examples):
             model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs = tokenizer(['explain: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            model_inputs['expl_input_ids'] = expl_model_inputs['input_ids']
-            model_inputs['expl_attention_mask'] = expl_model_inputs['attention_mask']
+            expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
+            model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
+            
+            model_inputs['expl_input_ids_2'] = expl_model_inputs_2['input_ids']
+            model_inputs['expl_attention_mask_2'] = expl_model_inputs_2['attention_mask']
 
             with tokenizer.as_target_tokenizer():
                 label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
-                rationale_output_encodings = tokenizer(examples['rationale'], max_length=256, truncation=True)
+                rationale_output_encodings_1 = tokenizer(examples['rationale_1'], max_length=256, truncation=True)
+                rationale_output_encodings_2 = tokenizer(examples['rationale_2'], max_length=256, truncation=True)
 
             model_inputs['labels'] = label_output_encodings['input_ids']
-            model_inputs['aux_labels'] = rationale_output_encodings['input_ids']
+            model_inputs['aux_labels_1'] = rationale_output_encodings_1['input_ids']
+            model_inputs['aux_labels_2'] = rationale_output_encodings_2['input_ids']
 
             return model_inputs
 
@@ -197,16 +203,20 @@ def run(args):
             val = pd.concat([val, train[5000:]])
             train = train[:5000]
 
-        rationales = pd.read_csv(f'[API] CQA/{args.type_rationale} - full.csv', delimiter=',', encoding='utf-8')
-        rationales.set_index(['premise'], inplace=True)
+        rationales_1 = pd.read_csv(f'[API] CQA/{args.extra_rationale_1} - full.csv')
+        rationales_2 = pd.read_csv(f'[API] CQA/{args.extra_rationale_2} - full.csv')
+        rationales_1.set_index(['premise'], inplace=True)
+        rationales_2.set_index(['premise'], inplace=True)
         # modify the encode char
-        train['rationale'] = rationales.loc[train.index]['rationale'].values
-        val['rationale'] = rationales.loc[val.index]['rationale'].values
-        # test['rationale'] = rationales.loc[test.index][f'rationales'].values
+        train['rationale_1'] = rationales_1.loc[train.index]['rationale'].values
+        val['rationale_1'] = rationales_1.loc[val.index]['rationale'].values
+        train['rationale_2'] = rationales_2.loc[train.index]['rationale'].values
+        val['rationale_2'] = rationales_2.loc[val.index]['rationale'].values
 
-        train['label'] = rationales.loc[train.index]['LLM_answer'].values
-        val['label'] = rationales.loc[val.index]['LLM_answer'].values
-        # test['label'] = rationales.loc[test.index]['LLM_answer'].values
+        train['label'] = rationales_1.loc[train.index]['LLM_answer'].values
+        val['label'] = rationales_1.loc[val.index]['LLM_answer'].values
+        test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        test['rationale_2'] = test['rationale_1']
         
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
@@ -214,7 +224,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'question'],
+            remove_columns=['input', 'rationale_1', 'rationale_2', 'label', 'llm_label', 'question'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -256,8 +266,9 @@ if __name__ == '__main__':
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
-    parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
+    parser.add_argument('--extra_rationale_1', type=str, default='if_else')
+    parser.add_argument('--extra_rationale_2', type=str, default='neutral')
 
     args = parser.parse_args()
 
@@ -280,11 +291,13 @@ if __name__ == '__main__':
     #     'gen_max_len': 64,
     #     'parallelize': False,
     #     'model_type': 'task_prefix',
-    #     'bf16': False,
-    #     'no_log': False,
-    #     'output_rationale': False,
-    #     'type_rationale': 'neutral',
-    #     'data_size': 1
+    #     'bf16': True,
+    #     'no_log': True,
+    #     'output_rationale': True,
+    #     # 'type_rationale': 'after_consensus_wucs_score',
+    #     'data_size': 1,
+    #     'extra_rationale_1': 'if_else',
+    #     'extra_rationale_2': 'neutral'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
