@@ -208,13 +208,15 @@ def run(args):
         rationales_1.set_index(['premise'], inplace=True)
         rationales_2.set_index(['premise'], inplace=True)
         # modify the encode char
-        train['rationale_1'] = rationales_1.loc[train.index]['rationale'].values
-        val['rationale_1'] = rationales_1.loc[val.index]['rationale'].values
+        train['rationale'] = rationales_1.loc[train.index]['rationale'].values
+        val['rationale'] = rationales_1.loc[val.index]['rationale'].values
         train['rationale_2'] = rationales_2.loc[train.index]['rationale'].values
         val['rationale_2'] = rationales_2.loc[val.index]['rationale'].values
 
         train['label'] = rationales_1.loc[train.index]['LLM_answer'].values
         val['label'] = rationales_1.loc[val.index]['LLM_answer'].values
+        train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        val.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test['rationale_2'] = test['rationale_1']
         
@@ -296,8 +298,8 @@ if __name__ == '__main__':
     #     'output_rationale': True,
     #     # 'type_rationale': 'after_consensus_wucs_score',
     #     'data_size': 1,
-    #     'extra_rationale_1': 'if_else',
-    #     'extra_rationale_2': 'neutral'
+    #     'extra_rationale_1': 'condition',
+    #     'extra_rationale_2': 'condition'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
