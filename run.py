@@ -220,6 +220,16 @@ def run(args):
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test['rationale_2'] = test['rationale_1']
         
+        train['label_2'] = rationales_2.loc[train.index]['LLM_answer'].values
+        val['label_2'] = rationales_2.loc[val.index]['LLM_answer'].values
+        
+        # if label_2 is different from label, then use the rationale_1 as rationale_2
+        train.loc[train['label'] != train['label_2'], 'rationale_2'] = train.loc[train['label'] != train['label_2'], 'rationale_1']
+        val.loc[val['label'] != val['label_2'], 'rationale_2'] = val.loc[val['label'] != val['label_2'], 'rationale_1']
+        train.drop(columns=['label_2'], inplace=True)
+        val.drop(columns=['label_2'], inplace=True)
+        
+        
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
