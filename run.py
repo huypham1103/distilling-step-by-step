@@ -138,16 +138,22 @@ def run(args):
     if args.model_type == 'task_prefix' and args.llm is not None:
         def tokenize_function(examples):
             model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs = tokenizer(['explain: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            model_inputs['expl_input_ids'] = expl_model_inputs['input_ids']
-            model_inputs['expl_attention_mask'] = expl_model_inputs['attention_mask']
+            expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
+            model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
+            
+            model_inputs['expl_input_ids_2'] = expl_model_inputs_2['input_ids']
+            model_inputs['expl_attention_mask_2'] = expl_model_inputs_2['attention_mask']
 
             with tokenizer.as_target_tokenizer():
                 label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
-                rationale_output_encodings = tokenizer(examples['rationale'], max_length=256, truncation=True)
+                rationale_output_encodings_1 = tokenizer(examples['rationale_1'], max_length=256, truncation=True)
+                rationale_output_encodings_2 = tokenizer(examples['rationale_2'], max_length=256, truncation=True)
 
             model_inputs['labels'] = label_output_encodings['input_ids']
-            model_inputs['aux_labels'] = rationale_output_encodings['input_ids']
+            model_inputs['aux_labels_1'] = rationale_output_encodings_1['input_ids']
+            model_inputs['aux_labels_2'] = rationale_output_encodings_2['input_ids']
 
             return model_inputs
 
@@ -182,17 +188,32 @@ def run(args):
         import pandas as pd
         from datasets import Dataset 
         test = pd.DataFrame(datasets['test'])
-        # test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('input')
         
-        rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
-        rationales.set_index('input', inplace=True)
-        rationales['label'] = rationales['LLM_answer']
-        rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
+        rationales_1 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_1} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+        rationales_2 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_2} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+
+        rationales_1['input'] = rationales_1['premise'] + '</s>' + rationales_1['hypothesis']
+        rationales_2['input'] = rationales_2['premise'] + '</s>' + rationales_2['hypothesis']
+        rationales_1.set_index('input', inplace=True, drop=True)
+        rationales_2.set_index('input', inplace=True, drop=True)
+        rationales_1.loc[rationales_2.index, 'rationale_2'] = rationales_2['rationale']
+        rationales_1.loc[rationales_2.index, 'label_2'] = rationales_2['LLM_answer']
+        rationales_1.rename(columns={'LLM_answer': 'label'}, inplace=True)
         # split train, valid
-        train = rationales.sample(frac=0.8, random_state=0)
-        val = rationales.drop(train.index)
+        train = rationales_1.sample(frac=0.8, random_state=0)
+        val = rationales_1.drop(train.index)
+       
+        train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        val.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        test['rationale_2'] = test['rationale_1']
+
+        # if label_2 is different from label, then use the rationale_1 as rationale_2
+        train.loc[train['label'] != train['label_2'], 'rationale_2'] = train.loc[train['label'] != train['label_2'], 'rationale_1']
+        val.loc[val['label'] != val['label_2'], 'rationale_2'] = val.loc[val['label'] != val['label_2'], 'rationale_1']
+        train.drop(columns=['label_2'], inplace=True)
+        val.drop(columns=['label_2'], inplace=True)
                 
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
@@ -200,7 +221,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
+            remove_columns=['input', 'rationale_1', 'rationale_2', 'label', 'premise', 'hypothesis'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -242,8 +263,9 @@ if __name__ == '__main__':
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
-    parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
+    parser.add_argument('--extra_rationale_1', type=str, default='if_else')
+    parser.add_argument('--extra_rationale_2', type=str, default='neutral')
 
     args = parser.parse_args()
 
@@ -269,8 +291,9 @@ if __name__ == '__main__':
     #     'bf16': False,
     #     'no_log': False,
     #     'output_rationale': False,
-    #     'type_rationale': 'paper',
-    #     'data_size': 1
+    #     'data_size': 1,
+    #     'extra_rationale_1': 'condition',
+    #     'extra_rationale_2': 'comparative'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)

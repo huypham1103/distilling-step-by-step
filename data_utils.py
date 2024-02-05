@@ -348,7 +348,7 @@ class ASDivDatasetLoader(DatasetLoader):
 
 
 class ESNLIDatasetLoader(DatasetLoader):
-    def __init__(self, subset='full'):
+    def __init__(self, subset='small'):
         dataset_name = 'esnli'
         source_dataset_name = 'esnli'
         dataset_version = None
