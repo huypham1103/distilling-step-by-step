@@ -293,7 +293,7 @@ if __name__ == '__main__':
     #     'output_rationale': False,
     #     'data_size': 1,
     #     'extra_rationale_1': 'condition',
-    #     'extra_rationale_2': 'comparative'
+    #     'extra_rationale_2': 'historical'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
