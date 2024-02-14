@@ -14,8 +14,8 @@ from concurrent.futures import ThreadPoolExecutor
 # g4f.debug.version_check = False  # Disable automatic version checking
 # print(g4f.Provider.Bing.params)  # Print supported args for Bing
 
-FOLDER = 'contrastive'
-TYPE = 'error'
+FOLDER = 'comparative'
+TYPE = 'miss'
 
 prompt_template=   {
     'consensus': '''Premise: %s, Hypothesis: %s. What is the commonly agreed-upon answer to the premise '%s' and hypothesis %s with options "entailment", "neutral", "contradiction"? Justify your answer based on general knowledge. \n''',

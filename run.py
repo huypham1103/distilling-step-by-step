@@ -292,8 +292,8 @@ if __name__ == '__main__':
     #     'no_log': False,
     #     'output_rationale': False,
     #     'data_size': 1,
-    #     'extra_rationale_1': 'condition',
-    #     'extra_rationale_2': 'historical'
+    #     'extra_rationale_1': 'causal',
+    #     'extra_rationale_2': 'condition'
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
