@@ -1,72 +1,23 @@
-# import requests
+from linkedin_api import Linkedin
 
-# # Replace these with your actual values
-# ocid = "winp1"
-# apikey = "0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM"
-# # userid = "your_userid"
-# activityid = "A8A195ED-C626-4355-A7BB-76DFE3F24AB3"
+# Authenticate using any Linkedin account credentials
+api = Linkedin('huyquochoan7@gmail.com', '123456789huy')
 
-# url = "https://api.msn.com/news/Feed"
-# params = {
-#     "ocid": ocid,
-#     "market": "en-us",
-#     "query": "Lifestyle",  # Updated to target Lifestyle content
-#     "$top": 100,
-#     "$skip": 0,
-#     "$select": "sourceid,type,url,provider,title,images,publishedDateTime,categories",
-#     "apikey": apikey,
-#     # "userid": userid,
-#     "activityid": activityid
-# }
+# GET a profile
+profile = api.get_profile('Dr. Christof Henkel')
+# profile = api.get_profile('abbyspeicher')
+# post = api.get_profile_posts('abbyspeicher')
+# detail = api.get_post_comments(post_urn='urn:li:activity:6505933340296777728')
 
-# response = requests.get(url, params=params)
-
-# if response.status_code == 200:
-#     data = response.json()
-#     # Process the data as needed, e.g., print titles and URLs
-#     for article in data['articles']:
-#         print(f"Title: {article['title']}, URL: {article['url']}")
-# else:
-#     print(f"Failed to retrieve data: {response.status_code}, {response.text}")
-
-
-
-import requests
-
-url = "https://assets.msn.com/service/community/comments/"
-
-headers = {
-    'accept': '*/*',
-    'accept-language': 'en-US,en;q=0.5',
-    'authority': 'assets.msn.com',
-    'origin': 'https://www.msn.com',
-    'referer': 'https://www.msn.com/',
-    'sec-fetch-dest': 'empty',
-    'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-site',
-    'sec-gpc': '1',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36',
-}
-
-params = {
-    'contentId': 'AA1n8sJI_en-us',
-    '$top': 6,
-    '$skip': 0,
-    '$orderby': 'Usefulness',
-    'apikey': '0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM',
-    'activityId': 'A8A195ED-C626-4355-A7BB-76DFE3F24AB3',
-    'ocid': 'social-peregrine',
-    'cm': 'en-us',
-    'it': 'web',
-    'user': 'm-30B56E303AA56CB42B6A7DED3BC36D60',
-    'wrapodata': 'false'
-}
-
-response = requests.get(url, headers=headers, params=params)
-
-if response.status_code == 200:
-    data = response.json()
-    # Process the data as needed
-    print(data)
-else:
-    print(f"Failed to retrieve data: {response.status_code}, {response.text}")
+# post = api.search({'keywords': 'hiring', 'template': 'CONTENT_A'}, limit=100)
+# GET a profiles contact info
+# contact_info = api.get_profile_contact_info('abbyspeicher')
+# api.get_feed_posts
+# temp = api.search_people(connection_of='ACoAAA8-pd0BA8H2los1nsKbUfIFJ6L10MPYqgc')
+# GET 1st degree connections of a given profile
+# connections = api.get_profile_connections('1234asc12304')
+# temp = api.search_companies(keywords='Delhi University')
+# temp = api.search_people(keyword_company='Trevena, Inc.')
+# temp = api.search_people(schools='79825902')
+print(profile)
+print(api.get_profile_contact_info('dr-christof-henkel-766a54ba'))
