@@ -285,6 +285,8 @@ if __name__ == '__main__':
     parser.add_argument('--data_size', type=int, default=1)
     parser.add_argument('--extra_rationale_1', type=str, default='if_else')
     parser.add_argument('--extra_rationale_2', type=str, default='neutral')
+    parser.add_argument('--extra_rationale_3', type=str, default='neutral')
+
 
     args = parser.parse_args()
 
