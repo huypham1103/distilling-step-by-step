@@ -26,20 +26,26 @@ from transformers import Seq2SeqTrainer
 class TaskPrefixDataCollator(DataCollatorForSeq2Seq):
     def __call__(self, features, return_tensors=None):
         features_df = pd.DataFrame(features)
-        pred_features = features_df.loc[:, ~features_df.columns.isin(['aux_labels_1', 'aux_labels_2', 'expl_input_ids_1', 'expl_attention_mask_1', 'expl_input_ids_2', 'expl_attention_mask_2'])].to_dict('records')
-        expl_features_1 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_2', 'expl_input_ids_2', 'expl_attention_mask_2'])].rename(
+        pred_features = features_df.loc[:, ~features_df.columns.isin(['aux_labels_1', 'aux_labels_2', 'aux_labels_3', 'expl_input_ids_1', 'expl_attention_mask_1', 'expl_input_ids_2', 'expl_attention_mask_2', 'expl_input_ids_3', 'expl_attention_mask_3'])].to_dict('records')
+        expl_features_1 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_2', 'expl_input_ids_2', 'expl_attention_mask_2', 'aux_labels_3', 'expl_input_ids_3', 'expl_attention_mask_3',])].rename(
             columns={'aux_labels_1': 'labels', 'expl_input_ids_1': 'input_ids', 'expl_attention_mask_1': 'attention_mask'}).to_dict('records')
 
-        expl_features_2 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'expl_input_ids_1', 'expl_attention_mask_1'])].rename(
+        expl_features_2 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'expl_input_ids_1', 'expl_attention_mask_1', 'aux_labels_3', 'expl_input_ids_3', 'expl_attention_mask_3',])].rename(
             columns={'aux_labels_2': 'labels', 'expl_input_ids_2': 'input_ids', 'expl_attention_mask_2': 'attention_mask'}).to_dict('records')
+        
+        expl_features_3 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'expl_input_ids_1', 'expl_attention_mask_1', 'aux_labels_2', 'expl_input_ids_2', 'expl_attention_mask_2'])].rename(
+            columns={'aux_labels_3': 'labels', 'expl_input_ids_3': 'input_ids', 'expl_attention_mask_3': 'attention_mask'}).to_dict('records')
+        
         pred_features = super().__call__(pred_features, return_tensors)
         expl_features_1 = super().__call__(expl_features_1, return_tensors)
         expl_features_2 = super().__call__(expl_features_2, return_tensors)
+        expl_features_3 = super().__call__(expl_features_3, return_tensors)
 
         return {
             'pred': pred_features,
             'expl_1': expl_features_1,
             'expl_2': expl_features_2,
+            'expl_3': expl_features_3,
         }
 
 
@@ -54,9 +60,10 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         pred_outputs = model(**inputs['pred'])
         expl_outputs_1 = model(**inputs['expl_1'])
         expl_outputs_2 = model(**inputs['expl_2'])
+        expl_outputs_3 = model(**inputs['expl_3'])
 
-        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * (expl_outputs_1.loss + expl_outputs_2.loss) / 2.
-        return (loss, {'pred': pred_outputs, 'expl_1': expl_outputs_1, 'expl_2': expl_outputs_2}) if return_outputs else loss
+        loss = self.alpha * pred_outputs.loss + (1. - self.alpha) * (expl_outputs_1.loss + expl_outputs_2.loss + expl_outputs_3.loss) / 3.
+        return (loss, {'pred': pred_outputs, 'expl_1': expl_outputs_1, 'expl_2': expl_outputs_2, 'expl_3': expl_outputs_3}) if return_outputs else loss
 
 
     def prediction_step(
@@ -71,6 +78,7 @@ class TaskPrefixTrainer(Seq2SeqTrainer):
         if self.output_rationale:
             expl_outputs_1 = super().prediction_step(model, inputs['expl_1'], prediction_loss_only=False, ignore_keys=ignore_keys)
             expl_outputs_2 = super().prediction_step(model, inputs['expl_2'], prediction_loss_only=False, ignore_keys=ignore_keys)
+            expl_outputs_3 = super().prediction_step(model, inputs['expl_3'], prediction_loss_only=False, ignore_keys=ignore_keys)
         else:
             expl_outputs = pred_outputs # placeholder only
 

@@ -140,21 +140,26 @@ def run(args):
             model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
             expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
             expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
+            expl_model_inputs_3 = tokenizer([f'explain {args.extra_rationale_3}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
             model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
             model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
             
             model_inputs['expl_input_ids_2'] = expl_model_inputs_2['input_ids']
             model_inputs['expl_attention_mask_2'] = expl_model_inputs_2['attention_mask']
 
+            model_inputs['expl_input_ids_3'] = expl_model_inputs_3['input_ids']
+            model_inputs['expl_attention_mask_3'] = expl_model_inputs_3['attention_mask']
             with tokenizer.as_target_tokenizer():
                 label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
                 rationale_output_encodings_1 = tokenizer(examples['rationale_1'], max_length=256, truncation=True)
                 rationale_output_encodings_2 = tokenizer(examples['rationale_2'], max_length=256, truncation=True)
+                rationale_output_encodings_3 = tokenizer(examples['rationale_3'], max_length=256, truncation=True)
 
             model_inputs['labels'] = label_output_encodings['input_ids']
             model_inputs['aux_labels_1'] = rationale_output_encodings_1['input_ids']
             model_inputs['aux_labels_2'] = rationale_output_encodings_2['input_ids']
-
+            model_inputs['aux_labels_3'] = rationale_output_encodings_3['input_ids']
+                
             return model_inputs
 
     elif args.model_type == 'standard':
@@ -192,13 +197,20 @@ def run(args):
         
         rationales_1 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_1} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
         rationales_2 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_2} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-
+        rationales_3 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_3} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+        
         rationales_1['input'] = rationales_1['premise'] + '</s>' + rationales_1['hypothesis']
         rationales_2['input'] = rationales_2['premise'] + '</s>' + rationales_2['hypothesis']
+        rationales_3['input'] = rationales_3['premise'] + '</s>' + rationales_3['hypothesis']
+        
         rationales_1.set_index('input', inplace=True, drop=True)
         rationales_2.set_index('input', inplace=True, drop=True)
+        rationales_3.set_index('input', inplace=True, drop=True)
+        
         rationales_1.loc[rationales_2.index, 'rationale_2'] = rationales_2['rationale']
         rationales_1.loc[rationales_2.index, 'label_2'] = rationales_2['LLM_answer']
+        rationales_1.loc[rationales_3.index, 'rationale_3'] = rationales_3['rationale']
+        rationales_1.loc[rationales_3.index, 'label_3'] = rationales_3['LLM_answer']
         rationales_1.rename(columns={'LLM_answer': 'label'}, inplace=True)
         # split train, valid
         train = rationales_1.sample(frac=0.8, random_state=0)
@@ -208,6 +220,7 @@ def run(args):
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test['rationale_2'] = test['rationale_1']
+        test['rationale_3'] = test['rationale_1']
 
         # if label_2 is different from label, then use the rationale_1 as rationale_2
         train.loc[train['label'] != train['label_2'], 'rationale_2'] = train.loc[train['label'] != train['label_2'], 'rationale_1']
@@ -215,13 +228,19 @@ def run(args):
         train.drop(columns=['label_2'], inplace=True)
         val.drop(columns=['label_2'], inplace=True)
                 
+        # if label_3 is different from label, then use the rationale_1 as rationale_3
+        train.loc[train['label'] != train['label_3'], 'rationale_3'] = train.loc[train['label'] != train['label_3'], 'rationale_1']
+        val.loc[val['label'] != val['label_3'], 'rationale_3'] = val.loc[val['label'] != val['label_3'], 'rationale_1']
+        train.drop(columns=['label_3'], inplace=True)
+        val.drop(columns=['label_3'], inplace=True)
+        
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale_1', 'rationale_2', 'label', 'premise', 'hypothesis'],
+            remove_columns=['input', 'rationale_1', 'rationale_2', 'rationale_3', 'label', 'premise', 'hypothesis'],
             batched=True
         )
     if args.model_type == 'standard':
@@ -293,7 +312,8 @@ if __name__ == '__main__':
     #     'output_rationale': False,
     #     'data_size': 1,
     #     'extra_rationale_1': 'causal',
-    #     'extra_rationale_2': 'condition'
+    #     'extra_rationale_2': 'condition',
+    #     'extra_rationale_3': 'causal',
     # }
     # from types import SimpleNamespace
     # args = SimpleNamespace(**dic)
