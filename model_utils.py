@@ -36,6 +36,9 @@ class TaskPrefixDataCollator(DataCollatorForSeq2Seq):
         expl_features_3 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'expl_input_ids_1', 'expl_attention_mask_1', 'aux_labels_2', 'expl_input_ids_2', 'expl_attention_mask_2', 'aux_labels_4', 'expl_input_ids_4', 'expl_attention_mask_4'])].rename(
             columns={'aux_labels_3': 'labels', 'expl_input_ids_3': 'input_ids', 'expl_attention_mask_3': 'attention_mask'}).to_dict('records')
         
+        expl_features_4 = features_df.loc[:, ~features_df.columns.isin(['labels', 'input_ids', 'attention_mask', 'aux_labels_1', 'expl_input_ids_1', 'expl_attention_mask_1', 'aux_labels_2', 'expl_input_ids_2', 'expl_attention_mask_2', 'aux_labels_3', 'expl_input_ids_3', 'expl_attention_mask_3'])].rename(
+            columns={'aux_labels_4': 'labels', 'expl_input_ids_4': 'input_ids', 'expl_attention_mask_4': 'attention_mask'}).to_dict('records')
+        
         pred_features = super().__call__(pred_features, return_tensors)
         expl_features_1 = super().__call__(expl_features_1, return_tensors)
         expl_features_2 = super().__call__(expl_features_2, return_tensors)
