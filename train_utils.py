@@ -107,5 +107,5 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
     
 
     trainer.train()
-    output_path = f'../model_path/{args.extra_rationale_1}_{args.extra_rationale_2}_{args.extra_rationale_3}'
+    output_path = f'../model_path/{args.extra_rationale_1}_{args.extra_rationale_2}_{args.extra_rationale_3}_{args.extra_rationale_4}'
     trainer.save_model(output_path)
