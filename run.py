@@ -181,26 +181,26 @@ def run(args):
 
         import pandas as pd
         from datasets import Dataset 
-        test = pd.DataFrame(datasets['test'])
-        # test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
-        test = test.set_index('input')
-        
-        rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
+
+        rationales = pd.read_csv(
+            '/home/huy/Desktop/HCMUS/distilling-step-by-step/trained_str.csv'
+        )[['image_str', 'description', 'llm_label']]
+        rationales.rename(columns={'image_str': 'input', 'description': 'rationale', 'llm_label': 'label'}, inplace=True)
         rationales.set_index('input', inplace=True)
-        rationales['label'] = rationales['LLM_answer']
-        rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
+        
         # split train, valid
         train = rationales.sample(frac=0.8, random_state=0)
-        val = rationales.drop(train.index)
-                
+        val = rationales.drop(train.index).sample(frac=0.5, random_state=0)
+        test = rationales.drop(train.index).drop(val.index)
+        test.to_csv('test.csv')
+
         datasets['train'] = Dataset.from_pandas(train.reset_index())
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
+            remove_columns=['input', 'rationale', 'label'],
             batched=True
         )
     if args.model_type == 'standard':
