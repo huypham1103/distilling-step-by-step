@@ -183,7 +183,7 @@ def run(args):
         from datasets import Dataset 
 
         rationales = pd.read_csv(
-            '/home/huy/Desktop/HCMUS/distilling-step-by-step/trained_str.csv'
+            'trained_str.csv'
         )[['image_str', 'description', 'llm_label']]
         rationales.rename(columns={'image_str': 'input', 'description': 'rationale', 'llm_label': 'label'}, inplace=True)
         rationales.set_index('input', inplace=True)
