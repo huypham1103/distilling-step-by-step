@@ -61,7 +61,6 @@ def build_task_prefix_tokenize_function(tokenizer, args, rationale_indices):
         )
         for index in rationale_indices:
             rationale_type_column = f'rationale_type_{index}'
-            rationale_column = f'rationale_{index}'
             expl_model_inputs = tokenizer(
                 [
                     f'explain {rationale_type}: {text}'
@@ -73,16 +72,15 @@ def build_task_prefix_tokenize_function(tokenizer, args, rationale_indices):
             model_inputs[f'expl_input_ids_{index}'] = expl_model_inputs['input_ids']
             model_inputs[f'expl_attention_mask_{index}'] = expl_model_inputs['attention_mask']
 
-        with tokenizer.as_target_tokenizer():
-            label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
-            model_inputs['labels'] = label_output_encodings['input_ids']
-            for index in rationale_indices:
-                rationale_output_encodings = tokenizer(
-                    examples[f'rationale_{index}'],
-                    max_length=256,
-                    truncation=True
-                )
-                model_inputs[f'aux_labels_{index}'] = rationale_output_encodings['input_ids']
+        label_output_encodings = tokenizer(text_target=examples['label'], max_length=256, truncation=True)
+        model_inputs['labels'] = label_output_encodings['input_ids']
+        for index in rationale_indices:
+            rationale_output_encodings = tokenizer(
+                text_target=examples[f'rationale_{index}'],
+                max_length=256,
+                truncation=True
+            )
+            model_inputs[f'aux_labels_{index}'] = rationale_output_encodings['input_ids']
 
         return model_inputs
 
@@ -222,8 +220,7 @@ def run(args):
                 truncation=True
             )
 
-            with tokenizer.as_target_tokenizer():
-                label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
+            label_output_encodings = tokenizer(text_target=examples['label'], max_length=256, truncation=True)
 
             model_inputs['labels'] = label_output_encodings['input_ids']
 
