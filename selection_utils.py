@@ -363,7 +363,7 @@ def maybe_attach_official_esnli_splits(canonical: pd.DataFrame) -> Tuple[pd.Data
         from datasets import load_dataset  # type: ignore
         split_lookup: Dict[str, str] = {}
         label_lookup: Dict[str, str] = {}
-        dataset = load_dataset('esnli')
+        dataset = load_dataset('esnli', trust_remote_code=True)
         label_mapping = {0: 'entailment', 1: 'neutral', 2: 'contradiction'}
 
         for split_name, split_key in [('train', 'train'), ('valid', 'validation'), ('test', 'test')]:
