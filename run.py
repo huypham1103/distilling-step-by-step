@@ -50,6 +50,25 @@ def load_selected_rationale_datasets(selected_rationale_path):
     if missing_columns:
         raise ValueError(f'Selected rationale dataset is missing required columns: {sorted(missing_columns)}')
 
+    dataframe = dataframe.copy()
+    dataframe['split'] = (
+        dataframe['split']
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .replace({'validation': 'valid', 'dev': 'valid'})
+    )
+
+    split_counts = dataframe['split'].value_counts().to_dict()
+    if 'valid' not in split_counts or split_counts.get('valid', 0) == 0:
+        train_frame = dataframe[dataframe['split'] == 'train'].copy()
+        if train_frame.empty:
+            raise ValueError('Selected rationale dataset does not contain a usable "train" split to derive validation data from.')
+        valid_size = max(1, int(round(len(train_frame) * 0.1)))
+        valid_size = min(valid_size, len(train_frame))
+        valid_frame = train_frame.sample(n=valid_size, random_state=0)
+        dataframe.loc[valid_frame.index, 'split'] = 'valid'
+
     datasets = {}
     for split_name in ['train', 'valid', 'test']:
         split_frame = dataframe[dataframe['split'] == split_name].copy()
