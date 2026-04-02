@@ -356,11 +356,39 @@ def _stratified_split(labels: Sequence[str], seed: int) -> List[str]:
 
 
 def maybe_attach_official_esnli_splits(canonical: pd.DataFrame) -> Tuple[pd.DataFrame, Dict[str, object]]:
+    repo_root = os.getcwd()
+    original_path = list(sys.path)
     try:
-        repo_root = os.getcwd()
-        original_path = list(sys.path)
         sys.path = [path for path in sys.path if path not in ('', repo_root)]
         from datasets import load_dataset  # type: ignore
+        split_lookup: Dict[str, str] = {}
+        label_lookup: Dict[str, str] = {}
+        dataset = load_dataset('esnli')
+        label_mapping = {0: 'entailment', 1: 'neutral', 2: 'contradiction'}
+
+        for split_name, split_key in [('train', 'train'), ('valid', 'validation'), ('test', 'test')]:
+            frame = pd.DataFrame(dataset[split_key])[['premise', 'hypothesis', 'label']]
+            frame['label'] = frame['label'].map(label_mapping)
+            frame['pair_key'] = frame.apply(lambda row: build_pair_key(row['premise'], row['hypothesis']), axis=1)
+            for record in frame[['pair_key', 'label']].drop_duplicates('pair_key').itertuples(index=False):
+                split_lookup[record.pair_key] = split_name
+                label_lookup[record.pair_key] = record.label
+
+        canonical = canonical.copy()
+        canonical['split'] = canonical['pair_key'].map(split_lookup)
+        canonical['official_label'] = canonical['pair_key'].map(label_lookup)
+        matched = canonical['split'].notna()
+        label_mismatches = int((matched & (canonical['label'] != canonical['official_label'])).sum())
+        unmatched = canonical['split'].isna()
+        if unmatched.any():
+            canonical.loc[unmatched, 'split'] = _stratified_split(canonical.loc[unmatched, 'label'].tolist(), seed=0)
+        canonical = canonical.drop(columns=['official_label'])
+        return canonical, {
+            'split_source': 'official_esnli',
+            'matched_pairs': int(matched.sum()),
+            'unmatched_pairs': int(unmatched.sum()),
+            'label_mismatches': label_mismatches,
+        }
     except Exception as exc:
         canonical = canonical.copy()
         canonical['split'] = _stratified_split(canonical['label'].tolist(), seed=0)
@@ -370,35 +398,6 @@ def maybe_attach_official_esnli_splits(canonical: pd.DataFrame) -> Tuple[pd.Data
         }
     finally:
         sys.path = original_path
-
-    split_lookup: Dict[str, str] = {}
-    label_lookup: Dict[str, str] = {}
-    dataset = load_dataset('esnli')
-    label_mapping = {0: 'entailment', 1: 'neutral', 2: 'contradiction'}
-
-    for split_name, split_key in [('train', 'train'), ('valid', 'validation'), ('test', 'test')]:
-        frame = pd.DataFrame(dataset[split_key])[['premise', 'hypothesis', 'label']]
-        frame['label'] = frame['label'].map(label_mapping)
-        frame['pair_key'] = frame.apply(lambda row: build_pair_key(row['premise'], row['hypothesis']), axis=1)
-        for record in frame[['pair_key', 'label']].drop_duplicates('pair_key').itertuples(index=False):
-            split_lookup[record.pair_key] = split_name
-            label_lookup[record.pair_key] = record.label
-
-    canonical = canonical.copy()
-    canonical['split'] = canonical['pair_key'].map(split_lookup)
-    canonical['official_label'] = canonical['pair_key'].map(label_lookup)
-    matched = canonical['split'].notna()
-    label_mismatches = int((matched & (canonical['label'] != canonical['official_label'])).sum())
-    unmatched = canonical['split'].isna()
-    if unmatched.any():
-        canonical.loc[unmatched, 'split'] = _stratified_split(canonical.loc[unmatched, 'label'].tolist(), seed=0)
-    canonical = canonical.drop(columns=['official_label'])
-    return canonical, {
-        'split_source': 'official_esnli',
-        'matched_pairs': int(matched.sum()),
-        'unmatched_pairs': int(unmatched.sum()),
-        'label_mismatches': label_mismatches,
-    }
 
 
 def _collect_candidates(row: pd.Series, rationale_types: Sequence[str]) -> List[CandidateScore]:
