@@ -71,6 +71,34 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
     return {key: value for key, value in kwargs.items() if key in supported_params}
 
 
+def build_trainer_kwargs(
+    trainer_class,
+    args,
+    training_args,
+    model,
+    tokenized_datasets,
+    data_collator,
+    tokenizer,
+    compute_metrics,
+):
+    kwargs = {
+        'alpha': args.alpha,
+        'output_rationale': args.output_rationale,
+        'model': model,
+        'args': training_args,
+        'train_dataset': tokenized_datasets['train'],
+        'eval_dataset': {'test': tokenized_datasets['valid']},
+        'data_collator': data_collator,
+        'tokenizer': tokenizer,
+        'processing_class': tokenizer,
+        'compute_metrics': compute_metrics,
+    }
+
+    signature = inspect.signature(trainer_class.__init__)
+    supported_params = set(signature.parameters)
+    return {key: value for key, value in kwargs.items() if key in supported_params}
+
+
 def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics):
     set_seed(run)
 
@@ -108,24 +136,29 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         raise ValueError
 
 
-    trainer_kwargs = {
-        'alpha': args.alpha,
-        'output_rationale': args.output_rationale,
-        'model': model,
-        'args': training_args,
-        'train_dataset': tokenized_datasets["train"],
-        'eval_dataset': {'test': tokenized_datasets["valid"],},
-        'data_collator': data_collator,
-        'tokenizer': tokenizer,
-        'compute_metrics': compute_metrics,
-    }
-    
-
     if args.model_type == 'task_prefix':
+        trainer_kwargs = build_trainer_kwargs(
+            TaskPrefixTrainer,
+            args,
+            training_args,
+            model,
+            tokenized_datasets,
+            data_collator,
+            tokenizer,
+            compute_metrics,
+        )
         trainer = TaskPrefixTrainer(**trainer_kwargs)
     elif args.model_type == 'standard':
-        trainer_kwargs.pop('alpha')
-        trainer_kwargs.pop('output_rationale')
+        trainer_kwargs = build_trainer_kwargs(
+            Seq2SeqTrainer,
+            args,
+            training_args,
+            model,
+            tokenized_datasets,
+            data_collator,
+            tokenizer,
+            compute_metrics,
+        )
         trainer = Seq2SeqTrainer(**trainer_kwargs)
     else:
         raise ValueError
