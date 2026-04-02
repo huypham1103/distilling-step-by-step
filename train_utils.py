@@ -16,6 +16,7 @@
 import os
 import shutil
 import logging
+import inspect
 
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 from transformers import T5ForConditionalGeneration
@@ -28,6 +29,46 @@ from model_utils import TaskPrefixDataCollator, TaskPrefixTrainer
 def get_config_dir(args):
     selection_tag = args.selection_policy if getattr(args, 'selected_rationale_path', None) else args.llm
     return f'{args.dataset}/{args.from_pretrained.split("/")[1]}/{args.model_type}/{selection_tag}/{args.subsample}/{args.label_type}/{args.alpha}/{args.max_input_length}/{args.grad_steps*args.batch_size}/{args.optimizer_name}/{args.lr}'
+
+
+def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run):
+    kwargs = {
+        'output_dir': output_dir,
+        'remove_unused_columns': False,
+        'eval_steps': args.eval_steps,
+        'save_steps': args.eval_steps,
+        'logging_dir': logging_dir,
+        'logging_steps': args.eval_steps,
+        'max_steps': args.max_steps,
+        'learning_rate': args.lr,
+        'gradient_accumulation_steps': args.grad_steps,
+        'per_device_train_batch_size': args.batch_size,
+        'per_device_eval_batch_size': args.batch_size,
+        'predict_with_generate': True,
+        'seed': run,
+        'local_rank': args.local_rank,
+        'bf16': args.bf16,
+        'fp16': getattr(args, 'fp16', False),
+        'gradient_checkpointing': getattr(args, 'gradient_checkpointing', False),
+        'generation_max_length': args.gen_max_len,
+        'prediction_loss_only': False,
+    }
+
+    signature = inspect.signature(Seq2SeqTrainingArguments.__init__)
+    supported_params = set(signature.parameters)
+
+    if 'evaluation_strategy' in supported_params:
+        kwargs['evaluation_strategy'] = 'steps'
+    elif 'eval_strategy' in supported_params:
+        kwargs['eval_strategy'] = 'steps'
+
+    if 'save_strategy' in supported_params:
+        kwargs['save_strategy'] = 'no'
+
+    if 'logging_strategy' in supported_params:
+        kwargs['logging_strategy'] = logging_strategy
+
+    return {key: value for key, value in kwargs.items() if key in supported_params}
 
 
 def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics):
@@ -56,28 +97,7 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         shutil.rmtree(output_dir)
 
     training_args = Seq2SeqTrainingArguments(
-        output_dir,
-        remove_unused_columns = False,
-        evaluation_strategy = 'steps',
-        eval_steps=args.eval_steps,
-        save_strategy='no',
-        save_steps=args.eval_steps,
-        logging_dir=logging_dir,
-        logging_strategy=logging_strategy,
-        logging_steps=args.eval_steps,
-        max_steps=args.max_steps,
-        learning_rate=args.lr,
-        gradient_accumulation_steps=args.grad_steps,
-        per_device_train_batch_size=args.batch_size,
-        per_device_eval_batch_size=args.batch_size,
-        predict_with_generate=True,
-        seed=run,
-        local_rank=args.local_rank,
-        bf16=args.bf16,
-        fp16=getattr(args, 'fp16', False),
-        gradient_checkpointing=getattr(args, 'gradient_checkpointing', False),
-        generation_max_length=args.gen_max_len,
-        prediction_loss_only=False,
+        **build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run)
     )
 
     if args.model_type == 'task_prefix':
