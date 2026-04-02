@@ -26,13 +26,16 @@ from model_utils import TaskPrefixDataCollator, TaskPrefixTrainer
 
 
 def get_config_dir(args):
-    return f'{args.dataset}/{args.from_pretrained.split("/")[1]}/{args.model_type}/{args.llm}/{args.subsample}/{args.label_type}/{args.alpha}/{args.max_input_length}/{args.grad_steps*args.batch_size}/{args.optimizer_name}/{args.lr}'
+    selection_tag = args.selection_policy if getattr(args, 'selected_rationale_path', None) else args.llm
+    return f'{args.dataset}/{args.from_pretrained.split("/")[1]}/{args.model_type}/{selection_tag}/{args.subsample}/{args.label_type}/{args.alpha}/{args.max_input_length}/{args.grad_steps*args.batch_size}/{args.optimizer_name}/{args.lr}'
 
 
 def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics):
     set_seed(run)
 
     model = T5ForConditionalGeneration.from_pretrained(args.from_pretrained)
+    if getattr(args, 'gradient_checkpointing', False):
+        model.gradient_checkpointing_enable()
 
     if args.parallelize:
         model.parallelize()
@@ -71,6 +74,8 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         seed=run,
         local_rank=args.local_rank,
         bf16=args.bf16,
+        fp16=getattr(args, 'fp16', False),
+        gradient_checkpointing=getattr(args, 'gradient_checkpointing', False),
         generation_max_length=args.gen_max_len,
         prediction_loss_only=False,
     )
@@ -104,8 +109,11 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         trainer = Seq2SeqTrainer(**trainer_kwargs)
     else:
         raise ValueError
-    
 
+    
     trainer.train()
-    output_path = f'../model_path/{args.extra_rationale_1}_{args.extra_rationale_2}_{args.extra_rationale_3}_{args.extra_rationale_4}'
+    if getattr(args, 'selected_rationale_path', None):
+        output_path = f'../model_path/selected_{args.selection_policy}_{args.num_selected_rationales}'
+    else:
+        output_path = f'../model_path/{args.extra_rationale_1}_{args.extra_rationale_2}_{args.extra_rationale_3}_{args.extra_rationale_4}'
     trainer.save_model(output_path)

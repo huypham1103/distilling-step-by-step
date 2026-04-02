@@ -14,160 +14,206 @@
 
 
 import argparse
+import re
 
-from datasets import DatasetDict, concatenate_datasets
+from datasets import Dataset, DatasetDict, concatenate_datasets
 from transformers import AutoTokenizer
 
 from data_utils import CQADatasetLoader, SVAMPDatasetLoader, ESNLIDatasetLoader, ANLI1DatasetLoader, ASDivDatasetLoader
 from metrics import compute_text_acc, compute_equation_acc, compute_metrics_text, compute_metrics_equation, compute_metrics_text_aux, compute_metrics_equation_aux
+from selection_utils import resolve_rationale_type_name
 from train_utils import train_and_evaluate
 
 
+def find_rationale_indices(column_names):
+    indices = []
+    for column_name in column_names:
+        match = re.fullmatch(r'rationale_(\d+)', column_name)
+        if match:
+            indices.append(int(match.group(1)))
+    return sorted(indices)
+
+
+def load_selected_rationale_datasets(selected_rationale_path):
+    import pandas as pd
+
+    dataframe = pd.read_csv(selected_rationale_path)
+    required_columns = {'input', 'label', 'split'}
+    missing_columns = required_columns.difference(dataframe.columns)
+    if missing_columns:
+        raise ValueError(f'Selected rationale dataset is missing required columns: {sorted(missing_columns)}')
+
+    datasets = {}
+    for split_name in ['train', 'valid', 'test']:
+        split_frame = dataframe[dataframe['split'] == split_name].copy()
+        if split_frame.empty:
+            raise ValueError(f'Selected rationale dataset does not contain split "{split_name}"')
+        datasets[split_name] = Dataset.from_pandas(split_frame.reset_index(drop=True), preserve_index=False)
+    return DatasetDict(datasets)
+
+
+def build_task_prefix_tokenize_function(tokenizer, args, rationale_indices):
+    def tokenize_function(examples):
+        model_inputs = tokenizer(
+            ['predict: ' + text for text in examples['input']],
+            max_length=args.max_input_length,
+            truncation=True
+        )
+        for index in rationale_indices:
+            rationale_type_column = f'rationale_type_{index}'
+            rationale_column = f'rationale_{index}'
+            expl_model_inputs = tokenizer(
+                [
+                    f'explain {rationale_type}: {text}'
+                    for text, rationale_type in zip(examples['input'], examples[rationale_type_column])
+                ],
+                max_length=args.max_input_length,
+                truncation=True
+            )
+            model_inputs[f'expl_input_ids_{index}'] = expl_model_inputs['input_ids']
+            model_inputs[f'expl_attention_mask_{index}'] = expl_model_inputs['attention_mask']
+
+        with tokenizer.as_target_tokenizer():
+            label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
+            model_inputs['labels'] = label_output_encodings['input_ids']
+            for index in rationale_indices:
+                rationale_output_encodings = tokenizer(
+                    examples[f'rationale_{index}'],
+                    max_length=256,
+                    truncation=True
+                )
+                model_inputs[f'aux_labels_{index}'] = rationale_output_encodings['input_ids']
+
+        return model_inputs
+
+    return tokenize_function
+
+
+def load_latest_rationales_dataframe(rationale_name):
+    import pandas as pd
+
+    resolved_name = resolve_rationale_type_name(rationale_name)
+    return pd.read_csv(f'[API] ESNLI/{resolved_name} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+
+
 def run(args):
+    if args.selected_rationale_path is not None:
+        datasets = load_selected_rationale_datasets(args.selected_rationale_path)
+    else:
     #### Prepare datasets
-    if args.dataset == 'cqa':
-        dataset_loader = CQADatasetLoader()
-    elif args.dataset == 'svamp':
-        dataset_loader = SVAMPDatasetLoader()
-    elif args.dataset == 'esnli':
-        dataset_loader = ESNLIDatasetLoader()
-    elif args.dataset == 'anli1':
-        dataset_loader = ANLI1DatasetLoader()
-    elif args.dataset == 'asdiv':  # NOTE: for augmenting SVAMP only
-        dataset_loader = SVAMPDatasetLoader()
-        dataset_loader_svamp = SVAMPDatasetLoader()
-        dataset_loader_asdiv = ASDivDatasetLoader()
-    else:
-        raise ValueError
-
-    if args.dataset == 'asdiv':
-        datasets_svamp = dataset_loader_svamp.load_from_json()
-        datasets_asdiv = dataset_loader_asdiv.load_from_json()
-        datasets = DatasetDict({
-            'train': concatenate_datasets([datasets_svamp['train'], datasets_asdiv['train']]),
-            'test': datasets_svamp['test']
-        })
-    else:
-        datasets = dataset_loader.load_from_json()
-
-    if args.llm is None:
-        pass
-    elif args.llm == 'palm':
-        if args.dataset == 'asdiv':
-            # training set = SVAMP training + ASDiv training
-            train_llm_rationales_svamp, train_llm_labels_svamp = dataset_loader_svamp.load_llm_preds(split='train')
-            train_llm_rationales_asdiv, train_llm_labels_asdiv = dataset_loader_asdiv.load_llm_preds(split='train')
-            train_llm_rationales = train_llm_rationales_svamp + train_llm_rationales_asdiv
-            train_llm_labels = train_llm_labels_svamp + train_llm_labels_asdiv
-            # test set = SVAMP test
-            test_llm_rationales, test_llm_labels = dataset_loader_svamp.load_llm_preds(split='test')
-        else:
-            train_llm_rationales, train_llm_labels = dataset_loader.load_llm_preds(split='train')
-            test_llm_rationales, test_llm_labels = dataset_loader.load_llm_preds(split='test')
-    elif args.llm == 'gpt':
-        train_llm_rationales, train_llm_labels = dataset_loader.load_gpt_preds(split='train')
-        test_llm_rationales, test_llm_labels = dataset_loader.load_gpt_preds(split='test')
-    else:
-        raise ValueError
-
-    if args.llm is not None:
-        datasets['train'] = datasets['train'].add_column('llm_label', train_llm_labels)
-        datasets['test'] = datasets['test'].add_column('llm_label', test_llm_labels)
-        datasets['train'] = datasets['train'].add_column('llm_rationale', train_llm_rationales)
-        datasets['test'] = datasets['test'].add_column('llm_rationale', test_llm_rationales)
-
-    if args.subsample < 1.0:
-        datasets['train'] = datasets['train'].train_test_split(test_size=1.0-args.subsample, seed=args.run)['train']
-
-    if dataset_loader.has_valid:
-        if args.llm is None:
-            pass
-        elif args.llm == 'palm':
-            valid_llm_rationales, valid_llm_labels = dataset_loader.load_llm_preds(split='valid')
-        elif args.llm == 'gpt':
-            valid_llm_rationales, valid_llm_labels = dataset_loader.load_gpt_preds(split='valid')
+        if args.dataset == 'cqa':
+            dataset_loader = CQADatasetLoader()
+        elif args.dataset == 'svamp':
+            dataset_loader = SVAMPDatasetLoader()
+        elif args.dataset == 'esnli':
+            dataset_loader = ESNLIDatasetLoader()
+        elif args.dataset == 'anli1':
+            dataset_loader = ANLI1DatasetLoader()
+        elif args.dataset == 'asdiv':  # NOTE: for augmenting SVAMP only
+            dataset_loader = SVAMPDatasetLoader()
+            dataset_loader_svamp = SVAMPDatasetLoader()
+            dataset_loader_asdiv = ASDivDatasetLoader()
         else:
             raise ValueError
 
-        datasets['valid'] = datasets['valid'].add_column('llm_label', valid_llm_labels)
-        datasets['valid'] = datasets['valid'].add_column('llm_rationale', valid_llm_rationales)
-    else:
-        train_valid_datasets = datasets['train'].train_test_split(test_size=0.1, seed=0)
-
-        datasets = DatasetDict({
-            'train': train_valid_datasets['train'],
-            'valid': train_valid_datasets['test'],
-            'test': datasets['test'],
-        })
-
-    if args.label_type == 'gt':
-        pass
-    elif args.label_type == 'llm' and args.llm is not None:
-        if args.dataset not in ['svamp', 'asdiv']:
-            train_label_acc = compute_text_acc(datasets['train']['llm_label'], datasets['train']['label'])
-            test_label_acc = compute_text_acc(datasets['test']['llm_label'], datasets['test']['label'])
+        if args.dataset == 'asdiv':
+            datasets_svamp = dataset_loader_svamp.load_from_json()
+            datasets_asdiv = dataset_loader_asdiv.load_from_json()
+            datasets = DatasetDict({
+                'train': concatenate_datasets([datasets_svamp['train'], datasets_asdiv['train']]),
+                'test': datasets_svamp['test']
+            })
         else:
-            train_label_acc = compute_equation_acc(datasets['train']['llm_label'], datasets['train']['label'])
-            test_label_acc = compute_equation_acc(datasets['test']['llm_label'], datasets['test']['label'])
+            datasets = dataset_loader.load_from_json()
 
-        print(f'LLM Train Acc: {train_label_acc:.4f}')
-        print(f'LLM Test Acc: {test_label_acc:.4f}')
+        if args.llm is None:
+            pass
+        elif args.llm == 'palm':
+            if args.dataset == 'asdiv':
+                # training set = SVAMP training + ASDiv training
+                train_llm_rationales_svamp, train_llm_labels_svamp = dataset_loader_svamp.load_llm_preds(split='train')
+                train_llm_rationales_asdiv, train_llm_labels_asdiv = dataset_loader_asdiv.load_llm_preds(split='train')
+                train_llm_rationales = train_llm_rationales_svamp + train_llm_rationales_asdiv
+                train_llm_labels = train_llm_labels_svamp + train_llm_labels_asdiv
+                # test set = SVAMP test
+                test_llm_rationales, test_llm_labels = dataset_loader_svamp.load_llm_preds(split='test')
+            else:
+                train_llm_rationales, train_llm_labels = dataset_loader.load_llm_preds(split='train')
+                test_llm_rationales, test_llm_labels = dataset_loader.load_llm_preds(split='test')
+        elif args.llm == 'gpt':
+            train_llm_rationales, train_llm_labels = dataset_loader.load_gpt_preds(split='train')
+            test_llm_rationales, test_llm_labels = dataset_loader.load_gpt_preds(split='test')
+        else:
+            raise ValueError
 
-        # datasets['train'] = datasets['train'].remove_columns('label')
-        # datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
+        if args.llm is not None:
+            datasets['train'] = datasets['train'].add_column('llm_label', train_llm_labels)
+            datasets['test'] = datasets['test'].add_column('llm_label', test_llm_labels)
+            datasets['train'] = datasets['train'].add_column('llm_rationale', train_llm_rationales)
+            datasets['test'] = datasets['test'].add_column('llm_rationale', test_llm_rationales)
 
-    else:
-        raise ValueError
+        if args.subsample < 1.0:
+            datasets['train'] = datasets['train'].train_test_split(test_size=1.0-args.subsample, seed=args.run)['train']
 
-    if args.llm is not None:
-        if 'rationale' in datasets['train'].column_names:
-            datasets = datasets.remove_columns('rationale')
-        datasets = datasets.rename_column('llm_rationale', 'rationale')
+        if dataset_loader.has_valid:
+            if args.llm is None:
+                pass
+            elif args.llm == 'palm':
+                valid_llm_rationales, valid_llm_labels = dataset_loader.load_llm_preds(split='valid')
+            elif args.llm == 'gpt':
+                valid_llm_rationales, valid_llm_labels = dataset_loader.load_gpt_preds(split='valid')
+            else:
+                raise ValueError
+
+            datasets['valid'] = datasets['valid'].add_column('llm_label', valid_llm_labels)
+            datasets['valid'] = datasets['valid'].add_column('llm_rationale', valid_llm_rationales)
+        else:
+            train_valid_datasets = datasets['train'].train_test_split(test_size=0.1, seed=0)
+
+            datasets = DatasetDict({
+                'train': train_valid_datasets['train'],
+                'valid': train_valid_datasets['test'],
+                'test': datasets['test'],
+            })
+
+        if args.label_type == 'gt':
+            pass
+        elif args.label_type == 'llm' and args.llm is not None:
+            if args.dataset not in ['svamp', 'asdiv']:
+                train_label_acc = compute_text_acc(datasets['train']['llm_label'], datasets['train']['label'])
+                test_label_acc = compute_text_acc(datasets['test']['llm_label'], datasets['test']['label'])
+            else:
+                train_label_acc = compute_equation_acc(datasets['train']['llm_label'], datasets['train']['label'])
+                test_label_acc = compute_equation_acc(datasets['test']['llm_label'], datasets['test']['label'])
+
+            print(f'LLM Train Acc: {train_label_acc:.4f}')
+            print(f'LLM Test Acc: {test_label_acc:.4f}')
+
+            # datasets['train'] = datasets['train'].remove_columns('label')
+            # datasets['train'] = datasets['train'].add_column('label', datasets['train']['llm_label'])
+
+        else:
+            raise ValueError
+
+        if args.llm is not None:
+            if 'rationale' in datasets['train'].column_names:
+                datasets = datasets.remove_columns('rationale')
+            datasets = datasets.rename_column('llm_rationale', 'rationale')
 
 
     #### Prepare datasets Prepare data for training
     tokenizer = AutoTokenizer.from_pretrained(args.from_pretrained)
 
-    if 'nli' in args.dataset:
+    if args.selected_rationale_path is None and 'nli' in args.dataset:
         datasets = datasets.map(
             lambda example: {'input': tokenizer.eos_token.join([example['premise'], example['hypothesis']])},
             # remove_columns=['premise', 'hypothesis'],
         )
 
 
-    if args.model_type == 'task_prefix' and args.llm is not None:
-        def tokenize_function(examples):
-            model_inputs = tokenizer(['predict: ' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_1 = tokenizer([f'explain {args.extra_rationale_1}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_2 = tokenizer([f'explain {args.extra_rationale_2}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_3 = tokenizer([f'explain {args.extra_rationale_3}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            expl_model_inputs_4 = tokenizer([f'explain {args.extra_rationale_4}:' + text for text in examples['input']], max_length=args.max_input_length, truncation=True)
-            model_inputs['expl_input_ids_1'] = expl_model_inputs_1['input_ids']
-            model_inputs['expl_attention_mask_1'] = expl_model_inputs_1['attention_mask']
-            
-            model_inputs['expl_input_ids_2'] = expl_model_inputs_2['input_ids']
-            model_inputs['expl_attention_mask_2'] = expl_model_inputs_2['attention_mask']
-
-            model_inputs['expl_input_ids_3'] = expl_model_inputs_3['input_ids']
-            model_inputs['expl_attention_mask_3'] = expl_model_inputs_3['attention_mask']
-            
-            model_inputs['expl_input_ids_4'] = expl_model_inputs_4['input_ids']
-            model_inputs['expl_attention_mask_4'] = expl_model_inputs_4['attention_mask']
-            with tokenizer.as_target_tokenizer():
-                label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
-                rationale_output_encodings_1 = tokenizer(examples['rationale_1'], max_length=256, truncation=True)
-                rationale_output_encodings_2 = tokenizer(examples['rationale_2'], max_length=256, truncation=True)
-                rationale_output_encodings_3 = tokenizer(examples['rationale_3'], max_length=256, truncation=True)
-                rationale_output_encodings_4 = tokenizer(examples['rationale_4'], max_length=256, truncation=True)
-
-            model_inputs['labels'] = label_output_encodings['input_ids']
-            model_inputs['aux_labels_1'] = rationale_output_encodings_1['input_ids']
-            model_inputs['aux_labels_2'] = rationale_output_encodings_2['input_ids']
-            model_inputs['aux_labels_3'] = rationale_output_encodings_3['input_ids']
-            model_inputs['aux_labels_4'] = rationale_output_encodings_4['input_ids']
-            
-            return model_inputs
-
+    rationale_indices = find_rationale_indices(datasets['train'].column_names) if args.model_type == 'task_prefix' else []
+    if args.model_type == 'task_prefix':
+        tokenize_function = build_task_prefix_tokenize_function(tokenizer, args, rationale_indices)
     elif args.model_type == 'standard':
         def tokenize_function(examples):
             model_inputs = tokenizer(
@@ -187,7 +233,14 @@ def run(args):
         raise ValueError
 
 
-    if args.llm is None:
+    if args.selected_rationale_path is not None:
+        remove_columns = datasets['train'].column_names
+        tokenized_datasets = datasets.map(
+            tokenize_function,
+            remove_columns=remove_columns,
+            batched=True
+        )
+    elif args.llm is None:
         tokenized_datasets = datasets.map(
             tokenize_function,
             remove_columns=['input', 'label'],
@@ -197,14 +250,13 @@ def run(args):
         # load myself rationales
 
         import pandas as pd
-        from datasets import Dataset 
         test = pd.DataFrame(datasets['test'])
         test = test.set_index('input')
         
-        rationales_1 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_1} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        rationales_2 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_2} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        rationales_3 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_3} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        rationales_4 = pd.read_csv(f'[API] ESNLI/{args.extra_rationale_4} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+        rationales_1 = load_latest_rationales_dataframe(args.extra_rationale_1)
+        rationales_2 = load_latest_rationales_dataframe(args.extra_rationale_2)
+        rationales_3 = load_latest_rationales_dataframe(args.extra_rationale_3)
+        rationales_4 = load_latest_rationales_dataframe(args.extra_rationale_4)
         
         rationales_1['input'] = rationales_1['premise'] + '</s>' + rationales_1['hypothesis']
         rationales_2['input'] = rationales_2['premise'] + '</s>' + rationales_2['hypothesis']
@@ -230,9 +282,21 @@ def run(args):
         train.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         val.rename(columns={'rationale': 'rationale_1'}, inplace=True)
         test.rename(columns={'rationale': 'rationale_1'}, inplace=True)
+        train['rationale_type_1'] = resolve_rationale_type_name(args.extra_rationale_1)
+        val['rationale_type_1'] = resolve_rationale_type_name(args.extra_rationale_1)
+        test['rationale_type_1'] = resolve_rationale_type_name(args.extra_rationale_1)
         test['rationale_2'] = test['rationale_1']
         test['rationale_3'] = test['rationale_1']
         test['rationale_4'] = test['rationale_1']
+        train['rationale_type_2'] = resolve_rationale_type_name(args.extra_rationale_2)
+        val['rationale_type_2'] = resolve_rationale_type_name(args.extra_rationale_2)
+        test['rationale_type_2'] = resolve_rationale_type_name(args.extra_rationale_2)
+        train['rationale_type_3'] = resolve_rationale_type_name(args.extra_rationale_3)
+        val['rationale_type_3'] = resolve_rationale_type_name(args.extra_rationale_3)
+        test['rationale_type_3'] = resolve_rationale_type_name(args.extra_rationale_3)
+        train['rationale_type_4'] = resolve_rationale_type_name(args.extra_rationale_4)
+        val['rationale_type_4'] = resolve_rationale_type_name(args.extra_rationale_4)
+        test['rationale_type_4'] = resolve_rationale_type_name(args.extra_rationale_4)
 
         # if label_2 is different from label, then use the rationale_1 as rationale_2
         train.loc[train['label'] != train['label_2'], 'rationale_2'] = train.loc[train['label'] != train['label_2'], 'rationale_1']
@@ -258,7 +322,7 @@ def run(args):
 
         tokenized_datasets = datasets.map(
             tokenize_function,
-            remove_columns=['input', 'rationale_1', 'rationale_2', 'rationale_3', 'rationale_4', 'label', 'premise', 'hypothesis'],
+            remove_columns=datasets['train'].column_names,
             batched=True
         )
     if args.model_type == 'standard':
@@ -298,10 +362,15 @@ if __name__ == '__main__':
     parser.add_argument('--parallelize', action='store_true')
     parser.add_argument('--model_type', type=str, default='task_prefix')
     parser.add_argument('--bf16', action='store_true')
+    parser.add_argument('--fp16', action='store_true')
+    parser.add_argument('--gradient_checkpointing', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
     parser.add_argument('--data_size', type=int, default=1)
-    parser.add_argument('--extra_rationale_1', type=str, default='if_else')
+    parser.add_argument('--selected_rationale_path', type=str, default=None)
+    parser.add_argument('--selection_policy', type=str, default='heuristic')
+    parser.add_argument('--num_selected_rationales', type=int, default=1)
+    parser.add_argument('--extra_rationale_1', type=str, default='condition')
     parser.add_argument('--extra_rationale_2', type=str, default='neutral')
     parser.add_argument('--extra_rationale_3', type=str, default='neutral')
     parser.add_argument('--extra_rationale_4', type=str, default='neutral')
