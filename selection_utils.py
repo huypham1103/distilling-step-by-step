@@ -344,8 +344,25 @@ def _stratified_split(labels: Sequence[str], seed: int) -> List[str]:
         indices = list(indices)
         rng.shuffle(indices)
         count = len(indices)
-        train_end = int(count * 0.8)
-        valid_end = train_end + int(count * 0.1)
+        if count == 1:
+            train_count, valid_count, test_count = 1, 0, 0
+        elif count == 2:
+            train_count, valid_count, test_count = 1, 0, 1
+        else:
+            valid_count = max(1, int(round(count * 0.1)))
+            test_count = max(1, int(round(count * 0.1)))
+            if valid_count + test_count >= count:
+                valid_count = 1
+                test_count = 1
+            train_count = count - valid_count - test_count
+            if train_count <= 0:
+                train_count = 1
+                remaining = count - train_count
+                valid_count = 1 if remaining > 1 else 0
+                test_count = remaining - valid_count
+
+        train_end = train_count
+        valid_end = train_end + valid_count
         for idx in indices[:train_end]:
             split_assignments[idx] = 'train'
         for idx in indices[train_end:valid_end]:
@@ -353,6 +370,41 @@ def _stratified_split(labels: Sequence[str], seed: int) -> List[str]:
         for idx in indices[valid_end:]:
             split_assignments[idx] = 'test'
     return split_assignments
+
+
+def ensure_split_coverage(dataframe: pd.DataFrame, seed: int = 0) -> Tuple[pd.DataFrame, Dict[str, object]]:
+    dataframe = dataframe.copy()
+    if 'split' not in dataframe.columns:
+        dataframe['split'] = _stratified_split(dataframe['label'].tolist(), seed=seed)
+        return dataframe, {
+            'reassigned': True,
+            'reason': 'missing_split_column',
+            'split_counts': dataframe['split'].value_counts().to_dict(),
+        }
+
+    dataframe['split'] = (
+        dataframe['split']
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .replace({'validation': 'valid', 'dev': 'valid'})
+    )
+    split_counts = dataframe['split'].value_counts().to_dict()
+    required_splits = {'train', 'valid', 'test'}
+    if required_splits.issubset(split_counts.keys()) and all(split_counts.get(split_name, 0) > 0 for split_name in required_splits):
+        return dataframe, {
+            'reassigned': False,
+            'reason': None,
+            'split_counts': split_counts,
+        }
+
+    dataframe['split'] = _stratified_split(dataframe['label'].tolist(), seed=seed)
+    return dataframe, {
+        'reassigned': True,
+        'reason': 'missing_required_splits',
+        'original_split_counts': split_counts,
+        'split_counts': dataframe['split'].value_counts().to_dict(),
+    }
 
 
 def maybe_attach_official_esnli_splits(canonical: pd.DataFrame) -> Tuple[pd.DataFrame, Dict[str, object]]:

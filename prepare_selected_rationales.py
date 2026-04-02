@@ -5,6 +5,7 @@ from pathlib import Path
 from selection_utils import (
     ESNLI_RATIONALE_TYPES,
     build_canonical_esnli_dataset,
+    ensure_split_coverage,
     maybe_attach_official_esnli_splits,
     select_rationales,
     validate_latest_rationale_files,
@@ -41,6 +42,13 @@ def main() -> None:
 
     if args.max_examples is not None:
         canonical = canonical.head(args.max_examples).copy()
+        canonical, truncated_split_report = ensure_split_coverage(canonical, seed=args.seed)
+    else:
+        truncated_split_report = {
+            'reassigned': False,
+            'reason': None,
+            'split_counts': canonical['split'].value_counts().to_dict(),
+        }
 
     selected, selection_report = select_rationales(
         canonical=canonical,
@@ -50,6 +58,7 @@ def main() -> None:
         judge_model_name=args.judge_model_name,
         seed=args.seed,
     )
+    selected, selected_split_report = ensure_split_coverage(selected, seed=args.seed)
 
     canonical_path = output_dir / 'canonical_esnli_rationales.csv'
     selected_path = output_dir / f'selected_{args.selection_policy}_top{args.num_selected_rationales}.csv'
@@ -63,7 +72,9 @@ def main() -> None:
                 'validation_report': validation_report,
                 'canonical_report': canonical_report,
                 'split_report': split_report,
+                'truncated_split_report': truncated_split_report,
                 'selection_report': selection_report,
+                'selected_split_report': selected_split_report,
             },
             file_handle,
             indent=2,
