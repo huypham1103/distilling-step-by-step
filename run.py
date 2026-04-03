@@ -35,10 +35,13 @@ def find_rationale_indices(column_names):
 
 
 def tokenize_targets(tokenizer, texts, max_length):
-    if hasattr(tokenizer, 'as_target_tokenizer'):
-        with tokenizer.as_target_tokenizer():
-            return tokenizer(texts, max_length=max_length, truncation=True)
-    return tokenizer(text_target=texts, max_length=max_length, truncation=True)
+    try:
+        return tokenizer(text_target=texts, max_length=max_length, truncation=True)
+    except TypeError:
+        if hasattr(tokenizer, 'as_target_tokenizer'):
+            with tokenizer.as_target_tokenizer():
+                return tokenizer(texts, max_length=max_length, truncation=True)
+        return tokenizer(texts, max_length=max_length, truncation=True)
 
 
 def load_selected_rationale_datasets(selected_rationale_path):
