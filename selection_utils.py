@@ -27,6 +27,24 @@ RATIONALE_TYPE_ALIASES = {
 
 LABELS = {'entailment', 'neutral', 'contradiction'}
 
+THESIS_SINGLE_TYPE_PRIORS = {
+    'neutral': 1.00,
+    'contrastive': 0.90,
+    'historical': 0.85,
+    'consensus': 0.55,
+    'comparative': 0.45,
+    'causal': 0.35,
+    'condition': 0.30,
+}
+
+THESIS_PAIR_PRIORS = {
+    frozenset({'contrastive', 'historical'}): 1.50,
+    frozenset({'neutral', 'contrastive'}): 0.80,
+    frozenset({'neutral', 'historical'}): 0.70,
+    frozenset({'neutral', 'consensus'}): 0.35,
+    frozenset({'contrastive', 'comparative'}): 0.30,
+}
+
 
 def normalize_whitespace(text: object) -> str:
     if text is None or (isinstance(text, float) and math.isnan(text)):
@@ -515,6 +533,39 @@ def _choose_top_candidates(
         rng.shuffle(valid_candidates)
         return valid_candidates[:top_k]
 
+    if selection_mode == 'thesis_prior':
+        if top_k == 1:
+            ranked = sorted(
+                valid_candidates,
+                key=lambda candidate: (
+                    candidate.final_score + THESIS_SINGLE_TYPE_PRIORS.get(candidate.rationale_type, 0.0),
+                    candidate.final_score,
+                ),
+                reverse=True,
+            )
+            return ranked[:1]
+
+        best_pair = None
+        best_pair_score = None
+        ranked = sorted(valid_candidates, key=lambda candidate: candidate.final_score, reverse=True)
+        for first_index, first in enumerate(ranked):
+            for second in ranked[first_index + 1:]:
+                if first.rationale_type == second.rationale_type:
+                    continue
+                pair_score = (
+                    first.final_score +
+                    second.final_score +
+                    THESIS_SINGLE_TYPE_PRIORS.get(first.rationale_type, 0.0) +
+                    THESIS_SINGLE_TYPE_PRIORS.get(second.rationale_type, 0.0) +
+                    THESIS_PAIR_PRIORS.get(frozenset({first.rationale_type, second.rationale_type}), 0.0)
+                )
+                if best_pair is None or pair_score > best_pair_score:
+                    best_pair = [first, second]
+                    best_pair_score = pair_score
+
+        if best_pair is not None:
+            return best_pair[:top_k]
+
     ranked = sorted(valid_candidates, key=lambda candidate: candidate.final_score, reverse=True)
     if top_k == 1:
         return ranked[:1]
@@ -541,8 +592,8 @@ def select_rationales(
         raise ValueError('num_selected_rationales must be 1 or 2 in the current implementation')
 
     mode = selection_policy.lower()
-    if mode not in {'heuristic', 'judge', 'random'}:
-        raise ValueError('selection_policy must be one of: heuristic, judge, random')
+    if mode not in {'heuristic', 'judge', 'random', 'thesis_prior'}:
+        raise ValueError('selection_policy must be one of: heuristic, judge, random, thesis_prior')
 
     judge = LocalJudge(judge_model_name) if mode == 'judge' and judge_model_name else None
     rng = random.Random(seed)
@@ -558,7 +609,12 @@ def select_rationales(
                 _score_with_optional_judge(candidate, judge, series['premise'], series['hypothesis'], series['label'])
                 for candidate in candidates
             ]
-        chosen = _choose_top_candidates(candidates, num_selected_rationales, 'random' if mode == 'random' else 'ranked', rng)
+        choose_mode = mode
+        if mode == 'judge':
+            choose_mode = 'ranked'
+        elif mode == 'heuristic':
+            choose_mode = 'ranked'
+        chosen = _choose_top_candidates(candidates, num_selected_rationales, choose_mode, rng)
         if not chosen:
             dropped_rows += 1
             continue
@@ -599,4 +655,7 @@ def select_rationales(
         'dropped_rows': int(dropped_rows),
         'selection_counts': selection_counts,
     }
+    if mode == 'thesis_prior':
+        report['single_type_priors'] = THESIS_SINGLE_TYPE_PRIORS
+        report['pair_priors'] = {','.join(sorted(pair)): bonus for pair, bonus in THESIS_PAIR_PRIORS.items()}
     return selected, report

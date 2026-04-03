@@ -11,7 +11,7 @@ import pandas as pd
 import torch
 from datasets import load_dataset
 from tqdm.auto import tqdm
-from transformers import AutoTokenizer, T5ForConditionalGeneration
+from transformers import AutoConfig, AutoTokenizer, T5ForConditionalGeneration
 
 
 def load_test_frame(test_data_path: str) -> pd.DataFrame:
@@ -34,6 +34,19 @@ def load_test_frame(test_data_path: str) -> pd.DataFrame:
     dataframe['input'] = dataframe['input'].fillna('').astype(str)
     dataframe['label'] = dataframe['label'].fillna('').astype(str)
     return dataframe.reset_index(drop=True)
+
+
+def load_model_input_contract(model_path: str) -> dict:
+    try:
+        config = AutoConfig.from_pretrained(model_path)
+    except Exception:
+        return {}
+    return {
+        'model_type': getattr(config, 'codex_model_type', None),
+        'label_input_prefix': getattr(config, 'codex_label_input_prefix', None),
+        'selection_policy': getattr(config, 'codex_selection_policy', None),
+        'num_selected_rationales': getattr(config, 'codex_num_selected_rationales', None),
+    }
 
 
 def format_inputs(inputs: Sequence[str], model_type: str, add_task_prefix: bool) -> List[str]:
@@ -232,10 +245,15 @@ def main():
     args = parser.parse_args()
 
     test_frame = load_test_frame(args.test_data_path)
-    add_task_prefix = args.model_type == 'task_prefix' and not args.disable_task_prefix
+    input_contract = load_model_input_contract(args.model_path)
+    inferred_model_type = input_contract.get('model_type') or args.model_type
+    inferred_prefix = input_contract.get('label_input_prefix')
+    add_task_prefix = inferred_model_type == 'task_prefix' and not args.disable_task_prefix
+    if not args.disable_task_prefix and inferred_prefix == 'predict: ':
+        add_task_prefix = True
     inputs = format_inputs(
         test_frame['input'].tolist(),
-        model_type=args.model_type,
+        model_type=inferred_model_type,
         add_task_prefix=add_task_prefix,
     )
 
@@ -249,6 +267,8 @@ def main():
         print(f'Primary GPU: {torch.cuda.get_device_name(0)}')
     print(f'Using multi_gpu: {use_multi_gpu}')
     print(f'Input formatting: {"predict: <input>" if add_task_prefix else "raw input"}')
+    if input_contract:
+        print(f'Loaded model contract: {json.dumps(input_contract, indent=2)}')
 
     num_gpus = min(requested_gpus, available_gpus) if use_multi_gpu else None
     predictions, prediction_seconds = run_prediction_pass(

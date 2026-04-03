@@ -102,6 +102,11 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
     set_seed(run)
 
     model = T5ForConditionalGeneration.from_pretrained(args.from_pretrained)
+    model.config.codex_model_type = args.model_type
+    model.config.codex_label_input_prefix = 'predict: ' if args.model_type == 'task_prefix' else ''
+    model.config.codex_selected_rationale_path = getattr(args, 'selected_rationale_path', None)
+    model.config.codex_selection_policy = getattr(args, 'selection_policy', None)
+    model.config.codex_num_selected_rationales = getattr(args, 'num_selected_rationales', None)
     if getattr(args, 'gradient_checkpointing', False):
         model.gradient_checkpointing_enable()
         model.config.use_cache = False
