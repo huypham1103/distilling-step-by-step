@@ -14,7 +14,10 @@
 
 
 import argparse
+import os
 import re
+import subprocess
+import sys
 
 from datasets import Dataset, DatasetDict, concatenate_datasets
 from transformers import AutoTokenizer
@@ -106,6 +109,60 @@ def map_datasetdict_per_split(datasets, tokenize_function, remove_columns_strate
             batched=True
         )
     return DatasetDict(mapped_splits)
+
+
+def build_torchrun_command(script_path, argv, nproc_per_node):
+    filtered_args = []
+    skip_next = False
+    for index, argument in enumerate(argv):
+        if skip_next:
+            skip_next = False
+            continue
+        if argument == '--multi_gpu':
+            continue
+        if argument == '--num_gpus':
+            skip_next = True
+            continue
+        filtered_args.append(argument)
+    return [
+        sys.executable,
+        '-m',
+        'torch.distributed.run',
+        '--standalone',
+        f'--nproc_per_node={nproc_per_node}',
+        script_path,
+        *filtered_args,
+    ]
+
+
+def maybe_relaunch_with_torchrun(args):
+    if not getattr(args, 'multi_gpu', False):
+        return
+
+    if os.environ.get('LOCAL_RANK') is not None or os.environ.get('WORLD_SIZE') is not None:
+        return
+
+    try:
+        import torch
+    except ImportError:
+        return
+
+    if not torch.cuda.is_available():
+        print('Multi-GPU launch requested but CUDA is not available; continuing in single-process mode.')
+        return
+
+    available_gpus = torch.cuda.device_count()
+    if available_gpus <= 1:
+        print('Multi-GPU launch requested but fewer than 2 CUDA devices are visible; continuing in single-process mode.')
+        return
+
+    requested_gpus = args.num_gpus or available_gpus
+    nproc_per_node = min(requested_gpus, available_gpus)
+    command = build_torchrun_command(sys.argv[0], sys.argv[1:], nproc_per_node)
+
+    print(f'Relaunching with torch.distributed.run on {nproc_per_node} GPU(s).')
+    completed = subprocess.run(command, check=False)
+    raise SystemExit(completed.returncode)
 
 
 def run(args):
@@ -357,13 +414,22 @@ if __name__ == '__main__':
     parser.add_argument('--local_rank', type=int, default=-1)
     parser.add_argument('--gen_max_len', type=int, default=64)
     parser.add_argument('--parallelize', action='store_true')
+    parser.add_argument('--multi_gpu', action='store_true')
+    parser.add_argument('--num_gpus', type=int, default=None)
     parser.add_argument('--model_type', type=str, default='task_prefix')
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--fp16', action='store_true')
+    parser.add_argument('--tf32', action='store_true')
     parser.add_argument('--gradient_checkpointing', action='store_true')
     parser.add_argument('--no_log', action='store_true')
     parser.add_argument('--output_rationale', action='store_true')
     parser.add_argument('--data_size', type=int, default=1)
+    parser.add_argument('--eval_batch_size', type=int, default=None)
+    parser.add_argument('--dataloader_num_workers', type=int, default=0)
+    parser.add_argument('--eval_accumulation_steps', type=int, default=None)
+    parser.add_argument('--save_only_model', action='store_true')
+    parser.add_argument('--torch_compile', action='store_true')
+    parser.add_argument('--ddp_find_unused_parameters', type=str, default=None)
     parser.add_argument('--selected_rationale_path', type=str, default=None)
     parser.add_argument('--selection_policy', type=str, default='heuristic')
     parser.add_argument('--num_selected_rationales', type=int, default=1)
@@ -374,6 +440,13 @@ if __name__ == '__main__':
 
 
     args = parser.parse_args()
+    if args.ddp_find_unused_parameters is not None:
+        lowered = args.ddp_find_unused_parameters.strip().lower()
+        if lowered not in {'true', 'false'}:
+            raise ValueError('--ddp_find_unused_parameters must be "true" or "false" when provided.')
+        args.ddp_find_unused_parameters = lowered == 'true'
+
+    maybe_relaunch_with_torchrun(args)
 
     # dic = {
     #     'dataset': 'esnli',

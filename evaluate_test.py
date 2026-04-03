@@ -1,192 +1,223 @@
 import argparse
-import inspect
 import json
+import math
+import os
+from multiprocessing import get_context
 from pathlib import Path
-import sys
+from typing import List, Sequence, Tuple
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
-import numpy as np
 import pandas as pd
 import torch
-from transformers import AutoTokenizer, DataCollatorForSeq2Seq, Seq2SeqTrainer, Seq2SeqTrainingArguments, T5ForConditionalGeneration
-
-from metrics import compute_metrics_equation, compute_metrics_equation_aux, compute_metrics_text, compute_metrics_text_aux
-from model_utils import TaskPrefixDataCollator, TaskPrefixTrainer
-from run import (
-    build_task_prefix_tokenize_function,
-    find_rationale_indices,
-    load_selected_rationale_datasets,
-    map_datasetdict_per_split,
-    tokenize_targets,
-)
+from transformers import AutoTokenizer, T5ForConditionalGeneration
 
 
-def build_eval_args_kwargs(args, output_dir):
-    kwargs = {
-        'output_dir': output_dir,
-        'remove_unused_columns': False,
-        'per_device_eval_batch_size': args.eval_batch_size or args.batch_size,
-        'predict_with_generate': True,
-        'generation_max_length': args.gen_max_len,
-        'bf16': getattr(args, 'bf16', False),
-        'fp16': getattr(args, 'fp16', False),
-        'dataloader_pin_memory': bool(torch.cuda.is_available()),
-        'dataloader_num_workers': getattr(args, 'dataloader_num_workers', 0),
-        'tf32': getattr(args, 'tf32', False),
-        'report_to': [],
-        'do_train': False,
-        'do_eval': False,
-        'do_predict': True,
-    }
+def load_test_frame(test_data_path: str) -> pd.DataFrame:
+    dataframe = pd.read_csv(test_data_path)
+    if 'split' in dataframe.columns:
+        split = dataframe['split'].astype(str).str.strip().str.lower()
+        dataframe = dataframe[split == 'test'].copy()
+        if dataframe.empty:
+            raise ValueError('The provided test_data_path has a split column but contains no "test" rows.')
 
-    signature = inspect.signature(Seq2SeqTrainingArguments.__init__)
-    supported_params = set(signature.parameters)
-    return {key: value for key, value in kwargs.items() if key in supported_params}
+    required_columns = {'input', 'label'}
+    missing_columns = required_columns.difference(dataframe.columns)
+    if missing_columns:
+        raise ValueError(f'Test data is missing required columns: {sorted(missing_columns)}')
+
+    return dataframe.reset_index(drop=True)
 
 
-def build_compute_metrics(args, tokenizer):
-    if args.model_type == 'standard':
-        if args.dataset not in ['svamp', 'asdiv']:
-            return compute_metrics_text_aux(tokenizer)
-        return compute_metrics_equation_aux(tokenizer)
-
-    if args.dataset not in ['svamp', 'asdiv']:
-        return compute_metrics_text(tokenizer)
-    return compute_metrics_equation(tokenizer)
+def format_inputs(inputs: Sequence[str], model_type: str, add_task_prefix: bool) -> List[str]:
+    if model_type == 'task_prefix' and add_task_prefix:
+        return [f'predict: {text}' for text in inputs]
+    return list(inputs)
 
 
-def build_tokenized_selected_datasets(args, tokenizer):
-    raw_datasets = load_selected_rationale_datasets(args.selected_rationale_path)
-    rationale_indices = find_rationale_indices(raw_datasets['train'].column_names) if args.model_type == 'task_prefix' else []
+def choose_autocast_dtype(device: str, bf16: bool, fp16: bool):
+    if device != 'cuda':
+        return None
+    if bf16 and hasattr(torch.cuda, 'is_bf16_supported') and torch.cuda.is_bf16_supported():
+        return torch.bfloat16
+    if fp16:
+        return torch.float16
+    return None
 
-    if args.model_type == 'task_prefix':
-        tokenize_function = build_task_prefix_tokenize_function(tokenizer, args, rationale_indices)
-        tokenized = map_datasetdict_per_split(raw_datasets, tokenize_function, remove_columns_strategy='all')
-    elif args.model_type == 'standard':
-        def tokenize_function(examples):
-            model_inputs = tokenizer(
-                examples['input'],
-                max_length=args.max_input_length,
-                truncation=True
-            )
-            label_output_encodings = tokenize_targets(tokenizer, examples['label'], max_length=256)
-            model_inputs['labels'] = label_output_encodings['input_ids']
-            return model_inputs
 
-        tokenized = map_datasetdict_per_split(raw_datasets, tokenize_function, remove_columns_strategy='all')
+def generate_predictions_single_gpu(
+    model_path: str,
+    inputs: Sequence[str],
+    batch_size: int,
+    max_input_length: int,
+    max_new_tokens: int,
+    bf16: bool,
+    fp16: bool,
+    gpu_id: int | None = None,
+) -> List[str]:
+    if gpu_id is not None and torch.cuda.is_available():
+        torch.cuda.set_device(gpu_id)
+        device = f'cuda:{gpu_id}'
     else:
-        raise ValueError(f'Unsupported model_type: {args.model_type}')
+        device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-    return raw_datasets, tokenized
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model = T5ForConditionalGeneration.from_pretrained(model_path).to(device)
+    model.eval()
+    model.config.use_cache = True
 
+    autocast_dtype = choose_autocast_dtype('cuda' if device.startswith('cuda') else device, bf16, fp16)
+    predictions: List[str] = []
 
-def build_trainer(args, training_args, model, tokenized_datasets, tokenizer, compute_metrics):
-    if args.model_type == 'task_prefix':
-        data_collator = TaskPrefixDataCollator(tokenizer=tokenizer, model=model)
-        trainer_kwargs = {
-            'alpha': args.alpha,
-            'output_rationale': args.output_rationale,
-            'model': model,
-            'args': training_args,
-            'train_dataset': tokenized_datasets['train'],
-            'eval_dataset': {'test': tokenized_datasets['test']},
-            'data_collator': data_collator,
-            'tokenizer': tokenizer,
-            'processing_class': tokenizer,
-            'compute_metrics': compute_metrics,
-        }
-        trainer_signature = inspect.signature(TaskPrefixTrainer.__init__)
-        if any(parameter.kind == inspect.Parameter.VAR_KEYWORD for parameter in trainer_signature.parameters.values()):
-            base_signature = inspect.signature(Seq2SeqTrainer.__init__)
-            supported_params = set(base_signature.parameters).union({'alpha', 'output_rationale'})
-        else:
-            supported_params = set(trainer_signature.parameters)
-        trainer_kwargs = {key: value for key, value in trainer_kwargs.items() if key in supported_params}
-        return TaskPrefixTrainer(**trainer_kwargs)
+    for start in range(0, len(inputs), batch_size):
+        batch_inputs = list(inputs[start:start + batch_size])
+        tokenized = tokenizer(
+            batch_inputs,
+            return_tensors='pt',
+            padding=True,
+            truncation=True,
+            max_length=max_input_length,
+        )
+        tokenized = {key: value.to(device) for key, value in tokenized.items()}
 
-    data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, model=model)
-    trainer_kwargs = {
-        'model': model,
-        'args': training_args,
-        'train_dataset': tokenized_datasets['train'],
-        'eval_dataset': tokenized_datasets['test'],
-        'data_collator': data_collator,
-        'tokenizer': tokenizer,
-        'processing_class': tokenizer,
-        'compute_metrics': compute_metrics,
-    }
-    signature = inspect.signature(Seq2SeqTrainer.__init__)
-    supported_params = set(signature.parameters)
-    trainer_kwargs = {key: value for key, value in trainer_kwargs.items() if key in supported_params}
-    return Seq2SeqTrainer(**trainer_kwargs)
+        with torch.inference_mode():
+            if autocast_dtype is not None:
+                with torch.autocast(device_type='cuda', dtype=autocast_dtype):
+                    output = model.generate(**tokenized, max_new_tokens=max_new_tokens)
+            else:
+                output = model.generate(**tokenized, max_new_tokens=max_new_tokens)
 
+        decoded = tokenizer.batch_decode(output, skip_special_tokens=True)
+        predictions.extend(text.strip() for text in decoded)
 
-def select_primary_prediction(predictions):
-    if isinstance(predictions, (list, tuple)):
-        return predictions[0]
     return predictions
 
 
-def maybe_select_aux_prediction(predictions):
-    if isinstance(predictions, (list, tuple)) and len(predictions) > 1:
-        return predictions[1]
-    return None
+def _worker_generate(payload: Tuple[int, str, List[Tuple[int, str]], int, int, int, bool, bool]):
+    gpu_id, model_path, indexed_inputs, batch_size, max_input_length, max_new_tokens, bf16, fp16 = payload
+    indices = [index for index, _ in indexed_inputs]
+    inputs = [text for _, text in indexed_inputs]
+    predictions = generate_predictions_single_gpu(
+        model_path=model_path,
+        inputs=inputs,
+        batch_size=batch_size,
+        max_input_length=max_input_length,
+        max_new_tokens=max_new_tokens,
+        bf16=bf16,
+        fp16=fp16,
+        gpu_id=gpu_id,
+    )
+    return list(zip(indices, predictions))
+
+
+def generate_predictions_multi_gpu(
+    model_path: str,
+    inputs: Sequence[str],
+    batch_size: int,
+    max_input_length: int,
+    max_new_tokens: int,
+    bf16: bool,
+    fp16: bool,
+    num_gpus: int,
+) -> List[str]:
+    indexed_inputs = list(enumerate(inputs))
+    shards = [indexed_inputs[gpu_index::num_gpus] for gpu_index in range(num_gpus)]
+    payloads = [
+        (gpu_index, model_path, shard, batch_size, max_input_length, max_new_tokens, bf16, fp16)
+        for gpu_index, shard in enumerate(shards)
+        if shard
+    ]
+
+    ctx = get_context('spawn')
+    with ctx.Pool(processes=len(payloads)) as pool:
+        results = pool.map(_worker_generate, payloads)
+
+    flattened = [item for shard in results for item in shard]
+    flattened.sort(key=lambda item: item[0])
+    return [prediction for _, prediction in flattened]
+
+
+def score_predictions(labels: Sequence[str], predictions: Sequence[str]) -> dict:
+    label_norm = pd.Series(labels, dtype='object').astype(str).str.strip().str.lower()
+    pred_raw = pd.Series(predictions, dtype='object').astype(str)
+    pred_norm = pred_raw.str.strip().str.lower()
+
+    score_1 = float((pred_norm == label_norm).mean())
+    score_2 = float(sum(label in output for label, output in zip(label_norm, pred_norm)) / len(label_norm))
+    score_3 = float(sum(label in output.lower() for label, output in zip(label_norm, pred_raw)) / len(label_norm))
+
+    return {
+        'test_accuracy_exact': score_1,
+        'test_accuracy_contains_norm': score_2,
+        'test_accuracy_contains_raw_lower': score_3,
+        'num_examples': int(len(label_norm)),
+    }
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, required=True)
     parser.add_argument('--model_path', type=str, required=True)
-    parser.add_argument('--selected_rationale_path', type=str, required=True)
+    parser.add_argument('--test_data_path', type=str, required=True)
     parser.add_argument('--output_dir', type=str, default='artifacts/test_eval')
     parser.add_argument('--model_type', type=str, default='task_prefix')
-    parser.add_argument('--batch_size', type=int, default=4)
-    parser.add_argument('--eval_batch_size', type=int, default=None)
+    parser.add_argument('--batch_size', type=int, default=64)
     parser.add_argument('--max_input_length', type=int, default=1024)
     parser.add_argument('--gen_max_len', type=int, default=64)
-    parser.add_argument('--selection_policy', type=str, default='heuristic')
-    parser.add_argument('--num_selected_rationales', type=int, default=1)
-    parser.add_argument('--alpha', type=float, default=0.5)
-    parser.add_argument('--label_type', type=str, default='gt')
-    parser.add_argument('--llm', type=str, default='palm')
-    parser.add_argument('--run', type=int, default=0)
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--fp16', action='store_true')
-    parser.add_argument('--tf32', action='store_true')
-    parser.add_argument('--output_rationale', action='store_true')
-    parser.add_argument('--dataloader_num_workers', type=int, default=0)
+    parser.add_argument('--disable_task_prefix', action='store_true')
+    parser.add_argument('--multi_gpu', action='store_true')
+    parser.add_argument('--num_gpus', type=int, default=None)
     args = parser.parse_args()
 
-    tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    raw_datasets, tokenized_datasets = build_tokenized_selected_datasets(args, tokenizer)
-    compute_metrics = build_compute_metrics(args, tokenizer)
-
-    model = T5ForConditionalGeneration.from_pretrained(args.model_path)
-    eval_output_dir = Path(args.output_dir)
-    eval_output_dir.mkdir(parents=True, exist_ok=True)
-    training_args = Seq2SeqTrainingArguments(
-        **build_eval_args_kwargs(args, str(eval_output_dir / 'tmp_eval'))
+    test_frame = load_test_frame(args.test_data_path)
+    inputs = format_inputs(
+        test_frame['input'].tolist(),
+        model_type=args.model_type,
+        add_task_prefix=not args.disable_task_prefix,
     )
-    trainer = build_trainer(args, training_args, model, tokenized_datasets, tokenizer, compute_metrics)
 
-    prediction_output = trainer.predict(tokenized_datasets['test'], metric_key_prefix='test')
-    metrics = {key: float(value) if isinstance(value, (np.floating, np.integer)) else value for key, value in prediction_output.metrics.items()}
+    available_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
+    requested_gpus = args.num_gpus or available_gpus
+    use_multi_gpu = args.multi_gpu and available_gpus > 1 and requested_gpus > 1
 
-    primary_predictions = select_primary_prediction(prediction_output.predictions)
-    decoded_predictions = tokenizer.batch_decode(primary_predictions, skip_special_tokens=True)
+    print(f'CUDA available: {torch.cuda.is_available()}')
+    print(f'GPU count: {available_gpus}')
+    if torch.cuda.is_available():
+        print(f'Primary GPU: {torch.cuda.get_device_name(0)}')
+    print(f'Using multi_gpu: {use_multi_gpu}')
 
-    result_frame = pd.DataFrame(raw_datasets['test'])
-    result_frame['prediction'] = decoded_predictions
-    result_frame['correct'] = (result_frame['prediction'] == result_frame['label']).astype(int)
+    if use_multi_gpu:
+        num_gpus = min(requested_gpus, available_gpus)
+        predictions = generate_predictions_multi_gpu(
+            model_path=args.model_path,
+            inputs=inputs,
+            batch_size=args.batch_size,
+            max_input_length=args.max_input_length,
+            max_new_tokens=args.gen_max_len,
+            bf16=args.bf16,
+            fp16=args.fp16,
+            num_gpus=num_gpus,
+        )
+    else:
+        predictions = generate_predictions_single_gpu(
+            model_path=args.model_path,
+            inputs=inputs,
+            batch_size=args.batch_size,
+            max_input_length=args.max_input_length,
+            max_new_tokens=args.gen_max_len,
+            bf16=args.bf16,
+            fp16=args.fp16,
+        )
 
-    aux_predictions = maybe_select_aux_prediction(prediction_output.predictions)
-    if args.output_rationale and aux_predictions is not None:
-        result_frame['predicted_rationale'] = tokenizer.batch_decode(aux_predictions, skip_special_tokens=True)
+    metrics = score_predictions(test_frame['label'].tolist(), predictions)
+    result_frame = test_frame.copy()
+    result_frame['prediction'] = predictions
 
+    output_dir = Path(args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
     stem = f'{Path(args.model_path).name}_test'
-    predictions_path = eval_output_dir / f'{stem}_predictions.csv'
-    metrics_path = eval_output_dir / f'{stem}_metrics.json'
+    predictions_path = output_dir / f'{stem}_predictions.csv'
+    metrics_path = output_dir / f'{stem}_metrics.json'
+
     result_frame.to_csv(predictions_path, index=False)
     with metrics_path.open('w', encoding='utf-8') as handle:
         json.dump(metrics, handle, indent=2)

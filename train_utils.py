@@ -33,6 +33,7 @@ def get_config_dir(args):
 
 
 def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run):
+    eval_batch_size = getattr(args, 'eval_batch_size', None) or args.batch_size
     kwargs = {
         'output_dir': output_dir,
         'remove_unused_columns': False,
@@ -44,7 +45,7 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
         'learning_rate': args.lr,
         'gradient_accumulation_steps': args.grad_steps,
         'per_device_train_batch_size': args.batch_size,
-        'per_device_eval_batch_size': args.batch_size,
+        'per_device_eval_batch_size': eval_batch_size,
         'predict_with_generate': True,
         'seed': run,
         'local_rank': args.local_rank,
@@ -53,6 +54,12 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
         'gradient_checkpointing': getattr(args, 'gradient_checkpointing', False),
         'generation_max_length': args.gen_max_len,
         'prediction_loss_only': False,
+        'dataloader_num_workers': getattr(args, 'dataloader_num_workers', 0),
+        'tf32': getattr(args, 'tf32', False),
+        'eval_accumulation_steps': getattr(args, 'eval_accumulation_steps', None),
+        'save_only_model': getattr(args, 'save_only_model', False),
+        'ddp_find_unused_parameters': getattr(args, 'ddp_find_unused_parameters', None),
+        'torch_compile': getattr(args, 'torch_compile', False),
     }
 
     signature = inspect.signature(Seq2SeqTrainingArguments.__init__)
