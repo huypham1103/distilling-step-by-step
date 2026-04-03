@@ -9,6 +9,7 @@ from typing import List, Sequence, Tuple
 
 import pandas as pd
 import torch
+from tqdm.auto import tqdm
 from transformers import AutoTokenizer, T5ForConditionalGeneration
 
 
@@ -37,6 +38,10 @@ def format_inputs(inputs: Sequence[str], model_type: str, add_task_prefix: bool)
 def choose_autocast_dtype(device: str, bf16: bool, fp16: bool):
     if device != 'cuda':
         return None
+    if not bf16 and not fp16:
+        if hasattr(torch.cuda, 'is_bf16_supported') and torch.cuda.is_bf16_supported():
+            return torch.bfloat16
+        return torch.float16
     if bf16 and hasattr(torch.cuda, 'is_bf16_supported') and torch.cuda.is_bf16_supported():
         return torch.bfloat16
     if fp16:
@@ -54,6 +59,10 @@ def generate_predictions_single_gpu(
     fp16: bool,
     gpu_id: int | None = None,
 ) -> List[str]:
+    if torch.cuda.is_available():
+        torch.backends.cuda.matmul.allow_tf32 = True
+        torch.backends.cudnn.allow_tf32 = True
+
     if gpu_id is not None and torch.cuda.is_available():
         torch.cuda.set_device(gpu_id)
         device = f'cuda:{gpu_id}'
@@ -68,7 +77,11 @@ def generate_predictions_single_gpu(
     autocast_dtype = choose_autocast_dtype('cuda' if device.startswith('cuda') else device, bf16, fp16)
     predictions: List[str] = []
 
-    for start in range(0, len(inputs), batch_size):
+    iterator = range(0, len(inputs), batch_size)
+    if gpu_id is None or gpu_id == 0:
+        iterator = tqdm(iterator, desc='Generating')
+
+    for start in iterator:
         batch_inputs = list(inputs[start:start + batch_size])
         tokenized = tokenizer(
             batch_inputs,
@@ -218,6 +231,7 @@ def main():
     metrics['seconds_per_example'] = float(prediction_seconds / max(len(test_frame), 1))
     result_frame = test_frame.copy()
     result_frame['prediction'] = predictions
+    result_frame['prediction_is_empty'] = [not bool(prediction) for prediction in predictions]
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
