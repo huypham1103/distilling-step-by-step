@@ -163,7 +163,7 @@ def main():
     parser.add_argument('--gen_max_len', type=int, default=64)
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--fp16', action='store_true')
-    parser.add_argument('--disable_task_prefix', action='store_true')
+    parser.add_argument('--add_task_prefix', action='store_true')
     parser.add_argument('--multi_gpu', action='store_true')
     parser.add_argument('--num_gpus', type=int, default=None)
     args = parser.parse_args()
@@ -172,7 +172,7 @@ def main():
     inputs = format_inputs(
         test_frame['input'].tolist(),
         model_type=args.model_type,
-        add_task_prefix=not args.disable_task_prefix,
+        add_task_prefix=args.add_task_prefix,
     )
 
     available_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
