@@ -9,12 +9,17 @@ from typing import List, Sequence, Tuple
 
 import pandas as pd
 import torch
+from datasets import load_dataset
 from tqdm.auto import tqdm
 from transformers import AutoTokenizer, T5ForConditionalGeneration
 
 
 def load_test_frame(test_data_path: str) -> pd.DataFrame:
-    dataframe = pd.read_csv(test_data_path)
+    try:
+        dataset = load_dataset('csv', data_files={'test': test_data_path})['test']
+        dataframe = pd.DataFrame(dataset)
+    except Exception:
+        dataframe = pd.read_csv(test_data_path, keep_default_na=False)
     if 'split' in dataframe.columns:
         split = dataframe['split'].astype(str).str.strip().str.lower()
         dataframe = dataframe[split == 'test'].copy()
@@ -26,6 +31,8 @@ def load_test_frame(test_data_path: str) -> pd.DataFrame:
     if missing_columns:
         raise ValueError(f'Test data is missing required columns: {sorted(missing_columns)}')
 
+    dataframe['input'] = dataframe['input'].fillna('').astype(str)
+    dataframe['label'] = dataframe['label'].fillna('').astype(str)
     return dataframe.reset_index(drop=True)
 
 
@@ -177,16 +184,17 @@ def main():
     parser.add_argument('--gen_max_len', type=int, default=64)
     parser.add_argument('--bf16', action='store_true')
     parser.add_argument('--fp16', action='store_true')
-    parser.add_argument('--add_task_prefix', action='store_true')
+    parser.add_argument('--disable_task_prefix', action='store_true')
     parser.add_argument('--multi_gpu', action='store_true')
     parser.add_argument('--num_gpus', type=int, default=None)
     args = parser.parse_args()
 
     test_frame = load_test_frame(args.test_data_path)
+    add_task_prefix = args.model_type == 'task_prefix' and not args.disable_task_prefix
     inputs = format_inputs(
         test_frame['input'].tolist(),
         model_type=args.model_type,
-        add_task_prefix=args.add_task_prefix,
+        add_task_prefix=add_task_prefix,
     )
 
     available_gpus = torch.cuda.device_count() if torch.cuda.is_available() else 0
@@ -198,6 +206,7 @@ def main():
     if torch.cuda.is_available():
         print(f'Primary GPU: {torch.cuda.get_device_name(0)}')
     print(f'Using multi_gpu: {use_multi_gpu}')
+    print(f'Input formatting: {"predict: <input>" if add_task_prefix else "raw input"}')
 
     if use_multi_gpu:
         num_gpus = min(requested_gpus, available_gpus)
@@ -229,9 +238,10 @@ def main():
     metrics = score_predictions(test_frame['label'].tolist(), predictions)
     metrics['prediction_seconds'] = float(prediction_seconds)
     metrics['seconds_per_example'] = float(prediction_seconds / max(len(test_frame), 1))
+    normalized_predictions = [prediction if prediction is not None else '' for prediction in predictions]
     result_frame = test_frame.copy()
-    result_frame['prediction'] = predictions
-    result_frame['prediction_is_empty'] = [not bool(prediction) for prediction in predictions]
+    result_frame['prediction'] = normalized_predictions
+    result_frame['prediction_is_empty'] = [not bool(prediction) for prediction in normalized_predictions]
 
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -244,6 +254,7 @@ def main():
         json.dump(metrics, handle, indent=2)
 
     print(f'Prediction time: {prediction_seconds:.2f}s total, {metrics["seconds_per_example"]:.4f}s/example')
+    print('Prediction preview:', normalized_predictions[:5])
     print(json.dumps(metrics, indent=2))
     print(f'Test predictions saved to {predictions_path}')
     print(f'Test metrics saved to {metrics_path}')
