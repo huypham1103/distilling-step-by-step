@@ -35,6 +35,7 @@ def get_config_dir(args):
 
 
 def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run, runtime_info):
+    eval_batch_size = getattr(args, 'eval_batch_size', None) or args.batch_size
     kwargs = {
         'output_dir': output_dir,
         'remove_unused_columns': False,
@@ -46,7 +47,7 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
         'learning_rate': args.lr,
         'gradient_accumulation_steps': args.grad_steps,
         'per_device_train_batch_size': args.batch_size,
-        'per_device_eval_batch_size': args.batch_size,
+        'per_device_eval_batch_size': eval_batch_size,
         'predict_with_generate': True,
         'seed': run,
         'local_rank': args.local_rank,
@@ -56,6 +57,9 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
         'generation_max_length': args.gen_max_len,
         'prediction_loss_only': False,
         'dataloader_pin_memory': runtime_info.get('device_type') == 'cuda',
+        'dataloader_num_workers': getattr(args, 'dataloader_num_workers', 0),
+        'group_by_length': getattr(args, 'group_by_length', False),
+        'tf32': getattr(args, 'tf32', False),
     }
 
     signature = inspect.signature(Seq2SeqTrainingArguments.__init__)

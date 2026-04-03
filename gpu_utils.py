@@ -101,6 +101,12 @@ def adapt_args_for_runtime(args, info: Dict[str, object]) -> List[str]:
         if getattr(args, "fp16", False):
             args.fp16 = False
             adjustments.append(f"Disabled fp16 because the active device is {info['device_type']}.")
+        if getattr(args, "tf32", False):
+            args.tf32 = False
+            adjustments.append(f"Disabled tf32 because the active device is {info['device_type']}.")
+        if getattr(args, "dataloader_num_workers", 0):
+            args.dataloader_num_workers = 0
+            adjustments.append(f"Set dataloader_num_workers=0 because the active device is {info['device_type']}.")
 
     return adjustments
 
