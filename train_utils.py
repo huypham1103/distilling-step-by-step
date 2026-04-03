@@ -97,6 +97,7 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
     model = T5ForConditionalGeneration.from_pretrained(args.from_pretrained)
     if getattr(args, 'gradient_checkpointing', False):
         model.gradient_checkpointing_enable()
+        model.config.use_cache = False
 
     if args.parallelize:
         model.parallelize()
