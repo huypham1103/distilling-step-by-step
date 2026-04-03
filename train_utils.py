@@ -17,12 +17,14 @@ import os
 import shutil
 import logging
 import inspect
+import torch
 
 from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 from transformers import T5ForConditionalGeneration
 from transformers import DataCollatorForSeq2Seq
 from transformers.trainer_utils import set_seed
 
+from gpu_utils import configure_runtime, format_runtime_summary
 from model_utils import TaskPrefixDataCollator, TaskPrefixTrainer
 
 
@@ -32,7 +34,7 @@ def get_config_dir(args):
     return f'{args.dataset}/{model_name}/{args.model_type}/{selection_tag}/{args.subsample}/{args.label_type}/{args.alpha}/{args.max_input_length}/{args.grad_steps*args.batch_size}/{args.optimizer_name}/{args.lr}'
 
 
-def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run):
+def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run, runtime_info):
     kwargs = {
         'output_dir': output_dir,
         'remove_unused_columns': False,
@@ -53,6 +55,7 @@ def build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, 
         'gradient_checkpointing': getattr(args, 'gradient_checkpointing', False),
         'generation_max_length': args.gen_max_len,
         'prediction_loss_only': False,
+        'dataloader_pin_memory': runtime_info.get('device_type') == 'cuda',
     }
 
     signature = inspect.signature(Seq2SeqTrainingArguments.__init__)
@@ -93,6 +96,10 @@ def build_trainer_kwargs(trainer_class, args, training_args, model, tokenized_da
 
 def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics):
     set_seed(run)
+    runtime_info, runtime_adjustments = configure_runtime(args, torch)
+    print(format_runtime_summary(runtime_info))
+    for adjustment in runtime_adjustments:
+        print(f'Runtime adjustment: {adjustment}')
 
     model = T5ForConditionalGeneration.from_pretrained(args.from_pretrained)
     if getattr(args, 'gradient_checkpointing', False):
@@ -118,7 +125,7 @@ def train_and_evaluate(args, run, tokenizer, tokenized_datasets, compute_metrics
         shutil.rmtree(output_dir)
 
     training_args = Seq2SeqTrainingArguments(
-        **build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run)
+        **build_training_args_kwargs(args, output_dir, logging_dir, logging_strategy, run, runtime_info)
     )
 
     if args.model_type == 'task_prefix':
