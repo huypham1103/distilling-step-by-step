@@ -4,6 +4,7 @@ import math
 import os
 from multiprocessing import get_context
 from pathlib import Path
+import time
 from typing import List, Sequence, Tuple
 
 import pandas as pd
@@ -187,6 +188,7 @@ def main():
 
     if use_multi_gpu:
         num_gpus = min(requested_gpus, available_gpus)
+        start_time = time.perf_counter()
         predictions = generate_predictions_multi_gpu(
             model_path=args.model_path,
             inputs=inputs,
@@ -197,7 +199,9 @@ def main():
             fp16=args.fp16,
             num_gpus=num_gpus,
         )
+        prediction_seconds = time.perf_counter() - start_time
     else:
+        start_time = time.perf_counter()
         predictions = generate_predictions_single_gpu(
             model_path=args.model_path,
             inputs=inputs,
@@ -207,8 +211,11 @@ def main():
             bf16=args.bf16,
             fp16=args.fp16,
         )
+        prediction_seconds = time.perf_counter() - start_time
 
     metrics = score_predictions(test_frame['label'].tolist(), predictions)
+    metrics['prediction_seconds'] = float(prediction_seconds)
+    metrics['seconds_per_example'] = float(prediction_seconds / max(len(test_frame), 1))
     result_frame = test_frame.copy()
     result_frame['prediction'] = predictions
 
@@ -222,6 +229,7 @@ def main():
     with metrics_path.open('w', encoding='utf-8') as handle:
         json.dump(metrics, handle, indent=2)
 
+    print(f'Prediction time: {prediction_seconds:.2f}s total, {metrics["seconds_per_example"]:.4f}s/example')
     print(json.dumps(metrics, indent=2))
     print(f'Test predictions saved to {predictions_path}')
     print(f'Test metrics saved to {metrics_path}')
