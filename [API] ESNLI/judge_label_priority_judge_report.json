@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_label_priority - full.csv",
+  "num_examples": 9990,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 9108,
+    "historical": 314,
+    "contrastive": 508,
+    "causal": 16,
+    "paper": 22,
+    "if_else": 20,
+    "consensus": 2
+  },
+  "fallback_to_paper_count": 22,
+  "inferred_gold_count": 169,
+  "skipped_count": 0,
+  "low_confidence_drop_count": 0,
+  "voted_label_override_count": 2495,
+  "label_match_rate": 1.0,
+  "average_judge_score": 15.306379527227229,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "label_priority"
+}

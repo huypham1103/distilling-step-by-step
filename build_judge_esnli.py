@@ -8,6 +8,7 @@ import pandas as pd
 
 
 API_DIR = Path("[API] ESNLI")
+DATASET_DIR = Path("datasets/esnli")
 DEFAULT_SOURCES = [
     "neutral",
     "contrastive",
@@ -20,6 +21,7 @@ DEFAULT_SOURCES = [
 
 THESIS_PREFERRED_SOURCES = ["neutral", "contrastive", "historical"]
 AGREEMENT_PREFERRED_SOURCES = ["neutral", "contrastive", "historical", "comparative"]
+GUARDED_PREFERRED_SOURCES = ["neutral", "contrastive", "historical"]
 
 LABEL_NORMALIZATION = {
     "entailment": "entailment",
@@ -60,6 +62,39 @@ AGREEMENT_TYPE_PRIOR = {
     "consensus": 0.70,
     "if_else": 0.66,
     "paper": 0.20,
+}
+
+GUARDED_TYPE_PRIOR = {
+    "neutral": 1.00,
+    "contrastive": 0.97,
+    "historical": 0.94,
+    "comparative": 0.80,
+    "causal": 0.68,
+    "consensus": 0.64,
+    "if_else": 0.60,
+    "paper": 0.0,
+}
+
+BALANCED_TYPE_PRIOR = {
+    "neutral": 1.00,
+    "contrastive": 0.98,
+    "historical": 0.96,
+    "comparative": 0.94,
+    "causal": 0.88,
+    "consensus": 0.82,
+    "if_else": 0.80,
+    "paper": 0.0,
+}
+
+LABEL_PRIORITY_TYPE_PRIOR = {
+    "neutral": 1.00,
+    "contrastive": 0.98,
+    "historical": 0.95,
+    "comparative": 0.83,
+    "causal": 0.76,
+    "consensus": 0.73,
+    "if_else": 0.68,
+    "paper": 0.30,
 }
 
 REASONING_CUES = (
@@ -103,7 +138,32 @@ def tokenize_for_overlap(text):
     return set(re.findall(r"[a-z]+", normalize_text(text).lower()))
 
 
-def load_gold_records():
+def load_local_gold_records():
+    label_map = {0: "entailment", 1: "neutral", 2: "contradiction"}
+    paths = [
+        DATASET_DIR / "esnli_train.json",
+        DATASET_DIR / "esnli_valid.json",
+        DATASET_DIR / "esnli_test.json",
+    ]
+    if not all(path.exists() for path in paths):
+        return []
+
+    records = []
+    for path in paths:
+        with path.open() as handle:
+            for line in handle:
+                row = json.loads(line)
+                records.append({
+                    "key": normalize_key(row["premise"], row["hypothesis"]),
+                    "premise": normalize_text(row["premise"]),
+                    "hypothesis": normalize_text(row["hypothesis"]),
+                    "gold_label": label_map.get(row["label"], normalize_label(row["label"])),
+                    "paper_rationale": "",
+                })
+    return records
+
+
+def load_paper_gold_records():
     paper_path = API_DIR / "paper - full.csv"
     if not paper_path.exists():
         raise FileNotFoundError(f"Missing gold anchor file: {paper_path}")
@@ -119,6 +179,13 @@ def load_gold_records():
             "paper_rationale": normalize_text(row.get("rationale", "")),
         })
     return records
+
+
+def load_gold_records():
+    local_records = load_local_gold_records()
+    if len(local_records) >= 1000:
+        return local_records, "local_esnli_json"
+    return load_paper_gold_records(), "paper_full_csv"
 
 
 def load_candidates(source_name):
@@ -162,7 +229,7 @@ def score_candidate(candidate, gold_label, strategy):
     rationale_lower = rationale.lower()
     word_count = len(re.findall(r"\w+", rationale))
 
-    if strategy == "thesis":
+    if strategy in {"thesis", "guarded_short"}:
         if word_count < 8:
             length_score = -0.8
         elif word_count <= 64:
@@ -204,6 +271,12 @@ def score_candidate(candidate, gold_label, strategy):
         type_prior = THESIS_TYPE_PRIOR
     elif strategy == "agreement":
         type_prior = AGREEMENT_TYPE_PRIOR
+    elif strategy in {"guarded", "guarded_short", "guarded_hardclean"}:
+        type_prior = GUARDED_TYPE_PRIOR
+    elif strategy == "guarded_balanced":
+        type_prior = BALANCED_TYPE_PRIOR
+    elif strategy == "label_priority":
+        type_prior = LABEL_PRIORITY_TYPE_PRIOR
     else:
         type_prior = TYPE_PRIOR
     source_prior = type_prior.get(source, 0.5)
@@ -216,6 +289,35 @@ def score_candidate(candidate, gold_label, strategy):
         preferred_bonus = 0.35 if source in AGREEMENT_PREFERRED_SOURCES else 0.0
         agreement_bonus = 0.55 * candidate.get("agreement_count", 0) + 0.25 * candidate.get("agreement_ratio", 0.0)
         total = label_score + source_prior + preferred_bonus + agreement_bonus + 0.95 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
+    elif strategy == "guarded":
+        label_score = 3.6 if label_match else -3.0
+        preferred_bonus = 0.45 if source in GUARDED_PREFERRED_SOURCES else 0.0
+        agreement_bonus = 0.75 * candidate.get("agreement_count", 0) + 0.45 * candidate.get("agreement_ratio", 0.0)
+        total = label_score + source_prior + preferred_bonus + agreement_bonus + 1.0 * length_score + 0.95 * overlap_score + cue_bonus + label_bonus
+    elif strategy == "guarded_short":
+        label_score = 3.7 if label_match else -3.0
+        preferred_bonus = 0.48 if source in GUARDED_PREFERRED_SOURCES else 0.0
+        agreement_bonus = 0.78 * candidate.get("agreement_count", 0) + 0.42 * candidate.get("agreement_ratio", 0.0)
+        brevity_bonus = 0.4 if 12 <= word_count <= 64 else (-0.25 if word_count > 110 else 0.0)
+        total = label_score + source_prior + preferred_bonus + agreement_bonus + 1.05 * length_score + 0.95 * overlap_score + cue_bonus + label_bonus + brevity_bonus
+    elif strategy == "guarded_balanced":
+        label_score = 3.45 if label_match else -2.8
+        preferred_bonus = 0.22 if source in GUARDED_PREFERRED_SOURCES else 0.0
+        diversity_bonus = 0.25 if source in {"comparative", "causal", "consensus", "if_else"} else 0.0
+        agreement_bonus = 0.68 * candidate.get("agreement_count", 0) + 0.38 * candidate.get("agreement_ratio", 0.0)
+        total = label_score + source_prior + preferred_bonus + diversity_bonus + agreement_bonus + 0.95 * length_score + 0.95 * overlap_score + cue_bonus + label_bonus
+    elif strategy == "guarded_hardclean":
+        label_score = 3.9 if label_match else -3.2
+        preferred_bonus = 0.52 if source in GUARDED_PREFERRED_SOURCES else 0.0
+        agreement_bonus = 0.9 * candidate.get("agreement_count", 0) + 0.55 * candidate.get("agreement_ratio", 0.0)
+        strict_bonus = 0.35 if word_count <= 80 else -0.4
+        total = label_score + source_prior + preferred_bonus + agreement_bonus + 1.05 * length_score + 1.0 * overlap_score + cue_bonus + label_bonus + strict_bonus
+    elif strategy == "label_priority":
+        label_score = 4.1 if label_match else -3.2
+        preferred_bonus = 0.35 if source in GUARDED_PREFERRED_SOURCES else 0.0
+        agreement_bonus = 0.55 * candidate.get("agreement_count", 0) + 0.35 * candidate.get("agreement_ratio", 0.0)
+        margin_bonus = 0.75 * candidate.get("label_support_margin", 0.0)
+        total = label_score + source_prior + preferred_bonus + agreement_bonus + margin_bonus + 0.95 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
     else:
         label_score = 3.0 if label_match else -2.0
         total = label_score + source_prior + 0.9 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
@@ -234,6 +336,12 @@ def infer_gold_label(candidates, strategy):
         type_prior = THESIS_TYPE_PRIOR
     elif strategy == "agreement":
         type_prior = AGREEMENT_TYPE_PRIOR
+    elif strategy in {"guarded", "guarded_short", "guarded_hardclean"}:
+        type_prior = GUARDED_TYPE_PRIOR
+    elif strategy == "guarded_balanced":
+        type_prior = BALANCED_TYPE_PRIOR
+    elif strategy == "label_priority":
+        type_prior = LABEL_PRIORITY_TYPE_PRIOR
     else:
         type_prior = TYPE_PRIOR
     for candidate in candidates:
@@ -263,17 +371,81 @@ def choose_best_candidate(candidates, strategy):
                     AGREEMENT_TYPE_PRIOR.get(candidate["source"], 0.0),
                 ),
             )
+    if strategy in {"guarded", "guarded_short", "guarded_hardclean"}:
+        preferred = [candidate for candidate in candidates if candidate["source"] in GUARDED_PREFERRED_SOURCES]
+        if preferred:
+            return max(
+                preferred,
+                key=lambda candidate: (
+                    candidate.get("agreement_count", 0),
+                    candidate.get("agreement_ratio", 0.0),
+                    candidate["judge_score"],
+                    GUARDED_TYPE_PRIOR.get(candidate["source"], 0.0),
+                ),
+            )
+    if strategy == "guarded_balanced":
+        return max(
+            candidates,
+            key=lambda candidate: (
+                candidate.get("agreement_count", 0),
+                candidate["judge_score"],
+                BALANCED_TYPE_PRIOR.get(candidate["source"], 0.0),
+            ),
+        )
+    if strategy == "label_priority":
+        return max(
+            candidates,
+            key=lambda candidate: (
+                candidate.get("agreement_count", 0),
+                candidate.get("label_support_margin", 0.0),
+                candidate["judge_score"],
+                LABEL_PRIORITY_TYPE_PRIOR.get(candidate["source"], 0.0),
+            ),
+        )
     if strategy == "thesis":
         type_prior = THESIS_TYPE_PRIOR
     elif strategy == "agreement":
         type_prior = AGREEMENT_TYPE_PRIOR
+    elif strategy in {"guarded", "guarded_short", "guarded_hardclean"}:
+        type_prior = GUARDED_TYPE_PRIOR
+    elif strategy == "guarded_balanced":
+        type_prior = BALANCED_TYPE_PRIOR
+    elif strategy == "label_priority":
+        type_prior = LABEL_PRIORITY_TYPE_PRIOR
     else:
         type_prior = TYPE_PRIOR
     return max(candidates, key=lambda candidate: (candidate["judge_score"], type_prior.get(candidate["source"], 0.0)))
 
 
+def weighted_label_vote(candidates, strategy):
+    if strategy == "label_priority":
+        type_prior = LABEL_PRIORITY_TYPE_PRIOR
+    elif strategy == "agreement":
+        type_prior = AGREEMENT_TYPE_PRIOR
+    elif strategy in {"guarded", "guarded_short", "guarded_hardclean"}:
+        type_prior = GUARDED_TYPE_PRIOR
+    elif strategy == "guarded_balanced":
+        type_prior = BALANCED_TYPE_PRIOR
+    elif strategy == "thesis":
+        type_prior = THESIS_TYPE_PRIOR
+    else:
+        type_prior = TYPE_PRIOR
+
+    scores = {"entailment": 0.0, "neutral": 0.0, "contradiction": 0.0}
+    for candidate in candidates:
+        label = normalize_label(candidate.get("label", ""))
+        if label not in scores:
+            continue
+        scores[label] += type_prior.get(candidate["source"], 0.0)
+
+    ranked = sorted(scores.items(), key=lambda item: item[1], reverse=True)
+    winning_label, winning_score = ranked[0]
+    runner_up_score = ranked[1][1] if len(ranked) > 1 else 0.0
+    return winning_label, winning_score, runner_up_score
+
+
 def build_judged_dataset(source_names, output_name, strategy):
-    gold_records = load_gold_records()
+    gold_records, gold_source = load_gold_records()
     candidate_tables = {source: load_candidates(source) for source in source_names}
 
     rows = []
@@ -281,6 +453,8 @@ def build_judged_dataset(source_names, output_name, strategy):
     fallback_count = 0
     inferred_gold_count = 0
     skipped_count = 0
+    low_confidence_drop_count = 0
+    voted_label_override_count = 0
 
     for gold in gold_records:
         key = gold["key"]
@@ -306,28 +480,49 @@ def build_judged_dataset(source_names, output_name, strategy):
             candidate["agreement_count"] = agreement_count
             candidate["agreement_ratio"] = agreement_count / total_candidate_count
 
-        gold_label = gold["gold_label"]
-        if gold_label not in {"entailment", "neutral", "contradiction"}:
-            gold_label = infer_gold_label(candidates, strategy)
-            if gold_label is None:
+        paper_gold_label = gold["gold_label"]
+        voted_label, winning_support, runner_up_support = weighted_label_vote(candidates, strategy)
+        vote_margin = winning_support - runner_up_support
+
+        training_label = paper_gold_label
+        if strategy == "label_priority":
+            if winning_support <= 0:
                 skipped_count += 1
                 continue
-            inferred_gold_count += 1
+            if paper_gold_label in {"entailment", "neutral", "contradiction"}:
+                if voted_label != paper_gold_label and vote_margin >= 1.25:
+                    training_label = voted_label
+                    voted_label_override_count += 1
+            else:
+                training_label = voted_label
+                inferred_gold_count += 1
+        else:
+            if training_label not in {"entailment", "neutral", "contradiction"}:
+                training_label = infer_gold_label(candidates, strategy)
+                if training_label is None:
+                    skipped_count += 1
+                    continue
+                inferred_gold_count += 1
 
         for candidate in candidates:
-            candidate.update(score_candidate(candidate, gold_label, strategy))
+            candidate["label_support_margin"] = vote_margin if candidate["label"] == voted_label else -vote_margin
+            candidate["voted_label"] = voted_label
+            candidate.update(score_candidate(candidate, training_label, strategy))
 
         matching_candidates = [candidate for candidate in candidates if candidate["label_match"]]
 
         if matching_candidates:
             best = choose_best_candidate(matching_candidates, strategy)
         else:
+            if strategy in {"guarded", "guarded_short", "guarded_balanced", "guarded_hardclean"}:
+                skipped_count += 1
+                continue
             fallback_count += 1
             best = {
                 "source": "paper",
                 "premise": gold["premise"],
                 "hypothesis": gold["hypothesis"],
-                "label": gold_label,
+                "label": training_label,
                 "rationale": gold["paper_rationale"],
                 "prompt": "",
                 "split": "",
@@ -338,9 +533,76 @@ def build_judged_dataset(source_names, output_name, strategy):
                 "overlap_score": 0.0,
                 "agreement_count": 0,
                 "agreement_ratio": 0.0,
+                "label_support_margin": 0.0,
+                "voted_label": voted_label,
             }
             if strategy == "agreement":
                 best["judge_score"] = AGREEMENT_TYPE_PRIOR["paper"]
+            elif strategy == "guarded_balanced":
+                best["judge_score"] = BALANCED_TYPE_PRIOR["paper"]
+            elif strategy == "label_priority":
+                best["judge_score"] = LABEL_PRIORITY_TYPE_PRIOR["paper"]
+
+        if strategy in {"guarded", "guarded_short", "guarded_balanced", "guarded_hardclean"}:
+            winning_support = sum(
+                (BALANCED_TYPE_PRIOR if strategy == "guarded_balanced" else GUARDED_TYPE_PRIOR).get(candidate["source"], 0.0)
+                for candidate in candidates
+                if candidate["label"] == training_label
+            )
+            other_supports = []
+            for other_label in {"entailment", "neutral", "contradiction"} - {training_label}:
+                other_supports.append(sum(
+                    (BALANCED_TYPE_PRIOR if strategy == "guarded_balanced" else GUARDED_TYPE_PRIOR).get(candidate["source"], 0.0)
+                    for candidate in candidates
+                    if candidate["label"] == other_label
+                ))
+            runner_up_support = max(other_supports) if other_supports else 0.0
+            support_margin = winning_support - runner_up_support
+            matched_count = sum(1 for candidate in candidates if candidate["label"] == training_label)
+            high_quality_source = any(candidate["source"] in GUARDED_PREFERRED_SOURCES for candidate in matching_candidates)
+            if strategy == "guarded":
+                keep_example = (
+                    matched_count >= 3
+                    or (
+                        matched_count >= 2
+                        and support_margin >= 0.75
+                        and best["judge_score"] >= 7.0
+                        and high_quality_source
+                    )
+                )
+            elif strategy == "guarded_short":
+                keep_example = (
+                    matched_count >= 3
+                    or (
+                        matched_count >= 2
+                        and support_margin >= 0.9
+                        and best["judge_score"] >= 7.4
+                        and high_quality_source
+                        and 12 <= best["word_count"] <= 96
+                    )
+                )
+            elif strategy == "guarded_balanced":
+                keep_example = (
+                    matched_count >= 3
+                    or (
+                        matched_count >= 2
+                        and support_margin >= 0.65
+                        and best["judge_score"] >= 6.8
+                    )
+                )
+            else:
+                keep_example = (
+                    matched_count >= 4
+                    or (
+                        matched_count >= 3
+                        and support_margin >= 1.1
+                        and best["judge_score"] >= 8.0
+                        and high_quality_source
+                    )
+                )
+            if not keep_example:
+                low_confidence_drop_count += 1
+                continue
 
         source_counts[best["source"]] = source_counts.get(best["source"], 0) + 1
         rows.append({
@@ -350,11 +612,15 @@ def build_judged_dataset(source_names, output_name, strategy):
             "rationale": best["rationale"],
             "split": best.get("split", ""),
             "correct_index": best.get("correct_index", ""),
-            "LLM_answer": gold_label,
+            "LLM_answer": training_label,
             "judge_source": best["source"],
             "judge_score": best["judge_score"],
             "candidate_label": best["label"],
-            "gold_label": gold_label,
+            "gold_label": training_label,
+            "paper_gold_label": paper_gold_label,
+            "voted_label": voted_label,
+            "voted_label_support": winning_support,
+            "voted_label_margin": vote_margin,
             "label_match": best["label_match"],
             "word_count": best["word_count"],
             "overlap_score": best["overlap_score"],
@@ -371,10 +637,13 @@ def build_judged_dataset(source_names, output_name, strategy):
     report = {
         "output_csv": str(output_csv),
         "num_examples": int(len(judged)),
+        "gold_source": gold_source,
         "source_counts": source_counts,
         "fallback_to_paper_count": int(fallback_count),
         "inferred_gold_count": int(inferred_gold_count),
         "skipped_count": int(skipped_count),
+        "low_confidence_drop_count": int(low_confidence_drop_count),
+        "voted_label_override_count": int(voted_label_override_count),
         "label_match_rate": float(judged["label_match"].mean()) if not judged.empty else math.nan,
         "average_judge_score": float(judged["judge_score"].mean()) if not judged.empty else math.nan,
         "sources_considered": source_names,
@@ -391,7 +660,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-name", type=str, default="judge")
     parser.add_argument("--sources", nargs="+", default=DEFAULT_SOURCES)
-    parser.add_argument("--strategy", type=str, choices=["baseline", "thesis", "agreement"], default="baseline")
+    parser.add_argument("--strategy", type=str, choices=["baseline", "thesis", "agreement", "guarded", "guarded_short", "guarded_balanced", "guarded_hardclean", "label_priority"], default="baseline")
     return parser.parse_args()
 
 

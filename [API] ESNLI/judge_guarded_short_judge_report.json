@@ -1,0 +1,28 @@
+{
+  "output_csv": "[API] ESNLI/judge_guarded_short - full.csv",
+  "num_examples": 7477,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 6407,
+    "contrastive": 719,
+    "historical": 343,
+    "if_else": 4,
+    "causal": 4
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 169,
+  "skipped_count": 2083,
+  "low_confidence_drop_count": 430,
+  "label_match_rate": 1.0,
+  "average_judge_score": 13.19448224327939,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "guarded_short"
+}

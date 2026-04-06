@@ -1,0 +1,29 @@
+{
+  "output_csv": "[API] ESNLI/judge_guarded - full.csv",
+  "num_examples": 7477,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 6845,
+    "contrastive": 371,
+    "historical": 253,
+    "if_else": 4,
+    "comparative": 1,
+    "causal": 3
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 169,
+  "skipped_count": 2083,
+  "low_confidence_drop_count": 430,
+  "label_match_rate": 1.0,
+  "average_judge_score": 12.375998863715392,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "guarded"
+}
