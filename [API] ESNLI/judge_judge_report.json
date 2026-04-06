@@ -1,0 +1,26 @@
+{
+  "output_csv": "[API] ESNLI/judge - full.csv",
+  "num_examples": 9990,
+  "source_counts": {
+    "neutral": 6267,
+    "paper": 2252,
+    "if_else": 408,
+    "contrastive": 196,
+    "historical": 224,
+    "causal": 524,
+    "consensus": 57,
+    "comparative": 62
+  },
+  "fallback_to_paper_count": 2252,
+  "label_match_rate": 1.0,
+  "average_judge_score": 4.5741601770770774,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ]
+}
