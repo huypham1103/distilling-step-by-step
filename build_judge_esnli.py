@@ -176,6 +176,18 @@ def score_candidate(candidate, gold_label):
     }
 
 
+def infer_gold_label(candidates):
+    scores = {}
+    for candidate in candidates:
+        label = normalize_label(candidate.get("label", ""))
+        if label not in {"entailment", "neutral", "contradiction"}:
+            continue
+        scores[label] = scores.get(label, 0.0) + TYPE_PRIOR.get(candidate["source"], 0.5)
+    if not scores:
+        return None
+    return max(scores.items(), key=lambda item: item[1])[0]
+
+
 def build_judged_dataset(source_names, output_name):
     gold_records = load_gold_records()
     candidate_tables = {source: load_candidates(source) for source in source_names}
@@ -183,6 +195,8 @@ def build_judged_dataset(source_names, output_name):
     rows = []
     source_counts = {}
     fallback_count = 0
+    inferred_gold_count = 0
+    skipped_count = 0
 
     for gold in gold_records:
         key = gold["key"]
@@ -192,8 +206,18 @@ def build_judged_dataset(source_names, output_name):
             if candidate is None:
                 continue
             scored = candidate.copy()
-            scored.update(score_candidate(candidate, gold["gold_label"]))
             candidates.append(scored)
+
+        gold_label = gold["gold_label"]
+        if gold_label not in {"entailment", "neutral", "contradiction"}:
+            gold_label = infer_gold_label(candidates)
+            if gold_label is None:
+                skipped_count += 1
+                continue
+            inferred_gold_count += 1
+
+        for candidate in candidates:
+            candidate.update(score_candidate(candidate, gold_label))
 
         matching_candidates = [candidate for candidate in candidates if candidate["label_match"]]
 
@@ -205,7 +229,7 @@ def build_judged_dataset(source_names, output_name):
                 "source": "paper",
                 "premise": gold["premise"],
                 "hypothesis": gold["hypothesis"],
-                "label": gold["gold_label"],
+                "label": gold_label,
                 "rationale": gold["paper_rationale"],
                 "prompt": "",
                 "split": "",
@@ -224,11 +248,11 @@ def build_judged_dataset(source_names, output_name):
             "rationale": best["rationale"],
             "split": best.get("split", ""),
             "correct_index": best.get("correct_index", ""),
-            "LLM_answer": gold["gold_label"],
+            "LLM_answer": gold_label,
             "judge_source": best["source"],
             "judge_score": best["judge_score"],
             "candidate_label": best["label"],
-            "gold_label": gold["gold_label"],
+            "gold_label": gold_label,
             "label_match": best["label_match"],
             "word_count": best["word_count"],
             "overlap_score": best["overlap_score"],
@@ -245,6 +269,8 @@ def build_judged_dataset(source_names, output_name):
         "num_examples": int(len(judged)),
         "source_counts": source_counts,
         "fallback_to_paper_count": int(fallback_count),
+        "inferred_gold_count": int(inferred_gold_count),
+        "skipped_count": int(skipped_count),
         "label_match_rate": float(judged["label_match"].mean()) if not judged.empty else math.nan,
         "average_judge_score": float(judged["judge_score"].mean()) if not judged.empty else math.nan,
         "sources_considered": source_names,

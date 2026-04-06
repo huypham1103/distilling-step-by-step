@@ -2,18 +2,20 @@
   "output_csv": "[API] ESNLI/judge - full.csv",
   "num_examples": 9990,
   "source_counts": {
-    "neutral": 6267,
-    "paper": 2252,
-    "if_else": 408,
-    "contrastive": 196,
+    "neutral": 6402,
+    "paper": 2083,
+    "if_else": 424,
+    "contrastive": 200,
     "historical": 224,
-    "causal": 524,
+    "causal": 537,
     "consensus": 57,
-    "comparative": 62
+    "comparative": 63
   },
-  "fallback_to_paper_count": 2252,
+  "fallback_to_paper_count": 2083,
+  "inferred_gold_count": 169,
+  "skipped_count": 0,
   "label_match_rate": 1.0,
-  "average_judge_score": 4.5741601770770774,
+  "average_judge_score": 4.662708667867868,
   "sources_considered": [
     "neutral",
     "contrastive",
