@@ -1,0 +1,29 @@
+{
+  "output_csv": "[API] ESNLI/judge_thesis - full.csv",
+  "num_examples": 9990,
+  "source_counts": {
+    "neutral": 6490,
+    "paper": 2083,
+    "contrastive": 737,
+    "historical": 527,
+    "consensus": 28,
+    "comparative": 44,
+    "if_else": 43,
+    "causal": 38
+  },
+  "fallback_to_paper_count": 2083,
+  "inferred_gold_count": 169,
+  "skipped_count": 0,
+  "label_match_rate": 1.0,
+  "average_judge_score": 5.2486577201201206,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "thesis"
+}

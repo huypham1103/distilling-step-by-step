@@ -18,6 +18,8 @@ DEFAULT_SOURCES = [
     "if_else",
 ]
 
+THESIS_PREFERRED_SOURCES = ["neutral", "contrastive", "historical"]
+
 LABEL_NORMALIZATION = {
     "entailment": "entailment",
     "entailed": "entailment",
@@ -35,6 +37,17 @@ TYPE_PRIOR = {
     "consensus": 0.74,
     "if_else": 0.70,
     "paper": 0.55,
+}
+
+THESIS_TYPE_PRIOR = {
+    "neutral": 1.00,
+    "contrastive": 0.98,
+    "historical": 0.96,
+    "comparative": 0.55,
+    "causal": 0.52,
+    "consensus": 0.48,
+    "if_else": 0.42,
+    "paper": 0.35,
 }
 
 REASONING_CUES = (
@@ -126,7 +139,7 @@ def load_candidates(source_name):
     return candidates
 
 
-def score_candidate(candidate, gold_label):
+def score_candidate(candidate, gold_label, strategy):
     rationale = candidate["rationale"]
     premise = candidate["premise"]
     hypothesis = candidate["hypothesis"]
@@ -137,16 +150,28 @@ def score_candidate(candidate, gold_label):
     rationale_lower = rationale.lower()
     word_count = len(re.findall(r"\w+", rationale))
 
-    if word_count < 6:
-        length_score = -1.0
-    elif word_count <= 80:
-        length_score = 1.0
-    elif word_count <= 180:
-        length_score = 0.6
-    elif word_count <= 260:
-        length_score = 0.2
+    if strategy == "thesis":
+        if word_count < 8:
+            length_score = -0.8
+        elif word_count <= 64:
+            length_score = 1.15
+        elif word_count <= 120:
+            length_score = 0.55
+        elif word_count <= 180:
+            length_score = 0.05
+        else:
+            length_score = -0.85
     else:
-        length_score = -0.6
+        if word_count < 6:
+            length_score = -1.0
+        elif word_count <= 80:
+            length_score = 1.0
+        elif word_count <= 180:
+            length_score = 0.6
+        elif word_count <= 260:
+            length_score = 0.2
+        else:
+            length_score = -0.6
 
     support_tokens = tokenize_for_overlap(premise) | tokenize_for_overlap(hypothesis)
     rationale_tokens = tokenize_for_overlap(rationale)
@@ -163,10 +188,15 @@ def score_candidate(candidate, gold_label):
     if "the correct answer" in rationale_lower or "so the answer is" in rationale_lower:
         label_bonus += 0.15
 
-    source_prior = TYPE_PRIOR.get(source, 0.5)
-    label_score = 3.0 if label_match else -2.0
-
-    total = label_score + source_prior + 0.9 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
+    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
+    source_prior = type_prior.get(source, 0.5)
+    if strategy == "thesis":
+        label_score = 3.2 if label_match else -2.2
+        preferred_bonus = 0.45 if source in THESIS_PREFERRED_SOURCES else 0.0
+        total = label_score + source_prior + preferred_bonus + 1.0 * length_score + 0.85 * overlap_score + cue_bonus + label_bonus
+    else:
+        label_score = 3.0 if label_match else -2.0
+        total = label_score + source_prior + 0.9 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
 
     return {
         "judge_score": round(total, 6),
@@ -176,19 +206,29 @@ def score_candidate(candidate, gold_label):
     }
 
 
-def infer_gold_label(candidates):
+def infer_gold_label(candidates, strategy):
     scores = {}
+    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
     for candidate in candidates:
         label = normalize_label(candidate.get("label", ""))
         if label not in {"entailment", "neutral", "contradiction"}:
             continue
-        scores[label] = scores.get(label, 0.0) + TYPE_PRIOR.get(candidate["source"], 0.5)
+        scores[label] = scores.get(label, 0.0) + type_prior.get(candidate["source"], 0.5)
     if not scores:
         return None
     return max(scores.items(), key=lambda item: item[1])[0]
 
 
-def build_judged_dataset(source_names, output_name):
+def choose_best_candidate(candidates, strategy):
+    if strategy == "thesis":
+        preferred = [candidate for candidate in candidates if candidate["source"] in THESIS_PREFERRED_SOURCES]
+        if preferred:
+            return max(preferred, key=lambda candidate: (candidate["judge_score"], THESIS_TYPE_PRIOR.get(candidate["source"], 0.0)))
+    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
+    return max(candidates, key=lambda candidate: (candidate["judge_score"], type_prior.get(candidate["source"], 0.0)))
+
+
+def build_judged_dataset(source_names, output_name, strategy):
     gold_records = load_gold_records()
     candidate_tables = {source: load_candidates(source) for source in source_names}
 
@@ -210,19 +250,19 @@ def build_judged_dataset(source_names, output_name):
 
         gold_label = gold["gold_label"]
         if gold_label not in {"entailment", "neutral", "contradiction"}:
-            gold_label = infer_gold_label(candidates)
+            gold_label = infer_gold_label(candidates, strategy)
             if gold_label is None:
                 skipped_count += 1
                 continue
             inferred_gold_count += 1
 
         for candidate in candidates:
-            candidate.update(score_candidate(candidate, gold_label))
+            candidate.update(score_candidate(candidate, gold_label, strategy))
 
         matching_candidates = [candidate for candidate in candidates if candidate["label_match"]]
 
         if matching_candidates:
-            best = max(matching_candidates, key=lambda candidate: (candidate["judge_score"], TYPE_PRIOR.get(candidate["source"], 0.0)))
+            best = choose_best_candidate(matching_candidates, strategy)
         else:
             fallback_count += 1
             best = {
@@ -234,7 +274,7 @@ def build_judged_dataset(source_names, output_name):
                 "prompt": "",
                 "split": "",
                 "correct_index": "",
-                "judge_score": TYPE_PRIOR["paper"],
+                "judge_score": (THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR)["paper"],
                 "label_match": True,
                 "word_count": len(re.findall(r"\w+", gold["paper_rationale"])),
                 "overlap_score": 0.0,
@@ -274,6 +314,7 @@ def build_judged_dataset(source_names, output_name):
         "label_match_rate": float(judged["label_match"].mean()) if not judged.empty else math.nan,
         "average_judge_score": float(judged["judge_score"].mean()) if not judged.empty else math.nan,
         "sources_considered": source_names,
+        "strategy": strategy,
     }
     report_path = API_DIR / f"{output_name}_judge_report.json"
     with report_path.open("w") as handle:
@@ -286,12 +327,13 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-name", type=str, default="judge")
     parser.add_argument("--sources", nargs="+", default=DEFAULT_SOURCES)
+    parser.add_argument("--strategy", type=str, choices=["baseline", "thesis"], default="baseline")
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
-    output_csv, report_path, report = build_judged_dataset(args.sources, args.output_name)
+    output_csv, report_path, report = build_judged_dataset(args.sources, args.output_name, args.strategy)
     print(json.dumps(report, indent=2))
     print(f"Saved judged rationale CSV to {output_csv}")
     print(f"Saved report to {report_path}")
