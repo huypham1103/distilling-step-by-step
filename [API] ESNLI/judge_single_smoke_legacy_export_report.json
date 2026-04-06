@@ -1,0 +1,13 @@
+{
+  "selected_csv": "artifacts/esnli_selection/selected_thesis_prior_top1.csv",
+  "output_dir": "[API] ESNLI",
+  "output_prefix": "judge_single_smoke",
+  "exported_files": [
+    {
+      "rationale_column": "rationale_1",
+      "output_name": "judge_single_smoke_r1",
+      "output_path": "[API] ESNLI/judge_single_smoke_r1 - full.csv",
+      "num_rows": 9220
+    }
+  ]
+}

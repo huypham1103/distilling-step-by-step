@@ -1,0 +1,4 @@
+premise,hypothesis,rationale,LLM_answer,rationale_type
+A person on a horse jumps over a broken down airplane.,"A person is outdoors, on a horse.",The correct answer is entailment because the premise shows a person outdoors on a horse.,entailment,judge
+A person on a horse jumps over a broken down airplane.,"A person is at a diner, ordering an omelette.",The correct answer is contradiction because the person cannot be outdoors on a horse and inside a diner ordering food.,contradiction,judge
+A person on a horse jumps over a broken down airplane.,A person is training his horse for a competition.,The correct answer is neutral because the premise does not tell us whether the person is training for a competition.,neutral,judge

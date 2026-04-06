@@ -16,54 +16,6 @@
 import numpy as np
 
 
-def _extract_primary_token_batch(values):
-    current = values
-
-    while True:
-        if isinstance(current, (list, tuple)):
-            if not current:
-                return np.empty((0, 0), dtype=np.int64)
-            current = current[0]
-            continue
-
-        array = np.asarray(current)
-
-        if array.dtype == object:
-            if array.size == 0:
-                return np.empty((0, 0), dtype=np.int64)
-            current = array.flat[0]
-            continue
-
-        if array.ndim >= 3:
-            current = array[0]
-            continue
-
-        if array.ndim == 0:
-            array = array.reshape(1, 1)
-        elif array.ndim == 1:
-            array = array.reshape(1, -1)
-
-        return array.astype(np.int64, copy=False)
-
-
-def _sanitize_token_batch(token_batch, tokenizer):
-    array = np.asarray(token_batch)
-    if array.size == 0:
-        return array.astype(np.int64, copy=False)
-
-    pad_token_id = tokenizer.pad_token_id if tokenizer.pad_token_id is not None else 0
-    max_token_id = max(len(tokenizer) - 1, pad_token_id)
-
-    if np.issubdtype(array.dtype, np.floating):
-        array = np.where(np.isfinite(array), array, pad_token_id)
-        array = np.rint(array)
-
-    array = array.astype(np.int64, copy=False)
-    array = np.where(array < 0, pad_token_id, array)
-    array = np.where(array > max_token_id, pad_token_id, array)
-    return array
-
-
 def compute_text_acc(preds, labels):
     return np.mean(np.array(preds) == np.array(labels))
 
@@ -87,12 +39,10 @@ def eval_equation(equation):
 def compute_metrics_text(tokenizer):
     def compute_metrics(eval_pred):
         predictions, labels = eval_pred
-        prediction_ids = _sanitize_token_batch(_extract_primary_token_batch(predictions), tokenizer)
-        decoded_preds = tokenizer.batch_decode(prediction_ids, skip_special_tokens=True)
+        decoded_preds = tokenizer.batch_decode(predictions[0], skip_special_tokens=True)
 
-        label_ids = _sanitize_token_batch(_extract_primary_token_batch(labels), tokenizer)
-        label_ids = np.where(label_ids != -100, label_ids, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(label_ids, skip_special_tokens=True)
+        labels = np.where(labels[0] != -100, labels[0], tokenizer.pad_token_id)
+        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
         acc = np.mean(np.array(decoded_preds) == np.array(decoded_labels))
 
@@ -120,12 +70,10 @@ def compute_metrics_text_aux(tokenizer):
 def compute_metrics_equation(tokenizer):
     def compute_metrics(eval_pred):
         predictions, labels = eval_pred
-        prediction_ids = _sanitize_token_batch(_extract_primary_token_batch(predictions), tokenizer)
-        decoded_preds = tokenizer.batch_decode(prediction_ids, skip_special_tokens=True)
+        decoded_preds = tokenizer.batch_decode(predictions[0], skip_special_tokens=True)
 
-        label_ids = _sanitize_token_batch(_extract_primary_token_batch(labels), tokenizer)
-        label_ids = np.where(label_ids != -100, label_ids, tokenizer.pad_token_id)
-        decoded_labels = tokenizer.batch_decode(label_ids, skip_special_tokens=True)
+        labels = np.where(labels[0] != -100, labels[0], tokenizer.pad_token_id)
+        decoded_labels = tokenizer.batch_decode(labels, skip_special_tokens=True)
 
         preds = list()
         for pred in decoded_preds:    

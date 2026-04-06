@@ -1,0 +1,13 @@
+{
+  "selected_csv": "artifacts/tiny_selected_for_export.csv",
+  "output_dir": "[API] ESNLI",
+  "output_prefix": "judge_single_tiny",
+  "exported_files": [
+    {
+      "rationale_column": "rationale_1",
+      "output_name": "judge_single_tiny_r1",
+      "output_path": "[API] ESNLI/judge_single_tiny_r1 - full.csv",
+      "num_rows": 3
+    }
+  ]
+}

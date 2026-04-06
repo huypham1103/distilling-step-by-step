@@ -1,0 +1,124 @@
+{
+  "validation_report": {
+    "condition": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "contrastive": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "neutral": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "consensus": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "causal": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "comparative": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    },
+    "historical": {
+      "rows": 9990,
+      "unique_pairs": 9990,
+      "duplicate_pairs": 0,
+      "collisions": 0,
+      "missing_labels": 0
+    }
+  },
+  "canonical_report": {
+    "label_source_rows": 10000,
+    "label_source_unique_pairs": 9990,
+    "label_source_duplicate_pairs": 10,
+    "matches_per_rationale": {
+      "condition": 9990,
+      "contrastive": 9990,
+      "neutral": 9990,
+      "consensus": 9990,
+      "causal": 9990,
+      "comparative": 9990,
+      "historical": 9990
+    }
+  },
+  "split_report": {
+    "split_source": "official_esnli",
+    "matched_pairs": 9990,
+    "unmatched_pairs": 0,
+    "label_mismatches": 0
+  },
+  "truncated_split_report": {
+    "reassigned": false,
+    "reason": null,
+    "split_counts": {
+      "train": 9990
+    }
+  },
+  "selection_report": {
+    "selection_policy": "thesis_prior",
+    "num_selected_rationales": 1,
+    "rows_before_selection": 9990,
+    "rows_after_selection": 9220,
+    "dropped_rows": 770,
+    "selection_counts": {
+      "condition": 40,
+      "contrastive": 430,
+      "neutral": 8329,
+      "consensus": 79,
+      "causal": 31,
+      "comparative": 71,
+      "historical": 240
+    },
+    "single_type_priors": {
+      "neutral": 1.0,
+      "contrastive": 0.9,
+      "historical": 0.85,
+      "consensus": 0.55,
+      "comparative": 0.45,
+      "causal": 0.35,
+      "condition": 0.3
+    },
+    "pair_priors": {
+      "contrastive,historical": 1.5,
+      "contrastive,neutral": 0.8,
+      "historical,neutral": 0.7,
+      "consensus,neutral": 0.35,
+      "comparative,contrastive": 0.3
+    }
+  },
+  "selected_split_report": {
+    "reassigned": true,
+    "reason": "missing_required_splits",
+    "original_split_counts": {
+      "train": 9220
+    },
+    "split_counts": {
+      "train": 7376,
+      "test": 922,
+      "valid": 922
+    }
+  }
+}
