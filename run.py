@@ -186,6 +186,7 @@ def run(args):
         test = test.set_index('input')
         
         rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+        print(f"Load data from [API] ESNLI/{args.type_rationale} - full.csv")
         rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
         rationales.set_index('input', inplace=True)
         rationales['label'] = rationales['LLM_answer']
