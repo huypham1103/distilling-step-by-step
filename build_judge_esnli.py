@@ -19,6 +19,7 @@ DEFAULT_SOURCES = [
 ]
 
 THESIS_PREFERRED_SOURCES = ["neutral", "contrastive", "historical"]
+AGREEMENT_PREFERRED_SOURCES = ["neutral", "contrastive", "historical", "comparative"]
 
 LABEL_NORMALIZATION = {
     "entailment": "entailment",
@@ -48,6 +49,17 @@ THESIS_TYPE_PRIOR = {
     "consensus": 0.48,
     "if_else": 0.42,
     "paper": 0.35,
+}
+
+AGREEMENT_TYPE_PRIOR = {
+    "neutral": 1.00,
+    "contrastive": 0.96,
+    "historical": 0.92,
+    "comparative": 0.86,
+    "causal": 0.72,
+    "consensus": 0.70,
+    "if_else": 0.66,
+    "paper": 0.20,
 }
 
 REASONING_CUES = (
@@ -188,12 +200,22 @@ def score_candidate(candidate, gold_label, strategy):
     if "the correct answer" in rationale_lower or "so the answer is" in rationale_lower:
         label_bonus += 0.15
 
-    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
+    if strategy == "thesis":
+        type_prior = THESIS_TYPE_PRIOR
+    elif strategy == "agreement":
+        type_prior = AGREEMENT_TYPE_PRIOR
+    else:
+        type_prior = TYPE_PRIOR
     source_prior = type_prior.get(source, 0.5)
     if strategy == "thesis":
         label_score = 3.2 if label_match else -2.2
         preferred_bonus = 0.45 if source in THESIS_PREFERRED_SOURCES else 0.0
         total = label_score + source_prior + preferred_bonus + 1.0 * length_score + 0.85 * overlap_score + cue_bonus + label_bonus
+    elif strategy == "agreement":
+        label_score = 3.4 if label_match else -2.4
+        preferred_bonus = 0.35 if source in AGREEMENT_PREFERRED_SOURCES else 0.0
+        agreement_bonus = 0.55 * candidate.get("agreement_count", 0) + 0.25 * candidate.get("agreement_ratio", 0.0)
+        total = label_score + source_prior + preferred_bonus + agreement_bonus + 0.95 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
     else:
         label_score = 3.0 if label_match else -2.0
         total = label_score + source_prior + 0.9 * length_score + 0.9 * overlap_score + cue_bonus + label_bonus
@@ -208,7 +230,12 @@ def score_candidate(candidate, gold_label, strategy):
 
 def infer_gold_label(candidates, strategy):
     scores = {}
-    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
+    if strategy == "thesis":
+        type_prior = THESIS_TYPE_PRIOR
+    elif strategy == "agreement":
+        type_prior = AGREEMENT_TYPE_PRIOR
+    else:
+        type_prior = TYPE_PRIOR
     for candidate in candidates:
         label = normalize_label(candidate.get("label", ""))
         if label not in {"entailment", "neutral", "contradiction"}:
@@ -224,7 +251,24 @@ def choose_best_candidate(candidates, strategy):
         preferred = [candidate for candidate in candidates if candidate["source"] in THESIS_PREFERRED_SOURCES]
         if preferred:
             return max(preferred, key=lambda candidate: (candidate["judge_score"], THESIS_TYPE_PRIOR.get(candidate["source"], 0.0)))
-    type_prior = THESIS_TYPE_PRIOR if strategy == "thesis" else TYPE_PRIOR
+    if strategy == "agreement":
+        preferred = [candidate for candidate in candidates if candidate["source"] in AGREEMENT_PREFERRED_SOURCES]
+        if preferred:
+            return max(
+                preferred,
+                key=lambda candidate: (
+                    candidate.get("agreement_count", 0),
+                    candidate.get("agreement_ratio", 0.0),
+                    candidate["judge_score"],
+                    AGREEMENT_TYPE_PRIOR.get(candidate["source"], 0.0),
+                ),
+            )
+    if strategy == "thesis":
+        type_prior = THESIS_TYPE_PRIOR
+    elif strategy == "agreement":
+        type_prior = AGREEMENT_TYPE_PRIOR
+    else:
+        type_prior = TYPE_PRIOR
     return max(candidates, key=lambda candidate: (candidate["judge_score"], type_prior.get(candidate["source"], 0.0)))
 
 
@@ -247,6 +291,20 @@ def build_judged_dataset(source_names, output_name, strategy):
                 continue
             scored = candidate.copy()
             candidates.append(scored)
+
+        label_counts = {}
+        for candidate in candidates:
+            label = normalize_label(candidate.get("label", ""))
+            if label not in {"entailment", "neutral", "contradiction"}:
+                continue
+            label_counts[label] = label_counts.get(label, 0) + 1
+
+        total_candidate_count = max(1, len(candidates))
+        for candidate in candidates:
+            label = normalize_label(candidate.get("label", ""))
+            agreement_count = label_counts.get(label, 0)
+            candidate["agreement_count"] = agreement_count
+            candidate["agreement_ratio"] = agreement_count / total_candidate_count
 
         gold_label = gold["gold_label"]
         if gold_label not in {"entailment", "neutral", "contradiction"}:
@@ -278,7 +336,11 @@ def build_judged_dataset(source_names, output_name, strategy):
                 "label_match": True,
                 "word_count": len(re.findall(r"\w+", gold["paper_rationale"])),
                 "overlap_score": 0.0,
+                "agreement_count": 0,
+                "agreement_ratio": 0.0,
             }
+            if strategy == "agreement":
+                best["judge_score"] = AGREEMENT_TYPE_PRIOR["paper"]
 
         source_counts[best["source"]] = source_counts.get(best["source"], 0) + 1
         rows.append({
@@ -296,6 +358,8 @@ def build_judged_dataset(source_names, output_name, strategy):
             "label_match": best["label_match"],
             "word_count": best["word_count"],
             "overlap_score": best["overlap_score"],
+            "agreement_count": best.get("agreement_count", 0),
+            "agreement_ratio": best.get("agreement_ratio", 0.0),
         })
 
     judged = pd.DataFrame(rows)
@@ -327,7 +391,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-name", type=str, default="judge")
     parser.add_argument("--sources", nargs="+", default=DEFAULT_SOURCES)
-    parser.add_argument("--strategy", type=str, choices=["baseline", "thesis"], default="baseline")
+    parser.add_argument("--strategy", type=str, choices=["baseline", "thesis", "agreement"], default="baseline")
     return parser.parse_args()
 
 
