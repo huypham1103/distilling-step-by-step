@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_signal_hardclean - full.csv",
+  "num_examples": 9739,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 3945,
+    "causal": 2769,
+    "if_else": 1645,
+    "consensus": 536,
+    "contrastive": 416,
+    "comparative": 263,
+    "historical": 165
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 170,
+  "low_confidence_drop_count": 81,
+  "voted_label_override_count": 2484,
+  "label_match_rate": 1.0,
+  "average_judge_score": 21.118709410925145,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "student_signal_hardclean"
+}

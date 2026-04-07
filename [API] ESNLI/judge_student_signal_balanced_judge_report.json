@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_signal_balanced - full.csv",
+  "num_examples": 9084,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "causal": 3606,
+    "neutral": 2347,
+    "if_else": 1877,
+    "consensus": 624,
+    "comparative": 335,
+    "contrastive": 205,
+    "historical": 90
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 170,
+  "low_confidence_drop_count": 32,
+  "voted_label_override_count": 2484,
+  "label_match_rate": 1.0,
+  "average_judge_score": 19.123092640356674,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "student_signal_balanced"
+}
