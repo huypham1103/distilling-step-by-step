@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_label_priority_guarded_balanced - full.csv",
+  "num_examples": 9069,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 7701,
+    "causal": 504,
+    "if_else": 420,
+    "contrastive": 243,
+    "historical": 166,
+    "comparative": 24,
+    "consensus": 11
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 166,
+  "low_confidence_drop_count": 85,
+  "voted_label_override_count": 2488,
+  "label_match_rate": 1.0,
+  "average_judge_score": 16.849810415150515,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "label_priority_guarded_balanced"
+}

@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_label_expert_guarded - full.csv",
+  "num_examples": 9796,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 3638,
+    "causal": 2792,
+    "if_else": 2756,
+    "consensus": 347,
+    "comparative": 90,
+    "contrastive": 88,
+    "historical": 85
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 170,
+  "low_confidence_drop_count": 24,
+  "voted_label_override_count": 2484,
+  "label_match_rate": 1.0,
+  "average_judge_score": 18.244058486627196,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "label_expert_guarded"
+}
