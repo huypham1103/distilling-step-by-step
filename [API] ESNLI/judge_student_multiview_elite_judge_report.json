@@ -1,0 +1,32 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_multiview_elite - full.csv",
+  "num_examples": 17379,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 3636,
+    "if_else": 3376,
+    "causal": 2916,
+    "contrastive": 2754,
+    "historical": 1975,
+    "comparative": 1529,
+    "consensus": 1193
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 170,
+  "low_confidence_drop_count": 72,
+  "voted_label_override_count": 2484,
+  "extra_view_count": 8587,
+  "label_match_rate": 1.0,
+  "average_judge_score": 20.90303214016917,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "student_multiview_elite"
+}
