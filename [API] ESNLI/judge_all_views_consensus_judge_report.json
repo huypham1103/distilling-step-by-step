@@ -1,0 +1,32 @@
+{
+  "output_csv": "[API] ESNLI/judge_all_views_consensus - full.csv",
+  "num_examples": 66647,
+  "gold_source": "paper_full_csv",
+  "source_counts": {
+    "neutral": 9707,
+    "contrastive": 9697,
+    "consensus": 9685,
+    "if_else": 9623,
+    "causal": 9418,
+    "comparative": 9333,
+    "historical": 9184
+  },
+  "fallback_to_paper_count": 0,
+  "inferred_gold_count": 0,
+  "skipped_count": 0,
+  "low_confidence_drop_count": 0,
+  "voted_label_override_count": 0,
+  "extra_view_count": 56657,
+  "label_match_rate": 1.0,
+  "average_judge_score": 18.38978663182139,
+  "sources_considered": [
+    "neutral",
+    "contrastive",
+    "historical",
+    "comparative",
+    "causal",
+    "consensus",
+    "if_else"
+  ],
+  "strategy": "all_views_consensus"
+}
