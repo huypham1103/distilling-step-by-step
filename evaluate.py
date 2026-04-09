@@ -4,6 +4,7 @@ from typing import List, Optional
 
 import pandas as pd
 import torch
+from tqdm.auto import tqdm
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 
@@ -74,8 +75,13 @@ def find_label_column(df: pd.DataFrame) -> Optional[str]:
 
 def generate_predictions(args, model, tokenizer, inputs: List[str], device: torch.device) -> List[str]:
     predictions = []
+    total_batches = (len(inputs) + args.batch_size - 1) // args.batch_size
 
-    for start in range(0, len(inputs), args.batch_size):
+    for start in tqdm(
+        range(0, len(inputs), args.batch_size),
+        total=total_batches,
+        desc="Generating",
+    ):
         batch_texts = [args.prefix + text for text in inputs[start : start + args.batch_size]]
         batch = tokenizer(
             batch_texts,
