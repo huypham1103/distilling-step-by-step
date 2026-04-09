@@ -51,6 +51,16 @@ def load_table(path: Path) -> pd.DataFrame:
     raise ValueError(f"Unsupported test data format: {path.suffix}")
 
 
+def resolve_output_path(test_data_path: Path, output_path_arg: Optional[str]) -> Path:
+    if output_path_arg:
+        output_path = Path(output_path_arg)
+    else:
+        output_path = Path.cwd() / f"{test_data_path.stem}_predictions.csv"
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    return output_path
+
+
 def build_inputs(df: pd.DataFrame, tokenizer) -> List[str]:
     if "input" in df.columns:
         return df["input"].fillna("").astype(str).tolist()
@@ -105,9 +115,7 @@ def main():
 
     model_path = Path(args.model_path)
     test_data_path = Path(args.test_data)
-    output_path = Path(args.output_path) if args.output_path else test_data_path.with_name(
-        f"{test_data_path.stem}_predictions.csv"
-    )
+    output_path = resolve_output_path(test_data_path, args.output_path)
 
     tokenizer = AutoTokenizer.from_pretrained(model_path)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_path)
