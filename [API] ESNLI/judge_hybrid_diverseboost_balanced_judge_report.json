@@ -1,0 +1,27 @@
+{
+  "output_csv": "[API] ESNLI/judge_hybrid_diverseboost_balanced - full.csv",
+  "num_examples": 16500,
+  "label_counts": {
+    "entailment": 5500,
+    "neutral": 5500,
+    "contradiction": 5500
+  },
+  "judge_source_counts": {
+    "neutral": 3483,
+    "if_else": 3060,
+    "causal": 2503,
+    "contrastive": 2447,
+    "consensus": 2063,
+    "comparative": 1848,
+    "historical": 1096
+  },
+  "source_pack_counts": {
+    "singleview_diverse": 8722,
+    "multiview_sourceblend": 6537,
+    "multiview_hybrid": 1241
+  },
+  "average_judge_score": 21.410568117575757,
+  "average_agreement_count": 6.899515151515152,
+  "average_voted_label_margin": 6.327435757575758,
+  "extra_view_count": 6084
+}

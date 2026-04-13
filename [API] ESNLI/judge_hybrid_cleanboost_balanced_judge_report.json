@@ -1,0 +1,26 @@
+{
+  "output_csv": "[API] ESNLI/judge_hybrid_cleanboost_balanced - full.csv",
+  "num_examples": 9921,
+  "label_counts": {
+    "entailment": 3307,
+    "neutral": 3307,
+    "contradiction": 3307
+  },
+  "judge_source_counts": {
+    "neutral": 2574,
+    "if_else": 2281,
+    "causal": 2240,
+    "contrastive": 1546,
+    "comparative": 624,
+    "historical": 409,
+    "consensus": 247
+  },
+  "source_pack_counts": {
+    "singleview_superclean": 8826,
+    "multiview_hybrid": 1095
+  },
+  "average_judge_score": 22.063221358330814,
+  "average_agreement_count": 6.85908678560629,
+  "average_voted_label_margin": 5.979567583912913,
+  "extra_view_count": 0
+}

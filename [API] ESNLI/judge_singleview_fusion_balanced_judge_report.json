@@ -1,0 +1,26 @@
+{
+  "output_csv": "[API] ESNLI/judge_singleview_fusion_balanced - full.csv",
+  "num_examples": 9600,
+  "label_counts": {
+    "entailment": 3200,
+    "neutral": 3200,
+    "contradiction": 3200
+  },
+  "judge_source_counts": {
+    "if_else": 2257,
+    "neutral": 2097,
+    "causal": 1836,
+    "contrastive": 1369,
+    "consensus": 1024,
+    "comparative": 594,
+    "historical": 423
+  },
+  "source_pack_counts": {
+    "singleview_superclean": 8143,
+    "singleview_diverse": 1457
+  },
+  "average_judge_score": 22.45436713739583,
+  "average_agreement_count": 6.973645833333333,
+  "average_voted_label_margin": 6.1914677083333345,
+  "extra_view_count": 0
+}

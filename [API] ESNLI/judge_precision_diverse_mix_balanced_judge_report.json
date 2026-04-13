@@ -1,0 +1,28 @@
+{
+  "output_csv": "[API] ESNLI/judge_precision_diverse_mix_balanced - full.csv",
+  "num_examples": 9600,
+  "label_counts": {
+    "entailment": 3200,
+    "neutral": 3200,
+    "contradiction": 3200
+  },
+  "judge_source_counts": {
+    "causal": 1606,
+    "neutral": 1606,
+    "consensus": 1559,
+    "if_else": 1425,
+    "contrastive": 1411,
+    "comparative": 1290,
+    "historical": 703
+  },
+  "source_pack_counts": {
+    "singleview_superclean": 6387,
+    "multiview_sourceblend": 1645,
+    "singleview_diverse": 1431,
+    "signal": 137
+  },
+  "average_judge_score": 22.169113229895835,
+  "average_agreement_count": 6.944791666666666,
+  "average_voted_label_margin": 6.207542708333333,
+  "extra_view_count": 1306
+}

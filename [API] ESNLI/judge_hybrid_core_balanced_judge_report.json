@@ -1,0 +1,25 @@
+{
+  "output_csv": "[API] ESNLI/judge_hybrid_core_balanced - full.csv",
+  "num_examples": 9600,
+  "label_counts": {
+    "entailment": 3200,
+    "neutral": 3200,
+    "contradiction": 3200
+  },
+  "judge_source_counts": {
+    "neutral": 2354,
+    "if_else": 2042,
+    "causal": 2014,
+    "contrastive": 1734,
+    "comparative": 682,
+    "historical": 542,
+    "consensus": 232
+  },
+  "source_pack_counts": {
+    "multiview_hybrid": 9600
+  },
+  "average_judge_score": 20.96693352635417,
+  "average_agreement_count": 7.0,
+  "average_voted_label_margin": 6.266666666666666,
+  "extra_view_count": 2599
+}
