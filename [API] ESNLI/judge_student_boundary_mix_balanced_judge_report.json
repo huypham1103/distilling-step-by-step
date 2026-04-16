@@ -1,0 +1,26 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_boundary_mix_balanced - full.csv",
+  "num_examples": 9054,
+  "label_counts": {
+    "entailment": 3018,
+    "neutral": 3018,
+    "contradiction": 3018
+  },
+  "judge_source_counts": {
+    "causal": 3525,
+    "neutral": 2558,
+    "if_else": 1648,
+    "contrastive": 478,
+    "comparative": 371,
+    "historical": 243,
+    "consensus": 231
+  },
+  "boundary_band_counts": {
+    "easy": 9032,
+    "boundary": 22
+  },
+  "average_judge_score": 3.406483285588571,
+  "average_agreement_count": 6.853545394300862,
+  "average_voted_label_margin": 5.94717472940137,
+  "extra_view_count": 0
+}

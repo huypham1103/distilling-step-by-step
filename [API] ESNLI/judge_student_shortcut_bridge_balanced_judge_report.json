@@ -1,0 +1,31 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_shortcut_bridge_balanced - full.csv",
+  "num_examples": 10800,
+  "label_counts": {
+    "entailment": 3600,
+    "neutral": 3600,
+    "contradiction": 3600
+  },
+  "shortcut_band_counts": {
+    "easy": 5039,
+    "bridge": 3132,
+    "challenge": 2629
+  },
+  "view_rank_counts": {
+    "1": 6126,
+    "2": 4674
+  },
+  "judge_source_counts": {
+    "causal": 3235,
+    "neutral": 2916,
+    "if_else": 1775,
+    "contrastive": 886,
+    "comparative": 877,
+    "historical": 592,
+    "consensus": 519
+  },
+  "average_judge_score": 3.81861,
+  "average_shortcut_score": 0.901579,
+  "average_pair_hypothesis_coverage": 0.440508,
+  "average_pair_jaccard": 0.212576
+}

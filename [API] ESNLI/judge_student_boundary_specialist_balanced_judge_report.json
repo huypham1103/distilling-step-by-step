@@ -1,0 +1,24 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_boundary_specialist_balanced - full.csv",
+  "num_examples": 3921,
+  "label_counts": {
+    "entailment": 1307,
+    "neutral": 1307,
+    "contradiction": 1307
+  },
+  "judge_source_counts": {
+    "if_else": 1203,
+    "contrastive": 1002,
+    "comparative": 802,
+    "consensus": 522,
+    "historical": 392
+  },
+  "boundary_band_counts": {
+    "bridge": 3912,
+    "boundary": 9
+  },
+  "average_judge_score": 3.2419173254505984,
+  "average_agreement_count": 6.840601887273655,
+  "average_voted_label_margin": 5.93273909716909,
+  "extra_view_count": 3912
+}

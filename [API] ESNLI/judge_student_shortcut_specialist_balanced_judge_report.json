@@ -1,0 +1,30 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_shortcut_specialist_balanced - full.csv",
+  "num_examples": 3708,
+  "label_counts": {
+    "entailment": 1236,
+    "neutral": 1236,
+    "contradiction": 1236
+  },
+  "shortcut_band_counts": {
+    "bridge": 2056,
+    "challenge": 1652
+  },
+  "view_rank_counts": {
+    "1": 2243,
+    "2": 1465
+  },
+  "judge_source_counts": {
+    "causal": 1187,
+    "neutral": 920,
+    "if_else": 632,
+    "contrastive": 292,
+    "comparative": 288,
+    "historical": 214,
+    "consensus": 175
+  },
+  "average_judge_score": 3.907265,
+  "average_shortcut_score": 1.454854,
+  "average_pair_hypothesis_coverage": 0.535958,
+  "average_pair_jaccard": 0.28061
+}

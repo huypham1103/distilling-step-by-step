@@ -1,0 +1,26 @@
+{
+  "output_csv": "[API] ESNLI/judge_student_boundary_bridge_balanced - full.csv",
+  "num_examples": 12600,
+  "label_counts": {
+    "entailment": 4200,
+    "neutral": 4200,
+    "contradiction": 4200
+  },
+  "judge_source_counts": {
+    "causal": 4236,
+    "neutral": 3961,
+    "if_else": 2014,
+    "contrastive": 907,
+    "comparative": 689,
+    "consensus": 412,
+    "historical": 381
+  },
+  "boundary_band_counts": {
+    "easy": 7747,
+    "bridge": 4853
+  },
+  "average_judge_score": 3.414255140077956,
+  "average_agreement_count": 6.939444444444445,
+  "average_voted_label_margin": 6.083395238095238,
+  "extra_view_count": 4853
+}
