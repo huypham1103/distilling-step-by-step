@@ -181,31 +181,42 @@ def run(args):
         # load myself rationales
 
         import pandas as pd
-        from datasets import Dataset 
+        from datasets import Dataset
+
+        def cqa_hypothesis_to_input(question, hypothesis):
+            try:
+                choices = ast.literal_eval(hypothesis)
+            except Exception:
+                choices = []
+
+            if not isinstance(choices, list):
+                choices = []
+
+            option_labels = ['a', 'b', 'c', 'd', 'e']
+            choice_lines = []
+            for idx, choice in enumerate(choices[:len(option_labels)]):
+                choice_lines.append(f"({option_labels[idx]}) {choice}")
+
+            return f"{question}\nAnswer Choices:\n" + "\n".join(choice_lines)
 
         if args.dataset == 'cqa':
-            train = pd.DataFrame(datasets['train'])
-            train['question'] = train['input'].apply(lambda x: x.split('\n')[0])
-            train = train.set_index('question')
-            val = pd.DataFrame(datasets['valid'])
-            val['question'] = val['input'].apply(lambda x: x.split('\n')[0])
-            val = val.set_index('question')
             test = pd.DataFrame(datasets['test'])
-            test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
-            test = test.set_index('question')
-
             rationale_path = f'[API] CQA/{args.type_rationale} - full.csv'
-            rationales = pd.read_csv(rationale_path)[['premise', 'rationale', 'LLM_answer']]
-            rationales.set_index('premise', inplace=True)
+            rationales = pd.read_csv(rationale_path)[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+            rationales['input'] = rationales.apply(
+                lambda row: cqa_hypothesis_to_input(row['premise'], row['hypothesis']),
+                axis=1
+            )
+            rationales['label'] = rationales['LLM_answer']
+            rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
+            rationales = rationales[['input', 'rationale', 'label', 'llm_label']]
 
-            train['rationale'] = rationales.loc[train.index]['rationale'].values
-            val['rationale'] = rationales.loc[val.index]['rationale'].values
-            train['label'] = rationales.loc[train.index]['LLM_answer'].values
-            val['label'] = rationales.loc[val.index]['LLM_answer'].values
+            train = rationales.sample(frac=0.8, random_state=0)
+            val = rationales.drop(train.index)
 
-            datasets['train'] = Dataset.from_pandas(train.reset_index())
-            datasets['valid'] = Dataset.from_pandas(val.reset_index())
-            datasets['test'] = Dataset.from_pandas(test.reset_index())
+            datasets['train'] = Dataset.from_pandas(train.reset_index(drop=True))
+            datasets['valid'] = Dataset.from_pandas(val.reset_index(drop=True))
+            datasets['test'] = Dataset.from_pandas(test.reset_index(drop=True))
         else:
             test = pd.DataFrame(datasets['test'])
             test = test.set_index('input')
@@ -216,6 +227,7 @@ def run(args):
             rationales.set_index('input', inplace=True)
             rationales['label'] = rationales['LLM_answer']
             rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
+            rationales = rationales[['rationale', 'llm_label', 'label']]
             # split train, valid
             train = rationales.sample(frac=0.8, random_state=0)
             val = rationales.drop(train.index)
