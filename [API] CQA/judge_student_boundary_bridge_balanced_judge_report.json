@@ -1,0 +1,25 @@
+{
+  "output_csv": "[API] CQA/judge_student_boundary_bridge_balanced - full.csv",
+  "num_examples": 10500,
+  "judge_source_counts": {
+    "if_else": 3059,
+    "causal": 3058,
+    "neutral": 3058,
+    "contrastive": 1291,
+    "historical": 16,
+    "consensus": 11,
+    "comparative": 7
+  },
+  "view_rank_counts": {
+    "2": 6170,
+    "1": 4330
+  },
+  "average_judge_score": 3.963125,
+  "average_agreement_count": 6.895333,
+  "average_voted_label_margin": 6.390174,
+  "boundary_band_counts": {
+    "bridge": 6170,
+    "easy": 4329,
+    "boundary": 1
+  }
+}

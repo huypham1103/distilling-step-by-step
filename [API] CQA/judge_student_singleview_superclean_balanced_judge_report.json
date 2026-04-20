@@ -1,0 +1,16 @@
+{
+  "output_csv": "[API] CQA/judge_student_singleview_superclean_balanced - full.csv",
+  "num_examples": 5170,
+  "judge_source_counts": {
+    "if_else": 4351,
+    "neutral": 384,
+    "causal": 382,
+    "contrastive": 53
+  },
+  "view_rank_counts": {
+    "1": 5170
+  },
+  "average_judge_score": 4.502622,
+  "average_agreement_count": 7.0,
+  "average_voted_label_margin": 6.53
+}

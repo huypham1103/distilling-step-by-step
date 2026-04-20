@@ -1,0 +1,20 @@
+{
+  "output_csv": "[API] CQA/judge_precision_diverse_mix_balanced - full.csv",
+  "num_examples": 9000,
+  "judge_source_counts": {
+    "if_else": 2574,
+    "causal": 2574,
+    "neutral": 2574,
+    "contrastive": 1075,
+    "historical": 91,
+    "comparative": 63,
+    "consensus": 49
+  },
+  "view_rank_counts": {
+    "2": 5102,
+    "1": 3898
+  },
+  "average_judge_score": 4.232923,
+  "average_agreement_count": 6.980111,
+  "average_voted_label_margin": 6.520263
+}
