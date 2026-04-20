@@ -14,6 +14,7 @@
 
 
 import argparse
+import ast
 
 from datasets import DatasetDict, concatenate_datasets
 from transformers import AutoTokenizer
@@ -181,13 +182,40 @@ def run(args):
 
         import pandas as pd
         from datasets import Dataset 
+
+        def cqa_hypothesis_to_input(question, hypothesis):
+            try:
+                choices = ast.literal_eval(hypothesis)
+            except Exception:
+                choices = []
+
+            if not isinstance(choices, list):
+                choices = []
+
+            option_labels = ['a', 'b', 'c', 'd', 'e']
+            choice_lines = []
+            for idx, choice in enumerate(choices[:len(option_labels)]):
+                choice_lines.append(f"({option_labels[idx]}) {choice}")
+
+            return f"{question}\nAnswer Choices:\n" + "\n".join(choice_lines)
+
         test = pd.DataFrame(datasets['test'])
         # test['question'] = test['input'].apply(lambda x: x.split('\n')[0])
         test = test.set_index('input')
-        
-        rationales = pd.read_csv(f'[API] ESNLI/{args.type_rationale} - full.csv')[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
-        print(f"Load data from [API] ESNLI/{args.type_rationale} - full.csv")
-        rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
+
+        if args.dataset == 'cqa':
+            rationale_path = f'[API] CQA/{args.type_rationale} - full.csv'
+            rationales = pd.read_csv(rationale_path)[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+            rationales['input'] = rationales.apply(
+                lambda row: cqa_hypothesis_to_input(row['premise'], row['hypothesis']),
+                axis=1
+            )
+        else:
+            rationale_path = f'[API] ESNLI/{args.type_rationale} - full.csv'
+            rationales = pd.read_csv(rationale_path)[['premise', 'hypothesis', 'rationale', 'LLM_answer']]
+            rationales['input'] = rationales['premise'] + '</s>' + rationales['hypothesis']
+
+        print(f"Load data from {rationale_path}")
         rationales.set_index('input', inplace=True)
         rationales['label'] = rationales['LLM_answer']
         rationales.rename(columns={'LLM_answer': 'llm_label'}, inplace=True)
@@ -199,19 +227,15 @@ def run(args):
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
 
-        if "premise" in datasets["train"].column_names and "hypothesis" in datasets["train"].column_names:
-            tokenized_datasets = datasets.map(
-                tokenize_function,
-                remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
-                batched=True
-            )
-        else:
-            tokenized_datasets = datasets.map(
-                tokenize_function,
-                remove_columns=['input', 'rationale', 'label', 'llm_label'],
-                batched=True
-            )
+        removable_columns = set(['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'])
+        for split_name in datasets.keys():
+            removable_columns &= set(datasets[split_name].column_names)
 
+        tokenized_datasets = datasets.map(
+            tokenize_function,
+            remove_columns=sorted(removable_columns),
+            batched=True
+        )
     if args.model_type == 'standard':
         if args.dataset not in ['svamp', 'asdiv']:
             compute_metrics = compute_metrics_text_aux(tokenizer)
