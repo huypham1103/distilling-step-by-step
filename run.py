@@ -199,11 +199,19 @@ def run(args):
         datasets['valid'] = Dataset.from_pandas(val.reset_index())
         datasets['test'] = Dataset.from_pandas(test.reset_index())
 
-        tokenized_datasets = datasets.map(
-            tokenize_function,
-            remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
-            batched=True
-        )
+        if "premise" in datasets["train"].column_names and "hypothesis" in datasets["train"].column_names:
+            tokenized_datasets = datasets.map(
+                tokenize_function,
+                remove_columns=['input', 'rationale', 'label', 'llm_label', 'premise', 'hypothesis'],
+                batched=True
+            )
+        else:
+            tokenized_datasets = datasets.map(
+                tokenize_function,
+                remove_columns=['input', 'rationale', 'label', 'llm_label'],
+                batched=True
+            )
+
     if args.model_type == 'standard':
         if args.dataset not in ['svamp', 'asdiv']:
             compute_metrics = compute_metrics_text_aux(tokenizer)
