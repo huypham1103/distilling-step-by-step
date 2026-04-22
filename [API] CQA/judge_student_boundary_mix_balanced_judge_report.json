@@ -1,22 +1,22 @@
 {
   "output_csv": "[API] CQA/judge_student_boundary_mix_balanced - full.csv",
-  "num_examples": 7844,
+  "num_examples": 7843,
   "judge_source_counts": {
-    "if_else": 6195,
-    "causal": 735,
-    "neutral": 730,
-    "contrastive": 182,
+    "if_else": 6112,
+    "causal": 948,
+    "neutral": 679,
+    "contrastive": 102,
     "historical": 1,
-    "comparative": 1
+    "consensus": 1
   },
   "view_rank_counts": {
-    "1": 7844
+    "1": 7843
   },
-  "average_judge_score": 3.940476,
-  "average_agreement_count": 6.669301,
-  "average_voted_label_margin": 6.016877,
+  "average_judge_score": 3.938315,
+  "average_agreement_count": 6.669642,
+  "average_voted_label_margin": 5.983272,
   "boundary_band_counts": {
     "easy": 7787,
-    "boundary": 57
+    "boundary": 56
   }
 }

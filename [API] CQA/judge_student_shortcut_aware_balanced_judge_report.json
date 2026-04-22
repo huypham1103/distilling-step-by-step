@@ -2,25 +2,25 @@
   "output_csv": "[API] CQA/judge_student_shortcut_aware_balanced - full.csv",
   "num_examples": 9000,
   "judge_source_counts": {
-    "if_else": 3848,
-    "causal": 1683,
-    "neutral": 1590,
-    "contrastive": 1270,
-    "historical": 293,
-    "comparative": 165,
-    "consensus": 151
+    "if_else": 3925,
+    "causal": 1872,
+    "neutral": 1740,
+    "contrastive": 871,
+    "historical": 282,
+    "comparative": 163,
+    "consensus": 147
   },
   "view_rank_counts": {
-    "1": 4882,
-    "2": 4118
+    "1": 5025,
+    "2": 3975
   },
-  "average_judge_score": 3.882485,
-  "average_agreement_count": 6.635889,
-  "average_voted_label_margin": 6.332131,
+  "average_judge_score": 3.872839,
+  "average_agreement_count": 6.575556,
+  "average_voted_label_margin": 6.272012,
   "shortcut_band_counts": {
     "challenge": 8426,
     "easy": 438,
     "bridge": 136
   },
-  "average_shortcut_score": 1.953756
+  "average_shortcut_score": 1.953844
 }

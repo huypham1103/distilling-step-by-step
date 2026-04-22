@@ -12,43 +12,43 @@ API_DIR = Path("[API] CQA")
 SOURCES = ["historical", "consensus", "contrastive", "causal", "neutral", "if_else", "comparative"]
 
 BASE_SOURCE_PRIOR = {
-    "contrastive": 1.00,
+    "causal": 1.00,
     "if_else": 0.99,
-    "causal": 0.985,
     "neutral": 0.98,
-    "historical": 0.95,
+    "contrastive": 0.975,
+    "historical": 0.94,
     "consensus": 0.84,
-    "comparative": 0.82,
+    "comparative": 0.80,
 }
 
 SUPERCLEAN_SOURCE_PRIOR = {
-    "contrastive": 1.00,
+    "causal": 1.00,
     "if_else": 0.995,
-    "causal": 0.99,
     "neutral": 0.985,
-    "historical": 0.96,
-    "consensus": 0.82,
-    "comparative": 0.78,
+    "contrastive": 0.975,
+    "historical": 0.95,
+    "consensus": 0.80,
+    "comparative": 0.76,
 }
 
 DIVERSE_SOURCE_PRIOR = {
-    "contrastive": 0.99,
+    "causal": 1.00,
+    "historical": 0.98,
     "if_else": 0.97,
-    "causal": 0.96,
     "neutral": 0.96,
-    "historical": 0.97,
+    "contrastive": 0.95,
     "consensus": 0.92,
-    "comparative": 0.91,
+    "comparative": 0.90,
 }
 
 EXPERT_SOURCE_PRIOR = {
-    "contrastive": 1.00,
-    "if_else": 0.99,
-    "causal": 0.99,
-    "neutral": 0.97,
+    "causal": 1.00,
+    "if_else": 0.995,
+    "neutral": 0.985,
+    "contrastive": 0.975,
     "historical": 0.94,
-    "consensus": 0.83,
-    "comparative": 0.80,
+    "consensus": 0.82,
+    "comparative": 0.79,
 }
 
 SHORTCUT_CUES = ("because", "therefore", "if", "then", "means", "so the answer is", "the correct answer")

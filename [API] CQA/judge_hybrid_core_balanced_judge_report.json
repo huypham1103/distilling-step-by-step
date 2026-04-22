@@ -1,18 +1,18 @@
 {
   "output_csv": "[API] CQA/judge_hybrid_core_balanced - full.csv",
-  "num_examples": 4330,
+  "num_examples": 4326,
   "judge_source_counts": {
-    "if_else": 2887,
-    "causal": 751,
-    "neutral": 584,
-    "contrastive": 101,
-    "historical": 7
+    "if_else": 2890,
+    "causal": 758,
+    "neutral": 638,
+    "contrastive": 35,
+    "historical": 5
   },
   "view_rank_counts": {
-    "1": 3388,
-    "2": 942
+    "1": 3440,
+    "2": 886
   },
-  "average_judge_score": 4.22252,
+  "average_judge_score": 4.226084,
   "average_agreement_count": 7.0,
-  "average_voted_label_margin": 6.565
+  "average_voted_label_margin": 6.525
 }

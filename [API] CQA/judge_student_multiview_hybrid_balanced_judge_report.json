@@ -2,18 +2,18 @@
   "output_csv": "[API] CQA/judge_student_multiview_hybrid_balanced - full.csv",
   "num_examples": 10500,
   "judge_source_counts": {
-    "if_else": 3990,
-    "causal": 3154,
-    "neutral": 2397,
-    "contrastive": 883,
-    "historical": 75,
+    "if_else": 3983,
+    "causal": 3227,
+    "neutral": 2760,
+    "contrastive": 469,
+    "historical": 60,
     "consensus": 1
   },
   "view_rank_counts": {
-    "2": 5570,
-    "1": 4930
+    "2": 5546,
+    "1": 4954
   },
-  "average_judge_score": 4.143464,
-  "average_agreement_count": 6.98981,
-  "average_voted_label_margin": 6.547926
+  "average_judge_score": 4.146397,
+  "average_agreement_count": 6.98819,
+  "average_voted_label_margin": 6.505496
 }

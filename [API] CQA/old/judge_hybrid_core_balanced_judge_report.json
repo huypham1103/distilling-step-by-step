@@ -1,0 +1,18 @@
+{
+  "output_csv": "[API] CQA/judge_hybrid_core_balanced - full.csv",
+  "num_examples": 4330,
+  "judge_source_counts": {
+    "if_else": 2887,
+    "causal": 751,
+    "neutral": 584,
+    "contrastive": 101,
+    "historical": 7
+  },
+  "view_rank_counts": {
+    "1": 3388,
+    "2": 942
+  },
+  "average_judge_score": 4.22252,
+  "average_agreement_count": 7.0,
+  "average_voted_label_margin": 6.565
+}

@@ -1,0 +1,20 @@
+{
+  "output_csv": "[API] CQA/judge_student_multiview - full.csv",
+  "num_examples": 12000,
+  "judge_source_counts": {
+    "if_else": 4485,
+    "causal": 3347,
+    "neutral": 3265,
+    "contrastive": 897,
+    "historical": 4,
+    "consensus": 1,
+    "comparative": 1
+  },
+  "view_rank_counts": {
+    "2": 6591,
+    "1": 5409
+  },
+  "average_judge_score": 3.831497,
+  "average_agreement_count": 6.898,
+  "average_voted_label_margin": 6.393007
+}

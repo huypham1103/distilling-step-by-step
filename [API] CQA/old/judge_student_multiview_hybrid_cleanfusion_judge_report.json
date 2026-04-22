@@ -1,0 +1,19 @@
+{
+  "output_csv": "[API] CQA/judge_student_multiview_hybrid_cleanfusion - full.csv",
+  "num_examples": 9500,
+  "judge_source_counts": {
+    "if_else": 3068,
+    "causal": 3068,
+    "neutral": 2405,
+    "contrastive": 883,
+    "historical": 75,
+    "consensus": 1
+  },
+  "view_rank_counts": {
+    "2": 5208,
+    "1": 4292
+  },
+  "average_judge_score": 4.260122,
+  "average_agreement_count": 6.993684,
+  "average_voted_label_margin": 6.540187
+}
