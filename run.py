@@ -135,6 +135,8 @@ def run(args):
             # remove_columns=['premise', 'hypothesis'],
         )
 
+    gold_datasets = DatasetDict({split_name: datasets[split_name] for split_name in datasets.keys()})
+
 
     if args.model_type == 'task_prefix' and args.llm is not None:
         def tokenize_function(examples):
@@ -169,6 +171,24 @@ def run(args):
 
     else:
         raise ValueError
+
+    def tokenize_gold_function(examples):
+        inputs = examples['input']
+        if args.model_type == 'task_prefix':
+            inputs = ['predict: ' + text for text in inputs]
+
+        model_inputs = tokenizer(
+            inputs,
+            max_length=args.max_input_length,
+            truncation=True
+        )
+
+        with tokenizer.as_target_tokenizer():
+            label_output_encodings = tokenizer(examples['label'], max_length=256, truncation=True)
+
+        model_inputs['labels'] = label_output_encodings['input_ids']
+
+        return model_inputs
 
 
     if args.llm is None:
@@ -247,20 +267,41 @@ def run(args):
             remove_columns=sorted(removable_columns),
             batched=True
         )
+
+    gold_tokenized_datasets = None
+    if args.gold_finetune:
+        if args.gold_max_steps <= 0:
+            raise ValueError('--gold_max_steps must be > 0 when --gold_finetune is enabled')
+
+        gold_remove_columns = set(gold_datasets['train'].column_names)
+        for split_name in gold_datasets.keys():
+            gold_remove_columns &= set(gold_datasets[split_name].column_names)
+
+        tokenized_gold_remove_columns = sorted(gold_remove_columns)
+        gold_tokenized_datasets = gold_datasets.map(
+            tokenize_gold_function,
+            remove_columns=tokenized_gold_remove_columns,
+            batched=True
+        )
+
     if args.model_type == 'standard':
         if args.dataset not in ['svamp', 'asdiv']:
             compute_metrics = compute_metrics_text_aux(tokenizer)
+            gold_compute_metrics = compute_metrics_text_aux(tokenizer)
         else:
             compute_metrics = compute_metrics_equation_aux(tokenizer)
+            gold_compute_metrics = compute_metrics_equation_aux(tokenizer)
 
     else:
         if args.dataset not in ['svamp', 'asdiv']:
             compute_metrics = compute_metrics_text(tokenizer)
+            gold_compute_metrics = compute_metrics_text_aux(tokenizer)
         else:
             compute_metrics = compute_metrics_equation(tokenizer)
+            gold_compute_metrics = compute_metrics_equation_aux(tokenizer)
 
 
-    train_and_evaluate(args, args.run, tokenizer, tokenized_datasets, compute_metrics)
+    train_and_evaluate(args, args.run, tokenizer, tokenized_datasets, compute_metrics, gold_tokenized_datasets, gold_compute_metrics)
 
 
 if __name__ == '__main__':
@@ -288,6 +329,10 @@ if __name__ == '__main__':
     parser.add_argument('--output_rationale', action='store_true')
     parser.add_argument('--type_rationale', type=str, default='if_else')
     parser.add_argument('--data_size', type=int, default=1)
+    parser.add_argument('--gold_finetune', action='store_true')
+    parser.add_argument('--gold_max_steps', type=int, default=1000)
+    parser.add_argument('--gold_lr', type=float, default=1e-5)
+    parser.add_argument('--gold_output_suffix', type=str, default='_goldft')
 
     args = parser.parse_args()
 
