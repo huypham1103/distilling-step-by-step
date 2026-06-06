@@ -1,0 +1,44 @@
+{
+  "savedAt": "2026-06-01T15:03:26.414Z",
+  "reviewer": "",
+  "globalComment": "I think your version is too bad. You should following my reviewing first. Moreover, you can also reference the introduction I give you before",
+  "title": "Introduction",
+  "sections": {
+    "te-importance": {
+      "body": "\n          Textual entailment (TE) is a fundamental task in natural language understanding because it requires a model to determine the semantic relationship between two textual units: a premise and a hypothesis. Given a premise <em>T</em> and a hypothesis <em>H</em>, the model must decide whether the hypothesis can be inferred from the premise, contradicts the premise, or remains undetermined. This task goes beyond representing individual sentences; it requires reasoning over the directional relationship between them. As a result, TE provides a useful testbed for evaluating whether language models can capture meaning, inference, and contradiction in natural language.\n        ",
+      "comment": "I think we should have a sentence for opening the problems instead of introduce the textual entailment directly right? Moreover, it should have some citation reference from famous article paper from journal or conference."
+    },
+    "applications": {
+      "body": "\n          The importance of TE extends beyond the task itself. Many NLP applications depend on the ability to compare and reason over text pairs. In question answering, entailment helps determine whether a candidate answer is supported by a context. In machine translation and summarization, entailment can help evaluate whether generated text preserves the meaning of the source. In knowledge graph completion and information retrieval, entailment-style reasoning supports the identification of semantically related facts. Therefore, improving TE models contributes to broader progress in language understanding systems.\n        ",
+      "comment": "it should have some citation proof your idea from famous journal or conference"
+    },
+    "data-problem": {
+      "body": "\n          A persistent challenge in TE is the dependence on supervised training data. Deep learning models can achieve strong performance when large annotated datasets are available, but gold-standard TE labels are expensive to create because they require careful human judgment over premise-hypothesis relations. This limits the development of TE systems in domains or languages where labeled data is scarce. Although transfer learning and pretrained language models reduce the burden of representation learning, the classification stage still relies on supervised signals to learn the distinction between entailment, contradiction, and neutral relations.\n        ",
+      "comment": "add some citation also"
+    },
+    "rationale-distillation": {
+      "body": "\n          Recent large language models (LLMs) provide a practical way to enrich training data with self-generated reasoning. Instead of relying only on additional gold labels, rationale-based distillation uses LLM-generated explanations as auxiliary supervision for a smaller student model. In this setting, the student learns not only the final label but also the reasoning signal that connects the premise and hypothesis. Our prior rationale-based distillation framework follows this direction by studying diverse rationale types and using the most effective rationales to improve TE performance under resource constraints.\n        ",
+      "comment": "add some citation also.\nI think this section should says the current improvement from original paper:\n1. from paper \"Distilling Step-by-Step! Outperforming Larger Language Models with Less Training Data and Smaller Model Sizes\". It introduces the technique to use LLm rationales to resolve the problems\n2. our original paper \"How rationals boost textual entailment modeling: Insights from large language models\". Introduce the technique use multiple type of rationales (specific 7 rationale types). \n\nSo then we said our appoarch that why and when we can choose a rationale is a best or suitable for the premise and hypothesis pair. and so on."
+    },
+    "gap": {
+      "body": "\n          However, showing that rationales are useful at the type level does not fully solve the example-level selection problem. A rationale type that is effective on average may still produce weak, noisy, or misleading explanations for specific examples. Different rationale sources may disagree on the predicted label, and some rationales may mention the correct answer without grounding it in the premise-hypothesis pair. Therefore, the next challenge is to decide which generated rationale should be used for each training example, rather than assuming that all rationales from a useful type are equally beneficial.\n        ",
+      "comment": "Same with above paragraph. "
+    },
+    "method": {
+      "body": "\n          To address this limitation, we extend rationale-based distillation with a boundary-aware rationale selection layer. For each example, the method groups multiple rationale candidates generated from different sources and estimates their agreement through weighted voting. The vote margin is then used to identify whether an example is reliable, near the decision boundary, or too unstable for training. Candidate rationales are further scored using source compatibility, input overlap, explanation cues, answer explicitness, brevity, and agreement signals. This produces an interpretable rule-based pipeline for selecting rationales before they are used as student supervision.\n        ",
+      "comment": "I think that we should not specific our method here. Because this section just an introduction part. So we will detail our technique on the methology part also."
+    },
+    "intuition": {
+      "body": "\n          The proposed method is boundary-aware because it does not treat all examples as equally useful. Easy examples provide clean supervision because multiple sources strongly agree. Boundary examples are retained because they can teach subtle distinctions near the decision boundary. Hard examples are filtered because weak agreement and low voting margin suggest unstable or noisy supervision. This improves the quality of the training signal without changing the student architecture.\n        ",
+      "comment": "it should not detail like this"
+    },
+    "results": {
+      "body": "\n          The main proposed variant, <code>judge_student_boundary_mix_balanced</code>, keeps one selected rationale from easy and boundary examples while removing unstable hard examples. Experiments show that this variant improves over the original baseline on both ESNLI and CommonsenseQA, increasing ESNLI accuracy from 83.93 to 84.16 and CommonsenseQA accuracy from 60.36 to 62.41. These results suggest that rationale selection can strengthen the original rationale-based distillation pipeline by moving from global rationale-type analysis to example-level rationale selection.\n        ",
+      "comment": "it should not specific like this, more over we should rename the type we did. because it look like a code not suitable for journal paper"
+    },
+    "contributions": {
+      "body": "\n          The contributions of this work are fourfold. First, we extend rationale-based distillation from type-level rationale analysis to example-level rationale selection. Second, we propose a boundary-aware selection pipeline based on multi-source agreement, vote margin, rationale grounding, and difficulty estimation. Third, we introduce controlled family variants, including boundary mix, boundary bridge, and boundary specialist, to analyze different selection strategies. Fourth, we evaluate the method on ESNLI and additionally test its transfer to CommonsenseQA as a broader natural language reasoning task.\n        ",
+      "comment": "I think that the contribution is not stuibale. I think just mention the structure of the thesis is more suitable"
+    }
+  }
+}

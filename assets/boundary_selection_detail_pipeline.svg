@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1260" viewBox="0 0 1800 1260" role="img" aria-labelledby="title desc">
+  <title id="title">Boundary-aware rationale selection detail</title>
+  <desc id="desc">Detailed boundary-aware selection pipeline with shared rationale selection, difficulty band assignment, and boundary family variants.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#4b5563"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="8.6" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#6d28d9"/>
+    </marker>
+    <linearGradient id="purpleBox" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f0ff"/>
+    </linearGradient>
+    <linearGradient id="blueBox" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <linearGradient id="tealBox" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#effafa"/>
+    </linearGradient>
+    <linearGradient id="goldBox" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#fff7e6"/>
+    </linearGradient>
+    <linearGradient id="greenBox" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f0fbf0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1800" height="1260" fill="#ffffff"/>
+
+  <rect x="26" y="28" width="1748" height="430" rx="24" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="9 8"/>
+  <text x="54" y="76" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#4c1d95">(a) Shared Rationale Selection Pipeline</text>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="64" y="126" width="250" height="260" rx="14" fill="url(#purpleBox)" stroke="#6d28d9" stroke-width="1.6"/>
+    <text x="189" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#2e1065">Input rationale sources</text>
+    <ellipse cx="189" cy="214" rx="30" ry="10" fill="#f5f3ff" stroke="#4c1d95" stroke-width="2"/>
+    <path d="M159 214 V258 C159 272 219 272 219 258 V214" fill="#f5f3ff" stroke="#4c1d95" stroke-width="2"/>
+    <ellipse cx="189" cy="258" rx="30" ry="10" fill="#f5f3ff" stroke="#4c1d95" stroke-width="2"/>
+    <text x="189" y="308" text-anchor="middle" font-size="16" fill="#111827">7 rationale styles:</text>
+    <text x="189" y="334" text-anchor="middle" font-size="15" fill="#111827">neutral, contrastive, historical,</text>
+    <text x="189" y="358" text-anchor="middle" font-size="15" fill="#111827">comparative, causal, consensus,</text>
+    <text x="189" y="382" text-anchor="middle" font-size="15" fill="#111827">conditional + reference label</text>
+
+    <rect x="364" y="126" width="250" height="260" rx="14" fill="url(#purpleBox)" stroke="#6d28d9" stroke-width="1.6"/>
+    <text x="489" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#2e1065">Group by example</text>
+    <circle cx="459" cy="218" r="12" fill="#c4b5fd" stroke="#4c1d95" stroke-width="2"/>
+    <circle cx="519" cy="218" r="12" fill="#c4b5fd" stroke="#4c1d95" stroke-width="2"/>
+    <circle cx="489" cy="288" r="12" fill="#c4b5fd" stroke="#4c1d95" stroke-width="2"/>
+    <path d="M459 218 L489 288 L519 218" fill="none" stroke="#4c1d95" stroke-width="3"/>
+    <text x="489" y="336" text-anchor="middle" font-size="16" fill="#111827">Normalize text and merge</text>
+    <text x="489" y="360" text-anchor="middle" font-size="16" fill="#111827">all rationales generated</text>
+    <text x="489" y="384" text-anchor="middle" font-size="16" fill="#111827">for the same input</text>
+
+    <rect x="664" y="126" width="250" height="260" rx="14" fill="url(#blueBox)" stroke="#2563eb" stroke-width="1.6"/>
+    <text x="789" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#1e3a8a">Weighted vote</text>
+    <path d="M730 276 H850 M790 204 V312" stroke="#1e3a8a" stroke-width="4" fill="none"/>
+    <path d="M746 222 L710 294 H782 Z" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+    <path d="M834 222 L798 294 H870 Z" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+    <text x="789" y="342" text-anchor="middle" font-size="16" fill="#111827">Aggregate source answers</text>
+    <text x="789" y="366" text-anchor="middle" font-size="16" fill="#111827">using source-reliability</text>
+    <text x="789" y="390" text-anchor="middle" font-size="16" fill="#111827">priors</text>
+
+    <rect x="964" y="126" width="250" height="260" rx="14" fill="url(#tealBox)" stroke="#0f766e" stroke-width="1.6"/>
+    <text x="1089" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#134e4a">Confidence signals</text>
+    <rect x="1040" y="276" width="18" height="42" fill="#5eead4" stroke="#0f766e" stroke-width="2"/>
+    <rect x="1078" y="238" width="18" height="80" fill="#5eead4" stroke="#0f766e" stroke-width="2"/>
+    <rect x="1116" y="204" width="18" height="114" fill="#5eead4" stroke="#0f766e" stroke-width="2"/>
+    <path d="M1022 318 H1160" stroke="#0f766e" stroke-width="3"/>
+    <text x="1089" y="344" text-anchor="middle" font-size="16" fill="#111827">Compute vote margin,</text>
+    <text x="1089" y="368" text-anchor="middle" font-size="16" fill="#111827">agreement count,</text>
+    <text x="1089" y="392" text-anchor="middle" font-size="16" fill="#111827">and agreement ratio</text>
+
+    <rect x="1264" y="126" width="250" height="260" rx="14" fill="url(#goldBox)" stroke="#d97706" stroke-width="1.6"/>
+    <text x="1389" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#7c2d12">Judge rationale</text>
+    <path d="M1360 218 L1412 270" stroke="#92400e" stroke-width="8" stroke-linecap="round"/>
+    <rect x="1344" y="202" width="44" height="26" rx="5" fill="#fde68a" stroke="#92400e" stroke-width="2" transform="rotate(45 1366 215)"/>
+    <path d="M1340 320 H1438 M1360 300 H1418" stroke="#d97706" stroke-width="7" stroke-linecap="round"/>
+    <text x="1389" y="342" text-anchor="middle" font-size="16" fill="#111827">Score candidates by source</text>
+    <text x="1389" y="366" text-anchor="middle" font-size="16" fill="#111827">prior, input overlap, cues,</text>
+    <text x="1389" y="390" text-anchor="middle" font-size="16" fill="#111827">length, and confidence</text>
+
+    <rect x="1564" y="126" width="180" height="260" rx="14" fill="url(#greenBox)" stroke="#166534" stroke-width="1.6"/>
+    <text x="1654" y="168" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">Select primary</text>
+    <text x="1654" y="194" text-anchor="middle" font-size="20" font-weight="700" fill="#14532d">rationale</text>
+    <circle cx="1654" cy="250" r="32" fill="#dcfce7" stroke="#166534" stroke-width="3"/>
+    <text x="1654" y="264" text-anchor="middle" font-size="34" font-weight="700" fill="#166534">★</text>
+    <text x="1654" y="338" text-anchor="middle" font-size="16" fill="#111827">Keep top-ranked</text>
+    <text x="1654" y="362" text-anchor="middle" font-size="16" fill="#111827">rationale:</text>
+    <text x="1654" y="386" text-anchor="middle" font-size="15" fill="#111827">rank(c) = 1</text>
+  </g>
+
+  <path d="M314 256 H354" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M614 256 H654" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M914 256 H954" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1214 256 H1254" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1514 256 H1554" stroke="#4b5563" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="26" y="490" width="1748" height="354" rx="24" fill="#ffffff" stroke="#2563eb" stroke-width="2" stroke-dasharray="9 8"/>
+  <text x="54" y="540" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#1e3a8a">(b) Difficulty Band Assignment</text>
+
+  <rect x="650" y="520" width="500" height="112" rx="14" fill="url(#blueBox)" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="900" y="564" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#1e3a8a">Assign difficulty band</text>
+  <text x="900" y="598" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111827">Based mainly on vote margin</text>
+  <text x="900" y="624" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111827">and agreement count</text>
+
+  <rect x="230" y="690" width="400" height="110" rx="14" fill="#f0fbf0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="286" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#16a34a">☺</text>
+  <text x="470" y="732" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#15803d">Easy</text>
+  <text x="470" y="764" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">High confidence</text>
+  <text x="470" y="790" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Strong margin + high agreement</text>
+
+  <rect x="700" y="690" width="400" height="110" rx="14" fill="#fff7e6" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="756" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#d97706">◔</text>
+  <text x="940" y="732" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#92400e">Boundary</text>
+  <text x="940" y="764" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Near-miss but reliable</text>
+  <text x="940" y="790" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Moderate margin + sufficient agreement</text>
+
+  <rect x="1170" y="690" width="400" height="110" rx="14" fill="#fff5f5" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="9 7"/>
+  <text x="1226" y="760" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" fill="#dc2626">☹</text>
+  <text x="1410" y="732" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#b91c1c">Hard</text>
+  <text x="1410" y="764" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Low-confidence or noisy examples</text>
+  <text x="1410" y="790" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Dropped by Boundary-Mix</text>
+
+  <path d="M1389 386 V476 H900 V510" stroke="#6d28d9" stroke-width="3" fill="none" marker-end="url(#arrowPurple)"/>
+  <path d="M900 632 V664 H430 V680" stroke="#4b5563" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M900 632 V680" stroke="#4b5563" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M900 632 V664 H1370 V680" stroke="#4b5563" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+  <rect x="26" y="874" width="1748" height="270" rx="24" fill="#ffffff" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="9 8"/>
+  <text x="54" y="924" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#4c1d95">(c) Boundary Family Variants</text>
+
+  <rect x="270" y="960" width="520" height="132" rx="16" fill="url(#blueBox)" stroke="#1d4ed8" stroke-width="3"/>
+  <text x="324" y="1012" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#1d4ed8">★</text>
+  <text x="530" y="1008" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#1e3a8a">Proposed method: Boundary-Mix</text>
+  <line x1="320" y1="1038" x2="740" y2="1038" stroke="#1d4ed8"/>
+  <text x="530" y="1070" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Keep easy + boundary, remove hard,</text>
+  <text x="530" y="1096" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">one best rationale per example</text>
+
+  <rect x="830" y="972" width="400" height="104" rx="12" fill="#fbf8ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="1030" y="1010" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827">Same-family comparison 1:</text>
+  <text x="1030" y="1038" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Boundary-Bridge</text>
+  <line x1="860" y1="1050" x2="1200" y2="1050" stroke="#7c3aed"/>
+  <text x="1030" y="1076" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Add a complementary bridge rationale</text>
+
+  <rect x="1270" y="972" width="400" height="104" rx="12" fill="#fbf8ff" stroke="#7c3aed" stroke-width="1.6"/>
+  <text x="1470" y="1010" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827">Same-family comparison 2:</text>
+  <text x="1470" y="1038" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#111827">Boundary-Specialist</text>
+  <line x1="1300" y1="1050" x2="1640" y2="1050" stroke="#7c3aed"/>
+  <text x="1470" y="1076" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Focus on boundary / specialist source variants</text>
+
+  <path d="M430 800 V950" stroke="#16a34a" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M900 800 V920 H540 V950" stroke="#d97706" stroke-width="4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M1370 800 V852" stroke="#dc2626" stroke-width="3" fill="none" stroke-dasharray="8 6" marker-end="url(#arrow)"/>
+  <text x="1400" y="860" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#dc2626">drop</text>
+
+  <rect x="96" y="1176" width="1608" height="54" rx="14" fill="#fafafa" stroke="#c4c4c4" stroke-width="1.3"/>
+  <text x="138" y="1210" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#1d4ed8">★</text>
+  <text x="184" y="1210" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Proposed method highlighted</text>
+  <rect x="560" y="1192" width="48" height="24" rx="6" fill="#fff5f5" stroke="#dc2626" stroke-width="1.4" stroke-dasharray="7 5"/>
+  <text x="632" y="1210" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Hard examples dropped in Boundary-Mix</text>
+  <path d="M1060 1204 H1128" stroke="#7c3aed" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#arrowPurple)"/>
+  <text x="1160" y="1200" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">Bridge condition: different source + low similarity</text>
+  <text x="1160" y="1224" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111827">+ non-hard example + sufficient quality</text>
+</svg>

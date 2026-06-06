@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Methodology Review - Boundary-Aware Rationale Selection</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --paper: #ffffff;
+      --ink: #202124;
+      --muted: #626a70;
+      --line: #d8ded8;
+      --accent: #245c51;
+      --accent-soft: #e5f1ed;
+      --accent-2: #b27a00;
+      --note: #fff8dc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.58;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    button {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: white;
+      color: var(--accent);
+    }
+    main {
+      width: min(1240px, calc(100vw - 28px));
+      margin: 22px auto 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 18px;
+      align-items: start;
+    }
+    .paper, aside {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .paper {
+      padding: 30px;
+    }
+    aside {
+      position: sticky;
+      top: 76px;
+      padding: 18px;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 16px;
+      color: var(--accent);
+      letter-spacing: 0;
+    }
+    h4 {
+      margin: 20px 0 8px;
+      font-size: 14px;
+      color: #32363a;
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    ul {
+      margin: 6px 0 16px 22px;
+      padding: 0;
+    }
+    li {
+      margin: 6px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .94em;
+    }
+    .block {
+      padding: 14px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 0 14px;
+    }
+    .block:focus-within {
+      border-color: var(--accent);
+      background: #fbfdfc;
+    }
+    .editable {
+      min-height: 32px;
+      outline: none;
+    }
+    .editable:focus {
+      background: var(--accent-soft);
+      border-radius: 4px;
+    }
+    .figure {
+      margin: 0 0 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fdfdfb;
+    }
+    .figure-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      background: #fbfcfa;
+    }
+    .figure-title {
+      font-weight: 750;
+      color: var(--accent);
+    }
+    .figure img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 1040px;
+      object-fit: contain;
+      background: white;
+    }
+    .caption {
+      padding: 12px 14px;
+      color: var(--muted);
+      font-size: 13px;
+      border-top: 1px solid var(--line);
+    }
+    .pipeline-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 10px 0 16px;
+    }
+    .step-card {
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 11px;
+      background: #fcfdfb;
+    }
+    .step-card strong {
+      display: block;
+      color: var(--accent);
+      margin-bottom: 3px;
+    }
+    .method-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 16px;
+      font-size: 14px;
+    }
+    .method-table th,
+    .method-table td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .method-table th {
+      color: var(--accent);
+      background: #f3f7f4;
+    }
+    .equation {
+      margin: 12px 0 16px;
+      padding: 12px 14px;
+      border: 1px solid #cfd8dc;
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      background: #fbfcfb;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 14px;
+      white-space: pre-wrap;
+      overflow-x: auto;
+    }
+    .formula-note {
+      margin-top: -8px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .note {
+      width: 100%;
+      min-height: 78px;
+      margin-top: 8px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      resize: vertical;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    .note-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .toc {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 18px;
+    }
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .status {
+      min-height: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .warning {
+      padding: 10px;
+      color: #5f4400;
+      background: var(--note);
+      border: 1px solid #eed58d;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .meta {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .meta label {
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+    .meta input, .global-comment {
+      width: 100%;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+      text-transform: none;
+      font-weight: 400;
+      color: var(--ink);
+    }
+    .global-comment {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    @media (max-width: 980px) {
+      header { position: static; align-items: flex-start; flex-direction: column; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .paper { padding: 20px; }
+      .pipeline-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Methodology Review</h1>
+      <div class="subtitle">Editable draft + comments saved to <code>METHODOLOGY_REVIEW_STATE.json</code></div>
+    </div>
+    <div class="actions">
+      <span class="status" id="status">Not saved yet.</span>
+      <button class="secondary" id="loadBtn" type="button">Load saved</button>
+      <button id="saveBtn" type="button">Save review</button>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper">
+      <h2 contenteditable="true" class="editable" data-field="title">Methodology</h2>
+
+      <figure class="figure" id="full-pipeline">
+        <div class="figure-head">
+          <div class="figure-title">End-to-End Pipeline Image</div>
+          <span class="chip">Original framework + proposed extension</span>
+        </div>
+        <img src="assets/boundary_methodology_academic_pipeline.svg" alt="Boundary-aware rationale selection pipeline" />
+        <figcaption class="caption" contenteditable="true" data-field="pipeline-caption">
+          Figure 1. Overall framework. Panel (a) follows the original rationale-based distillation pipeline, where a teacher LLM generates labels and multiple rationale types from each input example. Panel (b) is our added boundary-aware rationale selection module, which filters generated rationales before training. Panel (c) keeps the original student-training objective, but trains the rationale branch using selected rationales rather than all generated rationales.
+        </figcaption>
+      </figure>
+
+      <section id="overview" class="block" data-id="overview">
+        <h3>3.1 Overview</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The proposed methodology is built as an extension of the original rationale-based distillation framework. The original framework has two main steps. First, a teacher large language model receives an input example and generates both a task label and a natural-language rationale. Second, a smaller student model is trained with the task label and the rationale as auxiliary reasoning supervision. This design allows the student to learn not only the final prediction, but also the reasoning pattern that supports the prediction.
+          </p>
+          <p>
+            Figure 1 shows the complete training framework. Figure 1(a) describes teacher rationale generation, Figure 1(b) shows where the boundary-aware module is inserted, and Figure 1(c) shows student training. Figure 2 expands the internal structure of the boundary-aware module. Instead of sending all generated rationales directly into student training, we first organize them into candidate groups, estimate their agreement, identify whether the example is easy, boundary, or hard, and select the most suitable rationale for learning. Therefore, the proposed method does not change the teacher LLM, the student architecture, or the inference procedure. It changes the quality of the training supervision by filtering and selecting rationales before the student-training objective is applied.
+          </p>
+        </div>
+        <label class="note-label" for="note-overview">Comment</label>
+        <textarea class="note" id="note-overview" data-note="overview" placeholder="Comment on the overall methodology story..."></textarea>
+      </section>
+
+      <section id="generation" class="block" data-id="generation">
+        <h3>3.2 Teacher Rationale Generation</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Panel (a) in Figure 1 represents the teacher rationale generation stage. For textual entailment, each input example is represented as \(x_i = (p_i, h_i)\), where \(p_i\) is the premise and \(h_i\) is the hypothesis. The teacher LLM is prompted to infer the relationship between the two texts and produce a label from the task label set \(\mathcal{Y}\), together with a rationale explaining the prediction.
+          </p>
+          <div class="equation">x_i = (p_i, h_i), \quad y_i \in \mathcal{Y}</div>
+          <p class="formula-note">
+            \(x_i\) is the \(i\)-th input example. \(p_i\) is the premise, \(h_i\) is the hypothesis, \(y_i\) is the target task label, and \(\mathcal{Y}\) is the complete label space.
+          </p>
+          <p>
+            The teacher is asked to generate several rationale styles for the same example. These include causal, contrastive, historical, conditional, neutral, consensus, and comparative rationales. The motivation is that different rationale styles expose different reasoning views. For example, a causal rationale may explain what evidence causes the entailment decision, while a contrastive rationale may explain why another label is less plausible. For each example, all generated rationales form a candidate set:
+          </p>
+          <div class="equation">C_i = \{c_{i,1}, c_{i,2}, \ldots, c_{i,K}\}</div>
+          <p class="formula-note">
+            \(C_i\) is the candidate set for example \(x_i\). \(K\) is the number of generated rationale candidates for that example, and \(c_{i,k}\) is the \(k\)-th candidate.
+          </p>
+          <p>
+            Each candidate is defined by its rationale text, predicted label, and rationale source or type:
+          </p>
+          <div class="equation">c_{i,k} = (r_{i,k}, \hat{y}_{i,k}, s_{i,k})</div>
+          <p>
+            Here, \(r_{i,k}\) is the generated rationale, \(\hat{y}_{i,k}\) is the label predicted with that rationale, and \(s_{i,k}\) is the rationale type. At this point, the generated rationales are not treated as final training targets. They are treated as candidates that must pass the boundary-aware selection stage before being used for student supervision.
+          </p>
+        </div>
+        <label class="note-label" for="note-generation">Comment</label>
+        <textarea class="note" id="note-generation" data-note="generation" placeholder="Comment on candidate generation or rationale types..."></textarea>
+      </section>
+
+      <section id="selection" class="block" data-id="selection">
+        <h3>3.3 Boundary-Aware Rationale Selection</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Figure 1(b) marks the proposed boundary-aware rationale selection stage in the full framework. Figure 2 gives the detailed view of this module. The purpose of this stage is to transform a noisy pool of generated rationales into a smaller set of rationales that are more suitable for student learning. The module follows three levels: a shared rationale selection pipeline in Figure 2(a), a difficulty-band assignment step in Figure 2(b), and same-family selection variants in Figure 2(c).
+          </p>
+          <figure class="figure" id="boundary-detail">
+            <div class="figure-head">
+              <div class="figure-title">Boundary Selection Detail</div>
+              <span class="chip">Shared pipeline + difficulty bands + variants</span>
+            </div>
+            <img src="assets/boundary_selection_detail_pipeline.svg" alt="Detailed boundary-aware rationale selection pipeline" />
+            <figcaption class="caption">
+              Figure 2. Detailed view of the boundary-aware selection module. The shared pipeline groups candidate rationales, computes weighted agreement, estimates confidence, judges rationale quality, and selects the primary rationale. Difficulty-band assignment separates easy, boundary, and hard examples. Boundary-Mix keeps easy and boundary examples, removes hard examples, and selects one primary rationale per retained example.
+            </figcaption>
+          </figure>
+          <p>
+            The first step is grouping. Candidate rationales are normalized and grouped by the same original input \(x_i\), so all rationales generated for the same premise-hypothesis pair are compared together. The second step is weighted label voting. For each possible label \(y\), the method sums the contribution of candidates that predict that label:
+          </p>
+          <div class="equation">V_i(y) = \sum_{k=1}^{K} w(s_{i,k}) \cdot \mathbf{1}[\hat{y}_{i,k} = y]</div>
+          <p class="formula-note">
+            \(V_i(y)\) is the vote score for label \(y\) on example \(x_i\). \(w(s_{i,k})\) is the reliability weight of source \(s_{i,k}\). \(\mathbf{1}[\cdot]\) is an indicator function that returns 1 when candidate \(k\) predicts label \(y\), and 0 otherwise.
+          </p>
+          <p>
+            The source weight \(w(s_{i,k})\) is a source-reliability prior over rationale styles. It controls how strongly each rationale source contributes to the vote. The voted label is then selected by:
+          </p>
+          <div class="equation">\hat{y}^{vote}_i = \arg\max_{y \in \mathcal{Y}} V_i(y)</div>
+          <p class="formula-note">
+            \(\hat{y}^{vote}_i\) is the group-level voted label for example \(x_i\). It is the label with the highest weighted vote among all labels in \(\mathcal{Y}\).
+          </p>
+          <p>
+            Confidence is measured by several signals. The main signal is the vote margin, defined as the distance between the strongest label vote and the second strongest label vote. We also use agreement count and agreement ratio to estimate how many candidates support the voted label:
+          </p>
+          <div class="equation">m_i = V_i(\hat{y}^{vote}_i) - \max_{y \ne \hat{y}^{vote}_i} V_i(y)</div>
+          <p class="formula-note">
+            \(m_i\) is the vote margin. The first term is the vote score of the winning label, and the second term is the strongest competing label score. A larger margin means stronger label agreement.
+          </p>
+          <div class="equation">a_i = \sum_{k=1}^{K} \mathbf{1}[\hat{y}_{i,k} = \hat{y}^{vote}_i], \quad
+\rho_i = \frac{a_i}{K}</div>
+          <p class="formula-note">
+            \(a_i\) is the agreement count, meaning the number of candidates that support the voted label. \(\rho_i\) is the agreement ratio, meaning the fraction of candidates that support the voted label.
+          </p>
+          <p>
+            These signals define the difficulty band. Easy examples have a strong margin and high agreement. Boundary examples are near-miss cases: they have moderate confidence but enough agreement to remain useful. Hard examples have low confidence or noisy agreement and are dropped by the proposed Boundary-Mix method.
+          </p>
+          <div class="equation">z_i =
+\begin{cases}
+easy, & m_i \ge \tau_m^{easy} \land \rho_i \ge \tau_\rho^{easy} \\
+boundary, & m_i \ge \tau_m^{boundary} \land a_i \ge \tau_a^{boundary} \\
+hard, & \text{otherwise}
+\end{cases}</div>
+          <p class="formula-note">
+            \(z_i\) is the assigned difficulty band. \(\tau_m^{easy}\) and \(\tau_\rho^{easy}\) are thresholds for easy examples. \(\tau_m^{boundary}\) and \(\tau_a^{boundary}\) are minimum thresholds for retaining boundary examples. Examples that fail these conditions are treated as hard.
+          </p>
+          <p>
+            After assigning the difficulty band, the method judges each rationale candidate. A useful rationale should support the voted label, be grounded in the premise and hypothesis, explicitly connect the reasoning to the answer, and have an appropriate length for supervision. We combine these signals into a rationale quality score:
+          </p>
+          <div class="equation">Q(c_{i,k}) =
+\alpha S_{label}(c_{i,k})
++ \beta S_{ground}(c_{i,k})
++ \gamma S_{answer}(c_{i,k})
++ \delta S_{source}(c_{i,k})
++ \eta S_{brief}(c_{i,k})</div>
+          <p class="formula-note">
+            \(Q(c_{i,k})\) is the quality score of candidate \(c_{i,k}\). \(\alpha, \beta, \gamma, \delta,\) and \(\eta\) control the contribution of each scoring signal.
+          </p>
+          <p>
+            \(S_{label}\) checks whether the candidate label agrees with the voted label. \(S_{ground}\) checks whether the rationale is connected to the premise and hypothesis instead of introducing unsupported information. \(S_{answer}\) checks whether the rationale explicitly supports the final answer. \(S_{source}\) incorporates the rationale-type prior, and \(S_{brief}\) penalizes rationales that are too weak or too verbose for effective supervision.
+          </p>
+        </div>
+        <label class="note-label" for="note-selection">Comment</label>
+        <textarea class="note" id="note-selection" data-note="selection" placeholder="Comment on grouping, weighted vote, boundary margin, or quality scoring..."></textarea>
+      </section>
+
+      <section id="variants" class="block" data-id="variants">
+        <h3>3.4 Boundary-Mix and Same-Family Variants</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Figure 2(c) summarizes the boundary-family variants. The main proposed method is Boundary-Mix. It follows the full selection process in Figure 2(a) and Figure 2(b): candidate rationale collection, grouping by example, weighted vote, confidence signal estimation, rationale judging, difficulty-band assignment, and final selection. Boundary-Mix keeps examples in the easy and boundary regions because they contain usable supervision. It removes hard examples because their generated rationales are too unstable.
+          </p>
+          <p>
+            Formally, Boundary-Mix selects the highest-scoring rationale for examples that are not hard:
+          </p>
+          <div class="equation">c_i^* = \arg\max_{c_{i,k} \in C_i} Q(c_{i,k}), \quad \text{if } z_i \in \{easy, boundary\}</div>
+          <p class="formula-note">
+            \(c_i^*\) is the selected rationale candidate for example \(x_i\). It is the candidate with the highest quality score among candidates in \(C_i\), but only when the example is assigned to the easy or boundary band.
+          </p>
+          <div class="equation">x_i \text{ is removed from rationale-supervised training if } z_i = hard</div>
+          <p class="formula-note">
+            Hard examples are excluded from rationale-supervised training because their candidate rationales do not provide stable enough supervision.
+          </p>
+          <table class="method-table">
+            <thead>
+              <tr>
+                <th>Variant</th>
+                <th>Selection rule</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Boundary-Mix</td>
+                <td>Selects the highest-scoring rationale from easy and boundary examples; removes hard examples.</td>
+                <td>Main proposed method. It balances rationale quality and training coverage.</td>
+              </tr>
+              <tr>
+                <td>Boundary-Bridge</td>
+                <td>Selects the main rationale and optionally adds a second complementary rationale with a different reasoning view.</td>
+                <td>Tests whether adding one diverse rationale improves learning beyond single-rationale selection.</td>
+              </tr>
+              <tr>
+                <td>Boundary-Specialist</td>
+                <td>Uses the same boundary pipeline but emphasizes stronger rationale sources or rationale types.</td>
+                <td>Supports analysis of source reliability and label-rationale compatibility.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            The same-family variants are useful for controlled comparison. Boundary-Bridge studies whether adding one complementary rationale can improve training. Boundary-Specialist studies whether stronger rationale sources or rationale types should be emphasized. Because these variants share the same upstream boundary pipeline, their comparison helps isolate the effect of the final selection rule.
+          </p>
+        </div>
+        <label class="note-label" for="note-variants">Comment</label>
+        <textarea class="note" id="note-variants" data-note="variants" placeholder="Comment on the family variants or naming..."></textarea>
+      </section>
+
+      <section id="training" class="block" data-id="training">
+        <h3>3.5 Student Training with Selected Rationales</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Figure 1(c) shows the student training stage. The student model is trained in a text-to-text framework, where the same input \(x_i\) can be paired with different task prefixes. With the label prefix, the model learns to generate the task label. With the rationale prefix, the model learns to generate the selected rationale. This makes rationale learning an auxiliary task instead of an additional inference-time input.
+          </p>
+          <p>
+            The label prediction loss is defined as the average cross-entropy between the student prediction and the target label:
+          </p>
+          <div class="equation">\mathcal{L}_{label}
+= \frac{1}{N}\sum_{i=1}^{N} \ell(f_\theta(x_i, [label]), y_i)</div>
+          <p class="formula-note">
+            \(N\) is the number of training examples. \(f_\theta\) is the student model with parameters \(\theta\). \([label]\) is the task prefix that asks the model to generate the label. \(\ell\) is token-level cross-entropy loss.
+          </p>
+          <p>
+            The rationale generation loss is computed in the same way, but the target is the selected rationale \(r_i^*\) produced by the boundary-aware selection stage:
+          </p>
+          <div class="equation">\mathcal{L}_{rationale}
+= \frac{1}{N}\sum_{i=1}^{N} \ell(f_\theta(x_i, [rationale]), r_i^*)</div>
+          <p class="formula-note">
+            \([rationale]\) is the rationale prefix that asks the student to generate a rationale. \(r_i^*\) is the selected rationale from Boundary-Mix.
+          </p>
+          <p>
+            The complete multi-task objective balances the two losses:
+          </p>
+          <div class="equation">\mathcal{L}
+= \lambda \mathcal{L}_{label}
++ (1-\lambda)\mathcal{L}_{rationale}</div>
+          <p class="formula-note">
+            \(\lambda\) controls the trade-off between label prediction and rationale generation. When \(\lambda\) is larger, training emphasizes label prediction; when it is smaller, training gives more weight to rationale generation.
+          </p>
+          <p class="formula-note">
+            Compared with direct rationale usage, the selected rationale is used as a training target, not as an input required at test time.
+          </p>
+          <p>
+            This training setup preserves the deployment advantage of the original distillation framework. During inference, the teacher LLM, candidate rationales, and boundary selector are not used. The trained student receives only the input example and predicts the task label directly. Therefore, the boundary-aware module improves the training data while keeping the student architecture and inference process unchanged.
+          </p>
+        </div>
+        <label class="note-label" for="note-training">Comment</label>
+        <textarea class="note" id="note-training" data-note="training" placeholder="Comment on the student training connection to the original paper..."></textarea>
+      </section>
+    </article>
+
+    <aside>
+      <strong>Review Navigation</strong>
+      <nav class="toc">
+        <a href="#full-pipeline">Full pipeline image</a>
+        <a href="#boundary-detail">Boundary detail image</a>
+        <a href="#overview">3.1 Overview</a>
+        <a href="#generation">3.2 Candidate generation</a>
+        <a href="#selection">3.3 Filtering and selection</a>
+        <a href="#variants">3.4 Boundary variants</a>
+        <a href="#training">3.5 Student training</a>
+      </nav>
+      <div class="warning">
+        Edit text directly in the paper area. Add review notes in each comment box. Use <strong>Save review</strong> before closing the browser.
+      </div>
+      <div class="meta">
+        <label>
+          Reviewer
+          <input id="reviewer" type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Overall Comment
+          <textarea class="global-comment" id="globalComment" placeholder="General methodology comments..."></textarea>
+        </label>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const saveBtn = document.getElementById("saveBtn");
+    const loadBtn = document.getElementById("loadBtn");
+
+    function collectState() {
+      const blocks = {};
+      document.querySelectorAll("[data-id]").forEach((block) => {
+        const id = block.dataset.id;
+        blocks[id] = {
+          html: block.querySelector("[data-field='body']")?.innerHTML || "",
+          note: block.querySelector("[data-note]")?.value || ""
+        };
+      });
+
+      return {
+        savedAt: new Date().toISOString(),
+        reviewer: document.getElementById("reviewer").value,
+        globalComment: document.getElementById("globalComment").value,
+        title: document.querySelector("[data-field='title']").innerHTML,
+        pipelineCaption: document.querySelector("[data-field='pipeline-caption']").innerHTML,
+        blocks
+      };
+    }
+
+    function applyState(state) {
+      if (!state || Object.keys(state).length === 0) {
+        statusEl.textContent = "No saved review found.";
+        return;
+      }
+      if (state.reviewer) document.getElementById("reviewer").value = state.reviewer;
+      if (state.globalComment) document.getElementById("globalComment").value = state.globalComment;
+      if (state.title) document.querySelector("[data-field='title']").innerHTML = state.title;
+      if (state.pipelineCaption) document.querySelector("[data-field='pipeline-caption']").innerHTML = state.pipelineCaption;
+
+      Object.entries(state.blocks || {}).forEach(([id, value]) => {
+        const block = document.querySelector(`[data-id='${id}']`);
+        if (!block) return;
+        const body = block.querySelector("[data-field='body']");
+        const note = block.querySelector("[data-note]");
+        if (body && value.html) body.innerHTML = value.html;
+        if (note && value.note) note.value = value.note;
+      });
+      statusEl.textContent = state.savedAt ? `Loaded review from ${new Date(state.savedAt).toLocaleString()}.` : "Loaded saved review.";
+    }
+
+    async function saveState() {
+      const state = collectState();
+      const response = await fetch("/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state)
+      });
+      if (!response.ok) {
+        statusEl.textContent = "Save failed.";
+        return;
+      }
+      statusEl.textContent = `Saved at ${new Date(state.savedAt).toLocaleString()}.`;
+    }
+
+    async function loadState() {
+      const response = await fetch("/state");
+      if (!response.ok) {
+        statusEl.textContent = "Load failed.";
+        return;
+      }
+      const state = await response.json();
+      applyState(state);
+    }
+
+    saveBtn.addEventListener("click", saveState);
+    loadBtn.addEventListener("click", loadState);
+    window.addEventListener("DOMContentLoaded", loadState);
+  </script>
+</body>
+</html>

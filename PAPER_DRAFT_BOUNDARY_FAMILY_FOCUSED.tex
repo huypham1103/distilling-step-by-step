@@ -1,0 +1,780 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{float}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\lstdefinestyle{paperstyle}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible,
+  backgroundcolor=\color{gray!5}
+}
+\lstset{style=paperstyle}
+
+\DeclareRobustCommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\dataset}[1]{\textsc{#1}}
+
+\title{Boundary-Aware Rationale Selection: A Family Pipeline for Step-by-Step Distillation}
+\author{TODO: Author Name}
+\date{TODO: Submission Date}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Step-by-step distillation trains a student model with both task labels and natural-language rationales. Although rationales can provide useful supervision, automatically generated rationales may be noisy: they can predict the wrong label, explain the input weakly, or introduce unsupported reasoning. This paper proposes a \emph{boundary-aware rationale selection family} that filters rationale candidates before student training.
+
+All variants in the family share the same pipeline. First, rationale candidates from multiple sources are grouped by the original example. Second, their predicted labels or answers are combined through weighted voting. Third, the voting margin is used to estimate whether the example is reliable, near the decision boundary, or too unstable. Fourth, candidate rationales are scored using source compatibility, input overlap, explanation cues, answer explicitness, brevity, and multi-source agreement. Finally, different family variants select rationales using different final selection rules.
+
+The main proposed variant is \code{judge_student_boundary_mix_balanced}, which keeps one rationale from examples in the \code{easy} and \code{boundary} regions and removes \code{hard} examples. A second evaluated variant, \code{judge_student_boundary_bridge_balanced}, adds a secondary diverse rationale when available. A third variant, \code{judge_student_boundary_specialist_balanced}, is used for selection analysis because complete downstream results are not available for both datasets. Experiments on \dataset{ESNLI} and \dataset{CommonsenseQA} show that \code{judge_student_boundary_mix_balanced} improves over the baseline on both datasets, from 83.93 to 84.16 on \dataset{ESNLI} and from 60.36 to 62.41 on \dataset{CommonsenseQA}. The family comparison shows that \code{boundary_bridge} achieves stronger \dataset{ESNLI} performance, while \code{boundary_mix} is more consistent in the current two-dataset comparison and gives the strongest \dataset{CommonsenseQA} result within the boundary family.
+\end{abstract}
+
+\section{Introduction}
+
+In the rapidly advancing field of natural language processing (NLP), the ability of computational systems to understand human language remains a central research challenge. Language understanding requires more than recognizing individual words or sentence patterns; it requires modeling the semantic relationships among textual units and determining how meaning is transferred, contradicted, or left uncertain across contexts. Among the tasks designed to evaluate this capability, textual entailment (TE) has become a fundamental benchmark for natural language understanding and reasoning. TE is commonly formulated as the problem of determining the relationship between a premise $T$ and a hypothesis $H$, where the model must decide whether the hypothesis can be inferred from the premise, contradicts the premise, or remains neutral with respect to it~\cite{dagan2006pascal,bowman2015large,williams2018broad}.
+
+The role of TE extends beyond a standalone benchmark because many NLP applications rely on the ability to compare textual meanings. In question answering, entailment can support the verification of whether a candidate response is justified by a given passage~\cite{harabagiu2006methods,androutsopoulos2010survey}. In machine translation and summarization, entailment-based methods have been used to assess whether generated outputs preserve the meaning of source texts~\cite{pado2009textual,mehdad2013using}. TE-style reasoning is also relevant to information retrieval and knowledge-intensive tasks, where systems must determine whether textual evidence supports a candidate fact or relation~\cite{dagan2006pascal,bowman2015large}. These applications show that improving TE models contributes to broader progress in semantic reasoning and human-like language understanding.
+
+Despite its importance, TE remains strongly dependent on supervised training data. Modern deep learning models can achieve high performance when large annotated datasets such as SNLI and MultiNLI are available, but creating gold-standard labels is costly because each example requires careful human judgment over the logical relationship between a premise and a hypothesis~\cite{bowman2015large,williams2018broad}. This dependency limits the development of TE systems in domains, languages, or resource-constrained settings where labeled data is limited. Pretrained language models such as BERT, RoBERTa, and T5 have improved textual representation by learning from large-scale corpora~\cite{devlin2019bert,liu2019roberta,raffel2020exploring}. However, even with strong pretrained representations, TE models still require task-specific supervision to learn the decision boundaries among entailment, contradiction, and neutral relations.
+
+Recently, the emergence of large language models (LLMs) has introduced a new opportunity for addressing the data dependency problem. LLMs trained on large-scale corpora have demonstrated strong zero-shot and few-shot reasoning ability, suggesting that they contain condensed knowledge that can be transferred to smaller models~\cite{brown2020language,wei2022chain}. One influential approach is step-by-step distillation, which uses LLM-generated rationales as additional supervision for student models~\cite{hsieh2023distilling}. Instead of training only with input-label pairs, the student model also receives explanatory signals that describe why a label should be selected. Building on this direction, our previous study, \emph{How Rationales Boost Textual Entailment Modeling: Insights from Large Language Models}, investigated seven types of LLM-generated rationales for TE and showed that rationale diversity can improve student learning under resource-limited conditions~\cite{our_rationale_te_paper}.
+
+Although these studies demonstrate the value of LLM-generated rationales, an important limitation remains. Prior work primarily shows that rationales are useful as a form of supervision, and our previous study further analyzes which rationale types are more beneficial at the dataset level. However, this does not fully answer the example-level question of which rationale is most suitable for a specific premise-hypothesis pair. A rationale type that is effective on average may still generate weak, noisy, or less relevant explanations for individual examples. Moreover, different rationale sources may disagree about the predicted label or provide explanations that are not sufficiently grounded in the given texts. This motivates a shift from global rationale-type analysis to example-level rationale selection.
+
+To address this issue, this study extends rationale-based distillation with a boundary-aware rationale selection strategy. Rather than modifying the student model architecture, the proposed approach improves the supervision used to train the student by selecting rationales that are more suitable for each example. At a high level, the method compares multiple candidate rationales generated for the same premise-hypothesis pair and uses their agreement, relevance, and reliability to decide which rationale should be used for distillation. This extension aims to preserve the advantages of rationale-based learning while reducing the effect of noisy or unsuitable generated explanations.
+
+The intuition behind the proposed approach is that rationale quality should be considered in relation to the specific example being learned. Some premise-hypothesis pairs are supported by consistent rationales and provide clear supervision, while others are closer to ambiguous decision boundaries or contain conflicting explanations. A useful rationale selection strategy should therefore identify explanations that are not only fluent, but also appropriate for the relation expressed by the given text pair. In this way, the proposed work moves from asking which rationale type is generally useful to asking which rationale is suitable for a particular training example.
+
+Building upon our previous rationale-based distillation framework, this study proposes a new pipeline for filtering and selecting rationales that are more suitable for learning. The main objective is to move beyond using rationale types globally and instead determine which rationale should be used for each training example. The major achievements of this study can be summarized as follows:
+
+\begin{itemize}
+    \item \textbf{Improved rationale selection:} we extend the previous rationale-based distillation method with an example-level filtering and selection stage. Instead of using rationale types only at the global level, the proposed pipeline selects rationales that are more suitable for each training example.
+    \item \textbf{Better empirical performance:} under the same methodological setting, the proposed selection-oriented extension consistently outperforms the previous baseline across the evaluated reasoning tasks, showing that rationale selection can strengthen the original distillation process.
+    \item \textbf{More efficient use of generated rationales:} the proposed pipeline reduces the effect of weak, noisy, or poorly grounded rationales before training. This avoids spending computation and training time on unsuitable explanations and makes rationale-enhanced distillation more practical.
+\end{itemize}
+
+The remainder of this paper is organized as follows. Section~\ref{sec:related-work} reviews related work on textual entailment, large language models, and rationale-based distillation. Section~\ref{sec:methodology} presents the proposed boundary-aware rationale selection methodology. Section~\ref{sec:experiments} describes the experimental setup and analyzes the results. Finally, Section~\ref{sec:conclusion} concludes the study and discusses directions for future work.
+
+\section{Related Work}
+\label{sec:related-work}
+
+\subsection{Large Language Models and Reasoning Rationales}
+
+Large language models have demonstrated strong capabilities across a wide range of natural language processing tasks, including language understanding, generation, and reasoning~\cite{brown2020language,chowdhery2022palm,openai2023gpt4}. Beyond producing final answers, an important emerging ability of LLMs is their capacity to generate intermediate reasoning steps or natural-language rationales that support their predictions. Chain-of-thought prompting shows that explicitly eliciting reasoning steps can improve performance in zero-shot and few-shot settings~\cite{wei2022chain,kojima2022large}. These studies suggest that LLM-generated rationales contain useful task-specific knowledge that can explain the relation between an input and its predicted output. However, directly deploying LLMs remains expensive and impractical in many real-world scenarios, especially when computational cost, privacy, latency, or offline access is important. This motivates research that uses LLMs as knowledge generators while transferring their reasoning behavior into smaller models.
+
+\subsection{Learning with Reasoning Distillation from LLMs}
+
+Reasoning distillation aims to transfer the explanatory and reasoning ability of a large model into a smaller task-specific model. Earlier work has shown that human-written rationales can guide model predictions, regularize model behavior, and improve interpretability, but collecting such rationales is costly and time-consuming~\cite{zaidan2007using,camburu2018esnli,rajani2019cosmos}. LLM-generated rationales provide a scalable alternative because they can be produced automatically and used as additional supervision. The Distilling Step-by-Step framework is a representative approach: it trains smaller models with both task labels and LLM-generated rationales in a multitask setting, reducing the need to deploy the LLM at inference time~\cite{hsieh2023distilling}. This line of work establishes the foundation for using rationales as a bridge between large teacher models and efficient student models. Nevertheless, simply generating rationales does not guarantee that all rationales are equally useful, because generated explanations may differ in quality, relevance, and consistency.
+
+\subsection{Rationale Diversity, Quality, and Selection}
+
+Building on reasoning distillation, recent work on rationale-based textual entailment modeling has investigated how different types of LLM-generated rationales affect student learning. Instead of relying on a single generic explanation style, this line of work generated and compared seven rationale types, including conditional, contrastive, neutral, consensus, causal, comparative, and historical rationales~\cite{our_rationale_te_paper}. The results showed that rationale type matters: some rationale styles provide stronger supervision than others, and combining rationale types can further improve model performance. However, this type-level analysis does not fully solve the rationale selection problem. A rationale type that performs well on average may still generate weak or unsuitable explanations for specific examples. In addition, different rationale sources may disagree, and low-quality rationales may waste training time or introduce noise into the student model. These observations motivate the next step in rationale-based distillation: selecting rationales at the example level. This work follows that direction by proposing a boundary-aware rationale selection pipeline that filters generated rationales before they are used for training, connecting prior rationale generation studies to a more selective and efficient distillation process.
+
+\section{Boundary-Aware Family Overview}
+
+The family contains two fully evaluated variants and one selection-analysis variant.
+
+\begin{table}[H]
+\centering
+\caption{Boundary-aware rationale selection family.}
+\begin{tabularx}{\linewidth}{l l X}
+\toprule
+Variant & Status & Variant-specific step \\
+\midrule
+\code{judge_student_boundary_mix_balanced} & Main method & Keep \code{easy + boundary}, one rationale per example \\
+\code{judge_student_boundary_bridge_balanced} & Evaluated variant & Add a second diverse rationale when possible \\
+\code{judge_student_boundary_specialist_balanced} & Analysis variant & Focus on selected specialist sources and non-easy examples \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+These are not three unrelated methods. They share the same core pipeline:
+
+\begin{lstlisting}
+collect candidates
+-> group by example
+-> weighted vote
+-> compute margin
+-> score candidates
+-> assign band
+-> apply variant selection rule
+-> balance output
+\end{lstlisting}
+
+All variants share the same core voting, scoring, and banding pipeline. They differ in the final filtering rule and, for bridge-style variants, whether a second diverse rationale is allowed.
+
+\section{Shared Pipeline}
+
+\subsection{Candidate Sources}
+
+For each example, rationale candidates are collected from seven source styles:
+
+\begin{lstlisting}
+neutral
+contrastive
+historical
+comparative
+causal
+consensus
+if_else
+\end{lstlisting}
+
+Each candidate contains \code{premise}, \code{hypothesis}, \code{rationale}, \code{LLM_answer}, and \code{judge_source}. The purpose of collecting multiple candidates is to estimate whether different rationale styles support the same answer.
+
+\subsection{Group Candidates by Example}
+
+Candidates from different source files must be grouped if they describe the same original example. The method creates an example key:
+
+\begin{lstlisting}
+example_key = normalize(premise) + "</s>" + normalize(hypothesis)
+\end{lstlisting}
+
+\code{normalize} removes extra spaces, strips leading and trailing whitespace, and lowercases the text when constructing the key. After grouping, one example can have multiple rationale candidates. The group is the unit used for voting and boundary assignment.
+
+\subsection{Source Prior}
+
+The family uses source priors in weighted voting. A source prior is a manually defined compatibility weight between a rationale style and a label or answer type. The prior is not learned from data, not taken from the original step-by-step distillation paper, not random, and should be treated as a manually defined inductive bias.
+
+It should be understood as a relative compatibility matrix. For example, a contrastive rationale is naturally useful for contradiction-like reasoning because it emphasizes differences, while an if-else rationale is naturally useful for neutral-like reasoning because it often expresses uncertainty or missing conditions.
+
+These values should not be interpreted as calibrated probabilities. They only define soft preferences used during voting and candidate scoring. A stronger future version should either tune these values on a validation set or compare them with an equal-vote baseline.
+
+\subsection{ESNLI Source Prior}
+
+For \dataset{ESNLI}, source prior depends on the candidate label.
+
+\begin{table}[H]
+\centering
+\caption{\dataset{ESNLI} source prior values.}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Label & historical & consensus & contrastive & causal & neutral & if\_else & comparative \\
+\midrule
+entailment & 1.00 & 0.98 & 0.95 & 0.92 & 0.88 & 0.74 & 0.70 \\
+neutral & 0.72 & 0.82 & 0.90 & 0.84 & 0.96 & 1.00 & 0.99 \\
+contradiction & 0.74 & 0.84 & 0.99 & 0.97 & 0.89 & 0.70 & 1.00 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+\subsection{CommonsenseQA Source Prior}
+
+For \dataset{CommonsenseQA}, source prior is defined per rationale source.
+
+\begin{table}[H]
+\centering
+\caption{\dataset{CommonsenseQA} source prior values.}
+\begin{tabular}{lr}
+\toprule
+Source & Prior \\
+\midrule
+causal & 1.000 \\
+if\_else & 0.990 \\
+neutral & 0.980 \\
+contrastive & 0.975 \\
+historical & 0.940 \\
+consensus & 0.840 \\
+comparative & 0.800 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Weighted Voting}
+
+Each candidate votes for its predicted label or answer. Instead of counting every source equally, the vote weight is the source prior. For each label $y$:
+
+\[
+\mathrm{score}(y) = \sum_{i: \hat{y}_i = y} \mathrm{prior}(\mathrm{source}_i, y)
+\]
+
+The winning label is:
+
+\[
+\mathrm{voted\_label} = \arg\max_y \mathrm{score}(y)
+\]
+
+\begin{table}[H]
+\centering
+\caption{Example of weighted voting for \dataset{ESNLI}.}
+\begin{tabular}{llr}
+\toprule
+Source & Predicted label & Weight \\
+\midrule
+historical & entailment & 1.00 \\
+consensus & entailment & 0.98 \\
+causal & entailment & 0.92 \\
+if\_else & neutral & 1.00 \\
+comparative & contradiction & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In this example:
+
+\begin{align*}
+\mathrm{score}(\mathrm{entailment}) &= 1.00 + 0.98 + 0.92 = 2.90,\\
+\mathrm{score}(\mathrm{neutral}) &= 1.00,\\
+\mathrm{score}(\mathrm{contradiction}) &= 1.00.
+\end{align*}
+
+Thus, the voted label is \code{entailment}.
+
+\subsection{Vote Margin}
+
+The vote margin measures how strongly the winning label beats the second-best label:
+
+\[
+\mathrm{voted\_label\_margin} = \mathrm{winner\_score} - \mathrm{runner\_up\_score}
+\]
+
+A high margin means sources strongly agree, a medium margin indicates a useful but near-boundary case, and a low margin indicates source disagreement.
+
+\subsection{Boundary Band Assignment}
+
+The shared pipeline assigns a band to each example.
+
+For \dataset{ESNLI}:
+
+\begin{lstlisting}
+easy:
+  voted_label_margin >= 2.1
+  and label_counts[training_label] >= 5
+
+boundary:
+  voted_label_margin >= 1.1
+  and label_counts[training_label] >= 2
+
+hard:
+  otherwise
+\end{lstlisting}
+
+For \dataset{CommonsenseQA}:
+
+\begin{lstlisting}
+easy:
+  voted_label_margin >= 2.4
+  and label_counts[gold_answer] >= 5
+
+boundary:
+  voted_label_margin >= 1.6
+  and label_counts[gold_answer] >= 3
+
+hard:
+  otherwise
+\end{lstlisting}
+
+The \code{hard} band does not mean the rationale text is hard to read. It means the example group is unstable because source agreement is weak.
+
+\subsection{Candidate Scoring}
+
+After voting, the method chooses the best rationale candidate among candidates that match the selected training label or gold answer. The score combines source prior, input overlap, teaching cues, explicit answer or label, brevity, agreement count, agreement ratio, and vote margin.
+
+This score is a rule-based judge score. It is not a learned neural judge.
+
+\subsection{Balance Output}
+
+After selection, the output is balanced by label where applicable. For \dataset{ESNLI} \code{boundary_mix}, the selected data contains:
+
+\begin{table}[H]
+\centering
+\caption{Balanced label counts for \dataset{ESNLI} \code{boundary_mix}.}
+\begin{tabular}{lr}
+\toprule
+Label & Count \\
+\midrule
+entailment & 3018 \\
+neutral & 3018 \\
+contradiction & 3018 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Balancing prevents the selected rationale dataset from being dominated by one label.
+
+\section{Family Variants}
+
+\subsection{Variant 1: Boundary Mix}
+
+This is the main proposed method. Its selection rule is:
+
+\begin{lstlisting}
+allowed_bands = {"easy", "boundary"}
+max_per_example = 1
+\end{lstlisting}
+
+It keeps one best rationale per example, keeps \code{easy} examples for clean supervision, keeps \code{boundary} examples for useful near-boundary supervision, removes \code{hard} examples, and balances selected data. This method is simple, avoids noisy hard examples, does not add extra rationale views, and improves both \dataset{ESNLI} and \dataset{CommonsenseQA}.
+
+\subsection{Variant 2: Boundary Bridge}
+
+This variant uses the same shared pipeline, but adds a second rationale when a useful diverse partner exists:
+
+\begin{lstlisting}
+allowed_bands = {"easy", "boundary", "bridge"}
+max_per_example = 2
+\end{lstlisting}
+
+The extra step chooses a secondary rationale from a different source if it is not too similar to the primary rationale. In implementation, similarity is checked with rationale token overlap. A secondary rationale is treated as a \code{bridge} view when it provides another explanation for the same selected label or answer.
+
+This variant improves \dataset{ESNLI} strongly in the current results, but it gives only a small improvement on \dataset{CommonsenseQA}.
+
+\subsection{Variant 3: Boundary Specialist}
+
+This variant also uses the same shared pipeline, but focuses on selected specialist sources:
+
+\begin{lstlisting}
+historical
+contrastive
+comparative
+if_else
+consensus
+\end{lstlisting}
+
+Its selection rule is:
+
+\begin{lstlisting}
+allowed_bands = {"boundary", "bridge"}
+max_per_example = 2
+\end{lstlisting}
+
+In the current project outputs, this variant is available for \dataset{ESNLI} selection analysis. It is not used as the main proposed method because the thesis target is a method that works clearly on both \dataset{ESNLI} and \dataset{CommonsenseQA}.
+
+\subsection{Variant Comparison Summary}
+
+\begin{table}[H]
+\centering
+\caption{Final selection differences between family variants.}
+\begin{tabular}{lccccc}
+\toprule
+Variant & Easy & Boundary & Bridge & Hard & Rationales/example \\
+\midrule
+\code{boundary_mix} & Yes & Yes & No & No & 1 \\
+\code{boundary_bridge} & Yes & Yes & Yes & No & Up to 2 \\
+\code{boundary_specialist} & No & Yes & Yes & No & Up to 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Experimental Setup}
+
+\subsection{Datasets}
+
+The experiments use two datasets.
+
+\begin{table}[H]
+\centering
+\caption{Datasets.}
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Dataset & Task & Output \\
+\midrule
+\dataset{ESNLI} & Natural language inference & entailment, neutral, contradiction \\
+\dataset{CommonsenseQA} & Commonsense question answering & multiple-choice answer \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Baseline}
+
+The baseline is the original student training setup used in the project.
+
+\begin{table}[H]
+\centering
+\caption{Baseline accuracy.}
+\begin{tabular}{lr}
+\toprule
+Dataset & Baseline accuracy \\
+\midrule
+\dataset{ESNLI} & 83.93 \\
+\dataset{CommonsenseQA} & 60.36 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+TODO/VERIFY before final submission: student model backbone, training hyperparameters, random seed, number of training runs, and exact train/validation/test split.
+
+\subsection{Evaluation Metric}
+
+The evaluation metric is accuracy. This is suitable because \dataset{ESNLI} is a classification task and \dataset{CommonsenseQA} is a multiple-choice classification task.
+
+\subsection{What We Compare}
+
+The paper discusses the boundary-family variants \code{baseline}, \code{boundary_mix}, \code{boundary_bridge}, and \code{boundary_specialist}. However, \code{boundary_specialist} is reported only for selection statistics in the current project output because its downstream performance table is not available for both datasets. The downstream performance comparison focuses on:
+
+\begin{lstlisting}
+baseline vs boundary_mix vs boundary_bridge
+\end{lstlisting}
+
+This paper does not claim that \code{boundary_specialist} is a complete downstream competitor. It is included to show how the same pipeline can be restricted to specialist rationale sources, but the main empirical claim is based on \code{boundary_mix} and \code{boundary_bridge}.
+
+\section{Selection Statistics}
+
+Selection statistics are important because this paper proposes a data/rationale selection method. We need to show not only final accuracy, but also what the method selected.
+
+\subsection{Boundary Mix Selection}
+
+\begin{table}[H]
+\centering
+\caption{\code{boundary_mix} selection statistics.}
+\begin{tabularx}{\linewidth}{lXrr}
+\toprule
+Dataset & Band distribution & Avg. agreement & Avg. margin \\
+\midrule
+\dataset{ESNLI} & easy: 9032, boundary: 22 & 6.85 & 5.95 \\
+\dataset{CommonsenseQA} & easy: 7787, boundary: 56 & 6.67 & 5.98 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\code{boundary_mix} mostly selects high-agreement easy examples, but it also keeps a small number of boundary examples. This makes the selected set clean while still preserving some near-boundary supervision.
+
+Although the final selected data is dominated by \code{easy} examples, the method is still boundary-aware because the selection decision is made after estimating the example's region. In other words, the method does not assume all examples are equally useful. It explicitly identifies \code{easy}, \code{boundary}, and \code{hard} regions, keeps reliable and near-boundary examples, and removes unstable examples. The small number of selected \code{boundary} rows indicates that most retained examples have strong multi-source agreement, while the boundary mechanism still protects the training set from low-margin noisy cases.
+
+\subsection{Boundary Bridge Selection}
+
+\begin{table}[H]
+\centering
+\caption{\code{boundary_bridge} selection statistics.}
+\begin{tabularx}{\linewidth}{lXrrr}
+\toprule
+Dataset & Band distribution & Extra views & Avg. agreement & Avg. margin \\
+\midrule
+\dataset{ESNLI} & easy: 7747, bridge: 4853 & 4853 & 6.94 & 6.08 \\
+\dataset{CommonsenseQA} & bridge: 6037, easy: 4462, boundary: 1 & 6037 & 6.91 & 6.37 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\code{boundary_bridge} selects more data because it can include a second rationale view. This increases training coverage, especially through bridge rationales.
+
+\subsection{Boundary Specialist Selection}
+
+\begin{table}[H]
+\centering
+\caption{\code{boundary_specialist} selection statistics.}
+\begin{tabular}{l l r r r}
+\toprule
+Dataset & Band distribution & Extra views & Avg. agreement & Avg. margin \\
+\midrule
+\dataset{ESNLI} & bridge: 3912, boundary: 9 & 3912 & 6.84 & 5.93 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\code{boundary_specialist} is much smaller and focuses on specialist sources. It is useful for analysis, but less suitable as the main cross-dataset method because current outputs do not provide the same complete evaluation on both \dataset{ESNLI} and \dataset{CommonsenseQA}.
+
+\subsection{Source Distribution in Boundary Mix}
+
+\begin{table}[H]
+\centering
+\caption{Source distribution for \dataset{ESNLI} \code{boundary_mix}.}
+\begin{tabular}{lr}
+\toprule
+Source & Count \\
+\midrule
+causal & 3525 \\
+neutral & 2558 \\
+if\_else & 1648 \\
+contrastive & 478 \\
+comparative & 371 \\
+historical & 243 \\
+consensus & 231 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Source distribution for \dataset{CommonsenseQA} \code{boundary_mix}.}
+\begin{tabular}{lr}
+\toprule
+Source & Count \\
+\midrule
+if\_else & 6112 \\
+causal & 948 \\
+neutral & 679 \\
+contrastive & 102 \\
+historical & 1 \\
+consensus & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This shows that the selected source distribution is dataset-dependent. \dataset{ESNLI} uses a more mixed source distribution, while \dataset{CommonsenseQA} is dominated by \code{if_else}, with support from \code{causal} and \code{neutral}.
+
+\section{Performance Results}
+
+\subsection{Boundary Family Performance}
+
+\begin{table}[H]
+\centering
+\caption{Boundary family performance.}
+\begin{tabular}{lrr}
+\toprule
+Method & \dataset{ESNLI} & \dataset{CommonsenseQA} \\
+\midrule
+baseline & 83.93 & 60.36 \\
+\code{judge_student_boundary_mix_balanced} & 84.16 & 62.41 \\
+\code{judge_student_boundary_bridge_balanced} & 85.06 & 60.52 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Improvement over Baseline}
+
+\begin{table}[H]
+\centering
+\caption{\code{boundary_mix} improvement over baseline.}
+\begin{tabular}{lrrr}
+\toprule
+Dataset & Baseline & Boundary Mix & Improvement \\
+\midrule
+\dataset{ESNLI} & 83.93 & 84.16 & +0.23 \\
+\dataset{CommonsenseQA} & 60.36 & 62.41 & +2.05 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Main Interpretation}
+
+\code{boundary_bridge} gives the best \dataset{ESNLI} result, 85.06. However, its \dataset{CommonsenseQA} score is 60.52, which is only slightly above the baseline. \code{boundary_mix} gives 84.16 on \dataset{ESNLI} and 62.41 on \dataset{CommonsenseQA}. This is why \code{boundary_mix} is selected as the main proposed method. It is not the highest on every single dataset, but it improves both datasets and performs especially well on \dataset{CommonsenseQA}.
+
+The key conclusion from the current two-dataset comparison is that \code{boundary_mix} is the most consistent family variant across the two datasets.
+
+\section{Step-by-Step Family Comparison}
+
+\subsection{Shared Steps}
+
+All family variants collect candidates from sources, group by example, perform weighted voting, compute vote margin, score candidate rationales, assign an \code{easy/boundary/hard} band, and remove \code{hard} examples.
+
+\subsection{Different Final Steps}
+
+\begin{table}[H]
+\centering
+\caption{Shared and variant-specific final decisions.}
+\begin{tabular}{lccc}
+\toprule
+Final step & \code{boundary_mix} & \code{boundary_bridge} & \code{boundary_specialist} \\
+\midrule
+Keep \code{easy} & Yes & Yes & No \\
+Keep \code{boundary} & Yes & Yes & Yes \\
+Add \code{bridge} rationale & No & Yes & Yes \\
+Filter specialist sources & No & No & Yes \\
+Max rationales per example & 1 & 2 & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Why Boundary Mix Is Preferred}
+
+\code{boundary_mix} is preferred as the main thesis method because it uses the simplest final selection rule, avoids unstable \code{hard} examples, avoids adding a second rationale that may introduce extra noise, improves over baseline on both datasets, and achieves the strongest \dataset{CommonsenseQA} performance among the evaluated boundary variants.
+
+\subsection{Why Boundary Bridge May Help ESNLI}
+
+\dataset{ESNLI} is a sentence-pair reasoning task. Multiple rationales can explain the same logical relation from different angles. For example, one rationale may focus on lexical entailment, while another may focus on semantic generalization. This may explain why bridge rationales improve \dataset{ESNLI} in the current results.
+
+However, the same extra-view strategy is less effective on \dataset{CommonsenseQA} in the current table. \dataset{CommonsenseQA} answer choices can be close in meaning, and extra rationales may introduce associations that are not consistently useful. This interpretation should be treated as a hypothesis until additional ablations are run.
+
+\subsection{Why Boundary Specialist Is Not the Main Method}
+
+\code{boundary_specialist} is useful for studying specialist source behavior, but it is not the best main method because it is smaller, excludes easy examples, current outputs are \dataset{ESNLI}-focused, and it is less directly comparable across both datasets.
+
+\section{Qualitative Examples}
+
+\subsection{Easy Example}
+
+\begin{table}[H]
+\centering
+\caption{Example easy case from \dataset{ESNLI} \code{boundary_mix}.}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Field & Value \\
+\midrule
+Premise & A young man wearing a backpack and dark glasses approaches the brick building where there is a bit of graffiti on the wall. \\
+Hypothesis & The young man has glasses on his face. \\
+Selected label & entailment \\
+Source & neutral \\
+Agreement count & 7 \\
+Vote margin & 6.17 \\
+Band & easy \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Rationale:
+\begin{lstlisting}
+The correct answer is entailment. This means that the hypothesis is supported by the premise. The premise and the hypothesis are both about a young man wearing glasses.
+\end{lstlisting}
+
+\subsection{Boundary Example}
+
+\begin{table}[H]
+\centering
+\caption{Example boundary case from \dataset{ESNLI}.}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Field & Value \\
+\midrule
+Premise & Two men, one standing and one seated on the ground are attempting to wrangle a bull as dust from the action is being kicked up. \\
+Hypothesis & A rodeo clown tries to save a rider from a bull. \\
+Selected label & neutral \\
+Source & consensus \\
+Agreement count & 4 \\
+Vote margin & 1.11 \\
+Band & boundary \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Rationale:
+\begin{lstlisting}
+The commonly agreed-upon answer is neutral. The hypothesis is neither entailed nor contradicted by the premise. It is possible that the two men are rodeo clowns trying to save a rider from a bull, but it is not necessarily the case.
+\end{lstlisting}
+
+\subsection{Hard Example}
+
+\begin{table}[H]
+\centering
+\caption{Example hard case from \dataset{ESNLI}.}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Field & Value \\
+\midrule
+Premise & A group of construction workers are working. \\
+Hypothesis & A group of guys outside. \\
+Selected label & neutral \\
+Source & contrastive \\
+Agreement count & 3 \\
+Vote margin & 0.01 \\
+Band & hard \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Rationale:
+\begin{lstlisting}
+The most likely answer is neutral. This is because the hypothesis is not necessarily true or false based on the premise. A group of guys outside could be construction workers, but they could also be doing something else.
+\end{lstlisting}
+
+The rationale is not obviously bad, but the example has an extremely low vote margin. This means the sources are unstable. The boundary-aware family removes it from \code{boundary_mix}.
+
+\subsection{CommonsenseQA Boundary Example}
+
+\begin{table}[H]
+\centering
+\caption{Example boundary case from \dataset{CommonsenseQA}.}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Field & Value \\
+\midrule
+Question & Where did his wife ask him to look first when he complained of missing deodorant? \\
+Choices & grocery store, nightstand, armpits, own bathroom, medicine chest \\
+Selected answer & medicine chest \\
+Source & causal \\
+Agreement count & 4 \\
+Vote margin & 1.61 \\
+Band & boundary \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Rationale:
+\begin{lstlisting}
+The correct answer is medicine chest. His wife asked him to look first in the medicine chest because that is where he usually keeps his deodorant.
+\end{lstlisting}
+
+\section{Discussion}
+
+\subsection{Main Finding}
+
+The main finding is that a single shared pipeline can produce several useful rationale-selection variants. This makes the method easier to understand than a collection of unrelated selection methods. The family pipeline provides example grouping, multi-source agreement, vote margin, boundary bands, rationale scoring, and controlled final selection variants.
+
+\subsection{Why the Family View Is Better}
+
+The family view is useful for a thesis because it gives a clean story: we propose one pipeline, then compare controlled variants of that pipeline. This is stronger than comparing many unrelated method names because each result can be explained as the effect of a specific final selection rule.
+
+\subsection{Dataset Difference}
+
+The results suggest that \dataset{ESNLI} and \dataset{CommonsenseQA} may benefit from different variants. \dataset{ESNLI} benefits from \code{boundary_bridge} in the current result, possibly because sentence-pair inference can use multiple logical explanations. \dataset{CommonsenseQA} benefits more from \code{boundary_mix} in the current result, possibly because extra rationales may add noisy commonsense associations.
+
+This supports the decision to choose \code{boundary_mix} as the main method for cross-dataset consistency in this experiment.
+
+\section{Limitations}
+
+The method has several limitations. First, source priors are manually defined. They encode a reasonable inductive bias, but they are not learned from data. Second, band thresholds are rule-based. The thresholds may need tuning for other datasets. Third, the judge score is also rule-based. It is interpretable, but it may not capture all aspects of rationale quality.
+
+Fourth, the final \code{boundary_mix} selection is dominated by \code{easy} examples. This does not invalidate the boundary-aware pipeline, because the method still estimates and filters by boundary regions, but it means that the main performance improvement may come more from removing unstable examples than from adding many boundary examples.
+
+Fifth, \code{boundary_specialist} does not currently have the same complete downstream evaluation on both \dataset{ESNLI} and \dataset{CommonsenseQA}. Sixth, the current results do not report repeated runs or standard deviation. Therefore, claims about cross-dataset consistency should be interpreted as observations from the current comparison, not as statistically verified stability. Seventh, the current draft does not include ablation experiments.
+
+\section{Future Work}
+
+Future work should evaluate equal vote versus weighted vote, easy-only versus easy-plus-boundary selection, training with and without hard examples, one rationale versus bridge rationales, learned source priors, threshold tuning, repeated runs with standard deviation, and validation-set threshold search.
+
+The most important ablation is equal vote versus weighted vote because it directly tests the value of the prior matrix.
+
+\section{Conclusion}
+
+This paper presents a boundary-aware rationale selection family for step-by-step distillation. Instead of comparing many unrelated rationale selection methods, the paper focuses on one shared pipeline and three controlled variants. The shared pipeline groups rationale candidates by example, performs weighted voting, computes vote margin, assigns boundary bands, scores candidate rationales, and then applies a variant-specific selection rule.
+
+The main proposed method, \code{judge_student_boundary_mix_balanced}, keeps one rationale from \code{easy} and \code{boundary} examples while removing \code{hard} examples. It improves over the baseline on both \dataset{ESNLI} and \dataset{CommonsenseQA}, from 83.93 to 84.16 on \dataset{ESNLI} and from 60.36 to 62.41 on \dataset{CommonsenseQA}.
+
+The family comparison shows that \code{boundary_bridge} is stronger on \dataset{ESNLI}, but \code{boundary_mix} is more consistent across the two evaluated datasets and performs best on \dataset{CommonsenseQA}. Therefore, \code{boundary_mix} is selected as the main thesis method, while \code{boundary_bridge} and \code{boundary_specialist} are used to analyze how different final selection rules affect the shared boundary pipeline.
+
+\section*{References}
+
+TODO: add final citations.
+
+\begin{enumerate}[leftmargin=*]
+  \item TODO: Knowledge distillation.
+  \item TODO: Step-by-step distillation.
+  \item TODO: Chain-of-thought prompting.
+  \item TODO: ESNLI dataset.
+  \item TODO: CommonsenseQA dataset.
+  \item TODO: Rationale evaluation and faithfulness.
+  \item TODO: Data filtering and curriculum learning.
+\end{enumerate}
+
+\appendix
+
+\section{Short Thesis Story}
+
+The paper does not present many unrelated methods. It presents one shared family pipeline. The types in the family differ mainly in the final selection rule.
+
+\begin{table}[H]
+\centering
+\caption{Short explanation of family variants.}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Variant & Short explanation \\
+\midrule
+\code{boundary_mix} & Keep easy and boundary examples, one rationale per example \\
+\code{boundary_bridge} & Add a second rationale from a different source when it is sufficiently different \\
+\code{boundary_specialist} & Focus on specialist sources and bridge/boundary examples \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\code{boundary_mix} is selected because it improves both \dataset{ESNLI} and \dataset{CommonsenseQA}, is simpler than bridge, avoids adding a potentially noisy second rationale, and achieves the strongest \dataset{CommonsenseQA} result within the boundary family.
+
+\end{document}

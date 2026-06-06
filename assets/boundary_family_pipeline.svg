@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-labelledby="title desc">
+  <title id="title">Boundary family pipeline</title>
+  <desc id="desc">Portrait thesis-style pipeline diagram for boundary mix, boundary bridge, and boundary specialist.</desc>
+
+  <defs>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10.5" refY="6" markerWidth="10" markerHeight="10" orient="auto">
+      <path d="M 1 1 L 11 6 L 1 11 z" fill="#334155"/>
+    </marker>
+    <style>
+      .page { fill: #f8fafc; }
+      .panel { fill: #ffffff; stroke: #dbe3ee; stroke-width: 1.5; rx: 26; filter: url(#shadow); }
+      .card { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.5; rx: 18; filter: url(#shadow); }
+      .input { fill: #eff6ff; stroke: #93c5fd; }
+      .decision { fill: #fff7ed; stroke: #fdba74; }
+      .easy { fill: #ecfdf5; stroke: #86efac; }
+      .boundary { fill: #fffbeb; stroke: #facc15; }
+      .hard { fill: #fef2f2; stroke: #fca5a5; }
+      .bridge { fill: #f5f3ff; stroke: #c4b5fd; }
+      .mix { fill: #ecfdf5; stroke: #86efac; }
+      .out-bridge { fill: #fffbeb; stroke: #facc15; }
+      .specialist { fill: #f5f3ff; stroke: #c4b5fd; }
+      .drop { fill: #fef2f2; stroke: #fca5a5; }
+      .title { font: 700 34px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 400 17px Arial, sans-serif; fill: #475569; }
+      .section { font: 700 14px Arial, sans-serif; fill: #64748b; letter-spacing: 0; }
+      .card-title { font: 700 20px Arial, sans-serif; fill: #0f172a; }
+      .card-text { font: 400 15px Arial, sans-serif; fill: #334155; }
+      .small { font: 400 13px Arial, sans-serif; fill: #64748b; }
+      .step { fill: #334155; }
+      .step-blue { fill: #2563eb; }
+      .step-text { font: 700 15px Arial, sans-serif; fill: #ffffff; }
+      .line { stroke: #334155; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+      .thin { stroke: #64748b; stroke-width: 1.7; fill: none; marker-end: url(#arrow); }
+      .dash { stroke: #64748b; stroke-width: 1.7; stroke-dasharray: 7 7; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="page" width="1200" height="1500"/>
+
+  <text class="title" x="600" y="62" text-anchor="middle">Boundary Family Pipeline</text>
+  <text class="subtitle" x="600" y="92" text-anchor="middle">Select useful-difficulty examples, then choose the family variant</text>
+
+  <!-- Shared pipeline panel -->
+  <rect class="panel" x="90" y="130" width="1020" height="635" rx="26"/>
+  <text class="section" x="130" y="174">SHARED PIPELINE</text>
+
+  <rect class="card input" x="150" y="205" width="900" height="86" rx="18"/>
+  <circle class="step-blue" cx="190" cy="248" r="16"/>
+  <text class="step-text" x="190" y="254" text-anchor="middle">1</text>
+  <text class="card-title" x="225" y="242">Input rationale sources</text>
+  <text class="card-text" x="225" y="268">7 source CSVs + gold labels / paper file</text>
+
+  <rect class="card" x="150" y="325" width="900" height="86" rx="18"/>
+  <circle class="step" cx="190" cy="368" r="16"/>
+  <text class="step-text" x="190" y="374" text-anchor="middle">2</text>
+  <text class="card-title" x="225" y="362">Group candidates by example</text>
+  <text class="card-text" x="225" y="388">Normalize premise + hypothesis, then collect all source rationales for the same example</text>
+
+  <rect class="card" x="150" y="445" width="900" height="86" rx="18"/>
+  <circle class="step" cx="190" cy="488" r="16"/>
+  <text class="step-text" x="190" y="494" text-anchor="middle">3</text>
+  <text class="card-title" x="225" y="482">Vote and measure confidence</text>
+  <text class="card-text" x="225" y="508">Compute weighted vote, voted_label_margin, agreement_count, and agreement_ratio</text>
+
+  <rect class="card" x="150" y="565" width="900" height="86" rx="18"/>
+  <circle class="step" cx="190" cy="608" r="16"/>
+  <text class="step-text" x="190" y="614" text-anchor="middle">4</text>
+  <text class="card-title" x="225" y="602">Score candidate rationales</text>
+  <text class="card-text" x="225" y="628">Use source prior, overlap, reasoning cues, length, vote margin, and agreement</text>
+
+  <rect class="card" x="150" y="685" width="900" height="58" rx="18"/>
+  <circle class="step" cx="190" cy="714" r="16"/>
+  <text class="step-text" x="190" y="720" text-anchor="middle">5</text>
+  <text class="card-title" x="225" y="721">Select primary rationale: judge_view_rank = 1</text>
+
+  <path class="line" d="M600 291 L600 325"/>
+  <path class="line" d="M600 411 L600 445"/>
+  <path class="line" d="M600 531 L600 565"/>
+  <path class="line" d="M600 651 L600 685"/>
+
+  <!-- Band assignment panel -->
+  <rect class="panel" x="90" y="805" width="1020" height="270" rx="26"/>
+  <text class="section" x="130" y="849">DIFFICULTY BAND ASSIGNMENT</text>
+
+  <rect class="card decision" x="250" y="875" width="700" height="74" rx="18"/>
+  <text class="card-title" x="600" y="907" text-anchor="middle">Assign boundary_band</text>
+  <text class="card-text" x="600" y="933" text-anchor="middle">Based on voted_label_margin and agreement_count</text>
+
+  <rect class="card easy" x="140" y="990" width="280" height="62" rx="18"/>
+  <text class="card-title" x="280" y="1018" text-anchor="middle">easy</text>
+  <text class="small" x="280" y="1042" text-anchor="middle">high confidence</text>
+
+  <rect class="card boundary" x="460" y="990" width="280" height="62" rx="18"/>
+  <text class="card-title" x="600" y="1018" text-anchor="middle">boundary</text>
+  <text class="small" x="600" y="1042" text-anchor="middle">near-miss but reliable</text>
+
+  <rect class="card hard" x="780" y="990" width="280" height="62" rx="18"/>
+  <text class="card-title" x="920" y="1018" text-anchor="middle">hard</text>
+  <text class="small" x="920" y="1042" text-anchor="middle">too noisy, drop</text>
+
+  <path class="line" d="M600 743 L600 875"/>
+  <path class="thin" d="M600 949 C600 972 280 960 280 990"/>
+  <path class="thin" d="M600 949 L600 990"/>
+  <path class="thin" d="M600 949 C600 972 920 960 920 990"/>
+
+  <!-- Family variants -->
+  <rect class="panel" x="90" y="1115" width="1020" height="295" rx="26"/>
+  <text class="section" x="130" y="1159">FAMILY VARIANTS</text>
+
+  <rect class="card mix" x="130" y="1195" width="300" height="118" rx="18"/>
+  <text class="card-title" x="280" y="1231" text-anchor="middle">boundary_mix</text>
+  <text class="card-text" x="280" y="1259" text-anchor="middle">keep easy + boundary</text>
+  <text class="small" x="280" y="1284" text-anchor="middle">max 1 rationale/example</text>
+
+  <rect class="card out-bridge" x="450" y="1195" width="300" height="118" rx="18"/>
+  <text class="card-title" x="600" y="1231" text-anchor="middle">boundary_bridge</text>
+  <text class="card-text" x="600" y="1259" text-anchor="middle">add bridge rationale</text>
+  <text class="small" x="600" y="1284" text-anchor="middle">max 2 rationales/example</text>
+
+  <rect class="card specialist" x="770" y="1195" width="300" height="118" rx="18"/>
+  <text class="card-title" x="920" y="1231" text-anchor="middle">boundary_specialist</text>
+  <text class="card-text" x="920" y="1259" text-anchor="middle">focus boundary + bridge</text>
+  <text class="small" x="920" y="1284" text-anchor="middle">ESNLI-only specialist subset</text>
+
+  <rect class="card bridge" x="350" y="1340" width="500" height="46" rx="18"/>
+  <text class="small" x="600" y="1368" text-anchor="middle">Bridge condition: different source + low rationale similarity + non-hard example</text>
+
+  <path class="thin" d="M280 1052 L280 1195"/>
+  <path class="thin" d="M600 1052 C600 1110 280 1130 280 1195"/>
+  <path class="dash" d="M600 1052 L600 1195"/>
+  <path class="dash" d="M600 1052 C600 1110 920 1130 920 1195"/>
+  <path class="dash" d="M600 1313 L600 1340"/>
+
+  <text class="small" x="600" y="1455" text-anchor="middle">Main proposed method: boundary_mix. Same-family comparisons: boundary_bridge and boundary_specialist.</text>
+</svg>

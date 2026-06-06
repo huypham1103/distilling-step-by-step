@@ -807,6 +807,14 @@ def main():
         allowed_bands={"easy", "boundary", "bridge"},
         source_order=list(EXPERT_SOURCE_PRIOR),
     )
+    packs["judge_student_boundary_specialist_balanced"] = band_select(
+        boundary_rows[boundary_rows["judge_source"].isin({"historical", "contrastive", "comparative", "if_else", "consensus"})],
+        cap=9000,
+        max_per_example=2,
+        band_column="boundary_band",
+        allowed_bands={"boundary", "bridge"},
+        source_order=list(EXPERT_SOURCE_PRIOR),
+    )
 
     shortcut_rows = build_shortcut_rows(gold_records, candidate_tables)
     packs["judge_student_shortcut_aware_balanced"] = band_select(

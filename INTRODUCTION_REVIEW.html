@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Introduction Review - Boundary-Aware Rationale Selection</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f4;
+      --paper: #ffffff;
+      --ink: #202124;
+      --muted: #646b73;
+      --line: #d9ded8;
+      --accent: #245c51;
+      --accent-soft: #e5f1ed;
+      --warn: #946200;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    button {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: white;
+      color: var(--accent);
+    }
+    main {
+      width: min(1180px, calc(100vw - 28px));
+      margin: 22px auto 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 18px;
+      align-items: start;
+    }
+    .paper, aside {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .paper {
+      padding: 30px;
+    }
+    aside {
+      position: sticky;
+      top: 76px;
+      padding: 18px;
+    }
+    h2 {
+      margin: 0 0 18px;
+      font-size: 25px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 16px;
+      color: var(--accent);
+      letter-spacing: 0;
+    }
+    p {
+      margin: 0 0 14px;
+    }
+    .block {
+      padding: 14px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 0 14px;
+    }
+    .block:focus-within {
+      border-color: var(--accent);
+      background: #fbfdfc;
+    }
+    .editable {
+      min-height: 32px;
+      outline: none;
+    }
+    .editable:focus {
+      background: var(--accent-soft);
+      border-radius: 4px;
+    }
+    .note {
+      width: 100%;
+      min-height: 70px;
+      margin-top: 8px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      resize: vertical;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    .note-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .toc {
+      display: grid;
+      gap: 8px;
+      margin: 12px 0 18px;
+    }
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .status {
+      min-height: 20px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .warning {
+      padding: 10px;
+      color: #5f4400;
+      background: #fff5d8;
+      border: 1px solid #eed58d;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .meta {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .meta label {
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+    .meta input, .global-comment {
+      width: 100%;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+      text-transform: none;
+      font-weight: 400;
+      color: var(--ink);
+    }
+    .global-comment {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+    }
+    @media (max-width: 900px) {
+      header { position: static; align-items: flex-start; flex-direction: column; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .paper { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Introduction Review</h1>
+      <div class="subtitle">Editable draft + comments saved to <code>INTRODUCTION_REVIEW_STATE.json</code></div>
+    </div>
+    <div class="actions">
+      <span class="status" id="status">Not saved yet.</span>
+      <button class="secondary" id="loadBtn" type="button">Load saved</button>
+      <button id="saveBtn" type="button">Save review</button>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper">
+      <h2 contenteditable="true" class="editable" data-field="title">Introduction</h2>
+
+      <section id="te-importance" class="block" data-id="te-importance">
+        <h3>1. Opening Problem and Textual Entailment</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          In the rapidly advancing field of natural language processing (NLP), the ability of computational systems to understand human language remains a central research challenge. Language understanding requires more than recognizing individual words or sentence patterns; it requires modeling the semantic relationships among textual units and determining how meaning is transferred, contradicted, or left uncertain across contexts. Among the tasks designed to evaluate this capability, textual entailment (TE) has become a fundamental benchmark for natural language understanding and reasoning. TE is commonly formulated as the problem of determining the relationship between a premise <em>T</em> and a hypothesis <em>H</em>, where the model must decide whether the hypothesis can be inferred from the premise, contradicts the premise, or remains neutral with respect to it [Dagan et al., 2006; Bowman et al., 2015; Williams et al., 2018].
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="applications" class="block" data-id="applications">
+        <h3>2. Why TE Matters in NLP Applications</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          The role of TE extends beyond a standalone benchmark because many NLP applications rely on the ability to compare textual meanings. In question answering, entailment can support the verification of whether a candidate response is justified by a given passage [Harabagiu and Hickl, 2006; Androutsopoulos and Malakasiotis, 2010]. In machine translation and summarization, entailment-based methods have been used to assess whether generated outputs preserve the meaning of source texts [Padó et al., 2009; Mehdad et al., 2013]. TE-style reasoning is also relevant to information retrieval and knowledge-intensive tasks, where systems must determine whether textual evidence supports a candidate fact or relation [Dagan et al., 2006; Bowman et al., 2015]. These applications show that improving TE models contributes to broader progress in semantic reasoning and human-like language understanding.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="data-problem" class="block" data-id="data-problem">
+        <h3>3. The Data Dependency Problem</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          Despite its importance, TE remains strongly dependent on supervised training data. Modern deep learning models can achieve high performance when large annotated datasets such as SNLI and MultiNLI are available, but creating gold-standard labels is costly because each example requires careful human judgment over the logical relationship between a premise and a hypothesis [Bowman et al., 2015; Williams et al., 2018]. This dependency limits the development of TE systems in domains, languages, or resource-constrained settings where labeled data is limited. Pretrained language models such as BERT, RoBERTa, and T5 have improved textual representation by learning from large-scale corpora [Devlin et al., 2019; Liu et al., 2019; Raffel et al., 2020]. However, even with strong pretrained representations, TE models still require task-specific supervision to learn the decision boundaries among entailment, contradiction, and neutral relations.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="rationale-distillation" class="block" data-id="rationale-distillation">
+        <h3>4. Rationale-Based Distillation from LLMs</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          Recently, the emergence of large language models (LLMs) has introduced a new opportunity for addressing the data dependency problem. LLMs trained on large-scale corpora have demonstrated strong zero-shot and few-shot reasoning ability, suggesting that they contain condensed knowledge that can be transferred to smaller models [Brown et al., 2020; Wei et al., 2022]. One influential approach is step-by-step distillation, which uses LLM-generated rationales as additional supervision for student models [Hsieh et al., 2023]. Instead of training only with input-label pairs, the student model also receives explanatory signals that describe why a label should be selected. Building on this direction, our previous study, <em>How Rationales Boost Textual Entailment Modeling: Insights from Large Language Models</em>, investigated seven types of LLM-generated rationales for TE and showed that rationale diversity can improve student learning under resource-limited conditions [Our-Original-Paper-citation].
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="gap" class="block" data-id="gap">
+        <h3>5. Remaining Gap: From Rationale Types to Example-Level Selection</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          Although these studies demonstrate the value of LLM-generated rationales, an important limitation remains. Prior work primarily shows that rationales are useful as a form of supervision, and our previous study further analyzes which rationale types are more beneficial at the dataset level. However, this does not fully answer the example-level question of which rationale is most suitable for a specific premise-hypothesis pair. A rationale type that is effective on average may still generate weak, noisy, or less relevant explanations for individual examples. Moreover, different rationale sources may disagree about the predicted label or provide explanations that are not sufficiently grounded in the given texts. This motivates a shift from global rationale-type analysis to example-level rationale selection.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="method" class="block" data-id="method">
+        <h3>6. Proposed Extension</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          To address this issue, this study extends rationale-based distillation with a boundary-aware rationale selection strategy. Rather than modifying the student model architecture, the proposed approach improves the supervision used to train the student by selecting rationales that are more suitable for each example. At a high level, the method compares multiple candidate rationales generated for the same premise-hypothesis pair and uses their agreement, relevance, and reliability to decide which rationale should be used for distillation. This extension aims to preserve the advantages of rationale-based learning while reducing the effect of noisy or unsuitable generated explanations.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="intuition" class="block" data-id="intuition">
+        <h3>7. High-Level Intuition</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          The intuition behind the proposed approach is that rationale quality should be considered in relation to the specific example being learned. Some premise-hypothesis pairs are supported by consistent rationales and provide clear supervision, while others are closer to ambiguous decision boundaries or contain conflicting explanations. A useful rationale selection strategy should therefore identify explanations that are not only fluent, but also appropriate for the relation expressed by the given text pair. In this way, the proposed work moves from asking which rationale type is generally useful to asking which rationale is suitable for a particular training example.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="results" class="block" data-id="results">
+        <h3>8. Summary of Results and Contributions</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          Building upon our previous rationale-based distillation framework, this study proposes a new pipeline for filtering and selecting rationales that are more suitable for learning. The main objective is to move beyond using rationale types globally and instead determine which rationale should be used for each training example. The major achievements of this study can be summarized as follows:
+          <ul>
+            <li><strong>Improved rationale selection:</strong> we extend the previous rationale-based distillation method with an example-level filtering and selection stage. Instead of using rationale types only at the global level, the proposed pipeline selects rationales that are more suitable for each training example.</li>
+            <li><strong>Better empirical performance:</strong> under the same methodological setting, the proposed selection-oriented extension consistently outperforms the previous baseline across the evaluated reasoning tasks, showing that rationale selection can strengthen the original distillation process.</li>
+            <li><strong>More efficient use of generated rationales:</strong> the proposed pipeline reduces the effect of weak, noisy, or poorly grounded rationales before training. This avoids spending computation and training time on unsuitable explanations and makes rationale-enhanced distillation more practical.</li>
+          </ul>
+        </div>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+
+      <section id="contributions" class="block" data-id="contributions">
+        <h3>9. Paper Organization</h3>
+        <p contenteditable="true" class="editable" data-field="body">
+          The remainder of this paper is organized as follows. Section 2 reviews related work on textual entailment, large language models, and rationale-based distillation. Section 3 presents the proposed boundary-aware rationale selection methodology. Section 4 describes the experimental setup and analyzes the results on ESNLI and CommonsenseQA. Finally, Section 5 concludes the study and discusses directions for future work.
+        </p>
+        <div class="note-label">Comment for this paragraph <span class="chip">editable</span></div>
+        <textarea class="note" data-field="comment" placeholder="Write comments, concerns, or revision instructions here."></textarea>
+      </section>
+    </article>
+
+    <aside>
+      <h3>Review Controls</h3>
+      <div class="toc">
+        <a href="#te-importance">1. TE task</a>
+        <a href="#applications">2. Applications</a>
+        <a href="#data-problem">3. Data problem</a>
+        <a href="#rationale-distillation">4. Rationale distillation</a>
+        <a href="#gap">5. Gap</a>
+        <a href="#method">6. Method</a>
+        <a href="#intuition">7. Intuition</a>
+        <a href="#results">8. Results</a>
+        <a href="#contributions">9. Contributions</a>
+      </div>
+      <div class="meta">
+        <label>Reviewer name
+          <input id="reviewer" placeholder="Optional" />
+        </label>
+        <label>Global comment
+          <textarea id="globalComment" class="global-comment" placeholder="Overall comment about structure, claim strength, missing citation, or preferred direction."></textarea>
+        </label>
+      </div>
+      <div class="warning">
+        Use <strong>Save review</strong>. Edits are written to <code>INTRODUCTION_REVIEW_STATE.json</code>, which I can read directly from the workspace.
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const statusEl = document.getElementById("status");
+
+    function collectState() {
+      const sections = {};
+      document.querySelectorAll(".block").forEach((block) => {
+        const id = block.dataset.id;
+        sections[id] = {};
+        block.querySelectorAll("[data-field]").forEach((node) => {
+          const field = node.dataset.field;
+          sections[id][field] = node.matches("textarea,input") ? node.value : node.innerHTML;
+        });
+      });
+      return {
+        savedAt: new Date().toISOString(),
+        reviewer: document.getElementById("reviewer").value,
+        globalComment: document.getElementById("globalComment").value,
+        title: document.querySelector("[data-field='title']").innerHTML,
+        sections
+      };
+    }
+
+    function applyState(state) {
+      if (!state || !state.sections) return;
+      if (state.title) document.querySelector("[data-field='title']").innerHTML = state.title;
+      document.getElementById("reviewer").value = state.reviewer || "";
+      document.getElementById("globalComment").value = state.globalComment || "";
+      Object.entries(state.sections).forEach(([id, fields]) => {
+        const block = document.querySelector(`.block[data-id="${id}"]`);
+        if (!block) return;
+        Object.entries(fields).forEach(([field, value]) => {
+          const node = block.querySelector(`[data-field="${field}"]`);
+          if (!node) return;
+          if (node.matches("textarea,input")) node.value = value || "";
+          else node.innerHTML = value || "";
+        });
+      });
+    }
+
+    async function saveState() {
+      const state = collectState();
+      statusEl.textContent = "Saving...";
+      const res = await fetch("/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state)
+      });
+      if (!res.ok) {
+        statusEl.textContent = "Save failed. Is the review server running?";
+        return;
+      }
+      statusEl.textContent = `Saved ${new Date().toLocaleTimeString()}`;
+    }
+
+    async function loadState() {
+      statusEl.textContent = "Loading...";
+      const res = await fetch("/state");
+      if (!res.ok) {
+        statusEl.textContent = "Load failed.";
+        return;
+      }
+      const state = await res.json();
+      applyState(state);
+      statusEl.textContent = state.savedAt ? `Loaded saved state from ${state.savedAt}` : "No saved state yet.";
+    }
+
+    document.getElementById("saveBtn").addEventListener("click", saveState);
+    document.getElementById("loadBtn").addEventListener("click", loadState);
+    window.addEventListener("keydown", (event) => {
+      if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "s") {
+        event.preventDefault();
+        saveState();
+      }
+    });
+    loadState();
+  </script>
+</body>
+</html>

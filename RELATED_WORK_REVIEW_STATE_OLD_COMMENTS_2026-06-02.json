@@ -1,0 +1,20 @@
+{
+  "savedAt": "2026-06-02T08:12:28.797Z",
+  "reviewer": "",
+  "globalComment": "",
+  "title": "Related Work",
+  "sections": {
+    "llm-rationales": {
+      "body": "\n          Large language models have demonstrated strong capabilities across a wide range of natural language processing tasks, including language understanding, generation, and reasoning [Brown et al., 2020; Chowdhery et al., 2022; OpenAI, 2023]. Beyond producing final answers, an important emerging ability of LLMs is their capacity to generate intermediate reasoning steps or natural-language rationales that support their predictions. Chain-of-thought prompting shows that explicitly eliciting reasoning steps can improve performance in zero-shot and few-shot settings [Wei et al., 2022; Kojima et al., 2022]. These studies suggest that LLM-generated rationales contain useful task-specific knowledge that can explain the relation between an input and its predicted output. However, directly deploying LLMs remains expensive and impractical in many real-world scenarios, especially when computational cost, privacy, latency, or offline access is important. This motivates research that uses LLMs as knowledge generators while transferring their reasoning behavior into smaller models.\n        ",
+      "comment": ""
+    },
+    "reasoning-distillation": {
+      "body": "\n          Reasoning distillation aims to transfer the explanatory and reasoning ability of a large model into a smaller task-specific model. Earlier work has shown that human-written rationales can guide model predictions, regularize model behavior, and improve interpretability, but collecting such rationales is costly and time-consuming [Zaidan et al., 2007; Camburu et al., 2018; Rajani et al., 2019]. LLM-generated rationales provide a scalable alternative because they can be produced automatically and used as additional supervision. The Distilling Step-by-Step framework is a representative approach: it trains smaller models with both task labels and LLM-generated rationales in a multitask setting, reducing the need to deploy the LLM at inference time [Hsieh et al., 2023]. This line of work establishes the foundation for using rationales as a bridge between large teacher models and efficient student models. Nevertheless, simply generating rationales does not guarantee that all rationales are equally useful, because generated explanations may differ in quality, relevance, and consistency.\n        ",
+      "comment": ""
+    },
+    "rationale-selection": {
+      "body": "\n          Building on reasoning distillation, our previous work investigated how different types of LLM-generated rationales affect textual entailment modeling. Instead of relying on a single generic explanation style, the study generated and compared seven rationale types, including conditional, contrastive, neutral, consensus, causal, comparative, and historical rationales [Our-Original-Paper-citation]. The results showed that rationale type matters: some rationale styles provide stronger supervision than others, and combining rationale types can further improve model performance. However, this type-level analysis does not fully solve the rationale selection problem. A rationale type that performs well on average may still generate weak or unsuitable explanations for specific examples. In addition, different rationale sources may disagree, and low-quality rationales may waste training time or introduce noise into the student model. These observations motivate the next step in rationale-based distillation: selecting rationales at the example level. Our work follows this path by proposing a boundary-aware rationale selection pipeline that filters generated rationales before they are used for training, connecting prior rationale generation studies to a more selective and efficient distillation process.\n        ",
+      "comment": "I have a concern that should we mention the original paper is our previous work or just said it like a recent research only. "
+    }
+  }
+}

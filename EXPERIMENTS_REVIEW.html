@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiments Review - Boundary-Aware Rationale Selection</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --paper: #ffffff;
+      --ink: #202124;
+      --muted: #626a70;
+      --line: #d8ded8;
+      --accent: #245c51;
+      --accent-soft: #e5f1ed;
+      --warn: #946200;
+      --warn-soft: #fff7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.58;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+    }
+    .title { display: flex; flex-direction: column; gap: 2px; }
+    h1 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: 0; }
+    .subtitle { color: var(--muted); font-size: 13px; }
+    .actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+    button {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button.secondary { background: white; color: var(--accent); }
+    main {
+      width: min(1240px, calc(100vw - 28px));
+      margin: 22px auto 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 18px;
+      align-items: start;
+    }
+    .paper, aside {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .paper { padding: 30px; }
+    aside {
+      position: sticky;
+      top: 76px;
+      padding: 18px;
+    }
+    h2 { margin: 0 0 18px; font-size: 25px; letter-spacing: 0; }
+    h3 { margin: 28px 0 8px; font-size: 16px; color: var(--accent); letter-spacing: 0; }
+    h4 { margin: 18px 0 8px; font-size: 14px; color: #32363a; letter-spacing: 0; }
+    p { margin: 0 0 14px; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .94em;
+    }
+    .block {
+      padding: 14px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 0 14px;
+    }
+    .block:focus-within {
+      border-color: var(--accent);
+      background: #fbfdfc;
+    }
+    .editable { min-height: 32px; outline: none; }
+    .editable:focus { background: var(--accent-soft); border-radius: 4px; }
+    .review-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 16px;
+      font-size: 14px;
+    }
+    .review-table th, .review-table td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .review-table th {
+      color: var(--accent);
+      background: #f3f7f4;
+      font-weight: 750;
+    }
+    .review-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .callout {
+      margin: 12px 0 16px;
+      padding: 11px 13px;
+      border: 1px solid #efd08b;
+      border-left: 4px solid var(--warn);
+      border-radius: 6px;
+      background: var(--warn-soft);
+      color: #5f4400;
+      font-size: 14px;
+    }
+    .example {
+      margin: 10px 0 16px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fbfcfb;
+    }
+    .example strong { color: var(--accent); }
+    .bar-chart {
+      display: grid;
+      gap: 10px;
+      margin: 12px 0 18px;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr) 58px;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+    }
+    .bar-label {
+      color: #29333a;
+      font-weight: 650;
+    }
+    .bar-track {
+      height: 16px;
+      border-radius: 999px;
+      background: #edf1ef;
+      overflow: hidden;
+      border: 1px solid #d7dfda;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+    .bar-fill.alt { background: #2f6fab; }
+    .bar-fill.warn { background: #b7791f; }
+    .bar-value {
+      text-align: right;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .note {
+      width: 100%;
+      min-height: 78px;
+      margin-top: 8px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      resize: vertical;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    .note-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .toc { display: grid; gap: 8px; margin: 12px 0 18px; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 14px; }
+    .status { min-height: 20px; color: var(--muted); font-size: 13px; }
+    .warning {
+      padding: 10px;
+      color: #5f4400;
+      background: var(--warn-soft);
+      border: 1px solid #eed58d;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .meta { display: grid; gap: 10px; margin-top: 16px; }
+    .meta label {
+      display: grid;
+      gap: 4px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+    }
+    .meta input, .global-comment {
+      width: 100%;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+      text-transform: none;
+      font-weight: 400;
+      color: var(--ink);
+    }
+    .global-comment { min-height: 120px; resize: vertical; }
+    @media (max-width: 980px) {
+      header { position: static; align-items: flex-start; flex-direction: column; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .paper { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>Experiments Review</h1>
+      <div class="subtitle">Editable draft + comments saved to <code>EXPERIMENTS_REVIEW_STATE.json</code></div>
+    </div>
+    <div class="actions">
+      <span class="status" id="status">Not saved yet.</span>
+      <button class="secondary" id="loadBtn" type="button">Load saved</button>
+      <button id="saveBtn" type="button">Save review</button>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper">
+      <h2 contenteditable="true" class="editable" data-field="title">Experiments</h2>
+
+      <section id="setup" class="block" data-id="setup">
+        <h3>4.1 Experimental Setup</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The experimental setting follows the rationale-based distillation framework used in the original study. A teacher LLM first provides label-rationale supervision, and a smaller student model is trained with both label prediction and rationale generation objectives. The difference in this paper is the data-preparation stage: before student training, the proposed boundary-aware pipeline filters and selects which generated rationales should be used as supervision.
+          </p>
+          <p>
+            We use the same two evaluation tasks as the original comparison: ESNLI for textual entailment and CommonsenseQA for multiple-choice commonsense reasoning. Accuracy is used as the evaluation metric for both datasets.
+          </p>
+          <table class="review-table">
+            <thead>
+              <tr><th>Dataset</th><th>Task</th><th>Output</th><th>Role in this paper</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>ESNLI</td><td>Natural language inference</td><td>entailment / neutral / contradiction</td><td>Main textual entailment evaluation</td></tr>
+              <tr><td>CommonsenseQA</td><td>Commonsense question answering</td><td>multiple-choice answer</td><td>Additional reasoning/generalization evaluation</td></tr>
+            </tbody>
+          </table>
+          <p>
+            The main proposed method is Boundary-Mix. It uses the shared boundary-aware pipeline to select one primary rationale from easy and boundary examples while dropping hard examples. Boundary-Bridge and Boundary-Specialist are included as same-family comparisons to analyze how different final selection rules affect the same shared pipeline.
+          </p>
+        </div>
+        <label class="note-label" for="note-setup">Comment</label>
+        <textarea class="note" id="note-setup" data-note="setup" placeholder="Comment on experimental setup..."></textarea>
+      </section>
+
+      <section id="overall" class="block" data-id="overall">
+        <h3>4.2 Overall Performance Compared with Previous Models</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            We first place the proposed method in the broader model comparison from the original study. This table is used to show where the boundary-aware extension stands relative to the previous rationale-distilled student and other reference models. The most direct comparison is between the original rationale-distilled student and Boundary-Mix, because both use the same compact-student direction; Boundary-Mix changes the rationale supervision by selecting better training rationales before distillation.
+          </p>
+          <table class="review-table">
+            <thead>
+              <tr><th>Model / Method</th><th class="num">Parameters</th><th class="num">ESNLI</th><th class="num">CommonsenseQA</th><th>Source</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>RoBERTa Base</td><td class="num">125M</td><td class="num">44.08</td><td class="num">-</td><td>Original comparison table</td></tr>
+              <tr><td>FLAN-T5 Large</td><td class="num">783M</td><td class="num">57.29</td><td class="num">60.11</td><td>Original comparison table</td></tr>
+              <tr><td>Standard Finetune T5 Base</td><td class="num">220M</td><td class="num">61.41</td><td class="num">52.74</td><td>Original comparison table</td></tr>
+              <tr><td>ChatGPT 3.5</td><td class="num">175B</td><td class="num">72.99</td><td class="num">77.23</td><td>Original comparison table</td></tr>
+              <tr><td>Distilling Step-by-Step</td><td class="num">220M</td><td class="num">75.38</td><td class="num">55.45</td><td>Original comparison table</td></tr>
+              <tr><td>Original rationale-distilled student</td><td class="num">220M</td><td class="num">83.93</td><td class="num">60.36</td><td>Original method / current baseline</td></tr>
+              <tr><td><strong>Our method: Boundary-Mix</strong><br><code>judge_student_boundary_mix_balanced</code></td><td class="num">220M</td><td class="num"><strong>84.16</strong></td><td class="num"><strong>62.41</strong></td><td>Proposed extension</td></tr>
+            </tbody>
+          </table>
+          <p>
+            The proposed Boundary-Mix method achieves <strong>84.16%</strong> on ESNLI and <strong>62.41%</strong> on CommonsenseQA. Compared with the original rationale-distilled student, this is an improvement from 83.93% to 84.16% on ESNLI and from 60.36% to 62.41% on CommonsenseQA. The CommonsenseQA gain is larger, suggesting that filtering weak or unstable rationales is especially useful when the task requires choosing among semantically close answer options.
+          </p>
+          <div class="callout">
+            The broad model table is a contextual comparison. The main controlled claim is the improvement from the original rationale-distilled student to Boundary-Mix.
+          </div>
+        </div>
+        <label class="note-label" for="note-overall">Comment</label>
+        <textarea class="note" id="note-overall" data-note="overall" placeholder="Comment on overall performance comparison..."></textarea>
+      </section>
+
+      <section id="family" class="block" data-id="family">
+        <h3>4.3 Boundary Family Performance</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            We next compare variants from the same boundary-aware family. This comparison is important because the variants are not unrelated methods: they share candidate grouping, weighted voting, confidence estimation, difficulty-band assignment, and rationale scoring. Their difference is the final selection rule. Therefore, changes in performance can be interpreted as the effect of keeping one primary rationale, adding a bridge rationale, or focusing on specialist sources.
+          </p>
+          <table class="review-table">
+            <thead>
+              <tr><th>Method</th><th>Final selection behavior</th><th class="num">ESNLI</th><th class="num">CommonsenseQA</th><th>Interpretation</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Baseline</td><td>No boundary-aware filtering</td><td class="num">83.93</td><td class="num">60.36</td><td>Original rationale-distilled student</td></tr>
+              <tr><td>Boundary-Mix</td><td>Keep easy + boundary; one rationale per example</td><td class="num">84.16</td><td class="num">62.41</td><td>Main method; improves both datasets</td></tr>
+              <tr><td>Boundary-Bridge</td><td>Keep easy + boundary and add bridge rationale when useful</td><td class="num">85.06</td><td class="num">60.52</td><td>Best ESNLI, weak CommonsenseQA gain</td></tr>
+              <tr><td>Boundary-Specialist</td><td>Focus on boundary/bridge rows from specialist sources</td><td class="num">83.60</td><td class="num">training in progress</td><td>ESNLI-only result so far; useful as source-focused analysis</td></tr>
+            </tbody>
+          </table>
+          <p>
+            Boundary-Bridge gives the highest ESNLI score, which suggests that sentence-pair entailment can benefit from a second complementary rationale. However, its CommonsenseQA result is only slightly above the baseline, indicating that an additional rationale may introduce less useful associations for multiple-choice commonsense reasoning. Boundary-Specialist reaches 83.60% on ESNLI, lower than the baseline and the other two boundary variants, which suggests that focusing only on specialist/boundary-style sources removes too much clean supervision. Boundary-Mix is therefore the main method because it improves both completed datasets and gives the strongest CommonsenseQA result among the evaluated family variants.
+          </p>
+        </div>
+        <label class="note-label" for="note-family">Comment</label>
+        <textarea class="note" id="note-family" data-note="family" placeholder="Comment on family performance comparison..."></textarea>
+      </section>
+
+      <section id="distribution" class="block" data-id="distribution">
+        <h3>4.4 Selection Behavior Across Family Variants</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The distribution analysis is included only to explain why the family variants behave differently. Since the proposed method changes the selected training rationales, we need to show how each variant changes the training set. Boundary-Mix is conservative: it keeps one primary rationale and removes hard examples. Boundary-Bridge expands the selected set by adding second-view bridge rationales. Boundary-Specialist is much narrower and focuses mainly on bridge/boundary rows from selected sources.
+          </p>
+          <table class="review-table">
+            <thead>
+              <tr><th>Dataset</th><th>Variant</th><th class="num">Selected rows</th><th>Band distribution</th><th class="num">Avg. agreement</th><th class="num">Avg. margin</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>ESNLI</td><td>Boundary-Mix</td><td class="num">9054</td><td>easy: 9032, boundary: 22</td><td class="num">6.85</td><td class="num">5.95</td></tr>
+              <tr><td>ESNLI</td><td>Boundary-Bridge</td><td class="num">12600</td><td>easy: 7747, bridge: 4853</td><td class="num">6.94</td><td class="num">6.08</td></tr>
+              <tr><td>ESNLI</td><td>Boundary-Specialist</td><td class="num">3921</td><td>bridge: 3912, boundary: 9</td><td class="num">6.84</td><td class="num">5.93</td></tr>
+              <tr><td>CommonsenseQA</td><td>Boundary-Mix</td><td class="num">7843</td><td>easy: 7787, boundary: 56</td><td class="num">6.67</td><td class="num">5.98</td></tr>
+              <tr><td>CommonsenseQA</td><td>Boundary-Bridge</td><td class="num">10500</td><td>bridge: 6037, easy: 4462, boundary: 1</td><td class="num">6.91</td><td class="num">6.37</td></tr>
+            </tbody>
+          </table>
+          <p>
+            This table explains the performance difference in Section 4.3. Boundary-Bridge increases coverage by adding many bridge rows, which is helpful for ESNLI but less stable for CommonsenseQA. Boundary-Specialist is the smallest ESNLI variant and excludes easy examples, which likely explains why its ESNLI accuracy drops to 83.60%. Boundary-Mix keeps the cleanest version of the selected data: one rationale per retained example, mostly high-agreement easy rows, plus a small number of boundary rows.
+          </p>
+        </div>
+        <label class="note-label" for="note-distribution">Comment</label>
+        <textarea class="note" id="note-distribution" data-note="distribution" placeholder="Comment on band distribution analysis..."></textarea>
+      </section>
+
+      <section id="source" class="block" data-id="source">
+        <h3>4.5 Rationale Type Distribution Across Family Variants</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            We also inspect which rationale types are selected by each family variant. This is not a performance table; it explains the composition of the selected supervision. The chart-style summaries below show the dominant rationale sources for each variant. They help interpret why variants behave differently: Mix keeps the top-ranked rationale, Bridge adds extra views, and Specialist deliberately removes easy/general cases to focus on specialist sources.
+          </p>
+          <h4>ESNLI selected rationale distribution</h4>
+          <div class="bar-chart">
+            <div class="bar-row"><div class="bar-label">Mix: causal</div><div class="bar-track"><div class="bar-fill" style="width:38.9%"></div></div><div class="bar-value">38.9%</div></div>
+            <div class="bar-row"><div class="bar-label">Mix: neutral</div><div class="bar-track"><div class="bar-fill" style="width:28.3%"></div></div><div class="bar-value">28.3%</div></div>
+            <div class="bar-row"><div class="bar-label">Mix: if-else</div><div class="bar-track"><div class="bar-fill" style="width:18.2%"></div></div><div class="bar-value">18.2%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: causal</div><div class="bar-track"><div class="bar-fill alt" style="width:33.6%"></div></div><div class="bar-value">33.6%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: neutral</div><div class="bar-track"><div class="bar-fill alt" style="width:31.4%"></div></div><div class="bar-value">31.4%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: if-else</div><div class="bar-track"><div class="bar-fill alt" style="width:16.0%"></div></div><div class="bar-value">16.0%</div></div>
+            <div class="bar-row"><div class="bar-label">Specialist: if-else</div><div class="bar-track"><div class="bar-fill warn" style="width:30.7%"></div></div><div class="bar-value">30.7%</div></div>
+            <div class="bar-row"><div class="bar-label">Specialist: contrastive</div><div class="bar-track"><div class="bar-fill warn" style="width:25.6%"></div></div><div class="bar-value">25.6%</div></div>
+            <div class="bar-row"><div class="bar-label">Specialist: comparative</div><div class="bar-track"><div class="bar-fill warn" style="width:20.5%"></div></div><div class="bar-value">20.5%</div></div>
+          </div>
+          <h4>CommonsenseQA selected rationale distribution</h4>
+          <div class="bar-chart">
+            <div class="bar-row"><div class="bar-label">Mix: if-else</div><div class="bar-track"><div class="bar-fill" style="width:77.9%"></div></div><div class="bar-value">77.9%</div></div>
+            <div class="bar-row"><div class="bar-label">Mix: causal</div><div class="bar-track"><div class="bar-fill" style="width:12.1%"></div></div><div class="bar-value">12.1%</div></div>
+            <div class="bar-row"><div class="bar-label">Mix: neutral</div><div class="bar-track"><div class="bar-fill" style="width:8.7%"></div></div><div class="bar-value">8.7%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: causal</div><div class="bar-track"><div class="bar-fill alt" style="width:30.7%"></div></div><div class="bar-value">30.7%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: if-else</div><div class="bar-track"><div class="bar-fill alt" style="width:30.7%"></div></div><div class="bar-value">30.7%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: neutral</div><div class="bar-track"><div class="bar-fill alt" style="width:30.7%"></div></div><div class="bar-value">30.7%</div></div>
+            <div class="bar-row"><div class="bar-label">Bridge: contrastive</div><div class="bar-track"><div class="bar-fill alt" style="width:7.7%"></div></div><div class="bar-value">7.7%</div></div>
+          </div>
+          <p>
+            ESNLI keeps a mixed rationale distribution in Mix and Bridge, mainly causal, neutral, and if-else. Specialist intentionally shifts the distribution toward if-else, contrastive, and comparative sources. CommonsenseQA shows a sharper contrast: Boundary-Mix is dominated by if-else rationales, while Boundary-Bridge spreads the selected data almost evenly across causal, if-else, and neutral sources. This distribution difference supports the performance interpretation: additional source diversity helps ESNLI, while a cleaner single-rationale selection is more stable for CommonsenseQA.
+          </p>
+          <div class="callout">
+            CQA Boundary-Specialist distribution is not shown because the CQA Specialist training/output is still in progress.
+          </div>
+        </div>
+        <label class="note-label" for="note-source">Comment</label>
+        <textarea class="note" id="note-source" data-note="source" placeholder="Comment on rationale source/correctness analysis..."></textarea>
+      </section>
+
+      <section id="error" class="block" data-id="error">
+        <h3>4.6 Qualitative Error Analysis</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Finally, we include qualitative examples to show how the selection mechanism behaves at the example level. These cases explain what the easy, boundary, and hard bands mean in practice and why filtering is useful before student training.
+          </p>
+          <div class="example">
+            <p><strong>Easy ESNLI case.</strong> Premise: “A young man wearing a backpack and dark glasses approaches the brick building where there is a bit of graffiti on the wall.” Hypothesis: “The young man has glasses on his face.” The selected label is entailment, with agreement count 7 and margin 6.17. This example is retained because the sources strongly agree and the selected rationale is directly grounded in the premise.</p>
+          </div>
+          <div class="example">
+            <p><strong>Boundary ESNLI case.</strong> Premise: “Two men, one standing and one seated on the ground are attempting to wrangle a bull as dust from the action is being kicked up.” Hypothesis: “A rodeo clown tries to save a rider from a bull.” The selected label is neutral, with agreement count 4 and margin 1.11. This example is retained as boundary supervision because the hypothesis is plausible but not guaranteed by the premise.</p>
+          </div>
+          <div class="example">
+            <p><strong>Dropped hard case.</strong> Premise: “A group of construction workers are working.” Hypothesis: “A group of guys outside.” The vote margin is 0.01. The rationale text may appear reasonable in isolation, but the candidate group is unstable. Boundary-Mix removes this example because the weak vote margin indicates unreliable supervision.</p>
+          </div>
+          <div class="example">
+            <p><strong>CommonsenseQA boundary case.</strong> Question: “Where did his wife ask him to look first when he complained of missing deodorant?” Selected answer: medicine chest. The selected rationale explains that medicine chest is where deodorant is usually kept. The example is retained as boundary because agreement is sufficient but not maximal.</p>
+          </div>
+          <p>
+            These examples show the role of the boundary-aware module: it does not simply reward fluent rationales. It checks whether a rationale is supported by agreement among candidate sources and whether the example is stable enough to become student supervision.
+          </p>
+          <div class="callout">
+            Add at least one true failure case if available: a selected rationale that passes the judge but still leads to an incorrect student prediction.
+          </div>
+        </div>
+        <label class="note-label" for="note-error">Comment</label>
+        <textarea class="note" id="note-error" data-note="error" placeholder="Comment on qualitative error analysis..."></textarea>
+      </section>
+    </article>
+
+    <aside>
+      <strong>Review Navigation</strong>
+      <nav class="toc">
+        <a href="#setup">4.1 Setup</a>
+        <a href="#overall">4.2 Overall performance</a>
+        <a href="#family">4.3 Family comparison</a>
+        <a href="#distribution">4.4 Distribution</a>
+        <a href="#source">4.5 Source/correctness</a>
+        <a href="#error">4.6 Error analysis</a>
+      </nav>
+      <div class="warning">
+        Edit text directly in the paper area. Add review notes in each comment box. Use <strong>Save review</strong> before closing the browser.
+      </div>
+      <div class="meta">
+        <label>
+          Reviewer
+          <input id="reviewer" type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Overall Comment
+          <textarea class="global-comment" id="globalComment" placeholder="General experiment-section comments..."></textarea>
+        </label>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const saveBtn = document.getElementById("saveBtn");
+    const loadBtn = document.getElementById("loadBtn");
+
+    function collectState() {
+      const blocks = {};
+      document.querySelectorAll("[data-id]").forEach((block) => {
+        const id = block.dataset.id;
+        blocks[id] = {
+          html: block.querySelector("[data-field='body']")?.innerHTML || "",
+          note: block.querySelector("[data-note]")?.value || ""
+        };
+      });
+
+      return {
+        savedAt: new Date().toISOString(),
+        reviewer: document.getElementById("reviewer").value,
+        globalComment: document.getElementById("globalComment").value,
+        title: document.querySelector("[data-field='title']").innerHTML,
+        blocks
+      };
+    }
+
+    function applyState(state) {
+      if (!state || Object.keys(state).length === 0) {
+        statusEl.textContent = "No saved review found.";
+        return;
+      }
+      if (state.reviewer) document.getElementById("reviewer").value = state.reviewer;
+      if (state.globalComment) document.getElementById("globalComment").value = state.globalComment;
+      if (state.title) document.querySelector("[data-field='title']").innerHTML = state.title;
+
+      Object.entries(state.blocks || {}).forEach(([id, value]) => {
+        const block = document.querySelector(`[data-id='${id}']`);
+        if (!block) return;
+        const body = block.querySelector("[data-field='body']");
+        const note = block.querySelector("[data-note]");
+        if (body && value.html) body.innerHTML = value.html;
+        if (note && value.note) note.value = value.note;
+      });
+      statusEl.textContent = state.savedAt ? `Loaded review from ${new Date(state.savedAt).toLocaleString()}.` : "Loaded saved review.";
+    }
+
+    async function saveState() {
+      const state = collectState();
+      const response = await fetch("/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state)
+      });
+      if (!response.ok) {
+        statusEl.textContent = "Save failed.";
+        return;
+      }
+      statusEl.textContent = `Saved at ${new Date(state.savedAt).toLocaleString()}.`;
+    }
+
+    async function loadState() {
+      const response = await fetch("/state");
+      if (!response.ok) {
+        statusEl.textContent = "Load failed.";
+        return;
+      }
+      const state = await response.json();
+      applyState(state);
+    }
+
+    saveBtn.addEventListener("click", saveState);
+    loadBtn.addEventListener("click", loadState);
+    window.addEventListener("DOMContentLoaded", loadState);
+  </script>
+</body>
+</html>
