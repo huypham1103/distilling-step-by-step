@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Discussion Review - Boundary-Aware Rationale Selection</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --paper: #ffffff;
+      --ink: #202124;
+      --muted: #626a70;
+      --line: #d8ded8;
+      --accent: #245c51;
+      --accent-soft: #e5f1ed;
+      --warn: #946200;
+      --warn-soft: #fff7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.58;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+    }
+    .title { display: flex; flex-direction: column; gap: 2px; }
+    h1 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: 0; }
+    .subtitle { color: var(--muted); font-size: 13px; }
+    .actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+    button {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button.secondary { background: white; color: var(--accent); }
+    main {
+      width: min(1240px, calc(100vw - 28px));
+      margin: 22px auto 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 18px;
+      align-items: start;
+    }
+    .paper, aside {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .paper { padding: 30px; }
+    aside {
+      position: sticky;
+      top: 76px;
+      padding: 18px;
+    }
+    h2 { margin: 0 0 18px; font-size: 25px; letter-spacing: 0; }
+    h3 { margin: 28px 0 8px; font-size: 16px; color: var(--accent); letter-spacing: 0; }
+    p { margin: 0 0 14px; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: .94em;
+    }
+    .block {
+      padding: 14px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 0 14px;
+    }
+    .block:focus-within {
+      border-color: var(--accent);
+      background: #fbfdfc;
+    }
+    .editable { min-height: 32px; outline: none; }
+    .editable:focus { background: var(--accent-soft); border-radius: 4px; }
+    .review-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 16px;
+      font-size: 14px;
+    }
+    .review-table th, .review-table td {
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .review-table th {
+      color: var(--accent);
+      background: #f3f7f4;
+      font-weight: 750;
+    }
+    .review-table .num { text-align: right; font-variant-numeric: tabular-nums; }
+    .callout {
+      margin: 12px 0 16px;
+      padding: 11px 13px;
+      border: 1px solid #efd08b;
+      border-left: 4px solid var(--warn);
+      border-radius: 6px;
+      background: var(--warn-soft);
+      color: #5f4400;
+      font-size: 14px;
+    }
+    .note {
+      width: 100%;
+      min-height: 78px;
+      margin-top: 8px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      resize: vertical;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    .note-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .toc { display: grid; gap: 8px; margin: 12px 0 18px; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 14px; }
+    .status { min-height: 20px; color: var(--muted); font-size: 13px; }
+    .warning {
+      padding: 10px;
+      color: #5f4400;
+      background: var(--warn-soft);
+      border: 1px solid #eed58d;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .history {
+      display: grid;
+      gap: 8px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+    .history-title { font-weight: 750; color: var(--accent); }
+    .history-item {
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fbfcfb;
+    }
+    .draft-tag {
+      display: inline-block;
+      margin-right: 6px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+    }
+    .meta { display: grid; gap: 10px; margin-top: 14px; }
+    .meta label { display: grid; gap: 5px; color: var(--muted); font-size: 13px; }
+    .meta input, .global-comment {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+    }
+    .global-comment { min-height: 100px; resize: vertical; }
+    @media (max-width: 900px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .paper { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1 contenteditable="true" data-field="title">Discussion Review - Boundary-Aware Rationale Selection</h1>
+      <div class="subtitle">Editable discussion draft with reviewer comments</div>
+    </div>
+    <div class="actions">
+      <button id="saveBtn">Save review</button>
+      <button id="loadBtn" class="secondary">Load saved</button>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper">
+      <h2>5. Discussion</h2>
+
+      <section id="position" class="block" data-id="position">
+        <h3>5.1 Position Relative to the Original Rationale-Distillation Framework</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The original rationale-distillation study argues that rationales generated by large language models can provide informative supervision for compact task-specific models. Its discussion emphasizes a resource-efficient training-to-deployment paradigm: a large teacher model is used to generate supervision, while the deployed model remains small. Our work follows the same paradigm and keeps the student architecture and multi-task training objective unchanged. The main difference is that we add a boundary-aware selection stage between teacher rationale generation and student training.
+          </p>
+          <p>
+            This extension addresses a limitation already implied by the original discussion: the effectiveness of a rationale is not guaranteed simply because it is generated by a large language model. A rationale may be fluent, but it may support only part of the input, predict an unstable label, or introduce an explanation that is plausible but not useful for learning. Therefore, our contribution should be understood as improving the data-construction stage of rationale-based distillation rather than proposing a new student model.
+          </p>
+        </div>
+        <label class="note-label" for="note-position">Comment</label>
+        <textarea class="note" id="note-position" data-note="position" placeholder="Comment on connection to original discussion..."></textarea>
+      </section>
+
+      <section id="quality" class="block" data-id="quality">
+        <h3>5.2 Rationale Quality as the Central Issue</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            A central point in the original paper is that rationales can improve the performance of task-specific models, but the quality of rationales remains difficult to evaluate. Our results support this concern. The ESNLI error analysis shows that a rationale can contain a correct statement while still failing to justify the correct label. For example, "A dog is an animal" is true, but it does not explain the contradiction between "jumping over a beam" and "lying down." Similarly, "youngsters are people" supports only part of the hypothesis "people play poker" and does not justify the specific claim about poker.
+          </p>
+          <p>
+            Boundary-aware selection provides one practical answer to this quality problem. Instead of evaluating a rationale only by fluency, the method combines label agreement, weighted vote margin, source-label compatibility, grounding overlap, answer explicitness, and rationale length. These signals are not perfect semantic judgments, but they make the selection process more transparent and reproducible. This is important because a compact student model can be harmed by rationales that sound reasonable but provide incomplete or incorrect supervision.
+          </p>
+        </div>
+        <label class="note-label" for="note-quality">Comment</label>
+        <textarea class="note" id="note-quality" data-note="quality" placeholder="Comment on rationale quality discussion..."></textarea>
+      </section>
+
+      <section id="family" class="block" data-id="family">
+        <h3>5.3 Interpretation of the Boundary Family Results</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The family comparison shows that the final rationale-selection rule matters. Boundary-Mix gives the most stable completed result because it improves both ESNLI and CommonsenseQA. Boundary-Bridge obtains the highest ESNLI score, which suggests that sentence-pair entailment can benefit from an additional complementary rationale. However, Boundary-Bridge does not provide the same gain on CommonsenseQA. This difference indicates that adding more rationales is not universally beneficial.
+          </p>
+          <p>
+            This observation is consistent with the original paper's finding that increasing the number of rationales can improve performance up to a point, but too many rationales may reduce effectiveness. In our setting, the issue is not only the number of rationales but also whether the additional rationale introduces useful complementary evidence or extra noise. Boundary-Mix is therefore a conservative variant: it keeps one high-scoring rationale from reliable examples and removes hard examples whose candidate groups are unstable.
+          </p>
+        </div>
+        <label class="note-label" for="note-family">Comment</label>
+        <textarea class="note" id="note-family" data-note="family" placeholder="Comment on family-result interpretation..."></textarea>
+      </section>
+
+      <section id="student" class="block" data-id="student">
+        <h3>5.4 Teacher Signal and Student Generalization</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The prediction analysis suggests that the student model is not merely copying the raw teacher label. In the ESNLI prediction file, the normalized LLM label reaches 72.99% accuracy, while the student reaches 84.16%. There are 1,987 examples where the LLM label is wrong but the student prediction is correct. This indicates that the training process can transform noisy teacher-generated supervision into a more stable decision function.
+          </p>
+          <p>
+            At the same time, the student still makes errors when the rationale signal is incomplete or when lexical/category reasoning is not learned robustly. For instance, the student predicts contradiction for the example where "daschunds" should support "dogs." This type of failure shows that rationale selection improves the training data, but it does not solve all semantic generalization problems. Discussion of the method should therefore avoid claiming that selected rationales fully explain model behavior; they are better understood as auxiliary supervision that improves, but does not guarantee, downstream reasoning.
+          </p>
+        </div>
+        <label class="note-label" for="note-student">Comment</label>
+        <textarea class="note" id="note-student" data-note="student" placeholder="Comment on teacher/student discussion..."></textarea>
+      </section>
+
+      <section id="limitations" class="block" data-id="limitations">
+        <h3>5.5 Limitations</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Our approach has several limitations. First, the current pipeline assumes that multiple rationale candidates have already been generated. Therefore, the method reduces noisy rationale supervision used for training, but it does not remove the upfront cost of generating candidate rationales in the current experiment. Second, the scoring function uses manually defined source-label priors and rule-based signals. These rules are interpretable, but they are not learned from data and may need recalibration for other datasets, languages, or reasoning tasks.
+          </p>
+          <p>
+            Third, the gain on ESNLI for Boundary-Mix is small, although the method improves both evaluated datasets and gives a stronger gain on CommonsenseQA. Fourth, Boundary-Specialist is currently best treated as an analysis variant because the downstream result is complete only for ESNLI. Finally, the qualitative error analysis uses representative examples from the ESNLI prediction file. These examples help explain model behavior, but they do not replace a broader error taxonomy or statistical analysis of error types.
+          </p>
+        </div>
+        <label class="note-label" for="note-limitations">Comment</label>
+        <textarea class="note" id="note-limitations" data-note="limitations" placeholder="Comment on limitations..."></textarea>
+      </section>
+
+      <section id="future" class="block" data-id="future">
+        <h3>5.6 Future Directions</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            The original discussion identifies rationale quality as an open direction for future work. Our method makes this direction more concrete, but several improvements remain possible. First, the manually defined source priors can be calibrated using a development set so that source reliability is estimated from empirical performance rather than fixed rules. Second, the token-overlap grounding signal can be replaced or complemented with semantic similarity, entailment-based verification, or contradiction detection. This would help identify rationales that are semantically grounded even when they do not share many surface tokens with the input.
+          </p>
+          <p>
+            Future work can also study whether the selected rationale-source distribution can reduce generation cost. If a dataset consistently benefits from a small subset of rationale types, later systems may generate only those types instead of producing all candidate styles. Finally, the method should be tested on additional reasoning tasks and low-resource settings to determine whether boundary-aware rationale selection generalizes beyond ESNLI and CommonsenseQA.
+          </p>
+        </div>
+        <label class="note-label" for="note-future">Comment</label>
+        <textarea class="note" id="note-future" data-note="future" placeholder="Comment on future directions..."></textarea>
+      </section>
+
+      <section id="ethics" class="block" data-id="ethics">
+        <h3>5.7 Ethical and Practical Considerations</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            As noted in the original paper, smaller downstream models may inherit biases or unsafe behavior from the teacher LLM that generated the rationales. Boundary-aware selection can reduce some forms of noisy supervision, but it is not a complete bias-mitigation method. If the teacher generates a biased rationale and several candidate sources agree with it, the selection pipeline may still retain that rationale. Therefore, applications that use generated rationales should consider additional bias checks, safety filters, and human review for sensitive domains.
+          </p>
+          <p>
+            From a practical perspective, the proposed method is useful because it keeps the deployment model compact and does not require changing the original training objective. However, its rule-based design should be reported transparently. The source priors, difficulty thresholds, and quality-score components are part of the method and should be documented so that other researchers can reproduce, critique, or replace them.
+          </p>
+        </div>
+        <label class="note-label" for="note-ethics">Comment</label>
+        <textarea class="note" id="note-ethics" data-note="ethics" placeholder="Comment on ethical/practical considerations..."></textarea>
+      </section>
+    </article>
+
+    <aside>
+      <strong>Review Navigation</strong>
+      <nav class="toc">
+        <a href="#position">5.1 Relation to original</a>
+        <a href="#quality">5.2 Rationale quality</a>
+        <a href="#family">5.3 Family results</a>
+        <a href="#student">5.4 Teacher and student</a>
+        <a href="#limitations">5.5 Limitations</a>
+        <a href="#future">5.6 Future directions</a>
+        <a href="#ethics">5.7 Ethical/practical</a>
+      </nav>
+      <div class="warning">
+        Edit text directly in the paper area. Add review notes in each comment box. Use <strong>Save review</strong> before closing the browser.
+      </div>
+      <div class="history">
+        <div class="history-title">Draft Notes</div>
+        <div class="history-item"><span class="draft-tag">Revised</span>Discussion now follows the original paper's structure: implication, limitations, future work, and ethical considerations.</div>
+        <div class="history-item"><span class="draft-tag">Revised</span>Added explicit connection to the original paper's rationale-quality limitation.</div>
+        <div class="history-item"><span class="draft-tag">Revised</span>Removed conclusion-style summary and kept result numbers only where needed for interpretation.</div>
+      </div>
+      <div class="meta">
+        <label>
+          Reviewer
+          <input id="reviewer" type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Overall Comment
+          <textarea class="global-comment" id="globalComment" placeholder="General discussion-section comments..."></textarea>
+        </label>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const saveBtn = document.getElementById("saveBtn");
+    const loadBtn = document.getElementById("loadBtn");
+
+    function collectState() {
+      const blocks = {};
+      document.querySelectorAll("[data-id]").forEach((block) => {
+        const id = block.dataset.id;
+        blocks[id] = {
+          html: block.querySelector("[data-field='body']")?.innerHTML || "",
+          note: block.querySelector("[data-note]")?.value || ""
+        };
+      });
+
+      return {
+        savedAt: new Date().toISOString(),
+        reviewer: document.getElementById("reviewer").value,
+        globalComment: document.getElementById("globalComment").value,
+        title: document.querySelector("[data-field='title']").innerHTML,
+        blocks
+      };
+    }
+
+    function applyState(state) {
+      if (!state || Object.keys(state).length === 0) {
+        statusEl.textContent = "No saved review found.";
+        return;
+      }
+      if (state.reviewer) document.getElementById("reviewer").value = state.reviewer;
+      if (state.globalComment) document.getElementById("globalComment").value = state.globalComment;
+      if (state.title) document.querySelector("[data-field='title']").innerHTML = state.title;
+
+      Object.entries(state.blocks || {}).forEach(([id, value]) => {
+        const block = document.querySelector(`[data-id='${id}']`);
+        if (!block) return;
+        const body = block.querySelector("[data-field='body']");
+        const note = block.querySelector("[data-note]");
+        if (body && value.html) body.innerHTML = value.html;
+        if (note && value.note) note.value = value.note;
+      });
+      statusEl.textContent = state.savedAt ? `Loaded review from ${new Date(state.savedAt).toLocaleString()}.` : "Loaded saved review.";
+    }
+
+    async function saveState() {
+      const state = collectState();
+      const response = await fetch("/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state)
+      });
+      if (!response.ok) {
+        statusEl.textContent = "Save failed.";
+        return;
+      }
+      statusEl.textContent = `Saved at ${new Date(state.savedAt).toLocaleString()}.`;
+    }
+
+    async function loadState() {
+      const response = await fetch("/state");
+      if (!response.ok) {
+        statusEl.textContent = "Load failed.";
+        return;
+      }
+      const state = await response.json();
+      applyState(state);
+    }
+
+    saveBtn.addEventListener("click", saveState);
+    loadBtn.addEventListener("click", loadState);
+    window.addEventListener("DOMContentLoaded", loadState);
+  </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+{
+  "reference_dataset": "[API] ESNLI/judge_student_boundary_mix_balanced - full.csv",
+  "generated_full_score_rows": 9054,
+  "ranking_metric": "selection_change",
+  "top_three_components": [
+    "format",
+    "cue",
+    "source"
+  ],
+  "ranked_components": [
+    {
+      "component": "format",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 4795,
+      "changed_selected_rows": 4259,
+      "selection_change": 0.47039982328252705,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8888,
+      "changed_examples": 166,
+      "example_change": 0.01833443781753921,
+      "source_counts": {
+        "contrastive": 2112,
+        "comparative": 1567,
+        "causal": 1335,
+        "neutral": 1111,
+        "consensus": 1087,
+        "if_else": 1032,
+        "historical": 810
+      }
+    },
+    {
+      "component": "cue",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 5064,
+      "changed_selected_rows": 3990,
+      "selection_change": 0.44068919814446655,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8836,
+      "changed_examples": 218,
+      "example_change": 0.02407775568809366,
+      "source_counts": {
+        "causal": 4356,
+        "if_else": 2608,
+        "neutral": 2022,
+        "consensus": 32,
+        "historical": 22,
+        "contrastive": 13,
+        "comparative": 1
+      }
+    },
+    {
+      "component": "source",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 6281,
+      "changed_selected_rows": 2773,
+      "selection_change": 0.30627347028937485,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8955,
+      "changed_examples": 99,
+      "example_change": 0.010934393638170975,
+      "source_counts": {
+        "neutral": 3355,
+        "causal": 2521,
+        "if_else": 2005,
+        "comparative": 431,
+        "consensus": 268,
+        "contrastive": 251,
+        "historical": 223
+      }
+    },
+    {
+      "component": "ground",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 7736,
+      "changed_selected_rows": 1318,
+      "selection_change": 0.1455710183344378,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8915,
+      "changed_examples": 139,
+      "example_change": 0.015352330461674397,
+      "source_counts": {
+        "causal": 3886,
+        "neutral": 2085,
+        "if_else": 1503,
+        "comparative": 542,
+        "contrastive": 403,
+        "historical": 377,
+        "consensus": 258
+      }
+    },
+    {
+      "component": "brief",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 8583,
+      "changed_selected_rows": 471,
+      "selection_change": 0.052021206096752814,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8993,
+      "changed_examples": 61,
+      "example_change": 0.006737353655842721,
+      "source_counts": {
+        "causal": 3415,
+        "neutral": 2431,
+        "if_else": 1717,
+        "comparative": 519,
+        "contrastive": 497,
+        "historical": 258,
+        "consensus": 217
+      }
+    },
+    {
+      "component": "agreement_count",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 8827,
+      "changed_selected_rows": 227,
+      "selection_change": 0.02507179147338193,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8827,
+      "changed_examples": 227,
+      "example_change": 0.02507179147338193,
+      "source_counts": {
+        "causal": 3506,
+        "neutral": 2602,
+        "if_else": 1647,
+        "contrastive": 481,
+        "comparative": 363,
+        "historical": 234,
+        "consensus": 221
+      }
+    },
+    {
+      "component": "margin",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 8967,
+      "changed_selected_rows": 87,
+      "selection_change": 0.009609012591119947,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 8967,
+      "changed_examples": 87,
+      "example_change": 0.009609012591119947,
+      "source_counts": {
+        "causal": 3517,
+        "neutral": 2584,
+        "if_else": 1637,
+        "contrastive": 480,
+        "comparative": 372,
+        "historical": 237,
+        "consensus": 227
+      }
+    },
+    {
+      "component": "agreement_ratio",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 9035,
+      "changed_selected_rows": 19,
+      "selection_change": 0.0020985199911641265,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 9035,
+      "changed_examples": 19,
+      "example_change": 0.0020985199911641265,
+      "source_counts": {
+        "causal": 3524,
+        "neutral": 2564,
+        "if_else": 1646,
+        "contrastive": 478,
+        "comparative": 371,
+        "historical": 241,
+        "consensus": 230
+      }
+    },
+    {
+      "component": "explicit",
+      "full_rows": 9054,
+      "variant_rows": 9054,
+      "shared_selected_rows": 9053,
+      "changed_selected_rows": 1,
+      "selection_change": 0.0001104484205875856,
+      "full_examples": 9054,
+      "variant_examples": 9054,
+      "shared_examples": 9054,
+      "changed_examples": 0,
+      "example_change": 0.0,
+      "source_counts": {
+        "causal": 3526,
+        "neutral": 2558,
+        "if_else": 1648,
+        "contrastive": 478,
+        "comparative": 370,
+        "historical": 243,
+        "consensus": 231
+      }
+    }
+  ]
+}

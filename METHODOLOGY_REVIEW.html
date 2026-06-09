@@ -464,6 +464,38 @@ hard, & \text{otherwise}
           <p>
             \(S_{label}\) checks whether the candidate label agrees with the voted label. \(S_{ground}\) checks whether the rationale is connected to the premise and hypothesis instead of introducing unsupported information. \(S_{answer}\) checks whether the rationale explicitly supports the final answer. \(S_{source}\) incorporates the rationale-type prior, and \(S_{brief}\) penalizes rationales that are too weak or too verbose for effective supervision.
           </p>
+          <p>
+            The source-prior term is calculated as a label-source compatibility lookup:
+          </p>
+          <div class="equation">S_{source}(c_{i,k}) = Prior(y_i, s_k)</div>
+          <p class="formula-note">
+            \(y_i\) is the selected training label for example \(i\), and \(s_k\) is the rationale source type of candidate \(c_{i,k}\).
+          </p>
+          <div class="equation">Prior(y,s) =
+\begin{cases}
+P_{y,s}, & \text{if } (y,s) \in \mathcal{Y} \times \mathcal{S} \\
+0, & \text{otherwise}
+\end{cases}</div>
+          <p class="formula-note">
+            \(P\) is a manually specified compatibility matrix between labels and rationale source types. It is not learned from model training and is not copied from original-paper performance. It encodes the expected relation between each rationale type and each label.
+          </p>
+          <table class="method-table">
+            <thead>
+              <tr><th>Label</th><th>causal</th><th>neutral</th><th>contrastive</th><th>historical</th><th>comparative</th><th>consensus</th><th>if-else</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>entailment</td><td>0.92</td><td>0.88</td><td>0.95</td><td>1.00</td><td>0.70</td><td>0.98</td><td>0.74</td></tr>
+              <tr><td>neutral</td><td>0.84</td><td>0.96</td><td>0.90</td><td>0.72</td><td>0.99</td><td>0.82</td><td>1.00</td></tr>
+              <tr><td>contradiction</td><td>0.97</td><td>0.89</td><td>0.99</td><td>0.74</td><td>1.00</td><td>0.84</td><td>0.70</td></tr>
+            </tbody>
+          </table>
+          <p>
+            The same prior is used during weighted voting:
+          </p>
+          <div class="equation">V_i(y) = \sum_{k=1}^{K_i} \mathbf{1}[\hat{y}_{i,k}=y] Prior(y,s_k)</div>
+          <p class="formula-note">
+            A candidate contributes more strongly when its rationale source is compatible with the label it predicts. This keeps the voting stage and rationale-scoring stage consistent.
+          </p>
         </div>
         <label class="note-label" for="note-selection">Comment</label>
         <textarea class="note" id="note-selection" data-note="selection" placeholder="Comment on grouping, weighted vote, boundary margin, or quality scoring..."></textarea>

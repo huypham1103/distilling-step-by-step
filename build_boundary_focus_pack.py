@@ -48,6 +48,18 @@ BOUNDARY_SOURCE_PRIOR = {
 
 LABELS = ["entailment", "neutral", "contradiction"]
 
+SCORE_COMPONENTS = (
+    "source",
+    "ground",
+    "cue",
+    "explicit",
+    "format",
+    "brief",
+    "agreement_count",
+    "agreement_ratio",
+    "margin",
+)
+
 
 def build_example_key(premise, hypothesis):
     return normalize_text(premise).lower() + "</s>" + normalize_text(hypothesis).lower()
@@ -68,7 +80,20 @@ def vote_labels(candidates):
     return winner, winner_score, runner_up_score, counts
 
 
-def candidate_quality(candidate, training_label, vote_margin, agreement_count, total_candidates):
+def candidate_quality(
+    candidate,
+    training_label,
+    vote_margin,
+    agreement_count,
+    total_candidates,
+    disabled_components=None,
+    return_contributions=False,
+):
+    disabled_components = frozenset(disabled_components or ())
+    unknown_components = disabled_components.difference(SCORE_COMPONENTS)
+    if unknown_components:
+        raise ValueError(f"Unknown score components: {sorted(unknown_components)}")
+
     rationale = candidate["rationale"]
     rationale_lower = rationale.lower()
     word_count = len(rationale.split())
@@ -81,17 +106,25 @@ def candidate_quality(candidate, training_label, vote_margin, agreement_count, t
     format_bonus = 0.25 if "the correct answer" in rationale_lower or "so the answer is" in rationale_lower else 0.0
     brevity = 0.25 if 10 <= word_count <= 96 else (-0.15 if word_count > 128 else 0.0)
     agreement_ratio = agreement_count / max(1, total_candidates)
-    return (
-        source_prior
-        + 0.55 * overlap_score
-        + 0.22 * teaching_hits
-        + 0.20 * explicit_label
-        + format_bonus
-        + brevity
-        + 0.12 * agreement_count
-        + 0.08 * agreement_ratio
-        + 0.03 * vote_margin
+    contributions = {
+        "source": source_prior,
+        "ground": 0.55 * overlap_score,
+        "cue": 0.22 * teaching_hits,
+        "explicit": 0.20 * explicit_label,
+        "format": format_bonus,
+        "brief": brevity,
+        "agreement_count": 0.12 * agreement_count,
+        "agreement_ratio": 0.08 * agreement_ratio,
+        "margin": 0.03 * vote_margin,
+    }
+    score = sum(
+        contribution
+        for component, contribution in contributions.items()
+        if component not in disabled_components
     )
+    if return_contributions:
+        return score, contributions
+    return score
 
 
 def choose_boundary_partner(primary, matching_candidates):
@@ -138,9 +171,11 @@ def append_row(rows, gold, candidate, output_label, vote_margin, label_counts, w
     })
 
 
-def collect_examples():
-    gold_records, _ = load_gold_records()
-    candidate_tables = {source: load_candidates(source) for source in DEFAULT_SOURCES}
+def collect_examples(gold_records=None, candidate_tables=None, disabled_components=None):
+    if gold_records is None:
+        gold_records, _ = load_gold_records()
+    if candidate_tables is None:
+        candidate_tables = {source: load_candidates(source) for source in DEFAULT_SOURCES}
     rows = []
 
     for gold in gold_records:
@@ -174,7 +209,14 @@ def collect_examples():
                 continue
             agreement_count = label_counts.get(training_label, 0)
             total_candidates = max(1, len(candidates))
-            quality = candidate_quality(candidate, training_label, vote_margin, agreement_count, total_candidates)
+            quality = candidate_quality(
+                candidate,
+                training_label,
+                vote_margin,
+                agreement_count,
+                total_candidates,
+                disabled_components=disabled_components,
+            )
             rationale_tokens = tokenize_for_overlap(candidate["rationale"])
             support_tokens = tokenize_for_overlap(candidate["premise"]) | tokenize_for_overlap(candidate["hypothesis"])
             overlap_score = len(rationale_tokens & support_tokens) / max(1, len(rationale_tokens))

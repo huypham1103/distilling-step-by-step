@@ -51,7 +51,20 @@ EXPERT_SOURCE_PRIOR = {
     "comparative": 0.79,
 }
 
-SHORTCUT_CUES = ("because", "therefore", "if", "then", "means", "so the answer is", "the correct answer")
+FORMAT_CUES = ("so the answer is", "the correct answer")
+REASONING_CUES = ("because", "therefore", "if", "then", "means")
+SHORTCUT_CUES = REASONING_CUES + FORMAT_CUES
+SCORE_COMPONENTS = (
+    "source",
+    "ground",
+    "cue",
+    "explicit",
+    "format",
+    "brief",
+    "agreement_count",
+    "agreement_ratio",
+    "margin",
+)
 
 
 def normalize_text(text):
@@ -205,27 +218,51 @@ def shortcut_profile(premise, hypothesis, answer):
     }
 
 
-def score_candidate(candidate, gold_label, vote_margin, agreement_count, total_candidates, source_prior, profile):
+def score_candidate(
+    candidate,
+    gold_label,
+    vote_margin,
+    agreement_count,
+    total_candidates,
+    source_prior,
+    profile,
+    disabled_components=None,
+    return_contributions=False,
+):
+    disabled_components = frozenset(disabled_components or ())
+    unknown_components = disabled_components.difference(SCORE_COMPONENTS)
+    if unknown_components:
+        raise ValueError(f"Unknown score components: {sorted(unknown_components)}")
+
     rationale = candidate["rationale"]
     rationale_lower = rationale.lower()
     word_count = len(re.findall(r"\w+", rationale))
     overlap = support_overlap(candidate["premise"], candidate["hypothesis"], rationale)
     explicit_answer = 1.0 if gold_label and gold_label in rationale_lower else 0.0
-    cue_hits = sum(1 for cue in SHORTCUT_CUES if cue in rationale_lower)
+    cue_hits = sum(1 for cue in REASONING_CUES if cue in rationale_lower)
+    format_hits = sum(1 for cue in FORMAT_CUES if cue in rationale_lower)
     brevity = 0.25 if 10 <= word_count <= profile["ideal_word_max"] else (-0.18 if word_count > profile["hard_word_max"] else 0.0)
     agreement_ratio = agreement_count / max(1, total_candidates)
 
-    return (
-        source_prior.get(candidate["source"], 0.0)
-        + profile["overlap_weight"] * overlap
-        + profile["agreement_weight"] * agreement_count
-        + 0.12 * agreement_ratio
-        + profile["margin_weight"] * vote_margin
-        + 0.20 * explicit_answer
-        + 0.08 * cue_hits
-        + 0.12 * (candidate["source"] in profile["preferred_sources"])
-        + brevity
+    contributions = {
+        "source": source_prior.get(candidate["source"], 0.0) + 0.12 * (candidate["source"] in profile["preferred_sources"]),
+        "ground": profile["overlap_weight"] * overlap,
+        "cue": 0.08 * cue_hits,
+        "explicit": 0.20 * explicit_answer,
+        "format": 0.08 * format_hits,
+        "brief": brevity,
+        "agreement_count": profile["agreement_weight"] * agreement_count,
+        "agreement_ratio": 0.12 * agreement_ratio,
+        "margin": profile["margin_weight"] * vote_margin,
+    }
+    score = sum(
+        contribution
+        for component, contribution in contributions.items()
+        if component not in disabled_components
     )
+    if return_contributions:
+        return score, contributions
+    return score
 
 
 def choose_secondary(primary, matching, profile):
@@ -396,7 +433,7 @@ def build_family(gold_records, candidate_tables, name, profile):
     )
 
 
-def build_boundary_rows(gold_records, candidate_tables):
+def build_boundary_rows(gold_records, candidate_tables, disabled_components=None):
     rows = []
     for gold in gold_records:
         key = gold["key"]
@@ -431,6 +468,7 @@ def build_boundary_rows(gold_records, candidate_tables):
                     "margin_weight": 0.10,
                     "preferred_sources": {"contrastive", "if_else", "causal", "neutral"},
                 },
+                disabled_components=disabled_components,
             )
             matching.append(enriched)
         if not matching:

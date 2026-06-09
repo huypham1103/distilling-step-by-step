@@ -112,6 +112,48 @@ After assigning the difficulty band, the method judges each rationale candidate.
 
 In Eq.~\eqref{eq:rationale-quality}, $Q(c_{i,k})$ is the quality score of candidate $c_{i,k}$. $S_{label}$ checks whether the candidate label agrees with the voted label. $S_{ground}$ checks whether the rationale is connected to the premise and hypothesis instead of introducing unsupported information. $S_{answer}$ checks whether the rationale explicitly supports the final answer. $S_{source}$ incorporates the rationale-type prior, and $S_{brief}$ penalizes rationales that are too weak or too verbose for effective supervision. The coefficients $\alpha$, $\beta$, $\gamma$, $\delta$, and $\eta$ control the contribution of each scoring signal.
 
+The source-prior term is defined as a label-source compatibility lookup:
+\begin{equation}
+    S_{source}(c_{i,k}) =
+    \operatorname{Prior}(y_i, s_k),
+    \label{eq:source-score}
+\end{equation}
+where $y_i$ is the selected training label for example $i$, and $s_k$ is the rationale source type of candidate $c_{i,k}$. The prior itself is:
+\begin{equation}
+    \operatorname{Prior}(y, s) =
+    \begin{cases}
+        P_{y,s}, & \text{if } (y,s) \in \mathcal{Y} \times \mathcal{S}, \\
+        0, & \text{otherwise}.
+    \end{cases}
+    \label{eq:source-prior}
+\end{equation}
+Here, $P \in [0,1]^{|\mathcal{Y}| \times |\mathcal{S}|}$ is a manually specified compatibility matrix between task labels and rationale source types. The value is not learned from model training and is not a direct copy of original-paper performance. Instead, it encodes the expected relationship between each rationale type and each label. For example, comparative and contrastive rationales are expected to be more useful for contradiction because they highlight differences or conflicts, while if--else rationales are expected to be more useful for neutral because they often express uncertainty or conditional reasoning.
+
+\begin{table}[H]
+\centering
+\caption{Source-prior compatibility matrix $P_{y,s}$ used for boundary-aware rationale scoring.}
+\label{tab:source-prior-matrix}
+\begin{tabular}{p{0.18\linewidth} r r r r r r r}
+\hline
+Label $y$ & causal & neutral & contrastive & historical & comparative & consensus & if--else \\
+\hline
+entailment & 0.92 & 0.88 & 0.95 & 1.00 & 0.70 & 0.98 & 0.74 \\
+neutral & 0.84 & 0.96 & 0.90 & 0.72 & 0.99 & 0.82 & 1.00 \\
+contradiction & 0.97 & 0.89 & 0.99 & 0.74 & 1.00 & 0.84 & 0.70 \\
+\hline
+\end{tabular}
+\end{table}
+
+The same prior is also used during weighted voting. If candidate $c_{i,k}$ predicts label $\hat{y}_{i,k}$ and comes from source $s_k$, then the weighted vote score for label $y$ is:
+\begin{equation}
+    V_i(y) =
+    \sum_{k=1}^{K_i}
+    \mathbb{1}[\hat{y}_{i,k}=y]
+    \operatorname{Prior}(y, s_k).
+    \label{eq:weighted-vote-prior}
+\end{equation}
+Thus, a candidate contributes more strongly when its rationale source is compatible with the label it predicts. This makes the voting and rationale-scoring stages consistent: both prefer candidate labels and rationales whose source type matches the expected reasoning pattern for the selected label.
+
 \subsection{Boundary-Mix and Same-Family Variants}
 \label{sec:boundary-variants}
 

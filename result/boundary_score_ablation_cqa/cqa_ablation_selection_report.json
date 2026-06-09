@@ -1,0 +1,70 @@
+{
+  "components": [
+    "format",
+    "cue",
+    "source"
+  ],
+  "generated_full_score_rows": 7843,
+  "selection_reports": {
+    "format": {
+      "full_rows": 7843,
+      "variant_rows": 7843,
+      "shared_selected_rows": 7507,
+      "changed_selected_rows": 336,
+      "selection_change": 0.04284074971311998,
+      "full_examples": 7843,
+      "variant_examples": 7843,
+      "shared_examples": 7843,
+      "changed_examples": 0,
+      "example_change": 0.0,
+      "source_counts": {
+        "if_else": 5984,
+        "causal": 832,
+        "neutral": 591,
+        "contrastive": 430,
+        "historical": 3,
+        "consensus": 3
+      }
+    },
+    "cue": {
+      "full_rows": 7843,
+      "variant_rows": 7843,
+      "shared_selected_rows": 4295,
+      "changed_selected_rows": 3548,
+      "selection_change": 0.4523779166135407,
+      "full_examples": 7843,
+      "variant_examples": 7843,
+      "shared_examples": 7843,
+      "changed_examples": 0,
+      "example_change": 0.0,
+      "source_counts": {
+        "if_else": 2985,
+        "causal": 2680,
+        "neutral": 2093,
+        "contrastive": 83,
+        "historical": 2
+      }
+    },
+    "source": {
+      "full_rows": 7843,
+      "variant_rows": 7843,
+      "shared_selected_rows": 7272,
+      "changed_selected_rows": 571,
+      "selection_change": 0.07280377406604616,
+      "full_examples": 7843,
+      "variant_examples": 7843,
+      "shared_examples": 7843,
+      "changed_examples": 0,
+      "example_change": 0.0,
+      "source_counts": {
+        "if_else": 5994,
+        "neutral": 756,
+        "causal": 657,
+        "comparative": 173,
+        "consensus": 146,
+        "contrastive": 94,
+        "historical": 23
+      }
+    }
+  }
+}

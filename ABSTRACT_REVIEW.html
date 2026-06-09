@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abstract Review - Boundary-Aware Rationale Selection</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f4;
+      --paper: #ffffff;
+      --ink: #202124;
+      --muted: #626a70;
+      --line: #d8ded8;
+      --accent: #245c51;
+      --accent-soft: #e5f1ed;
+      --warn: #946200;
+      --warn-soft: #fff7df;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.58;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+    }
+    .title { display: flex; flex-direction: column; gap: 2px; }
+    h1 { margin: 0; font-size: 18px; line-height: 1.2; letter-spacing: 0; }
+    .subtitle { color: var(--muted); font-size: 13px; }
+    .actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; flex-wrap: wrap; }
+    button {
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-weight: 650;
+      cursor: pointer;
+    }
+    button.secondary { background: white; color: var(--accent); }
+    main {
+      width: min(1120px, calc(100vw - 28px));
+      margin: 22px auto 48px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 18px;
+      align-items: start;
+    }
+    .paper, aside {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+    .paper { padding: 30px; }
+    aside {
+      position: sticky;
+      top: 76px;
+      padding: 18px;
+    }
+    h2 { margin: 0 0 18px; font-size: 25px; letter-spacing: 0; }
+    h3 { margin: 24px 0 8px; font-size: 16px; color: var(--accent); letter-spacing: 0; }
+    p { margin: 0 0 14px; }
+    .block {
+      padding: 14px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      margin: 0 0 14px;
+    }
+    .block:focus-within {
+      border-color: var(--accent);
+      background: #fbfdfc;
+    }
+    .editable { min-height: 32px; outline: none; }
+    .editable:focus { background: var(--accent-soft); border-radius: 4px; }
+    .note {
+      width: 100%;
+      min-height: 78px;
+      margin-top: 8px;
+      padding: 9px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      resize: vertical;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+    }
+    .note-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 650;
+      text-transform: uppercase;
+      letter-spacing: .02em;
+    }
+    .toc { display: grid; gap: 8px; margin: 12px 0 18px; }
+    .toc a { color: var(--accent); text-decoration: none; font-size: 14px; }
+    .status { min-height: 20px; color: var(--muted); font-size: 13px; }
+    .warning {
+      padding: 10px;
+      color: #5f4400;
+      background: var(--warn-soft);
+      border: 1px solid #eed58d;
+      border-radius: 6px;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .history {
+      display: grid;
+      gap: 8px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+    .history-title { font-weight: 750; color: var(--accent); }
+    .history-item {
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fbfcfb;
+    }
+    .draft-tag {
+      display: inline-block;
+      margin-right: 6px;
+      padding: 2px 6px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 750;
+    }
+    .meta { display: grid; gap: 10px; margin-top: 14px; }
+    .meta label { display: grid; gap: 5px; color: var(--muted); font-size: 13px; }
+    .meta input, .global-comment {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font: inherit;
+    }
+    .global-comment { min-height: 100px; resize: vertical; }
+    @media (max-width: 900px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .paper { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1 contenteditable="true" data-field="title">Abstract Review - Boundary-Aware Rationale Selection</h1>
+      <div class="subtitle">Editable abstract draft with reviewer comments</div>
+    </div>
+    <div class="actions">
+      <button id="saveBtn">Save review</button>
+      <button id="loadBtn" class="secondary">Load saved</button>
+      <span id="status" class="status"></span>
+    </div>
+  </header>
+
+  <main>
+    <article class="paper">
+      <h2>Abstract</h2>
+
+      <section id="abstract" class="block" data-id="abstract">
+        <h3>Abstract Draft</h3>
+        <div contenteditable="true" class="editable" data-field="body">
+          <p>
+            Rationale-based distillation uses explanations generated by large language models as auxiliary supervision for training compact student models. While prior work shows that generated rationales can improve textual entailment and reasoning tasks, their quality is not guaranteed at the example level: a rationale may be fluent but weakly grounded, label-inconsistent, or unsuitable for learning. This paper extends the original rationale-distillation framework with a boundary-aware rationale selection pipeline. The proposed method groups multiple rationale candidates for the same input, aggregates their predicted labels through weighted voting, estimates example difficulty using agreement and vote margin, and selects training rationales using source-label compatibility, input grounding, answer support, brevity, and confidence signals. The main variant, Boundary-Mix, keeps one high-quality rationale from easy and boundary examples while removing unstable hard examples. Experiments on ESNLI and CommonsenseQA show that Boundary-Mix improves the original rationale-distilled baseline from 83.93% to 84.16% on ESNLI and from 60.36% to 62.41% on CommonsenseQA under the same compact student-model setting. A same-family comparison further shows that different selection rules affect datasets differently: Boundary-Bridge achieves stronger ESNLI performance, while Boundary-Mix gives the most consistent completed result across both datasets. These findings suggest that rationale-based distillation benefits not only from generating explanations, but also from selecting explanations that are reliable and suitable for student learning.
+          </p>
+        </div>
+        <label class="note-label" for="note-abstract">Comment</label>
+        <textarea class="note" id="note-abstract" data-note="abstract" placeholder="Comment on abstract draft..."></textarea>
+      </section>
+    </article>
+
+    <aside>
+      <strong>Review Navigation</strong>
+      <nav class="toc">
+        <a href="#abstract">Abstract</a>
+      </nav>
+      <div class="warning">
+        Edit text directly in the paper area. Add review notes in the comment box. Use <strong>Save review</strong> before closing the browser.
+      </div>
+      <div class="history">
+        <div class="history-title">Draft Notes</div>
+        <div class="history-item"><span class="draft-tag">Draft</span>One-paragraph abstract following paper style.</div>
+        <div class="history-item"><span class="draft-tag">Draft</span>Includes problem, method, result numbers, and main takeaway.</div>
+        <div class="history-item"><span class="draft-tag">Draft</span>Keeps the claim focused on rationale selection, not a new student architecture.</div>
+      </div>
+      <div class="meta">
+        <label>
+          Reviewer
+          <input id="reviewer" type="text" placeholder="Your name" />
+        </label>
+        <label>
+          Overall Comment
+          <textarea class="global-comment" id="globalComment" placeholder="General abstract comments..."></textarea>
+        </label>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const saveBtn = document.getElementById("saveBtn");
+    const loadBtn = document.getElementById("loadBtn");
+
+    function collectState() {
+      const blocks = {};
+      document.querySelectorAll("[data-id]").forEach((block) => {
+        const id = block.dataset.id;
+        blocks[id] = {
+          html: block.querySelector("[data-field='body']")?.innerHTML || "",
+          note: block.querySelector("[data-note]")?.value || ""
+        };
+      });
+
+      return {
+        savedAt: new Date().toISOString(),
+        reviewer: document.getElementById("reviewer").value,
+        globalComment: document.getElementById("globalComment").value,
+        title: document.querySelector("[data-field='title']").innerHTML,
+        blocks
+      };
+    }
+
+    function applyState(state) {
+      if (!state || Object.keys(state).length === 0) {
+        statusEl.textContent = "No saved review found.";
+        return;
+      }
+      if (state.reviewer) document.getElementById("reviewer").value = state.reviewer;
+      if (state.globalComment) document.getElementById("globalComment").value = state.globalComment;
+      if (state.title) document.querySelector("[data-field='title']").innerHTML = state.title;
+
+      Object.entries(state.blocks || {}).forEach(([id, value]) => {
+        const block = document.querySelector(`[data-id='${id}']`);
+        if (!block) return;
+        const body = block.querySelector("[data-field='body']");
+        const note = block.querySelector("[data-note]");
+        if (body && value.html) body.innerHTML = value.html;
+        if (note && value.note) note.value = value.note;
+      });
+      statusEl.textContent = state.savedAt ? `Loaded review from ${new Date(state.savedAt).toLocaleString()}.` : "Loaded saved review.";
+    }
+
+    async function saveState() {
+      const state = collectState();
+      const response = await fetch("/save", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state)
+      });
+      if (!response.ok) {
+        statusEl.textContent = "Save failed.";
+        return;
+      }
+      statusEl.textContent = `Saved at ${new Date(state.savedAt).toLocaleString()}.`;
+    }
+
+    async function loadState() {
+      const response = await fetch("/state");
+      if (!response.ok) {
+        statusEl.textContent = "Load failed.";
+        return;
+      }
+      const state = await response.json();
+      applyState(state);
+    }
+
+    saveBtn.addEventListener("click", saveState);
+    loadBtn.addEventListener("click", loadState);
+    window.addEventListener("DOMContentLoaded", loadState);
+  </script>
+</body>
+</html>
