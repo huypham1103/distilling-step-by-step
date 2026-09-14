@@ -1,0 +1,56 @@
+\subsection{Ablation Study on Score Components}
+\label{sec:score-component-ablation}
+
+To examine the contribution of individual signals in the rationale-quality score, we conduct a leave-one-component-out ablation study. For each component, we remove it from the score function while keeping the remaining selection pipeline unchanged. Because retraining all variants is expensive, we first measure how much each ablation changes the selected ESNLI training data. We then retrain the student model using the three ablations that produce the largest changes in selected rationales.
+
+The data-selection change is computed as:
+\begin{equation}
+    \Delta D_j =
+    1 -
+    \frac{|D_{full} \cap D_{-j}|}{|D_{full}|},
+\end{equation}
+where $D_{full}$ is the training set selected by the full score and $D_{-j}$ is the training set selected after removing component $j$. A selected row is treated as the same only if the input, selected rationale, and training label are unchanged.
+
+\begin{table}[H]
+\centering
+\caption{Effect of removing each score component on ESNLI training-data selection.}
+\label{tab:score-component-selection-change}
+\begin{tabular}{p{0.32\linewidth} r r}
+\hline
+Removed component & Changed rows & Selection change \\
+\hline
+$S_{format}$ & 4259 & 47.04 \\
+$S_{cue}$ & 3990 & 44.07 \\
+$S_{source}$ & 2773 & 30.63 \\
+$S_{ground}$ & 1318 & 14.56 \\
+$S_{brief}$ & 471 & 5.20 \\
+$A_i$ & 227 & 2.51 \\
+$M_i$ & 87 & 0.96 \\
+$R_i$ & 19 & 0.21 \\
+$S_{explicit}$ & 1 & 0.01 \\
+\hline
+\end{tabular}
+\end{table}
+
+Table~\ref{tab:score-component-selection-change} shows that $S_{format}$, $S_{cue}$, and $S_{source}$ have the largest influence on which rationales are selected. We therefore retrain the student model using these three ablated training sets and evaluate their downstream impact on ESNLI and CommonsenseQA.
+
+\begin{table}[H]
+\centering
+\caption{Downstream ablation results for the three score components with the largest data-selection impact. Accuracy is reported in percentage. Drop is computed relative to the full Boundary-Mix score.}
+\label{tab:score-component-downstream-ablation}
+\begin{tabular}{p{0.26\linewidth} r r r r}
+\hline
+Removed component & ESNLI & ESNLI drop & CQA & CQA drop \\
+\hline
+None (Full score) & 84.16 & 0.00 & 62.41 & 0.00 \\
+\hline
+$S_{format}$ & 84.99 & -0.83 & 61.59 & 0.82 \\
+$S_{cue}$ & 84.61 & -0.45 & 62.00 & 0.41 \\
+$S_{source}$ & 83.57 & 0.59 & 60.85 & 1.56 \\
+\hline
+\end{tabular}
+\end{table}
+
+The selection-level analysis shows that format, cue, and source signals strongly affect the constructed training data. However, downstream accuracy shows that their effects are not identical. Removing $S_{source}$ decreases performance on both datasets, from 84.16\% to 83.57\% on ESNLI and from 62.41\% to 60.85\% on CommonsenseQA. This makes $S_{source}$ the most stable contributor among the evaluated components.
+
+In contrast, removing $S_{format}$ and $S_{cue}$ improves ESNLI accuracy but reduces CommonsenseQA accuracy. This suggests that surface-form signals such as answer-format expressions and reasoning cue words are task-dependent: they help CommonsenseQA, but may introduce less useful preferences for ESNLI. Overall, the ablation indicates that source reliability is the most robust signal, while cue-based and format-based signals should be interpreted as auxiliary signals whose usefulness depends on the dataset.
